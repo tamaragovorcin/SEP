@@ -1,21 +1,16 @@
-import React, { Component } from "react";
-import '../Static/css/style.css';
+import React from "react";
 
-class BankCard extends Component {
-    
+const BankCard = () => {
 
-    render() {
-       
-		return (
-            <React.Fragment>
-            <div>
-                <h2 class="heading-secondary">
-                    Bank Card
-                </h2>
-            </div>
-            </React.Fragment>
-		);
-	}
+    return (
+        <React.Fragment>
+        <div>
+            <h2>
+                Bank Card
+            </h2>
+        </div>
+        </React.Fragment>
+    );
 }
 
 export default BankCard;
