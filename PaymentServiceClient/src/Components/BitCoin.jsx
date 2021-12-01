@@ -1,23 +1,19 @@
-import React, { Component } from "react";
-import '../Static/css/style.css';
+import React from "react";
 
-class BitCoin extends Component {
-    
 
-    render() {
-       
-		return (
-            <React.Fragment>
+const BitCoin = () => {
+
+    return (
+        <React.Fragment>
             <div>
-               
-                <h2 class="heading-secondary">
-                     Bit Coin
+            
+                <h2 >
+                    Bit Coin
                 </h2>
 
             </div>
-            </React.Fragment>
-		);
-	}
+        </React.Fragment>
+    );   
 }
 
 export default BitCoin;

@@ -1,153 +1,69 @@
 import React, { Component } from "react";
-import '../Static/css/style.css';
-
+import qr from '../Static/img/qr.png';
+import bank_cards from '../Static/img/bank_cards.jpg';
+import bitcoin from '../Static/img/bitcoin.png';
+import paypal from '../Static/img/paypall.png';
+import { useState } from 'react';
+import '../App.css';
 
 import { Link } from 'react-router-dom';
 
-class ChoosePayment extends Component {
+const ChoosePayment = () =>{
     
-    handelClickPayPal = () => {
-		console.log("PayPal clicked")
-        
-	};
-    handelClickCard = () => {
-		console.log("Card clicked")
-        
-	};
+    const [isPaypalAllowed, setIsPaypalAllowed] = useState(true);
+    const [isBankCardAllowed, setIsBankCardAllowed] = useState(true);
+    const [isQRAllowed, setIsQRAllowed] = useState(true);
+    const [isBitcoinAllowed, setIsBitcoinAllowed] = useState(true);
 
-    handelClickQR = () => {
-		console.log("QR clicked")
-       
-	};
-
-    render() {
-       
 		return (
-            <React.Fragment>
-                <div>
-                    <section class="section-tours" id="section-tours">
-                    <div class="u-center-text u-margin-bottom-big">
-                        <h2 class="heading-secondary">
-                             Choose payment method
-                        </h2>
+            <div className="App">
+            <header className="App-header">
+              <p>
+                CHOOSE PAYMENT METHOD
+              </p>
+              <div class="container">
+                <div class="row">
+                  {isPaypalAllowed === true && 
+                    <div class="col">
+                        <img src={paypal} className="App-logo" alt="logo" />
+                        <Link to="/payPal">
+                           <button type="button" class="btn btn-secondary btn-lg" data-toggle="button" aria-pressed="false" autocomplete="off"> PayPal!</button>
+                        </Link>
+
                     </div>
-
-                    <div class="row">
-                        <div class="col-1-of-4">
-                        <div class="card">
-                            <div class="card__side card__side--front">
-                                    <div class="card__picture card__picture--1">
-                                        &nbsp;
-                                    </div>
-                                    <h4 class="card__heading">
-                                        <span class="card__heading-span card__heading-span--1">Bit Coin</span>
-                                    </h4>
-                                    <div class="card__details">
-                                        <ul>
-                                            <li>Visa</li>
-                                            <li>Mater card</li>
-                                        </ul>
-                                    </div>
-                                
-                            </div>
-                            <div class="card__side card__side--back card__side--back-1">
-                                    <div class="card__cta">
-                                   
-                                        <Link href="#popup" class="btn btn--white" to="/bitCoin">Choose!</Link>
-                                    </div>
-                                </div>
-                        </div>
-                        </div>
-
-
-                        <div class="col-1-of-4">
-                            <div class="card">
-                                <div class="card__side card__side--front">
-                                    <div class="card__picture card__picture--2">
-                                        &nbsp;
-                                    </div>
-                                    <h4 class="card__heading">
-                                        <span class="card__heading-span card__heading-span--2">QR code</span>
-                                    </h4>
-                                    <div class="card__details">
-                                        <ul>
-                                            <li>7 day tours</li>
-                                            <li>Up to 40 people</li>
-                                            <li>6 tour guides</li>
-                                            <li>Sleep in provided tents</li>
-                                            <li>Difficulty: medium</li>
-                                        </ul>
-                                    </div>
-
-                                </div>
-                                <div class="card__side card__side--back card__side--back-2">
-                                    <div class="card__cta">
-                                
-                                        <Link href="#popup" class="btn btn--white" to="/qrCode">Choose!</Link>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="col-1-of-4">
-                            <div class="card">
-                                <div class="card__side card__side--front">
-                                    <div class="card__picture card__picture--3">
-                                        &nbsp;
-                                    </div>
-                                    <h4 class="card__heading">
-                                        <span class="card__heading-span card__heading-span--3">PayPal</span>
-                                    </h4>
-                                    <div class="card__details">
-                                        <ul>
-                                            <li>5 day tours</li>
-                                            <li>Up to 15 people</li>
-                                            
-                                        </ul>
-                                    </div>
-
-                                </div>
-                                <div class="card__side card__side--back card__side--back-3">
-                                    <div class="card__cta">
-                                       
-                                        <Link href="#popup" class="btn btn--white" to="/payPal">Choose!</Link>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-1-of-4">
-                            <div class="card">
-                                <div class="card__side card__side--front">
-                                    <div class="card__picture card__picture--3">
-                                        &nbsp;
-                                    </div>
-                                    <h4 class="card__heading">
-                                        <span class="card__heading-span card__heading-span--4">Card</span>
-                                    </h4>
-                                    <div class="card__details">
-                                        <ul>
-                                            <li>5 day tours</li>
-                                            <li>Up to 15 people</li>
-                                           
-                                        </ul>
-                                    </div>
-
-                                </div>
-                                <div class="card__side card__side--back card__side--back-3">
-                                    <div class="card__cta">
-                                       
-                                        <Link href="#popup" class="btn btn--white" to="/bankCard">Choose!</Link>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                  }
+                  {isBankCardAllowed === true && 
+                    <div class="col">
+                        <img src={bank_cards} className="App-logo" alt="logo" />
+                        <Link to="/bankCard">
+                          <button type="button" class="btn btn-secondary btn-lg" data-toggle="button" aria-pressed="false" autocomplete="off"> Bank cards!</button>
+                        </Link>
                     </div>
-                </section>
+                  }
+                  {isQRAllowed === true && 
+                    <div class="col">
+                        <img src={qr} className="App-logo" alt="logo" />
+                        <Link to="/qrCode">
+                          <button type="button" class="btn btn-secondary btn-lg" data-toggle="button" aria-pressed="false" autocomplete="off"> QR code!</button>
+                        </Link>
+
+                    </div>
+                  }
+                  {isBitcoinAllowed === true && 
+                    <div class="col">
+                        <img src={bitcoin} className="App-logo" alt="logo" />
+                        <Link to="/bitCoin">
+                          <button type="button" class="btn btn-secondary btn-lg" data-toggle="button" aria-pressed="false" autocomplete="off"> BitCoin!</button>
+                        </Link>
+
+                    </div>
+                  }
+              </div>
             </div>
-            </React.Fragment>
+            </header>
+          </div>
 		);
 	}
-}
+
 
 export default ChoosePayment;

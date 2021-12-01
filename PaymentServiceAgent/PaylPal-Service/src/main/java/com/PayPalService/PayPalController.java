@@ -35,8 +35,8 @@ public class PayPalController {
     public String payment(@RequestBody Order order) {
         try {
             Payment payment = payPalService.createPayment(order.getPrice(), order.getCurrency(), order.getMethod(),
-                    order.getIntent(), order.getDescription(), "http://localhost:9090/" + CANCEL_URL,
-                    "http://localhost:3000/#/bitCoin");
+                    order.getIntent(), order.getDescription(), "http://localhost:3000/#/payPalError",
+                    "http://localhost:3000/#/payPalSuccess");
             for(Links link:payment.getLinks()) {
                 if(link.getRel().equals("approval_url")) {
                     return link.getHref();
