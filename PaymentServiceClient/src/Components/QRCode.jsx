@@ -1,21 +1,17 @@
-import React, { Component } from "react";
-import '../Static/css/style.css';
+import React from "react";
 
-class QRCode extends Component {
-   
+const QRCode = () => {   
 
-    render() {
-       
-		return (
-            <React.Fragment>
+	return (
+        <React.Fragment>
             <div>
-                <h2 class="heading-secondary">
+                <h2>
                     QR Code
                 </h2>
             </div>
-            </React.Fragment>
-		);
-	}
+        </React.Fragment>
+	);
 }
+
 
 export default QRCode;
