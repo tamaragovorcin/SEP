@@ -1,6 +1,7 @@
 package com.example.WebShop.Controllers;
 
 import com.example.WebShop.DTOs.NewProductDTO;
+import com.example.WebShop.Model.Pictures;
 import com.example.WebShop.Model.Product;
 import com.example.WebShop.Service.Implementations.ProductServiceImpl;
 import javassist.expr.NewArray;
@@ -46,5 +47,57 @@ public class ProductController {
         return new ResponseEntity<>("Image is successfully added!", HttpStatus.CREATED);
     }
 
+    @GetMapping("/all")
+    // @PreAuthorize("hasRole('PHARMACIST')")
+    public ResponseEntity<List<NewProductDTO>> hats() {
+
+        BufferedImage img = null;
+        List<Product> products = productService.findAll();
+        List<NewProductDTO> productDTOS = new ArrayList<NewProductDTO>();
+        for (Product product : products) {
+
+            NewProductDTO newProductDTO = new NewProductDTO();
+            newProductDTO.setId(product.getId());
+            newProductDTO.setQuantity(product.getQuantity());
+            newProductDTO.setName(product.getName());
+            newProductDTO.setPrice(product.getPrice());
+
+
+                Set<String> list = new HashSet<String>();
+                for (Pictures pictures : product.getPictures()) {
+                    File destination = new File("src/main/resources/images/" + pictures.getName());
+                    try {
+                        img = ImageIO.read(destination);
+                        ByteArrayOutputStream out = new ByteArrayOutputStream();
+                        ImageIO.write(img, "PNG", out);
+                        byte[] bytes = out.toByteArray();
+                        String base64bytes = Base64.getEncoder().encodeToString(bytes);
+                        String src = "data:image/png;base64," + base64bytes;
+                        list.add(src);
+
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+
+                }
+
+                newProductDTO.setPictures(list);
+
+
+            productDTOS.add(newProductDTO);
+
+        }
+
+        return productDTOS == null ? new ResponseEntity<>(HttpStatus.NOT_FOUND) : ResponseEntity.ok(productDTOS);
+    }
+
+    @GetMapping(value = "/delete/{id}")
+    // @PreAuthorize("hasRole('PHARMACIST')")
+    public ResponseEntity<String> deleteItem(@PathVariable Integer id) {
+
+        productService.delete(id);
+
+        return ResponseEntity.ok("Success");
+    }
 
 }

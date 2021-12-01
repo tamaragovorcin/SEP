@@ -30,7 +30,7 @@ class EndEntityCreateModal extends Component {
     };
 	handleReserveChange = () => {
 	
-		if(parseInt(this.state.quantity , 10 ) + 1 > parseInt(this.props.product.Quantity , 10 ) + 1 ){
+		if(parseInt(this.state.quantity , 10 ) + 1 > parseInt(this.props.shirt.quantity , 10 ) + 1 ){
 			this.setState({ quantityError: "initial" });
 		}else{
 
@@ -38,15 +38,15 @@ class EndEntityCreateModal extends Component {
 
 
 		let newOrderDTO = {
-			user: id,
-			product: this.props.product.Id,
+			registeredUserId: id,
+			productId: this.props.shirt.id,
 			quantity: this.state.quantity
 
 		};
 
 	
 
-			Axios.post(BASE_URL_AGENT + "/api/addToCart", newOrderDTO, {  headers: { Authorization: getAuthHeader() } })
+			Axios.post(BASE_URL_AGENT + "/api/cart/add", newOrderDTO, {  headers: { Authorization: getAuthHeader() } })
 				.then((res) => {
 					if (res.status === 500) {
 						this.setState({ errorHeader: "Internal server error!", errorMessage: "Server error.", hiddenErrorAlert: false });
@@ -87,6 +87,15 @@ class EndEntityCreateModal extends Component {
 				
 					
 					<div className="control-group">
+					<div>
+							<Carousel dynamicHeight={true}>
+								{this.props.shirt.pictures?.map(img => (<div>
+									<img src={img} />
+								</div>))}
+
+							</Carousel>
+						</div>
+
 						<div className="form-group controls mb-0 pb-2" style={{ color: "#6c757d", opacity: 1 }}>
 							<label>Insert quantity of items:</label>
 							<input

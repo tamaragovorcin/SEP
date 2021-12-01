@@ -128,7 +128,7 @@ class Header extends React.Component {
 							<button  onClick={this.handlePostModalOpen} className="btn btn-outline-secondary btn-sm" style={{  border: "none", marginBottom: "1rem" }}><RiAddCircleLine /></button>
 							</li>
 			
-							<li>
+							<li  hidden={!this.hasRole("ROLE_USER")}>
 							<Link to="/orders"><AiOutlineShoppingCart /></Link>
 							</li>
 							<li>

@@ -7,11 +7,15 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.util.List;
+import java.util.Set;
+
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
 public class NewProductDTO {
+
+    private Integer id;
 
     private String name;
 
@@ -19,7 +23,7 @@ public class NewProductDTO {
 
     private Integer quantity;
 
-    private List<String> pictures;
+    private Set<String> pictures;
 
 
 
