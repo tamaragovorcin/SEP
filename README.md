@@ -22,3 +22,13 @@ Payment service:
     Bank Card Service - port: 8084
                       - api gateway -> bank-card-service     
                       - primer -> http://localhost:9090/bank-card-service/api/bankcard         
+
+WebShop:
+    Front             - http://localhost:3001
+    
+    Back              - http://localhost:8085
+    
+IT firma:
+    Front             - http://localhost:3002
+    
+    Back              - http://localhost:8086
