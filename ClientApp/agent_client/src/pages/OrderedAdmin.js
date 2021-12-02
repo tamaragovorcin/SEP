@@ -11,7 +11,8 @@ import ModalDialog from "../components/ModalDialog";
 import { NavItem } from "react-bootstrap";
 import getAuthHeader from "../GetHeader";
 
-class Ordered extends Component {
+import { Button, Modal } from "react-bootstrap";
+class OrderedAdmin extends Component {
 	state = {
 		products: [],
 		formShowed: false,
@@ -74,7 +75,7 @@ class Ordered extends Component {
 	};
 	componentDidMount() {
 		let id = localStorage.getItem("userId").substring(1, localStorage.getItem('userId').length - 1);
-		Axios.get(BASE_URL_AGENT + "/api/purchase/allUser", { headers: { Authorization: getAuthHeader() } })
+		Axios.get(BASE_URL_AGENT + "/api/purchase/all", { headers: { Authorization: getAuthHeader() } })
 			.then((res) => {
 				this.setState({ products: res.data });
 				console.log(res.data);
@@ -144,7 +145,7 @@ class Ordered extends Component {
 				<Header />
 
 				<div className="container" style={{ marginTop: "10%" }}>
-					<h5 className=" text-center mb-0 mt-2 text-uppercase">My orders</h5>
+					<h5 className=" text-center mb-0 mt-2 text-uppercase">All orders</h5>
 
 
 					<table className="table table-hover" style={{ width: "100%", marginTop: "3rem" }}>
@@ -186,9 +187,12 @@ class Ordered extends Component {
 								
 								</tr>
 									))}
+										
 										<label><b>____________________________________________________________________________________________________________________________</b></label>
 							
+									
 									</div>
+
 
 								))}
 						</tbody>
@@ -210,5 +214,5 @@ class Ordered extends Component {
 	}
 }
 
-export default Ordered;
+export default OrderedAdmin;
 

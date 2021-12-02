@@ -42,7 +42,6 @@ public class CartService implements ICartService {
         Cart cart = new Cart();
         User registeredUser = getLoggedUser();
         cart.setBuyer(registeredUser);
-        cart.setDate(LocalDate.now());
         cart.setQuantity(newOrderDTO.getQuantity());
         cart.setProduct(productService.findById(newOrderDTO.getProductId()));
         cart.setStatus("CREATED");

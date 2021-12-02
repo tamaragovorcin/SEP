@@ -40,4 +40,11 @@ public class Address extends AddressDTO implements Serializable {
     private String country;
 
 
+    public Address(double latitude, double longitude, String city, String street, String country) {
+        this.latitude = latitude;
+        this.longitude = longitude;
+        this.city= city;
+        this.street = street;
+        this.country = country;
+    }
 }
