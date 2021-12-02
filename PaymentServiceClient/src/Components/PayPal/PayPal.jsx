@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import '../Static/css/paypal_style.css';
+import '../../Static/css/paypal_style.css';
 import { useState } from 'react';
 import axios from "axios";
 
@@ -18,11 +18,7 @@ const PayPal = () => {
   const handleIntentChange = event => setIntent(event.target.value);
 
   const continueToCheckoutHandler = ()=> {
-      console.log(price);
-      console.log(currency)
-      console.log(paymentMethod)
-      console.log(intent)
-      console.log(description)
+     
       const checkoutDTO = {
           price : price,
           currency : currency,
@@ -30,10 +26,9 @@ const PayPal = () => {
           intent : intent,
           description : description
       }
-      axios.post("http://localhost:9090/paypal-service-api/paypal/pay", checkoutDTO)
+      axios.post("http://localhost:9090/paypal-service/api/paypal/pay", checkoutDTO)
           .then( res =>
                console.log(res),
-               //location.href = res.data
           )
           .catch(err => console.log(err));
   }
