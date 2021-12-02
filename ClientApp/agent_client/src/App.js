@@ -12,6 +12,7 @@ import Homepage from './pages/Homepage'
 import NewCampaigns from './pages/NewCampaigns'
 import Ordered from './pages/Ordered'
 import OrderedAdmin from './pages/OrderedAdmin'
+import Conferences from './pages/conferences/Conferences'
 function App() {
   return (
     <Router>
@@ -28,6 +29,7 @@ function App() {
 				<Link exact to="/ordered" path="/ordered" component={Ordered} />
 				<Link exact to="/orderedAdmin" path="/orderedAdmin" component={OrderedAdmin} />
 				<Link exact to="/newCampaigns" path="/newCampaigns" component={NewCampaigns} />
+				<Link exact to="/conferences" path="/conferences" component={Conferences} />
 
 			</Switch>
 	</Router>
