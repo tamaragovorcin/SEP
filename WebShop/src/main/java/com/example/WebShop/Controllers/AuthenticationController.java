@@ -48,6 +48,7 @@ public class AuthenticationController {
 		List<String> roles = new ArrayList<String>();
 		String jwt;
 		int expiresIn;
+		Integer id;
 		try {
 
 			Authentication authentication = authenticationManager
@@ -57,17 +58,16 @@ public class AuthenticationController {
 			SecurityContextHolder.getContext().setAuthentication(authentication);
 
 			User user = (User) authentication.getPrincipal();
-			System.out.println(user);
 			jwt = tokenUtils.generateToken(user.getUsername());
 			expiresIn = tokenUtils.getExpiredIn();
 			user.getAuthorities().forEach((a) -> roles.add(a.getAuthority()));
+			id= user.getId();
 		}
 		catch (Exception e) {
 			System.out.println(e);
 			return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
 		}
-		System.out.println("ddddddddd");
-		return new ResponseEntity<UserTokenState>(new UserTokenState(jwt, (long) expiresIn, roles), HttpStatus.OK);
+		return new ResponseEntity<UserTokenState>(new UserTokenState(jwt, (long) expiresIn, id, roles), HttpStatus.OK);
 	}
 
 }

@@ -32,24 +32,15 @@ class Header extends React.Component {
 		byteArray : ""
 	}
 
-
 	hasRole = (reqRole) => {
-		
-		
-		let roles =  ""
-		if (localStorage === null) return false;
+		let roles = JSON.parse(localStorage.getItem("keyRole"));
 
-		roles = localStorage.getItem("keyRole").substring(2, localStorage.getItem('keyRole').length-2)
-		console.log(roles)
 		if (roles === null) return false;
 
 		if (reqRole === "*") return true;
 
-		
-		if (roles.trim() === reqRole) 
-		{
-			
-			return true;
+		for (let role of roles) {
+			if (role === reqRole) return true;
 		}
 		return false;
 	};
@@ -128,7 +119,7 @@ class Header extends React.Component {
 							<button  onClick={this.handlePostModalOpen} className="btn btn-outline-secondary btn-sm" style={{  border: "none", marginBottom: "1rem" }}><RiAddCircleLine /></button>
 							</li>
 			
-							<li>
+							<li  hidden={!this.hasRole("ROLE_USER")}>
 							<Link to="/orders"><AiOutlineShoppingCart /></Link>
 							</li>
 							<li>
