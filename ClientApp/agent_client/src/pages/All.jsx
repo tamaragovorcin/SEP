@@ -43,7 +43,7 @@ class ProfilePage extends React.Component {
 		let roles =  ""
 		if (localStorage === null) return false;
 
-		roles = localStorage.getItem("keyRole").substring(1, localStorage.getItem('keyRole').length-1)
+		roles = JSON.parse(localStorage.getItem("keyRole"));
 		
 		if (roles === null) return false;
 
@@ -139,7 +139,7 @@ class ProfilePage extends React.Component {
 
 
     sendRequestForFeedAlbum(feedPostDTO) {
-        let id = localStorage.getItem("userId").substring(1, localStorage.getItem('userId').length - 1)
+        let id = JSON.parse(localStorage.getItem("keyRole"));
 
 		Axios.post(BASE_URL_AGENT + "/api/addImages" , feedPostDTO,  {  headers: { Authorization: getAuthHeader() } })
 			.then((res) => {
@@ -272,7 +272,7 @@ class ProfilePage extends React.Component {
 
 
 
-        let id = localStorage.getItem("userId").substring(1, localStorage.getItem('userId').length - 1);
+        let id = JSON.parse(localStorage.getItem("keyRole"));
         Axios.post(BASE_URL_AGENT + "/api/feedAlbum/edit/" + id, this.state.albums,  {  headers: { Authorization: getAuthHeader() } })
             .then((res) => {
 
@@ -290,7 +290,7 @@ class ProfilePage extends React.Component {
 
     componentDidMount() {
 
-        let id = localStorage.getItem("userId").substring(1, localStorage.getItem('userId').length - 1);
+        let id = JSON.parse(localStorage.getItem("keyRole"));
         Axios.get(BASE_URL_AGENT + "/api/feedAlbum/all/" + id,  {  headers: { Authorization: getAuthHeader() } })
             .then((res) => {
                 this.setState({ albums: res.data });

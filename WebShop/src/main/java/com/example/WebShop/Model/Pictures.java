@@ -1,6 +1,7 @@
 package com.example.WebShop.Model;
 
 
+import com.example.WebShop.Model.Conferences.Conference;
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
@@ -30,7 +31,13 @@ public class Pictures {
     @JsonIgnore
     @JsonBackReference(value="product-pictures")
     @ManyToOne(cascade = CascadeType.MERGE, fetch = FetchType.LAZY)
-    @JoinColumn(name = "product_id", referencedColumnName = "id", nullable = false, unique = false)
+    @JoinColumn(name = "product_id", referencedColumnName = "id", nullable = true, unique = false)
     private Product product;
+
+    @JsonIgnore
+    @JsonBackReference(value="conference-pictures")
+    @ManyToOne(cascade = CascadeType.MERGE, fetch = FetchType.LAZY)
+    @JoinColumn(name = "conference_id", referencedColumnName = "id", nullable = true, unique = false)
+    private Conference conference;
 
 }
