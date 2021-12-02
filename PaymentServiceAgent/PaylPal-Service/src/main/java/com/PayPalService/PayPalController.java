@@ -12,14 +12,11 @@ import java.net.URISyntaxException;
 
 @RestController
 @RequestMapping("/api/paypal")
-@CrossOrigin(origins = "*", allowedHeaders = "*")
+@CrossOrigin(origins = "http://localhost:3000")
 public class PayPalController {
 
     @Autowired
     PayPalService payPalService;
-
-    public static final String SUCCESS_URL = "pay/success";
-    public static final String CANCEL_URL = "pay/cancel";
 
     @GetMapping("")
     public String home() {
@@ -36,7 +33,7 @@ public class PayPalController {
         try {
             Payment payment = payPalService.createPayment(order.getPrice(), order.getCurrency(), order.getMethod(),
                     order.getIntent(), order.getDescription(), "http://localhost:3000/#/payPalError",
-                    "http://localhost:3000/#/payPalSuccess");
+                    "http://localhost:3000/#/payPalParams");
             for(Links link:payment.getLinks()) {
                 if(link.getRel().equals("approval_url")) {
                     return link.getHref();
@@ -50,28 +47,28 @@ public class PayPalController {
         return "redirect:/";
     }
 
-    @GetMapping(value = CANCEL_URL)
+    @GetMapping("/cancel")
     public String cancelPay() {
 
-        browse("http://localhost:3000/#/cancel");
+        browse("http://localhost:3000/#/payPalError");
         System.out.println("cancel");
         return "cancel";
     }
 
-    @GetMapping(value = SUCCESS_URL)
-    public String successPay(@RequestParam("paymentId") String paymentId, @RequestParam("PayerID") String payerId) {
+    @PostMapping("/success")
+    public String successPay(@RequestBody PaymentInfo paymentInfo) {
         try {
-            Payment payment = payPalService.executePayment(paymentId, payerId);
+            Payment payment = payPalService.executePayment(paymentInfo.getPaymentId(), paymentInfo.getPayerId());
             System.out.println(payment.toJSON());
             if (payment.getState().equals("approved")) {
-                browse("http://localhost:3000/#/bitCoin");
-                 System.out.println("success");
+                browse("http://localhost:3000/#/payPalSuccess");
                  return "success";
             }
         } catch (PayPalRESTException e) {
+            browse("http://localhost:3000/#/payPalError");
             System.out.println(e.getMessage());
         }
-        return "redirect:/";
+        return "error";
     }
     public static void browse(String url) {
         if(Desktop.isDesktopSupported()){
