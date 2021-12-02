@@ -42,4 +42,8 @@ public class Product {
     @JsonManagedReference(value="product-productinorder")
     @OneToMany(mappedBy = "product", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     private Set<ProductInOrder> productInOrder = new HashSet<ProductInOrder>();
+
+    @JsonManagedReference
+    @OneToMany(mappedBy = "product", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    private Set<Cart> cart = new HashSet<Cart>();
 }

@@ -52,7 +52,7 @@ class Login extends Component {
 					} else {
 						localStorage.setItem("keyToken", res.data.accessToken);
 						localStorage.setItem("keyRole", JSON.stringify(res.data.roles));
-						localStorage.setItem("userId", JSON.stringify(res.data.UserId));
+						localStorage.setItem("userId", JSON.stringify(res.data.userId));
 						localStorage.setItem("expireTime", new Date(new Date().getTime() + res.data.expiresIn).getTime());
 						//localStorage.setItem("expireTime", new Date(new Date().getTime() + res.data.expiresIn).getTime());
 

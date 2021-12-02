@@ -5,11 +5,10 @@ import Axios from "axios";
 import { BASE_URL, BASE_URL_AGENT } from "../constants.js";
 import "../App.js";
 import { Redirect } from "react-router-dom";
-import Order from "../components/Order";
 import Address from "../components/Address";
 import ModalDialog from "../components/ModalDialog";
 import getAuthHeader from "../GetHeader";
-class TShirtsMen extends Component {
+class Orders extends Component {
 
 
 	state = {
@@ -79,7 +78,7 @@ class TShirtsMen extends Component {
     };
 	componentDidMount() {
 		let id = localStorage.getItem("userId").substring(1, localStorage.getItem('userId').length - 1);
-		Axios.get(BASE_URL_AGENT + "/api/getAllCart/" + id, {  headers: { Authorization: getAuthHeader() } })
+		Axios.get(BASE_URL_AGENT + "/api/cart/allUser" , {  headers: { Authorization: getAuthHeader() } })
 			.then((res) => {
 				this.setState({ products: res.data });
 				console.log(res.data);
@@ -173,17 +172,17 @@ class TShirtsMen extends Component {
 
 								>
 									<td width="130em">
-										<img className="img-fluid" src={`data:image/jpg;base64,${p.Media[0]}`} width="70em" />
+									<img className="img-fluid" src={p.pictures?.[0]} width="70em" />
 									</td>
 									<td>
 										<div>
-											<b>Name: </b> {p.Product.Name}
+											<b>Name: </b> {p.name}
 										</div>
 										<div>
-											<b>Price: </b> {p.Product.Price}
+											<b>Price: </b> {p.price}
 										</div>
 										<div>
-											<b>Quantity: </b> {p.Quantity}
+											<b>Quantity: </b> {p.quantity}
 										</div>
 
 
@@ -196,7 +195,7 @@ class TShirtsMen extends Component {
 												marginLeft: "40%",
 												width: "20%",
 											}}
-											onClick={(e) => this.handleDelete(e, p.Id)}
+											onClick={(e) => this.handleDelete(e, p.cartId)}
 											className="btn btn-primary btn-xl"
 											id="sendMessageButton"
 											type="button"
@@ -249,5 +248,5 @@ class TShirtsMen extends Component {
 	}
 }
 
-export default TShirtsMen;
+export default Orders;
 
