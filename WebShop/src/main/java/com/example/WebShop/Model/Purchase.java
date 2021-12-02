@@ -35,9 +35,9 @@ public class Purchase {
     @ManyToMany
     @JsonIgnore
     @JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class, property = "id")
-    @JoinTable(name = "product_in_purchase", joinColumns = @JoinColumn(name = "product_id", referencedColumnName = "id"),
+    @JoinTable(name = "product_in_purchase", joinColumns = @JoinColumn(name = "cart_id", referencedColumnName = "id"),
             inverseJoinColumns = @JoinColumn(name = "purchase_id", referencedColumnName = "id"))
-    private Set<ProductInOrder> products = new HashSet<ProductInOrder>();
+    private Set<Cart> cart = new HashSet<Cart>();
 
 
     @Column(name = "date", nullable = true)
@@ -45,4 +45,8 @@ public class Purchase {
 
     @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private Address address;
+
+
+    @Column(name = "status", nullable = true)
+    private String status;
 }

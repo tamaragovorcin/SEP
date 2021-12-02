@@ -17,8 +17,6 @@ public class NewOrderDTO {
 
     private Integer productId;
 
-    private LocalDate dateOfReservation;
-
     private Integer registeredUserId;
 
     private Double quantity;

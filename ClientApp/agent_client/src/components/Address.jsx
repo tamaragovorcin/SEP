@@ -101,9 +101,8 @@ class Address extends Component {
 			})
 			.then((res) => {
 				let userDTO = {
-					Location: { street, country, city, latitude, longitude },
-					Products: this.props.products,
-                    Buyer: id,
+					address: { street, country, city, latitude, longitude },
+					products: this.props.products,
                     
 				};
 				console.log(userDTO);
@@ -113,7 +112,7 @@ class Address extends Component {
 						this.setState({ addressNotFoundError: "initial" });
 					} else {
 						console.log(userDTO);
-						Axios.post(BASE_URL_AGENT + "/api/cart/purchase", userDTO, {  headers: { Authorization: getAuthHeader() } })
+						Axios.post(BASE_URL_AGENT + "/api/purchase/add", userDTO, {  headers: { Authorization: getAuthHeader() } })
 							.then((res) => {
 								if (res.status === 409) {
 									this.setState({
@@ -127,28 +126,7 @@ class Address extends Component {
 									
 									this.setState({openModal : true})
 
-									Axios.get(BASE_URL_AGENT + "/api/removeCart/"+ id, {  headers: { Authorization: getAuthHeader() } })
-									.then((res) => {
-										if (res.status === 409) {
-											this.setState({
-												errorHeader: "Resource conflict!",
-												errorMessage: "Email already exist.",
-												hiddenErrorAlert: false,
-											});
-										} else if (res.status === 500) {
-											this.setState({ errorHeader: "Internal server error!", errorMessage: "Server error.", hiddenErrorAlert: false });
-										} else {
-											console.log("Success");
-											
-											
-										}
-									})
-									.catch((err) => {
-										console.log(err);
-									});
-
-
-
+		
 								}
 							})
 							.catch((err) => {

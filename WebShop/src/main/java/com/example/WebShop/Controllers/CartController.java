@@ -63,11 +63,10 @@ public class CartController {
 
         User user = cartService.getLoggedUser();
         for (Cart cart : carts) {
-            if(cart.getBuyer().getId()==user.getId()) {
+            if(cart.getBuyer().getId()==user.getId() && cart.getStatus().equals("CREATED")) {
                 NewOrderDTO cartDTO = new NewOrderDTO();
 
                 cartDTO.setCartId(cart.getId());
-                cartDTO.setDateOfReservation(cart.getDate());
                 cartDTO.setName(cart.getProduct().getName());
                 cartDTO.setQuantity(cart.getQuantity());
                 cartDTO.setPrice(cart.getProduct().getPrice());

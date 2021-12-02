@@ -8,6 +8,7 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.hibernate.annotations.Cascade;
 
 import javax.persistence.*;
 import java.time.LocalDate;
@@ -37,14 +38,16 @@ public class Cart {
     private Product product;
 
 
-    @Column(name = "date", nullable = true)
-    private LocalDate date;
-
     @Column(name = "quantity", nullable = true)
     private Double quantity;
 
 
     @Column(name = "status", nullable = true)
     private String status;
+
+    @ManyToMany(mappedBy = "cart")
+    @Cascade(org.hibernate.annotations.CascadeType.ALL)
+    @JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class, property = "id")
+    private Set<Purchase> purchases = new HashSet<Purchase>();
 
 }

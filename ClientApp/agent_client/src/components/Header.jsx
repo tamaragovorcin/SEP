@@ -122,10 +122,12 @@ class Header extends React.Component {
 							<li  hidden={!this.hasRole("ROLE_USER")}>
 							<Link to="/orders"><AiOutlineShoppingCart /></Link>
 							</li>
-							<li>
+							<li  hidden={!this.hasRole("ROLE_USER")}>
 							<Link to="/ordered"><FiTruck /></Link>
 							</li>
-						
+							<li  hidden={!this.hasRole("ROLE_ADMIN")}>
+							<Link to="/orderedAdmin"><FiTruck /></Link>
+							</li>
 							
 			
 
