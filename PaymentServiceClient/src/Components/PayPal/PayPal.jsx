@@ -26,11 +26,13 @@ const PayPal = () => {
           intent : intent,
           description : description
       }
-      axios.post("http://localhost:9090/paypal-service/api/paypal/pay", checkoutDTO)
-          .then( res =>
-               console.log(res),
-          )
-          .catch(err => console.log(err));
+      axios.post("http://localhost:9090/paypal-service/api/paypal/pay",checkoutDTO)
+            .then( (res) => {
+                const data = res.data
+                window.location.href = data
+                }
+            )
+            .catch(err => console.log(err));
   }
 
   return (

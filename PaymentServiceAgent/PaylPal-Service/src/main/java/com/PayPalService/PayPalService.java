@@ -1,6 +1,7 @@
 package com.PayPalService;
 
 import com.PayPalService.FeignClients.BankCardFeignClient;
+import com.PayPalService.Model.PayPalPayment;
 import com.paypal.api.payments.Amount;
 import com.paypal.api.payments.Payer;
 import com.paypal.api.payments.Payment;
@@ -22,6 +23,9 @@ public class PayPalService {
 
     @Autowired
     BankCardFeignClient bankCardFeignClient;
+
+    @Autowired
+    PayPalRepository payPalRepository;
 
     @Autowired
     private APIContext apiContext;
@@ -73,4 +77,15 @@ public class PayPalService {
         return payment.execute(apiContext, paymentExecute);
     }
 
+    public void savePayment(Payment payment) {
+        PayPalPayment payPalPayment = new PayPalPayment();
+
+        payPalPayment.setPaymentId(payment.getId());
+        payPalPayment.setPayerId(payment.getPayer().getPayerInfo().getPayerId());
+        payPalPayment.setTotal(payment.getTransactions().get(0).getAmount().getTotal());
+        payPalPayment.setCurrency(payment.getTransactions().get(0).getAmount().getCurrency());
+        payPalPayment.setCreateTime(payment.getCreateTime());
+
+        payPalRepository.save(payPalPayment);
+    }
 }

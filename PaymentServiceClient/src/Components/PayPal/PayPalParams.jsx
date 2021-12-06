@@ -15,7 +15,7 @@ const PayPalParams = () => {
             paymentId: paymentId,
             payerId :PayerID
         }
-        axios.post("hhttp://localhost:9090/paypal-service/api/paypal/success", paymentDTO)
+        axios.post("http://localhost:9090/paypal-service/api/paypal/success", paymentDTO)
           .then( res =>
                console.log(res),
           )
