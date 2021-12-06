@@ -9,7 +9,9 @@ import { RiAddCircleLine } from 'react-icons/ri';
 import { AiOutlineOrderedList, AiOutlineShoppingCart } from 'react-icons/ai';
 import { BASE_URL_AGENT } from "../constants.js";
 import { GiPodiumWinner } from 'react-icons/gi';
-import {SiCampaignmonitor} from 'react-icons/si'
+import {MdPayment} from 'react-icons/md'
+
+
 import Select from 'react-select';
 import ModalDialog from "../components/ModalDialog";
 import TopCampaignsModalToken from "../components/TopCampaignsModalToken";
@@ -127,6 +129,9 @@ class Header extends React.Component {
 							</li>
 							<li  hidden={!this.hasRole("ROLE_ADMIN")}>
 							<Link to="/orderedAdmin"><FiTruck /></Link>
+							</li>
+							<li  hidden={!this.hasRole("ROLE_ADMIN")}>
+							<Link to="/paymentMethod"><MdPayment /></Link>
 							</li>
 							
 			
