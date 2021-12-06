@@ -7,6 +7,7 @@ import "../App.js";
 import { Redirect } from "react-router-dom";
 import Order from "../components/Order";
 
+import getAuthHeader from "../GetHeader";
 import ModalDialog from "../components/ModalDialog";
 
 class All extends Component {
@@ -73,7 +74,7 @@ class All extends Component {
 
 	componentDidMount() {
 		
-		Axios.get(BASE_URL + "/api/product/all")
+		Axios.get(BASE_URL + "/api/product/all",{ headers: { Authorization: getAuthHeader() }})
 			.then((res) => {
 				this.setState({ tshirts: res.data });
 				console.log(res.data);
@@ -89,7 +90,7 @@ class All extends Component {
 	};
 
 	handleDelete = (e,id) => {
-		Axios.get(BASE_URL + "/api/product/delete/" + id)
+		Axios.get(BASE_URL + "/api/product/delete/" + id, { headers: { Authorization: getAuthHeader() }})
 			.then((res) => {
 				this.setState({ openModal: true });
 			})
@@ -222,7 +223,7 @@ class All extends Component {
 											<b>Price: </b> {product.price}
 										</div>
 										<div>
-                                        <b>Quantity: </b> {product.price}
+                                        <b>Quantity: </b> {product.quantity}
 										</div>
 
 

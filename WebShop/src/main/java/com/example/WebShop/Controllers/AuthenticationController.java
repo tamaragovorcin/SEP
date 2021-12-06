@@ -65,10 +65,10 @@ public class AuthenticationController {
 			expiresIn = tokenUtils.getExpiredIn();
 			user.getAuthorities().forEach((a) -> roles.add(a.getAuthority()));
 			id= user.getId();
-			logger.info("just a test info log");
+			logger.info("User " + user.getUsername() + " has just logged in.");
 		}
 		catch (Exception e) {
-			System.out.println(e);
+			logger.error("Exception while logging in as a user " + authenticationRequest.getUsername() +" " + e);
 			return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
 		}
 		return new ResponseEntity<UserTokenState>(new UserTokenState(jwt, (long) expiresIn, id, roles), HttpStatus.OK);

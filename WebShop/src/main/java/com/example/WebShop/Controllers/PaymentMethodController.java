@@ -8,6 +8,8 @@ import com.example.WebShop.Model.*;
 import com.example.WebShop.Service.IServices.IPaymentMethodService;
 import com.example.WebShop.Service.IServices.IProductService;
 import com.example.WebShop.Service.Implementations.CartService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -35,43 +37,62 @@ public class PaymentMethodController {
     @Autowired
     private IPaymentMethodService paymentMethodService;
 
-    @PostMapping("/add")
-    // @PreAuthorize("hasRole('PHARMACIST')")
-    public ResponseEntity<String> addReservation(@RequestBody PaymentMethodDTO paymentMethodDTO) {
+    private static final Logger logger = LoggerFactory.getLogger(PaymentMethodController.class);
 
-        paymentMethodService.save(paymentMethodDTO);
+    @PostMapping("/add")
+    @PreAuthorize("hasRole('ROLE_ADMIN')")
+    public ResponseEntity<String> addPayment(@RequestBody PaymentMethodDTO paymentMethodDTO) {
+
+        try {
+            paymentMethodService.save(paymentMethodDTO);
+            logger.info("Payment methods had been added to the webshop: ");
+
+        }
+        catch (Exception e){
+            logger.error("Exception while adding payment methods. Error is: " + e);
+
+        }
 
         return new ResponseEntity<>("Item is successfully added!", HttpStatus.CREATED);
     }
 
     @GetMapping("/all")
-    // @PreAuthorize("hasRole('PHARMACIST')")
-    public ResponseEntity<PaymentMethodDTO> hats() {
+    @PreAuthorize("hasRole('ROLE_ADMIN')")
+    public ResponseEntity<PaymentMethodDTO> paymentMethods() {
 
         List<String> list = new ArrayList<>();
         PaymentMethodDTO paymentMethodDTO = new PaymentMethodDTO();
-        List<PaymentMethod> paymentMethods = paymentMethodService.findAll();
+        List<PaymentMethod> paymentMethods = new ArrayList<>();
 
-        for(PaymentMethod paymentMethod: paymentMethods){
-            if(paymentMethod.getMethod().toString().equals("CARD")){
+        try {
+            paymentMethods = paymentMethodService.findAll();
+            for (PaymentMethod paymentMethod : paymentMethods) {
+                if (paymentMethod.getMethod().toString().equals("CARD")) {
 
-                list.add("Card");
+                    list.add("Card");
+                }
+                if (paymentMethod.getMethod().toString().equals("PAYPAL")) {
+
+                    list.add("Paypal");
+                }
+                if (paymentMethod.getMethod().toString().equals("BITCOIN")) {
+
+                    list.add("Bitcoin");
+                }
+                if (paymentMethod.getMethod().toString().equals("QR")) {
+
+                    list.add("Qr");
+                }
             }
-            if(paymentMethod.getMethod().toString().equals("PAYPAL")){
+            paymentMethodDTO.setMethods(list);
 
-                list.add("Paypal");
-            }
-            if(paymentMethod.getMethod().toString().equals("BITCOIN")){
+            logger.info("Overview of the currently choosen payment mathods for webshop" );
 
-                list.add("Bitcoin");
-            }
-            if(paymentMethod.getMethod().toString().equals("QR")){
-
-                list.add("Qr");
-            }
         }
-        paymentMethodDTO.setMethods(list);
+        catch (Exception e ){
 
+            logger.error("Exception while overviewing payment methods. Error is: " + e);
+        }
         return paymentMethodDTO == null ? new ResponseEntity<>(HttpStatus.NOT_FOUND) : ResponseEntity.ok(paymentMethodDTO);
     }
 

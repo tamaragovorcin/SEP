@@ -19,7 +19,7 @@ public class NewOrderDTO {
 
     private Integer registeredUserId;
 
-    private Double quantity;
+    private Integer quantity;
 
     private Integer cartId;
 
