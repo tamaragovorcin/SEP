@@ -16,6 +16,8 @@ import com.google.zxing.WriterException;
 import com.google.zxing.client.j2se.MatrixToImageWriter;
 import com.google.zxing.common.BitMatrix;
 import com.google.zxing.qrcode.decoder.ErrorCorrectionLevel;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -40,14 +42,20 @@ public class CartController {
     private CartService cartService;
     @Autowired
     private IProductService productService;
-
+    private static final Logger logger = LoggerFactory.getLogger(CartController.class);
 
     @PostMapping("/add")
-    // @PreAuthorize("hasRole('PHARMACIST')")
-    public ResponseEntity<String> addReservation(@RequestBody NewOrderDTO newOrderDTO) {
+    @PreAuthorize("hasRole('ROLE_USER')")
+    public ResponseEntity<String> addToCart(@RequestBody NewOrderDTO newOrderDTO) {
+        Cart cart = new Cart();
+        try {
+             cart = cartService.save(newOrderDTO);
+            logger.info("Item with id: " + newOrderDTO.getProductId() + "has just been added to the cart by user " + cartService.getLoggedUser().getUsername());
 
-       Cart cart = cartService.save(newOrderDTO);
-
+        }
+        catch (Exception e){
+            logger.error("Exception while adding product with id: " + newOrderDTO.getProductId()  + "to a cart by user " + cartService.getLoggedUser().getUsername() + ". Error is: " + e);
+        }
         return cart == null ?
                 new ResponseEntity<>(HttpStatus.NOT_FOUND) :
                 new ResponseEntity<>("Item is successfully added!", HttpStatus.CREATED);
@@ -55,24 +63,24 @@ public class CartController {
 
     @GetMapping("/allUser")
     @PreAuthorize("hasRole('ROLE_USER')")
-    public ResponseEntity<List<NewOrderDTO>> allUser() {
+    public ResponseEntity<List<NewOrderDTO>> allInCart() {
 
         BufferedImage img = null;
-        List<Cart> carts = cartService.findAll();
+        List<Cart> carts = new ArrayList<>();
         List<NewOrderDTO> cartDTOS = new ArrayList<NewOrderDTO>();
 
-        User user = cartService.getLoggedUser();
-        for (Cart cart : carts) {
-            if(cart.getBuyer().getId()==user.getId() && cart.getStatus().equals("CREATED")) {
-                NewOrderDTO cartDTO = new NewOrderDTO();
+        try {
+            carts =  cartService.findAll();
+            User user = cartService.getLoggedUser();
+            for (Cart cart : carts) {
+                if (cart.getBuyer().getId() == user.getId() && cart.getStatus().equals("CREATED")) {
+                    NewOrderDTO cartDTO = new NewOrderDTO();
 
-                cartDTO.setCartId(cart.getId());
-                cartDTO.setName(cart.getProduct().getName());
-                cartDTO.setQuantity(cart.getQuantity());
-                cartDTO.setPrice(cart.getProduct().getPrice());
-                cartDTO.setProductId(cart.getProduct().getId());
-
-
+                    cartDTO.setCartId(cart.getId());
+                    cartDTO.setName(cart.getProduct().getName());
+                    cartDTO.setQuantity(cart.getQuantity());
+                    cartDTO.setPrice(cart.getProduct().getPrice());
+                    cartDTO.setProductId(cart.getProduct().getId());
 
 
                     Set<String> list = new HashSet<String>();
@@ -96,16 +104,19 @@ public class CartController {
                     cartDTO.setPictures(list);
 
 
-
-                cartDTOS.add(cartDTO);
+                    cartDTOS.add(cartDTO);
                 }
 
 
             }
 
+            logger.info("User: " + cartService.getLoggedUser().getUsername()   + "is viewing its cart." );
 
 
+        } catch (Exception e){
+            logger.error("Exception while opening cart of the user: " +  cartService.getLoggedUser().getUsername() + ". Error is: " + e);
 
+        }
 
         return cartDTOS == null ?
                 new ResponseEntity<>(HttpStatus.NOT_FOUND) :
@@ -114,12 +125,21 @@ public class CartController {
 
 
     @GetMapping("/remove/{id}")
-    // @PreAuthorize("hasRole('PHARMACIST')")
+    @PreAuthorize("hasRole('ROLE_USER')")
     public ResponseEntity<String> remove(@PathVariable String id) {
 
-        Cart cart = cartService.findById(Integer.parseInt(id));
-        cartService.delete(cart);
+        Cart cart = new Cart();
 
+        try {
+            cart = cartService.findById(Integer.parseInt(id));
+            cartService.delete(cart);
+            logger.info("Item with id: " + id + "has been deleted from the cart by user: " + cartService.getLoggedUser().getUsername());
+
+        }
+        catch (Exception e){
+            logger.error("Exception while deleting item from cart by user: " +  cartService.getLoggedUser().getUsername() + ". Error is: " + e);
+
+        }
         return cart == null ?
                 new ResponseEntity<>(HttpStatus.NOT_FOUND) :
                 new ResponseEntity<>("Item is successfully deleted!", HttpStatus.CREATED);
