@@ -1,4 +1,4 @@
-package com.PayPalService;
+package com.PayPalService.Model;
 
 import lombok.*;
 import org.springframework.stereotype.Service;
