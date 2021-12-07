@@ -39,7 +39,7 @@ public class Cart {
 
 
     @Column(name = "quantity", nullable = true)
-    private Double quantity;
+    private Integer quantity;
 
 
     @Column(name = "status", nullable = true)
