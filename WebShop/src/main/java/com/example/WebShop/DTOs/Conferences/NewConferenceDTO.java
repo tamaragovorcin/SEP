@@ -22,6 +22,8 @@ import java.util.Set;
 @NoArgsConstructor
 @AllArgsConstructor
 public class NewConferenceDTO {
+    private  Integer id;
+
     private String name;
 
     private String slogan;
@@ -35,6 +37,10 @@ public class NewConferenceDTO {
     private String content;
 
     private Integer capacity;
+
+    private Double registrationFee;
+
+    private Boolean online;
 
     private List<String> pictures;
 }

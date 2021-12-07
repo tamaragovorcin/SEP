@@ -1,35 +1,39 @@
 package com.example.WebShop.Service.Implementations;
 
+import com.example.WebShop.DTOs.Conferences.NewConferenceDTO;
 import com.example.WebShop.DTOs.NewOrderDTO;
 import com.example.WebShop.Model.Cart;
+import com.example.WebShop.Model.Pictures;
 import com.example.WebShop.Model.User;
 import com.example.WebShop.Repository.CartRepository;
 import com.example.WebShop.Repository.ProductRepository;
 import com.example.WebShop.Repository.UserRepository;
 import com.example.WebShop.Service.IServices.ICartService;
+import com.example.WebShop.Service.Implementations.Conferences.ConferenceServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Service;
 
+import javax.imageio.ImageIO;
+import java.awt.image.BufferedImage;
+import java.io.ByteArrayOutputStream;
+import java.io.File;
+import java.io.IOException;
 import java.time.LocalDate;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 @Service
 public class CartService implements ICartService {
-
-
     @Autowired
     private CartRepository cartRepository;
-
-
     @Autowired
     private ProductServiceImpl productService;
-
     @Autowired
     private UserRepository userRepository;
+    @Autowired
+    private ConferenceServiceImpl conferenceService;
+
 
     @Override
     public List<Cart> findAll() {
@@ -44,6 +48,7 @@ public class CartService implements ICartService {
         cart.setBuyer(registeredUser);
         cart.setQuantity(newOrderDTO.getQuantity());
         cart.setProduct(productService.findById(newOrderDTO.getProductId()));
+
         cart.setStatus("CREATED");
 
         return cartRepository.save(cart);
@@ -69,4 +74,5 @@ public class CartService implements ICartService {
     public Cart update(Cart order) {
         return cartRepository.save(order);
     }
+
 }

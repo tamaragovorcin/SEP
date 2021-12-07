@@ -1,6 +1,7 @@
 package com.example.WebShop.Model;
 
 
+import com.example.WebShop.Model.Conferences.Accommodation;
 import com.example.WebShop.Model.Conferences.Conference;
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -39,5 +40,11 @@ public class Pictures {
     @ManyToOne(cascade = CascadeType.MERGE, fetch = FetchType.LAZY)
     @JoinColumn(name = "conference_id", referencedColumnName = "id", nullable = true, unique = false)
     private Conference conference;
+
+    @JsonIgnore
+    @JsonBackReference(value="accommodation-pictures")
+    @ManyToOne(cascade = CascadeType.MERGE, fetch = FetchType.LAZY)
+    @JoinColumn(name = "accommodation_id", referencedColumnName = "id", nullable = true, unique = false)
+    private Accommodation accommodation;
 
 }

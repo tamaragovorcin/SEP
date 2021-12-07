@@ -1,5 +1,6 @@
 package com.example.WebShop.Model;
 
+import com.example.WebShop.Model.Conferences.Conference;
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonIdentityInfo;
 import com.fasterxml.jackson.annotation.JsonIgnore;

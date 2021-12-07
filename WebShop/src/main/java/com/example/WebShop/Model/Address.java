@@ -1,6 +1,7 @@
 package com.example.WebShop.Model;
 
 import com.example.WebShop.DTOs.AddressDTO;
+import com.example.WebShop.Model.Conferences.Accommodation;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.AllArgsConstructor;
 import lombok.Getter;

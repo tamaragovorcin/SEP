@@ -59,7 +59,7 @@ class Header extends Component {
 							<button  onClick={this.handleAddConference} className="btn btn-outline-secondary btn-sm" style={{  border: "none", marginBottom: "1rem" }}><RiAddCircleLine /></button>
 							</li>
 							<li>
-							<Link to="/orders"><AiOutlineShoppingCart /></Link>
+							<Link to="/conferencesCart"><AiOutlineShoppingCart /></Link>
 							</li>
 							<li>
 							<Link to="/ordered"><FiTruck /></Link>

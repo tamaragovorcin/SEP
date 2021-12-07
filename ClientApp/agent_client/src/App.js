@@ -13,13 +13,17 @@ import NewCampaigns from './pages/NewCampaigns'
 import Ordered from './pages/Ordered'
 import OrderedAdmin from './pages/OrderedAdmin'
 import Conferences from './pages/conferences/Conferences'
+import ConferencesCart from './pages/conferences/ConferencesCart'
+import Conference from './pages/conferences/Conference';
+
 function App() {
   return (
     <Router>
 			<Switch>
 				<Link exact to="/login" path="/login" component={Login} />
 				
-				<Link exact to="/" path="/" component={All} />
+				{/* <Link exact to="/" path="/" component={All} /> */}
+				<Link exact to="/" path="/" component={Homepage} />
 				<Link exact to="/registration" path="/registration" component={Registration} />
 				<Link exact to="/unauthorized" path="/unauthorized" component={Unauthorized} />
 				<Link exact to="/allAgents" path="/allAgents" component={AllAgents} />
@@ -30,6 +34,11 @@ function App() {
 				<Link exact to="/orderedAdmin" path="/orderedAdmin" component={OrderedAdmin} />
 				<Link exact to="/newCampaigns" path="/newCampaigns" component={NewCampaigns} />
 				<Link exact to="/conferences" path="/conferences" component={Conferences} />
+				<Link exact to="/conferencesCart" path="/conferencesCart" component={ConferencesCart} />
+
+				<Route path="/conference/:idConf/:idCart" children={<Conference/>} />
+
+
 
 			</Switch>
 	</Router>

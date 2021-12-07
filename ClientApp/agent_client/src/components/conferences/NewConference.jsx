@@ -16,6 +16,7 @@ class NewConference extends Component {
             endDate: "",
             content: "",
             capacity : 0,
+			registrationFee : 0,
 			pictures: [],
 			openModal: false,
 			help: [],
@@ -109,6 +110,7 @@ class NewConference extends Component {
             endDate : this.state.endDate,
             content : this.state.content,
             capacity : this.state.capacity,
+			registrationFee : this.state.registrationFee,
 			pictures: h
 		};
 		this.handleAdd(dto);
@@ -137,6 +139,9 @@ class NewConference extends Component {
 	}
 	handleCapacityChange = (e) => {
 		this.setState({ capacity: e.target.value });
+	}
+	handleRegistraionFeeChange = (e) => {
+		this.setState({ registrationFee: e.target.value });
 	}
 
 	handleModalClose = ()=>{
@@ -252,6 +257,18 @@ class NewConference extends Component {
 												type="number"
 												onChange={this.handleCapacityChange}
 												value={this.state.capacity}
+											/>
+										</div>
+									</div>
+									<div className="control-group">
+										<div className="form-group controls mb-0 pb-2" style={{ color: "#6c757d", opacity: 1 }}>
+											<label>Registration fee:</label>
+											<input
+												className="form-control"
+												id="registrationFee"
+												type="number"
+												onChange={this.handleRegistraionFeeChange}
+												value={this.state.registrationFee}
 											/>
 										</div>
 									</div>
