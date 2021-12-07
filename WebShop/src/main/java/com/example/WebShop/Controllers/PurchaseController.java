@@ -37,7 +37,6 @@ public class PurchaseController {
     @PostMapping("/add")
     // @PreAuthorize("hasRole('PHARMACIST')")
     public ResponseEntity<String> addReservation(@RequestBody OrderDTO newOrderDTO) {
-
        Purchase purchase = purchaseService.save(newOrderDTO);
 
         return purchase == null ?

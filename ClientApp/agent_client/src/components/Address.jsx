@@ -1,13 +1,13 @@
 import React, { Component } from "react";
-import { Button, Modal } from "react-bootstrap";
-import DatePicker from "react-datepicker";
-import "react-datepicker/dist/react-datepicker.css";
-import getAuthHeader from "../GetHeader";
+import {  Modal } from "react-bootstrap";
 import Axios from "axios";
-import { BASE_URL_AGENT } from "../constants.js";
+import { BASE_URL_PAYPAL } from "../constants.js";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { Carousel } from 'react-responsive-carousel';
 import { YMaps, Map } from "react-yandex-maps";
+import qr from '../static/qr.png';
+import bank_cards from '../static/bank_cards.jpg';
+import bitcoin from '../static/bitcoin.png';
+import paypal from '../static/paypall.png';
 
 import ModalDialog from "../components/ModalDialog";
 const mapState = {
@@ -26,11 +26,20 @@ class Address extends Component {
 		addressNotFoundError: "none",
 		openModal: false,
 		coords: [],
+		isPaypalAllowed : true,
+		isBankCardAllowed : true,
+		isQRAllowed : true,
+		isBitcoinAllowed : true
 	};
+
+	
     
 	constructor(props) {
 		super(props);
 		this.addressInput = React.createRef();
+		console.log(this.isBankCardAllowed)
+		console.log(this.isPaypalAllowed)
+		console.log(this.isBitcoinAllowed)
 	}
 	handleModalClose = ()=>{
 		this.setState({openModal: false})
@@ -50,7 +59,7 @@ class Address extends Component {
 		this.setState({ address: event.target.value });
 	};
 
-    validateForm = (userDTO) => {
+    validateForm = () => {
 		this.setState({
 			
 			addressError: "none",
@@ -66,6 +75,8 @@ class Address extends Component {
 		return true;
 	};
 	componentDidMount() {
+		
+
 	}
 
 	handleQuantityChange = (event) => {
@@ -73,10 +84,17 @@ class Address extends Component {
         this.setState({ quantity: event.target.value });
 	
     };
-	
 
-    handleReserveChange = () => {
-        let id = localStorage.getItem("userId").substring(1, localStorage.getItem('userId').length - 1);
+	getPrice = (products)=> {
+		let price = 0;
+		for (let i = 0; i < products.length; i++) {
+			price = price + products[i].quantity*products[i].price
+		}
+		return price
+	}
+
+	handlePayPalClicked = () => {
+		let id = localStorage.getItem("userId").substring(1, localStorage.getItem('userId').length - 1);
 		let street;
 		let city;
 		let country;
@@ -100,48 +118,43 @@ class Address extends Component {
 				}
 			})
 			.then((res) => {
-				let userDTO = {
-					address: { street, country, city, latitude, longitude },
-					products: this.props.products,
+				var foundAddress= { street, country, city, latitude, longitude }
+				var products= this.props.products
                     
-				};
-				console.log(userDTO);
 
-				if (this.validateForm(userDTO)) {
+				if (this.validateForm()) {
 					if (found === false) {
 						this.setState({ addressNotFoundError: "initial" });
 					} else {
-						console.log(userDTO);
-						Axios.post(BASE_URL_AGENT + "/api/purchase/add", userDTO, {  headers: { Authorization: getAuthHeader() } })
-							.then((res) => {
-								if (res.status === 409) {
-									this.setState({
-										errorHeader: "Resource conflict!",
-										errorMessage: "Email already exist.",
-										hiddenErrorAlert: false,
-									});
-								} else if (res.status === 500) {
-									this.setState({ errorHeader: "Internal server error!", errorMessage: "Server error.", hiddenErrorAlert: false });
-								} else {
-									
-									this.setState({openModal : true})
+						localStorage.setItem("orderAddress", JSON.stringify(foundAddress));
+						localStorage.setItem("orderProducts", JSON.stringify(products));
 
-		
+						const checkoutDTO = {
+							price : this.getPrice(products),
+							currency : "USD",
+							method : "PAYPAL",
+							intent : "SALE",
+							description : "description"
+						}
+
+						Axios.post(BASE_URL_PAYPAL +"/api/paypal/pay",checkoutDTO)
+							.then( (res) => {
+								const data = res.data
+								window.location.href = data
 								}
-							})
-							.catch((err) => {
-								console.log(err);
+							)
+							.catch(err => console.log(err));
+									}
+								}
 							});
-					}
-				}
-			});
-	};
+	}
+
 	render() {
 
 		return (
 			<Modal
 				show={this.props.show}
-				dialogClassName="modal-80w-150h"
+				dialogClassName="modal-250w-150h"
 				aria-labelledby="contained-modal-title-vcenter"
 				centered
 				onHide={this.props.onCloseModal}
@@ -180,12 +193,51 @@ class Address extends Component {
 									</div>
 								</div>
 					
+					<div className="control-group">
+						<div className="form-group controls mb-0 pb-2" style={{ color: "#6c757d", opacity: 1 }}>
+							<label>Choose payment method</label>
+						</div>
+						<div class="container">
+                <div class="row">
+                  {this.state.isPaypalAllowed === true && 
+                    <div class="col">
+                       
+                        <button type="button" class="btn  btn-sm" data-toggle="button" aria-pressed="false" autocomplete="off" 
+							onClick={this.handlePayPalClicked}>
+							<img src={paypal} className="App-logo" alt="logo" />
+						</button>
 
-					<div style={{ marginTop: "2rem", marginLeft: "12rem" }}>
-						<Button className="mt-3" onClick={this.handleReserveChange}>
-							{this.props.buttonName}
-						</Button>
+                    </div>
+                  }
+                  {this.state.isBankCardAllowed === true && 
+                    <div class="col">
+                        <button type="button" class="btn  btn-sm" data-toggle="button" aria-pressed="false" autocomplete="off"> 
+							<img src={bank_cards} className="App-logo" alt="logo" />
+						</button>
+                    </div>
+                  }
+                  {this.state.isQRAllowed === true && 
+                    <div class="col">
+                       
+                        <button type="button" class="btn  btn-sm" data-toggle="button" aria-pressed="false" autocomplete="off">
+							<img src={qr} className="App-logo" alt="logo" />	
+						</button>
+
+                    </div>
+                  }
+                  {this.state.isBitcoinAllowed === true && 
+                    <div class="col">
+                       
+                          <button type="button" class="btn  btn-sm" data-toggle="button" aria-pressed="false" autocomplete="off"> 
+							 <img src={bitcoin} className="App-logo" alt="logo" />
+						  </button>
+
+                    </div>
+                  }
+              </div>
+            </div>
 					</div>
+
 				</Modal.Body>
 				<ModalDialog
 					show={this.state.openModal}

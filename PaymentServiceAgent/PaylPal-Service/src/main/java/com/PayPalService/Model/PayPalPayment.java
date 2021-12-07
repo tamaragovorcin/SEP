@@ -18,7 +18,11 @@ import javax.persistence.Id;
 public class PayPalPayment {
 
     @Id
-    @Column(name="paymentId", unique=true, nullable=false)
+    @GeneratedValue
+    @Column(name="id", unique=true, nullable=false)
+    private Integer id;
+
+    @Column(name="paymentId")
     private String paymentId;
 
     @Column(name = "payerId")

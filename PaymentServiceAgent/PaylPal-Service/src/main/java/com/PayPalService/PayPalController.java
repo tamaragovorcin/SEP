@@ -33,8 +33,8 @@ public class PayPalController {
     public String payment(@RequestBody Order order) {
         try {
             Payment payment = payPalService.createPayment(order.getPrice(), order.getCurrency(), order.getMethod(),
-                    order.getIntent(), order.getDescription(), "http://localhost:3000/#/payPalError",
-                    "http://localhost:3000/#/payPalParams");
+                    order.getIntent(), order.getDescription(), "http://localhost:3001/#/payPalError",
+                    "http://localhost:3001/#/payPalParams");
             for(Links link:payment.getLinks()) {
                 if(link.getRel().equals("approval_url")) {
                     return link.getHref();
@@ -45,20 +45,21 @@ public class PayPalController {
 
             e.printStackTrace();
         }
-        return "http://localhost:3000/#/payPalError";
+        return "http://localhost:3001/#/payPalError";
     }
 
     @PostMapping("/success")
     public String successPay(@RequestBody PaymentInfo paymentInfo) {
         try {
             Payment payment = payPalService.executePayment(paymentInfo.getPaymentId(), paymentInfo.getPayerId());
+            System.out.println(payment.toJSON());
             if (payment.getState().equals("approved")) {
                 payPalService.savePayment(payment);
-                browse("http://localhost:3000/#/payPalSuccess");
+                browse("http://localhost:3001/#/payPalSuccess");
                  return "success";
             }
         } catch (PayPalRESTException e) {
-            browse("http://localhost:3000/#/payPalError");
+            browse("http://localhost:3001/#/payPalError");
             System.out.println(e.getMessage());
         }
         return "error";

@@ -7,6 +7,7 @@ export const BASE_URL_STORY =  'http://localhost:4004';
 export const BASE_URL_USER_INTERACTION =  'http://localhost:4005';
 export const BASE_URL_USER =  'http://localhost:4006';
 export const BASE_URL_AGENT =  'http://localhost:8085';
+export const BASE_URL_PAYPAL =  'http://localhost:9090/paypal-service';
 
 export const constants = {
 	BASE_URL_USER: "http://localhost:4006",
