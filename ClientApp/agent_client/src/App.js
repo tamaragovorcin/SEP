@@ -14,6 +14,9 @@ import Ordered from './pages/Ordered'
 import OrderedAdmin from './pages/OrderedAdmin'
 import Conferences from './pages/conferences/Conferences'
 import PaymentMethod from './pages/PaymentMethod'
+import Payment from './pages/payment'
+
+
 function App() {
   return (
     <Router>
@@ -32,6 +35,7 @@ function App() {
 				<Link exact to="/newCampaigns" path="/newCampaigns" component={NewCampaigns} />
 				<Link exact to="/conferences" path="/conferences" component={Conferences} />
 				<Link exact to="/paymentMethod" path="/paymentMethod" component={PaymentMethod} />
+				<Link exact to="/payment" path="/payment" component={Payment} />
 
 			</Switch>
 	</Router>

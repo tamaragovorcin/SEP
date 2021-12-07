@@ -1,5 +1,6 @@
 package com.example.WebShop.Controllers;
 
+import com.example.WebShop.DTOs.EditProductDTO;
 import com.example.WebShop.DTOs.NewProductDTO;
 import com.example.WebShop.Model.Pictures;
 import com.example.WebShop.Model.Product;
@@ -65,6 +66,21 @@ public class ProductController {
             logger.error("Exception while uploading new picture. Error is: " + e);
         }
         return new ResponseEntity<>("Image is successfully added!", HttpStatus.CREATED);
+    }
+
+    @PostMapping("/edit")
+    @PreAuthorize("hasRole('ROLE_ADMIN')")
+    public ResponseEntity<String> editProduct(@RequestBody EditProductDTO editProductDTO) {
+        Product product = new Product();
+        try {
+            product = productService.update(editProductDTO);
+            logger.info("Editing product: " + editProductDTO.getName());
+        }
+        catch (Exception e){
+            logger.error("Exception while editing product. Error is: " + e);
+        }
+        return product == null ? new ResponseEntity<>(HttpStatus.NOT_FOUND)
+                : new ResponseEntity<>("Product is successfully edited!", HttpStatus.CREATED);
     }
 
     @GetMapping("/all")

@@ -6,7 +6,7 @@ import { BASE_URL } from "../constants.js";
 import "../App.js";
 import { Redirect } from "react-router-dom";
 import Order from "../components/Order";
-
+import EditProduct from "../components/EditProduct";
 import getAuthHeader from "../GetHeader";
 import ModalDialog from "../components/ModalDialog";
 
@@ -37,7 +37,11 @@ class All extends Component {
 		showedSizes: [],
 		sizes: [],
 		openModal: false,
-
+		product: "",
+		showEditModal: false,
+		quantity: "",
+		price: "",
+		name: "",
 
 	};
 
@@ -72,6 +76,23 @@ class All extends Component {
 		}
 	};
 
+	handleQuantityChange = (event) => {
+
+        this.setState({ quantity: event.target.value });
+	
+    };
+
+	handleNameChange = (event) => {
+
+        this.setState({ name: event.target.value });
+	
+    };
+
+	handlePriceChange = (event) => {
+
+        this.setState({ price: event.target.value });
+	
+    };
 	componentDidMount() {
 		
 		Axios.get(BASE_URL + "/api/product/all",{ headers: { Authorization: getAuthHeader() }})
@@ -131,10 +152,22 @@ class All extends Component {
 
 	};
 
+
+	handleEdit = (product) => {
+		this.setState({ product: product });
+		this.setState({ showEditModal: true });
+		this.setState({ name: product.name });
+		this.setState({ quantity: product.quantity });
+		this.setState({ price: product.price });
+
+	};
+
 	handleOrderModalClose = () => {
 		this.setState({ showOrderModal: false });
 	};
-
+	handleEditModalClose = () => {
+		this.setState({ showEditModal: false });
+	};
 	handleColorChange = (e) => {
 
 		let u = [];
@@ -243,6 +276,24 @@ class All extends Component {
 										>
 											Add to cart
 									</button></div>
+
+
+									<div hidden={!this.hasRole("ROLE_ADMIN")}>  <button
+											style={{
+												background: "#1977cc",
+												marginTop: "15px",
+												marginLeft: "40%",
+												width: "20%",
+											}}
+											onClick={()=>this.handleEdit(product)}
+											className="btn btn-primary btn-xl"
+											id="sendMessageButton"
+											type="button"
+										>
+											Edit
+									</button></div>
+
+
 									<div hidden={!this.hasRole("ROLE_ADMIN")}>  <button
 											style={{
 												background: "#1977cc",
@@ -278,6 +329,19 @@ class All extends Component {
 					handleColorChange={this.handleColorChange}
 					handleSizeChange={this.handleSizeChange}
 					shirt={this.state.shirt}
+				/>
+					<EditProduct
+					buttonName="Save"
+					header="Edit product"
+					show={this.state.showEditModal}
+					onCloseModal={this.handleEditModalClose}
+					handleNameChange={this.handleNameChange}
+					handleQuantityChange={this.handleQuantityChange}
+					handlePriceChange={this.handlePriceChange}
+					product={this.state.product}
+					name = {this.state.name}
+					quantity = {this.state.quantity}
+					price = {this.state.price}
 				/>
 			</React.Fragment>
 		);
