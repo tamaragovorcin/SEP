@@ -16,6 +16,9 @@ import Conferences from './pages/conferences/Conferences'
 import PaymentMethod from './pages/PaymentMethod'
 import Payment from './pages/payment'
 
+import PayPalSuccess from './components/payment/PayPalSuccess';
+import PayPalError from './components/payment/PayPalError';
+import PayPalParams from './components/payment/PayPalParams';
 
 function App() {
   return (
@@ -36,6 +39,11 @@ function App() {
 				<Link exact to="/conferences" path="/conferences" component={Conferences} />
 				<Link exact to="/paymentMethod" path="/paymentMethod" component={PaymentMethod} />
 				<Link exact to="/payment" path="/payment" component={Payment} />
+
+				
+				<Link exact to="/payPalSuccess" path="/payPalSuccess" component={PayPalSuccess} />
+				<Link exact to="/payPalError" path="/payPalError" component={PayPalError} />
+				<Link exact to="/payPalParams" path="/payPalParams" component={PayPalParams} />
 
 			</Switch>
 	</Router>

@@ -1,7 +1,7 @@
 "# Sistemi elektronskog placanja" 
 
 Payment service:
-    Front             - http://localhost:3000
+              
 
     Eureka server     - http://localhost:8761
 

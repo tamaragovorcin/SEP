@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from 'react-router-dom';
 
 const PayPalError = () => {
 
@@ -10,7 +10,7 @@ const PayPalError = () => {
                 <h2 >
                     Error with payment with paypal!
                 </h2>
-
+                <Link to="/">Back to web shop</Link>
             </div>
         </React.Fragment>
     );   
