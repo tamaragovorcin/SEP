@@ -1,4 +1,4 @@
-package com.BankCardService;
+package com.BankCardService.Dtos;
 
 import com.google.gson.annotations.SerializedName;
 

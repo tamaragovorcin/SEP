@@ -1,5 +1,7 @@
-package com.BankCardService;
+package com.BankCardService.Controller;
 
+import com.BankCardService.Dtos.CreatePayment;
+import com.BankCardService.Dtos.CreatePaymentResponse;
 import com.stripe.exception.StripeException;
 import com.stripe.model.PaymentIntent;
 import com.stripe.param.PaymentIntentCreateParams;
@@ -13,8 +15,8 @@ public class BankCardController {
     @PostMapping("/create-payment-intent")
     public CreatePaymentResponse createPaymentIntent(@RequestBody CreatePayment createPayment) throws StripeException {
 
-        System.out.println("TU SAMMMMM");
-            PaymentIntentCreateParams params =
+
+        PaymentIntentCreateParams params =
                     PaymentIntentCreateParams.builder()
                             .setAmount(15 * 100L)
                             .setCurrency("usd")
@@ -35,6 +37,12 @@ public class BankCardController {
     }
     @GetMapping("")
     public String home() {
+        return "bank card home" ;
+    }
+
+
+    @GetMapping("/checkout")
+    public String checkout() {
         return "bank card home" ;
     }
 

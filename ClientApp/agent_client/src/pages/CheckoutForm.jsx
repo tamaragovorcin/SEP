@@ -4,7 +4,7 @@ import {
   useStripe,
   useElements
 } from "@stripe/react-stripe-js";
-
+import "../App.css";
 import { BASE_URL } from "../constants.js";
 
 import Axios from "axios";

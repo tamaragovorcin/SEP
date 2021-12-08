@@ -17,18 +17,19 @@ export default function App() {
   const [clientSecret, setClientSecret] = useState("");
 
   useEffect(() => {
-    // Create PaymentIntent as soon as the page loads
-    let items= [{ id: "xl-tshirt" }]
-    Axios.post("http://localhost:9090/bank-card-service/api/bankcard/create-payment-intent",  items)
-			.then((res) => {
-				console.log(res.data);
-                setClientSecret(res.data.clientSecret)
-			})
-			.catch((err) => {
-				console.log(err);
-			});
+    // Create PaymentIntent as soon as the page loads body: JSON.stringify({ items: [{ id: "xl-tshirt" }] }
+    let items= { id: "xl-tshirt" }
+    Axios.post("http://localhost:9090/bank-card-service/api/bankcard/create-payment-intent",  items, { headers: { "Content-Type": "application/json" }})
+    .then((res) => {
 
-
+     console.log(res.data)
+      setClientSecret(res.data.clientSecret)
+    })
+   
+    
+     
+			
+		
   }, []);
 
   const appearance = {
@@ -43,7 +44,7 @@ export default function App() {
     <div className="App">
       {clientSecret && (
         <Elements options={options} stripe={stripePromise}>
-         
+         <CheckoutForm></CheckoutForm>
         </Elements>
       )}
     </div>
