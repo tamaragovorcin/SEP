@@ -14,7 +14,9 @@ import Ordered from './pages/Ordered'
 import OrderedAdmin from './pages/OrderedAdmin'
 import Conferences from './pages/conferences/Conferences'
 import ConferencesCart from './pages/conferences/ConferencesCart'
-import Conference from './pages/conferences/Conference';
+import Conference from './pages/conferences/Conference'
+import ConferencesOrders from './pages/conferences/ConferencesOrders';
+
 
 function App() {
   return (
@@ -35,6 +37,7 @@ function App() {
 				<Link exact to="/newCampaigns" path="/newCampaigns" component={NewCampaigns} />
 				<Link exact to="/conferences" path="/conferences" component={Conferences} />
 				<Link exact to="/conferencesCart" path="/conferencesCart" component={ConferencesCart} />
+				<Link exact to="/conferencesOrders" path="/conferencesOrders" component={ConferencesOrders} />
 
 				<Route path="/conference/:idConf/:idCart" children={<Conference/>} />
 

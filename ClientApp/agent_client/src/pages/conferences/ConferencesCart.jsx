@@ -76,9 +76,7 @@ class ConferencesCart extends Component {
 			});
 		}
 	};
-    handleOrderModalClose = () => {
-        this.setState({ showOrderModal: false });
-    };
+   
 	componentDidMount() {
 		let id = localStorage.getItem("userId").substring(1, localStorage.getItem('userId').length - 1);
 		Axios.get(BASE_URL_AGENT + "/api/conference/reservations" , {  headers: { Authorization: getAuthHeader() } })
@@ -119,7 +117,31 @@ class ConferencesCart extends Component {
 
 
 	handleOrder = () => {
-		this.setState({ showOrderModal: true });
+		let dto = {
+			items: this.state.products,
+			
+		};
+				Axios.post(BASE_URL_AGENT + "/api/conference/addOrder", dto, {  headers: { Authorization: getAuthHeader() } })
+					.then((res) => {
+						if (res.status === 409) {
+							this.setState({
+								errorHeader: "Resource conflict!",
+								errorMessage: "Email already exist.",
+								hiddenErrorAlert: false,
+							});
+						} else if (res.status === 500) {
+							this.setState({ errorHeader: "Internal server error!", errorMessage: "Server error.", hiddenErrorAlert: false });
+						} else {
+							
+							this.setState({openModal : true})
+
+
+						}
+					})
+					.catch((err) => {
+						console.log(err);
+					});
+		
 
 
 
@@ -294,16 +316,7 @@ class ConferencesCart extends Component {
 					text="You have successfully removed the item."
 				/>
 
-				
-
-				<Address
-					buttonName="Add"
-					header="Add product to cart"
-					show={this.state.showOrderModal}
-					onCloseModal={this.handleOrderModalClose}
-					handleAddress={this.handleAddressOrderChange}
-					products={this.state.products}
-				/>
+			
 			</React.Fragment>
 		);
 	}

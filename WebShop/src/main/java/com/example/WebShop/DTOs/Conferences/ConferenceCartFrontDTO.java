@@ -14,6 +14,7 @@ import java.util.Set;
 public class ConferenceCartFrontDTO {
     private Integer conferenceId;
 
+    private String conferenceName;
     private String accommodation;
 
     private String transportation;

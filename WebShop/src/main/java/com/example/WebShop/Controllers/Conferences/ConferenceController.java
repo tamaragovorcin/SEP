@@ -3,21 +3,17 @@ package com.example.WebShop.Controllers.Conferences;
 import com.example.WebShop.DTOs.Conferences.*;
 import com.example.WebShop.DTOs.NewOrderDTO;
 import com.example.WebShop.DTOs.NewProductDTO;
+import com.example.WebShop.DTOs.OrderDTO;
 import com.example.WebShop.Model.Cart;
-import com.example.WebShop.Model.Conferences.Accommodation;
-import com.example.WebShop.Model.Conferences.Conference;
-import com.example.WebShop.Model.Conferences.ConferencesCart;
-import com.example.WebShop.Model.Conferences.Transportation;
+import com.example.WebShop.Model.Conferences.*;
 import com.example.WebShop.Model.Pictures;
 import com.example.WebShop.Model.Product;
-import com.example.WebShop.Service.Implementations.Conferences.AccommodationServiceImpl;
-import com.example.WebShop.Service.Implementations.Conferences.ConferenceCartServiceImpl;
-import com.example.WebShop.Service.Implementations.Conferences.ConferenceServiceImpl;
-import com.example.WebShop.Service.Implementations.Conferences.TransportationService;
+import com.example.WebShop.Service.Implementations.Conferences.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -42,6 +38,8 @@ public class ConferenceController
     private TransportationService transportationService;
     @Autowired
     private ConferenceCartServiceImpl conferenceCartService;
+    @Autowired
+    ConferencesPurchaseServiceImpl conferencesPurchaseService;
 
 
 
@@ -163,5 +161,23 @@ public class ConferenceController
         return cart == null ?
                 new ResponseEntity<>(HttpStatus.NOT_FOUND) :
                 new ResponseEntity<>("Item is successfully deleted!", HttpStatus.CREATED);
+    }
+    @PostMapping("/addOrder")
+    public ResponseEntity<String> addOrder(@RequestBody ConferencePurchaseDTO dto) {
+
+        ConferencesPurchase conference = conferencesPurchaseService.save(dto);
+
+        return conference == null ? new ResponseEntity<>(HttpStatus.NOT_FOUND)
+                : new ResponseEntity<>("Conference is successfully added!", HttpStatus.CREATED);
+    }
+    @GetMapping("/userPurchases")
+    @PreAuthorize("hasRole('ROLE_USER')")
+    public ResponseEntity<List<ConferencePurchaseFrontDTO>> allUserPurchases(){
+
+        List<ConferencePurchaseFrontDTO> conference = conferencesPurchaseService.findUserPurchases();
+
+        return conference == null ?
+                new ResponseEntity<>(HttpStatus.NOT_FOUND) :
+                ResponseEntity.ok(conference);
     }
 }

@@ -62,7 +62,7 @@ class Header extends Component {
 							<Link to="/conferencesCart"><AiOutlineShoppingCart /></Link>
 							</li>
 							<li>
-							<Link to="/ordered"><FiTruck /></Link>
+							<Link to="/conferencesOrders"><FiTruck /></Link>
 							</li>
 						
 							

@@ -31,7 +31,7 @@ class HomePage extends React.Component {
 				<TopBar />
 				<Header />
 
-				<section id="hero" className="d-flex align-items-center">
+				<section id="hero"style={{marginTop:"10rem"}}>
 					<div className="container" >
                     <section class="section-tours" id="section-tours">
                     <div class="u-center-text u-margin-bottom-big">
@@ -48,17 +48,17 @@ class HomePage extends React.Component {
                                         &nbsp;
                                     </div>
                                     <h4 class="card__heading">
-                                        <span class="card__heading-span card__heading-span--1">Equipment Web Shop</span>
+                                        <span class="card__heading-span">Equipment Web Shop</span>
                                     </h4>
                                     <div class="card__details">
                                      
                                     </div>
                                 
                             </div>
-                            <div class="card__side card__side--back card__side--back-1">
+                            <div class="card__side card__side--back">
                                     <div class="card__cta">
                                    
-                                        <Link href="#popup" class="btn btn--white" to="/all">Choose!</Link>
+                                        <Link href="#popup" class="btn btn-primary" to="/all">Choose!</Link>
                                     </div>
                                 </div>
                         </div>
@@ -72,17 +72,17 @@ class HomePage extends React.Component {
                                         &nbsp;
                                     </div>
                                     <h4 class="card__heading">
-                                        <span class="card__heading-span card__heading-span--2">Conferences/courses Web Shop</span>
+                                        <span class="card__heading-span">Conferences/courses Web Shop</span>
                                     </h4>
                                     <div class="card__details">
                                        
                                     </div>
 
                                 </div>
-                                <div class="card__side card__side--back card__side--back-2">
+                                <div class="card__side card__side--back ">
                                     <div class="card__cta">
                                 
-                                        <Link href="#popup" class="btn btn--white" to="/conferences">Choose!</Link>
+                                        <Link href="#popup" class="btn btn-primary" to="/conferences">Choose!</Link>
                                     </div>
                                 </div>
                             </div>

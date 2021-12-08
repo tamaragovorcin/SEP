@@ -1888,7 +1888,7 @@ label{
 }
 
 .card__side--front {
-	background-color: #fff
+	background-color: rgb(255, 255, 255)
 }
 
 .card__side--back {

@@ -1,16 +1,14 @@
 import React, { Component } from "react";
-import TopBar from "../components/TopBar";
-import Header from "../components/Header";
+import TopBar from "../../components/TopBar";
+import Header from "../../components/Header";
 import Axios from "axios";
-import { BASE_URL, BASE_URL_AGENT } from "../constants.js";
-import "../App.js";
+import { BASE_URL, BASE_URL_AGENT } from "../../constants.js";
+import "../../App.js";
 import { Redirect } from "react-router-dom";
-import Address from "../components/Address";
-import ModalDialog from "../components/ModalDialog";
-import getAuthHeader from "../GetHeader";
-class ConferencesOrders extends Component {
+import ModalDialog from "../../components/ModalDialog";
+import getAuthHeader from "../../GetHeader";
 
-
+class ConferenceOrders extends Component {
 	state = {
 		products: [],
 		formShowed: false,
@@ -30,35 +28,30 @@ class ConferencesOrders extends Component {
 		showOrderModal: false,
 		handleOrderModalClose: false,
 		openModal: false,
-		show: true,
 
 
 	};
 
 	hasRole = (reqRole) => {
-		
-		
-		let roles =  ""
+
+
+		let roles = ""
 		if (localStorage === null) return false;
 
-		roles = localStorage.getItem("keyRole").substring(1, localStorage.getItem('keyRole').length-1)
-		
+		roles = localStorage.getItem("keyRole").substring(1, localStorage.getItem('keyRole').length - 1)
+
 		if (roles === null) return false;
 
 		if (reqRole === "*") return true;
 
-		
-		if (roles.trim() === reqRole) 
-		{
-			
+
+		if (roles.trim() === reqRole) {
+
 			return true;
 		}
 		return false;
 	};
-	handleModalClose = ()=>{
-		this.setState({openModal: false})
-		window.location.reload();
-	}
+
 	handleNameChange = (event) => {
 		this.setState({ name: event.target.value });
 	};
@@ -73,19 +66,15 @@ class ConferencesOrders extends Component {
 			});
 		}
 	};
-    handleOrderModalClose = () => {
-        this.setState({ showOrderModal: false });
-    };
+	handleOrderModalClose = () => {
+		this.setState({ showOrderModal: false });
+	};
 	componentDidMount() {
 		let id = localStorage.getItem("userId").substring(1, localStorage.getItem('userId').length - 1);
-		Axios.get(BASE_URL_AGENT + "/api/cart/allUser" , {  headers: { Authorization: getAuthHeader() } })
+		Axios.get(BASE_URL_AGENT + "/api/conference/userPurchases", { headers: { Authorization: getAuthHeader() } })
 			.then((res) => {
 				this.setState({ products: res.data });
 				console.log(res.data);
-				
-				if(res.data.length === 0){
-					this.setState({ show: false });
-				}
 			})
 			.catch((err) => {
 				console.log(err);
@@ -98,11 +87,11 @@ class ConferencesOrders extends Component {
 	};
 
 	handleDelete = (e, id) => {
-		Axios.get(BASE_URL_AGENT + "/api/cart/remove/" + id, {  headers: { Authorization: getAuthHeader() } })
+		Axios.get(BASE_URL_AGENT + "/api/cart/remove/" + id, { headers: { Authorization: getAuthHeader() } })
 			.then((res) => {
 
 				this.setState({ openModal: true });
-				
+				window.location.reload();
 			})
 			.catch((err) => {
 				console.log(err);
@@ -111,12 +100,6 @@ class ConferencesOrders extends Component {
 	};
 
 
-	handleOrder = () => {
-		this.setState({ showOrderModal: true });
-
-
-
-	};
 
 	handleGradeFromChange = (event) => {
 		if (event.target.value < 0) this.setState({ gradeFrom: 0 });
@@ -149,7 +132,6 @@ class ConferencesOrders extends Component {
 
 	};
 
-
 	render() {
 		if (this.state.redirect) return <Redirect push to={this.state.redirectUrl} />;
 
@@ -159,72 +141,63 @@ class ConferencesOrders extends Component {
 				<Header />
 
 				<div className="container" style={{ marginTop: "10%" }}>
-					<h5 className=" text-center mb-0 mt-2 text-uppercase">My cart</h5>
+					<h5 className=" text-center mb-0 mt-2 text-uppercase">My orders</h5>
 
 
 					<table className="table table-hover" style={{ width: "100%", marginTop: "3rem" }}>
 						<tbody>
 							{this.state.products.map((p) => (
+								<div>
+									<p><label>Status: {p.status} </label></p>
+									<p><label >   Date of reservation: {p.dateOfReservation} </label></p>
+									
+									<p><label>User: {p.registeredUserId} </label></p>
+									{p.items.map((item) => (
 								<tr
 									id={p.id}
 									key={p.id}
 									style={{ cursor: "pointer" }}
 
 								>
+								
 									<td width="130em">
-									<img className="img-fluid" src={p.pictures?.[0]} width="70em" />
+									<img className="img-fluid" src={item.pictures?.[0]} width="70em" />
 									</td>
 									<td>
 										<div>
-											<b>Name: </b> {p.name}
+											<b>{item.conferenceName}</b> 
 										</div>
 										<div>
-											<b>Price: </b> {p.price}
+											<b>Accommodation: </b> {item.accommodation}
 										</div>
 										<div>
-											<b>Quantity: </b> {p.quantity}
+											<b>Transportation: </b> {item.transportation}
+										</div>
+										<div>
+											<b>Price: </b> {item.price}&nbsp; €
+										</div>
+										<div>
+											<b>Quantity: </b> {item.quantity}
 										</div>
 
 
 
 
-										<div>  <button
-											style={{
-												background: "#1977cc",
-												marginTop: "15px",
-												marginLeft: "40%",
-												width: "20%",
-											}}
-											onClick={(e) => this.handleDelete(e, p.cartId)}
-											className="btn btn-primary btn-xl"
-											id="sendMessageButton"
-											type="button"
-										>
-											Remove from cart
-										</button></div>
 
 									</td>
+								
 								</tr>
-							))}
+									))}
+										<label><b>____________________________________________________________________________________________________________________________</b></label>
+							
+									</div>
+
+								))}
 						</tbody>
 					</table>
 
 
-					<div><button
-					hidden = {!this.state.show}
-						style={{
-							background: "#1977cc",
-							marginTop: "15px",
-							marginLeft: "40%",
-							width: "20%",
-						}}
-						onClick={this.handleOrder}
-						className="btn btn-primary btn-xl"
-						id="sendMessageButton"
-						type="button"
-					>
-						Add address and place an order
-					</button></div>
+
 				</div>
 				<ModalDialog
 					show={this.state.openModal}
@@ -233,20 +206,11 @@ class ConferencesOrders extends Component {
 					text="You have successfully removed the item."
 				/>
 
-				
-
-				<Address
-					buttonName="Add"
-					header="Add product to cart"
-					show={this.state.showOrderModal}
-					onCloseModal={this.handleOrderModalClose}
-					handleAddress={this.handleAddressOrderChange}
-					products={this.state.products}
-				/>
+			
 			</React.Fragment>
 		);
 	}
 }
 
-export default ConferencesOrders;
+export default ConferenceOrders;
 

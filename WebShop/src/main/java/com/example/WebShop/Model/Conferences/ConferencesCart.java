@@ -68,10 +68,11 @@ import java.util.Set;
         @Column(name = "totalPrice", nullable = true)
         private Double totalPrice;
 
-        @ManyToMany(mappedBy = "cart")
-        @Cascade(org.hibernate.annotations.CascadeType.ALL)
-        @JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class, property = "id")
-        private Set<Purchase> purchases = new HashSet<Purchase>();
+        @JsonIgnore
+        @JsonBackReference(value="conferencesPurchase-conferencesCarts")
+        @ManyToOne(cascade = CascadeType.MERGE, fetch = FetchType.LAZY)
+        @JoinColumn(name = "conferencesPurchase_id", referencedColumnName = "id", nullable = true, unique = false)
+        private ConferencesPurchase conferencesPurchase;
 
     }
 
