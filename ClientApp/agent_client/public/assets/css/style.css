@@ -1888,7 +1888,7 @@ label{
 }
 
 .card__side--front {
-	background-color: rgb(255, 255, 255)
+	background-color: rgb(27, 7, 59)
 }
 
 .card__side--back {
@@ -1976,15 +1976,6 @@ label{
 	background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85))
 }
 
-.card__heading-span--3 {
-	background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(41, 152, 255, 0.85)), to(rgba(86, 67, 250, 0.85)));
-	background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.85), rgba(86, 67, 250, 0.85))
-}
-
-.card__heading-span--4 {
-	background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 185, 0, 0.85)), to(rgba(255, 119, 48, 0.85)));
-	background-image: linear-gradient(to right bottom,rgba(255, 185, 0, 0.85)), to(rgba(255, 119, 48, 0.85))
-}
 
 .card__details {
 	padding: 3rem

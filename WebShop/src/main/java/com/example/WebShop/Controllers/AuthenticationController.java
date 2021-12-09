@@ -6,6 +6,8 @@ import com.example.WebShop.Authentication.TokenUtils;
 import com.example.WebShop.Model.User;
 import com.example.WebShop.Model.UserTokenState;
 import com.example.WebShop.Service.Implementations.CustomUserDetailsServiceImpl;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
@@ -36,6 +38,7 @@ public class AuthenticationController {
 
 	@Autowired
 	private CustomUserDetailsServiceImpl userDetailsService;
+	private static final Logger logger = LoggerFactory.getLogger(AuthenticationController.class);
 
 	@Value("36500")
 	private int EXPIRES;
@@ -62,9 +65,10 @@ public class AuthenticationController {
 			expiresIn = tokenUtils.getExpiredIn();
 			user.getAuthorities().forEach((a) -> roles.add(a.getAuthority()));
 			id= user.getId();
+			logger.info("User " + user.getUsername() + " has just logged in.");
 		}
 		catch (Exception e) {
-			System.out.println(e);
+			logger.error("Exception while logging in as a user " + authenticationRequest.getUsername() +" " + e);
 			return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
 		}
 		return new ResponseEntity<UserTokenState>(new UserTokenState(jwt, (long) expiresIn, id, roles), HttpStatus.OK);

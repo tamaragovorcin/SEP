@@ -4,6 +4,7 @@ import com.example.WebShop.DTOs.Conferences.NewConferenceDTO;
 import com.example.WebShop.DTOs.NewOrderDTO;
 import com.example.WebShop.Model.Cart;
 import com.example.WebShop.Model.Pictures;
+import com.example.WebShop.Model.Product;
 import com.example.WebShop.Model.User;
 import com.example.WebShop.Repository.CartRepository;
 import com.example.WebShop.Repository.ProductRepository;
@@ -30,6 +31,8 @@ public class CartService implements ICartService {
     @Autowired
     private ProductServiceImpl productService;
     @Autowired
+    private ProductRepository productRepository;
+    @Autowired
     private UserRepository userRepository;
     @Autowired
     private ConferenceServiceImpl conferenceService;
@@ -49,6 +52,10 @@ public class CartService implements ICartService {
         cart.setQuantity(newOrderDTO.getQuantity());
         cart.setProduct(productService.findById(newOrderDTO.getProductId()));
 
+        Product product = productService.findById(newOrderDTO.getProductId());
+        product.setQuantity(product.getQuantity() - newOrderDTO.getQuantity());
+        productRepository.save(product);
+        cart.setProduct(product);
         cart.setStatus("CREATED");
 
         return cartRepository.save(cart);
@@ -67,6 +74,9 @@ public class CartService implements ICartService {
 
     @Override
     public void delete(Cart order) {
+        Product product = order.getProduct();
+        product.setQuantity(product.getQuantity() + order.getQuantity());
+        productRepository.save(product);
         cartRepository.delete(order);
     }
 

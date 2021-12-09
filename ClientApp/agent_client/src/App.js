@@ -16,7 +16,10 @@ import Conferences from './pages/conferences/Conferences'
 import ConferencesCart from './pages/conferences/ConferencesCart'
 import Conference from './pages/conferences/Conference'
 import ConferencesOrders from './pages/conferences/ConferencesOrders';
-
+import PaymentMethod from './pages/PaymentMethod'
+import PayPalSuccess from './components/payment/PayPalSuccess';
+import PayPalError from './components/payment/PayPalError';
+import PayPalParams from './components/payment/PayPalParams';
 
 function App() {
   return (
@@ -42,6 +45,12 @@ function App() {
 				<Route path="/conference/:idConf/:idCart" children={<Conference/>} />
 
 
+				<Link exact to="/paymentMethod" path="/paymentMethod" component={PaymentMethod} />
+
+				
+				<Link exact to="/payPalSuccess" path="/payPalSuccess" component={PayPalSuccess} />
+				<Link exact to="/payPalError" path="/payPalError" component={PayPalError} />
+				<Link exact to="/payPalParams" path="/payPalParams" component={PayPalParams} />
 
 			</Switch>
 	</Router>
