@@ -1,6 +1,7 @@
 package com.PayPalService.Model;
 
 import lombok.*;
+import org.springframework.stereotype.Service;
 
 @AllArgsConstructor
 @NoArgsConstructor
@@ -13,7 +14,5 @@ public class Order {
 	private String method;
 	private String intent;
 	private String description;
-	private String clientId;
-	private String clientSecret;
 
 }
