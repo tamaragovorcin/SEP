@@ -7,7 +7,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/api/qr")
-@CrossOrigin(origins = "*", allowedHeaders = "*")
 public class QRCodeController {
 
     @GetMapping("")
