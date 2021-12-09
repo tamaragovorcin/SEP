@@ -13,7 +13,6 @@ import com.paypal.base.rest.OAuthTokenCredential;
 import com.paypal.base.rest.PayPalRESTException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
@@ -22,10 +21,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.awt.*;
-import java.io.IOException;
-import java.net.URI;
-import java.net.URISyntaxException;
+
 @Service
 public class PayPalService {
 
@@ -36,7 +32,10 @@ public class PayPalService {
     PayPalRepository payPalRepository;
 
     private APIContext apiContext;
-
+/*
+    public PayPalService() throws PayPalRESTException {
+       // apiContext= apiContext();
+    }*/
 
     public String getBankCard() {
         return bankCardFeignClient.getByName(" path variable");
@@ -49,9 +48,7 @@ public class PayPalService {
             String intent,
             String description,
             String cancelUrl,
-            String successUrl,
-            String clientId,
-            String clientSecret) throws PayPalRESTException {
+            String successUrl) throws PayPalRESTException {
         Amount amount = new Amount();
         amount.setCurrency(currency);
         total = new BigDecimal(total).setScale(2, RoundingMode.HALF_UP).doubleValue();
@@ -76,10 +73,9 @@ public class PayPalService {
         redirectUrls.setReturnUrl(successUrl);
         payment.setRedirectUrls(redirectUrls);
 
+
         String requestId = Long.toString(System.nanoTime());
-       // String clientId = "AV53WcoFcJBV8FmGKp_qz7ZFUk8nAoLODD5D5A-OsHfVsQVSB4WIxPm2JH63jUDkn-HGvd2HdqmTz6Sf";
-       //String clientSecret = "EJgHCJKK3314ZbozPXB7p6okMQy8ohBMtA4cYrr2qsWnJbs9twn7c_Z1JmJhf1KXO1tZrV4mgxsVD2G8";
-        apiContext = new APIContext(oAuthTokenCredential(clientId,clientSecret).getAccessToken(),requestId );
+        apiContext = new APIContext(oAuthTokenCredential().getAccessToken(),requestId );
         apiContext.setConfigurationMap(paypalSdkConfig());
 
         return payment.create(apiContext);
@@ -90,6 +86,7 @@ public class PayPalService {
         payment.setId(paymentId);
         PaymentExecution paymentExecute = new PaymentExecution();
         paymentExecute.setPayerId(payerId);
+        System.out.println(apiContext.getRequestId());
         return payment.execute(apiContext, paymentExecute);
     }
 
@@ -114,31 +111,18 @@ public class PayPalService {
         return configMap;
     }
 
-    @Scope("prototype")
     @Bean
-    public OAuthTokenCredential oAuthTokenCredential(String clientId, String clientSecret) {
-        return new OAuthTokenCredential(
-                clientId,
-                clientSecret,
+    public OAuthTokenCredential oAuthTokenCredential() {
+        return new OAuthTokenCredential("AV53WcoFcJBV8FmGKp_qz7ZFUk8nAoLODD5D5A-OsHfVsQVSB4WIxPm2JH63jUDkn-HGvd2HdqmTz6Sf",
+                "EJgHCJKK3314ZbozPXB7p6okMQy8ohBMtA4cYrr2qsWnJbs9twn7c_Z1JmJhf1KXO1tZrV4mgxsVD2G8",
                 paypalSdkConfig());
     }
-
-    public static void browse(String url) {
-        if(Desktop.isDesktopSupported()){
-            Desktop desktop = Desktop.getDesktop();
-            try {
-                desktop.browse(new URI(url));
-            } catch (IOException | URISyntaxException e) {
-                e.printStackTrace();
-            }
-        }else{
-            Runtime runtime = Runtime.getRuntime();
-            try {
-                runtime.exec("rundll32 url.dll,FileProtocolHandler " + url);
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        }
-    }
-
+/*
+    @Bean
+    public APIContext apiContext() throws PayPalRESTException {
+        String requestId = Long.toString(System.nanoTime());
+        APIContext context = new APIContext(oAuthTokenCredential().getAccessToken(),requestId );
+        context.setConfigurationMap(paypalSdkConfig());
+        return context;
+    }*/
 }

@@ -1,33 +1,17 @@
 package com.BitCoinService;
 
-import com.BitCoinService.Model.BitcoinPaymentDTO;
-import com.BitCoinService.Model.MerchantDTO;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/api/bitcoin")
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 public class BitCoinController {
-
-    @Autowired
-    BitcoinService bitcoinService;
 
     @GetMapping("")
     public String home() {
         return "bitcoin home";
     }
-
-
-    @PostMapping(value = "/pay")
-    public String startPayment(@RequestBody MerchantDTO merchantDTO){
-
-        return bitcoinService.createPayment(merchantDTO);
-    }
-
-    @PostMapping(value = "/save")
-    public void startPayment(@RequestBody BitcoinPaymentDTO bitcoinPaymentDTO){
-
-         bitcoinService.savePayment(bitcoinPaymentDTO);
-    }
-
 }
