@@ -38,8 +38,8 @@ public class AccommodationServiceImpl implements IAccommodationService {
         Accommodation accommodation = new Accommodation();
         accommodation.setName(dto.getName());
         accommodation.setDescription(dto.getDescription());
-       // Address address = new Address(dto.getAddress().getLatitude(), dto.getAddress().getLongitude(), dto.getAddress().getCity(), dto.getAddress().getStreet(), dto.getAddress().getCountry());
-        //accommodation.setAddress(address);
+        Address address = new Address(dto.getAddress().getLatitude(), dto.getAddress().getLongitude(), dto.getAddress().getCity(), dto.getAddress().getStreet(), dto.getAddress().getCountry());
+        accommodation.setAddress(address);
         accommodation.setPrice(dto.getPrice());
         accommodation.setMaxCapacity(dto.getMaxCapacity());
         accommodation.setConference(conferenceService.findById(dto.getConference()));
@@ -105,6 +105,7 @@ public class AccommodationServiceImpl implements IAccommodationService {
         dto.setDescription(accommodation.getDescription());
         dto.setPrice(accommodation.getPrice());
         dto.setMaxCapacity(accommodation.getMaxCapacity());
+        dto.setLocation(accommodation.getAddress().getCity()+", "+accommodation.getAddress().getStreet()+", "+accommodation.getAddress().getCountry());
 
 
         return dto;

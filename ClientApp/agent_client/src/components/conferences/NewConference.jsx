@@ -5,13 +5,22 @@ import Axios from "axios";
 import { BASE_URL_AGENT } from "../../constants.js";
 import ModalDialog from "../ModalDialog";
 import getAuthHeader from "../../GetHeader";
+import { YMaps, Map } from "react-yandex-maps";
+
+const mapState = {
+	center: [44, 21],
+	zoom: 8,
+	controls: [],
+};
 class NewConference extends Component {
+	
 	constructor(props) {
 		super(props);
+		this.addressInput = React.createRef();
 		this.state = {
 			name: "",
 			slogan: "",
-            location: "",
+            address: "",
             startDate: "",
             endDate: "",
             content: "",
@@ -20,7 +29,10 @@ class NewConference extends Component {
 			pictures: [],
 			openModal: false,
 			help: [],
-			fileUploadOngoing: false
+			fileUploadOngoing: false,
+			address: "",
+		addressError: "none",
+		addressNotFoundError: "none",
 		}
 		this.onDrop = this.onDrop.bind(this);
 
@@ -56,6 +68,14 @@ class NewConference extends Component {
 
 
 	}
+	onYmapsLoad = (ymaps) => {
+		this.ymaps = ymaps;
+		new this.ymaps.SuggestView(this.addressInput.current, {
+			provider: {
+				suggest: (request, options) => this.ymaps.suggest(request),
+			},
+		});
+	};
     test(pic) {
         this.setState({
             fileUploadOngoing: true
@@ -75,6 +95,7 @@ class NewConference extends Component {
         fetch(BASE_URL_AGENT + "/api/conference/uploadImage", options);
     }
 	handleAdd(dto) {
+		
 		Axios.post(BASE_URL_AGENT + "/api/conference/add" , dto, {  headers: { Authorization: getAuthHeader() } })
 			.then((res) => {
 				let confId = res.data;
@@ -82,13 +103,17 @@ class NewConference extends Component {
 					this.test(pic, confId);
 				});
 				this.setState({ textSuccessfulModal: "You have successfully added conference." });
-				
+				this.setState({ openModal: true });
+				this.props.onCloseModal();
+				window.location.reload();
+
+
+
 
 			})
 			.catch((err) => {
 				console.log(err);
 			});
-		this.setState({ openModal: true });
 	}
 	handleAddConference = () => {
 	
@@ -100,21 +125,45 @@ class NewConference extends Component {
 			});
 		});
 
-
-
-		const dto = {
-			name: this.state.name,
-            slogan : this.state.slogan,
-            location : this.state.location,
-            startDate : this.state.startDate,
-            endDate : this.state.endDate,
-            content : this.state.content,
-            capacity : this.state.capacity,
-			registrationFee : this.state.registrationFee,
-			pictures: h
-		};
-		this.handleAdd(dto);
-	}
+		let street;
+		let city;
+		let country;
+		let latitude;
+		let longitude;
+		let found = true;
+		this.ymaps
+			.geocode(this.addressInput.current.value, {
+				results: 1,
+			})
+			.then(function (res) {
+				if (typeof res.geoObjects.get(0) === "undefined") found = false;
+				else {
+					var firstGeoObject = res.geoObjects.get(0),
+						coords = firstGeoObject.geometry.getCoordinates();
+					latitude = coords[0];
+					longitude = coords[1];
+					country = firstGeoObject.getCountry();
+					street = firstGeoObject.getThoroughfare();
+					city = firstGeoObject.getLocalities().join(", ");
+				}
+			})
+			.then((res) => {
+				var foundAddress= { street, country, city, latitude, longitude }
+                    
+					const dto = {
+						name: this.state.name,
+						slogan : this.state.slogan,
+						address : foundAddress,
+						startDate : this.state.startDate,
+						endDate : this.state.endDate,
+						content : this.state.content,
+						capacity : this.state.capacity,
+						registrationFee : this.state.registrationFee,
+						pictures: h
+					};
+					this.handleAdd(dto);
+	});
+}
 
 
 
@@ -126,7 +175,7 @@ class NewConference extends Component {
 		this.setState({ slogan: e.target.value });
 	}
 	handleLocationChange = (e) => {
-		this.setState({ location: e.target.value });
+		this.setState({ address: e.target.value });
 	}
 	handleStartDateChange = (e) => {
 		this.setState({ startDate: e.target.value });
@@ -143,7 +192,6 @@ class NewConference extends Component {
 	handleRegistraionFeeChange = (e) => {
 		this.setState({ registrationFee: e.target.value });
 	}
-
 	handleModalClose = ()=>{
 		this.setState({openModal: false})
 	}
@@ -203,13 +251,28 @@ class NewConference extends Component {
 									<div className="control-group">
 										<div className="form-group controls mb-0 pb-2" style={{ color: "#6c757d", opacity: 1 }}>
 											<label>Location:</label>
-											<input
-												className="form-control"
-												id="location"
-												type="text"
-												onChange={this.handleLocationChange}
-												value={this.state.location}
-											/>
+											<input className="form-control" id="suggest" ref={this.addressInput} placeholder="Address" />
+											<YMaps
+										query={{
+											load: "package.full",
+											apikey: "b0ea2fa3-aba0-4e44-a38e-4e890158ece2",
+											lang: "en_RU",
+										}}
+									>
+										<Map
+											style={{ display: "none" }}
+											state={mapState}
+											onLoad={this.onYmapsLoad}
+											instanceRef={(map) => (this.map = map)}
+											modules={["coordSystem.geo", "geocode", "util.bounds"]}
+										></Map>
+									</YMaps>
+									<div className="text-danger" style={{ display: this.state.addressError }}>
+										Address must be entered.
+									</div>
+									<div className="text-danger" style={{ display: this.state.addressNotFoundError }}>
+										Sorry. Address not found. Try different one.
+									</div>
 										</div>
 									</div>
 									<div className="control-group">
@@ -289,7 +352,7 @@ class NewConference extends Component {
                     show={this.state.openModal}
                     onCloseModal={this.handleModalClose}
                     header="Success"
-                    text="You have successfully added new item."
+                    text="You have successfully added new conference/course."
                 />
 				</Modal.Body>
 				<Modal.Footer>

@@ -1,13 +1,20 @@
 import React, { Component } from "react";
+import Header from "../../components/conferences/Header";
 import TopBar from "../../components/TopBar";
-import Header from "../../components/Header";
+import { BASE_URL_AGENT } from "../../constants.js";
+import { BASE_URL } from "../../constants.js";
 import Axios from "axios";
-import { BASE_URL, BASE_URL_AGENT } from "../../constants.js";
-import "../../App.js";
-import { Redirect } from "react-router-dom";
-import Address from "../../components/Address";
-import ModalDialog from "../../components/ModalDialog";
 import getAuthHeader from "../../GetHeader";
+import ModalDialog from "../../components/ModalDialog";
+import { withRouter } from 'react-router-dom';
+import { Redirect } from "react-router-dom";
+import { Carousel } from 'react-responsive-carousel';
+import { YMaps, Map } from "react-yandex-maps";
+import qr from '../../static/qr.png';
+import bank_cards from '../../static/bank_cards.jpg';
+import bitcoin from '../../static/bitcoin.png';
+import paypal from '../../static/paypall.png';
+
 class ConferencesCart extends Component {
 
 
@@ -33,6 +40,10 @@ class ConferencesCart extends Component {
 		show: true,
 		accommodation : "",
 		transportation : "",
+		isPaypalAllowed : false,
+		isBankCardAllowed : false,
+		isQRAllowed : false,
+		isBitcoinAllowed : false
 	
 
 
@@ -91,6 +102,33 @@ class ConferencesCart extends Component {
 				if(res.data.length === 0){
 					this.setState({ show: false });
 				}
+			})
+			.catch((err) => {
+				console.log(err);
+			});
+
+			Axios.get(BASE_URL_AGENT + "/api/conference/paymentMethods", { headers: { Authorization: getAuthHeader() } })
+			.then((res) => {
+				res.data.methods.forEach(element => {
+					if(element === "Card"){
+
+						this.setState({ isBankCardAllowed: true });
+					}
+					if(element === "Paypal"){
+
+						this.setState({ isPaypalAllowed: true });
+					}
+					if(element === "Bitcoin"){
+
+						this.setState({ isBitcoinAllowed: true });
+					}
+					if(element === "Qr"){
+
+						this.setState({ isQRAllowed: true });
+					}
+				});
+					
+				console.log(res.data);
 			})
 			.catch((err) => {
 				console.log(err);
@@ -292,28 +330,60 @@ class ConferencesCart extends Component {
 						</tbody>
 					</table>
 
+					<div className="control-group">
+						<div className="form-group controls mb-0 pb-2" style={{ color: "darkgrey", fontWeight:"bold", marginLeft:"30%", marginTop:"10%" }}>
+							<label>Continue to pay and choose a payment method:</label>
+						</div>
+						<div class="container">
+                <div class="row">
+                  {this.state.isPaypalAllowed === true && 
+                    <div class="col">
+                       
+                        <button type="button" class="btn  btn-sm" data-toggle="button" aria-pressed="false" autocomplete="off" 
+							onClick={this.handlePayPalClicked}>
+							<img src={paypal} className="App-logo" alt="logo" />
+						</button>
 
-					<div><button
-					hidden = {!this.state.show}
-						style={{
-							background: "#1977cc",
-							marginTop: "15px",
-							marginLeft: "40%",
-							width: "20%",
-						}}
-						onClick={this.handleOrder}
-						className="btn btn-primary btn-xl"
-						id="sendMessageButton"
-						type="button"
-					>
-						Place an order
-					</button></div>
+                    </div>
+                  }
+                  {this.state.isBankCardAllowed === true && 
+                    <div class="col">
+                        <button type="button" class="btn  btn-sm" data-toggle="button" aria-pressed="false" autocomplete="off"> 
+							<img src={bank_cards} className="App-logo" alt="logo" />
+						</button>
+                    </div>
+                  }
+                  {this.state.isQRAllowed === true && 
+                    <div class="col">
+                       
+                        <button type="button" class="btn  btn-sm" data-toggle="button" aria-pressed="false" autocomplete="off">
+							<img src={qr} className="App-logo" alt="logo" />	
+						</button>
+
+                    </div>
+                  }
+                  {this.state.isBitcoinAllowed === true && 
+                    <div class="col">
+                       
+                          <button type="button" class="btn  btn-sm" data-toggle="button" aria-pressed="false" autocomplete="off"> 
+							 <img src={bitcoin} className="App-logo" alt="logo" />
+						  </button>
+
+                    </div>
+                  }
+              </div>
+            </div>
+
+					</div>
+
+
+					
 				</div>
 				<ModalDialog
 					show={this.state.openModal}
 					onCloseModal={this.handleModalClose}
 					header="Success"
-					text="You have successfully removed the item."
+					text="You have successfully placed order."
 				/>
 
 			

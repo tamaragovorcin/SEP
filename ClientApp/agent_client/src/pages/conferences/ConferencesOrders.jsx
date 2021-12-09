@@ -1,12 +1,14 @@
 import React, { Component } from "react";
+import Header from "../../components/conferences/Header";
 import TopBar from "../../components/TopBar";
-import Header from "../../components/Header";
+import { BASE_URL_AGENT } from "../../constants.js";
+import { BASE_URL } from "../../constants.js";
 import Axios from "axios";
-import { BASE_URL, BASE_URL_AGENT } from "../../constants.js";
-import "../../App.js";
-import { Redirect } from "react-router-dom";
-import ModalDialog from "../../components/ModalDialog";
 import getAuthHeader from "../../GetHeader";
+import ModalDialog from "../../components/ModalDialog";
+import { Redirect } from "react-router-dom";
+import { Carousel } from 'react-responsive-carousel';
+import { YMaps, Map } from "react-yandex-maps";
 
 class ConferenceOrders extends Component {
 	state = {

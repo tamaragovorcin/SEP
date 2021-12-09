@@ -6,6 +6,7 @@ import com.example.WebShop.DTOs.Conferences.NewConferenceDTO;
 import com.example.WebShop.DTOs.Conferences.TransportationDTO;
 import com.example.WebShop.DTOs.NewPictureDTO;
 import com.example.WebShop.DTOs.NewProductDTO;
+import com.example.WebShop.Model.Address;
 import com.example.WebShop.Model.Conferences.Accommodation;
 import com.example.WebShop.Model.Conferences.Conference;
 import com.example.WebShop.Model.Conferences.Transportation;
@@ -46,7 +47,8 @@ public class ConferenceServiceImpl implements IConferenceService {
         Conference conference = new Conference();
         conference.setName(dto.getName());
         conference.setSlogan(dto.getSlogan());
-        conference.setLocation(dto.getLocation());
+        Address address = new Address(dto.getAddress().getLatitude(), dto.getAddress().getLongitude(), dto.getAddress().getCity(), dto.getAddress().getStreet(), dto.getAddress().getCountry());
+        conference.setAddress(address);
         conference.setStartDate(dto.getStartDate());
         conference.setEndDate(dto.getEndDate());
         conference.setContent(dto.getContent());
@@ -97,7 +99,14 @@ public class ConferenceServiceImpl implements IConferenceService {
             dto.setSlogan(conference.getSlogan());
             dto.setContent(conference.getContent());
             dto.setCapacity(conference.getCapacity());
-            dto.setLocation(conference.getLocation());
+            Address address = new Address();
+            address.setCity(conference.getAddress().getCity());
+            address.setCountry(conference.getAddress().getCountry());
+            address.setLatitude(conference.getAddress().getLatitude());
+            address.setLongitude(conference.getAddress().getLongitude());
+            address.setStreet(conference.getAddress().getStreet());
+
+            dto.setAddress(address);
             dto.setStartDate(conference.getStartDate());
             dto.setEndDate(conference.getEndDate());
             dto.setOnline(conference.getOnline());
@@ -137,7 +146,7 @@ public class ConferenceServiceImpl implements IConferenceService {
             dto.setSlogan(conference.getSlogan());
             dto.setContent(conference.getContent());
             dto.setCapacity(conference.getCapacity());
-            dto.setLocation(conference.getLocation());
+            dto.setAddress(conference.getAddress());
             dto.setStartDate(conference.getStartDate());
             dto.setEndDate(conference.getEndDate());
             dto.setRegistrationFee(conference.getRegistrationFee());

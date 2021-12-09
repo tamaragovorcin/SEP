@@ -105,8 +105,12 @@ public class ConferencesPurchaseServiceImpl implements IConferencePurchaseServic
                     orderDTO1.setPrice(cart.getTotalPrice());
                     orderDTO1.setConferenceId(cart.getConference().getId());
                     orderDTO1.setConferenceName(cart.getConference().getName());
-                    orderDTO1.setAccommodation(cart.getAccommodation().getName());
-                    orderDTO1.setTransportation(cart.getTransportation().getCompanyName());
+                    if(orderDTO1.getAccommodation()!=null) {
+                        orderDTO1.setAccommodation(cart.getAccommodation().getName());
+                    }
+                    if(orderDTO1.getTransportation()!=null) {
+                        orderDTO1.setTransportation(cart.getTransportation().getCompanyName());
+                    }
                     orderDTO1.setCartId(cart.getId());
                     orderDTO1.setQuantity(cart.getQuantity());
                     orderDTO1.setRegisteredUserId(cart.getBuyer().getId());
