@@ -9,6 +9,7 @@ import ModalDialog from "../../components/ModalDialog";
 import { withRouter } from 'react-router-dom';
 import { Redirect } from "react-router-dom";
 import { Carousel } from 'react-responsive-carousel';
+import { YMaps, Map } from "react-yandex-maps";
 
 
 class Conference extends Component {
@@ -25,7 +26,8 @@ class Conference extends Component {
 		redirectUrl: "",
 		date : "",
 		showAccommodation : true,
-		showTransportation : false
+		showTransportation : false,
+		city : ""
 	};
 
     hasRole = (reqRole) => {
@@ -52,7 +54,8 @@ class Conference extends Component {
 				this.setState({
                   conference : res.data,
                   accommodations : res.data.accommodations,
-				  transportations : res.data.transportations
+				  transportations : res.data.transportations,
+				  city : res.data.address.city
 				//  date : res.data.date[2]+"."+res.data.date[1]+"."+res.data.date[0]+"."
                 });
                 
@@ -192,7 +195,7 @@ class Conference extends Component {
 										</div>
                                         <div>
 											<b style={{color:"#1977cc"}}>Location: </b> 
-                                          <span style={{fontWeight:"bold",fontSize:"25px"}}>{this.state.conference.location}</span>  
+                                          <span style={{fontWeight:"bold",fontSize:"25px"}}>{this.state.city}</span>  
 										</div>
                                         <div>
 											<b style={{color:"#1977cc"}}>Start date: </b> 
@@ -288,7 +291,7 @@ class Conference extends Component {
 											<b><i>{accommodation.description}</i> </b> 
                                         <div>
 											<b style={{color:"#1977cc"}}>Location: </b> 
-                                          <span style={{fontWeight:"bold",fontSize:"25px"}}>{accommodation.address}</span>  
+                                          <span style={{fontWeight:"bold",fontSize:"25px"}}>{accommodation.location}</span>  
 										</div>
                                         <div>
 											<b style={{color:"#1977cc"}}>Max capacity: </b> 
@@ -365,18 +368,12 @@ class Conference extends Component {
 											<b style={{color:"#1977cc"}}>Departure town: </b> 
                                           <span style={{fontWeight:"bold",fontSize:"25px"}}>{transportation.departure}</span>  
 										</div>
-                                        <div>
-											<b style={{color:"#1977cc"}}>Departure address: </b> 
-                                          <span style={{fontWeight:"bold",fontSize:"17px"}}>{transportation.departureAddress}</span>  
-										</div>
+                                       
 										<div>
 											<b style={{color:"#1977cc"}}>Departure date and time: </b> 
                                           <span style={{fontWeight:"bold",fontSize:"17px"}}>{transportation.departureDate},&nbsp; {transportation.departureTime}</span>  
 										</div>
-										<div>
-											<b style={{color:"#1977cc"}}>Departure address: </b> 
-                                          <span style={{fontWeight:"bold",fontSize:"17px"}}>{transportation.departureAddress}</span>  
-										</div>
+										
 									</td>
 										<td>
 										<div>

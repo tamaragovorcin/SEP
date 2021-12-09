@@ -29,7 +29,6 @@ class HomePage extends React.Component {
 		return (
 			<React.Fragment>
 				<TopBar />
-				<Header />
 
 				<section id="hero"style={{marginTop:"10rem"}}>
 					<div className="container" >

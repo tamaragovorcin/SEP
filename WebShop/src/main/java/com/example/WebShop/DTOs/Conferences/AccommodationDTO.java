@@ -24,6 +24,8 @@ public class AccommodationDTO {
 
     private AddressDTO address;
 
+    private String location;
+
     private Integer maxCapacity;
 
     private Double price;

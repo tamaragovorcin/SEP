@@ -50,6 +50,7 @@ class ReservationModal extends Component {
 							successMessage: "You successfully sent a reservation.",
 							hiddenEditInfo: true,
 						});*/
+						this.props.onCloseModal()
 						
 					}
 				})

@@ -20,6 +20,7 @@ import PaymentMethod from './pages/PaymentMethod'
 import PayPalSuccess from './components/payment/PayPalSuccess';
 import PayPalError from './components/payment/PayPalError';
 import PayPalParams from './components/payment/PayPalParams';
+import PaymentMethodConf from './pages/conferences/PaymentMethodConf';
 
 function App() {
   return (
@@ -41,6 +42,7 @@ function App() {
 				<Link exact to="/conferences" path="/conferences" component={Conferences} />
 				<Link exact to="/conferencesCart" path="/conferencesCart" component={ConferencesCart} />
 				<Link exact to="/conferencesOrders" path="/conferencesOrders" component={ConferencesOrders} />
+				<Link exact to="/paymentMethodConf" path="/paymentMethodConf" component={PaymentMethodConf} />
 
 				<Route path="/conference/:idConf/:idCart" children={<Conference/>} />
 

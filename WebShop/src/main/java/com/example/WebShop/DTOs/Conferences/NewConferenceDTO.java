@@ -1,5 +1,6 @@
 package com.example.WebShop.DTOs.Conferences;
 
+import com.example.WebShop.DTOs.AddressDTO;
 import com.example.WebShop.Model.Pictures;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
@@ -28,7 +29,7 @@ public class NewConferenceDTO {
 
     private String slogan;
 
-    private String location;
+    private AddressDTO address;
 
     private LocalDate startDate;
 

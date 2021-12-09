@@ -4,6 +4,7 @@ import { RiAddCircleLine } from 'react-icons/ri';
 import { FiTruck } from 'react-icons/fi';
 import { VscHome } from 'react-icons/vsc';
 import { AiOutlineOrderedList, AiOutlineShoppingCart } from 'react-icons/ai';
+import {MdPayment} from 'react-icons/md'
 
 
 import NewConference from "./NewConference";
@@ -63,6 +64,9 @@ class Header extends Component {
 							</li>
 							<li>
 							<Link to="/conferencesOrders"><FiTruck /></Link>
+							</li>
+							<li  hidden={!this.hasRole("ROLE_ADMIN")}>
+							<Link to="/paymentMethodConf"><MdPayment /></Link>
 							</li>
 						
 							

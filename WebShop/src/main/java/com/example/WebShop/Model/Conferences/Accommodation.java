@@ -62,4 +62,6 @@ public class Accommodation {
     @OneToMany(mappedBy = "accommodation", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     private Set<ConferencesCart> cart = new HashSet<ConferencesCart>();
 
+
+
 }

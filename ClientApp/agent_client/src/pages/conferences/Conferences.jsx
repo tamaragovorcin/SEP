@@ -147,7 +147,7 @@ class Conferences extends React.Component {
 	handleClickOnConference= (id) => {
 		this.setState({
 			redirect: true,
-			redirectUrl: "/conference/" + id,
+			redirectUrl: "/conference/" + id+"/n",
 		});
 	};
     handleReservationModalClose = () => {
@@ -192,15 +192,15 @@ class Conferences extends React.Component {
 										<img className="img-fluid" src={conference.pictures?.[0]} />
 									</td>
 									<td>
-										<div style={{fontWeight:"bold", fontFamily:"fantasy",fontSize:"25px"}}>
-											 {conference.name}
+										<div style={{fontWeight:"bold", fontFamily:"fantasy",fontSize:"25px", style:"underline"}}>
+											 <button onClick={() => this.handleClickOnConference(conference.id) }>{conference.name}</button>
 										</div>
 										<div>
 											<b><i>{conference.slogan}</i> </b> 
 										</div>
                                         <div>
 											<b style={{color:"#1977cc"}}>Location: </b> 
-                                          <span style={{fontWeight:"bold",fontSize:"25px"}}>{conference.location}</span>  
+                                          <span style={{fontWeight:"bold",fontSize:"25px"}}>{conference.address.city}</span>  
 										</div>
                                         <div>
 											<b style={{color:"#1977cc"}}>Start date: </b> 

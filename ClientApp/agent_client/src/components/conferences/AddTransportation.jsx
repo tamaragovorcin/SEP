@@ -77,6 +77,7 @@ class AddTransportation extends Component {
 			.then((res) => {
 				let confId = res.data;
 				this.setState({ textSuccessfulModal: "You have successfully added transportation for conference." });
+				this.props.onCloseModal()
 			})
 			.catch((err) => {
 				console.log(err);
@@ -173,18 +174,7 @@ class AddTransportation extends Component {
 											/>
 										</div>
 									</div>
-									<div className="control-group">
-										<div className="form-group controls mb-0 pb-2" style={{ color: "#6c757d", opacity: 1 }}>
-											<label>Departure address:</label>
-											<input
-												className="form-control"
-												id="departureAddress"
-												type="text"
-												onChange={this.handleDepartureAddressChange}
-												value={this.state.departureAddress}
-											/>
-										</div>
-									</div>
+								
 									<div className="control-group">
 										<div className="form-group controls mb-0 pb-2" style={{ color: "#6c757d", opacity: 1 }}>
 											<label>Departure date:</label>
@@ -238,7 +228,7 @@ class AddTransportation extends Component {
                     show={this.state.openModal}
                     onCloseModal={this.handleModalClose}
                     header="Success"
-                    text="You have successfully added new item."
+                    text={this.state.textSuccessfulModal}
                 />
 				</Modal.Body>
 				<Modal.Footer>

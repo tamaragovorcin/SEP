@@ -4,15 +4,23 @@ import ImageUploader from 'react-images-upload';
 import Axios from "axios";
 import { BASE_URL_AGENT } from "../../constants.js";
 import ModalDialog from "../ModalDialog";
+import { YMaps, Map } from "react-yandex-maps";
 import getAuthHeader from "../../GetHeader";
-
+const mapState = {
+	center: [44, 21],
+	zoom: 8,
+	controls: [],
+};
 class AddAccommodation extends Component {
 	constructor(props) {
 		super(props);
+		this.addressInput = React.createRef();
 		this.state = {
 			name: "",
             descriptiption : "",
-            address: "",
+			address: "",
+			addressError: "none",
+			addressNotFoundError: "none",
             maxCapacity : 0,
             price: 0,
 			pictures: [],
@@ -24,7 +32,14 @@ class AddAccommodation extends Component {
 		this.onDrop = this.onDrop.bind(this);
 
 	}
-	
+	onYmapsLoad = (ymaps) => {
+		this.ymaps = ymaps;
+		new this.ymaps.SuggestView(this.addressInput.current, {
+			provider: {
+				suggest: (request, options) => this.ymaps.suggest(request),
+			},
+		});
+	};
 	onDrop(picture) {
 
 		this.setState({
@@ -81,7 +96,7 @@ class AddAccommodation extends Component {
 					this.test(pic, confId);
 				});
 				this.setState({ textSuccessfulModal: "You have successfully added accommodation for conference." });
-				
+				this.props.onCloseModal()
 
 			})
 			.catch((err) => {
@@ -90,7 +105,6 @@ class AddAccommodation extends Component {
 		this.setState({ openModal: true });
 	}
 	handleAddAccommodation = () => {
-        alert(this.props.conference)
 		let h = []
 		this.state.pictures.forEach((pic) => {
 			h.push(pic.name)
@@ -98,20 +112,47 @@ class AddAccommodation extends Component {
 				help: this.state.help.concat(pic.name),
 			});
 		});
+		let street;
+		let city;
+		let country;
+		let latitude;
+		let longitude;
+		let found = true;
+		this.ymaps
+			.geocode(this.addressInput.current.value, {
+				results: 1,
+			})
+			.then(function (res) {
+				if (typeof res.geoObjects.get(0) === "undefined") found = false;
+				else {
+					var firstGeoObject = res.geoObjects.get(0),
+						coords = firstGeoObject.geometry.getCoordinates();
+					latitude = coords[0];
+					longitude = coords[1];
+					country = firstGeoObject.getCountry();
+					street = firstGeoObject.getThoroughfare();
+					city = firstGeoObject.getLocalities().join(", ");
+				}
+			})
+			.then((res) => {
+				var foundAddress= { street, country, city, latitude, longitude }
+                    
+				const dto = {
+					conference : this.props.conference,
+					name: this.state.name,
+					description : this.state.descriptiption,
+					address : foundAddress,
+					maxCapacity : this.state.maxCapacity,
+					price : this.state.price,
+					pictures: h,
+					facilities : this.state.facilities
+				};
+					this.handleAdd(dto);
+	});
 
 
-
-		const dto = {
-            conference : this.props.conference,
-			name: this.state.name,
-            description : this.state.descriptiption,
-            // address : this.state.address,
-            maxCapacity : this.state.maxCapacity,
-			price : this.state.price,
-			pictures: h,
-            facilities : this.state.facilities
-		};
-		this.handleAdd(dto);
+	
+		
 	}
 
 
@@ -192,13 +233,28 @@ class AddAccommodation extends Component {
 									<div className="control-group">
 										<div className="form-group controls mb-0 pb-2" style={{ color: "#6c757d", opacity: 1 }}>
 											<label>Address:</label>
-											<input
-												className="form-control"
-												id="location"
-												type="text"
-												onChange={this.handleLocationChange}
-												value={this.state.address}
-											/>
+											<input className="form-control" id="suggest" ref={this.addressInput} placeholder="Address" />
+											<YMaps
+										query={{
+											load: "package.full",
+											apikey: "b0ea2fa3-aba0-4e44-a38e-4e890158ece2",
+											lang: "en_RU",
+										}}
+									>
+										<Map
+											style={{ display: "none" }}
+											state={mapState}
+											onLoad={this.onYmapsLoad}
+											instanceRef={(map) => (this.map = map)}
+											modules={["coordSystem.geo", "geocode", "util.bounds"]}
+										></Map>
+									</YMaps>
+									<div className="text-danger" style={{ display: this.state.addressError }}>
+										Address must be entered.
+									</div>
+									<div className="text-danger" style={{ display: this.state.addressNotFoundError }}>
+										Sorry. Address not found. Try different one.
+									</div>
 										</div>
 									</div>
 									<div className="control-group">
@@ -242,7 +298,7 @@ class AddAccommodation extends Component {
                     show={this.state.openModal}
                     onCloseModal={this.handleModalClose}
                     header="Success"
-                    text="You have successfully added new item."
+                    text={this.state.textSuccessfulModal}
                 />
 				</Modal.Body>
 				<Modal.Footer>

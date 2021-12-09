@@ -1,5 +1,6 @@
 package com.example.WebShop.Model.Conferences;
 
+import com.example.WebShop.Model.Address;
 import com.example.WebShop.Model.Cart;
 import com.example.WebShop.Model.Pictures;
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -70,6 +71,9 @@ public class Conference {
     @JsonManagedReference
     @OneToMany(mappedBy = "conference", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     private Set<ConferencesCart> cart = new HashSet<ConferencesCart>();
+
+    @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    private Address address;
 
 
 

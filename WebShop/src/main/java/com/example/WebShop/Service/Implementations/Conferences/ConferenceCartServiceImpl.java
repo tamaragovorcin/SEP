@@ -48,9 +48,8 @@ public class ConferenceCartServiceImpl implements IConferenceCartService {
         cart.setBuyer(registeredUser);
         cart.setQuantity(dto.getQuantity());
         cart.setConference(conferenceService.findById(dto.getConferenceId()));
-        cart.setTotalPrice(conferenceService.findById(dto.getConferenceId()).getRegistrationFee());
+        cart.setTotalPrice(conferenceService.findById(dto.getConferenceId()).getRegistrationFee()*dto.getQuantity());
         cart.setStatus("CREATED");
-
         return conferenceCartRepository.save(cart);
     }
 

@@ -1,5 +1,6 @@
 package com.example.WebShop.DTOs.Conferences;
 
+import com.example.WebShop.DTOs.AddressDTO;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -19,7 +20,7 @@ public class ConferenceFrontDTO {
 
     private String slogan;
 
-    private String location;
+    private AddressDTO address;
 
     private LocalDate startDate;
 
