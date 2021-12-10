@@ -340,7 +340,7 @@ class ConferencesCart extends Component {
                     <div class="col">
                        
                         <button type="button" class="btn  btn-sm" data-toggle="button" aria-pressed="false" autocomplete="off" 
-							onClick={this.handlePayPalClicked}>
+							onClick={()=> this.handlePaymentClicked("paypal")}>
 							<img src={paypal} className="App-logo" alt="logo" />
 						</button>
 
@@ -365,7 +365,8 @@ class ConferencesCart extends Component {
                   {this.state.isBitcoinAllowed === true && 
                     <div class="col">
                        
-                          <button type="button" class="btn  btn-sm" data-toggle="button" aria-pressed="false" autocomplete="off"> 
+                          <button type="button" class="btn  btn-sm" data-toggle="button" aria-pressed="false" autocomplete="off"
+						    onClick={()=> this.handlePaymentClicked("bitcoin")}>
 							 <img src={bitcoin} className="App-logo" alt="logo" />
 						  </button>
 

@@ -21,6 +21,8 @@ import PayPalSuccess from './components/payment/PayPalSuccess';
 import PayPalError from './components/payment/PayPalError';
 import PayPalParams from './components/payment/PayPalParams';
 import PaymentMethodConf from './pages/conferences/PaymentMethodConf';
+import BitcoinSuccess from './components/payment/BitcoinSuccess';
+import BitcoinError from './components/payment/BitcoinError';
 
 function App() {
   return (
@@ -53,6 +55,8 @@ function App() {
 				<Link exact to="/payPalSuccess" path="/payPalSuccess" component={PayPalSuccess} />
 				<Link exact to="/payPalError" path="/payPalError" component={PayPalError} />
 				<Link exact to="/payPalParams" path="/payPalParams" component={PayPalParams} />
+				<Link exact to="/bitcoinSuccess" path="/bitcoinSuccess" component={BitcoinSuccess} />
+				<Link exact to="/bitcoinError" path="/bitcoinError" component={BitcoinError} />
 
 			</Switch>
 	</Router>
