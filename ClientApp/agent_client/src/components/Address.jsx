@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import {  Modal } from "react-bootstrap";
 import Axios from "axios";
-import { BASE_URL_PAYPAL } from "../constants.js";
+import { BASE_URL_PAYPAL, BASE_URL_BITCOIN, BASE_URL_AGENT } from "../constants.js";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { YMaps, Map } from "react-yandex-maps";
 import qr from '../static/qr.png';
@@ -26,10 +26,10 @@ class Address extends Component {
 		addressNotFoundError: "none",
 		openModal: false,
 		coords: [],
-		isPaypalAllowed : true,
-		isBankCardAllowed : true,
-		isQRAllowed : true,
-		isBitcoinAllowed : true
+		isPaypalAllowed : false,
+		isBankCardAllowed : false,
+		isQRAllowed : false,
+		isBitcoinAllowed : false
 	};
 
 	
@@ -37,9 +37,6 @@ class Address extends Component {
 	constructor(props) {
 		super(props);
 		this.addressInput = React.createRef();
-		console.log(this.isBankCardAllowed)
-		console.log(this.isPaypalAllowed)
-		console.log(this.isBitcoinAllowed)
 	}
 	handleModalClose = ()=>{
 		this.setState({openModal: false})
@@ -75,7 +72,32 @@ class Address extends Component {
 		return true;
 	};
 	componentDidMount() {
-		
+		Axios.get(BASE_URL_AGENT + "/api/payment/all")
+			.then((res) => {
+				res.data.methods.forEach(element => {
+					if(element === "Card"){
+
+						this.setState({ isBankCardAllowed: true });
+					}
+					if(element === "Paypal"){
+
+						this.setState({ isPaypalAllowed: true });
+					}
+					if(element === "Bitcoin"){
+
+						this.setState({ isBitcoinAllowed: true });
+					}
+					if(element === "Qr"){
+
+						this.setState({ isQRAllowed: true });
+					}
+				});
+					
+				console.log(res.data);
+			})
+			.catch((err) => {
+				console.log(err);
+			});
 
 	}
 
@@ -93,7 +115,8 @@ class Address extends Component {
 		return price
 	}
 
-	handlePayPalClicked = () => {
+
+	handlePaymentClicked = (paymentType) => {
 		let id = localStorage.getItem("userId").substring(1, localStorage.getItem('userId').length - 1);
 		let street;
 		let city;
@@ -128,26 +151,72 @@ class Address extends Component {
 					} else {
 						localStorage.setItem("orderAddress", JSON.stringify(foundAddress));
 						localStorage.setItem("orderProducts", JSON.stringify(products));
+						let totalPrice = this.getPrice(products)
+						
+						if(paymentType==="paypal") {this.handlePayPalPayment(totalPrice)}
+						else if(paymentType==="bitcoin") {this.handleBitcoinPayment(totalPrice)}
 
-						const checkoutDTO = {
-							price : this.getPrice(products),
-							currency : "USD",
-							method : "PAYPAL",
-							intent : "SALE",
-							description : "description"
-						}
-
-						Axios.post(BASE_URL_PAYPAL +"/api/paypal/pay",checkoutDTO)
-							.then( (res) => {
-								const data = res.data
-								window.location.href = data
-								}
-							)
-							.catch(err => console.log(err));
-									}
-								}
-							});
+					}
+			}
+		});
 	}
+
+	handlePayPalPayment = (totalPrice) => {
+
+		Axios.get(BASE_URL_AGENT +"/api/product/payment/paypal")
+			.then( (res) => {
+				const data = res.data
+				const checkoutDTO = {
+					price : totalPrice,
+					currency : "USD",
+					method : "PAYPAL",
+					intent : "SALE",
+					description : "description",
+					clientId :data.clientId,
+					clientSecret: data.clientSecret
+				}
+				localStorage.setItem("totalAmount", JSON.stringify(totalPrice));
+				localStorage.setItem("currency", JSON.stringify("USD"));
+				Axios.post(BASE_URL_PAYPAL +"/api/paypal/pay",checkoutDTO)
+					.then( (res) => {
+						const data = res.data
+						window.location.href = data
+						}
+					)
+					.catch(err => console.log(err));
+				}
+			)
+			.catch(err => console.log(err));
+		
+	}
+	handleBitcoinPayment = (totalPrice) => {
+
+		Axios.get(BASE_URL_AGENT +"/api/product/payment/bitcoin")
+			.then( (res) => {
+				const token = res.data
+				const checkoutDTO = {
+					amount : totalPrice,
+					merchant_id : "Id",
+					merchant_token: token
+				}
+		
+				Axios.post(BASE_URL_BITCOIN +"/api/bitcoin/pay",checkoutDTO)
+					.then( (res) => {
+						const data = res.data
+						var paymentUrl = data.split(', ')[0];
+						window.location.href = paymentUrl;
+						        	
+						var splitovan = data.split(', ');
+						var podaciZaTransakciju = splitovan[1] + ', ' + splitovan[2] + ', ' + splitovan[3] + ', ' + splitovan[4] + ', ' + splitovan[5] + ', ' + splitovan[6];
+						}
+					)
+					.catch(err => console.log(err));
+				}
+			)
+			.catch(err => console.log(err));
+		
+	}
+
 
 	render() {
 
@@ -203,7 +272,7 @@ class Address extends Component {
                     <div class="col">
                        
                         <button type="button" class="btn  btn-sm" data-toggle="button" aria-pressed="false" autocomplete="off" 
-							onClick={this.handlePayPalClicked}>
+							onClick={()=> this.handlePaymentClicked("paypal")}>
 							<img src={paypal} className="App-logo" alt="logo" />
 						</button>
 
@@ -228,7 +297,8 @@ class Address extends Component {
                   {this.state.isBitcoinAllowed === true && 
                     <div class="col">
                        
-                          <button type="button" class="btn  btn-sm" data-toggle="button" aria-pressed="false" autocomplete="off"> 
+                          <button type="button" class="btn  btn-sm" data-toggle="button" aria-pressed="false" autocomplete="off"
+						  	onClick={()=> this.handlePaymentClicked("bitcoin")}> 
 							 <img src={bitcoin} className="App-logo" alt="logo" />
 						  </button>
 

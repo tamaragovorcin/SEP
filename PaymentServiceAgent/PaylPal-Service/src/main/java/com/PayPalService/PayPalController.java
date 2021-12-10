@@ -1,16 +1,13 @@
 package com.PayPalService;
 import com.PayPalService.Model.Order;
 import com.PayPalService.Model.PaymentInfo;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import com.paypal.api.payments.Links;
 import com.paypal.api.payments.Payment;
 import com.paypal.base.rest.PayPalRESTException;
-
-import java.awt.*;
-import java.io.IOException;
-import java.net.URI;
-import java.net.URISyntaxException;
 
 @RestController
 @RequestMapping("/api/paypal")
@@ -18,6 +15,8 @@ public class PayPalController {
 
     @Autowired
     PayPalService payPalService;
+
+    Logger logger = LoggerFactory.getLogger(PayPalController.class);
 
     @GetMapping("")
     public String home() {
@@ -34,15 +33,17 @@ public class PayPalController {
         try {
             Payment payment = payPalService.createPayment(order.getPrice(), order.getCurrency(), order.getMethod(),
                     order.getIntent(), order.getDescription(), "http://localhost:3001/#/payPalError",
-                    "http://localhost:3001/#/payPalParams");
+                    "http://localhost:3001/#/payPalParams", order.getClientId(), order.getClientSecret());
+            logger.info("Paypal payment object created.");
             for(Links link:payment.getLinks()) {
                 if(link.getRel().equals("approval_url")) {
+                    logger.info("Sending paypal api link for redirection.");
                     return link.getHref();
                 }
             }
 
         } catch (PayPalRESTException e) {
-
+            logger.error("Exception with creating paypal payment object. Error is: " + e );
             e.printStackTrace();
         }
         return "http://localhost:3001/#/payPalError";
@@ -52,33 +53,17 @@ public class PayPalController {
     public String successPay(@RequestBody PaymentInfo paymentInfo) {
         try {
             Payment payment = payPalService.executePayment(paymentInfo.getPaymentId(), paymentInfo.getPayerId());
-            System.out.println(payment.toJSON());
             if (payment.getState().equals("approved")) {
                 payPalService.savePayment(payment);
-                browse("http://localhost:3001/#/payPalSuccess");
-                 return "success";
+                logger.info("Paypal payment has just been finished.");
+                payPalService.browse("http://localhost:3001/#/payPalSuccess");
+                return "success";
             }
         } catch (PayPalRESTException e) {
-            browse("http://localhost:3001/#/payPalError");
-            System.out.println(e.getMessage());
+            logger.error("Exception with finalizing paypal payment. Error is: " + e );
+            payPalService.browse("http://localhost:3001/#/payPalError");
         }
         return "error";
     }
-    public static void browse(String url) {
-        if(Desktop.isDesktopSupported()){
-            Desktop desktop = Desktop.getDesktop();
-            try {
-                desktop.browse(new URI(url));
-            } catch (IOException | URISyntaxException e) {
-                e.printStackTrace();
-            }
-        }else{
-            Runtime runtime = Runtime.getRuntime();
-            try {
-                runtime.exec("rundll32 url.dll,FileProtocolHandler " + url);
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        }
-    }
+
 }
