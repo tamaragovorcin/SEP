@@ -9,5 +9,7 @@ INSERT INTO user_authority  VALUES (2, 2);
 
 
 
-
+INSERT INTO product_payment_data  VALUES (1, "-ePst6Ws2zcsr3naJEnxzkXHPpMBUkxV5Ps85_D5",
+                                            "AV53WcoFcJBV8FmGKp_qz7ZFUk8nAoLODD5D5A-OsHfVsQVSB4WIxPm2JH63jUDkn-HGvd2HdqmTz6Sf",
+                                            "EJgHCJKK3314ZbozPXB7p6okMQy8ohBMtA4cYrr2qsWnJbs9twn7c_Z1JmJhf1KXO1tZrV4mgxsVD2G8");
 

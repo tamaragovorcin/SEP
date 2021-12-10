@@ -590,3 +590,201 @@ java.lang.NullPointerException: null
 2021-12-06 22:47:06.245  INFO 26668 --- [http-nio-8085-exec-4] c.e.W.Controllers.ProductController      : User user is overviewing products.
 2021-12-06 22:47:11.207  INFO 26668 --- [http-nio-8085-exec-6] c.e.W.Controllers.PurchaseController     : User user is overviewing its purchases
 2021-12-06 22:47:14.955  INFO 26668 --- [http-nio-8085-exec-7] c.e.WebShop.Controllers.CartController   : User: useris viewing its cart.
+2021-12-10 10:39:20.856  INFO 13028 --- [restartedMain] com.example.WebShop.WebShopApplication   : Starting WebShopApplication using Java 17.0.1 on DESKTOP-1PFK6EP with PID 13028 (D:\Master\SEP\SEP\WebShop\target\classes started by tamar in D:\Master\SEP\SEP\WebShop)
+2021-12-10 10:39:20.870 DEBUG 13028 --- [restartedMain] com.example.WebShop.WebShopApplication   : Running with Spring Boot v2.4.0, Spring v5.3.1
+2021-12-10 10:39:20.870  INFO 13028 --- [restartedMain] com.example.WebShop.WebShopApplication   : No active profile set, falling back to default profiles: default
+2021-12-10 10:39:20.972  INFO 13028 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\tamar\.m2\repository\com\sun\xml\ws\jaxws-rt\2.1.4\jaxws-rt-2.1.4.jar referenced one or more files that do not exist: file:/C:/Users/tamar/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/jaxws-api.jar,file:/C:/Users/tamar/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/jsr181-api.jar,file:/C:/Users/tamar/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/jsr250-api.jar,file:/C:/Users/tamar/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/saaj-api.jar,file:/C:/Users/tamar/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/saaj-impl.jar,file:/C:/Users/tamar/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/jsr173_api.jar,file:/C:/Users/tamar/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/sjsxp.jar,file:/C:/Users/tamar/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/resolver.jar,file:/C:/Users/tamar/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/jaxb-api.jar,file:/C:/Users/tamar/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/jaxb-impl.jar,file:/C:/Users/tamar/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/activation.jar,file:/C:/Users/tamar/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/stax-ex.jar,file:/C:/Users/tamar/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/streambuffer.jar,file:/C:/Users/tamar/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/stax-utils.jar
+2021-12-10 10:39:20.973  INFO 13028 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\tamar\.m2\repository\com\sun\xml\bind\jaxb-impl\2.1.7\jaxb-impl-2.1.7.jar referenced one or more files that do not exist: file:/C:/Users/tamar/.m2/repository/com/sun/xml/bind/jaxb-impl/2.1.7/jaxb-api.jar,file:/C:/Users/tamar/.m2/repository/com/sun/xml/bind/jaxb-impl/2.1.7/activation.jar,file:/C:/Users/tamar/.m2/repository/com/sun/xml/bind/jaxb-impl/2.1.7/jsr173_1.0_api.jar,file:/C:/Users/tamar/.m2/repository/com/sun/xml/bind/jaxb-impl/2.1.7/jaxb1-impl.jar
+2021-12-10 10:39:20.973  INFO 13028 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\tamar\.m2\repository\org\jopendocument\jOpenDocument\1.2\jOpenDocument-1.2.jar referenced one or more files that do not exist: file:/C:/Users/tamar/.m2/repository/org/jopendocument/jOpenDocument/1.2/xbean.jar
+2021-12-10 10:39:20.973  INFO 13028 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-12-10 10:39:20.973  INFO 13028 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-12-10 10:39:23.136  INFO 13028 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2021-12-10 10:39:23.411  INFO 13028 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 263 ms. Found 9 JPA repository interfaces.
+2021-12-10 10:39:24.122  INFO 13028 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@16bb8026' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-10 10:39:24.131  INFO 13028 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-10 10:39:24.954  INFO 13028 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+2021-12-10 10:39:24.974  INFO 13028 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-10 10:39:24.974  INFO 13028 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-12-10 10:39:25.156  INFO 13028 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-10 10:39:25.156  INFO 13028 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4182 ms
+2021-12-10 10:39:25.364  INFO 13028 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-12-10 10:39:25.384  INFO 13028 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2021-12-10 10:39:25.464  INFO 13028 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-10 10:39:25.662  INFO 13028 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.23.Final
+2021-12-10 10:39:25.795  WARN 13028 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-10 10:39:25.988  INFO 13028 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-10 10:39:26.235  INFO 13028 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-12-10 10:39:26.745  INFO 13028 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-12-10 10:39:26.783  INFO 13028 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-12-10 10:39:27.005  WARN 13028 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2021-12-10 10:39:27.658  INFO 13028 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/', GET] with []
+2021-12-10 10:39:27.659  INFO 13028 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/webjars/**', GET] with []
+2021-12-10 10:39:27.659  INFO 13028 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/*.html', GET] with []
+2021-12-10 10:39:27.659  INFO 13028 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/favicon.ico', GET] with []
+2021-12-10 10:39:27.659  INFO 13028 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/**/*.html', GET] with []
+2021-12-10 10:39:27.659  INFO 13028 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/**/*.css', GET] with []
+2021-12-10 10:39:27.659  INFO 13028 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/**/*.js', GET] with []
+2021-12-10 10:39:27.659  INFO 13028 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/api/auth/login', POST] with []
+2021-12-10 10:39:27.659  INFO 13028 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/api/auth/signup', POST] with []
+2021-12-10 10:39:27.660  INFO 13028 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/api/items/add', POST] with []
+2021-12-10 10:39:27.710  INFO 13028 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@504fa99e, org.springframework.security.web.context.SecurityContextPersistenceFilter@112e53c7, org.springframework.security.web.header.HeaderWriterFilter@d0bc3dd, org.springframework.web.filter.CorsFilter@4616c4a1, org.springframework.security.web.authentication.logout.LogoutFilter@f6acf40, com.example.WebShop.Authentication.TokenAuthenticationFilter@1ef9d716, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4510aa4a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@402369fa, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@619527ff, org.springframework.security.web.session.SessionManagementFilter@613ef10e, org.springframework.security.web.access.ExceptionTranslationFilter@48626e99, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@b60b297]
+2021-12-10 10:39:27.810  WARN 13028 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-12-10 10:39:28.260  INFO 13028 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path ''
+2021-12-10 10:39:28.875  INFO 13028 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-10 10:39:28.898  INFO 13028 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-10 10:39:28.913  INFO 13028 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2021-12-10 10:39:30.007  INFO 13028 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2021-12-10 10:39:30.035  INFO 13028 --- [restartedMain] com.example.WebShop.WebShopApplication   : Started WebShopApplication in 9.996 seconds (JVM running for 12.754)
+2021-12-10 10:40:29.830  INFO 13028 --- [http-nio-8085-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-10 10:40:29.830  INFO 13028 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-12-10 10:40:29.832  INFO 13028 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-12-10 10:40:30.710 ERROR 13028 --- [http-nio-8085-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException: Cannot invoke "com.example.WebShop.Model.User.getUsername()" because the return value of "com.example.WebShop.Service.Implementations.CartService.getLoggedUser()" is null] with root cause
+
+java.lang.NullPointerException: Cannot invoke "com.example.WebShop.Model.User.getUsername()" because the return value of "com.example.WebShop.Service.Implementations.CartService.getLoggedUser()" is null
+	at com.example.WebShop.Controllers.ProductController.allProducts(ProductController.java:116) ~[classes/:na]
+	at com.example.WebShop.Controllers.ProductController$$FastClassBySpringCGLIB$$79af79ff.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:687) ~[spring-aop-5.3.1.jar:5.3.1]
+	at com.example.WebShop.Controllers.ProductController$$EnhancerBySpringCGLIB$$8b8d7ae4.allProducts(<generated>) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197) ~[spring-web-5.3.1.jar:5.3.1]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141) ~[spring-web-5.3.1.jar:5.3.1]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.3.1.jar:5.3.1]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:893) ~[spring-webmvc-5.3.1.jar:5.3.1]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:807) ~[spring-webmvc-5.3.1.jar:5.3.1]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.1.jar:5.3.1]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1061) ~[spring-webmvc-5.3.1.jar:5.3.1]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:961) ~[spring-webmvc-5.3.1.jar:5.3.1]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.1.jar:5.3.1]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.1.jar:5.3.1]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626) ~[tomcat-embed-core-9.0.39.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.1.jar:5.3.1]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.39.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:327) ~[spring-security-web-5.4.1.jar:5.4.1]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:115) ~[spring-security-web-5.4.1.jar:5.4.1]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:81) ~[spring-security-web-5.4.1.jar:5.4.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.4.1.jar:5.4.1]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119) ~[spring-security-web-5.4.1.jar:5.4.1]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:113) ~[spring-security-web-5.4.1.jar:5.4.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.4.1.jar:5.4.1]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126) ~[spring-security-web-5.4.1.jar:5.4.1]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81) ~[spring-security-web-5.4.1.jar:5.4.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.4.1.jar:5.4.1]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:105) ~[spring-security-web-5.4.1.jar:5.4.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.4.1.jar:5.4.1]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149) ~[spring-security-web-5.4.1.jar:5.4.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.4.1.jar:5.4.1]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-5.4.1.jar:5.4.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.4.1.jar:5.4.1]
+	at com.example.WebShop.Authentication.TokenAuthenticationFilter.doFilterInternal(TokenAuthenticationFilter.java:52) ~[classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.1.jar:5.3.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.4.1.jar:5.4.1]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103) ~[spring-security-web-5.4.1.jar:5.4.1]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89) ~[spring-security-web-5.4.1.jar:5.4.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.4.1.jar:5.4.1]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-5.3.1.jar:5.3.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.1.jar:5.3.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.4.1.jar:5.4.1]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-5.4.1.jar:5.4.1]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-5.4.1.jar:5.4.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.1.jar:5.3.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.4.1.jar:5.4.1]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110) ~[spring-security-web-5.4.1.jar:5.4.1]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80) ~[spring-security-web-5.4.1.jar:5.4.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.4.1.jar:5.4.1]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55) ~[spring-security-web-5.4.1.jar:5.4.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.1.jar:5.3.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.4.1.jar:5.4.1]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211) ~[spring-security-web-5.4.1.jar:5.4.1]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183) ~[spring-security-web-5.4.1.jar:5.4.1]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358) ~[spring-web-5.3.1.jar:5.3.1]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271) ~[spring-web-5.3.1.jar:5.3.1]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.1.jar:5.3.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.1.jar:5.3.1]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2021-12-10 10:40:48.401  INFO 13028 --- [http-nio-8085-exec-4] c.e.W.C.AuthenticationController         : User user has just logged in.
+2021-12-10 10:40:48.812  INFO 13028 --- [http-nio-8085-exec-5] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-10 10:40:48.840  INFO 13028 --- [http-nio-8085-exec-5] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-10 10:41:04.773  INFO 13028 --- [http-nio-8085-exec-8] c.e.WebShop.Controllers.CartController   : User: useris viewing its cart.
+2021-12-10 10:41:06.390  INFO 13028 --- [http-nio-8085-exec-9] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-10 10:41:06.400  INFO 13028 --- [http-nio-8085-exec-9] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-10 10:41:10.684  INFO 13028 --- [http-nio-8085-exec-1] c.e.WebShop.Controllers.CartController   : Item with id: 12has just been added to the cart by user user
+2021-12-10 10:41:13.138  INFO 13028 --- [http-nio-8085-exec-2] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-10 10:41:13.152  INFO 13028 --- [http-nio-8085-exec-2] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-10 10:41:14.130  INFO 13028 --- [http-nio-8085-exec-3] c.e.WebShop.Controllers.CartController   : User: useris viewing its cart.
+2021-12-10 10:41:44.527  INFO 13028 --- [http-nio-8085-exec-7] c.e.W.Controllers.PurchaseController     : User user is making a purchase
+2021-12-10 10:41:47.918  INFO 13028 --- [http-nio-8085-exec-8] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-10 10:41:47.929  INFO 13028 --- [http-nio-8085-exec-8] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-10 10:41:48.976  INFO 13028 --- [http-nio-8085-exec-9] c.e.WebShop.Controllers.CartController   : User: useris viewing its cart.
+2021-12-10 10:42:50.286  INFO 13028 --- [http-nio-8085-exec-1] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-10 10:42:50.296  INFO 13028 --- [http-nio-8085-exec-1] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-10 10:42:54.050  INFO 13028 --- [http-nio-8085-exec-3] c.e.WebShop.Controllers.CartController   : Item with id: 12has just been added to the cart by user user
+2021-12-10 10:42:56.091  INFO 13028 --- [http-nio-8085-exec-4] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-10 10:42:56.099  INFO 13028 --- [http-nio-8085-exec-4] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-10 10:42:57.230  INFO 13028 --- [http-nio-8085-exec-5] c.e.WebShop.Controllers.CartController   : User: useris viewing its cart.
+2021-12-10 10:42:58.149  INFO 13028 --- [http-nio-8085-exec-6] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-10 10:42:58.520  INFO 13028 --- [http-nio-8085-exec-6] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-10 10:43:01.144  INFO 13028 --- [http-nio-8085-exec-7] c.e.WebShop.Controllers.CartController   : User: useris viewing its cart.
+2021-12-10 10:43:14.376  INFO 13028 --- [http-nio-8085-exec-1] c.e.W.Controllers.PurchaseController     : User user is making a purchase
+2021-12-10 10:43:22.324  INFO 13028 --- [http-nio-8085-exec-2] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-10 10:43:22.333  INFO 13028 --- [http-nio-8085-exec-2] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-10 10:43:25.148  INFO 13028 --- [http-nio-8085-exec-4] c.e.WebShop.Controllers.CartController   : User: useris viewing its cart.
+2021-12-10 10:44:16.299  INFO 13028 --- [http-nio-8085-exec-6] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-10 10:44:16.309  INFO 13028 --- [http-nio-8085-exec-6] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-10 10:44:22.932  INFO 13028 --- [http-nio-8085-exec-7] c.e.WebShop.Controllers.CartController   : Item with id: 12has just been added to the cart by user user
+2021-12-10 10:44:25.484  INFO 13028 --- [http-nio-8085-exec-9] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-10 10:44:25.495  INFO 13028 --- [http-nio-8085-exec-9] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-10 10:44:26.138  INFO 13028 --- [http-nio-8085-exec-10] c.e.WebShop.Controllers.CartController   : User: useris viewing its cart.
+2021-12-10 10:47:11.852  INFO 13028 --- [http-nio-8085-exec-3] c.e.WebShop.Controllers.CartController   : User: useris viewing its cart.
+2021-12-10 10:49:06.486  INFO 13028 --- [http-nio-8085-exec-6] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-10 10:49:06.494  INFO 13028 --- [http-nio-8085-exec-6] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-10 10:49:08.756  INFO 13028 --- [http-nio-8085-exec-8] c.e.WebShop.Controllers.CartController   : User: useris viewing its cart.
+2021-12-10 10:51:29.477  INFO 13028 --- [http-nio-8085-exec-1] c.e.WebShop.Controllers.CartController   : User: useris viewing its cart.
+2021-12-10 10:52:38.989  INFO 13028 --- [http-nio-8085-exec-4] c.e.WebShop.Controllers.CartController   : User: useris viewing its cart.
+2021-12-10 10:54:40.791  INFO 13028 --- [http-nio-8085-exec-7] c.e.W.Controllers.PurchaseController     : User user is making a purchase
+2021-12-10 10:54:47.943  INFO 13028 --- [http-nio-8085-exec-8] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-10 10:54:47.955  INFO 13028 --- [http-nio-8085-exec-8] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-10 10:54:49.128  INFO 13028 --- [http-nio-8085-exec-10] c.e.WebShop.Controllers.CartController   : User: useris viewing its cart.
+2021-12-10 10:55:00.227  INFO 13028 --- [http-nio-8085-exec-1] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-10 10:55:00.236  INFO 13028 --- [http-nio-8085-exec-1] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-10 10:55:04.193  INFO 13028 --- [http-nio-8085-exec-2] c.e.WebShop.Controllers.CartController   : Item with id: 12has just been added to the cart by user user
+2021-12-10 10:55:06.315  INFO 13028 --- [http-nio-8085-exec-3] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-10 10:55:06.323  INFO 13028 --- [http-nio-8085-exec-3] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-10 10:55:06.965  INFO 13028 --- [http-nio-8085-exec-4] c.e.WebShop.Controllers.CartController   : User: useris viewing its cart.
+2021-12-10 10:55:17.832  INFO 13028 --- [http-nio-8085-exec-6] c.e.W.Controllers.PurchaseController     : User user is making a purchase
+2021-12-10 10:55:20.199  INFO 13028 --- [http-nio-8085-exec-7] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-10 10:55:20.207  INFO 13028 --- [http-nio-8085-exec-7] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-10 10:55:21.545  INFO 13028 --- [http-nio-8085-exec-8] c.e.WebShop.Controllers.CartController   : User: useris viewing its cart.
+2021-12-10 10:57:17.233  INFO 13028 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-10 10:57:17.280  INFO 13028 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2021-12-10 10:57:17.280  INFO 13028 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-12-10 10:57:17.293  INFO 13028 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-12-10 10:57:17.381  INFO 13028 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

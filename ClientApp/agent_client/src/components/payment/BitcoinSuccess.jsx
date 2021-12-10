@@ -20,7 +20,6 @@ const BitcoinSuccess = () => {
                                     total : JSON.parse(localStorage.getItem('totalAmount')),
                                     currency : JSON.parse(localStorage.getItem('currency')),
                                 }     
-
                                 Axios.post(BASE_URL_BITCOIN + "/api/bitcoin/save", bitcoinDto, {  headers: { Authorization: getAuthHeader() } })
                                     .then((res) => {
 

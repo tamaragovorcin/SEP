@@ -1,6 +1,8 @@
 package com.PayPalService;
 import com.PayPalService.Model.Order;
 import com.PayPalService.Model.PaymentInfo;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import com.paypal.api.payments.Links;
@@ -13,6 +15,8 @@ public class PayPalController {
 
     @Autowired
     PayPalService payPalService;
+
+    Logger logger = LoggerFactory.getLogger(PayPalController.class);
 
     @GetMapping("")
     public String home() {
@@ -30,8 +34,11 @@ public class PayPalController {
             Payment payment = payPalService.createPayment(order.getPrice(), order.getCurrency(), order.getMethod(),
                     order.getIntent(), order.getDescription(), "http://localhost:3001/#/payPalError",
                     "http://localhost:3001/#/payPalParams", order.getClientId(),order.getClientSecret());
+            logger.info("Paypal payment object created.");
+
             for(Links link:payment.getLinks()) {
                 if(link.getRel().equals("approval_url")) {
+                    logger.info("Sending paypal api link for redirection.");
                     return link.getHref();
                 }
             }
@@ -39,6 +46,7 @@ public class PayPalController {
         } catch (PayPalRESTException e) {
 
             e.printStackTrace();
+            logger.error("Exception with creating paypal payment object. Error is: " + e );
         }
         return "http://localhost:3001/#/payPalError";
     }
@@ -49,12 +57,14 @@ public class PayPalController {
             Payment payment = payPalService.executePayment(paymentInfo.getPaymentId(), paymentInfo.getPayerId());
             if (payment.getState().equals("approved")) {
                 payPalService.savePayment(payment);
+                logger.info("Paypal payment has just been finished.");
+
                 payPalService.browse("http://localhost:3001/#/payPalSuccess");
                 return "success";
             }
         } catch (PayPalRESTException e) {
+            logger.error("Exception with finalizing paypal payment. Error is: " + e );
             payPalService.browse("http://localhost:3001/#/payPalError");
-            System.out.println(e.getMessage());
         }
         return "error";
     }
