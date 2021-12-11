@@ -1,3 +1,4 @@
+2021-12-11 15:26:42.994  WARN 17796 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=19h23m56s436ms223µs400ns).
 2021-12-11 14:24:52.987  INFO 15924 --- [restartedMain] com.example.WebShop.WebShopApplication   : Starting WebShopApplication using Java 17.0.1 on DESKTOP-1PFK6EP with PID 15924 (D:\Master\SEP\SEP\WebShop\target\classes started by tamar in D:\Master\SEP\SEP\WebShop)
 2021-12-11 14:24:52.999 DEBUG 15924 --- [restartedMain] com.example.WebShop.WebShopApplication   : Running with Spring Boot v2.4.0, Spring v5.3.1
 2021-12-11 14:24:53.000  INFO 15924 --- [restartedMain] com.example.WebShop.WebShopApplication   : No active profile set, falling back to default profiles: default
