@@ -1,5 +1,6 @@
 package com.example.WebShop.Model;
 
+import com.example.WebShop.Model.Conferences.ConferencesPurchase;
 import com.fasterxml.jackson.annotation.JsonIdentityInfo;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
@@ -8,6 +9,7 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.hibernate.envers.Audited;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
@@ -18,14 +20,13 @@ import java.util.*;
 import static javax.persistence.DiscriminatorType.STRING;
 import static javax.persistence.InheritanceType.SINGLE_TABLE;
 
+
 @Entity
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-
 @Table(name="user_table")
-
 public class User implements UserDetails, Serializable {
     @Id
     @SequenceGenerator(name = "mySeqGenV2", sequenceName = "mySeqV2", initialValue = 1, allocationSize = 1)
@@ -46,10 +47,15 @@ public class User implements UserDetails, Serializable {
             inverseJoinColumns = @JoinColumn(name = "authority_id", referencedColumnName = "id"))
     private List<Authority> authorities = new ArrayList<Authority>();
 
-
+    @Audited
     @JsonManagedReference
     @OneToMany(mappedBy = "buyer", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     private Set<Purchase> purchase = new HashSet<Purchase>();
+
+    @Audited
+    @JsonManagedReference
+    @OneToMany(mappedBy = "buyer", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    private Set<ConferencesPurchase> conferencesPurchases = new HashSet<>();
 
     @JsonIgnore
     @Override

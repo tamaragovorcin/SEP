@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Header from "../../components/conferences/Header";
 import TopBar from "../../components/TopBar";
-import { BASE_URL_AGENT } from "../../constants.js";
+import { BASE_URL_AGENT, BASE_URL_PAYPAL, BASE_URL_BITCOIN } from "../../constants.js";
 import { BASE_URL } from "../../constants.js";
 import Axios from "axios";
 import getAuthHeader from "../../GetHeader";
@@ -153,38 +153,6 @@ class ConferencesCart extends Component {
 
 	};
 
-
-	handleOrder = () => {
-		let dto = {
-			items: this.state.products,
-			
-		};
-				Axios.post(BASE_URL_AGENT + "/api/conference/addOrder", dto, {  headers: { Authorization: getAuthHeader() } })
-					.then((res) => {
-						if (res.status === 409) {
-							this.setState({
-								errorHeader: "Resource conflict!",
-								errorMessage: "Email already exist.",
-								hiddenErrorAlert: false,
-							});
-						} else if (res.status === 500) {
-							this.setState({ errorHeader: "Internal server error!", errorMessage: "Server error.", hiddenErrorAlert: false });
-						} else {
-							
-							this.setState({openModal : true})
-
-
-						}
-					})
-					.catch((err) => {
-						console.log(err);
-					});
-		
-
-
-
-	};
-
 	handleGradeFromChange = (event) => {
 		if (event.target.value < 0) this.setState({ gradeFrom: 0 });
 		else this.setState({ gradeFrom: event.target.value });
@@ -221,6 +189,74 @@ class ConferencesCart extends Component {
 			redirect: true,
 			redirectUrl: "/conference/" + idConf+"/"+idCart,
 		});
+	}
+
+	getPrice = (products)=> {
+		let price = 0;
+		for (let i = 0; i < products.length; i++) {
+			price = price + products[i].price
+		}
+		return price
+	}
+
+
+	handlePayPalPayment = () => {
+		let totalPrice = this.getPrice(this.state.products)
+		localStorage.setItem("orderProducts", JSON.stringify(this.state.products));
+		localStorage.setItem("webshopType", JSON.stringify("conference"));
+
+		Axios.get(BASE_URL_AGENT +"/api/conference/payment/paypal")
+			.then( (res) => {
+				const data = res.data
+				const checkoutDTO = {
+					price : totalPrice,
+					currency : "USD",
+					method : "PAYPAL",
+					intent : "SALE",
+					description : "description",
+					clientId :data.clientId,
+					clientSecret: data.clientSecret
+				}
+				localStorage.setItem("totalAmount", JSON.stringify(totalPrice));
+				localStorage.setItem("currency", JSON.stringify("USD"));
+				Axios.post(BASE_URL_PAYPAL +"/api/paypal/pay",checkoutDTO)
+					.then( (res) => {
+						const data = res.data
+						window.location.href = data
+						}
+					)
+					.catch(err => console.log(err));
+				}
+			)
+			.catch(err => console.log(err));
+		
+	}
+	handleBitcoinPayment = () => {
+		let totalPrice = this.getPrice(this.state.products)
+		localStorage.setItem("orderProducts", JSON.stringify(this.state.products));
+		localStorage.setItem("webshopType", JSON.stringify("conference"));
+		Axios.get(BASE_URL_AGENT +"/api/conference/payment/bitcoin")
+			.then( (res) => {
+				const token = res.data
+				const checkoutDTO = {
+					amount : totalPrice,
+					merchant_id : "Id",
+					merchant_token: token
+				}
+		
+				Axios.post(BASE_URL_BITCOIN +"/api/bitcoin/pay",checkoutDTO)
+					.then( (res) => {
+						const data = res.data
+						var paymentUrl = data.split(', ')[0];
+						window.location.href = paymentUrl;
+						        	
+						}
+					)
+					.catch(err => console.log(err));
+				}
+			)
+			.catch(err => console.log(err));
+		
 	}
 
 	render() {
@@ -340,7 +376,7 @@ class ConferencesCart extends Component {
                     <div class="col">
                        
                         <button type="button" class="btn  btn-sm" data-toggle="button" aria-pressed="false" autocomplete="off" 
-							onClick={()=> this.handlePaymentClicked("paypal")}>
+							onClick={this.handlePayPalPayment}>
 							<img src={paypal} className="App-logo" alt="logo" />
 						</button>
 
@@ -366,7 +402,7 @@ class ConferencesCart extends Component {
                     <div class="col">
                        
                           <button type="button" class="btn  btn-sm" data-toggle="button" aria-pressed="false" autocomplete="off"
-						    onClick={()=> this.handlePaymentClicked("bitcoin")}>
+						    onClick={this.handleBitcoinPayment}>
 							 <img src={bitcoin} className="App-logo" alt="logo" />
 						  </button>
 

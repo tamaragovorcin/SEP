@@ -3,13 +3,17 @@ package com.example.WebShop.Model;
 import com.example.WebShop.DTOs.AddressDTO;
 import com.example.WebShop.Model.Conferences.Accommodation;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.hibernate.envers.Audited;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.HashSet;
+import java.util.Set;
 
 @Entity
 @Getter
@@ -39,6 +43,11 @@ public class Address extends AddressDTO implements Serializable {
 
     @Column(name = "country")
     private String country;
+
+    @Audited
+    @JsonManagedReference
+    @OneToMany(mappedBy = "address", fetch = FetchType.LAZY, cascade = CascadeType.MERGE)
+    private Set<Purchase> purchase = new HashSet<Purchase>();
 
 
     public Address(double latitude, double longitude, String city, String street, String country) {
