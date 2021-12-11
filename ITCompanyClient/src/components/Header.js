@@ -33,10 +33,10 @@ class Header extends Component {
 								<Link to="/">Home</Link>
 							</li>
 							<li className="active"  hidden={!this.hasRole("HEAD_OF_PROCUREMENT")}>
-								<Link to="/">Equipment ordering</Link>
+								<a href="http://localhost:3001/#/login">Equipment ordering</a>
 							</li>
 							<li className="active"  hidden={!this.hasRole("GENERAL_SERVICE")}>
-								<Link to="/">Courses/Conferences</Link>
+								<a href="http://localhost:3001/#/login">Courses/Conferences</a>
 							</li>
 							
 						</ul>
