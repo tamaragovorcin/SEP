@@ -21,6 +21,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.hibernate.annotations.Cascade;
+import org.hibernate.envers.Audited;
 
 import javax.persistence.*;
 import java.time.LocalDate;
@@ -41,7 +42,6 @@ import java.util.Set;
         @ManyToOne(cascade = CascadeType.MERGE, fetch = FetchType.LAZY)
         @JoinColumn(name = "buyer_id", referencedColumnName = "id", nullable = true, unique = false)
         private User buyer;
-
 
         @JsonBackReference
         @ManyToOne(cascade = CascadeType.MERGE, fetch = FetchType.LAZY)
@@ -68,6 +68,8 @@ import java.util.Set;
         @Column(name = "totalPrice", nullable = true)
         private Double totalPrice;
 
+
+        @Audited
         @JsonIgnore
         @JsonBackReference(value="conferencesPurchase-conferencesCarts")
         @ManyToOne(cascade = CascadeType.MERGE, fetch = FetchType.LAZY)

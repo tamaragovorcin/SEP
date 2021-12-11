@@ -117,6 +117,7 @@ class Address extends Component {
 
 
 	handlePaymentClicked = (paymentType) => {
+		console.log("b-------------")
 		let id = localStorage.getItem("userId").substring(1, localStorage.getItem('userId').length - 1);
 		let street;
 		let city;
@@ -152,7 +153,6 @@ class Address extends Component {
 						localStorage.setItem("orderAddress", JSON.stringify(foundAddress));
 						localStorage.setItem("orderProducts", JSON.stringify(products));
 						let totalPrice = this.getPrice(products)
-						
 						if(paymentType==="paypal") {this.handlePayPalPayment(totalPrice)}
 						else if(paymentType==="bitcoin") {this.handleBitcoinPayment(totalPrice)}
 
@@ -162,6 +162,7 @@ class Address extends Component {
 	}
 
 	handlePayPalPayment = (totalPrice) => {
+		localStorage.setItem("webshopType", JSON.stringify("product"));
 
 		Axios.get(BASE_URL_AGENT +"/api/product/payment/paypal")
 			.then( (res) => {
@@ -190,6 +191,7 @@ class Address extends Component {
 		
 	}
 	handleBitcoinPayment = (totalPrice) => {
+		localStorage.setItem("webshopType", JSON.stringify("product"));
 
 		Axios.get(BASE_URL_AGENT +"/api/product/payment/bitcoin")
 			.then( (res) => {
