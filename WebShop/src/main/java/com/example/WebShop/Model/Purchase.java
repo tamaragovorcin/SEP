@@ -8,12 +8,14 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.hibernate.envers.Audited;
 
 import javax.persistence.*;
 import java.time.LocalDate;
 import java.util.HashSet;
 import java.util.Set;
 
+@Audited
 @Entity
 @Getter
 @Setter
@@ -43,7 +45,9 @@ public class Purchase {
     @Column(name = "date", nullable = true)
     private LocalDate date;
 
+    @JsonBackReference
     @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @JoinColumn(name = "address_id")
     private Address address;
 
 

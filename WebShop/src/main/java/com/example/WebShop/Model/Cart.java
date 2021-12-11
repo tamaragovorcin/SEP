@@ -10,6 +10,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.hibernate.annotations.Cascade;
+import org.hibernate.envers.Audited;
 
 import javax.persistence.*;
 import java.time.LocalDate;
@@ -46,6 +47,7 @@ public class Cart {
     @Column(name = "status", nullable = true)
     private String status;
 
+    @Audited
     @ManyToMany(mappedBy = "cart")
     @Cascade(org.hibernate.annotations.CascadeType.ALL)
     @JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class, property = "id")
