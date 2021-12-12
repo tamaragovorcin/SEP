@@ -8,6 +8,7 @@ import { Redirect } from "react-router-dom";
 import HeadingAlert from "../components/HeadingAlert";
 import getAuthHeader from "../GetHeader";
 
+import ModalDialog from "../components/ModalDialog";
 class Login extends Component {
 	state = {
 		errorHeader: "",
@@ -22,11 +23,15 @@ class Login extends Component {
 		redirect: false,
 		emailError: "none",
 		passwordError: "none",
+		openModal:false
 
 	};
 	handleEmailChange = (event) => {
 		this.setState({ email: event.target.value });
 	};
+	handleModalClose = ()=>{
+		this.setState({openModal: false})
+	}
 	handlePasswordChange = (event) => {
 		this.setState({ password: event.target.value });
 	};
@@ -161,6 +166,7 @@ class Login extends Component {
 		return true;
 	};
 
+
 	render() {
 		if (this.state.redirect) return <Redirect push to="/" />;
 		return (
@@ -207,6 +213,12 @@ class Login extends Component {
 						</div>
 					</div>
 				</div>
+				<ModalDialog
+					show={this.state.openModal}
+					onCloseModal={this.handleModalClose}
+					header="Success"
+					text="You have successfully changed payment methods."
+				/>
 
 			</React.Fragment>
 		);

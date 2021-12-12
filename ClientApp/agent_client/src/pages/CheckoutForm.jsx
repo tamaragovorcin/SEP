@@ -8,12 +8,14 @@ import "../App.css";
 import { BASE_URL } from "../constants.js";
 
 import Axios from "axios";
-export default function CheckoutForm() {
+export default function CheckoutForm(props, handleBankCard) {
   const stripe = useStripe();
   const elements = useElements();
 
   const [message, setMessage] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
+
+ 
 
   useEffect(() => {
     if (!stripe) {
@@ -48,7 +50,7 @@ export default function CheckoutForm() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
+    props.handleBankCard()
     if (!stripe || !elements) {
       // Stripe.js has not yet loaded.
       // Make sure to disable form submission until Stripe.js has loaded.
@@ -60,8 +62,9 @@ export default function CheckoutForm() {
     const { error } = await stripe.confirmPayment({
       elements,
       confirmParams: {
+       
         // Make sure to change this to your payment completion page
-        return_url: "http://localhost:3000",
+        return_url: "http://localhost:3001/orders",
       },
     });
 
@@ -80,6 +83,7 @@ export default function CheckoutForm() {
   };
 
   return (
+    
     <form id="payment-form" onSubmit={handleSubmit}>
       <PaymentElement id="payment-element" />
       <button disabled={isLoading || !stripe || !elements} id="submit">

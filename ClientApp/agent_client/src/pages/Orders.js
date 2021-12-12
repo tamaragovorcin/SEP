@@ -8,6 +8,11 @@ import { Redirect } from "react-router-dom";
 import Address from "../components/Address";
 import ModalDialog from "../components/ModalDialog";
 import getAuthHeader from "../GetHeader";
+
+const appearance = {
+	theme: 'stripe',
+};
+
 class Orders extends Component {
 
 
@@ -31,8 +36,9 @@ class Orders extends Component {
 		handleOrderModalClose: false,
 		openModal: false,
 		show: true,
+		clientSecret: "",
 
-
+		options: {},
 	};
 
 	hasRole = (reqRole) => {
@@ -112,6 +118,24 @@ class Orders extends Component {
 
 
 	handleOrder = () => {
+		console.log(this.state.products)
+
+		let items =  this.state.products 
+		Axios.post("http://localhost:9090/bank-card-service/api/bankcard/create-payment-intent", items, { headers: { "Content-Type": "application/json" } })
+			.then((res) => {
+
+				console.log(res.data)
+				this.setState({ clientSecret: res.data.clientSecret })
+
+				let clientSecret = res.data.clientSecret;
+				let options = {
+					clientSecret,
+					appearance,
+				};
+				this.setState({ options: options })
+
+			})
+
 		this.setState({ showOrderModal: true });
 
 
@@ -242,6 +266,10 @@ class Orders extends Component {
 					onCloseModal={this.handleOrderModalClose}
 					handleAddress={this.handleAddressOrderChange}
 					products={this.state.products}
+					options = {this.state.options}
+					clientSecret = {this.state.clientSecret}
+		
+					
 				/>
 			</React.Fragment>
 		);
