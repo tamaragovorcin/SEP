@@ -57,6 +57,7 @@ public class PaymentMethodController {
     }
 
     @GetMapping("/all")
+    @PreAuthorize("hasAnyRole('ROLE_ADMIN','ROLE_USER')")
     public ResponseEntity<PaymentMethodDTO> paymentMethods() {
 
         List<String> list = new ArrayList<>();

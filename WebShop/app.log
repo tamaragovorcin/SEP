@@ -1989,3 +1989,989 @@ java.util.NoSuchElementException: No value present
 2021-12-11 15:25:09.374  INFO 16180 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2021-12-11 15:25:09.381  INFO 16180 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
 >>>>>>> 44c842dc39f4e2d4d7bde90a7c614f446217edd4
+2021-12-12 15:10:58.720  INFO 5244 --- [restartedMain] com.example.WebShop.WebShopApplication   : Starting WebShopApplication using Java 17.0.1 on DESKTOP-1PFK6EP with PID 5244 (D:\Master\SEP\SEP\WebShop\target\classes started by tamar in D:\Master\SEP\SEP\WebShop)
+2021-12-12 15:10:58.746 DEBUG 5244 --- [restartedMain] com.example.WebShop.WebShopApplication   : Running with Spring Boot v2.4.0, Spring v5.3.1
+2021-12-12 15:10:58.747  INFO 5244 --- [restartedMain] com.example.WebShop.WebShopApplication   : No active profile set, falling back to default profiles: default
+2021-12-12 15:10:58.847  INFO 5244 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\tamar\.m2\repository\com\sun\xml\ws\jaxws-rt\2.1.4\jaxws-rt-2.1.4.jar referenced one or more files that do not exist: file:/C:/Users/tamar/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/jaxws-api.jar,file:/C:/Users/tamar/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/jsr181-api.jar,file:/C:/Users/tamar/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/jsr250-api.jar,file:/C:/Users/tamar/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/saaj-api.jar,file:/C:/Users/tamar/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/saaj-impl.jar,file:/C:/Users/tamar/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/jsr173_api.jar,file:/C:/Users/tamar/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/sjsxp.jar,file:/C:/Users/tamar/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/resolver.jar,file:/C:/Users/tamar/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/jaxb-api.jar,file:/C:/Users/tamar/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/jaxb-impl.jar,file:/C:/Users/tamar/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/activation.jar,file:/C:/Users/tamar/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/stax-ex.jar,file:/C:/Users/tamar/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/streambuffer.jar,file:/C:/Users/tamar/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/stax-utils.jar
+2021-12-12 15:10:58.848  INFO 5244 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\tamar\.m2\repository\com\sun\xml\bind\jaxb-impl\2.1.7\jaxb-impl-2.1.7.jar referenced one or more files that do not exist: file:/C:/Users/tamar/.m2/repository/com/sun/xml/bind/jaxb-impl/2.1.7/jaxb-api.jar,file:/C:/Users/tamar/.m2/repository/com/sun/xml/bind/jaxb-impl/2.1.7/activation.jar,file:/C:/Users/tamar/.m2/repository/com/sun/xml/bind/jaxb-impl/2.1.7/jsr173_1.0_api.jar,file:/C:/Users/tamar/.m2/repository/com/sun/xml/bind/jaxb-impl/2.1.7/jaxb1-impl.jar
+2021-12-12 15:10:58.849  INFO 5244 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\tamar\.m2\repository\org\jopendocument\jOpenDocument\1.2\jOpenDocument-1.2.jar referenced one or more files that do not exist: file:/C:/Users/tamar/.m2/repository/org/jopendocument/jOpenDocument/1.2/xbean.jar
+2021-12-12 15:10:58.849  INFO 5244 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-12-12 15:10:58.849  INFO 5244 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-12-12 15:11:01.598  INFO 5244 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2021-12-12 15:11:01.883  INFO 5244 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 275 ms. Found 15 JPA repository interfaces.
+2021-12-12 15:11:02.567  INFO 5244 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@71177da3' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-12 15:11:02.575  INFO 5244 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-12 15:11:03.313  INFO 5244 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+2021-12-12 15:11:03.329  INFO 5244 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-12 15:11:03.330  INFO 5244 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-12-12 15:11:03.500  INFO 5244 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-12 15:11:03.501  INFO 5244 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4651 ms
+2021-12-12 15:11:03.702  INFO 5244 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-12-12 15:11:03.721  INFO 5244 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2021-12-12 15:11:03.803  INFO 5244 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-12 15:11:04.012  INFO 5244 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.23.Final
+2021-12-12 15:11:04.118  WARN 5244 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-12 15:11:04.369  INFO 5244 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-12 15:11:04.570  INFO 5244 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-12-12 15:11:05.122  INFO 5244 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-12-12 15:11:05.152  INFO 5244 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-12-12 15:11:05.293  INFO 5244 --- [task-1] o.h.e.boot.internal.EnversServiceImpl    : Envers integration enabled? : true
+2021-12-12 15:11:05.310  WARN 5244 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2021-12-12 15:11:06.047  INFO 5244 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/', GET] with []
+2021-12-12 15:11:06.047  INFO 5244 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/webjars/**', GET] with []
+2021-12-12 15:11:06.047  INFO 5244 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/*.html', GET] with []
+2021-12-12 15:11:06.047  INFO 5244 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/favicon.ico', GET] with []
+2021-12-12 15:11:06.048  INFO 5244 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/**/*.html', GET] with []
+2021-12-12 15:11:06.048  INFO 5244 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/**/*.css', GET] with []
+2021-12-12 15:11:06.048  INFO 5244 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/**/*.js', GET] with []
+2021-12-12 15:11:06.048  INFO 5244 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/api/auth/login', POST] with []
+2021-12-12 15:11:06.048  INFO 5244 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/api/auth/signup', POST] with []
+2021-12-12 15:11:06.048  INFO 5244 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/api/items/add', POST] with []
+2021-12-12 15:11:06.103  INFO 5244 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@58124a92, org.springframework.security.web.context.SecurityContextPersistenceFilter@55f98851, org.springframework.security.web.header.HeaderWriterFilter@54bd2ce, org.springframework.web.filter.CorsFilter@7d47856e, org.springframework.security.web.authentication.logout.LogoutFilter@4bdbe893, com.example.WebShop.Authentication.TokenAuthenticationFilter@1017c3af, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1d2d2d37, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@283ad952, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@26a7d26e, org.springframework.security.web.session.SessionManagementFilter@14ed73fc, org.springframework.security.web.access.ExceptionTranslationFilter@7a0ee88e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@58cdf9a5]
+2021-12-12 15:11:06.160  WARN 5244 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-12-12 15:11:06.586  INFO 5244 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path ''
+2021-12-12 15:11:07.464  INFO 5244 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2021-12-12 15:11:14.320  INFO 5244 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-12 15:11:14.333  INFO 5244 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-12 15:11:15.281  INFO 5244 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2021-12-12 15:11:15.296  INFO 5244 --- [restartedMain] com.example.WebShop.WebShopApplication   : Started WebShopApplication in 17.194 seconds (JVM running for 18.354)
+2021-12-12 15:12:25.465  INFO 5244 --- [http-nio-8085-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-12 15:12:25.465  INFO 5244 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-12-12 15:12:25.479  INFO 5244 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
+2021-12-12 15:12:25.997  INFO 5244 --- [http-nio-8085-exec-1] c.e.W.C.AuthenticationController         : User admin has just logged in.
+2021-12-12 15:13:07.611  INFO 5244 --- [http-nio-8085-exec-6] c.e.W.Controllers.ProductController      : Adding new product: Chair E345
+2021-12-12 15:13:08.058  INFO 5244 --- [http-nio-8085-exec-7] c.e.W.Controllers.ProductController      : Uploading picture
+2021-12-12 15:13:13.604  INFO 5244 --- [http-nio-8085-exec-9] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 15:13:54.172  INFO 5244 --- [http-nio-8085-exec-1] c.e.W.Controllers.ProductController      : Adding new product: Cupboard Yrt45
+2021-12-12 15:13:54.304  INFO 5244 --- [http-nio-8085-exec-2] c.e.W.Controllers.ProductController      : Uploading picture
+2021-12-12 15:14:01.382  INFO 5244 --- [http-nio-8085-exec-4] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 15:14:01.444  INFO 5244 --- [http-nio-8085-exec-4] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 15:14:38.558  INFO 5244 --- [http-nio-8085-exec-6] c.e.W.Controllers.ProductController      : Adding new product: Laptop
+2021-12-12 15:14:38.698  INFO 5244 --- [http-nio-8085-exec-7] c.e.W.Controllers.ProductController      : Uploading picture
+2021-12-12 15:14:47.170  INFO 5244 --- [http-nio-8085-exec-9] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 15:14:47.325  INFO 5244 --- [http-nio-8085-exec-9] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 15:14:47.466  INFO 5244 --- [http-nio-8085-exec-9] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 15:15:10.542  INFO 5244 --- [http-nio-8085-exec-1] c.e.W.Controllers.ProductController      : Adding new product: Table 
+2021-12-12 15:15:10.933  INFO 5244 --- [http-nio-8085-exec-2] c.e.W.Controllers.ProductController      : Uploading picture
+2021-12-12 15:15:16.791  INFO 5244 --- [http-nio-8085-exec-3] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 15:15:16.899  INFO 5244 --- [http-nio-8085-exec-3] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 15:15:17.291  INFO 5244 --- [http-nio-8085-exec-3] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 15:15:17.563  INFO 5244 --- [http-nio-8085-exec-3] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 15:15:29.409  INFO 5244 --- [http-nio-8085-exec-4] c.e.W.C.AuthenticationController         : User user has just logged in.
+2021-12-12 15:16:04.850  INFO 5244 --- [http-nio-8085-exec-5] c.e.W.C.AuthenticationController         : User user has just logged in.
+2021-12-12 15:16:10.761  INFO 5244 --- [http-nio-8085-exec-6] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:16:10.848  INFO 5244 --- [http-nio-8085-exec-6] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:16:10.980  INFO 5244 --- [http-nio-8085-exec-6] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:16:11.252  INFO 5244 --- [http-nio-8085-exec-6] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:16:17.814  INFO 5244 --- [http-nio-8085-exec-8] c.e.WebShop.Controllers.CartController   : Item with id: 1has just been added to the cart by user user
+2021-12-12 15:16:20.161  INFO 5244 --- [http-nio-8085-exec-9] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:16:20.286  INFO 5244 --- [http-nio-8085-exec-9] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:16:20.488  INFO 5244 --- [http-nio-8085-exec-9] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:16:20.790  INFO 5244 --- [http-nio-8085-exec-9] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:16:26.579  INFO 5244 --- [http-nio-8085-exec-10] c.e.WebShop.Controllers.CartController   : Item with id: 3has just been added to the cart by user user
+2021-12-12 15:16:28.223  INFO 5244 --- [http-nio-8085-exec-1] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:16:28.345  INFO 5244 --- [http-nio-8085-exec-1] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:16:28.483  INFO 5244 --- [http-nio-8085-exec-1] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:16:28.774  INFO 5244 --- [http-nio-8085-exec-1] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:16:30.453  INFO 5244 --- [http-nio-8085-exec-4] c.e.WebShop.Controllers.CartController   : User: useris viewing its cart.
+2021-12-12 15:16:47.664  INFO 5244 --- [http-nio-8085-exec-8] c.e.WebShop.Controllers.CartController   : Item with id: 9has been deleted from the cart by user: user
+2021-12-12 15:16:49.889  INFO 5244 --- [http-nio-8085-exec-10] c.e.WebShop.Controllers.CartController   : User: useris viewing its cart.
+2021-12-12 15:16:50.577  INFO 5244 --- [http-nio-8085-exec-3] c.e.WebShop.Controllers.CartController   : Item with id: 10has been deleted from the cart by user: user
+2021-12-12 15:16:52.069  INFO 5244 --- [http-nio-8085-exec-4] c.e.WebShop.Controllers.CartController   : User: useris viewing its cart.
+2021-12-12 15:16:52.904  INFO 5244 --- [http-nio-8085-exec-5] c.e.W.Controllers.PurchaseController     : User user is overviewing its purchases
+2021-12-12 15:17:00.561  INFO 5244 --- [http-nio-8085-exec-7] c.e.W.C.AuthenticationController         : User admin has just logged in.
+2021-12-12 15:17:03.490  INFO 5244 --- [http-nio-8085-exec-8] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 15:17:03.562  INFO 5244 --- [http-nio-8085-exec-8] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 15:17:03.675  INFO 5244 --- [http-nio-8085-exec-8] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 15:17:03.883  INFO 5244 --- [http-nio-8085-exec-8] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 15:17:05.494  INFO 5244 --- [http-nio-8085-exec-10] c.e.W.C.PaymentMethodController          : Overview of the currently choosen payment mathods for webshop
+2021-12-12 15:17:08.987  INFO 5244 --- [http-nio-8085-exec-1] c.e.W.C.PaymentMethodController          : Payment methods had been added to the webshop: 
+2021-12-12 15:17:20.854  INFO 5244 --- [http-nio-8085-exec-3] c.e.W.C.AuthenticationController         : User user has just logged in.
+2021-12-12 15:17:24.818  INFO 5244 --- [http-nio-8085-exec-2] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:17:24.948  INFO 5244 --- [http-nio-8085-exec-2] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:17:25.187  INFO 5244 --- [http-nio-8085-exec-2] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:17:25.666  INFO 5244 --- [http-nio-8085-exec-2] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:17:29.228  INFO 5244 --- [http-nio-8085-exec-4] c.e.WebShop.Controllers.CartController   : Item with id: 1has just been added to the cart by user user
+2021-12-12 15:17:31.526  INFO 5244 --- [http-nio-8085-exec-7] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:17:31.620  INFO 5244 --- [http-nio-8085-exec-7] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:17:31.783  INFO 5244 --- [http-nio-8085-exec-7] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:17:32.100  INFO 5244 --- [http-nio-8085-exec-7] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:17:35.700  INFO 5244 --- [http-nio-8085-exec-8] c.e.WebShop.Controllers.CartController   : Item with id: 3has just been added to the cart by user user
+2021-12-12 15:17:37.307  INFO 5244 --- [http-nio-8085-exec-9] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:17:37.449  INFO 5244 --- [http-nio-8085-exec-9] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:17:37.624  INFO 5244 --- [http-nio-8085-exec-9] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:17:38.116  INFO 5244 --- [http-nio-8085-exec-9] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:17:39.308  INFO 5244 --- [http-nio-8085-exec-1] c.e.WebShop.Controllers.CartController   : User: useris viewing its cart.
+2021-12-12 15:18:03.838  INFO 5244 --- [http-nio-8085-exec-4] c.e.W.C.AuthenticationController         : User admin has just logged in.
+2021-12-12 15:18:06.673  INFO 5244 --- [http-nio-8085-exec-6] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 15:18:06.803  INFO 5244 --- [http-nio-8085-exec-6] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 15:18:07.029  INFO 5244 --- [http-nio-8085-exec-6] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 15:18:07.560  INFO 5244 --- [http-nio-8085-exec-6] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 15:18:08.739  INFO 5244 --- [http-nio-8085-exec-5] c.e.W.C.PaymentMethodController          : Overview of the currently choosen payment mathods for webshop
+2021-12-12 15:19:08.290  INFO 5244 --- [http-nio-8085-exec-8] c.e.W.C.AuthenticationController         : User user has just logged in.
+2021-12-12 15:19:11.077  INFO 5244 --- [http-nio-8085-exec-10] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:19:11.155  INFO 5244 --- [http-nio-8085-exec-10] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:19:11.282  INFO 5244 --- [http-nio-8085-exec-10] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:19:11.677  INFO 5244 --- [http-nio-8085-exec-10] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:19:13.876  INFO 5244 --- [http-nio-8085-exec-3] c.e.WebShop.Controllers.CartController   : User: useris viewing its cart.
+2021-12-12 15:21:28.094  INFO 5244 --- [http-nio-8085-exec-5] c.e.WebShop.Controllers.CartController   : User: useris viewing its cart.
+2021-12-12 15:22:53.489  INFO 5244 --- [http-nio-8085-exec-10] c.e.WebShop.Controllers.CartController   : User: useris viewing its cart.
+2021-12-12 15:23:07.327  INFO 5244 --- [http-nio-8085-exec-4] c.e.WebShop.Controllers.CartController   : User: useris viewing its cart.
+2021-12-12 15:24:37.441  INFO 5244 --- [http-nio-8085-exec-8] c.e.WebShop.Controllers.CartController   : User: useris viewing its cart.
+2021-12-12 15:25:39.816  INFO 5244 --- [http-nio-8085-exec-2] c.e.WebShop.Controllers.CartController   : User: useris viewing its cart.
+2021-12-12 15:26:07.348  INFO 5244 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-12 15:26:07.378  INFO 5244 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2021-12-12 15:26:07.378  INFO 5244 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-12-12 15:26:07.383  INFO 5244 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-12-12 15:26:07.432  INFO 5244 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-12-12 15:26:14.019  INFO 4568 --- [restartedMain] com.example.WebShop.WebShopApplication   : Starting WebShopApplication using Java 17.0.1 on DESKTOP-1PFK6EP with PID 4568 (D:\Master\SEP\SEP\WebShop\target\classes started by tamar in D:\Master\SEP\SEP\WebShop)
+2021-12-12 15:26:14.026 DEBUG 4568 --- [restartedMain] com.example.WebShop.WebShopApplication   : Running with Spring Boot v2.4.0, Spring v5.3.1
+2021-12-12 15:26:14.027  INFO 4568 --- [restartedMain] com.example.WebShop.WebShopApplication   : No active profile set, falling back to default profiles: default
+2021-12-12 15:26:14.183  INFO 4568 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\tamar\.m2\repository\com\sun\xml\ws\jaxws-rt\2.1.4\jaxws-rt-2.1.4.jar referenced one or more files that do not exist: file:/C:/Users/tamar/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/jaxws-api.jar,file:/C:/Users/tamar/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/jsr181-api.jar,file:/C:/Users/tamar/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/jsr250-api.jar,file:/C:/Users/tamar/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/saaj-api.jar,file:/C:/Users/tamar/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/saaj-impl.jar,file:/C:/Users/tamar/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/jsr173_api.jar,file:/C:/Users/tamar/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/sjsxp.jar,file:/C:/Users/tamar/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/resolver.jar,file:/C:/Users/tamar/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/jaxb-api.jar,file:/C:/Users/tamar/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/jaxb-impl.jar,file:/C:/Users/tamar/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/activation.jar,file:/C:/Users/tamar/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/stax-ex.jar,file:/C:/Users/tamar/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/streambuffer.jar,file:/C:/Users/tamar/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/stax-utils.jar
+2021-12-12 15:26:14.183  INFO 4568 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\tamar\.m2\repository\com\sun\xml\bind\jaxb-impl\2.1.7\jaxb-impl-2.1.7.jar referenced one or more files that do not exist: file:/C:/Users/tamar/.m2/repository/com/sun/xml/bind/jaxb-impl/2.1.7/jaxb-api.jar,file:/C:/Users/tamar/.m2/repository/com/sun/xml/bind/jaxb-impl/2.1.7/activation.jar,file:/C:/Users/tamar/.m2/repository/com/sun/xml/bind/jaxb-impl/2.1.7/jsr173_1.0_api.jar,file:/C:/Users/tamar/.m2/repository/com/sun/xml/bind/jaxb-impl/2.1.7/jaxb1-impl.jar
+2021-12-12 15:26:14.184  INFO 4568 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\tamar\.m2\repository\org\jopendocument\jOpenDocument\1.2\jOpenDocument-1.2.jar referenced one or more files that do not exist: file:/C:/Users/tamar/.m2/repository/org/jopendocument/jOpenDocument/1.2/xbean.jar
+2021-12-12 15:26:14.184  INFO 4568 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-12-12 15:26:14.184  INFO 4568 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-12-12 15:26:16.756  INFO 4568 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2021-12-12 15:26:17.195  INFO 4568 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 424 ms. Found 15 JPA repository interfaces.
+2021-12-12 15:26:18.242  INFO 4568 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@461145fb' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-12 15:26:18.252  INFO 4568 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-12 15:26:19.439  INFO 4568 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+2021-12-12 15:26:19.472  INFO 4568 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-12 15:26:19.472  INFO 4568 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-12-12 15:26:19.714  INFO 4568 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-12 15:26:19.715  INFO 4568 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5529 ms
+2021-12-12 15:26:19.983  INFO 4568 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-12-12 15:26:20.005  INFO 4568 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2021-12-12 15:26:20.254  INFO 4568 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-12 15:26:20.407  INFO 4568 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.23.Final
+2021-12-12 15:26:20.591  WARN 4568 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-12 15:26:20.793  INFO 4568 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-12 15:26:21.051  INFO 4568 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-12-12 15:26:21.771  INFO 4568 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-12-12 15:26:21.813  INFO 4568 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-12-12 15:26:22.045  WARN 4568 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2021-12-12 15:26:22.081  INFO 4568 --- [task-1] o.h.e.boot.internal.EnversServiceImpl    : Envers integration enabled? : true
+2021-12-12 15:26:22.815  INFO 4568 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/', GET] with []
+2021-12-12 15:26:22.816  INFO 4568 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/webjars/**', GET] with []
+2021-12-12 15:26:22.817  INFO 4568 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/*.html', GET] with []
+2021-12-12 15:26:22.818  INFO 4568 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/favicon.ico', GET] with []
+2021-12-12 15:26:22.819  INFO 4568 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/**/*.html', GET] with []
+2021-12-12 15:26:22.820  INFO 4568 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/**/*.css', GET] with []
+2021-12-12 15:26:22.820  INFO 4568 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/**/*.js', GET] with []
+2021-12-12 15:26:22.820  INFO 4568 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/api/auth/login', POST] with []
+2021-12-12 15:26:22.821  INFO 4568 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/api/auth/signup', POST] with []
+2021-12-12 15:26:22.821  INFO 4568 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/api/items/add', POST] with []
+2021-12-12 15:26:22.934  INFO 4568 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4bf1ecf2, org.springframework.security.web.context.SecurityContextPersistenceFilter@19271a34, org.springframework.security.web.header.HeaderWriterFilter@4f6802d8, org.springframework.web.filter.CorsFilter@62a45bf8, org.springframework.security.web.authentication.logout.LogoutFilter@32ea96e7, com.example.WebShop.Authentication.TokenAuthenticationFilter@8d7708b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@338570cd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1e4bda31, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@69b7d947, org.springframework.security.web.session.SessionManagementFilter@5965a0b5, org.springframework.security.web.access.ExceptionTranslationFilter@5a5469fe, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5c7dea1b]
+2021-12-12 15:26:23.014  WARN 4568 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-12-12 15:26:30.446  INFO 4568 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path ''
+2021-12-12 15:26:32.560  INFO 4568 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2021-12-12 15:26:36.802  INFO 4568 --- [http-nio-8085-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-12 15:26:36.802  INFO 4568 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-12-12 15:26:36.811  INFO 4568 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2021-12-12 15:26:36.847  INFO 4568 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-12 15:26:36.865  INFO 4568 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-12 15:26:38.692  INFO 4568 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2021-12-12 15:26:38.733  INFO 4568 --- [restartedMain] com.example.WebShop.WebShopApplication   : Started WebShopApplication in 25.487 seconds (JVM running for 27.108)
+2021-12-12 15:26:42.562  INFO 4568 --- [http-nio-8085-exec-4] c.e.WebShop.Controllers.CartController   : User: useris viewing its cart.
+2021-12-12 15:27:14.146  INFO 4568 --- [http-nio-8085-exec-5] c.e.W.C.AuthenticationController         : User user has just logged in.
+2021-12-12 15:27:17.232  INFO 4568 --- [http-nio-8085-exec-9] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:27:17.487  INFO 4568 --- [http-nio-8085-exec-9] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:27:17.762  INFO 4568 --- [http-nio-8085-exec-9] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:27:18.285  INFO 4568 --- [http-nio-8085-exec-9] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:27:19.997  INFO 4568 --- [http-nio-8085-exec-10] c.e.WebShop.Controllers.CartController   : User: useris viewing its cart.
+2021-12-12 15:27:34.644  INFO 4568 --- [http-nio-8085-exec-4] c.e.WebShop.Controllers.CartController   : User: useris viewing its cart.
+2021-12-12 15:28:04.395  INFO 4568 --- [http-nio-8085-exec-10] c.e.WebShop.Controllers.CartController   : Item with id: 15has been deleted from the cart by user: user
+2021-12-12 15:28:06.133  INFO 4568 --- [http-nio-8085-exec-1] c.e.WebShop.Controllers.CartController   : User: useris viewing its cart.
+2021-12-12 15:28:06.892  INFO 4568 --- [http-nio-8085-exec-8] c.e.WebShop.Controllers.CartController   : Item with id: 16has been deleted from the cart by user: user
+2021-12-12 15:28:08.278  INFO 4568 --- [http-nio-8085-exec-9] c.e.WebShop.Controllers.CartController   : User: useris viewing its cart.
+2021-12-12 15:28:21.223  INFO 4568 --- [http-nio-8085-exec-3] c.e.W.C.AuthenticationController         : User user has just logged in.
+2021-12-12 15:28:28.397  INFO 4568 --- [http-nio-8085-exec-2] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:28:28.509  INFO 4568 --- [http-nio-8085-exec-2] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:28:28.760  INFO 4568 --- [http-nio-8085-exec-2] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:28:29.315  INFO 4568 --- [http-nio-8085-exec-2] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:28:30.427  INFO 4568 --- [http-nio-8085-exec-6] c.e.WebShop.Controllers.CartController   : User: useris viewing its cart.
+2021-12-12 15:28:52.029  INFO 4568 --- [http-nio-8085-exec-9] c.e.W.C.AuthenticationController         : User user has just logged in.
+2021-12-12 15:28:56.242  INFO 4568 --- [http-nio-8085-exec-7] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:28:56.452  INFO 4568 --- [http-nio-8085-exec-7] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:28:56.722  INFO 4568 --- [http-nio-8085-exec-7] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:28:57.327  INFO 4568 --- [http-nio-8085-exec-7] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:29:00.673  INFO 4568 --- [http-nio-8085-exec-10] c.e.WebShop.Controllers.CartController   : Item with id: 1has just been added to the cart by user user
+2021-12-12 15:29:03.121  INFO 4568 --- [http-nio-8085-exec-3] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:29:03.246  INFO 4568 --- [http-nio-8085-exec-3] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:29:03.448  INFO 4568 --- [http-nio-8085-exec-3] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:29:04.013  INFO 4568 --- [http-nio-8085-exec-3] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:29:08.201  INFO 4568 --- [http-nio-8085-exec-2] c.e.WebShop.Controllers.CartController   : Item with id: 3has just been added to the cart by user user
+2021-12-12 15:29:10.170  INFO 4568 --- [http-nio-8085-exec-4] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:29:10.281  INFO 4568 --- [http-nio-8085-exec-4] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:29:10.421  INFO 4568 --- [http-nio-8085-exec-4] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:29:10.994  INFO 4568 --- [http-nio-8085-exec-4] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:29:12.250  INFO 4568 --- [http-nio-8085-exec-5] c.e.WebShop.Controllers.CartController   : User: useris viewing its cart.
+2021-12-12 15:30:13.949  INFO 4568 --- [http-nio-8085-exec-3] c.e.W.C.AuthenticationController         : User user has just logged in.
+2021-12-12 15:30:16.642  INFO 4568 --- [http-nio-8085-exec-1] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:30:16.809  INFO 4568 --- [http-nio-8085-exec-1] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:30:17.050  INFO 4568 --- [http-nio-8085-exec-1] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:30:17.489  INFO 4568 --- [http-nio-8085-exec-1] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:30:18.605  INFO 4568 --- [http-nio-8085-exec-4] c.e.WebShop.Controllers.CartController   : User: useris viewing its cart.
+2021-12-12 15:30:19.807  INFO 4568 --- [http-nio-8085-exec-5] c.e.WebShop.Controllers.CartController   : Item with id: 18has been deleted from the cart by user: user
+2021-12-12 15:30:21.987  INFO 4568 --- [http-nio-8085-exec-9] c.e.WebShop.Controllers.CartController   : User: useris viewing its cart.
+2021-12-12 15:30:23.294  INFO 4568 --- [http-nio-8085-exec-10] c.e.WebShop.Controllers.CartController   : Item with id: 17has been deleted from the cart by user: user
+2021-12-12 15:30:24.641  INFO 4568 --- [http-nio-8085-exec-1] c.e.WebShop.Controllers.CartController   : User: useris viewing its cart.
+2021-12-12 15:30:34.023  INFO 4568 --- [http-nio-8085-exec-2] c.e.W.C.AuthenticationController         : User user has just logged in.
+2021-12-12 15:30:37.848  INFO 4568 --- [http-nio-8085-exec-5] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:30:38.015  INFO 4568 --- [http-nio-8085-exec-5] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:30:38.316  INFO 4568 --- [http-nio-8085-exec-5] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:30:38.814  INFO 4568 --- [http-nio-8085-exec-5] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:30:42.791  INFO 4568 --- [http-nio-8085-exec-8] c.e.WebShop.Controllers.CartController   : Item with id: 1has just been added to the cart by user user
+2021-12-12 15:30:44.748  INFO 4568 --- [http-nio-8085-exec-9] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:30:44.954  INFO 4568 --- [http-nio-8085-exec-9] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:30:45.168  INFO 4568 --- [http-nio-8085-exec-9] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:30:45.683  INFO 4568 --- [http-nio-8085-exec-9] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:30:48.960  INFO 4568 --- [http-nio-8085-exec-10] c.e.WebShop.Controllers.CartController   : Item with id: 3has just been added to the cart by user user
+2021-12-12 15:30:51.026  INFO 4568 --- [http-nio-8085-exec-3] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:30:51.218  INFO 4568 --- [http-nio-8085-exec-3] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:30:51.471  INFO 4568 --- [http-nio-8085-exec-3] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:30:51.913  INFO 4568 --- [http-nio-8085-exec-3] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:30:52.709  INFO 4568 --- [http-nio-8085-exec-2] c.e.WebShop.Controllers.CartController   : User: useris viewing its cart.
+2021-12-12 15:30:59.962  INFO 4568 --- [http-nio-8085-exec-5] c.e.W.C.ProductPaymentDataController     : Getting merchant paypal credentials for product purchase.
+2021-12-12 15:31:23.668  INFO 4568 --- [http-nio-8085-exec-7] c.e.W.Controllers.PurchaseController     : User user is making a purchase
+2021-12-12 15:31:28.522  INFO 4568 --- [http-nio-8085-exec-3] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:31:28.672  INFO 4568 --- [http-nio-8085-exec-3] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:31:28.953  INFO 4568 --- [http-nio-8085-exec-3] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:31:29.456  INFO 4568 --- [http-nio-8085-exec-3] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:31:30.401  INFO 4568 --- [http-nio-8085-exec-2] c.e.WebShop.Controllers.CartController   : User: useris viewing its cart.
+2021-12-12 15:31:34.952  INFO 4568 --- [http-nio-8085-exec-4] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:31:35.108  INFO 4568 --- [http-nio-8085-exec-4] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:31:35.249  INFO 4568 --- [http-nio-8085-exec-4] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:31:35.784  INFO 4568 --- [http-nio-8085-exec-4] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:31:40.764  INFO 4568 --- [http-nio-8085-exec-8] c.e.WebShop.Controllers.CartController   : Item with id: 5has just been added to the cart by user user
+2021-12-12 15:31:44.043  INFO 4568 --- [http-nio-8085-exec-9] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:31:44.197  INFO 4568 --- [http-nio-8085-exec-9] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:31:44.394  INFO 4568 --- [http-nio-8085-exec-9] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:31:44.931  INFO 4568 --- [http-nio-8085-exec-9] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:31:45.244  INFO 4568 --- [http-nio-8085-exec-10] c.e.WebShop.Controllers.CartController   : User: useris viewing its cart.
+2021-12-12 15:31:55.036  INFO 4568 --- [http-nio-8085-exec-4] c.e.W.C.ProductPaymentDataController     : Getting merchant bitcoin credentials for product purchase.
+2021-12-12 15:33:04.280  INFO 4568 --- [http-nio-8085-exec-8] c.e.WebShop.Controllers.CartController   : User: useris viewing its cart.
+2021-12-12 15:33:05.978  INFO 4568 --- [http-nio-8085-exec-9] c.e.WebShop.Controllers.CartController   : Item with id: 22has been deleted from the cart by user: user
+2021-12-12 15:33:07.215  INFO 4568 --- [http-nio-8085-exec-2] c.e.WebShop.Controllers.CartController   : User: useris viewing its cart.
+2021-12-12 15:33:13.007  INFO 4568 --- [http-nio-8085-exec-4] c.e.W.C.AuthenticationController         : User user has just logged in.
+2021-12-12 15:33:16.162  INFO 4568 --- [http-nio-8085-exec-5] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:33:16.293  INFO 4568 --- [http-nio-8085-exec-5] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:33:16.505  INFO 4568 --- [http-nio-8085-exec-5] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:33:16.871  INFO 4568 --- [http-nio-8085-exec-5] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:33:21.238  INFO 4568 --- [http-nio-8085-exec-8] c.e.WebShop.Controllers.CartController   : Item with id: 1has just been added to the cart by user user
+2021-12-12 15:33:22.899  INFO 4568 --- [http-nio-8085-exec-7] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:33:23.053  INFO 4568 --- [http-nio-8085-exec-7] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:33:23.249  INFO 4568 --- [http-nio-8085-exec-7] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:33:23.741  INFO 4568 --- [http-nio-8085-exec-7] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:33:25.880  INFO 4568 --- [http-nio-8085-exec-3] c.e.WebShop.Controllers.CartController   : User: useris viewing its cart.
+2021-12-12 15:33:26.571  INFO 4568 --- [http-nio-8085-exec-1] c.e.WebShop.Controllers.CartController   : Item with id: 23has been deleted from the cart by user: user
+2021-12-12 15:33:28.360  INFO 4568 --- [http-nio-8085-exec-5] c.e.WebShop.Controllers.CartController   : User: useris viewing its cart.
+2021-12-12 15:33:36.851  INFO 4568 --- [http-nio-8085-exec-8] c.e.W.C.AuthenticationController         : User user has just logged in.
+2021-12-12 15:33:40.582  INFO 4568 --- [http-nio-8085-exec-3] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:33:40.724  INFO 4568 --- [http-nio-8085-exec-3] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:33:40.988  INFO 4568 --- [http-nio-8085-exec-3] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:33:41.536  INFO 4568 --- [http-nio-8085-exec-3] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:33:45.239  INFO 4568 --- [http-nio-8085-exec-10] c.e.WebShop.Controllers.CartController   : Item with id: 1has just been added to the cart by user user
+2021-12-12 15:33:46.833  INFO 4568 --- [http-nio-8085-exec-1] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:33:46.959  INFO 4568 --- [http-nio-8085-exec-1] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:33:47.162  INFO 4568 --- [http-nio-8085-exec-1] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:33:47.703  INFO 4568 --- [http-nio-8085-exec-1] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:33:51.491  INFO 4568 --- [http-nio-8085-exec-2] c.e.WebShop.Controllers.CartController   : Item with id: 3has just been added to the cart by user user
+2021-12-12 15:33:54.522  INFO 4568 --- [http-nio-8085-exec-4] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:33:54.647  INFO 4568 --- [http-nio-8085-exec-4] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:33:54.908  INFO 4568 --- [http-nio-8085-exec-4] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:33:55.458  INFO 4568 --- [http-nio-8085-exec-4] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:33:55.832  INFO 4568 --- [http-nio-8085-exec-5] c.e.WebShop.Controllers.CartController   : User: useris viewing its cart.
+2021-12-12 15:34:02.554  INFO 4568 --- [http-nio-8085-exec-7] c.e.W.C.ProductPaymentDataController     : Getting merchant paypal credentials for product purchase.
+2021-12-12 15:34:17.220  INFO 4568 --- [http-nio-8085-exec-1] c.e.WebShop.Controllers.CartController   : User: useris viewing its cart.
+2021-12-12 15:34:22.161  INFO 4568 --- [http-nio-8085-exec-4] c.e.WebShop.Controllers.CartController   : Item with id: 24has been deleted from the cart by user: user
+2021-12-12 15:34:23.629  INFO 4568 --- [http-nio-8085-exec-5] c.e.WebShop.Controllers.CartController   : User: useris viewing its cart.
+2021-12-12 15:34:24.525  INFO 4568 --- [http-nio-8085-exec-9] c.e.WebShop.Controllers.CartController   : Item with id: 25has been deleted from the cart by user: user
+2021-12-12 15:34:26.982  INFO 4568 --- [http-nio-8085-exec-1] c.e.WebShop.Controllers.CartController   : User: useris viewing its cart.
+2021-12-12 15:34:35.537  INFO 4568 --- [http-nio-8085-exec-2] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:34:35.676  INFO 4568 --- [http-nio-8085-exec-2] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:34:35.950  INFO 4568 --- [http-nio-8085-exec-2] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:34:36.527  INFO 4568 --- [http-nio-8085-exec-2] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:34:38.796  INFO 4568 --- [http-nio-8085-exec-5] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:34:38.978  INFO 4568 --- [http-nio-8085-exec-5] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:34:39.237  INFO 4568 --- [http-nio-8085-exec-5] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:34:39.748  INFO 4568 --- [http-nio-8085-exec-5] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:34:45.047  INFO 4568 --- [http-nio-8085-exec-8] c.e.WebShop.Controllers.CartController   : Item with id: 1has just been added to the cart by user user
+2021-12-12 15:34:47.011  INFO 4568 --- [http-nio-8085-exec-9] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:34:47.195  INFO 4568 --- [http-nio-8085-exec-9] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:34:47.391  INFO 4568 --- [http-nio-8085-exec-9] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:34:47.843  INFO 4568 --- [http-nio-8085-exec-9] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:34:48.854  INFO 4568 --- [http-nio-8085-exec-7] c.e.WebShop.Controllers.CartController   : User: useris viewing its cart.
+2021-12-12 15:34:55.453  INFO 4568 --- [http-nio-8085-exec-10] c.e.W.C.ProductPaymentDataController     : Getting merchant bitcoin credentials for product purchase.
+2021-12-12 15:38:29.367  INFO 4568 --- [http-nio-8085-exec-4] c.e.W.C.AuthenticationController         : User user has just logged in.
+2021-12-12 15:38:34.191  INFO 4568 --- [http-nio-8085-exec-6] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:38:34.390  INFO 4568 --- [http-nio-8085-exec-6] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:38:34.620  INFO 4568 --- [http-nio-8085-exec-6] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:38:35.080  INFO 4568 --- [http-nio-8085-exec-6] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:38:40.766  INFO 4568 --- [http-nio-8085-exec-8] c.e.WebShop.Controllers.CartController   : Item with id: 3has just been added to the cart by user user
+2021-12-12 15:38:43.196  INFO 4568 --- [http-nio-8085-exec-9] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:38:43.405  INFO 4568 --- [http-nio-8085-exec-9] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:38:43.807  INFO 4568 --- [http-nio-8085-exec-9] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:38:44.427  INFO 4568 --- [http-nio-8085-exec-9] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:38:46.797  INFO 4568 --- [http-nio-8085-exec-7] c.e.WebShop.Controllers.CartController   : User: useris viewing its cart.
+2021-12-12 15:38:55.545  INFO 4568 --- [http-nio-8085-exec-4] c.e.WebShop.Controllers.CartController   : Item with id: 26has been deleted from the cart by user: user
+2021-12-12 15:38:57.423  INFO 4568 --- [http-nio-8085-exec-5] c.e.WebShop.Controllers.CartController   : User: useris viewing its cart.
+2021-12-12 15:38:58.229  INFO 4568 --- [http-nio-8085-exec-7] c.e.WebShop.Controllers.CartController   : Item with id: 27has been deleted from the cart by user: user
+2021-12-12 15:38:59.759  INFO 4568 --- [http-nio-8085-exec-2] c.e.WebShop.Controllers.CartController   : User: useris viewing its cart.
+2021-12-12 15:39:09.087  INFO 4568 --- [http-nio-8085-exec-6] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:39:09.179  INFO 4568 --- [http-nio-8085-exec-6] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:39:09.361  INFO 4568 --- [http-nio-8085-exec-6] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:39:09.773  INFO 4568 --- [http-nio-8085-exec-6] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:39:13.580  INFO 4568 --- [http-nio-8085-exec-5] c.e.WebShop.Controllers.CartController   : Item with id: 3has just been added to the cart by user user
+2021-12-12 15:39:15.404  INFO 4568 --- [http-nio-8085-exec-9] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:39:15.659  INFO 4568 --- [http-nio-8085-exec-9] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:39:15.905  INFO 4568 --- [http-nio-8085-exec-9] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:39:16.505  INFO 4568 --- [http-nio-8085-exec-9] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:39:17.870  INFO 4568 --- [http-nio-8085-exec-7] c.e.WebShop.Controllers.CartController   : User: useris viewing its cart.
+2021-12-12 15:39:24.438  INFO 4568 --- [http-nio-8085-exec-10] c.e.W.C.ProductPaymentDataController     : Getting merchant bitcoin credentials for product purchase.
+2021-12-12 15:40:06.143  INFO 4568 --- [http-nio-8085-exec-6] c.e.WebShop.Controllers.CartController   : User: useris viewing its cart.
+2021-12-12 15:40:07.131  INFO 4568 --- [http-nio-8085-exec-9] c.e.WebShop.Controllers.CartController   : Item with id: 28has been deleted from the cart by user: user
+2021-12-12 15:40:08.782  INFO 4568 --- [http-nio-8085-exec-10] c.e.WebShop.Controllers.CartController   : User: useris viewing its cart.
+2021-12-12 15:40:15.129  INFO 4568 --- [http-nio-8085-exec-2] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:40:15.264  INFO 4568 --- [http-nio-8085-exec-2] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:40:15.441  INFO 4568 --- [http-nio-8085-exec-2] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:40:15.748  INFO 4568 --- [http-nio-8085-exec-2] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:40:19.967  INFO 4568 --- [http-nio-8085-exec-6] c.e.WebShop.Controllers.CartController   : Item with id: 3has just been added to the cart by user user
+2021-12-12 15:40:21.955  INFO 4568 --- [http-nio-8085-exec-5] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:40:22.098  INFO 4568 --- [http-nio-8085-exec-5] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:40:22.296  INFO 4568 --- [http-nio-8085-exec-5] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:40:22.726  INFO 4568 --- [http-nio-8085-exec-5] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:40:23.954  INFO 4568 --- [http-nio-8085-exec-8] c.e.WebShop.Controllers.CartController   : User: useris viewing its cart.
+2021-12-12 15:40:29.588  INFO 4568 --- [http-nio-8085-exec-10] c.e.W.C.ProductPaymentDataController     : Getting merchant bitcoin credentials for product purchase.
+2021-12-12 15:42:09.748  INFO 4568 --- [http-nio-8085-exec-4] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:42:09.826  INFO 4568 --- [http-nio-8085-exec-4] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:42:09.972  INFO 4568 --- [http-nio-8085-exec-4] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:42:10.301  INFO 4568 --- [http-nio-8085-exec-4] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:42:16.561  INFO 4568 --- [http-nio-8085-exec-1] c.e.WebShop.Controllers.CartController   : Item with id: 1has just been added to the cart by user user
+2021-12-12 15:42:18.349  INFO 4568 --- [http-nio-8085-exec-6] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:42:18.527  INFO 4568 --- [http-nio-8085-exec-6] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:42:18.781  INFO 4568 --- [http-nio-8085-exec-6] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:42:19.126  INFO 4568 --- [http-nio-8085-exec-6] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:42:20.172  INFO 4568 --- [http-nio-8085-exec-9] c.e.WebShop.Controllers.CartController   : User: useris viewing its cart.
+2021-12-12 15:42:26.380  INFO 4568 --- [http-nio-8085-exec-3] c.e.WebShop.Controllers.CartController   : Item with id: 30has been deleted from the cart by user: user
+2021-12-12 15:42:28.164  INFO 4568 --- [http-nio-8085-exec-10] c.e.WebShop.Controllers.CartController   : User: useris viewing its cart.
+2021-12-12 15:42:38.128  INFO 4568 --- [http-nio-8085-exec-2] c.e.W.C.ProductPaymentDataController     : Getting merchant bitcoin credentials for product purchase.
+2021-12-12 15:43:00.293  INFO 4568 --- [http-nio-8085-exec-6] c.e.W.Controllers.PurchaseController     : User user is making a purchase
+2021-12-12 15:43:03.643  INFO 4568 --- [http-nio-8085-exec-8] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:43:03.740  INFO 4568 --- [http-nio-8085-exec-8] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:43:03.936  INFO 4568 --- [http-nio-8085-exec-8] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:43:04.404  INFO 4568 --- [http-nio-8085-exec-8] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:43:06.014  INFO 4568 --- [http-nio-8085-exec-7] c.e.WebShop.Controllers.CartController   : User: useris viewing its cart.
+2021-12-12 15:43:17.246  INFO 4568 --- [http-nio-8085-exec-4] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:43:17.368  INFO 4568 --- [http-nio-8085-exec-4] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:43:17.536  INFO 4568 --- [http-nio-8085-exec-4] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:43:17.933  INFO 4568 --- [http-nio-8085-exec-4] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:43:22.708  INFO 4568 --- [http-nio-8085-exec-1] c.e.WebShop.Controllers.CartController   : Item with id: 1has just been added to the cart by user user
+2021-12-12 15:43:24.959  INFO 4568 --- [http-nio-8085-exec-5] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:43:25.168  INFO 4568 --- [http-nio-8085-exec-5] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:43:25.525  INFO 4568 --- [http-nio-8085-exec-5] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:43:25.958  INFO 4568 --- [http-nio-8085-exec-5] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:43:27.260  INFO 4568 --- [http-nio-8085-exec-8] c.e.WebShop.Controllers.CartController   : User: useris viewing its cart.
+2021-12-12 15:43:33.750  INFO 4568 --- [http-nio-8085-exec-10] c.e.W.C.ProductPaymentDataController     : Getting merchant bitcoin credentials for product purchase.
+2021-12-12 15:43:45.013  INFO 4568 --- [http-nio-8085-exec-4] c.e.W.Controllers.PurchaseController     : User user is making a purchase
+2021-12-12 15:43:48.608  INFO 4568 --- [http-nio-8085-exec-1] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:43:48.681  INFO 4568 --- [http-nio-8085-exec-1] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:43:48.792  INFO 4568 --- [http-nio-8085-exec-1] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:43:49.080  INFO 4568 --- [http-nio-8085-exec-1] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 15:43:49.973  INFO 4568 --- [http-nio-8085-exec-5] c.e.WebShop.Controllers.CartController   : User: useris viewing its cart.
+2021-12-12 15:45:34.906  INFO 4568 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-12 15:45:34.915  INFO 4568 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2021-12-12 15:45:34.915  INFO 4568 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-12-12 15:45:34.918  INFO 4568 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-12-12 15:45:34.933  INFO 4568 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-12-12 21:19:05.171  INFO 17900 --- [restartedMain] com.example.WebShop.WebShopApplication   : Starting WebShopApplication using Java 17.0.1 on DESKTOP-1PFK6EP with PID 17900 (D:\Master\SEP\SEP\WebShop\target\classes started by tamar in D:\Master\SEP\SEP\WebShop)
+2021-12-12 21:19:05.243 DEBUG 17900 --- [restartedMain] com.example.WebShop.WebShopApplication   : Running with Spring Boot v2.4.0, Spring v5.3.1
+2021-12-12 21:19:05.244  INFO 17900 --- [restartedMain] com.example.WebShop.WebShopApplication   : No active profile set, falling back to default profiles: default
+2021-12-12 21:19:05.499  INFO 17900 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\tamar\.m2\repository\com\sun\xml\ws\jaxws-rt\2.1.4\jaxws-rt-2.1.4.jar referenced one or more files that do not exist: file:/C:/Users/tamar/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/jaxws-api.jar,file:/C:/Users/tamar/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/jsr181-api.jar,file:/C:/Users/tamar/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/jsr250-api.jar,file:/C:/Users/tamar/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/saaj-api.jar,file:/C:/Users/tamar/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/saaj-impl.jar,file:/C:/Users/tamar/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/jsr173_api.jar,file:/C:/Users/tamar/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/sjsxp.jar,file:/C:/Users/tamar/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/resolver.jar,file:/C:/Users/tamar/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/jaxb-api.jar,file:/C:/Users/tamar/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/jaxb-impl.jar,file:/C:/Users/tamar/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/activation.jar,file:/C:/Users/tamar/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/stax-ex.jar,file:/C:/Users/tamar/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/streambuffer.jar,file:/C:/Users/tamar/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/stax-utils.jar
+2021-12-12 21:19:05.500  INFO 17900 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\tamar\.m2\repository\com\sun\xml\bind\jaxb-impl\2.1.7\jaxb-impl-2.1.7.jar referenced one or more files that do not exist: file:/C:/Users/tamar/.m2/repository/com/sun/xml/bind/jaxb-impl/2.1.7/jaxb-api.jar,file:/C:/Users/tamar/.m2/repository/com/sun/xml/bind/jaxb-impl/2.1.7/activation.jar,file:/C:/Users/tamar/.m2/repository/com/sun/xml/bind/jaxb-impl/2.1.7/jsr173_1.0_api.jar,file:/C:/Users/tamar/.m2/repository/com/sun/xml/bind/jaxb-impl/2.1.7/jaxb1-impl.jar
+2021-12-12 21:19:05.705  INFO 17900 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\tamar\.m2\repository\org\jopendocument\jOpenDocument\1.2\jOpenDocument-1.2.jar referenced one or more files that do not exist: file:/C:/Users/tamar/.m2/repository/org/jopendocument/jOpenDocument/1.2/xbean.jar
+2021-12-12 21:19:05.711  INFO 17900 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-12-12 21:19:05.713  INFO 17900 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-12-12 21:19:09.633  INFO 17900 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2021-12-12 21:19:10.110  INFO 17900 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 461 ms. Found 15 JPA repository interfaces.
+2021-12-12 21:19:11.311  INFO 17900 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@6ada69a7' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-12 21:19:11.327  INFO 17900 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-12 21:19:13.325  INFO 17900 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+2021-12-12 21:19:13.362  INFO 17900 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-12 21:19:13.363  INFO 17900 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-12-12 21:19:13.879  INFO 17900 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-12 21:19:13.879  INFO 17900 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 8160 ms
+2021-12-12 21:19:14.580  INFO 17900 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-12-12 21:19:14.623  INFO 17900 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2021-12-12 21:19:15.109  INFO 17900 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-12 21:19:15.730  INFO 17900 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.23.Final
+2021-12-12 21:19:15.771  WARN 17900 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-12 21:19:16.751  INFO 17900 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-12 21:19:17.215  INFO 17900 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-12-12 21:19:18.353  WARN 17900 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2021-12-12 21:19:19.969  INFO 17900 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/', GET] with []
+2021-12-12 21:19:19.969  INFO 17900 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/webjars/**', GET] with []
+2021-12-12 21:19:19.969  INFO 17900 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/*.html', GET] with []
+2021-12-12 21:19:19.970  INFO 17900 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/favicon.ico', GET] with []
+2021-12-12 21:19:19.970  INFO 17900 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/**/*.html', GET] with []
+2021-12-12 21:19:19.970  INFO 17900 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/**/*.css', GET] with []
+2021-12-12 21:19:19.970  INFO 17900 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/**/*.js', GET] with []
+2021-12-12 21:19:19.970  INFO 17900 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/api/auth/login', POST] with []
+2021-12-12 21:19:19.970  INFO 17900 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/api/auth/signup', POST] with []
+2021-12-12 21:19:19.970  INFO 17900 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/api/items/add', POST] with []
+2021-12-12 21:19:20.049  INFO 17900 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6c6e1065, org.springframework.security.web.context.SecurityContextPersistenceFilter@daa94ea, org.springframework.security.web.header.HeaderWriterFilter@247adba2, org.springframework.web.filter.CorsFilter@2052459c, org.springframework.security.web.authentication.logout.LogoutFilter@67d2a57e, com.example.WebShop.Authentication.TokenAuthenticationFilter@1b6603d3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@14013b73, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@71467eb6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@59789841, org.springframework.security.web.session.SessionManagementFilter@2ae238b2, org.springframework.security.web.access.ExceptionTranslationFilter@611a754c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@41baf93d]
+2021-12-12 21:19:20.164  INFO 17900 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-12-12 21:19:20.245  WARN 17900 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-12-12 21:19:20.376  INFO 17900 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-12-12 21:19:21.070  INFO 17900 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path ''
+2021-12-12 21:19:21.073  INFO 17900 --- [task-1] o.h.e.boot.internal.EnversServiceImpl    : Envers integration enabled? : true
+2021-12-12 21:19:23.227  INFO 17900 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2021-12-12 21:19:30.207  INFO 17900 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-12 21:19:30.219  INFO 17900 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-12 21:19:31.807  INFO 17900 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2021-12-12 21:19:31.835  INFO 17900 --- [restartedMain] com.example.WebShop.WebShopApplication   : Started WebShopApplication in 28.377 seconds (JVM running for 33.214)
+2021-12-12 21:20:24.220  INFO 17900 --- [http-nio-8085-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-12 21:20:24.220  INFO 17900 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-12-12 21:20:24.222  INFO 17900 --- [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-12-12 21:20:24.634  INFO 17900 --- [http-nio-8085-exec-3] c.e.W.C.AuthenticationController         : User admin has just logged in.
+2021-12-12 21:20:29.921  INFO 17900 --- [http-nio-8085-exec-4] c.e.W.C.PaymentMethodController          : Overview of the currently chosen payment mathods for webshop
+2021-12-12 21:20:33.279  INFO 17900 --- [http-nio-8085-exec-9] c.e.W.C.PaymentMethodController          : Payment methods had been added to the webshop: 
+2021-12-12 21:20:42.268  INFO 17900 --- [http-nio-8085-exec-6] c.e.W.C.PaymentMethodController          : Overview of the currently chosen payment mathods for webshop
+2021-12-12 21:21:39.754  INFO 17900 --- [http-nio-8085-exec-1] c.e.W.C.AuthenticationController         : User user has just logged in.
+2021-12-12 21:21:43.819  INFO 17900 --- [http-nio-8085-exec-8] c.e.W.C.PaymentMethodController          : Overview of the currently chosen payment mathods for webshop
+2021-12-12 21:21:49.841  INFO 17900 --- [http-nio-8085-exec-2] c.e.W.C.AuthenticationController         : User user has just logged in.
+2021-12-12 21:21:52.848  INFO 17900 --- [http-nio-8085-exec-6] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 21:21:53.140  INFO 17900 --- [http-nio-8085-exec-6] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 21:21:53.387  INFO 17900 --- [http-nio-8085-exec-6] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 21:21:53.707  INFO 17900 --- [http-nio-8085-exec-6] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 21:21:55.068  INFO 17900 --- [http-nio-8085-exec-1] c.e.WebShop.Controllers.CartController   : User: useris viewing its cart.
+2021-12-12 21:21:57.119  INFO 17900 --- [http-nio-8085-exec-9] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 21:21:57.265  INFO 17900 --- [http-nio-8085-exec-9] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 21:21:57.418  INFO 17900 --- [http-nio-8085-exec-9] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 21:21:57.635  INFO 17900 --- [http-nio-8085-exec-9] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 21:22:00.748  INFO 17900 --- [http-nio-8085-exec-5] c.e.WebShop.Controllers.CartController   : Item with id: 1has just been added to the cart by user user
+2021-12-12 21:22:02.772  INFO 17900 --- [http-nio-8085-exec-2] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 21:22:02.912  INFO 17900 --- [http-nio-8085-exec-2] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 21:22:03.027  INFO 17900 --- [http-nio-8085-exec-2] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 21:22:03.341  INFO 17900 --- [http-nio-8085-exec-2] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 21:22:04.301  INFO 17900 --- [http-nio-8085-exec-6] c.e.WebShop.Controllers.CartController   : User: useris viewing its cart.
+2021-12-12 21:22:12.433  INFO 17900 --- [http-nio-8085-exec-10] c.e.WebShop.Controllers.CartController   : User: useris viewing its cart.
+2021-12-12 21:23:19.693  INFO 17900 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-12 21:23:19.695  INFO 17900 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2021-12-12 21:23:19.695  INFO 17900 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-12-12 21:23:19.697  INFO 17900 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-12-12 21:23:19.708  INFO 17900 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-12-12 21:23:28.565  INFO 13596 --- [restartedMain] com.example.WebShop.WebShopApplication   : Starting WebShopApplication using Java 17.0.1 on DESKTOP-1PFK6EP with PID 13596 (D:\Master\SEP\SEP\WebShop\target\classes started by tamar in D:\Master\SEP\SEP\WebShop)
+2021-12-12 21:23:28.572 DEBUG 13596 --- [restartedMain] com.example.WebShop.WebShopApplication   : Running with Spring Boot v2.4.0, Spring v5.3.1
+2021-12-12 21:23:28.574  INFO 13596 --- [restartedMain] com.example.WebShop.WebShopApplication   : No active profile set, falling back to default profiles: default
+2021-12-12 21:23:28.701  INFO 13596 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\tamar\.m2\repository\com\sun\xml\ws\jaxws-rt\2.1.4\jaxws-rt-2.1.4.jar referenced one or more files that do not exist: file:/C:/Users/tamar/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/jaxws-api.jar,file:/C:/Users/tamar/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/jsr181-api.jar,file:/C:/Users/tamar/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/jsr250-api.jar,file:/C:/Users/tamar/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/saaj-api.jar,file:/C:/Users/tamar/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/saaj-impl.jar,file:/C:/Users/tamar/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/jsr173_api.jar,file:/C:/Users/tamar/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/sjsxp.jar,file:/C:/Users/tamar/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/resolver.jar,file:/C:/Users/tamar/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/jaxb-api.jar,file:/C:/Users/tamar/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/jaxb-impl.jar,file:/C:/Users/tamar/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/activation.jar,file:/C:/Users/tamar/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/stax-ex.jar,file:/C:/Users/tamar/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/streambuffer.jar,file:/C:/Users/tamar/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/stax-utils.jar
+2021-12-12 21:23:28.701  INFO 13596 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\tamar\.m2\repository\com\sun\xml\bind\jaxb-impl\2.1.7\jaxb-impl-2.1.7.jar referenced one or more files that do not exist: file:/C:/Users/tamar/.m2/repository/com/sun/xml/bind/jaxb-impl/2.1.7/jaxb-api.jar,file:/C:/Users/tamar/.m2/repository/com/sun/xml/bind/jaxb-impl/2.1.7/activation.jar,file:/C:/Users/tamar/.m2/repository/com/sun/xml/bind/jaxb-impl/2.1.7/jsr173_1.0_api.jar,file:/C:/Users/tamar/.m2/repository/com/sun/xml/bind/jaxb-impl/2.1.7/jaxb1-impl.jar
+2021-12-12 21:23:28.701  INFO 13596 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\tamar\.m2\repository\org\jopendocument\jOpenDocument\1.2\jOpenDocument-1.2.jar referenced one or more files that do not exist: file:/C:/Users/tamar/.m2/repository/org/jopendocument/jOpenDocument/1.2/xbean.jar
+2021-12-12 21:23:28.702  INFO 13596 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-12-12 21:23:28.702  INFO 13596 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-12-12 21:23:31.292  INFO 13596 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2021-12-12 21:23:31.629  INFO 13596 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 321 ms. Found 15 JPA repository interfaces.
+2021-12-12 21:23:32.428  INFO 13596 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@4226c8b0' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-12 21:23:32.435  INFO 13596 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-12 21:23:33.292  INFO 13596 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+2021-12-12 21:23:33.315  INFO 13596 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-12 21:23:33.316  INFO 13596 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-12-12 21:23:33.559  INFO 13596 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-12 21:23:33.559  INFO 13596 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4856 ms
+2021-12-12 21:23:33.799  INFO 13596 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-12-12 21:23:33.823  INFO 13596 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2021-12-12 21:23:33.936  INFO 13596 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-12 21:23:34.152  INFO 13596 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.23.Final
+2021-12-12 21:23:34.284  WARN 13596 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-12 21:23:34.576  INFO 13596 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-12 21:23:34.950  INFO 13596 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-12-12 21:23:35.876  INFO 13596 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-12-12 21:23:35.931  INFO 13596 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-12-12 21:23:36.162  INFO 13596 --- [task-1] o.h.e.boot.internal.EnversServiceImpl    : Envers integration enabled? : true
+2021-12-12 21:23:36.355  WARN 13596 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2021-12-12 21:23:37.414  INFO 13596 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/', GET] with []
+2021-12-12 21:23:37.415  INFO 13596 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/webjars/**', GET] with []
+2021-12-12 21:23:37.415  INFO 13596 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/*.html', GET] with []
+2021-12-12 21:23:37.416  INFO 13596 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/favicon.ico', GET] with []
+2021-12-12 21:23:37.416  INFO 13596 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/**/*.html', GET] with []
+2021-12-12 21:23:37.416  INFO 13596 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/**/*.css', GET] with []
+2021-12-12 21:23:37.416  INFO 13596 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/**/*.js', GET] with []
+2021-12-12 21:23:37.416  INFO 13596 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/api/auth/login', POST] with []
+2021-12-12 21:23:37.417  INFO 13596 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/api/auth/signup', POST] with []
+2021-12-12 21:23:37.417  INFO 13596 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/api/items/add', POST] with []
+2021-12-12 21:23:37.525  INFO 13596 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@779fe474, org.springframework.security.web.context.SecurityContextPersistenceFilter@11e44a34, org.springframework.security.web.header.HeaderWriterFilter@220804ec, org.springframework.web.filter.CorsFilter@3fd85d28, org.springframework.security.web.authentication.logout.LogoutFilter@6196ac7, com.example.WebShop.Authentication.TokenAuthenticationFilter@70cfdbc6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@653351d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1b684f17, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2616628e, org.springframework.security.web.session.SessionManagementFilter@468582a7, org.springframework.security.web.access.ExceptionTranslationFilter@2f55551, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3ebefde5]
+2021-12-12 21:23:37.613  WARN 13596 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-12-12 21:23:38.313  INFO 13596 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path ''
+2021-12-12 21:23:38.565  INFO 13596 --- [http-nio-8085-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-12 21:23:38.569  INFO 13596 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-12-12 21:23:38.572  INFO 13596 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2021-12-12 21:23:39.391  INFO 13596 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2021-12-12 21:23:41.059  INFO 13596 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-12 21:23:41.078  INFO 13596 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-12 21:23:42.425  INFO 13596 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2021-12-12 21:23:42.445  INFO 13596 --- [restartedMain] com.example.WebShop.WebShopApplication   : Started WebShopApplication in 14.671 seconds (JVM running for 16.118)
+2021-12-12 21:23:43.023  INFO 13596 --- [http-nio-8085-exec-1] c.e.W.C.AuthenticationController         : User admin has just logged in.
+2021-12-12 21:23:43.023  INFO 13596 --- [http-nio-8085-exec-3] c.e.W.C.AuthenticationController         : User admin has just logged in.
+2021-12-12 21:23:43.023  INFO 13596 --- [http-nio-8085-exec-2] c.e.W.C.AuthenticationController         : User admin has just logged in.
+2021-12-12 21:23:43.105  INFO 13596 --- [http-nio-8085-exec-5] c.e.W.C.AuthenticationController         : User admin has just logged in.
+2021-12-12 21:23:53.164  INFO 13596 --- [http-nio-8085-exec-4] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 21:23:53.451  INFO 13596 --- [http-nio-8085-exec-4] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 21:23:53.553  INFO 13596 --- [http-nio-8085-exec-4] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 21:23:53.789  INFO 13596 --- [http-nio-8085-exec-4] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 21:23:56.036  INFO 13596 --- [http-nio-8085-exec-3] c.e.W.Controllers.PurchaseController     : Admin is overviewing purchases
+2021-12-12 21:24:06.519  INFO 13596 --- [http-nio-8085-exec-5] c.e.W.C.AuthenticationController         : User user has just logged in.
+2021-12-12 21:24:09.030  INFO 13596 --- [http-nio-8085-exec-6] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 21:24:09.090  INFO 13596 --- [http-nio-8085-exec-6] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 21:24:09.183  INFO 13596 --- [http-nio-8085-exec-6] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 21:24:09.383  INFO 13596 --- [http-nio-8085-exec-6] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 21:24:10.714  INFO 13596 --- [http-nio-8085-exec-10] c.e.WebShop.Controllers.CartController   : User: useris viewing its cart.
+2021-12-12 21:24:17.562  INFO 13596 --- [http-nio-8085-exec-4] c.e.WebShop.Controllers.CartController   : User: useris viewing its cart.
+2021-12-12 21:25:04.996  INFO 13596 --- [http-nio-8085-exec-6] c.e.W.C.AuthenticationController         : User admin has just logged in.
+2021-12-12 21:25:11.486  INFO 13596 --- [http-nio-8085-exec-4] c.e.W.C.PaymentMethodController          : Overview of the currently chosen payment mathods for webshop
+2021-12-12 21:26:04.879  INFO 13596 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-12 21:26:04.882  INFO 13596 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2021-12-12 21:26:04.882  INFO 13596 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-12-12 21:26:04.884  INFO 13596 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-12-12 21:26:04.898  INFO 13596 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-12-12 21:26:12.929  INFO 19316 --- [restartedMain] com.example.WebShop.WebShopApplication   : Starting WebShopApplication using Java 17.0.1 on DESKTOP-1PFK6EP with PID 19316 (D:\Master\SEP\SEP\WebShop\target\classes started by tamar in D:\Master\SEP\SEP\WebShop)
+2021-12-12 21:26:12.933 DEBUG 19316 --- [restartedMain] com.example.WebShop.WebShopApplication   : Running with Spring Boot v2.4.0, Spring v5.3.1
+2021-12-12 21:26:12.934  INFO 19316 --- [restartedMain] com.example.WebShop.WebShopApplication   : No active profile set, falling back to default profiles: default
+2021-12-12 21:26:13.059  INFO 19316 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\tamar\.m2\repository\com\sun\xml\ws\jaxws-rt\2.1.4\jaxws-rt-2.1.4.jar referenced one or more files that do not exist: file:/C:/Users/tamar/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/jaxws-api.jar,file:/C:/Users/tamar/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/jsr181-api.jar,file:/C:/Users/tamar/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/jsr250-api.jar,file:/C:/Users/tamar/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/saaj-api.jar,file:/C:/Users/tamar/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/saaj-impl.jar,file:/C:/Users/tamar/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/jsr173_api.jar,file:/C:/Users/tamar/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/sjsxp.jar,file:/C:/Users/tamar/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/resolver.jar,file:/C:/Users/tamar/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/jaxb-api.jar,file:/C:/Users/tamar/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/jaxb-impl.jar,file:/C:/Users/tamar/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/activation.jar,file:/C:/Users/tamar/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/stax-ex.jar,file:/C:/Users/tamar/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/streambuffer.jar,file:/C:/Users/tamar/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/stax-utils.jar
+2021-12-12 21:26:13.059  INFO 19316 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\tamar\.m2\repository\com\sun\xml\bind\jaxb-impl\2.1.7\jaxb-impl-2.1.7.jar referenced one or more files that do not exist: file:/C:/Users/tamar/.m2/repository/com/sun/xml/bind/jaxb-impl/2.1.7/jaxb-api.jar,file:/C:/Users/tamar/.m2/repository/com/sun/xml/bind/jaxb-impl/2.1.7/activation.jar,file:/C:/Users/tamar/.m2/repository/com/sun/xml/bind/jaxb-impl/2.1.7/jsr173_1.0_api.jar,file:/C:/Users/tamar/.m2/repository/com/sun/xml/bind/jaxb-impl/2.1.7/jaxb1-impl.jar
+2021-12-12 21:26:13.059  INFO 19316 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\tamar\.m2\repository\org\jopendocument\jOpenDocument\1.2\jOpenDocument-1.2.jar referenced one or more files that do not exist: file:/C:/Users/tamar/.m2/repository/org/jopendocument/jOpenDocument/1.2/xbean.jar
+2021-12-12 21:26:13.059  INFO 19316 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-12-12 21:26:13.059  INFO 19316 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-12-12 21:26:16.188  INFO 19316 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2021-12-12 21:26:16.508  INFO 19316 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 304 ms. Found 15 JPA repository interfaces.
+2021-12-12 21:26:17.311  INFO 19316 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@756b7f83' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-12 21:26:17.322  INFO 19316 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-12 21:26:18.098  INFO 19316 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+2021-12-12 21:26:18.115  INFO 19316 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-12 21:26:18.115  INFO 19316 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-12-12 21:26:18.329  INFO 19316 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-12 21:26:18.330  INFO 19316 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5270 ms
+2021-12-12 21:26:18.549  INFO 19316 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-12-12 21:26:18.570  INFO 19316 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2021-12-12 21:26:18.664  INFO 19316 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-12 21:26:18.902  INFO 19316 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.23.Final
+2021-12-12 21:26:19.022  WARN 19316 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-12 21:26:19.225  INFO 19316 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-12 21:26:19.497  INFO 19316 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-12-12 21:26:20.480  INFO 19316 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-12-12 21:26:20.542  INFO 19316 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-12-12 21:26:20.797  INFO 19316 --- [task-1] o.h.e.boot.internal.EnversServiceImpl    : Envers integration enabled? : true
+2021-12-12 21:26:21.018  WARN 19316 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2021-12-12 21:26:22.089  INFO 19316 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/', GET] with []
+2021-12-12 21:26:22.090  INFO 19316 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/webjars/**', GET] with []
+2021-12-12 21:26:22.090  INFO 19316 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/*.html', GET] with []
+2021-12-12 21:26:22.091  INFO 19316 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/favicon.ico', GET] with []
+2021-12-12 21:26:22.091  INFO 19316 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/**/*.html', GET] with []
+2021-12-12 21:26:22.091  INFO 19316 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/**/*.css', GET] with []
+2021-12-12 21:26:22.091  INFO 19316 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/**/*.js', GET] with []
+2021-12-12 21:26:22.091  INFO 19316 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/api/auth/login', POST] with []
+2021-12-12 21:26:22.092  INFO 19316 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/api/auth/signup', POST] with []
+2021-12-12 21:26:22.092  INFO 19316 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/api/items/add', POST] with []
+2021-12-12 21:26:22.192  INFO 19316 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3a757852, org.springframework.security.web.context.SecurityContextPersistenceFilter@35adc181, org.springframework.security.web.header.HeaderWriterFilter@7ecc9def, org.springframework.web.filter.CorsFilter@1e24367d, org.springframework.security.web.authentication.logout.LogoutFilter@88c5906, com.example.WebShop.Authentication.TokenAuthenticationFilter@4cfaec2c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@56eb2790, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2261817b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3267e657, org.springframework.security.web.session.SessionManagementFilter@539bf21c, org.springframework.security.web.access.ExceptionTranslationFilter@65560147, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1c3fa019]
+2021-12-12 21:26:22.277  WARN 19316 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-12-12 21:26:23.051  INFO 19316 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path ''
+2021-12-12 21:26:24.573  INFO 19316 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2021-12-12 21:26:26.447  INFO 19316 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-12 21:26:26.470  INFO 19316 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-12 21:26:28.364  INFO 19316 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2021-12-12 21:26:28.403  INFO 19316 --- [restartedMain] com.example.WebShop.WebShopApplication   : Started WebShopApplication in 16.243 seconds (JVM running for 17.422)
+2021-12-12 21:26:44.781  INFO 19316 --- [http-nio-8085-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-12 21:26:44.782  INFO 19316 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-12-12 21:26:44.786  INFO 19316 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2021-12-12 21:26:45.660  INFO 19316 --- [http-nio-8085-exec-1] c.e.W.C.AuthenticationController         : User user has just logged in.
+2021-12-12 21:26:48.210  INFO 19316 --- [http-nio-8085-exec-2] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 21:26:48.434  INFO 19316 --- [http-nio-8085-exec-2] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 21:26:48.705  INFO 19316 --- [http-nio-8085-exec-2] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 21:26:49.370  INFO 19316 --- [http-nio-8085-exec-2] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 21:26:51.471  INFO 19316 --- [http-nio-8085-exec-3] c.e.W.C.PaymentMethodController          : Overview of the currently choosen payment mathods for webshop
+2021-12-12 21:26:51.642  INFO 19316 --- [http-nio-8085-exec-4] c.e.WebShop.Controllers.CartController   : User: useris viewing its cart.
+2021-12-12 21:27:11.080  INFO 19316 --- [http-nio-8085-exec-7] c.e.W.C.AuthenticationController         : User admin has just logged in.
+2021-12-12 21:27:12.792  INFO 19316 --- [http-nio-8085-exec-8] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 21:27:12.955  INFO 19316 --- [http-nio-8085-exec-8] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 21:27:13.134  INFO 19316 --- [http-nio-8085-exec-8] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 21:27:13.588  INFO 19316 --- [http-nio-8085-exec-8] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 21:27:16.628  INFO 19316 --- [http-nio-8085-exec-10] c.e.W.C.PaymentMethodController          : Overview of the currently choosen payment mathods for webshop
+2021-12-12 21:27:20.689  INFO 19316 --- [http-nio-8085-exec-2] c.e.W.C.PaymentMethodController          : Payment methods had been added to the webshop: 
+2021-12-12 21:27:25.988  INFO 19316 --- [http-nio-8085-exec-4] c.e.W.C.AuthenticationController         : User user has just logged in.
+2021-12-12 21:27:27.565  INFO 19316 --- [http-nio-8085-exec-6] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 21:27:27.756  INFO 19316 --- [http-nio-8085-exec-6] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 21:27:28.046  INFO 19316 --- [http-nio-8085-exec-6] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 21:27:28.497  INFO 19316 --- [http-nio-8085-exec-6] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 21:27:30.810  INFO 19316 --- [http-nio-8085-exec-5] c.e.W.C.PaymentMethodController          : Overview of the currently choosen payment mathods for webshop
+2021-12-12 21:27:30.933  INFO 19316 --- [http-nio-8085-exec-7] c.e.WebShop.Controllers.CartController   : User: useris viewing its cart.
+2021-12-12 21:35:20.292  INFO 19316 --- [http-nio-8085-exec-10] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 21:35:20.516  INFO 19316 --- [http-nio-8085-exec-10] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 21:35:20.774  INFO 19316 --- [http-nio-8085-exec-10] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 21:35:21.287  INFO 19316 --- [http-nio-8085-exec-10] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 21:35:22.643  INFO 19316 --- [http-nio-8085-exec-1] c.e.W.C.PaymentMethodController          : Overview of the currently choosen payment mathods for webshop
+2021-12-12 21:35:22.807  INFO 19316 --- [http-nio-8085-exec-2] c.e.WebShop.Controllers.CartController   : User: useris viewing its cart.
+2021-12-12 21:35:27.173  INFO 19316 --- [http-nio-8085-exec-4] c.e.WebShop.Controllers.CartController   : Item with id: 36has been deleted from the cart by user: user
+2021-12-12 21:35:30.370  INFO 19316 --- [http-nio-8085-exec-6] c.e.W.C.PaymentMethodController          : Overview of the currently choosen payment mathods for webshop
+2021-12-12 21:35:30.376  INFO 19316 --- [http-nio-8085-exec-5] c.e.WebShop.Controllers.CartController   : User: useris viewing its cart.
+2021-12-12 21:36:52.174  INFO 19316 --- [http-nio-8085-exec-9] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 21:36:52.260  INFO 19316 --- [http-nio-8085-exec-9] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 21:36:52.384  INFO 19316 --- [http-nio-8085-exec-9] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 21:36:52.790  INFO 19316 --- [http-nio-8085-exec-9] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 21:36:57.587  INFO 19316 --- [http-nio-8085-exec-10] c.e.WebShop.Controllers.CartController   : Item with id: 1has just been added to the cart by user user
+2021-12-12 21:37:00.102  INFO 19316 --- [http-nio-8085-exec-1] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 21:37:00.249  INFO 19316 --- [http-nio-8085-exec-1] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 21:37:00.419  INFO 19316 --- [http-nio-8085-exec-1] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 21:37:00.721  INFO 19316 --- [http-nio-8085-exec-1] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 21:37:02.056  INFO 19316 --- [http-nio-8085-exec-2] c.e.W.C.PaymentMethodController          : Overview of the currently choosen payment mathods for webshop
+2021-12-12 21:37:02.147  INFO 19316 --- [http-nio-8085-exec-3] c.e.WebShop.Controllers.CartController   : User: useris viewing its cart.
+2021-12-12 21:37:16.522  INFO 19316 --- [http-nio-8085-exec-4] c.e.W.C.AuthenticationController         : User admin has just logged in.
+2021-12-12 21:37:21.558  INFO 19316 --- [http-nio-8085-exec-6] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 21:37:21.637  INFO 19316 --- [http-nio-8085-exec-6] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 21:37:21.745  INFO 19316 --- [http-nio-8085-exec-6] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 21:37:22.001  INFO 19316 --- [http-nio-8085-exec-6] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 21:37:22.851  INFO 19316 --- [http-nio-8085-exec-5] c.e.W.C.PaymentMethodController          : Overview of the currently choosen payment mathods for webshop
+2021-12-12 21:37:25.431  INFO 19316 --- [http-nio-8085-exec-7] c.e.W.C.PaymentMethodController          : Payment methods had been added to the webshop: 
+2021-12-12 21:37:33.128  INFO 19316 --- [http-nio-8085-exec-8] c.e.W.C.AuthenticationController         : User user has just logged in.
+2021-12-12 21:37:40.772  INFO 19316 --- [http-nio-8085-exec-9] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 21:37:40.906  INFO 19316 --- [http-nio-8085-exec-9] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 21:37:41.103  INFO 19316 --- [http-nio-8085-exec-9] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 21:37:41.363  INFO 19316 --- [http-nio-8085-exec-9] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 21:37:44.639  INFO 19316 --- [http-nio-8085-exec-10] c.e.W.C.PaymentMethodController          : Overview of the currently choosen payment mathods for webshop
+2021-12-12 21:37:44.752  INFO 19316 --- [http-nio-8085-exec-1] c.e.WebShop.Controllers.CartController   : User: useris viewing its cart.
+2021-12-12 21:37:45.845  INFO 19316 --- [http-nio-8085-exec-3] c.e.WebShop.Controllers.CartController   : Item with id: 39has been deleted from the cart by user: user
+2021-12-12 21:37:47.450  INFO 19316 --- [http-nio-8085-exec-4] c.e.W.C.PaymentMethodController          : Overview of the currently choosen payment mathods for webshop
+2021-12-12 21:37:47.457  INFO 19316 --- [http-nio-8085-exec-6] c.e.WebShop.Controllers.CartController   : User: useris viewing its cart.
+2021-12-12 21:37:54.672  INFO 19316 --- [http-nio-8085-exec-5] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 21:37:54.828  INFO 19316 --- [http-nio-8085-exec-5] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 21:37:55.072  INFO 19316 --- [http-nio-8085-exec-5] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 21:37:55.475  INFO 19316 --- [http-nio-8085-exec-5] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 21:37:59.121  INFO 19316 --- [http-nio-8085-exec-9] c.e.WebShop.Controllers.CartController   : Item with id: 1has just been added to the cart by user user
+2021-12-12 21:38:01.196  INFO 19316 --- [http-nio-8085-exec-10] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 21:38:01.347  INFO 19316 --- [http-nio-8085-exec-10] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 21:38:01.523  INFO 19316 --- [http-nio-8085-exec-10] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 21:38:01.798  INFO 19316 --- [http-nio-8085-exec-10] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 21:38:02.823  INFO 19316 --- [http-nio-8085-exec-1] c.e.W.C.PaymentMethodController          : Overview of the currently choosen payment mathods for webshop
+2021-12-12 21:38:02.941  INFO 19316 --- [http-nio-8085-exec-2] c.e.WebShop.Controllers.CartController   : User: useris viewing its cart.
+2021-12-12 21:38:09.110  INFO 19316 --- [http-nio-8085-exec-6] c.e.W.C.ProductPaymentDataController     : Getting merchant bitcoin credentials for product purchase.
+2021-12-12 21:39:39.794  INFO 19316 --- [http-nio-8085-exec-7] c.e.W.C.PaymentMethodController          : Overview of the currently choosen payment mathods for webshop
+2021-12-12 21:39:39.943  INFO 19316 --- [http-nio-8085-exec-8] c.e.WebShop.Controllers.CartController   : User: useris viewing its cart.
+2021-12-12 21:39:42.283  INFO 19316 --- [http-nio-8085-exec-2] c.e.WebShop.Controllers.CartController   : Item with id: 44has been deleted from the cart by user: user
+2021-12-12 21:39:44.800  INFO 19316 --- [http-nio-8085-exec-3] c.e.W.C.PaymentMethodController          : Overview of the currently choosen payment mathods for webshop
+2021-12-12 21:39:44.805  INFO 19316 --- [http-nio-8085-exec-4] c.e.WebShop.Controllers.CartController   : User: useris viewing its cart.
+2021-12-12 21:39:53.145  INFO 19316 --- [http-nio-8085-exec-7] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 21:39:53.263  INFO 19316 --- [http-nio-8085-exec-7] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 21:39:53.429  INFO 19316 --- [http-nio-8085-exec-7] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 21:39:53.726  INFO 19316 --- [http-nio-8085-exec-7] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 21:39:57.065  INFO 19316 --- [http-nio-8085-exec-8] c.e.WebShop.Controllers.CartController   : Item with id: 1has just been added to the cart by user user
+2021-12-12 21:39:58.719  INFO 19316 --- [http-nio-8085-exec-9] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 21:39:58.906  INFO 19316 --- [http-nio-8085-exec-9] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 21:39:59.191  INFO 19316 --- [http-nio-8085-exec-9] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 21:39:59.566  INFO 19316 --- [http-nio-8085-exec-9] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 21:40:00.436  INFO 19316 --- [http-nio-8085-exec-10] c.e.W.C.PaymentMethodController          : Overview of the currently choosen payment mathods for webshop
+2021-12-12 21:40:00.527  INFO 19316 --- [http-nio-8085-exec-1] c.e.WebShop.Controllers.CartController   : User: useris viewing its cart.
+2021-12-12 21:40:05.074  INFO 19316 --- [http-nio-8085-exec-4] c.e.W.C.ProductPaymentDataController     : Getting merchant bitcoin credentials for product purchase.
+2021-12-12 21:42:10.321  INFO 19316 --- [http-nio-8085-exec-5] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 21:42:10.404  INFO 19316 --- [http-nio-8085-exec-5] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 21:42:10.563  INFO 19316 --- [http-nio-8085-exec-5] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 21:42:10.756  INFO 19316 --- [http-nio-8085-exec-5] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 21:42:18.307  INFO 19316 --- [http-nio-8085-exec-8] c.e.W.C.AuthenticationController         : User admin has just logged in.
+2021-12-12 21:42:22.277  INFO 19316 --- [http-nio-8085-exec-10] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 21:42:22.395  INFO 19316 --- [http-nio-8085-exec-10] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 21:42:22.544  INFO 19316 --- [http-nio-8085-exec-10] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 21:42:22.752  INFO 19316 --- [http-nio-8085-exec-10] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 21:42:50.635  INFO 19316 --- [http-nio-8085-exec-3] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 21:42:50.701  INFO 19316 --- [http-nio-8085-exec-3] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 21:42:50.820  INFO 19316 --- [http-nio-8085-exec-3] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 21:42:51.082  INFO 19316 --- [http-nio-8085-exec-3] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 21:42:52.366  INFO 19316 --- [http-nio-8085-exec-2] c.e.W.Controllers.PurchaseController     : Admin is overviewing purchases
+2021-12-12 21:42:53.100  INFO 19316 --- [http-nio-8085-exec-4] c.e.W.C.PaymentMethodController          : Overview of the currently choosen payment mathods for webshop
+2021-12-12 21:49:57.562  INFO 19316 --- [http-nio-8085-exec-5] c.e.W.C.PaymentMethodController          : Overview of the currently choosen payment mathods for webshop
+2021-12-12 21:50:08.560  INFO 19316 --- [http-nio-8085-exec-7] c.e.W.C.PaymentMethodController          : Overview of the currently choosen payment mathods for webshop
+2021-12-12 21:50:23.672  INFO 19316 --- [http-nio-8085-exec-9] c.e.W.C.AuthenticationController         : User admin has just logged in.
+2021-12-12 21:50:26.452  INFO 19316 --- [http-nio-8085-exec-10] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 21:50:26.531  INFO 19316 --- [http-nio-8085-exec-10] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 21:50:26.646  INFO 19316 --- [http-nio-8085-exec-10] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 21:50:26.983  INFO 19316 --- [http-nio-8085-exec-10] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 21:50:43.765  INFO 19316 --- [http-nio-8085-exec-2] c.e.W.Controllers.ProductController      : Adding new product: Door
+2021-12-12 21:50:44.076  INFO 19316 --- [http-nio-8085-exec-4] c.e.W.Controllers.ProductController      : Uploading picture
+2021-12-12 21:50:50.486  INFO 19316 --- [http-nio-8085-exec-5] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 21:50:50.581  INFO 19316 --- [http-nio-8085-exec-5] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 21:50:50.675  INFO 19316 --- [http-nio-8085-exec-5] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 21:50:50.897  INFO 19316 --- [http-nio-8085-exec-5] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 21:50:50.946  INFO 19316 --- [http-nio-8085-exec-5] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 21:51:01.064  INFO 19316 --- [http-nio-8085-exec-8] c.e.W.C.AuthenticationController         : User user has just logged in.
+2021-12-12 21:51:09.620  INFO 19316 --- [http-nio-8085-exec-9] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 21:51:09.753  INFO 19316 --- [http-nio-8085-exec-9] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 21:51:09.891  INFO 19316 --- [http-nio-8085-exec-9] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 21:51:10.302  INFO 19316 --- [http-nio-8085-exec-9] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 21:51:10.339  INFO 19316 --- [http-nio-8085-exec-9] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 21:51:14.835  INFO 19316 --- [http-nio-8085-exec-10] c.e.WebShop.Controllers.CartController   : Item with id: 46has just been added to the cart by user user
+2021-12-12 21:51:17.370  INFO 19316 --- [http-nio-8085-exec-1] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 21:51:17.512  INFO 19316 --- [http-nio-8085-exec-1] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 21:51:17.720  INFO 19316 --- [http-nio-8085-exec-1] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 21:51:18.049  INFO 19316 --- [http-nio-8085-exec-1] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 21:51:18.103  INFO 19316 --- [http-nio-8085-exec-1] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 21:51:19.506  INFO 19316 --- [http-nio-8085-exec-3] c.e.W.C.PaymentMethodController          : Overview of the currently choosen payment mathods for webshop
+2021-12-12 21:51:19.693  INFO 19316 --- [http-nio-8085-exec-2] c.e.WebShop.Controllers.CartController   : User: useris viewing its cart.
+2021-12-12 21:51:21.592  INFO 19316 --- [http-nio-8085-exec-6] c.e.WebShop.Controllers.CartController   : Item with id: 45has been deleted from the cart by user: user
+2021-12-12 21:51:23.060  INFO 19316 --- [http-nio-8085-exec-5] c.e.W.C.PaymentMethodController          : Overview of the currently choosen payment mathods for webshop
+2021-12-12 21:51:23.110  INFO 19316 --- [http-nio-8085-exec-7] c.e.WebShop.Controllers.CartController   : User: useris viewing its cart.
+2021-12-12 21:51:29.876  INFO 19316 --- [http-nio-8085-exec-10] c.e.W.C.ProductPaymentDataController     : Getting merchant bitcoin credentials for product purchase.
+2021-12-12 21:51:51.541  INFO 19316 --- [http-nio-8085-exec-3] c.e.W.C.PaymentMethodController          : Overview of the currently choosen payment mathods for webshop
+2021-12-12 21:51:51.598  INFO 19316 --- [http-nio-8085-exec-2] c.e.WebShop.Controllers.CartController   : User: useris viewing its cart.
+2021-12-12 21:51:54.590  INFO 19316 --- [http-nio-8085-exec-7] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 21:51:54.661  INFO 19316 --- [http-nio-8085-exec-7] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 21:51:54.786  INFO 19316 --- [http-nio-8085-exec-7] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 21:51:55.098  INFO 19316 --- [http-nio-8085-exec-7] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 21:51:55.150  INFO 19316 --- [http-nio-8085-exec-7] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 21:51:56.990  INFO 19316 --- [http-nio-8085-exec-10] c.e.W.C.PaymentMethodController          : Overview of the currently choosen payment mathods for webshop
+2021-12-12 21:51:57.057  INFO 19316 --- [http-nio-8085-exec-1] c.e.WebShop.Controllers.CartController   : User: useris viewing its cart.
+2021-12-12 21:51:57.770  INFO 19316 --- [http-nio-8085-exec-2] c.e.WebShop.Controllers.CartController   : Item with id: 48has been deleted from the cart by user: user
+2021-12-12 21:51:59.235  INFO 19316 --- [http-nio-8085-exec-4] c.e.W.C.PaymentMethodController          : Overview of the currently choosen payment mathods for webshop
+2021-12-12 21:51:59.243  INFO 19316 --- [http-nio-8085-exec-6] c.e.WebShop.Controllers.CartController   : User: useris viewing its cart.
+2021-12-12 21:52:05.914  INFO 19316 --- [http-nio-8085-exec-8] c.e.W.C.AuthenticationController         : User admin has just logged in.
+2021-12-12 21:52:08.418  INFO 19316 --- [http-nio-8085-exec-9] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 21:52:08.487  INFO 19316 --- [http-nio-8085-exec-9] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 21:52:08.595  INFO 19316 --- [http-nio-8085-exec-9] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 21:52:08.986  INFO 19316 --- [http-nio-8085-exec-9] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 21:52:09.047  INFO 19316 --- [http-nio-8085-exec-9] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 21:52:14.168  INFO 19316 --- [http-nio-8085-exec-3] c.e.W.Controllers.ProductController      : Editing product: Chair E345
+2021-12-12 21:52:16.985  INFO 19316 --- [http-nio-8085-exec-2] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 21:52:17.154  INFO 19316 --- [http-nio-8085-exec-2] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 21:52:17.373  INFO 19316 --- [http-nio-8085-exec-2] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 21:52:17.598  INFO 19316 --- [http-nio-8085-exec-2] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 21:52:17.635  INFO 19316 --- [http-nio-8085-exec-2] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 21:52:23.101  INFO 19316 --- [http-nio-8085-exec-6] c.e.W.C.AuthenticationController         : User user has just logged in.
+2021-12-12 21:52:32.164  INFO 19316 --- [http-nio-8085-exec-5] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 21:52:32.273  INFO 19316 --- [http-nio-8085-exec-5] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 21:52:32.387  INFO 19316 --- [http-nio-8085-exec-5] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 21:52:32.695  INFO 19316 --- [http-nio-8085-exec-5] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 21:52:32.739  INFO 19316 --- [http-nio-8085-exec-5] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 21:52:36.539  INFO 19316 --- [http-nio-8085-exec-9] c.e.WebShop.Controllers.CartController   : Item with id: 1has just been added to the cart by user user
+2021-12-12 21:52:38.425  INFO 19316 --- [http-nio-8085-exec-10] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 21:52:38.534  INFO 19316 --- [http-nio-8085-exec-10] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 21:52:38.673  INFO 19316 --- [http-nio-8085-exec-10] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 21:52:38.945  INFO 19316 --- [http-nio-8085-exec-10] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 21:52:38.984  INFO 19316 --- [http-nio-8085-exec-10] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 21:52:39.707  INFO 19316 --- [http-nio-8085-exec-1] c.e.W.C.PaymentMethodController          : Overview of the currently choosen payment mathods for webshop
+2021-12-12 21:52:39.809  INFO 19316 --- [http-nio-8085-exec-3] c.e.WebShop.Controllers.CartController   : User: useris viewing its cart.
+2021-12-12 21:52:45.434  INFO 19316 --- [http-nio-8085-exec-6] c.e.W.C.ProductPaymentDataController     : Getting merchant bitcoin credentials for product purchase.
+2021-12-12 21:56:37.967  INFO 19316 --- [http-nio-8085-exec-8] c.e.W.Controllers.PurchaseController     : User user is making a purchase
+2021-12-12 21:57:07.027  INFO 19316 --- [http-nio-8085-exec-1] c.e.W.C.AuthenticationController         : User admin has just logged in.
+2021-12-12 21:57:40.269 ERROR 19316 --- [http-nio-8085-exec-6] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+
+javax.imageio.IIOException: Can't create an ImageOutputStream!
+	at java.desktop/javax.imageio.ImageIO.write(ImageIO.java:1553) ~[na:na]
+	at com.example.WebShop.Controllers.Conferences.ConferenceController.hello(ConferenceController.java:70) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:774) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691) ~[spring-aop-5.3.1.jar:5.3.1]
+	at com.example.WebShop.Controllers.Conferences.ConferenceController$$EnhancerBySpringCGLIB$$fc29303b.hello(<generated>) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197) ~[spring-web-5.3.1.jar:5.3.1]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141) ~[spring-web-5.3.1.jar:5.3.1]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.3.1.jar:5.3.1]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:893) ~[spring-webmvc-5.3.1.jar:5.3.1]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:807) ~[spring-webmvc-5.3.1.jar:5.3.1]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.1.jar:5.3.1]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1061) ~[spring-webmvc-5.3.1.jar:5.3.1]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:961) ~[spring-webmvc-5.3.1.jar:5.3.1]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.1.jar:5.3.1]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.1.jar:5.3.1]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652) ~[tomcat-embed-core-9.0.39.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.1.jar:5.3.1]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.39.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:327) ~[spring-security-web-5.4.1.jar:5.4.1]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:115) ~[spring-security-web-5.4.1.jar:5.4.1]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:81) ~[spring-security-web-5.4.1.jar:5.4.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.4.1.jar:5.4.1]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119) ~[spring-security-web-5.4.1.jar:5.4.1]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:113) ~[spring-security-web-5.4.1.jar:5.4.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.4.1.jar:5.4.1]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126) ~[spring-security-web-5.4.1.jar:5.4.1]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81) ~[spring-security-web-5.4.1.jar:5.4.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.4.1.jar:5.4.1]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:105) ~[spring-security-web-5.4.1.jar:5.4.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.4.1.jar:5.4.1]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149) ~[spring-security-web-5.4.1.jar:5.4.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.4.1.jar:5.4.1]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-5.4.1.jar:5.4.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.4.1.jar:5.4.1]
+	at com.example.WebShop.Authentication.TokenAuthenticationFilter.doFilterInternal(TokenAuthenticationFilter.java:52) ~[classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.1.jar:5.3.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.4.1.jar:5.4.1]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103) ~[spring-security-web-5.4.1.jar:5.4.1]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89) ~[spring-security-web-5.4.1.jar:5.4.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.4.1.jar:5.4.1]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-5.3.1.jar:5.3.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.1.jar:5.3.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.4.1.jar:5.4.1]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-5.4.1.jar:5.4.1]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-5.4.1.jar:5.4.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.1.jar:5.3.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.4.1.jar:5.4.1]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110) ~[spring-security-web-5.4.1.jar:5.4.1]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80) ~[spring-security-web-5.4.1.jar:5.4.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.4.1.jar:5.4.1]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55) ~[spring-security-web-5.4.1.jar:5.4.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.1.jar:5.3.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.4.1.jar:5.4.1]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211) ~[spring-security-web-5.4.1.jar:5.4.1]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183) ~[spring-security-web-5.4.1.jar:5.4.1]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358) ~[spring-web-5.3.1.jar:5.3.1]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271) ~[spring-web-5.3.1.jar:5.3.1]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.1.jar:5.3.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.1.jar:5.3.1]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2021-12-12 21:58:00.982 ERROR 19316 --- [http-nio-8085-exec-10] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+
+javax.imageio.IIOException: Can't create an ImageOutputStream!
+	at java.desktop/javax.imageio.ImageIO.write(ImageIO.java:1553) ~[na:na]
+	at com.example.WebShop.Controllers.Conferences.ConferenceController.uploadAccommodationImage(ConferenceController.java:102) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:774) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.3.1.jar:5.3.1]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691) ~[spring-aop-5.3.1.jar:5.3.1]
+	at com.example.WebShop.Controllers.Conferences.ConferenceController$$EnhancerBySpringCGLIB$$fc29303b.uploadAccommodationImage(<generated>) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197) ~[spring-web-5.3.1.jar:5.3.1]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141) ~[spring-web-5.3.1.jar:5.3.1]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.3.1.jar:5.3.1]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:893) ~[spring-webmvc-5.3.1.jar:5.3.1]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:807) ~[spring-webmvc-5.3.1.jar:5.3.1]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.1.jar:5.3.1]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1061) ~[spring-webmvc-5.3.1.jar:5.3.1]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:961) ~[spring-webmvc-5.3.1.jar:5.3.1]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.1.jar:5.3.1]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.1.jar:5.3.1]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652) ~[tomcat-embed-core-9.0.39.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.1.jar:5.3.1]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.39.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:327) ~[spring-security-web-5.4.1.jar:5.4.1]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:115) ~[spring-security-web-5.4.1.jar:5.4.1]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:81) ~[spring-security-web-5.4.1.jar:5.4.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.4.1.jar:5.4.1]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119) ~[spring-security-web-5.4.1.jar:5.4.1]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:113) ~[spring-security-web-5.4.1.jar:5.4.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.4.1.jar:5.4.1]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126) ~[spring-security-web-5.4.1.jar:5.4.1]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81) ~[spring-security-web-5.4.1.jar:5.4.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.4.1.jar:5.4.1]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:105) ~[spring-security-web-5.4.1.jar:5.4.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.4.1.jar:5.4.1]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149) ~[spring-security-web-5.4.1.jar:5.4.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.4.1.jar:5.4.1]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-5.4.1.jar:5.4.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.4.1.jar:5.4.1]
+	at com.example.WebShop.Authentication.TokenAuthenticationFilter.doFilterInternal(TokenAuthenticationFilter.java:52) ~[classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.1.jar:5.3.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.4.1.jar:5.4.1]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103) ~[spring-security-web-5.4.1.jar:5.4.1]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89) ~[spring-security-web-5.4.1.jar:5.4.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.4.1.jar:5.4.1]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-5.3.1.jar:5.3.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.1.jar:5.3.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.4.1.jar:5.4.1]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-5.4.1.jar:5.4.1]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-5.4.1.jar:5.4.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.1.jar:5.3.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.4.1.jar:5.4.1]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110) ~[spring-security-web-5.4.1.jar:5.4.1]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80) ~[spring-security-web-5.4.1.jar:5.4.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.4.1.jar:5.4.1]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55) ~[spring-security-web-5.4.1.jar:5.4.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.1.jar:5.3.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.4.1.jar:5.4.1]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211) ~[spring-security-web-5.4.1.jar:5.4.1]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183) ~[spring-security-web-5.4.1.jar:5.4.1]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358) ~[spring-web-5.3.1.jar:5.3.1]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271) ~[spring-web-5.3.1.jar:5.3.1]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.1.jar:5.3.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.1.jar:5.3.1]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2021-12-12 21:58:13.966  INFO 19316 --- [http-nio-8085-exec-7] c.e.W.C.PaymentMethodController          : Overview of the currently chosen payment mathods for webshop
+2021-12-12 21:58:19.248  INFO 19316 --- [http-nio-8085-exec-8] c.e.W.C.PaymentMethodController          : Overview of the currently chosen payment mathods for webshop
+2021-12-12 21:58:22.467  INFO 19316 --- [http-nio-8085-exec-10] c.e.W.C.PaymentMethodController          : Payment methods had been added to the webshop: 
+2021-12-12 21:58:24.398  INFO 19316 --- [http-nio-8085-exec-2] c.e.W.C.PaymentMethodController          : Overview of the currently chosen payment mathods for webshop
+2021-12-12 21:58:29.686  INFO 19316 --- [http-nio-8085-exec-4] c.e.W.C.AuthenticationController         : User user has just logged in.
+2021-12-12 21:59:37.474  INFO 19316 --- [http-nio-8085-exec-1] c.e.W.C.PaymentMethodController          : Overview of the currently chosen payment mathods for webshop
+2021-12-12 21:59:44.628  INFO 19316 --- [http-nio-8085-exec-8] c.e.W.C.PaymentMethodController          : Overview of the currently chosen payment mathods for webshop
+2021-12-12 21:59:48.076  INFO 19316 --- [http-nio-8085-exec-9] c.e.W.C.ProductPaymentDataController     : Getting merchant paypal credentials for conference purchase.
+2021-12-12 22:01:38.743  INFO 19316 --- [http-nio-8085-exec-3] c.e.W.C.ProductPaymentDataController     : Getting merchant paypal credentials for conference purchase.
+2021-12-12 22:01:40.406  INFO 19316 --- [http-nio-8085-exec-2] c.e.W.C.ProductPaymentDataController     : Getting merchant paypal credentials for conference purchase.
+2021-12-12 22:01:42.635  INFO 19316 --- [http-nio-8085-exec-4] c.e.W.C.ProductPaymentDataController     : Getting merchant paypal credentials for conference purchase.
+2021-12-12 22:01:59.366  INFO 19316 --- [http-nio-8085-exec-6] c.e.W.C.ProductPaymentDataController     : Getting merchant bitcoin credentials for conference purchase.
+2021-12-12 22:07:31.325  INFO 19316 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-12 22:07:31.341  INFO 19316 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2021-12-12 22:07:31.341  INFO 19316 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-12-12 22:07:31.348  INFO 19316 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-12-12 22:07:31.354  INFO 19316 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

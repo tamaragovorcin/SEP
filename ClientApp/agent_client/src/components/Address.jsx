@@ -38,10 +38,10 @@ class Address extends Component {
 		addressNotFoundError: "none",
 		openModal: false,
 		coords: [],
-		isPaypalAllowed: true,
-		isBankCardAllowed: true,
-		isQRAllowed: true,
-		isBitcoinAllowed: true,
+		isPaypalAllowed: false,
+		isBankCardAllowed: false,
+		isQRAllowed: false,
+		isBitcoinAllowed: false,
 		clentSecret: "",
 		options: {},
 		cardSelected: false,
@@ -87,8 +87,9 @@ class Address extends Component {
 		return true;
 	};
 	componentDidMount() {
-		Axios.get(BASE_URL_AGENT + "/api/payment/all")
+		Axios.get(BASE_URL_AGENT + "/api/payment/all", {  headers: { Authorization: getAuthHeader() }})
 			.then((res) => {
+				console.log(res.data)
 				res.data.methods.forEach(element => {
 					if(element === "Card"){
 
@@ -138,7 +139,6 @@ class Address extends Component {
 
 
 	handlePaymentClicked = (paymentType) => {
-		console.log("b-------------")
 		let id = localStorage.getItem("userId").substring(1, localStorage.getItem('userId').length - 1);
 		let street;
 		let city;
@@ -177,22 +177,6 @@ class Address extends Component {
 						if(paymentType==="paypal") {this.handlePayPalPayment(totalPrice)}
 						else if(paymentType==="bitcoin") {this.handleBitcoinPayment(totalPrice)}
 
-						const checkoutDTO = {
-							price: this.getPrice(products),
-							currency: "USD",
-							method: "PAYPAL",
-							intent: "SALE",
-							description: "description"
-						}
-
-						Axios.post(BASE_URL_PAYPAL + "/api/paypal/pay", checkoutDTO)
-							.then((res) => {
-								const data = res.data
-								window.location.href = data
-							}
-							)
-							.catch(err => console.log(err));
-					
 					}
 			}
 		});
@@ -378,27 +362,26 @@ class Address extends Component {
 							<img src={paypal} className="App-logo" alt="logo" />
 						</button>
 
-										<button type="button" class="btn  btn-sm" data-toggle="button" aria-pressed="false" autocomplete="off"
-											onClick={this.handlePayPalClicked}>
-											<img src={paypal} className="App-logo" alt="logo" />
-										</button>
 
-									</div>
-								}
-								{this.state.isBankCardAllowed === true &&
+					</div>
+				}
+				{this.state.isBankCardAllowed === true &&
 									<div class="col">
 										<button type="button" class="btn  btn-sm" data-toggle="button" aria-pressed="false" autocomplete="off"
 											onClick={(e) => this.handleBankCardClicked(e)}>
 											<img src={bank_cards} className="App-logo" alt="logo" />
 										</button>
 									</div>
-								}
-								{this.state.isQRAllowed === true &&
-									<div class="col">
+				}				
+				{this.state.isQRAllowed === true &&
+					<div class="col">
 
-                    </div>
-                  }
-                  {this.state.isBitcoinAllowed === true && 
+					<button type="button" class="btn  btn-sm" data-toggle="button" aria-pressed="false" autocomplete="off">
+						<img src={qr} className="App-logo" alt="logo" />
+					</button>
+                 </div>
+                }
+                {this.state.isBitcoinAllowed === true && 
                     <div class="col">
                        
                           <button type="button" class="btn  btn-sm" data-toggle="button" aria-pressed="false" autocomplete="off"
@@ -406,9 +389,6 @@ class Address extends Component {
 							 <img src={bitcoin} className="App-logo" alt="logo" />
 						  </button>
 
-										<button type="button" class="btn  btn-sm" data-toggle="button" aria-pressed="false" autocomplete="off">
-											<img src={qr} className="App-logo" alt="logo" />
-										</button>
 
 									</div>
 								}
