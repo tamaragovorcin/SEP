@@ -1,5 +1,6 @@
 package com.example.WebShop.Service.Implementations;
 
+import com.example.WebShop.DTOs.EditProductDTO;
 import com.example.WebShop.DTOs.NewPictureDTO;
 import com.example.WebShop.DTOs.NewProductDTO;
 import com.example.WebShop.Model.Pictures;
@@ -71,8 +72,12 @@ public class ProductServiceImpl implements IProductService {
     }
 
     @Override
-    public Product update(Product product) {
-        return productRepository.save(product);
+    public Product update(EditProductDTO product) {
+        Product product1 = findById(product.getProductId());
+        product1.setQuantity(product.getQuantity());
+        product1.setPrice(product.getPrice());
+        product1.setName(product.getName());
+        return productRepository.save(product1);
     }
 
 }
