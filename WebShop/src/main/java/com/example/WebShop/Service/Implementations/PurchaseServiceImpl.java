@@ -53,19 +53,20 @@ public class PurchaseServiceImpl implements IPurchaseService {
         User registeredUser = getLoggedUser();
         purchase.setBuyer(registeredUser);
         purchase.setDate(LocalDate.now());
+
         Address address = new Address(newOrderDTO.getAddress().getLatitude(), newOrderDTO.getAddress().getLongitude(), newOrderDTO.getAddress().getCity(), newOrderDTO.getAddress().getStreet(), newOrderDTO.getAddress().getCountry());
         purchase.setAddress(address);
 
         Set<Cart> cart = new HashSet<>();
 
         for( NewOrderDTO c: newOrderDTO.getProducts()){
-
             Cart cart1 = cartService.findById(c.getCartId());
             cart1.setStatus("ORDERED");
             cartRepository.save(cart1);
             cart.add(cart1);
 
         }
+
         purchase.setCart(cart);
         purchase.setStatus("CREATED");
 

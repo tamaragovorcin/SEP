@@ -1,14 +1,14 @@
 package com.example.WebShop.Controllers;
 
 
+import com.example.WebShop.DTOs.Conferences.ConferencesCartDTO;
 import com.example.WebShop.DTOs.NewOrderDTO;
-import com.example.WebShop.DTOs.NewPictureDTO;
 import com.example.WebShop.Model.Cart;
 import com.example.WebShop.Model.Pictures;
-import com.example.WebShop.Model.Product;
 import com.example.WebShop.Model.User;
 import com.example.WebShop.Service.IServices.IProductService;
 import com.example.WebShop.Service.Implementations.CartService;
+import com.example.WebShop.Service.Implementations.Conferences.ConferenceCartServiceImpl;
 import com.google.zxing.BarcodeFormat;
 import com.google.zxing.EncodeHintType;
 import com.google.zxing.MultiFormatWriter;
@@ -23,7 +23,6 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
-import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.web.bind.annotation.*;
 
 import javax.imageio.ImageIO;
@@ -42,6 +41,9 @@ public class CartController {
     private CartService cartService;
     @Autowired
     private IProductService productService;
+    @Autowired
+    private ConferenceCartServiceImpl conferenceCartService;
+
     private static final Logger logger = LoggerFactory.getLogger(CartController.class);
 
     @PostMapping("/add")

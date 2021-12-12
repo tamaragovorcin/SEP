@@ -1,6 +1,7 @@
 package com.example.WebShop.Model.Conferences;
 
 import com.example.WebShop.Model.Address;
+import com.example.WebShop.Model.Cart;
 import com.example.WebShop.Model.Pictures;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
@@ -46,11 +47,33 @@ public class Conference {
     @Column(name = "capacity")
     private Integer capacity;
 
+    @Column(name = "registrationFee")
+    private Double registrationFee;
+
+    @Column(name = "online")
+    private Boolean online;
+
     @JsonIgnore
     @JsonManagedReference(value="conference-pictures")
     @OneToMany(mappedBy = "conference", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     private Set<Pictures> pictures = new HashSet<Pictures>();
 
+    @JsonIgnore
+    @JsonManagedReference(value="conference-transportations")
+    @OneToMany(mappedBy = "conference", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    private Set<Transportation> transportation = new HashSet<Transportation>();
+
+    @JsonIgnore
+    @JsonManagedReference(value="conference-accommodations")
+    @OneToMany(mappedBy = "conference", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    private Set<Accommodation> accommodations = new HashSet<Accommodation>();
+
+    @JsonManagedReference
+    @OneToMany(mappedBy = "conference", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    private Set<ConferencesCart> cart = new HashSet<ConferencesCart>();
+
+    @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    private Address address;
 
 
 

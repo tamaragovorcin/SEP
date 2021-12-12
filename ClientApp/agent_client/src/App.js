@@ -13,12 +13,17 @@ import NewCampaigns from './pages/NewCampaigns'
 import Ordered from './pages/Ordered'
 import OrderedAdmin from './pages/OrderedAdmin'
 import Conferences from './pages/conferences/Conferences'
+import ConferencesCart from './pages/conferences/ConferencesCart'
+import Conference from './pages/conferences/Conference'
+import ConferencesOrders from './pages/conferences/ConferencesOrders';
 import PaymentMethod from './pages/PaymentMethod'
 import Payment from './pages/payment'
-
 import PayPalSuccess from './components/payment/PayPalSuccess';
 import PayPalError from './components/payment/PayPalError';
 import PayPalParams from './components/payment/PayPalParams';
+import PaymentMethodConf from './pages/conferences/PaymentMethodConf';
+import BitcoinSuccess from './components/payment/BitcoinSuccess';
+import BitcoinError from './components/payment/BitcoinError';
 
 function App() {
   return (
@@ -26,7 +31,8 @@ function App() {
 			<Switch>
 				<Link exact to="/login" path="/login" component={Login} />
 				
-				<Link exact to="/" path="/" component={All} />
+				{/* <Link exact to="/" path="/" component={All} /> */}
+				<Link exact to="/" path="/" component={Homepage} />
 				<Link exact to="/registration" path="/registration" component={Registration} />
 				<Link exact to="/unauthorized" path="/unauthorized" component={Unauthorized} />
 				<Link exact to="/allAgents" path="/allAgents" component={AllAgents} />
@@ -37,6 +43,13 @@ function App() {
 				<Link exact to="/orderedAdmin" path="/orderedAdmin" component={OrderedAdmin} />
 				<Link exact to="/newCampaigns" path="/newCampaigns" component={NewCampaigns} />
 				<Link exact to="/conferences" path="/conferences" component={Conferences} />
+				<Link exact to="/conferencesCart" path="/conferencesCart" component={ConferencesCart} />
+				<Link exact to="/conferencesOrders" path="/conferencesOrders" component={ConferencesOrders} />
+				<Link exact to="/paymentMethodConf" path="/paymentMethodConf" component={PaymentMethodConf} />
+
+				<Route path="/conference/:idConf/:idCart" children={<Conference/>} />
+
+
 				<Link exact to="/paymentMethod" path="/paymentMethod" component={PaymentMethod} />
 				<Link exact to="/payment" path="/payment" component={Payment} />
 
@@ -44,6 +57,8 @@ function App() {
 				<Link exact to="/payPalSuccess" path="/payPalSuccess" component={PayPalSuccess} />
 				<Link exact to="/payPalError" path="/payPalError" component={PayPalError} />
 				<Link exact to="/payPalParams" path="/payPalParams" component={PayPalParams} />
+				<Link exact to="/bitcoinSuccess" path="/bitcoinSuccess" component={BitcoinSuccess} />
+				<Link exact to="/bitcoinError" path="/bitcoinError" component={BitcoinError} />
 
 			</Switch>
 	</Router>

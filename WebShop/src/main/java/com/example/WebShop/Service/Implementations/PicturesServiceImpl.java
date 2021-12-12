@@ -1,10 +1,12 @@
 package com.example.WebShop.Service.Implementations;
 
 import com.example.WebShop.DTOs.NewPictureDTO;
+import com.example.WebShop.Model.Conferences.Accommodation;
 import com.example.WebShop.Model.Conferences.Conference;
 import com.example.WebShop.Model.Pictures;
 import com.example.WebShop.Model.Product;
 import com.example.WebShop.Repository.PicturesRepository;
+import com.example.WebShop.Service.IServices.Conferences.IAccommodationService;
 import com.example.WebShop.Service.IServices.Conferences.IConferenceService;
 import com.example.WebShop.Service.IServices.IPicturesService;
 import com.example.WebShop.Service.IServices.IProductService;
@@ -15,14 +17,14 @@ import java.util.List;
 
 @Service
 public class PicturesServiceImpl implements IPicturesService {
-
-
     @Autowired
     private PicturesRepository picturesRepository;
     @Autowired
     private IProductService productService;
     @Autowired
     private IConferenceService conferenceService;
+    @Autowired
+    private IAccommodationService accommodationService;
 
 
     @Override
@@ -42,11 +44,18 @@ public class PicturesServiceImpl implements IPicturesService {
 
     public Pictures saveConferenceImage(NewPictureDTO newPictureDTO) {
         Pictures pictures = new Pictures();
+        Conference item = conferenceService.findById(newPictureDTO.getItemId());
+        pictures.setConference(item);
+        pictures.setName(newPictureDTO.getName());
+        return picturesRepository.save(pictures);
+    }
+    public Pictures saveAccommodationImages(NewPictureDTO newPictureDTO) {
+        Pictures pictures = new Pictures();
         System.out.println("ID KONFERENCIJE: "+  newPictureDTO.getItemId()
         );
-        Conference item = conferenceService.findById(newPictureDTO.getItemId());
+        Accommodation item = accommodationService.findById(newPictureDTO.getItemId());
         System.out.println("ID KONFERENCIJE: "+item.getName());
-        pictures.setConference(item);
+        pictures.setAccommodation(item);
         pictures.setName(newPictureDTO.getName());
         return picturesRepository.save(pictures);
     }

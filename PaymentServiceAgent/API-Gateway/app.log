@@ -1,0 +1,135 @@
+2021-12-11 14:30:10.713  INFO 11480 --- [main] com.APIGateway.ApiGatewayApplication     : Starting ApiGatewayApplication using Java 17.0.1 on DESKTOP-1PFK6EP with PID 11480 (D:\Master\SEP\SEP\PaymentServiceAgent\API-Gateway\target\classes started by tamar in D:\Master\SEP\SEP\PaymentServiceAgent\API-Gateway)
+2021-12-11 14:30:10.722  INFO 11480 --- [main] com.APIGateway.ApiGatewayApplication     : No active profile set, falling back to default profiles: default
+2021-12-11 14:30:11.926  INFO 11480 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=fc05cfcf-5cf0-39a3-bcd6-5a666ec29182
+2021-12-11 14:30:12.049  INFO 11480 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-11 14:30:12.051  INFO 11480 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-11 14:30:12.052  INFO 11480 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-11 14:30:12.391  INFO 11480 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2021-12-11 14:30:12.402  INFO 11480 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-11 14:30:12.403  INFO 11480 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2021-12-11 14:30:13.643  INFO 11480 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
+2021-12-11 14:30:13.643  INFO 11480 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
+2021-12-11 14:30:13.644  INFO 11480 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
+2021-12-11 14:30:13.644  INFO 11480 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
+2021-12-11 14:30:13.644  INFO 11480 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
+2021-12-11 14:30:13.644  INFO 11480 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
+2021-12-11 14:30:13.644  INFO 11480 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
+2021-12-11 14:30:13.644  INFO 11480 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
+2021-12-11 14:30:13.644  INFO 11480 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
+2021-12-11 14:30:13.644  INFO 11480 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBody]
+2021-12-11 14:30:13.645  INFO 11480 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
+2021-12-11 14:30:13.645  INFO 11480 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
+2021-12-11 14:30:13.645  INFO 11480 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2021-12-11 14:30:13.932  INFO 11480 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2021-12-11 14:30:14.094  WARN 11480 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2021-12-11 14:30:14.120  INFO 11480 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2021-12-11 14:30:14.223  INFO 11480 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2021-12-11 14:30:14.232  INFO 11480 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-11 14:30:14.267  INFO 11480 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2021-12-11 14:30:14.267  INFO 11480 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2021-12-11 14:30:14.267  INFO 11480 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2021-12-11 14:30:14.267  INFO 11480 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2021-12-11 14:30:14.267  INFO 11480 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2021-12-11 14:30:14.267  INFO 11480 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2021-12-11 14:30:14.267  INFO 11480 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2021-12-11 14:30:15.046  INFO 11480 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2021-12-11 14:30:15.048  INFO 11480 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2021-12-11 14:30:15.052  INFO 11480 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2021-12-11 14:30:15.059  INFO 11480 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1639229415058 with initial instances count: 0
+2021-12-11 14:30:15.060  INFO 11480 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application API-GATEWAY with eureka with status UP
+2021-12-11 14:30:15.062  INFO 11480 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1639229415062, current=UP, previous=STARTING]
+2021-12-11 14:30:15.064  INFO 11480 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_API-GATEWAY/DESKTOP-1PFK6EP:api-gateway:9090: registering service...
+2021-12-11 14:30:15.187  INFO 11480 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2021-12-11 14:30:15.188  INFO 11480 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9090
+2021-12-11 14:30:15.244  INFO 11480 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_API-GATEWAY/DESKTOP-1PFK6EP:api-gateway:9090 - registration status: 204
+2021-12-11 14:30:15.334  INFO 11480 --- [main] com.APIGateway.ApiGatewayApplication     : Started ApiGatewayApplication in 5.517 seconds (JVM running for 6.133)
+2021-12-11 14:30:45.051  INFO 11480 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2021-12-11 14:30:45.051  INFO 11480 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2021-12-11 14:30:45.051  INFO 11480 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2021-12-11 14:30:45.052  INFO 11480 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2021-12-11 14:30:45.052  INFO 11480 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2021-12-11 14:30:45.052  INFO 11480 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2021-12-11 14:30:45.052  INFO 11480 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2021-12-11 14:30:45.067  INFO 11480 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2021-12-11 14:34:37.643  INFO 11480 --- [http-nio-9090-exec-2] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2021-12-11 14:34:37.644  INFO 11480 --- [http-nio-9090-exec-2] com.APIGateway.CustomFiler               : REDIRECTING TO  -> paypal service
+2021-12-11 14:34:40.654  INFO 11480 --- [reactor-http-nio-2] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2021-12-11 14:35:00.500  INFO 11480 --- [http-nio-9090-exec-6] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2021-12-11 14:35:00.500  INFO 11480 --- [http-nio-9090-exec-6] com.APIGateway.CustomFiler               : REDIRECTING TO  -> paypal service
+2021-12-11 14:35:02.326  INFO 11480 --- [reactor-http-nio-2] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2021-12-11 14:35:14.272  INFO 11480 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-11 14:38:07.001  INFO 11480 --- [http-nio-9090-exec-10] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2021-12-11 14:38:07.001  INFO 11480 --- [http-nio-9090-exec-10] com.APIGateway.CustomFiler               : REDIRECTING TO  -> paypal service
+2021-12-11 14:38:09.435  INFO 11480 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2021-12-11 14:38:29.719  INFO 11480 --- [http-nio-9090-exec-4] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2021-12-11 14:38:29.720  INFO 11480 --- [http-nio-9090-exec-4] com.APIGateway.CustomFiler               : REDIRECTING TO  -> paypal service
+2021-12-11 14:38:32.572  INFO 11480 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2021-12-11 14:40:14.282  INFO 11480 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-11 14:42:43.121  INFO 11480 --- [http-nio-9090-exec-8] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2021-12-11 14:42:43.122  INFO 11480 --- [http-nio-9090-exec-8] com.APIGateway.CustomFiler               : REDIRECTING TO  -> paypal service
+2021-12-11 14:42:45.390  INFO 11480 --- [reactor-http-nio-4] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2021-12-11 14:42:58.598  INFO 11480 --- [http-nio-9090-exec-1] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2021-12-11 14:42:58.598  INFO 11480 --- [http-nio-9090-exec-1] com.APIGateway.CustomFiler               : REDIRECTING TO  -> paypal service
+2021-12-11 14:43:00.387  INFO 11480 --- [reactor-http-nio-4] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2021-12-11 14:45:14.294  INFO 11480 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-11 14:50:14.300  INFO 11480 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-11 14:55:14.304  INFO 11480 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-11 15:00:14.308  INFO 11480 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-11 15:04:28.945  INFO 11480 --- [http-nio-9090-exec-5] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2021-12-11 15:04:28.947  INFO 11480 --- [http-nio-9090-exec-5] com.APIGateway.CustomFiler               : REDIRECTING TO  -> paypal service
+2021-12-11 15:04:31.474  INFO 11480 --- [reactor-http-nio-5] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2021-12-11 15:05:14.310  INFO 11480 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-11 15:06:40.857  INFO 11480 --- [http-nio-9090-exec-9] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2021-12-11 15:06:40.857  INFO 11480 --- [http-nio-9090-exec-9] com.APIGateway.CustomFiler               : REDIRECTING TO  -> paypal service
+2021-12-11 15:06:42.018  INFO 11480 --- [reactor-http-nio-6] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2021-12-11 15:07:33.696  INFO 11480 --- [http-nio-9090-exec-3] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2021-12-11 15:07:33.697  INFO 11480 --- [http-nio-9090-exec-3] com.APIGateway.CustomFiler               : REDIRECTING TO  -> paypal service
+2021-12-11 15:07:35.004  INFO 11480 --- [reactor-http-nio-6] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2021-12-11 15:08:14.866  INFO 11480 --- [http-nio-9090-exec-7] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2021-12-11 15:08:14.867  INFO 11480 --- [http-nio-9090-exec-7] com.APIGateway.CustomFiler               : REDIRECTING TO  -> paypal service
+2021-12-11 15:08:15.996  INFO 11480 --- [reactor-http-nio-6] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2021-12-11 15:08:32.805  INFO 11480 --- [http-nio-9090-exec-1] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2021-12-11 15:08:32.805  INFO 11480 --- [http-nio-9090-exec-1] com.APIGateway.CustomFiler               : REDIRECTING TO  -> paypal service
+2021-12-11 15:08:35.187  INFO 11480 --- [reactor-http-nio-6] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2021-12-11 15:09:33.875  INFO 11480 --- [http-nio-9090-exec-5] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2021-12-11 15:09:33.876  INFO 11480 --- [http-nio-9090-exec-5] com.APIGateway.CustomFiler               : REDIRECTING TO  -> bitcoin service
+2021-12-11 15:09:36.645  INFO 11480 --- [reactor-http-nio-7] com.APIGateway.CustomFiler               : Post Filter = 201 CREATED
+2021-12-11 15:09:50.432  INFO 11480 --- [http-nio-9090-exec-9] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = Bearer eyJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJzcHJpbmctc2VjdXJpdHktZXhhbXBsZSIsInN1YiI6InVzZXIiLCJhdWQiOiJ3ZWIiLCJpYXQiOjE2MzkyMzE2ODAsImV4cCI6MTYzOTI0MDY4MH0.RQh6eEDC-jFVJ3SvnGNz3B_5_TRBkHxbUCGeKZHbseJg3-t9zJwynxjPbXZs9b6fTn4CWO7Da9q1LsSXx2XrfQ
+2021-12-11 15:09:50.433  INFO 11480 --- [http-nio-9090-exec-9] com.APIGateway.CustomFiler               : REDIRECTING TO  -> bitcoin service
+2021-12-11 15:09:50.756  INFO 11480 --- [reactor-http-nio-7] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2021-12-11 15:10:14.316  INFO 11480 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-11 15:13:02.367  INFO 11480 --- [http-nio-9090-exec-3] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2021-12-11 15:13:02.368  INFO 11480 --- [http-nio-9090-exec-3] com.APIGateway.CustomFiler               : REDIRECTING TO  -> bitcoin service
+2021-12-11 15:13:02.885  INFO 11480 --- [reactor-http-nio-8] com.APIGateway.CustomFiler               : Post Filter = 201 CREATED
+2021-12-11 15:15:14.326  INFO 11480 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-11 15:16:06.738  INFO 11480 --- [http-nio-9090-exec-7] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = Bearer eyJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJzcHJpbmctc2VjdXJpdHktZXhhbXBsZSIsInN1YiI6InVzZXIiLCJhdWQiOiJ3ZWIiLCJpYXQiOjE2MzkyMzE5NjYsImV4cCI6MTYzOTI0MDk2Nn0.Z8b6Zu5k6A6SavyRbRtsvRECwaNOFGTF4n0jEW_PAVgLz-U47ZsEhnqOq3ePq1yy8wAHk_c3lINKg8Xs0RuFJQ
+2021-12-11 15:16:06.811  INFO 11480 --- [http-nio-9090-exec-7] com.APIGateway.CustomFiler               : REDIRECTING TO  -> bitcoin service
+2021-12-11 15:16:07.161  INFO 11480 --- [reactor-http-nio-1] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2021-12-11 15:16:53.605  INFO 11480 --- [http-nio-9090-exec-1] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2021-12-11 15:16:53.605  INFO 11480 --- [http-nio-9090-exec-1] com.APIGateway.CustomFiler               : REDIRECTING TO  -> bitcoin service
+2021-12-11 15:17:00.353  INFO 11480 --- [reactor-http-nio-1] com.APIGateway.CustomFiler               : Post Filter = 201 CREATED
+2021-12-11 15:17:30.367  INFO 11480 --- [http-nio-9090-exec-5] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = Bearer eyJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJzcHJpbmctc2VjdXJpdHktZXhhbXBsZSIsInN1YiI6InVzZXIiLCJhdWQiOiJ3ZWIiLCJpYXQiOjE2MzkyMzE5NjYsImV4cCI6MTYzOTI0MDk2Nn0.Z8b6Zu5k6A6SavyRbRtsvRECwaNOFGTF4n0jEW_PAVgLz-U47ZsEhnqOq3ePq1yy8wAHk_c3lINKg8Xs0RuFJQ
+2021-12-11 15:17:30.367  INFO 11480 --- [http-nio-9090-exec-5] com.APIGateway.CustomFiler               : REDIRECTING TO  -> bitcoin service
+2021-12-11 15:17:30.412  INFO 11480 --- [reactor-http-nio-1] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2021-12-11 15:20:14.336  INFO 11480 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-11 15:23:10.749  INFO 11480 --- [http-nio-9090-exec-9] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2021-12-11 15:23:10.749  INFO 11480 --- [http-nio-9090-exec-9] com.APIGateway.CustomFiler               : REDIRECTING TO  -> bitcoin service
+2021-12-11 15:23:14.718  INFO 11480 --- [reactor-http-nio-2] com.APIGateway.CustomFiler               : Post Filter = 201 CREATED
+2021-12-11 15:23:39.492  INFO 11480 --- [http-nio-9090-exec-3] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = Bearer eyJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJzcHJpbmctc2VjdXJpdHktZXhhbXBsZSIsInN1YiI6InVzZXIiLCJhdWQiOiJ3ZWIiLCJpYXQiOjE2MzkyMzI1NTksImV4cCI6MTYzOTI0MTU1OX0.QYAPFXS8JWMfBnEatHG6Ar82Ndw57Y0dctstn3zYNAczgxnpmonECUJsS07NKn_7BdgZ44kJwt8uPLuQsmm40g
+2021-12-11 15:23:39.493  INFO 11480 --- [http-nio-9090-exec-3] com.APIGateway.CustomFiler               : REDIRECTING TO  -> bitcoin service
+2021-12-11 15:23:39.523  INFO 11480 --- [reactor-http-nio-2] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2021-12-11 15:24:18.648  INFO 11480 --- [http-nio-9090-exec-6] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2021-12-11 15:24:18.648  INFO 11480 --- [http-nio-9090-exec-6] com.APIGateway.CustomFiler               : REDIRECTING TO  -> paypal service
+2021-12-11 15:24:20.701  INFO 11480 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2021-12-11 15:24:40.110  INFO 11480 --- [http-nio-9090-exec-9] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2021-12-11 15:24:40.111  INFO 11480 --- [http-nio-9090-exec-9] com.APIGateway.CustomFiler               : REDIRECTING TO  -> paypal service
+2021-12-11 15:24:41.888  INFO 11480 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2021-12-11 15:25:14.347  INFO 11480 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-12-11 15:25:20.645  INFO 11480 --- [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application API-GATEWAY with eureka with status DOWN
+2021-12-11 15:25:20.646  INFO 11480 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1639232720646, current=DOWN, previous=UP]
+2021-12-11 15:25:20.647  INFO 11480 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_API-GATEWAY/DESKTOP-1PFK6EP:api-gateway:9090: registering service...
+2021-12-11 15:25:20.671  INFO 11480 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_API-GATEWAY/DESKTOP-1PFK6EP:api-gateway:9090 - registration status: 204
+2021-12-11 15:25:22.939  INFO 11480 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2021-12-11 15:25:25.953  INFO 11480 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2021-12-11 15:25:25.968  INFO 11480 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_API-GATEWAY/DESKTOP-1PFK6EP:api-gateway:9090 - deregister  status: 200
+2021-12-11 15:25:26.016  INFO 11480 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient

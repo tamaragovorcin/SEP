@@ -1,5 +1,6 @@
 package com.example.WebShop.DTOs.Conferences;
 
+import com.example.WebShop.DTOs.AddressDTO;
 import com.example.WebShop.Model.Pictures;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
@@ -22,11 +23,13 @@ import java.util.Set;
 @NoArgsConstructor
 @AllArgsConstructor
 public class NewConferenceDTO {
+    private  Integer id;
+
     private String name;
 
     private String slogan;
 
-    private String location;
+    private AddressDTO address;
 
     private LocalDate startDate;
 
@@ -35,6 +38,10 @@ public class NewConferenceDTO {
     private String content;
 
     private Integer capacity;
+
+    private Double registrationFee;
+
+    private Boolean online;
 
     private List<String> pictures;
 }

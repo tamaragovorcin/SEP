@@ -4,6 +4,7 @@ import { RiAddCircleLine } from 'react-icons/ri';
 import { FiTruck } from 'react-icons/fi';
 import { VscHome } from 'react-icons/vsc';
 import { AiOutlineOrderedList, AiOutlineShoppingCart } from 'react-icons/ai';
+import {MdPayment} from 'react-icons/md'
 
 
 import NewConference from "./NewConference";
@@ -59,10 +60,13 @@ class Header extends Component {
 							<button  onClick={this.handleAddConference} className="btn btn-outline-secondary btn-sm" style={{  border: "none", marginBottom: "1rem" }}><RiAddCircleLine /></button>
 							</li>
 							<li>
-							<Link to="/orders"><AiOutlineShoppingCart /></Link>
+							<Link to="/conferencesCart"><AiOutlineShoppingCart /></Link>
 							</li>
 							<li>
-							<Link to="/ordered"><FiTruck /></Link>
+							<Link to="/conferencesOrders"><FiTruck /></Link>
+							</li>
+							<li  hidden={!this.hasRole("ROLE_ADMIN")}>
+							<Link to="/paymentMethodConf"><MdPayment /></Link>
 							</li>
 						
 							
