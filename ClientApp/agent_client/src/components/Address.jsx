@@ -90,24 +90,24 @@ class Address extends Component {
 		Axios.get(BASE_URL_AGENT + "/api/payment/all")
 			.then((res) => {
 				res.data.methods.forEach(element => {
-					if(element === "Card"){
+					if (element === "Card") {
 
 						this.setState({ isBankCardAllowed: true });
 					}
-					if(element === "Paypal"){
+					if (element === "Paypal") {
 
 						this.setState({ isPaypalAllowed: true });
 					}
-					if(element === "Bitcoin"){
+					if (element === "Bitcoin") {
 
 						this.setState({ isBitcoinAllowed: true });
 					}
-					if(element === "Qr"){
+					if (element === "Qr") {
 
 						this.setState({ isQRAllowed: true });
 					}
 				});
-					
+
 				console.log(res.data);
 			})
 			.catch((err) => {
@@ -124,7 +124,7 @@ class Address extends Component {
 	handleBankCardClicked = (event) => {
 
 		this.setState({ cardSelected: true });
-		
+
 
 
 	};
@@ -174,8 +174,8 @@ class Address extends Component {
 						localStorage.setItem("orderAddress", JSON.stringify(foundAddress));
 						localStorage.setItem("orderProducts", JSON.stringify(products));
 						let totalPrice = this.getPrice(products)
-						if(paymentType==="paypal") {this.handlePayPalPayment(totalPrice)}
-						else if(paymentType==="bitcoin") {this.handleBitcoinPayment(totalPrice)}
+						if (paymentType === "paypal") { this.handlePayPalPayment(totalPrice) }
+						else if (paymentType === "bitcoin") { this.handleBitcoinPayment(totalPrice) }
 
 						const checkoutDTO = {
 							price: this.getPrice(products),
@@ -192,13 +192,13 @@ class Address extends Component {
 							}
 							)
 							.catch(err => console.log(err));
-					
+
 					}
-			}
-		});
+				}
+			});
 	}
 	handleBankCard = () => {
-        let id = localStorage.getItem("userId").substring(1, localStorage.getItem('userId').length - 1);
+		let id = localStorage.getItem("userId").substring(1, localStorage.getItem('userId').length - 1);
 		let street;
 		let city;
 		let country;
@@ -225,7 +225,7 @@ class Address extends Component {
 				let userDTO = {
 					address: { street, country, city, latitude, longitude },
 					products: this.props.products,
-                    
+
 				};
 				console.log(userDTO);
 
@@ -234,7 +234,7 @@ class Address extends Component {
 						this.setState({ addressNotFoundError: "initial" });
 					} else {
 						console.log(userDTO);
-						Axios.post(BASE_URL_AGENT + "/api/purchase/add", userDTO, {  headers: { Authorization: getAuthHeader() } })
+						Axios.post(BASE_URL_AGENT + "/api/purchase/add", userDTO, { headers: { Authorization: getAuthHeader() } })
 							.then((res) => {
 								if (res.status === 409) {
 									this.setState({
@@ -245,10 +245,10 @@ class Address extends Component {
 								} else if (res.status === 500) {
 									this.setState({ errorHeader: "Internal server error!", errorMessage: "Server error.", hiddenErrorAlert: false });
 								} else {
-									
-									this.setState({openModal : true})
 
-		
+									this.setState({ openModal: true })
+
+
 								}
 							})
 							.catch((err) => {
@@ -259,63 +259,63 @@ class Address extends Component {
 			});
 	};
 
-	
+
 	handlePayPalPayment = (totalPrice) => {
 		localStorage.setItem("webshopType", JSON.stringify("product"));
 
-		Axios.get(BASE_URL_AGENT +"/api/product/payment/paypal")
-			.then( (res) => {
+		Axios.get(BASE_URL_AGENT + "/api/product/payment/paypal")
+			.then((res) => {
 				const data = res.data
 				const checkoutDTO = {
-					price : totalPrice,
-					currency : "USD",
-					method : "PAYPAL",
-					intent : "SALE",
-					description : "description",
-					clientId :data.clientId,
+					price: totalPrice,
+					currency: "USD",
+					method: "PAYPAL",
+					intent: "SALE",
+					description: "description",
+					clientId: data.clientId,
 					clientSecret: data.clientSecret
 				}
 				localStorage.setItem("totalAmount", JSON.stringify(totalPrice));
 				localStorage.setItem("currency", JSON.stringify("USD"));
-				Axios.post(BASE_URL_PAYPAL +"/api/paypal/pay",checkoutDTO)
-					.then( (res) => {
+				Axios.post(BASE_URL_PAYPAL + "/api/paypal/pay", checkoutDTO)
+					.then((res) => {
 						const data = res.data
 						window.location.href = data
-						}
+					}
 					)
 					.catch(err => console.log(err));
-				}
+			}
 			)
 			.catch(err => console.log(err));
-		
+
 	}
 	handleBitcoinPayment = (totalPrice) => {
 		localStorage.setItem("webshopType", JSON.stringify("product"));
 
-		Axios.get(BASE_URL_AGENT +"/api/product/payment/bitcoin")
-			.then( (res) => {
+		Axios.get(BASE_URL_AGENT + "/api/product/payment/bitcoin")
+			.then((res) => {
 				const token = res.data
 				const checkoutDTO = {
-					amount : totalPrice,
-					merchant_id : "Id",
+					amount: totalPrice,
+					merchant_id: "Id",
 					merchant_token: token
 				}
-		
-				Axios.post(BASE_URL_BITCOIN +"/api/bitcoin/pay",checkoutDTO)
-					.then( (res) => {
+
+				Axios.post(BASE_URL_BITCOIN + "/api/bitcoin/pay", checkoutDTO)
+					.then((res) => {
 						const data = res.data
 						var paymentUrl = data.split(', ')[0];
 						window.location.href = paymentUrl;
-						        	
+
 						var splitovan = data.split(', ');
 						var podaciZaTransakciju = splitovan[1] + ', ' + splitovan[2] + ', ' + splitovan[3] + ', ' + splitovan[4] + ', ' + splitovan[5] + ', ' + splitovan[6];
-						}
+					}
 					)
 					.catch(err => console.log(err));
-				}
+			}
 			)
 			.catch(err => console.log(err));
-		
+
 	}
 
 
@@ -369,19 +369,16 @@ class Address extends Component {
 						</div>
 						<div class="container">
 
-                <div class="row">
-                  {this.state.isPaypalAllowed === true && 
-                    <div class="col">
-                       
-                        <button type="button" class="btn  btn-sm" data-toggle="button" aria-pressed="false" autocomplete="off" 
-							onClick={()=> this.handlePaymentClicked("paypal")}>
-							<img src={paypal} className="App-logo" alt="logo" />
-						</button>
+							<div class="row">
+								{this.state.isPaypalAllowed === true &&
+									<div class="col">
 
 										<button type="button" class="btn  btn-sm" data-toggle="button" aria-pressed="false" autocomplete="off"
-											onClick={this.handlePayPalClicked}>
+											onClick={() => this.handlePaymentClicked("paypal")}>
 											<img src={paypal} className="App-logo" alt="logo" />
 										</button>
+
+									
 
 									</div>
 								}
@@ -396,30 +393,30 @@ class Address extends Component {
 								{this.state.isQRAllowed === true &&
 									<div class="col">
 
-                    </div>
-                  }
-                  {this.state.isBitcoinAllowed === true && 
-                    <div class="col">
-                       
-                          <button type="button" class="btn  btn-sm" data-toggle="button" aria-pressed="false" autocomplete="off"
-						  	onClick={()=> this.handlePaymentClicked("bitcoin")}> 
-							 <img src={bitcoin} className="App-logo" alt="logo" />
-						  </button>
-
 										<button type="button" class="btn  btn-sm" data-toggle="button" aria-pressed="false" autocomplete="off">
 											<img src={qr} className="App-logo" alt="logo" />
 										</button>
+									</div>
+								}
+								{this.state.isBitcoinAllowed === true &&
+									<div class="col">
+
+										<button type="button" class="btn  btn-sm" data-toggle="button" aria-pressed="false" autocomplete="off"
+											onClick={() => this.handlePaymentClicked("bitcoin")}>
+											<img src={bitcoin} className="App-logo" alt="logo" />
+										</button>
+
 
 									</div>
 								}
-								
+
 							</div>
 							<div className="App">
 								{this.props.clientSecret && this.state.cardSelected && (
 									<Elements options={this.props.options} stripe={stripePromise}>
 										<CheckoutForm
 											handleBankCard={this.handleBankCard}
-											 />
+										/>
 									</Elements>
 								)}
 							</div>

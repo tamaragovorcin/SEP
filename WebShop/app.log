@@ -1989,3 +1989,258 @@ java.util.NoSuchElementException: No value present
 2021-12-11 15:25:09.374  INFO 16180 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2021-12-11 15:25:09.381  INFO 16180 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
 >>>>>>> 44c842dc39f4e2d4d7bde90a7c614f446217edd4
+2021-12-12 13:01:39.767  INFO 8460 --- [restartedMain] com.example.WebShop.WebShopApplication   : Starting WebShopApplication using Java 17.0.1 on DESKTOP-FNSTC71 with PID 8460 (C:\Users\lunaz\OneDrive\Desktop\SEP\SEP\WebShop\target\classes started by lunaz in C:\Users\lunaz\OneDrive\Desktop\SEP\SEP\WebShop)
+2021-12-12 13:01:39.772 DEBUG 8460 --- [restartedMain] com.example.WebShop.WebShopApplication   : Running with Spring Boot v2.4.0, Spring v5.3.1
+2021-12-12 13:01:39.773  INFO 8460 --- [restartedMain] com.example.WebShop.WebShopApplication   : No active profile set, falling back to default profiles: default
+2021-12-12 13:01:40.139  INFO 8460 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\lunaz\.m2\repository\com\sun\xml\ws\jaxws-rt\2.1.4\jaxws-rt-2.1.4.jar referenced one or more files that do not exist: file:/C:/Users/lunaz/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/jaxws-api.jar,file:/C:/Users/lunaz/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/jsr181-api.jar,file:/C:/Users/lunaz/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/jsr250-api.jar,file:/C:/Users/lunaz/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/saaj-api.jar,file:/C:/Users/lunaz/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/saaj-impl.jar,file:/C:/Users/lunaz/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/jsr173_api.jar,file:/C:/Users/lunaz/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/sjsxp.jar,file:/C:/Users/lunaz/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/resolver.jar,file:/C:/Users/lunaz/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/jaxb-api.jar,file:/C:/Users/lunaz/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/jaxb-impl.jar,file:/C:/Users/lunaz/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/activation.jar,file:/C:/Users/lunaz/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/stax-ex.jar,file:/C:/Users/lunaz/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/streambuffer.jar,file:/C:/Users/lunaz/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/stax-utils.jar
+2021-12-12 13:01:40.139  INFO 8460 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\lunaz\.m2\repository\com\sun\xml\bind\jaxb-impl\2.1.7\jaxb-impl-2.1.7.jar referenced one or more files that do not exist: file:/C:/Users/lunaz/.m2/repository/com/sun/xml/bind/jaxb-impl/2.1.7/jaxb-api.jar,file:/C:/Users/lunaz/.m2/repository/com/sun/xml/bind/jaxb-impl/2.1.7/activation.jar,file:/C:/Users/lunaz/.m2/repository/com/sun/xml/bind/jaxb-impl/2.1.7/jsr173_1.0_api.jar,file:/C:/Users/lunaz/.m2/repository/com/sun/xml/bind/jaxb-impl/2.1.7/jaxb1-impl.jar
+2021-12-12 13:01:40.140  INFO 8460 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\lunaz\.m2\repository\org\jopendocument\jOpenDocument\1.2\jOpenDocument-1.2.jar referenced one or more files that do not exist: file:/C:/Users/lunaz/.m2/repository/org/jopendocument/jOpenDocument/1.2/xbean.jar
+2021-12-12 13:01:40.140  INFO 8460 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-12-12 13:01:40.140  INFO 8460 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-12-12 13:01:45.698  INFO 8460 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2021-12-12 13:01:46.300  INFO 8460 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 585 ms. Found 15 JPA repository interfaces.
+2021-12-12 13:01:47.511  INFO 8460 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@37ad22e' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-12 13:01:47.524  INFO 8460 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-12 13:01:48.894  INFO 8460 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+2021-12-12 13:01:48.980  INFO 8460 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-12 13:01:48.985  INFO 8460 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-12-12 13:01:49.254  INFO 8460 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-12 13:01:49.254  INFO 8460 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 9113 ms
+2021-12-12 13:01:49.561  INFO 8460 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-12-12 13:01:49.594  INFO 8460 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2021-12-12 13:01:49.731  INFO 8460 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-12-12 13:01:50.027  INFO 8460 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.23.Final
+2021-12-12 13:01:50.288  WARN 8460 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-12 13:01:50.618  INFO 8460 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-12-12 13:01:51.523  INFO 8460 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-12-12 13:01:53.350  INFO 8460 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-12-12 13:01:53.425  INFO 8460 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-12-12 13:01:53.431  INFO 8460 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-12-12 13:01:54.015  INFO 8460 --- [task-1] o.h.e.boot.internal.EnversServiceImpl    : Envers integration enabled? : true
+2021-12-12 13:01:54.979  INFO 8460 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/', GET] with []
+2021-12-12 13:01:54.979  INFO 8460 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/webjars/**', GET] with []
+2021-12-12 13:01:54.980  INFO 8460 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/*.html', GET] with []
+2021-12-12 13:01:54.980  INFO 8460 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/favicon.ico', GET] with []
+2021-12-12 13:01:54.981  INFO 8460 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/**/*.html', GET] with []
+2021-12-12 13:01:54.981  INFO 8460 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/**/*.css', GET] with []
+2021-12-12 13:01:54.982  INFO 8460 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/**/*.js', GET] with []
+2021-12-12 13:01:54.982  INFO 8460 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/api/auth/login', POST] with []
+2021-12-12 13:01:54.983  INFO 8460 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/api/auth/signup', POST] with []
+2021-12-12 13:01:54.984  INFO 8460 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/api/items/add', POST] with []
+2021-12-12 13:01:55.113  INFO 8460 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@36d08a37, org.springframework.security.web.context.SecurityContextPersistenceFilter@494433cc, org.springframework.security.web.header.HeaderWriterFilter@f460358, org.springframework.web.filter.CorsFilter@4dcf62a7, org.springframework.security.web.authentication.logout.LogoutFilter@4f28e08d, com.example.WebShop.Authentication.TokenAuthenticationFilter@a3bb466, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@42e15e52, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@43e1e9af, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7b141ab9, org.springframework.security.web.session.SessionManagementFilter@70e92149, org.springframework.security.web.access.ExceptionTranslationFilter@1fb6561f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1a315560]
+2021-12-12 13:01:55.681  WARN 8460 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2021-12-12 13:01:56.379  INFO 8460 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path ''
+2021-12-12 13:01:57.877  INFO 8460 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2021-12-12 13:02:34.856  INFO 8460 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-12-12 13:02:34.872  INFO 8460 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-12 13:02:36.920  INFO 8460 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2021-12-12 13:02:36.948  INFO 8460 --- [restartedMain] com.example.WebShop.WebShopApplication   : Started WebShopApplication in 58.779 seconds (JVM running for 61.551)
+2021-12-12 13:05:21.481  INFO 8460 --- [http-nio-8085-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-12 13:05:21.482  INFO 8460 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-12-12 13:05:21.486  INFO 8460 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2021-12-12 13:05:22.160  INFO 8460 --- [http-nio-8085-exec-1] c.e.W.C.AuthenticationController         : User admin has just logged in.
+2021-12-12 13:05:48.572  INFO 8460 --- [http-nio-8085-exec-5] c.e.W.Controllers.ProductController      : Adding new product: Chair E345
+2021-12-12 13:05:49.062  INFO 8460 --- [http-nio-8085-exec-7] c.e.W.Controllers.ProductController      : Uploading picture
+2021-12-12 13:05:49.166  INFO 8460 --- [http-nio-8085-exec-6] c.e.W.Controllers.ProductController      : Uploading picture
+2021-12-12 13:06:22.065  INFO 8460 --- [http-nio-8085-exec-8] c.e.W.Controllers.ProductController      : Adding new product: Cupboard Yrt45
+2021-12-12 13:06:22.230  INFO 8460 --- [http-nio-8085-exec-10] c.e.W.Controllers.ProductController      : Uploading picture
+2021-12-12 13:06:22.383  INFO 8460 --- [http-nio-8085-exec-2] c.e.W.Controllers.ProductController      : Uploading picture
+2021-12-12 13:06:22.447  INFO 8460 --- [http-nio-8085-exec-9] c.e.W.Controllers.ProductController      : Uploading picture
+2021-12-12 13:06:22.765  INFO 8460 --- [http-nio-8085-exec-1] c.e.W.Controllers.ProductController      : Uploading picture
+2021-12-12 13:06:43.383  INFO 8460 --- [http-nio-8085-exec-3] c.e.W.Controllers.ProductController      : Adding new product: Laptop 
+2021-12-12 13:06:43.632  INFO 8460 --- [http-nio-8085-exec-5] c.e.W.Controllers.ProductController      : Uploading picture
+2021-12-12 13:06:43.740  INFO 8460 --- [http-nio-8085-exec-6] c.e.W.Controllers.ProductController      : Uploading picture
+2021-12-12 13:06:43.783  INFO 8460 --- [http-nio-8085-exec-4] c.e.W.Controllers.ProductController      : Uploading picture
+2021-12-12 13:06:43.842  INFO 8460 --- [http-nio-8085-exec-8] c.e.W.Controllers.ProductController      : Uploading picture
+2021-12-12 13:06:44.127  INFO 8460 --- [http-nio-8085-exec-7] c.e.W.Controllers.ProductController      : Uploading picture
+2021-12-12 13:07:16.981  INFO 8460 --- [http-nio-8085-exec-10] c.e.W.Controllers.ProductController      : Adding new product: Table
+2021-12-12 13:07:17.173  INFO 8460 --- [http-nio-8085-exec-9] c.e.W.Controllers.ProductController      : Uploading picture
+2021-12-12 13:07:17.384  INFO 8460 --- [http-nio-8085-exec-6] c.e.W.Controllers.ProductController      : Uploading picture
+2021-12-12 13:07:17.407  INFO 8460 --- [http-nio-8085-exec-2] c.e.W.Controllers.ProductController      : Uploading picture
+2021-12-12 13:07:17.428  INFO 8460 --- [http-nio-8085-exec-3] c.e.W.Controllers.ProductController      : Uploading picture
+2021-12-12 13:07:17.443  INFO 8460 --- [http-nio-8085-exec-5] c.e.W.Controllers.ProductController      : Uploading picture
+2021-12-12 13:07:17.768  INFO 8460 --- [http-nio-8085-exec-1] c.e.W.Controllers.ProductController      : Uploading picture
+2021-12-12 13:07:23.405  INFO 8460 --- [http-nio-8085-exec-4] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 13:07:24.145  INFO 8460 --- [http-nio-8085-exec-4] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 13:07:24.966  INFO 8460 --- [http-nio-8085-exec-4] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 13:07:25.745  INFO 8460 --- [http-nio-8085-exec-4] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 13:07:28.777  INFO 8460 --- [http-nio-8085-exec-8] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 13:07:29.294  INFO 8460 --- [http-nio-8085-exec-8] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 13:07:29.976  INFO 8460 --- [http-nio-8085-exec-8] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 13:07:30.665  INFO 8460 --- [http-nio-8085-exec-8] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 13:07:45.567  INFO 8460 --- [http-nio-8085-exec-10] c.e.W.Controllers.ProductController      : Deleting product with id: 9
+2021-12-12 13:07:48.723  INFO 8460 --- [http-nio-8085-exec-9] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 13:07:49.531  INFO 8460 --- [http-nio-8085-exec-9] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 13:07:50.580  INFO 8460 --- [http-nio-8085-exec-9] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 13:07:52.330  INFO 8460 --- [http-nio-8085-exec-2] c.e.W.Controllers.ProductController      : Deleting product with id: 15
+2021-12-12 13:07:54.289  INFO 8460 --- [http-nio-8085-exec-3] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 13:07:55.420  INFO 8460 --- [http-nio-8085-exec-3] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 13:08:16.596  INFO 8460 --- [http-nio-8085-exec-5] c.e.W.Controllers.ProductController      : Adding new product: Laptop 
+2021-12-12 13:08:16.864  INFO 8460 --- [http-nio-8085-exec-1] c.e.W.Controllers.ProductController      : Uploading picture
+2021-12-12 13:08:19.879  INFO 8460 --- [http-nio-8085-exec-6] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 13:08:20.598  INFO 8460 --- [http-nio-8085-exec-6] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 13:08:20.781  INFO 8460 --- [http-nio-8085-exec-6] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 13:08:40.110  INFO 8460 --- [http-nio-8085-exec-2] c.e.W.Controllers.ProductController      : Adding new product: Table
+2021-12-12 13:08:40.441  INFO 8460 --- [http-nio-8085-exec-3] c.e.W.Controllers.ProductController      : Uploading picture
+2021-12-12 13:08:44.458  INFO 8460 --- [http-nio-8085-exec-5] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 13:08:45.174  INFO 8460 --- [http-nio-8085-exec-5] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 13:08:45.322  INFO 8460 --- [http-nio-8085-exec-5] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 13:08:45.674  INFO 8460 --- [http-nio-8085-exec-5] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 13:08:48.378  INFO 8460 --- [http-nio-8085-exec-7] c.e.W.Controllers.PurchaseController     : Admin is overviewing purchases
+2021-12-12 13:08:49.308  INFO 8460 --- [http-nio-8085-exec-10] c.e.W.C.PaymentMethodController          : Overview of the currently choosen payment mathods for webshop
+2021-12-12 13:09:01.725  INFO 8460 --- [http-nio-8085-exec-9] c.e.W.C.AuthenticationController         : User user has just logged in.
+2021-12-12 13:09:05.026  INFO 8460 --- [http-nio-8085-exec-4] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 13:09:05.584  INFO 8460 --- [http-nio-8085-exec-4] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 13:09:05.742  INFO 8460 --- [http-nio-8085-exec-4] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 13:09:06.029  INFO 8460 --- [http-nio-8085-exec-4] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 13:09:17.019  INFO 8460 --- [http-nio-8085-exec-2] c.e.WebShop.Controllers.CartController   : Item with id: 1has just been added to the cart by user user
+2021-12-12 13:09:19.169  INFO 8460 --- [http-nio-8085-exec-3] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 13:09:19.833  INFO 8460 --- [http-nio-8085-exec-3] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 13:09:20.046  INFO 8460 --- [http-nio-8085-exec-3] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 13:09:20.412  INFO 8460 --- [http-nio-8085-exec-3] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 13:09:21.361  INFO 8460 --- [http-nio-8085-exec-1] c.e.W.C.PaymentMethodController          : Overview of the currently choosen payment mathods for webshop
+2021-12-12 13:09:21.551  INFO 8460 --- [http-nio-8085-exec-7] c.e.WebShop.Controllers.CartController   : User: useris viewing its cart.
+2021-12-12 13:09:24.334  INFO 8460 --- [http-nio-8085-exec-8] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 13:09:25.021  INFO 8460 --- [http-nio-8085-exec-8] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 13:09:25.225  INFO 8460 --- [http-nio-8085-exec-8] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 13:09:25.623  INFO 8460 --- [http-nio-8085-exec-8] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 13:09:31.004  INFO 8460 --- [http-nio-8085-exec-10] c.e.WebShop.Controllers.CartController   : Item with id: 22has just been added to the cart by user user
+2021-12-12 13:09:32.644  INFO 8460 --- [http-nio-8085-exec-9] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 13:09:33.331  INFO 8460 --- [http-nio-8085-exec-9] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 13:09:33.503  INFO 8460 --- [http-nio-8085-exec-9] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 13:09:33.860  INFO 8460 --- [http-nio-8085-exec-9] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 13:11:19.001  INFO 8460 --- [http-nio-8085-exec-2] c.e.W.C.AuthenticationController         : User admin has just logged in.
+2021-12-12 13:11:23.433  INFO 8460 --- [http-nio-8085-exec-3] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 13:11:23.943  INFO 8460 --- [http-nio-8085-exec-3] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 13:11:24.072  INFO 8460 --- [http-nio-8085-exec-3] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 13:11:24.426  INFO 8460 --- [http-nio-8085-exec-3] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 13:11:46.182  INFO 8460 --- [http-nio-8085-exec-5] c.e.W.Controllers.ProductController      : Adding new product: Laptop
+2021-12-12 13:11:46.549  INFO 8460 --- [http-nio-8085-exec-1] c.e.W.Controllers.ProductController      : Uploading picture
+2021-12-12 13:11:52.197  INFO 8460 --- [http-nio-8085-exec-7] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 13:11:52.944  INFO 8460 --- [http-nio-8085-exec-7] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 13:11:53.136  INFO 8460 --- [http-nio-8085-exec-7] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 13:11:53.560  INFO 8460 --- [http-nio-8085-exec-7] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 13:11:53.724  INFO 8460 --- [http-nio-8085-exec-7] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 13:13:29.146  INFO 8460 --- [http-nio-8085-exec-10] c.e.W.C.AuthenticationController         : User admin has just logged in.
+2021-12-12 13:13:31.903  INFO 8460 --- [http-nio-8085-exec-4] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 13:13:32.513  INFO 8460 --- [http-nio-8085-exec-4] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 13:13:32.675  INFO 8460 --- [http-nio-8085-exec-4] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 13:13:33.044  INFO 8460 --- [http-nio-8085-exec-4] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 13:13:33.208  INFO 8460 --- [http-nio-8085-exec-4] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 13:13:53.909  INFO 8460 --- [http-nio-8085-exec-2] c.e.W.Controllers.ProductController      : Adding new product: Black cupboard
+2021-12-12 13:13:54.169  INFO 8460 --- [http-nio-8085-exec-5] c.e.W.Controllers.ProductController      : Uploading picture
+2021-12-12 13:13:54.188  INFO 8460 --- [http-nio-8085-exec-3] c.e.W.Controllers.ProductController      : Uploading picture
+2021-12-12 13:13:58.117  INFO 8460 --- [http-nio-8085-exec-1] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 13:13:59.016  INFO 8460 --- [http-nio-8085-exec-1] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 13:13:59.205  INFO 8460 --- [http-nio-8085-exec-1] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 13:13:59.599  INFO 8460 --- [http-nio-8085-exec-1] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 13:13:59.787  INFO 8460 --- [http-nio-8085-exec-1] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 13:13:59.898  INFO 8460 --- [http-nio-8085-exec-1] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 13:14:16.920  INFO 8460 --- [http-nio-8085-exec-8] c.e.W.Controllers.ProductController      : Editing product: Black cupboard x555
+2021-12-12 13:14:19.307  INFO 8460 --- [http-nio-8085-exec-10] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 13:14:20.100  INFO 8460 --- [http-nio-8085-exec-10] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 13:14:20.306  INFO 8460 --- [http-nio-8085-exec-10] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 13:14:20.690  INFO 8460 --- [http-nio-8085-exec-10] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 13:14:20.871  INFO 8460 --- [http-nio-8085-exec-10] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 13:14:20.960  INFO 8460 --- [http-nio-8085-exec-10] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 13:14:27.461  INFO 8460 --- [http-nio-8085-exec-4] c.e.W.Controllers.ProductController      : Deleting product with id: 30
+2021-12-12 13:14:29.697  INFO 8460 --- [http-nio-8085-exec-6] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 13:14:30.476  INFO 8460 --- [http-nio-8085-exec-6] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 13:14:30.712  INFO 8460 --- [http-nio-8085-exec-6] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 13:14:31.115  INFO 8460 --- [http-nio-8085-exec-6] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 13:14:31.308  INFO 8460 --- [http-nio-8085-exec-6] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 13:14:58.148  INFO 8460 --- [http-nio-8085-exec-3] c.e.W.C.PaymentMethodController          : Overview of the currently choosen payment mathods for webshop
+2021-12-12 13:15:02.201  INFO 8460 --- [http-nio-8085-exec-1] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 13:15:02.719  INFO 8460 --- [http-nio-8085-exec-1] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 13:15:02.859  INFO 8460 --- [http-nio-8085-exec-1] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 13:15:03.138  INFO 8460 --- [http-nio-8085-exec-1] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 13:15:03.293  INFO 8460 --- [http-nio-8085-exec-1] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 13:15:10.859  INFO 8460 --- [http-nio-8085-exec-7] c.e.W.C.PaymentMethodController          : Overview of the currently choosen payment mathods for webshop
+2021-12-12 13:15:16.180  INFO 8460 --- [http-nio-8085-exec-10] c.e.W.C.PaymentMethodController          : Payment methods had been added to the webshop: 
+2021-12-12 13:15:24.113  INFO 8460 --- [http-nio-8085-exec-9] c.e.W.C.PaymentMethodController          : Payment methods had been added to the webshop: 
+2021-12-12 13:15:29.489  INFO 8460 --- [http-nio-8085-exec-4] c.e.W.C.PaymentMethodController          : Overview of the currently choosen payment mathods for webshop
+2021-12-12 13:16:20.333  INFO 8460 --- [http-nio-8085-exec-6] c.e.W.C.AuthenticationController         : User user has just logged in.
+2021-12-12 13:16:23.174  INFO 8460 --- [http-nio-8085-exec-2] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 13:16:23.652  INFO 8460 --- [http-nio-8085-exec-2] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 13:16:23.922  INFO 8460 --- [http-nio-8085-exec-2] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 13:16:24.214  INFO 8460 --- [http-nio-8085-exec-2] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 13:16:24.364  INFO 8460 --- [http-nio-8085-exec-2] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 13:17:01.282  INFO 8460 --- [http-nio-8085-exec-5] c.e.W.C.AuthenticationController         : User user has just logged in.
+2021-12-12 13:17:03.851  INFO 8460 --- [http-nio-8085-exec-3] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 13:17:04.346  INFO 8460 --- [http-nio-8085-exec-3] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 13:17:04.468  INFO 8460 --- [http-nio-8085-exec-3] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 13:17:04.789  INFO 8460 --- [http-nio-8085-exec-3] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 13:17:04.928  INFO 8460 --- [http-nio-8085-exec-3] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 13:17:22.452  INFO 8460 --- [http-nio-8085-exec-7] c.e.WebShop.Controllers.CartController   : Item with id: 24has just been added to the cart by user user
+2021-12-12 13:17:25.458  INFO 8460 --- [http-nio-8085-exec-8] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 13:17:26.247  INFO 8460 --- [http-nio-8085-exec-8] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 13:17:26.480  INFO 8460 --- [http-nio-8085-exec-8] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 13:17:26.892  INFO 8460 --- [http-nio-8085-exec-8] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 13:17:27.074  INFO 8460 --- [http-nio-8085-exec-8] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 13:17:41.319  INFO 8460 --- [http-nio-8085-exec-10] c.e.W.C.PaymentMethodController          : Overview of the currently choosen payment mathods for webshop
+2021-12-12 13:17:42.013  INFO 8460 --- [http-nio-8085-exec-4] c.e.WebShop.Controllers.CartController   : User: useris viewing its cart.
+2021-12-12 13:17:46.814  INFO 8460 --- [http-nio-8085-exec-2] c.e.WebShop.Controllers.CartController   : Item with id: 27has been deleted from the cart by user: user
+2021-12-12 13:17:48.916  INFO 8460 --- [http-nio-8085-exec-5] c.e.W.C.PaymentMethodController          : Overview of the currently choosen payment mathods for webshop
+2021-12-12 13:17:49.623  INFO 8460 --- [http-nio-8085-exec-3] c.e.WebShop.Controllers.CartController   : User: useris viewing its cart.
+2021-12-12 13:19:19.387  INFO 8460 --- [http-nio-8085-exec-8] c.e.W.C.PaymentMethodController          : Overview of the currently choosen payment mathods for webshop
+2021-12-12 13:19:32.419  INFO 8460 --- [http-nio-8085-exec-9] c.e.W.C.PaymentMethodController          : Overview of the currently choosen payment mathods for webshop
+2021-12-12 13:20:17.770  INFO 8460 --- [http-nio-8085-exec-4] c.e.W.Controllers.PurchaseController     : User user is making a purchase
+2021-12-12 13:20:28.928  INFO 8460 --- [http-nio-8085-exec-6] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 13:20:29.435  INFO 8460 --- [http-nio-8085-exec-6] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 13:20:29.594  INFO 8460 --- [http-nio-8085-exec-6] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 13:20:29.876  INFO 8460 --- [http-nio-8085-exec-6] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 13:20:30.022  INFO 8460 --- [http-nio-8085-exec-6] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 13:20:31.633  INFO 8460 --- [http-nio-8085-exec-2] c.e.W.C.PaymentMethodController          : Overview of the currently choosen payment mathods for webshop
+2021-12-12 13:20:31.644  INFO 8460 --- [http-nio-8085-exec-5] c.e.WebShop.Controllers.CartController   : User: useris viewing its cart.
+2021-12-12 13:24:10.612  INFO 8460 --- [http-nio-8085-exec-7] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 13:24:11.041  INFO 8460 --- [http-nio-8085-exec-7] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 13:24:11.153  INFO 8460 --- [http-nio-8085-exec-7] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 13:24:11.408  INFO 8460 --- [http-nio-8085-exec-7] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 13:24:11.528  INFO 8460 --- [http-nio-8085-exec-7] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 13:24:15.087  INFO 8460 --- [http-nio-8085-exec-8] c.e.W.Controllers.PurchaseController     : Admin is overviewing purchases
+2021-12-12 13:24:22.695  INFO 8460 --- [http-nio-8085-exec-9] c.e.W.C.AuthenticationController         : User user has just logged in.
+2021-12-12 13:24:25.854  INFO 8460 --- [http-nio-8085-exec-10] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 13:24:26.297  INFO 8460 --- [http-nio-8085-exec-10] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 13:24:26.429  INFO 8460 --- [http-nio-8085-exec-10] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 13:24:26.728  INFO 8460 --- [http-nio-8085-exec-10] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 13:24:26.989  INFO 8460 --- [http-nio-8085-exec-10] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 13:24:28.871  INFO 8460 --- [http-nio-8085-exec-6] c.e.W.Controllers.PurchaseController     : User user is overviewing its purchases
+2021-12-12 13:24:44.938  INFO 8460 --- [http-nio-8085-exec-2] c.e.W.C.AuthenticationController         : User admin has just logged in.
+2021-12-12 13:24:48.523  INFO 8460 --- [http-nio-8085-exec-5] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 13:24:49.079  INFO 8460 --- [http-nio-8085-exec-5] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 13:24:49.287  INFO 8460 --- [http-nio-8085-exec-5] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 13:24:49.614  INFO 8460 --- [http-nio-8085-exec-5] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 13:24:49.769  INFO 8460 --- [http-nio-8085-exec-5] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 13:24:52.261  INFO 8460 --- [http-nio-8085-exec-3] c.e.W.Controllers.PurchaseController     : Admin is overviewing purchases
+2021-12-12 14:03:49.416  INFO 8460 --- [http-nio-8085-exec-8] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 14:03:49.898  INFO 8460 --- [http-nio-8085-exec-8] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 14:03:50.019  INFO 8460 --- [http-nio-8085-exec-8] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 14:03:50.272  INFO 8460 --- [http-nio-8085-exec-8] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 14:03:50.401  INFO 8460 --- [http-nio-8085-exec-8] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2021-12-12 14:04:18.819  INFO 8460 --- [http-nio-8085-exec-10] c.e.W.Controllers.PurchaseController     : User user is overviewing its purchases
+2021-12-12 14:04:23.491  INFO 8460 --- [http-nio-8085-exec-6] c.e.W.C.AuthenticationController         : User admin has just logged in.
+2021-12-12 14:04:25.306  INFO 8460 --- [http-nio-8085-exec-2] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 14:04:25.762  INFO 8460 --- [http-nio-8085-exec-2] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 14:04:25.913  INFO 8460 --- [http-nio-8085-exec-2] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 14:04:26.180  INFO 8460 --- [http-nio-8085-exec-2] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 14:04:26.306  INFO 8460 --- [http-nio-8085-exec-2] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 14:04:26.618  INFO 8460 --- [http-nio-8085-exec-3] c.e.W.C.PaymentMethodController          : Overview of the currently choosen payment mathods for webshop
+2021-12-12 14:04:53.938  INFO 8460 --- [http-nio-8085-exec-7] c.e.W.Controllers.PurchaseController     : Admin is overviewing purchases
+2021-12-12 14:06:03.313  INFO 8460 --- [http-nio-8085-exec-9] c.e.W.C.PaymentMethodController          : Overview of the currently choosen payment mathods for webshop
+2021-12-12 14:08:16.901  INFO 8460 --- [http-nio-8085-exec-4] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 14:08:17.329  INFO 8460 --- [http-nio-8085-exec-4] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 14:08:17.454  INFO 8460 --- [http-nio-8085-exec-4] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 14:08:17.746  INFO 8460 --- [http-nio-8085-exec-4] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 14:08:17.873  INFO 8460 --- [http-nio-8085-exec-4] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 14:08:35.801  INFO 8460 --- [http-nio-8085-exec-6] c.e.W.C.PaymentMethodController          : Overview of the currently choosen payment mathods for webshop
+2021-12-12 14:08:40.045  INFO 8460 --- [http-nio-8085-exec-5] c.e.W.C.PaymentMethodController          : Payment methods had been added to the webshop: 
+2021-12-12 14:10:14.991  INFO 8460 --- [http-nio-8085-exec-1] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 14:10:15.536  INFO 8460 --- [http-nio-8085-exec-1] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 14:10:15.708  INFO 8460 --- [http-nio-8085-exec-1] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 14:10:15.998  INFO 8460 --- [http-nio-8085-exec-1] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 14:10:16.141  INFO 8460 --- [http-nio-8085-exec-1] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2021-12-12 18:25:01.550  INFO 8460 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-12 18:25:01.555  INFO 8460 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2021-12-12 18:25:01.555  INFO 8460 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-12-12 18:25:01.562  INFO 8460 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-12-12 18:25:01.580  INFO 8460 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
