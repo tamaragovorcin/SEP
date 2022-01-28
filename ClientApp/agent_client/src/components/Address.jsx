@@ -38,10 +38,10 @@ class Address extends Component {
 		addressNotFoundError: "none",
 		openModal: false,
 		coords: [],
-		isPaypalAllowed: true,
-		isBankCardAllowed: true,
-		isQRAllowed: true,
-		isBitcoinAllowed: true,
+		isPaypalAllowed: false,
+		isBankCardAllowed: false,
+		isQRAllowed: false,
+		isBitcoinAllowed: false,
 		clentSecret: "",
 		options: {},
 		cardSelected: false,
@@ -87,8 +87,9 @@ class Address extends Component {
 		return true;
 	};
 	componentDidMount() {
-		Axios.get(BASE_URL_AGENT + "/api/payment/all")
+		Axios.get(BASE_URL_AGENT + "/api/payment/all", {  headers: { Authorization: getAuthHeader() }})
 			.then((res) => {
+				console.log(res.data)
 				res.data.methods.forEach(element => {
 					if (element === "Card") {
 
@@ -138,7 +139,6 @@ class Address extends Component {
 
 
 	handlePaymentClicked = (paymentType) => {
-		console.log("b-------------")
 		let id = localStorage.getItem("userId").substring(1, localStorage.getItem('userId').length - 1);
 		let street;
 		let city;
@@ -389,22 +389,22 @@ class Address extends Component {
 											<img src={bank_cards} className="App-logo" alt="logo" />
 										</button>
 									</div>
-								}
-								{this.state.isQRAllowed === true &&
-									<div class="col">
+				}				
+				{this.state.isQRAllowed === true &&
+					<div class="col">
 
-										<button type="button" class="btn  btn-sm" data-toggle="button" aria-pressed="false" autocomplete="off">
-											<img src={qr} className="App-logo" alt="logo" />
-										</button>
-									</div>
-								}
-								{this.state.isBitcoinAllowed === true &&
-									<div class="col">
-
-										<button type="button" class="btn  btn-sm" data-toggle="button" aria-pressed="false" autocomplete="off"
-											onClick={() => this.handlePaymentClicked("bitcoin")}>
-											<img src={bitcoin} className="App-logo" alt="logo" />
-										</button>
+					<button type="button" class="btn  btn-sm" data-toggle="button" aria-pressed="false" autocomplete="off">
+						<img src={qr} className="App-logo" alt="logo" />
+					</button>
+                 </div>
+                }
+                {this.state.isBitcoinAllowed === true && 
+                    <div class="col">
+                       
+                          <button type="button" class="btn  btn-sm" data-toggle="button" aria-pressed="false" autocomplete="off"
+						  	onClick={()=> this.handlePaymentClicked("bitcoin")}> 
+							 <img src={bitcoin} className="App-logo" alt="logo" />
+						  </button>
 
 
 									</div>

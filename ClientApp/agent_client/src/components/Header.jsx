@@ -4,17 +4,16 @@ import { Link } from "react-router-dom";
 import Axios from "axios";
 import { FiTruck } from 'react-icons/fi';
 import { VscHome } from 'react-icons/vsc';
-import AddPostModal from "../components/Posts/AddPostModal";
 import { RiAddCircleLine } from 'react-icons/ri';
 import { AiOutlineOrderedList, AiOutlineShoppingCart } from 'react-icons/ai';
 import { BASE_URL_AGENT } from "../constants.js";
 import { GiPodiumWinner } from 'react-icons/gi';
 import {MdPayment} from 'react-icons/md'
 
+import AddPostModal from "../components/Posts/AddPostModal";
 
 import Select from 'react-select';
 import ModalDialog from "../components/ModalDialog";
-import TopCampaignsModalToken from "../components/TopCampaignsModalToken";
 import getAuthHeader from "../GetHeader";
 class Header extends React.Component {
 
@@ -148,20 +147,6 @@ class Header extends React.Component {
 
 
 
-
-
-
-
-
-			<ModalDialog
-						show={this.state.openModal}
-						onCloseModal={this.handleModalClose}
-						header="Successful"
-						text={this.state.textSuccessfulModal}
-						openModal = {this.state.openModal}
-					/>
-
-
 			<AddPostModal
 						show={this.state.showImageModal}
 						onCloseModal={this.handlePostModalClose}
@@ -185,15 +170,21 @@ class Header extends React.Component {
 
 					/>
 
-			<TopCampaignsModalToken
-				show={this.state.showTopCampaignsModal}
-				onCloseModal={this.hadleGetTopCampaignsModalClose}
-				header="Get top campaigns"
-				token = {this.state.token}
-				handleTokenChange ={this.handleTokenChange}
-				hadleGetTopCampaigns = {this.hadleGetTopCampaigns}
-				byteArray = {this.state.byteArray}
-			/>
+
+
+
+			<ModalDialog
+						show={this.state.openModal}
+						onCloseModal={this.handleModalClose}
+						header="Successful"
+						text={this.state.textSuccessfulModal}
+						openModal = {this.state.openModal}
+					/>
+
+
+			
+
+		
 			</React.Fragment>
 
 );

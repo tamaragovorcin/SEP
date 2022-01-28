@@ -9,7 +9,6 @@ import Orders from './pages/Orders'
 import All from './pages/All'
 import AllAgents from './pages/AllAgents'
 import Homepage from './pages/Homepage'
-import NewCampaigns from './pages/NewCampaigns'
 import Ordered from './pages/Ordered'
 import OrderedAdmin from './pages/OrderedAdmin'
 import Conferences from './pages/conferences/Conferences'
@@ -41,7 +40,6 @@ function App() {
 				<Link exact to="/orders" path="/orders" component={Orders} />
 				<Link exact to="/ordered" path="/ordered" component={Ordered} />
 				<Link exact to="/orderedAdmin" path="/orderedAdmin" component={OrderedAdmin} />
-				<Link exact to="/newCampaigns" path="/newCampaigns" component={NewCampaigns} />
 				<Link exact to="/conferences" path="/conferences" component={Conferences} />
 				<Link exact to="/conferencesCart" path="/conferencesCart" component={ConferencesCart} />
 				<Link exact to="/conferencesOrders" path="/conferencesOrders" component={ConferencesOrders} />
