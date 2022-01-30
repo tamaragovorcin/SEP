@@ -57,6 +57,12 @@ public class User implements UserDetails, Serializable {
     @OneToMany(mappedBy = "buyer", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     private Set<ConferencesPurchase> conferencesPurchases = new HashSet<>();
 
+
+    @JsonManagedReference
+    @OneToMany(mappedBy = "creator", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    private Set<WebShop> webShops = new HashSet<>();
+
+
     @JsonIgnore
     @Override
     public boolean isAccountNonExpired() {

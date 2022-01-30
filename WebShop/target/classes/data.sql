@@ -18,5 +18,7 @@ INSERT INTO conferences_payment_data VALUES (1, "-ePst6Ws2zcsr3naJEnxzkXHPpMBUkx
 
 
 
+INSERT INTO web_shop  VALUES (1, "Conferences", 2);
+INSERT INTO web_shop  VALUES (2, "Webshop for office material", 2);
 
 
