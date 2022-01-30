@@ -1,19 +1,46 @@
-import React, { Component } from "react";
+import React, { useEffect  } from "react";
 import qr from '../Static/img/qr.png';
 import bank_cards from '../Static/img/bank_cards.jpg';
 import bitcoin from '../Static/img/bitcoin.png';
 import paypal from '../Static/img/paypall.png';
 import { useState } from 'react';
 import '../App.css';
+import Axios from "axios";
 
 import { Link } from 'react-router-dom';
 
 const ChoosePayment = () =>{
     
-    const [isPaypalAllowed, setIsPaypalAllowed] = useState(true);
-    const [isBankCardAllowed, setIsBankCardAllowed] = useState(true);
-    const [isQRAllowed, setIsQRAllowed] = useState(true);
-    const [isBitcoinAllowed, setIsBitcoinAllowed] = useState(true);
+    const [isPaypalAllowed, setIsPaypalAllowed] = useState(false);
+    const [isBankCardAllowed, setIsBankCardAllowed] = useState(false);
+    const [isQRAllowed, setIsQRAllowed] = useState(false);
+    const [isBitcoinAllowed, setIsBitcoinAllowed] = useState(false);
+
+
+    useEffect(() => {
+      let webshopId = JSON.parse(localStorage.getItem("webShopId"));
+      Axios.get( "http://localhost:9090/auth-service/api/webshop/allMethods/"+webshopId)
+        .then((res) => {
+                  let enabled = res.data.methods;
+                  let disabled = res.data.disabledMethods;
+                  for (let i = 0; i < enabled.length; i++) {
+                      if(enabled[i]==="qr") {setIsQRAllowed(true)}
+                      if(enabled[i]==="bitcoin") {setIsBitcoinAllowed(true)}
+                      if(enabled[i]==="card") {setIsBankCardAllowed(true)}
+                      if(enabled[i]==="paypal") {setIsPaypalAllowed(true)}
+                  }
+
+                  for (let i = 0; i < disabled.length; i++) {
+                    if(disabled[i]==="qr") {setIsQRAllowed(false)}
+                    if(disabled[i]==="bitcoin") {setIsBitcoinAllowed(false)}
+                    if(disabled[i]==="card") {setIsBankCardAllowed(false)}
+                    if(disabled[i]==="paypal") {setIsPaypalAllowed(false)}
+                }
+        })
+        .catch((err) => {
+          console.log(err);
+    });
+    }, []);
 
 		return (
             <div className="App">

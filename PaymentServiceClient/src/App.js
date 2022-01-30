@@ -8,7 +8,7 @@ import PayPalSuccess from './Components/InfoPages/PayPalSuccess';
 import PayPalError from './Components/InfoPages/PayPalError';
 import Login from './Components/Login';
 import Register from './Components/Register';
-
+import DefinePaymentMethods from './Components/DefinePaymentMethods';
 import { HashRouter as Router, Link, Switch } from "react-router-dom";
 
 function App() {
@@ -27,6 +27,7 @@ function App() {
           <Link exact to="/payPalError" path="/payPalError" component={PayPalError} />
           <Link exact to="/login" path="/login" component={Login} />
           <Link exact to="/register" path="/register" component={Register} />
+          <Link exact to="/definePaymentMethods" path="/definePaymentMethods" component={DefinePaymentMethods} />
 
         </Switch>
      </Router>

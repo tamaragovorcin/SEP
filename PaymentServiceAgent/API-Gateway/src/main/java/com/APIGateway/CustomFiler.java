@@ -39,6 +39,9 @@ public class CustomFiler implements GlobalFilter {
         else if(uri.contains("/api/bitcoin")) {
             logger.info("REDIRECTING TO  -> bitcoin service");
         }
+        else if(uri.contains("/api/webshop")) {
+            logger.info("REDIRECTING TO  -> auth service");
+        }
         else {
             logger.info("REDIRECTING TO  -> unknown");
         }

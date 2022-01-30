@@ -6,7 +6,10 @@
   height: 25vmin;
   pointer-events: none;
 }
-
+.App-logo-small {
+  height: 10vmin;
+  pointer-events: none;
+}
 
 .App-header {
   background-color: #282c34;
