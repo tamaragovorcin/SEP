@@ -6,51 +6,49 @@ import { Redirect } from "react-router-dom";
 
 class Login extends Component {
 	state = {
-		errorHeader: "",
-		errorMessage: "",
-		hiddenErrorAlert: true,
-		email: "",
+	
+		username: "",
 		password: "",
 		redirect: false,
-		emailError: "none",
+		usernameError: "none",
 		passwordError: "none",
 
 	};
-	handleEmailChange = (event) => {
-		this.setState({ email: event.target.value });
+	handleUsernameChange = (event) => {
+		this.setState({ username: event.target.value });
 	};
 	handlePasswordChange = (event) => {
 		this.setState({ password: event.target.value });
 	};
 
 	handleLogin = () => {
-		this.setState({ hiddenErrorAlert: true, emailError: "none", passwordError: "none" });
+		this.setState({ emailError: "none", passwordError: "none" });
 
 		if (this.validateForm()) {
-			let loginDTO = { email: this.state.email, password: this.state.password };
-			Axios.post( "http://localhost:9090/api/auth/login", loginDTO, { validateStatus: () => true })
+			let loginDTO = { username: this.state.username, password: this.state.password };
+			Axios.post( "http://localhost:9090/auth-service/api/webshop/login", loginDTO)
 				.then((res) => {
 					if (res.status === 401) {
-						this.setState({ errorHeader: "Bad credentials!", errorMessage: "Wrong username or password.", hiddenErrorAlert: false });
+						alert("Bad credentials!")
 					} else if (res.status === 500) {
-						this.setState({ errorHeader: "Internal server error!", errorMessage: "Server error.", hiddenErrorAlert: false });
+						alert("Server error!")
+
 					} else {
-						localStorage.setItem("keyToken", res.data.accessToken);
-						localStorage.setItem("keyRole", JSON.stringify(res.data.roles));
-						localStorage.setItem("expireTime", new Date(new Date().getTime() + res.data.expiresIn).getTime());
+						localStorage.setItem("webShopId", JSON.stringify(res.data));
 
 						this.setState({ redirect: true });
 					}
 				})
 				.catch ((err) => {
-			console.log(err);
+					alert("Bad credentials!")
+					console.log(err);
 		});
 	}
 };
 
 validateForm = () => {
-	if (this.state.email === "") {
-		this.setState({ emailError: "inline" });
+	if (this.state.username === "") {
+		this.setState({ username: "inline" });
 		return false;
 	} else if (this.state.password === "") {
 		this.setState({ passwordError: "inline" });
@@ -61,7 +59,7 @@ validateForm = () => {
 };
 
 render() {
-	if (this.state.redirect) return <Redirect push to="/" />;
+	if (this.state.redirect) return <Redirect push to="/definePaymentMethods" />;
 	return (
 		<React.Fragment>
 			<div className="container" style={{ marginTop: "10%" }}>
@@ -77,16 +75,16 @@ render() {
 							<div className="control-group">
 								<div className="form-group controls mb-0 pb-2" style={{ color: "#6c757d", opacity: 1 }}>
 									<input
-										placeholder="Email address"
+										placeholder="Username"
 										className="form-control"
 										id="name"
 										type="text"
-										onChange={this.handleEmailChange}
-										value={this.state.email}
+										onChange={this.handleUsernameChange}
+										value={this.state.username}
 									/>
 								</div>
-								<div className="text-danger" style={{ display: this.state.emailError }}>
-									Email must be entered.
+								<div className="text-danger" style={{ display: this.state.usernameError }}>
+									Username must be entered.
 									</div>
 							</div>
 

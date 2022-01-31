@@ -1,23 +1,33 @@
 import React, { Component } from "react";
 import Axios from "axios";
+import { Redirect } from "react-router-dom";
 
 class RegisterPage extends Component {
 	state = {
-		email: "",
+		username: "",
 		password: "",
 		repeatPassword: "",
-		emailError: "none",
 		passwordError: "none",
 		repeatPasswordError: "none",
 		repeatPasswordSameError: "none",
+		successUrl : "",
+		failureUrl : "",
+		errorUrl : "",
+		redirect : false,
+		webShopId : "",
+		usernameError : "none",
+		successUrlError : "none",
+		failureUrlError : "none",
+		errorUrlError : "none",
+		webShopIdError : "none"
 	};
 
 	constructor(props) {
 		super(props);
 	}
 
-	handleEmailChange = (event) => {
-		this.setState({ email: event.target.value });
+	handleUsernameChange = (event) => {
+		this.setState({ username: event.target.value });
 	};
 
 	handlePasswordChange = (event) => {
@@ -27,32 +37,46 @@ class RegisterPage extends Component {
 	handleRepeatPasswordChange = (event) => {
 		this.setState({ repeatPassword: event.target.value });
 	};
+	handleSuccessUrlChange = (event) => {
+		this.setState({ successUrl: event.target.value });
+	};
+	handleFailureUrlChange = (event) => {
+		this.setState({ failureUrl: event.target.value });
+	};
+	handleErrorUrlChange = (event) => {
+		this.setState({ errorUrl: event.target.value });
+	};
+
+	handleWebShopIdChange = (event) => {
+		this.setState({ webShopId: event.target.value });
+	};
 
 	handleSignUp = () => {
-		const completeDTO = {}
-		Axios.post("/api/manager/signup", completeDTO)
+		const completeDTO = {
+			username : this.state.username,
+			password : this.state.password,
+			successUrl : this.state.successUrl,
+			errorUrl : this.state.errorUrl,
+			failureUrl : this.state.failureUrl,
+			webShopId : this.state.webShopId
+		}
+		Axios.post("http://localhost:9090/auth-service/api/webshop/signup", completeDTO)
 		.then((res) => {
-			if (res.status === 409) {
-				this.setState({
-					errorHeader: "Resource conflict!",
-					errorMessage: "Email already exist.",
-					hiddenErrorAlert: false,
-				});
-			} else if (res.status === 500) {
-				this.setState({ errorHeader: "Internal server error!", errorMessage: "Server error.", hiddenErrorAlert: false });
+			if (res.status === 500) {
+				alert("ERROR with registration!")
 			} else {
-				this.setState({ openModal: true });
 				this.setState({ redirect: true })
-
 			}
 		})
 		.catch((err) => {
+			alert("ERROR with registration!")
 			console.log(err);
 		});
 
 	};
 
 	render() {
+		if (this.state.redirect) return <Redirect push to="/login" />;
 
 		return (
 			<React.Fragment>
@@ -70,21 +94,88 @@ class RegisterPage extends Component {
 								
 								<div className="control-group">
 									<div className="form-group controls mb-0 pb-2" style={{ color: "#6c757d", opacity: 1 }}>
-										<label>Email address:</label>
+										<label>Username:</label>
 										<input
-											placeholder="Email address"
+											placeholder="username"
 											className="form-control"
 											id="email"
 											type="text"
-											onChange={this.handleEmailChange}
-											value={this.state.email}
+											onChange={this.handleUsernameChange}
+											value={this.state.username}
 										/>
 									</div>
-									<div className="text-danger" style={{ display: this.state.emailError }}>
-										Email address must be entered.
+									<div className="text-danger" style={{ display: this.state.usernameError }}>
+										Username must be entered.
 									</div>
-									<div className="text-danger" style={{ display: this.state.emailNotValid }}>
-										Email address is not valid.
+								</div>
+
+								<div className="control-group">
+									<div className="form-group controls mb-0 pb-2" style={{ color: "#6c757d", opacity: 1 }}>
+										<label>Success url:</label>
+										<input
+											placeholder="Success url"
+											className="form-control"
+											id="email"
+											type="text"
+											onChange={this.handleSuccessUrlChange}
+											value={this.state.successUrl}
+										/>
+									</div>
+									<div className="text-danger" style={{ display: this.state.successUrlError }}>
+										Success url must be entered.
+									</div>
+								</div>
+
+								<div className="control-group">
+									<div className="form-group controls mb-0 pb-2" style={{ color: "#6c757d", opacity: 1 }}>
+										<label>Failure url:</label>
+										<input
+											placeholder="Failure url"
+											className="form-control"
+											id="email"
+											type="text"
+											onChange={this.handleFailureUrlChange}
+											value={this.state.failureUrl}
+										/>
+									</div>
+									<div className="text-danger" style={{ display: this.state.failureUrlError }}>
+										Failure url must be entered.
+									</div>
+								</div>
+
+								<div className="control-group">
+									<div className="form-group controls mb-0 pb-2" style={{ color: "#6c757d", opacity: 1 }}>
+										<label>Error url:</label>
+										<input
+											placeholder="Error url"
+											className="form-control"
+											id="email"
+											type="text"
+											onChange={this.handleErrorUrlChange}
+											value={this.state.errorUrl}
+										/>
+									</div>
+									<div className="text-danger" style={{ display: this.state.errorUrlError }}>
+										Error url must be entered.
+									</div>
+								</div>
+
+								<div className="control-group">
+									<div className="form-group controls mb-0 pb-2" style={{ color: "#6c757d", opacity: 1 }}>
+										<label>
+											Web shop id:
+										</label>
+										<input
+											placeholder="Web shop id"
+											className="form-control"
+											id="email"
+											type="text"
+											onChange={this.handleWebShopIdChange}
+											value={this.state.webShopId}
+										/>
+									</div>
+									<div className="text-danger" style={{ display: this.state.webShopIdError }}>
+										Web shop id must be entered.
 									</div>
 								</div>
                         
