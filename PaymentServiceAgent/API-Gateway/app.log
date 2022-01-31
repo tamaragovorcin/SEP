@@ -477,3 +477,505 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
 
 2022-01-30 20:24:14.643  INFO 11960 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2022-01-30 20:25:00.202  INFO 14976 --- [main] com.APIGateway.ApiGatewayApplication     : Starting ApiGatewayApplication using Java 17.0.1 on DESKTOP-1PFK6EP with PID 14976 (D:\Master\SEP\SEP\PaymentServiceAgent\API-Gateway\target\classes started by tamar in D:\Master\SEP\SEP\PaymentServiceAgent\API-Gateway)
+2022-01-30 20:25:00.215  INFO 14976 --- [main] com.APIGateway.ApiGatewayApplication     : No active profile set, falling back to default profiles: default
+2022-01-30 20:25:01.986  INFO 14976 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=fc05cfcf-5cf0-39a3-bcd6-5a666ec29182
+2022-01-30 20:25:02.111  INFO 14976 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-30 20:25:02.113  INFO 14976 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-30 20:25:02.114  INFO 14976 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-30 20:25:02.517  INFO 14976 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2022-01-30 20:25:02.534  INFO 14976 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-01-30 20:25:02.534  INFO 14976 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-01-30 20:25:04.014  INFO 14976 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
+2022-01-30 20:25:04.015  INFO 14976 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
+2022-01-30 20:25:04.015  INFO 14976 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
+2022-01-30 20:25:04.015  INFO 14976 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
+2022-01-30 20:25:04.015  INFO 14976 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
+2022-01-30 20:25:04.016  INFO 14976 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
+2022-01-30 20:25:04.016  INFO 14976 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
+2022-01-30 20:25:04.016  INFO 14976 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
+2022-01-30 20:25:04.016  INFO 14976 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
+2022-01-30 20:25:04.016  INFO 14976 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBody]
+2022-01-30 20:25:04.016  INFO 14976 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
+2022-01-30 20:25:04.017  INFO 14976 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
+2022-01-30 20:25:04.017  INFO 14976 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2022-01-30 20:25:04.386  INFO 14976 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2022-01-30 20:25:04.639  WARN 14976 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-01-30 20:25:04.670  INFO 14976 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-01-30 20:25:04.808  INFO 14976 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2022-01-30 20:25:04.819  INFO 14976 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-01-30 20:25:04.872  INFO 14976 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-01-30 20:25:04.873  INFO 14976 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-01-30 20:25:04.873  INFO 14976 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-01-30 20:25:04.873  INFO 14976 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-01-30 20:25:04.873  INFO 14976 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-01-30 20:25:04.873  INFO 14976 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2022-01-30 20:25:04.873  INFO 14976 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-01-30 20:25:05.669  INFO 14976 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-01-30 20:25:05.679  INFO 14976 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2022-01-30 20:25:05.683  INFO 14976 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-01-30 20:25:05.691  INFO 14976 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1643570705690 with initial instances count: 0
+2022-01-30 20:25:05.693  INFO 14976 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application API-GATEWAY with eureka with status UP
+2022-01-30 20:25:05.694  INFO 14976 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1643570705694, current=UP, previous=STARTING]
+2022-01-30 20:25:05.697  INFO 14976 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_API-GATEWAY/DESKTOP-1PFK6EP:api-gateway:9090: registering service...
+2022-01-30 20:25:05.795  INFO 14976 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2022-01-30 20:25:05.796  INFO 14976 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9090
+2022-01-30 20:25:05.866  INFO 14976 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_API-GATEWAY/DESKTOP-1PFK6EP:api-gateway:9090 - registration status: 204
+2022-01-30 20:25:05.963  INFO 14976 --- [main] com.APIGateway.ApiGatewayApplication     : Started ApiGatewayApplication in 7.568 seconds (JVM running for 9.305)
+2022-01-30 20:25:35.688  INFO 14976 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-01-30 20:25:35.688  INFO 14976 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-01-30 20:25:35.689  INFO 14976 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-01-30 20:25:35.689  INFO 14976 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-01-30 20:25:35.689  INFO 14976 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-01-30 20:25:35.689  INFO 14976 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2022-01-30 20:25:35.689  INFO 14976 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-01-30 20:25:35.701  INFO 14976 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-01-30 20:26:51.130  INFO 14976 --- [http-nio-9090-exec-4] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 20:26:51.130  INFO 14976 --- [http-nio-9090-exec-4] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 20:26:51.777  INFO 14976 --- [reactor-http-nio-2] com.APIGateway.CustomFiler               : Post Filter = 201 CREATED
+2022-01-30 20:27:02.143  INFO 14976 --- [http-nio-9090-exec-8] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 20:27:02.143  INFO 14976 --- [http-nio-9090-exec-8] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 20:27:02.292  INFO 14976 --- [reactor-http-nio-2] com.APIGateway.CustomFiler               : Post Filter = 400 BAD_REQUEST
+2022-01-30 20:27:05.262  INFO 14976 --- [http-nio-9090-exec-10] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 20:27:05.263  INFO 14976 --- [http-nio-9090-exec-10] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 20:27:05.279  INFO 14976 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 400 BAD_REQUEST
+2022-01-30 20:27:37.927  INFO 14976 --- [http-nio-9090-exec-3] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 20:27:37.927  INFO 14976 --- [http-nio-9090-exec-3] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 20:27:37.938  INFO 14976 --- [reactor-http-nio-4] com.APIGateway.CustomFiler               : Post Filter = 400 BAD_REQUEST
+2022-01-30 20:30:04.888  INFO 14976 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-01-30 20:31:44.964  INFO 14976 --- [http-nio-9090-exec-6] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 20:31:44.964  INFO 14976 --- [http-nio-9090-exec-6] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 20:31:45.221  INFO 14976 --- [reactor-http-nio-5] com.APIGateway.CustomFiler               : Post Filter = 201 CREATED
+2022-01-30 20:31:50.220  INFO 14976 --- [http-nio-9090-exec-9] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 20:31:50.220  INFO 14976 --- [http-nio-9090-exec-9] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 20:31:50.350  INFO 14976 --- [reactor-http-nio-5] com.APIGateway.CustomFiler               : Post Filter = 400 BAD_REQUEST
+2022-01-30 20:32:21.500  INFO 14976 --- [http-nio-9090-exec-2] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 20:32:21.500  INFO 14976 --- [http-nio-9090-exec-2] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 20:32:21.522  INFO 14976 --- [reactor-http-nio-6] com.APIGateway.CustomFiler               : Post Filter = 201 CREATED
+2022-01-30 20:35:04.895  INFO 14976 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-01-30 20:40:04.898  INFO 14976 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-01-30 20:45:04.903  INFO 14976 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-01-30 20:50:04.910  INFO 14976 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-01-30 20:55:04.922  INFO 14976 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-01-30 20:59:18.791  INFO 14976 --- [http-nio-9090-exec-6] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 20:59:18.792  INFO 14976 --- [http-nio-9090-exec-6] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 20:59:18.828  INFO 14976 --- [reactor-http-nio-7] com.APIGateway.CustomFiler               : Post Filter = 400 BAD_REQUEST
+2022-01-30 20:59:21.725  INFO 14976 --- [http-nio-9090-exec-8] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 20:59:21.725  INFO 14976 --- [http-nio-9090-exec-8] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 20:59:21.743  INFO 14976 --- [reactor-http-nio-8] com.APIGateway.CustomFiler               : Post Filter = 201 CREATED
+2022-01-30 21:00:04.933  INFO 14976 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-01-30 21:05:04.946  INFO 14976 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-01-30 21:07:48.887  INFO 14976 --- [http-nio-9090-exec-1] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 21:07:48.887  INFO 14976 --- [http-nio-9090-exec-1] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 21:07:49.012  INFO 14976 --- [reactor-http-nio-1] com.APIGateway.CustomFiler               : Post Filter = 404 NOT_FOUND
+2022-01-30 21:07:51.921  INFO 14976 --- [http-nio-9090-exec-3] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 21:07:51.921  INFO 14976 --- [http-nio-9090-exec-3] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 21:07:51.930  INFO 14976 --- [reactor-http-nio-1] com.APIGateway.CustomFiler               : Post Filter = 404 NOT_FOUND
+2022-01-30 21:08:48.604  INFO 14976 --- [http-nio-9090-exec-6] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 21:08:48.604  INFO 14976 --- [http-nio-9090-exec-6] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 21:08:48.617  INFO 14976 --- [reactor-http-nio-1] com.APIGateway.CustomFiler               : Post Filter = 404 NOT_FOUND
+2022-01-30 21:09:18.270  INFO 14976 --- [http-nio-9090-exec-9] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 21:09:18.270  INFO 14976 --- [http-nio-9090-exec-9] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 21:09:18.627  INFO 14976 --- [reactor-http-nio-1] com.APIGateway.CustomFiler               : Post Filter = 500 INTERNAL_SERVER_ERROR
+2022-01-30 21:09:20.096  INFO 14976 --- [http-nio-9090-exec-1] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 21:09:20.097  INFO 14976 --- [http-nio-9090-exec-1] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 21:09:20.112  INFO 14976 --- [reactor-http-nio-2] com.APIGateway.CustomFiler               : Post Filter = 500 INTERNAL_SERVER_ERROR
+2022-01-30 21:10:04.959  INFO 14976 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-01-30 21:10:07.959  INFO 14976 --- [http-nio-9090-exec-4] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 21:10:07.960  INFO 14976 --- [http-nio-9090-exec-4] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 21:10:08.045  INFO 14976 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 201 CREATED
+2022-01-30 21:10:12.261  INFO 14976 --- [http-nio-9090-exec-7] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 21:10:12.261  INFO 14976 --- [http-nio-9090-exec-7] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 21:10:12.283  INFO 14976 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 201 CREATED
+2022-01-30 21:10:12.295  INFO 14976 --- [http-nio-9090-exec-9] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 21:10:12.295  INFO 14976 --- [http-nio-9090-exec-9] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 21:10:12.308  INFO 14976 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-01-30 21:10:14.809  INFO 14976 --- [http-nio-9090-exec-3] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 21:10:14.810  INFO 14976 --- [http-nio-9090-exec-3] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 21:10:14.829  INFO 14976 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 201 CREATED
+2022-01-30 21:10:22.647  INFO 14976 --- [http-nio-9090-exec-6] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 21:10:22.647  INFO 14976 --- [http-nio-9090-exec-6] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 21:10:22.654  INFO 14976 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-01-30 21:10:33.441  INFO 14976 --- [http-nio-9090-exec-10] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 21:10:33.442  INFO 14976 --- [http-nio-9090-exec-10] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 21:10:33.459  INFO 14976 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 201 CREATED
+2022-01-30 21:11:16.432  INFO 14976 --- [http-nio-9090-exec-3] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 21:11:16.432  INFO 14976 --- [http-nio-9090-exec-3] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 21:11:16.440  INFO 14976 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-01-30 21:11:43.918  INFO 14976 --- [http-nio-9090-exec-6] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 21:11:43.918  INFO 14976 --- [http-nio-9090-exec-6] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 21:11:43.926  INFO 14976 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-01-30 21:11:47.391  INFO 14976 --- [http-nio-9090-exec-9] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 21:11:47.391  INFO 14976 --- [http-nio-9090-exec-9] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 21:11:47.408  INFO 14976 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 201 CREATED
+2022-01-30 21:11:58.117  INFO 14976 --- [http-nio-9090-exec-2] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 21:11:58.117  INFO 14976 --- [http-nio-9090-exec-2] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 21:11:58.124  INFO 14976 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-01-30 21:12:40.203  INFO 14976 --- [http-nio-9090-exec-5] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 21:12:40.204  INFO 14976 --- [http-nio-9090-exec-5] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 21:12:40.213  INFO 14976 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-01-30 21:13:14.345  INFO 14976 --- [http-nio-9090-exec-8] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 21:13:14.346  INFO 14976 --- [http-nio-9090-exec-8] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 21:13:14.354  INFO 14976 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-01-30 21:13:17.324  INFO 14976 --- [http-nio-9090-exec-10] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 21:13:17.324  INFO 14976 --- [http-nio-9090-exec-10] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 21:13:17.332  INFO 14976 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-01-30 21:13:23.243  INFO 14976 --- [http-nio-9090-exec-2] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 21:13:23.243  INFO 14976 --- [http-nio-9090-exec-2] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 21:13:23.251  INFO 14976 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-01-30 21:14:04.811  INFO 14976 --- [http-nio-9090-exec-5] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 21:14:04.811  INFO 14976 --- [http-nio-9090-exec-5] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 21:14:04.819  INFO 14976 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-01-30 21:14:20.940  INFO 14976 --- [http-nio-9090-exec-8] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 21:14:20.940  INFO 14976 --- [http-nio-9090-exec-8] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 21:14:20.949  INFO 14976 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-01-30 21:14:44.977  INFO 14976 --- [http-nio-9090-exec-1] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 21:14:44.977  INFO 14976 --- [http-nio-9090-exec-1] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 21:14:44.985  INFO 14976 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-01-30 21:15:02.122  INFO 14976 --- [http-nio-9090-exec-4] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 21:15:02.122  INFO 14976 --- [http-nio-9090-exec-4] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 21:15:02.130  INFO 14976 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-01-30 21:15:04.968  INFO 14976 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-01-30 21:15:14.324  INFO 14976 --- [http-nio-9090-exec-7] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 21:15:14.324  INFO 14976 --- [http-nio-9090-exec-7] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 21:15:14.333  INFO 14976 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-01-30 21:15:22.138  INFO 14976 --- [http-nio-9090-exec-9] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 21:15:22.138  INFO 14976 --- [http-nio-9090-exec-9] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 21:15:22.144  INFO 14976 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-01-30 21:15:30.394  INFO 14976 --- [http-nio-9090-exec-2] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 21:15:30.394  INFO 14976 --- [http-nio-9090-exec-2] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 21:15:30.402  INFO 14976 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-01-30 21:15:40.842  INFO 14976 --- [http-nio-9090-exec-5] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 21:15:40.842  INFO 14976 --- [http-nio-9090-exec-5] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 21:15:40.850  INFO 14976 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-01-30 21:15:46.298  INFO 14976 --- [http-nio-9090-exec-8] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 21:15:46.298  INFO 14976 --- [http-nio-9090-exec-8] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 21:15:46.305  INFO 14976 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-01-30 21:16:42.929  INFO 14976 --- [http-nio-9090-exec-1] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 21:16:42.930  INFO 14976 --- [http-nio-9090-exec-1] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 21:16:42.937  INFO 14976 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-01-30 21:16:51.869  INFO 14976 --- [http-nio-9090-exec-4] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 21:16:51.870  INFO 14976 --- [http-nio-9090-exec-4] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 21:16:51.876  INFO 14976 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-01-30 21:16:54.171  INFO 14976 --- [http-nio-9090-exec-6] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 21:16:54.171  INFO 14976 --- [http-nio-9090-exec-6] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 21:16:54.181  INFO 14976 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-01-30 21:16:57.848  INFO 14976 --- [http-nio-9090-exec-10] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 21:16:57.848  INFO 14976 --- [http-nio-9090-exec-10] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 21:16:57.864  INFO 14976 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 201 CREATED
+2022-01-30 21:16:59.110  INFO 14976 --- [http-nio-9090-exec-2] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 21:16:59.110  INFO 14976 --- [http-nio-9090-exec-2] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 21:16:59.119  INFO 14976 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-01-30 21:17:00.522  INFO 14976 --- [http-nio-9090-exec-5] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 21:17:00.522  INFO 14976 --- [http-nio-9090-exec-5] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 21:17:00.540  INFO 14976 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 201 CREATED
+2022-01-30 21:17:01.733  INFO 14976 --- [http-nio-9090-exec-7] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 21:17:01.733  INFO 14976 --- [http-nio-9090-exec-7] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 21:17:01.742  INFO 14976 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-01-30 21:17:02.969  INFO 14976 --- [http-nio-9090-exec-10] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 21:17:02.969  INFO 14976 --- [http-nio-9090-exec-10] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 21:17:02.985  INFO 14976 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 201 CREATED
+2022-01-30 21:17:03.832  INFO 14976 --- [http-nio-9090-exec-2] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 21:17:03.832  INFO 14976 --- [http-nio-9090-exec-2] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 21:17:03.838  INFO 14976 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-01-30 21:17:05.612  INFO 14976 --- [http-nio-9090-exec-6] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 21:17:05.613  INFO 14976 --- [http-nio-9090-exec-6] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 21:17:05.625  INFO 14976 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 201 CREATED
+2022-01-30 21:17:06.722  INFO 14976 --- [http-nio-9090-exec-8] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 21:17:06.722  INFO 14976 --- [http-nio-9090-exec-8] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 21:17:06.731  INFO 14976 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-01-30 21:17:08.700  INFO 14976 --- [http-nio-9090-exec-10] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 21:17:08.700  INFO 14976 --- [http-nio-9090-exec-10] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 21:17:08.713  INFO 14976 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 201 CREATED
+2022-01-30 21:17:11.154  INFO 14976 --- [http-nio-9090-exec-2] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 21:17:11.154  INFO 14976 --- [http-nio-9090-exec-2] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 21:17:11.161  INFO 14976 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-01-30 21:17:14.919  INFO 14976 --- [http-nio-9090-exec-6] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 21:17:14.920  INFO 14976 --- [http-nio-9090-exec-6] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 21:17:14.953  INFO 14976 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 201 CREATED
+2022-01-30 21:17:15.977  INFO 14976 --- [http-nio-9090-exec-8] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 21:17:15.977  INFO 14976 --- [http-nio-9090-exec-8] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 21:17:15.983  INFO 14976 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-01-30 21:17:17.230  INFO 14976 --- [http-nio-9090-exec-1] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 21:17:17.230  INFO 14976 --- [http-nio-9090-exec-1] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 21:17:17.249  INFO 14976 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 201 CREATED
+2022-01-30 21:17:18.661  INFO 14976 --- [http-nio-9090-exec-3] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 21:17:18.661  INFO 14976 --- [http-nio-9090-exec-3] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 21:17:18.667  INFO 14976 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-01-30 21:17:19.907  INFO 14976 --- [http-nio-9090-exec-5] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 21:17:19.907  INFO 14976 --- [http-nio-9090-exec-5] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 21:17:19.932  INFO 14976 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 201 CREATED
+2022-01-30 21:17:21.732  INFO 14976 --- [http-nio-9090-exec-7] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 21:17:21.732  INFO 14976 --- [http-nio-9090-exec-7] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 21:17:21.739  INFO 14976 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-01-30 21:17:25.890  INFO 14976 --- [http-nio-9090-exec-1] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 21:17:25.890  INFO 14976 --- [http-nio-9090-exec-1] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 21:17:25.898  INFO 14976 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 201 CREATED
+2022-01-30 21:17:28.856  INFO 14976 --- [http-nio-9090-exec-3] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 21:17:28.856  INFO 14976 --- [http-nio-9090-exec-3] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 21:17:28.862  INFO 14976 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-01-30 21:17:39.880  INFO 14976 --- [http-nio-9090-exec-7] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 21:17:39.880  INFO 14976 --- [http-nio-9090-exec-7] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 21:17:39.895  INFO 14976 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 201 CREATED
+2022-01-30 21:17:41.076  INFO 14976 --- [http-nio-9090-exec-9] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 21:17:41.076  INFO 14976 --- [http-nio-9090-exec-9] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 21:17:41.082  INFO 14976 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-01-30 21:17:42.687  INFO 14976 --- [http-nio-9090-exec-2] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 21:17:42.687  INFO 14976 --- [http-nio-9090-exec-2] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 21:17:42.696  INFO 14976 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 201 CREATED
+2022-01-30 21:17:44.800  INFO 14976 --- [http-nio-9090-exec-5] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 21:17:44.800  INFO 14976 --- [http-nio-9090-exec-5] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 21:17:44.805  INFO 14976 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-01-30 21:17:45.849  INFO 14976 --- [http-nio-9090-exec-7] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 21:17:45.849  INFO 14976 --- [http-nio-9090-exec-7] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 21:17:45.864  INFO 14976 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 201 CREATED
+2022-01-30 21:17:46.702  INFO 14976 --- [http-nio-9090-exec-9] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 21:17:46.702  INFO 14976 --- [http-nio-9090-exec-9] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 21:17:46.707  INFO 14976 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-01-30 21:17:47.577  INFO 14976 --- [http-nio-9090-exec-1] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 21:17:47.578  INFO 14976 --- [http-nio-9090-exec-1] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 21:17:47.596  INFO 14976 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 201 CREATED
+2022-01-30 21:17:48.808  INFO 14976 --- [http-nio-9090-exec-3] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 21:17:48.808  INFO 14976 --- [http-nio-9090-exec-3] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 21:17:48.814  INFO 14976 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-01-30 21:17:49.907  INFO 14976 --- [http-nio-9090-exec-6] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 21:17:49.907  INFO 14976 --- [http-nio-9090-exec-6] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 21:17:49.915  INFO 14976 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 201 CREATED
+2022-01-30 21:17:50.698  INFO 14976 --- [http-nio-9090-exec-8] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 21:17:50.698  INFO 14976 --- [http-nio-9090-exec-8] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 21:17:50.705  INFO 14976 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-01-30 21:19:28.329  INFO 14976 --- [http-nio-9090-exec-1] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 21:19:28.329  INFO 14976 --- [http-nio-9090-exec-1] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 21:19:28.740  INFO 14976 --- [reactor-http-nio-4] com.APIGateway.CustomFiler               : Post Filter = 500 INTERNAL_SERVER_ERROR
+2022-01-30 21:19:40.338  INFO 14976 --- [http-nio-9090-exec-3] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 21:19:40.338  INFO 14976 --- [http-nio-9090-exec-3] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 21:19:40.348  INFO 14976 --- [reactor-http-nio-5] com.APIGateway.CustomFiler               : Post Filter = 500 INTERNAL_SERVER_ERROR
+2022-01-30 21:19:49.325  INFO 14976 --- [http-nio-9090-exec-5] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 21:19:49.325  INFO 14976 --- [http-nio-9090-exec-5] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 21:19:49.355  INFO 14976 --- [reactor-http-nio-6] com.APIGateway.CustomFiler               : Post Filter = 500 INTERNAL_SERVER_ERROR
+2022-01-30 21:19:53.713  INFO 14976 --- [http-nio-9090-exec-7] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 21:19:53.713  INFO 14976 --- [http-nio-9090-exec-7] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 21:19:53.725  INFO 14976 --- [reactor-http-nio-7] com.APIGateway.CustomFiler               : Post Filter = 500 INTERNAL_SERVER_ERROR
+2022-01-30 21:20:04.972  INFO 14976 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-01-30 21:20:05.560  INFO 14976 --- [http-nio-9090-exec-9] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 21:20:05.560  INFO 14976 --- [http-nio-9090-exec-9] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 21:20:05.574  INFO 14976 --- [reactor-http-nio-8] com.APIGateway.CustomFiler               : Post Filter = 500 INTERNAL_SERVER_ERROR
+2022-01-30 21:20:15.576  INFO 14976 --- [http-nio-9090-exec-1] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 21:20:15.576  INFO 14976 --- [http-nio-9090-exec-1] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 21:20:15.586  INFO 14976 --- [reactor-http-nio-1] com.APIGateway.CustomFiler               : Post Filter = 500 INTERNAL_SERVER_ERROR
+2022-01-30 21:20:43.121  INFO 14976 --- [http-nio-9090-exec-4] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 21:20:43.121  INFO 14976 --- [http-nio-9090-exec-4] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 21:20:43.211  INFO 14976 --- [reactor-http-nio-2] com.APIGateway.CustomFiler               : Post Filter = 201 CREATED
+2022-01-30 21:20:47.659  INFO 14976 --- [http-nio-9090-exec-8] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 21:20:47.659  INFO 14976 --- [http-nio-9090-exec-8] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 21:20:47.683  INFO 14976 --- [reactor-http-nio-2] com.APIGateway.CustomFiler               : Post Filter = 201 CREATED
+2022-01-30 21:20:47.697  INFO 14976 --- [http-nio-9090-exec-10] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 21:20:47.697  INFO 14976 --- [http-nio-9090-exec-10] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 21:20:47.705  INFO 14976 --- [reactor-http-nio-2] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-01-30 21:21:16.361  INFO 14976 --- [http-nio-9090-exec-3] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 21:21:16.361  INFO 14976 --- [http-nio-9090-exec-3] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 21:21:16.369  INFO 14976 --- [reactor-http-nio-2] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-01-30 21:21:35.472  INFO 14976 --- [http-nio-9090-exec-6] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 21:21:35.472  INFO 14976 --- [http-nio-9090-exec-6] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 21:21:35.478  INFO 14976 --- [reactor-http-nio-2] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-01-30 21:24:56.337  INFO 14976 --- [http-nio-9090-exec-9] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 21:24:56.337  INFO 14976 --- [http-nio-9090-exec-9] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 21:24:56.348  INFO 14976 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-01-30 21:24:58.863  INFO 14976 --- [http-nio-9090-exec-1] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 21:24:58.864  INFO 14976 --- [http-nio-9090-exec-1] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 21:24:58.871  INFO 14976 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-01-30 21:25:04.988  INFO 14976 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-01-30 21:25:22.115  INFO 14976 --- [http-nio-9090-exec-4] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 21:25:22.115  INFO 14976 --- [http-nio-9090-exec-4] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 21:25:22.122  INFO 14976 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-01-30 21:25:34.954  INFO 14976 --- [http-nio-9090-exec-7] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 21:25:34.954  INFO 14976 --- [http-nio-9090-exec-7] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 21:25:34.962  INFO 14976 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-01-30 21:25:35.615  INFO 14976 --- [http-nio-9090-exec-9] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 21:25:35.616  INFO 14976 --- [http-nio-9090-exec-9] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 21:25:35.622  INFO 14976 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-01-30 21:25:47.044  INFO 14976 --- [http-nio-9090-exec-2] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 21:25:47.044  INFO 14976 --- [http-nio-9090-exec-2] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 21:25:47.051  INFO 14976 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-01-30 21:26:02.321  INFO 14976 --- [http-nio-9090-exec-5] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 21:26:02.321  INFO 14976 --- [http-nio-9090-exec-5] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 21:26:02.328  INFO 14976 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-01-30 21:26:09.999  INFO 14976 --- [http-nio-9090-exec-7] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 21:26:09.999  INFO 14976 --- [http-nio-9090-exec-7] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 21:26:10.006  INFO 14976 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-01-30 21:26:21.830  INFO 14976 --- [http-nio-9090-exec-10] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 21:26:21.830  INFO 14976 --- [http-nio-9090-exec-10] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 21:26:21.837  INFO 14976 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-01-30 21:26:25.830  INFO 14976 --- [http-nio-9090-exec-3] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 21:26:25.830  INFO 14976 --- [http-nio-9090-exec-3] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 21:26:25.853  INFO 14976 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 201 CREATED
+2022-01-30 21:26:26.991  INFO 14976 --- [http-nio-9090-exec-5] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 21:26:26.992  INFO 14976 --- [http-nio-9090-exec-5] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 21:26:27.000  INFO 14976 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-01-30 21:26:28.412  INFO 14976 --- [http-nio-9090-exec-7] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 21:26:28.412  INFO 14976 --- [http-nio-9090-exec-7] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 21:26:28.426  INFO 14976 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 201 CREATED
+2022-01-30 21:26:29.152  INFO 14976 --- [http-nio-9090-exec-9] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 21:26:29.153  INFO 14976 --- [http-nio-9090-exec-9] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 21:26:29.160  INFO 14976 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-01-30 21:26:31.037  INFO 14976 --- [http-nio-9090-exec-3] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 21:26:31.037  INFO 14976 --- [http-nio-9090-exec-3] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 21:26:31.053  INFO 14976 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 201 CREATED
+2022-01-30 21:26:31.728  INFO 14976 --- [http-nio-9090-exec-5] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 21:26:31.728  INFO 14976 --- [http-nio-9090-exec-5] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 21:26:31.737  INFO 14976 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-01-30 21:26:32.610  INFO 14976 --- [http-nio-9090-exec-7] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 21:26:32.610  INFO 14976 --- [http-nio-9090-exec-7] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 21:26:32.622  INFO 14976 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 201 CREATED
+2022-01-30 21:26:33.283  INFO 14976 --- [http-nio-9090-exec-9] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 21:26:33.283  INFO 14976 --- [http-nio-9090-exec-9] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 21:26:33.292  INFO 14976 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-01-30 21:26:33.949  INFO 14976 --- [http-nio-9090-exec-2] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 21:26:33.949  INFO 14976 --- [http-nio-9090-exec-2] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 21:26:33.962  INFO 14976 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 201 CREATED
+2022-01-30 21:26:34.683  INFO 14976 --- [http-nio-9090-exec-4] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 21:26:34.683  INFO 14976 --- [http-nio-9090-exec-4] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 21:26:34.692  INFO 14976 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-01-30 21:26:35.330  INFO 14976 --- [http-nio-9090-exec-6] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 21:26:35.330  INFO 14976 --- [http-nio-9090-exec-6] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 21:26:35.336  INFO 14976 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 201 CREATED
+2022-01-30 21:26:36.130  INFO 14976 --- [http-nio-9090-exec-8] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 21:26:36.130  INFO 14976 --- [http-nio-9090-exec-8] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 21:26:36.137  INFO 14976 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-01-30 21:26:37.368  INFO 14976 --- [http-nio-9090-exec-10] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 21:26:37.368  INFO 14976 --- [http-nio-9090-exec-10] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 21:26:37.391  INFO 14976 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 201 CREATED
+2022-01-30 21:26:38.243  INFO 14976 --- [http-nio-9090-exec-2] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 21:26:38.243  INFO 14976 --- [http-nio-9090-exec-2] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 21:26:38.250  INFO 14976 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-01-30 21:26:39.122  INFO 14976 --- [http-nio-9090-exec-5] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 21:26:39.122  INFO 14976 --- [http-nio-9090-exec-5] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 21:26:39.131  INFO 14976 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 201 CREATED
+2022-01-30 21:26:40.225  INFO 14976 --- [http-nio-9090-exec-8] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 21:26:40.226  INFO 14976 --- [http-nio-9090-exec-8] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 21:26:40.234  INFO 14976 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-01-30 21:28:03.865  INFO 14976 --- [http-nio-9090-exec-6] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 21:28:03.865  INFO 14976 --- [http-nio-9090-exec-6] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 21:28:04.108  INFO 14976 --- [reactor-http-nio-4] com.APIGateway.CustomFiler               : Post Filter = 500 INTERNAL_SERVER_ERROR
+2022-01-30 21:29:34.989  INFO 14976 --- [http-nio-9090-exec-10] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 21:29:34.989  INFO 14976 --- [http-nio-9090-exec-10] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 21:29:35.164  INFO 14976 --- [reactor-http-nio-5] com.APIGateway.CustomFiler               : Post Filter = 201 CREATED
+2022-01-30 21:29:45.096  INFO 14976 --- [http-nio-9090-exec-3] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 21:29:45.096  INFO 14976 --- [http-nio-9090-exec-3] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 21:29:45.233  INFO 14976 --- [reactor-http-nio-5] com.APIGateway.CustomFiler               : Post Filter = 201 CREATED
+2022-01-30 21:29:45.245  INFO 14976 --- [http-nio-9090-exec-5] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 21:29:45.245  INFO 14976 --- [http-nio-9090-exec-5] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 21:29:45.276  INFO 14976 --- [reactor-http-nio-5] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-01-30 21:29:48.139  INFO 14976 --- [http-nio-9090-exec-8] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 21:29:48.139  INFO 14976 --- [http-nio-9090-exec-8] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 21:29:48.194  INFO 14976 --- [reactor-http-nio-5] com.APIGateway.CustomFiler               : Post Filter = 201 CREATED
+2022-01-30 21:29:49.154  INFO 14976 --- [http-nio-9090-exec-10] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 21:29:49.155  INFO 14976 --- [http-nio-9090-exec-10] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 21:29:49.166  INFO 14976 --- [reactor-http-nio-5] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-01-30 21:29:50.080  INFO 14976 --- [http-nio-9090-exec-3] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 21:29:50.080  INFO 14976 --- [http-nio-9090-exec-3] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 21:29:50.097  INFO 14976 --- [reactor-http-nio-5] com.APIGateway.CustomFiler               : Post Filter = 201 CREATED
+2022-01-30 21:29:50.778  INFO 14976 --- [http-nio-9090-exec-5] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 21:29:50.778  INFO 14976 --- [http-nio-9090-exec-5] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 21:29:50.789  INFO 14976 --- [reactor-http-nio-5] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-01-30 21:29:51.536  INFO 14976 --- [http-nio-9090-exec-7] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 21:29:51.537  INFO 14976 --- [http-nio-9090-exec-7] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 21:29:51.557  INFO 14976 --- [reactor-http-nio-5] com.APIGateway.CustomFiler               : Post Filter = 201 CREATED
+2022-01-30 21:29:52.461  INFO 14976 --- [http-nio-9090-exec-9] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 21:29:52.461  INFO 14976 --- [http-nio-9090-exec-9] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 21:29:52.471  INFO 14976 --- [reactor-http-nio-5] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-01-30 21:30:04.993  INFO 14976 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-01-30 21:35:05.002  INFO 14976 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-01-30 21:40:05.013  INFO 14976 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-01-30 21:45:05.014  INFO 14976 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-01-30 21:50:05.029  INFO 14976 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-01-30 21:55:05.031  INFO 14976 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-01-30 22:00:05.037  INFO 14976 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-01-30 22:05:05.050  INFO 14976 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-01-30 22:05:35.924  INFO 14976 --- [http-nio-9090-exec-2] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 22:05:35.924  INFO 14976 --- [http-nio-9090-exec-2] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 22:05:35.943  INFO 14976 --- [reactor-http-nio-6] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-01-30 22:05:41.373  INFO 14976 --- [http-nio-9090-exec-5] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 22:05:41.373  INFO 14976 --- [http-nio-9090-exec-5] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 22:05:41.386  INFO 14976 --- [reactor-http-nio-6] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-01-30 22:06:14.476  INFO 14976 --- [http-nio-9090-exec-8] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 22:06:14.477  INFO 14976 --- [http-nio-9090-exec-8] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 22:06:14.483  INFO 14976 --- [reactor-http-nio-6] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-01-30 22:06:16.700  INFO 14976 --- [http-nio-9090-exec-10] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 22:06:16.700  INFO 14976 --- [http-nio-9090-exec-10] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 22:06:16.705  INFO 14976 --- [reactor-http-nio-6] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-01-30 22:06:19.540  INFO 14976 --- [http-nio-9090-exec-3] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 22:06:19.541  INFO 14976 --- [http-nio-9090-exec-3] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 22:06:19.551  INFO 14976 --- [reactor-http-nio-6] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-01-30 22:06:28.645  INFO 14976 --- [http-nio-9090-exec-6] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 22:06:28.645  INFO 14976 --- [http-nio-9090-exec-6] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 22:06:28.652  INFO 14976 --- [reactor-http-nio-6] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-01-30 22:06:33.006  INFO 14976 --- [http-nio-9090-exec-8] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 22:06:33.006  INFO 14976 --- [http-nio-9090-exec-8] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 22:06:33.013  INFO 14976 --- [reactor-http-nio-6] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-01-30 22:06:37.435  INFO 14976 --- [http-nio-9090-exec-10] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 22:06:37.435  INFO 14976 --- [http-nio-9090-exec-10] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 22:06:37.441  INFO 14976 --- [reactor-http-nio-6] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-01-30 22:07:15.509  INFO 14976 --- [http-nio-9090-exec-3] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 22:07:15.509  INFO 14976 --- [http-nio-9090-exec-3] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 22:07:15.517  INFO 14976 --- [reactor-http-nio-6] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-01-30 22:08:02.607  INFO 14976 --- [http-nio-9090-exec-6] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 22:08:02.607  INFO 14976 --- [http-nio-9090-exec-6] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 22:08:02.612  INFO 14976 --- [reactor-http-nio-6] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-01-30 22:08:22.077  INFO 14976 --- [http-nio-9090-exec-9] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 22:08:22.077  INFO 14976 --- [http-nio-9090-exec-9] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 22:08:22.082  INFO 14976 --- [reactor-http-nio-6] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-01-30 22:08:28.264  INFO 14976 --- [http-nio-9090-exec-1] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 22:08:28.264  INFO 14976 --- [http-nio-9090-exec-1] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 22:08:28.271  INFO 14976 --- [reactor-http-nio-6] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-01-30 22:08:29.874  INFO 14976 --- [http-nio-9090-exec-5] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 22:08:29.874  INFO 14976 --- [http-nio-9090-exec-5] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 22:08:29.917  INFO 14976 --- [reactor-http-nio-6] com.APIGateway.CustomFiler               : Post Filter = 201 CREATED
+2022-01-30 22:08:30.862  INFO 14976 --- [http-nio-9090-exec-7] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 22:08:30.862  INFO 14976 --- [http-nio-9090-exec-7] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 22:08:30.870  INFO 14976 --- [reactor-http-nio-6] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-01-30 22:08:34.860  INFO 14976 --- [http-nio-9090-exec-9] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 22:08:34.860  INFO 14976 --- [http-nio-9090-exec-9] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 22:08:34.866  INFO 14976 --- [reactor-http-nio-6] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-01-30 22:08:45.349  INFO 14976 --- [http-nio-9090-exec-2] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 22:08:45.349  INFO 14976 --- [http-nio-9090-exec-2] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 22:08:45.354  INFO 14976 --- [reactor-http-nio-6] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-01-30 22:09:21.215  INFO 14976 --- [http-nio-9090-exec-5] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 22:09:21.215  INFO 14976 --- [http-nio-9090-exec-5] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 22:09:21.223  INFO 14976 --- [reactor-http-nio-6] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-01-30 22:09:30.579  INFO 14976 --- [http-nio-9090-exec-8] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 22:09:30.579  INFO 14976 --- [http-nio-9090-exec-8] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 22:09:30.598  INFO 14976 --- [reactor-http-nio-6] com.APIGateway.CustomFiler               : Post Filter = 201 CREATED
+2022-01-30 22:09:31.385  INFO 14976 --- [http-nio-9090-exec-10] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 22:09:31.385  INFO 14976 --- [http-nio-9090-exec-10] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 22:09:31.393  INFO 14976 --- [reactor-http-nio-6] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-01-30 22:09:32.554  INFO 14976 --- [http-nio-9090-exec-3] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 22:09:32.554  INFO 14976 --- [http-nio-9090-exec-3] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 22:09:32.570  INFO 14976 --- [reactor-http-nio-6] com.APIGateway.CustomFiler               : Post Filter = 201 CREATED
+2022-01-30 22:09:35.206  INFO 14976 --- [http-nio-9090-exec-5] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 22:09:35.206  INFO 14976 --- [http-nio-9090-exec-5] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 22:09:35.213  INFO 14976 --- [reactor-http-nio-6] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-01-30 22:09:39.411  INFO 14976 --- [http-nio-9090-exec-8] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 22:09:39.411  INFO 14976 --- [http-nio-9090-exec-8] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 22:09:39.435  INFO 14976 --- [reactor-http-nio-6] com.APIGateway.CustomFiler               : Post Filter = 201 CREATED
+2022-01-30 22:09:40.153  INFO 14976 --- [http-nio-9090-exec-10] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 22:09:40.153  INFO 14976 --- [http-nio-9090-exec-10] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 22:09:40.162  INFO 14976 --- [reactor-http-nio-6] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-01-30 22:09:43.206  INFO 14976 --- [http-nio-9090-exec-2] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 22:09:43.206  INFO 14976 --- [http-nio-9090-exec-2] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 22:09:43.213  INFO 14976 --- [reactor-http-nio-6] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-01-30 22:09:48.769  INFO 14976 --- [http-nio-9090-exec-4] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 22:09:48.769  INFO 14976 --- [http-nio-9090-exec-4] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 22:09:48.778  INFO 14976 --- [reactor-http-nio-6] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-01-30 22:09:53.034  INFO 14976 --- [http-nio-9090-exec-6] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-01-30 22:09:53.034  INFO 14976 --- [http-nio-9090-exec-6] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-01-30 22:09:53.037  INFO 14976 --- [reactor-http-nio-6] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-01-30 22:10:05.061  INFO 14976 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-01-30 22:13:39.986  INFO 14976 --- [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application API-GATEWAY with eureka with status DOWN
+2022-01-30 22:13:39.987  INFO 14976 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1643577219987, current=DOWN, previous=UP]
+2022-01-30 22:13:39.987  INFO 14976 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_API-GATEWAY/DESKTOP-1PFK6EP:api-gateway:9090: registering service...
+2022-01-30 22:13:40.000  INFO 14976 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_API-GATEWAY/DESKTOP-1PFK6EP:api-gateway:9090 - registration status: 204
+2022-01-30 22:13:42.167  INFO 14976 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2022-01-30 22:13:45.181  INFO 14976 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2022-01-30 22:13:45.188  INFO 14976 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_API-GATEWAY/DESKTOP-1PFK6EP:api-gateway:9090 - deregister  status: 200
+2022-01-30 22:13:45.193  INFO 14976 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
