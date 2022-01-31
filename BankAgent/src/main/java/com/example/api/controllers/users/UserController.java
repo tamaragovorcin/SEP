@@ -1,12 +1,15 @@
 package com.example.api.controllers.users;
 
 import com.example.api.DTOs.UserDTO;
+import com.example.api.entities.bank.Bank;
 import com.example.api.security.exceptions.ResourceConflictException;
 import com.example.api.services.implementations.users.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
 @RequestMapping("/api/user")
@@ -28,6 +31,9 @@ public class UserController {
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
+
+
+
 
 
 

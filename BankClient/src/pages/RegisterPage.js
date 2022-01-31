@@ -149,7 +149,7 @@ class RegisterPage extends Component {
 	};
 
 	render() {
-		if (this.state.redirect) return <Redirect push to="/" />;
+        if (this.state.redirect) return <Redirect push to={this.state.redirectUrl} />;
 
 		return (
 			<React.Fragment>

@@ -16,6 +16,7 @@ class HomePage extends React.Component {
 		}
 		return false;
 	};
+	
 
 	render() {
 		return (
@@ -26,8 +27,8 @@ class HomePage extends React.Component {
 				<section id="hero" className="d-flex align-items-center">
 					<div className="container">
 						<h1>Welcome</h1>
-						<Link hidden={this.hasRole("*")} to="/registration" className="btn-get-started scrollto">
-							Register
+						<Link to="/registration" className="btn-get-started scrollto">
+							Merchant Registration
 						</Link>
 					</div>
 					

@@ -1,4 +1,4 @@
-package com.example.api.entities.users;
+package com.example.api.entities.bank;
 
 
 import com.fasterxml.jackson.annotation.JsonIdentityInfo;
@@ -23,15 +23,20 @@ import static javax.persistence.InheritanceType.SINGLE_TABLE;
 @Inheritance(strategy=SINGLE_TABLE)
 @DiscriminatorColumn(name="type", discriminatorType=STRING)
 @JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class, property = "id")
-public class Bank {
+public class Merchant {
     @Id
-    @GeneratedValue(strategy= GenerationType.IDENTITY)
+    @GeneratedValue
+    @Column(name="id", unique=true, nullable=false)
     private Integer id;
 
-    @Column(name = "name", nullable = false)
-    private String name;
+    @Column(name = "merchant_id", nullable = false, unique = true)
+    private String merchant_id;
 
-    @Column(name = "firstThreeNumbers", nullable = false)
-    private String firstThreeNumbers;
 
+    @Column(name = "merchant_password", nullable = false, unique = true)
+    private String merchantPassword;
+
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "account_id", referencedColumnName = "id")
+    private Account account;
 }

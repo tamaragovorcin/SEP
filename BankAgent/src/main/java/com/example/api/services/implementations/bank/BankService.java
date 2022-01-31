@@ -1,8 +1,8 @@
 package com.example.api.services.implementations.bank;
 
 import com.example.api.DTOs.BankDTO;
-import com.example.api.entities.users.Bank;
-import com.example.api.repositories.users.BankRepository;
+import com.example.api.entities.bank.Bank;
+import com.example.api.repositories.bank.BankRepository;
 import com.example.api.services.interfaces.bank.IBankService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
