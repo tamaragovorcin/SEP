@@ -118,23 +118,23 @@ class Orders extends Component {
 
 
 	handleOrder = () => {
-		console.log(this.state.products)
+		// console.log(this.state.products)
 
-		let items =  this.state.products 
-		Axios.post("http://localhost:9090/bank-card-service/api/bankcard/create-payment-intent", items, { headers: { "Content-Type": "application/json" } })
-			.then((res) => {
+		// let items =  this.state.products 
+		// Axios.post("http://localhost:9090/bank-card-service/api/bankcard/create-payment-intent", items, { headers: { "Content-Type": "application/json" } })
+		// 	.then((res) => {
 
-				console.log(res.data)
-				this.setState({ clientSecret: res.data.clientSecret })
+		// 		console.log(res.data)
+		// 		this.setState({ clientSecret: res.data.clientSecret })
 
-				let clientSecret = res.data.clientSecret;
-				let options = {
-					clientSecret,
-					appearance,
-				};
-				this.setState({ options: options })
+		// 		let clientSecret = res.data.clientSecret;
+		// 		let options = {
+		// 			clientSecret,
+		// 			appearance,
+		// 		};
+		// 		this.setState({ options: options })
 
-			})
+		// 	})
 
 		this.setState({ showOrderModal: true });
 
@@ -172,6 +172,7 @@ class Orders extends Component {
 		this.setState({ colors: id.colors });
 
 	};
+
 
 
 	render() {

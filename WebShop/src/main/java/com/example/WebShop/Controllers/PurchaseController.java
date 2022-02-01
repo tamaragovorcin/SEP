@@ -1,8 +1,10 @@
 package com.example.WebShop.Controllers;
 
 
+import com.example.WebShop.DTOs.Conferences.ConferencePurchaseFrontDTO;
 import com.example.WebShop.DTOs.NewOrderDTO;
 import com.example.WebShop.DTOs.OrderDTO;
+import com.example.WebShop.DTOs.UpdatePurchaseStatusDTO;
 import com.example.WebShop.Model.*;
 import com.example.WebShop.Service.IServices.IProductService;
 import com.example.WebShop.Service.Implementations.CartService;
@@ -42,7 +44,7 @@ public class PurchaseController {
 
     @PostMapping("/add")
     @PreAuthorize("hasRole('ROLE_USER')")
-    public ResponseEntity<String> addPurchase(@RequestBody OrderDTO newOrderDTO) {
+    public ResponseEntity<Integer> addPurchase(@RequestBody OrderDTO newOrderDTO) {
 
        Purchase purchase = new Purchase();
 
@@ -56,7 +58,7 @@ public class PurchaseController {
 
         return purchase == null ?
                 new ResponseEntity<>(HttpStatus.NOT_FOUND) :
-                new ResponseEntity<>("Purchase is successfully made!", HttpStatus.CREATED);
+                new ResponseEntity<>(purchase.getId(), HttpStatus.CREATED);
     }
 
 
@@ -216,5 +218,24 @@ public class PurchaseController {
                 ResponseEntity.ok(ordersDTOS);
     }
 
+    @PostMapping("/update")
+    public ResponseEntity<Integer> updatePurchaseStatus(@RequestBody UpdatePurchaseStatusDTO updatePurchaseStatusDTO) {
+        logger.error("Updating conference purchase to status " + updatePurchaseStatusDTO.getStatus());
 
+        Purchase purchase  = purchaseService.updatePurchase(updatePurchaseStatusDTO);
+
+        return purchase == null ?
+                new ResponseEntity<>(HttpStatus.NOT_FOUND) :
+                new ResponseEntity<>(purchase.getId(), HttpStatus.CREATED);
+    }
+    @GetMapping("/{id}")
+    public ResponseEntity<OrderDTO> getPurchaseById(@PathVariable String id) {
+        logger.error("Getting conference purchase with id " + id);
+
+        OrderDTO orderDTO  = purchaseService.getPurchaseById(Integer.parseInt(id));
+
+        return orderDTO == null ?
+                new ResponseEntity<>(HttpStatus.NOT_FOUND) :
+                new ResponseEntity<>(orderDTO, HttpStatus.CREATED);
+    }
 }

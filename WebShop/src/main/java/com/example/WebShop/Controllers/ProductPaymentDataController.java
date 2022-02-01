@@ -27,6 +27,7 @@ public class ProductPaymentDataController {
     public ResponseEntity<PaypalCredentialsDTO> findPaypalCredentials() {
         PaypalCredentialsDTO paypalCredentialsDTO = productPaymentDataService.findPaypalCredentials();
         logger.info("Getting merchant paypal credentials for product purchase.");
+        System.out.println(paypalCredentialsDTO.getClientId());
         return paypalCredentialsDTO == null ? new ResponseEntity<>(HttpStatus.NOT_FOUND) : ResponseEntity.ok(paypalCredentialsDTO);
     }
 
