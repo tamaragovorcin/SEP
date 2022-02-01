@@ -33,7 +33,7 @@ class PaymentMethodConf extends Component {
 				<Header />
 
 				<div className="container" style={{ marginTop: "10%" }}>
-					<p>Id of your webshop is : 2</p>
+					<p>Id of your webshop is : 1</p>
 					<p><a href="http://localhost:3000/#/register">Register on payment service provider</a></p>
 					<p><a href="http://localhost:3000/#/login">Log in on payment service provider</a></p>
 
