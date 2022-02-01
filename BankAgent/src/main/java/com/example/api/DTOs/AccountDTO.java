@@ -17,4 +17,8 @@ public class AccountDTO {
     private Integer bankId;
     private Double availableFunds;
     private Double reservedFunds;
+    private String PAN;
+    private String mm;
+    private String yy;
+    private String cardSecurityCode;
 }

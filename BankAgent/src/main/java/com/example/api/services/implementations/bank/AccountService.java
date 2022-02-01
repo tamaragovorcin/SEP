@@ -106,4 +106,13 @@ public class AccountService implements IAccountService {
         }
         return null;
     }
+
+    public Account getClientByMerchantId(String merchantId){
+        Optional<Account> client = accountRepository.findByMerchantId(merchantId);
+        if(!client.isPresent()) {
+            // TODO: ako ne postoji transakcija nije validna idi na faild url
+           return null;
+        }
+        return client.get();
+    }
 }

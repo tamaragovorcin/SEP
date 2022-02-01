@@ -40,6 +40,8 @@ class HomePage extends React.Component {
                     </div>
 
                     <div class="row">
+
+                        
                         <div class="col-1-of-4">
                         <div class="card">
                             <div class="card__side card__side--front">
