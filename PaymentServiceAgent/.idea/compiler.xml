@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="API-Gateway" />
+        <module name="Bank-Card-Service" />
+        <module name="Auth-Service" />
+        <module name="QR-Code-Service" />
+        <module name="Eureka-Server" />
+        <module name="PayPal-Service" />
+        <module name="BitCoin-Service" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="API-Gateway" target="1.8" />
+      <module name="Auth-Service" target="11" />
+      <module name="Bank-Card-Service" target="1.8" />
+      <module name="BitCoin-Service" target="1.8" />
+      <module name="Eureka-Server" target="1.8" />
+      <module name="PayPal-Service" target="1.8" />
+      <module name="QR-Code-Service" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="API-Gateway" options="-parameters" />
+      <module name="Auth-Service" options="-parameters" />
+      <module name="Bank-Card-Service" options="-parameters" />
+      <module name="BitCoin-Service" options="-parameters" />
+      <module name="Eureka-Server" options="-parameters" />
+      <module name="PayPal-Service" options="-parameters" />
+      <module name="QR-Code-Service" options="-parameters" />
+    </option>
+  </component>
+</project>
