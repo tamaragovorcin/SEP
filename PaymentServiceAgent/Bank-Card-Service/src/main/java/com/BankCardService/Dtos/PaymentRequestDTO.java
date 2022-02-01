@@ -11,14 +11,15 @@ import java.util.Date;
 @Setter
 public class PaymentRequestDTO {
 
-	private String merchantId;
-	private String merchantPassword;
+	//private String merchantId;
+	//private String merchantPassword;
 	private Double amount;
-	private Integer merchantOrderId;
-	private Date merchantTimestamp;
-	private String successUrl;
-	private String failedUrl;
-	private String errorUrl;	
-	private String callbackUrl;
+	private Integer webshopId;
+	//private Integer merchantOrderId;
+	//private Date merchantTimestamp;
+	//private String successUrl;
+	//private String failedUrl;
+	//private String errorUrl;
+	//private String callbackUrl;
 	
 }

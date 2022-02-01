@@ -11,24 +11,19 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/payment")
+@RequestMapping("/api/bankcard")
 public class PaymentController {
 
 	@Autowired
 	private PaymentService paymentService;
 
-	@RequestMapping(value = "/create", method = RequestMethod.POST)
+
+	@PostMapping("/create")
 	private ResponseEntity<?> createPayment(@RequestBody PaymentRequestDTO paymentRequestDTO) {
 		System.out.println("Create payment");
 
 		PaymentResponseDTO paymentResponseDTO = paymentService.createPayment(paymentRequestDTO);
 		return new ResponseEntity<>(paymentResponseDTO, HttpStatus.OK);
-	}
-
-	@RequestMapping(value = "/confirm/{paymentRequestId}", method = RequestMethod.POST)
-	private String confirmPayment(@RequestBody AccountDTO clientDTO, @PathVariable Integer paymentRequestId) {
-		System.out.println("Payment request id: " + paymentRequestId);
-		return paymentService.confirmPayment(clientDTO, paymentRequestId);
 	}
 
 }
