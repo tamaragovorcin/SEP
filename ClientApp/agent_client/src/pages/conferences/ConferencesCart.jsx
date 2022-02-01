@@ -107,32 +107,6 @@ class ConferencesCart extends Component {
 				console.log(err);
 			});
 
-			Axios.get(BASE_URL_AGENT + "/api/conference/paymentMethods", { headers: { Authorization: getAuthHeader() } })
-			.then((res) => {
-				res.data.methods.forEach(element => {
-					if(element === "Card"){
-
-						this.setState({ isBankCardAllowed: true });
-					}
-					if(element === "Paypal"){
-
-						this.setState({ isPaypalAllowed: true });
-					}
-					if(element === "Bitcoin"){
-
-						this.setState({ isBitcoinAllowed: true });
-					}
-					if(element === "Qr"){
-
-						this.setState({ isQRAllowed: true });
-					}
-				});
-					
-				console.log(res.data);
-			})
-			.catch((err) => {
-				console.log(err);
-			});
 
 	}
 
@@ -199,66 +173,29 @@ class ConferencesCart extends Component {
 		return price
 	}
 
-
-	handlePayPalPayment = () => {
+	startPayment = () => {
 		let totalPrice = this.getPrice(this.state.products)
-		localStorage.setItem("orderProducts", JSON.stringify(this.state.products));
-		localStorage.setItem("webshopType", JSON.stringify("conference"));
+		document.cookie = "totalPrice=" + totalPrice + ";path=/";
+		document.cookie = "webShopId=" + 1 + ";path=/";
+		document.cookie = "webshopType=" + "conference" + ";path=/";
+		const purchaseDTO = {
+			address : null,
+			items : this.state.products,
+		}
 
-		Axios.get(BASE_URL_AGENT +"/api/conference/payment/paypal")
-			.then( (res) => {
-				const data = res.data
-				const checkoutDTO = {
-					price : totalPrice,
-					currency : "USD",
-					method : "PAYPAL",
-					intent : "SALE",
-					description : "description",
-					clientId :data.clientId,
-					clientSecret: data.clientSecret
-				}
-				localStorage.setItem("totalAmount", JSON.stringify(totalPrice));
-				localStorage.setItem("currency", JSON.stringify("USD"));
-				Axios.post(BASE_URL_PAYPAL +"/api/paypal/pay",checkoutDTO)
-					.then( (res) => {
-						const data = res.data
-						window.location.href = data
-						}
-					)
-					.catch(err => console.log(err));
-				}
-			)
-			.catch(err => console.log(err));
-		
-	}
-	handleBitcoinPayment = () => {
-		let totalPrice = this.getPrice(this.state.products)
-		localStorage.setItem("orderProducts", JSON.stringify(this.state.products));
-		localStorage.setItem("webshopType", JSON.stringify("conference"));
-		Axios.get(BASE_URL_AGENT +"/api/conference/payment/bitcoin")
-			.then( (res) => {
-				const token = res.data
-				const checkoutDTO = {
-					amount : totalPrice,
-					merchant_id : "Id",
-					merchant_token: token
-				}
-		
-				Axios.post(BASE_URL_BITCOIN +"/api/bitcoin/pay",checkoutDTO)
-					.then( (res) => {
-						const data = res.data
-						var paymentUrl = data.split(', ')[0];
-						window.location.href = paymentUrl;
-						        	
-						}
-					)
-					.catch(err => console.log(err));
-				}
-			)
-			.catch(err => console.log(err));
-		
-	}
+		Axios.post(BASE_URL_AGENT + "/api/conference/addOrder", purchaseDTO, {  headers: { Authorization: getAuthHeader() } })
+		.then((res) => {
+			let paymentId = res.data;
+			document.cookie = "paymentId=" + paymentId + ";path=/";
 
+			window.location.href = 'http://localhost:3000/'
+		})
+		.catch((err) => {
+			console.log(err);
+		});
+
+						
+	}
 	render() {
 		if (this.state.redirect) return <Redirect push to={this.state.redirectUrl} />;
 
@@ -367,51 +304,20 @@ class ConferencesCart extends Component {
 					</table>
 
 					<div className="control-group">
-						<div className="form-group controls mb-0 pb-2" style={{ color: "darkgrey", fontWeight:"bold", marginLeft:"30%", marginTop:"10%" }}>
-							<label>Continue to pay and choose a payment method:</label>
-						</div>
-						<div class="container">
-                <div class="row">
-                  {this.state.isPaypalAllowed === true && 
-                    <div class="col">
-                       
-                        <button type="button" class="btn  btn-sm" data-toggle="button" aria-pressed="false" autocomplete="off" 
-							onClick={this.handlePayPalPayment}>
-							<img src={paypal} className="App-logo" alt="logo" />
+
+					<div className="form-group controls mb-0 pb-2" style={{ color: "#6c757d", opacity: 1 }}>
+						<button
+							style={{
+								background: "#1977cc",
+								width: "50%",
+							}} 
+							type="button" class="btn  btn-sm" 
+							className="btn btn-primary btn-xl"
+							onClick={()=> this.startPayment()}> 
+							Choose payment method
 						</button>
-
-                    </div>
-                  }
-                  {this.state.isBankCardAllowed === true && 
-                    <div class="col">
-                        <button type="button" class="btn  btn-sm" data-toggle="button" aria-pressed="false" autocomplete="off"> 
-							<img src={bank_cards} className="App-logo" alt="logo" />
-						</button>
-                    </div>
-                  }
-                  {this.state.isQRAllowed === true && 
-                    <div class="col">
-                       
-                        <button type="button" class="btn  btn-sm" data-toggle="button" aria-pressed="false" autocomplete="off">
-							<img src={qr} className="App-logo" alt="logo" />	
-						</button>
-
-                    </div>
-                  }
-                  {this.state.isBitcoinAllowed === true && 
-                    <div class="col">
-                       
-                          <button type="button" class="btn  btn-sm" data-toggle="button" aria-pressed="false" autocomplete="off"
-						    onClick={this.handleBitcoinPayment}>
-							 <img src={bitcoin} className="App-logo" alt="logo" />
-						  </button>
-
-                    </div>
-                  }
-              </div>
-            </div>
-
-					</div>
+                 	</div>
+				 </div>
 
 
 					

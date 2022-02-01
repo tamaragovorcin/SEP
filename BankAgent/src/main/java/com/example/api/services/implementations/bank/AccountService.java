@@ -12,6 +12,7 @@ import org.springframework.stereotype.Service;
 import java.time.LocalDate;
 import java.time.YearMonth;
 import java.util.List;
+import java.util.Optional;
 import java.util.Random;
 import java.util.concurrent.ThreadLocalRandom;
 
@@ -25,6 +26,10 @@ public class AccountService implements IAccountService {
     @Override
     public Account findById(Integer id) {
         return accountRepository.getOne(id);
+    }
+
+    public Optional<Account> getClient(String panNumber) {
+        return accountRepository.findByPanNumber(panNumber);
     }
 
     @Override
@@ -70,6 +75,11 @@ public class AccountService implements IAccountService {
     }
 
     @Override
+    public Account saveNoDTO(Account account) {
+        return accountRepository.save(account);
+    }
+
+    @Override
     public Account update(Account account) {
         return null;
     }
@@ -95,5 +105,14 @@ public class AccountService implements IAccountService {
             }
         }
         return null;
+    }
+
+    public Account getClientByMerchantId(String merchantId){
+        Optional<Account> client = accountRepository.findByMerchantId(merchantId);
+        if(!client.isPresent()) {
+            // TODO: ako ne postoji transakcija nije validna idi na faild url
+           return null;
+        }
+        return client.get();
     }
 }

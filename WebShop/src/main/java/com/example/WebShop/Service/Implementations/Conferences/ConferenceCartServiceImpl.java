@@ -1,11 +1,13 @@
 package com.example.WebShop.Service.Implementations.Conferences;
 
 import com.example.WebShop.DTOs.Conferences.ConferenceCartFrontDTO;
+import com.example.WebShop.DTOs.Conferences.ConferencePurchaseFrontDTO;
 import com.example.WebShop.DTOs.Conferences.ConferencesCartDTO;
 import com.example.WebShop.DTOs.NewOrderDTO;
 import com.example.WebShop.Model.Cart;
 import com.example.WebShop.Model.Conferences.Accommodation;
 import com.example.WebShop.Model.Conferences.ConferencesCart;
+import com.example.WebShop.Model.Conferences.ConferencesPurchase;
 import com.example.WebShop.Model.Pictures;
 import com.example.WebShop.Model.User;
 import com.example.WebShop.Repository.Conferences.ConferenceCartRepository;
@@ -144,4 +146,5 @@ public class ConferenceCartServiceImpl implements IConferenceCartService {
             return null;
         }
     }
+
 }
