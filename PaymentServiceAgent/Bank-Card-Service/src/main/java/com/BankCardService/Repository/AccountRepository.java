@@ -1,6 +1,5 @@
-package com.example.api.repositories.bank;
+package com.BankCardService.Repository;
 
-import com.example.api.entities.bank.Account;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

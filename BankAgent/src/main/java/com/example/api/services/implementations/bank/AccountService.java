@@ -29,7 +29,7 @@ public class AccountService implements IAccountService {
     }
 
     public Optional<Account> getClient(String panNumber) {
-        return accountRepository.findByPanNumber(panNumber);
+        return accountRepository.findByPAN(panNumber);
     }
 
     @Override

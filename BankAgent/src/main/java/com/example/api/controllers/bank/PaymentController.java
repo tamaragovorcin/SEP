@@ -8,6 +8,7 @@ import com.example.api.services.implementations.bank.PaymentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -17,18 +18,15 @@ public class PaymentController {
 	@Autowired
 	private PaymentService paymentService;
 
-	@RequestMapping(value = "/create", method = RequestMethod.POST)
-	private ResponseEntity<?> createPayment(@RequestBody PaymentRequestDTO paymentRequestDTO) {
-		System.out.println("Create payment");
-
-		PaymentRequest paymentResponseDTO = paymentService.createPayment(paymentRequestDTO);
-		return new ResponseEntity<>(paymentResponseDTO, HttpStatus.OK);
+	@PostMapping("/confirm")
+	private PaymentResponseDTO confirm(@RequestBody PaymentRequestDTO clientDTO) {
+		System.out.println("Payment request uslaaaaaaaaaaaa " );
+		return paymentService.getPaymentResponse(clientDTO);
 	}
 
-	@RequestMapping(value = "/confirm/{paymentRequestId}", method = RequestMethod.POST)
+	@PostMapping("/confirm/{paymentRequestId}")
 	private String confirmPayment(@RequestBody AccountDTO clientDTO, @PathVariable Integer paymentRequestId) {
 		System.out.println("Payment request id: " + paymentRequestId);
 		return paymentService.confirmPayment(clientDTO, paymentRequestId);
 	}
-
 }
