@@ -57,7 +57,11 @@ public class Account {
     @OneToOne(mappedBy = "account")
     private Merchant merchant;
 
+    @Column
+    private Double availableFunds;
 
+    @Column
+    private Double reservedFunds;
 
 
 }
