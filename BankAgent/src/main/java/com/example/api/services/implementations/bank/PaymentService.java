@@ -17,17 +17,16 @@ import java.util.Optional;
 
 @Service
 public class PaymentService implements IPaymentService {
-	
 	@Autowired
 	private PaymentRepository paymentRepository;
-	
+
 	@Autowired
 	private AccountService clientService;
 
 
 	@Autowired
 	private MerchantService merchantService;
-	
+
 	@Autowired
 	private RestTemplate restTemplate;
 
@@ -37,7 +36,8 @@ public class PaymentService implements IPaymentService {
 
 	//@Value("${bankId}")
     //private String bankId;
-	
+
+
 	private String pccUrl = "http://localhost:6006/pcc";  // Payment Card Center
 
 	@Override
@@ -58,8 +58,8 @@ public class PaymentService implements IPaymentService {
 		Merchant merchant = merchantService.findById(Integer.parseInt(id.getMerchantId()));
 		if(merchant != null){
 			if(merchant.getMerchantPassword().equals(id.getMerchantPassword())){
-				paymentResponseDTO.setPaymentId();
-				paymentResponseDTO.setPaymentUrl();
+				paymentResponseDTO.setPaymentId("");
+				paymentResponseDTO.setPaymentUrl("");
 
 				return paymentResponseDTO;
 			}
@@ -74,33 +74,33 @@ public class PaymentService implements IPaymentService {
 		}
 	}
 
-
 	@Override
 	public String confirmPayment(AccountDTO clientDTO, Integer paymentRequestId) {
 		// Proveravamo da li je to klijent ove banke
 		//System.err.println("bankId " + bankId);
 		System.err.println("skraceni pan: " + getBankIdFromPan(clientDTO.getPAN()));
-		
+
 		Transaction transaction = new Transaction();
 		PaymentRequest paymentRequest = getPaymentRequest(paymentRequestId);
-		
+
 		transaction.setAmount(paymentRequest.getAmount());
 		transaction.setMerchantId(paymentRequest.getMerchantId());
 		transaction.setMerchantOrderId(paymentRequest.getMerchantOrderId());
 		transaction.setMerchantTimestamp(paymentRequest.getMerchantTimestamp());
-		
+
+
 		if(getBankIdFromPan(clientDTO.getPAN()).contentEquals("bankId")) {
-			
+
 			// To je ova banka
 			System.out.println("Iz iste su banke");
-			
+
 			Optional<Account> clientOpt = clientService.getClient(clientDTO.getPAN());
 			if(!clientOpt.isPresent()) {
 				transaction.setStatus(TransactionStatus.FAILED);
 				failPayment(paymentRequest);
 				return paymentRequest.getFailedUrl();
 			}
-			
+
 			Account client = clientOpt.get();
 			transaction.setPanNumber(client.getPAN());
 			String tempDate = clientDTO.getMm() + "/" + clientDTO.getYy();
@@ -133,16 +133,16 @@ public class PaymentService implements IPaymentService {
 			merchant.setAvailableFunds(merchant.getAvailableFunds() + paymentRequest.getAmount());
 			clientService.saveNoDTO(merchant);
 			transaction.setStatus(TransactionStatus.SUCCESSFUL);
-			transactionService.save(transaction);		
-			
+			transactionService.save(transaction);
+
 			CompletePaymentResponseDTO completePaymentResponseDTO = new CompletePaymentResponseDTO();
 			completePaymentResponseDTO.setOrder_id(paymentRequest.getMerchantOrderId());
 			completePaymentResponseDTO.setStatus("PAID");
-			
+
 			ResponseEntity<String> responseEntity = restTemplate.exchange(paymentRequest.getCallbackUrl() + "/complete", HttpMethod.POST,
 					new HttpEntity<CompletePaymentResponseDTO>(completePaymentResponseDTO), String.class);
 			System.out.println(responseEntity.getBody());
-			
+
 			return paymentRequest.getSuccessUrl();
 		}
 		else {
@@ -164,11 +164,11 @@ public class PaymentService implements IPaymentService {
 			System.err.println("posle pccRequestDTO");
 
 			HttpHeaders headers = new HttpHeaders();
-		    headers.setContentType(MediaType.APPLICATION_JSON);
-		    HttpEntity<PccRequestDTO> request = new HttpEntity<PccRequestDTO>(pccRequestDTO, headers);
+			headers.setContentType(MediaType.APPLICATION_JSON);
+			HttpEntity<PccRequestDTO> request = new HttpEntity<PccRequestDTO>(pccRequestDTO, headers);
 			System.err.println("posle request");
 
-		    String merchantId = paymentRequest.getMerchantId();
+			String merchantId = paymentRequest.getMerchantId();
 			Account merchant = clientService.getClientByMerchantId(merchantId);
 			if (!merchant.getMerchant().getMerchantPassword().equals(paymentRequest.getMerchantPassword())){
 				System.err.println("nije dobar merchant");
@@ -176,24 +176,24 @@ public class PaymentService implements IPaymentService {
 				failPayment(paymentRequest);
 				return paymentRequest.getErrorUrl();
 			} // Ako ne potoji prodavac nece se ni otici do kupca
-		    
-			
-		    // Ovde dobijamo podatke o uspesnosti transakcije
-		    AcquirerResponseDTO response = restTemplate.postForObject(pccUrl + "/payRedirect", request, AcquirerResponseDTO.class);
-		  
+
+
+			// Ovde dobijamo podatke o uspesnosti transakcije
+			AcquirerResponseDTO response = restTemplate.postForObject(pccUrl + "/payRedirect", request, AcquirerResponseDTO.class);
+
 			System.err.println("posle response " + response);
 
-		    if(response.getIsAuthentificated() && response.getIsTransactionAutorized()) { 
+			if(response.getIsAuthentificated() && response.getIsTransactionAutorized()) {
 				System.err.println(" usao u if ");
 
-		    	merchant.setAvailableFunds(merchant.getAvailableFunds() + paymentRequest.getAmount());
+				merchant.setAvailableFunds(merchant.getAvailableFunds() + paymentRequest.getAmount());
 				clientService.saveNoDTO(merchant);
 				transaction.setStatus(TransactionStatus.SUCCESSFUL);
 				transactionService.save(transaction);
 				System.err.println("posles skidanja merchantu para");
 
 				// Obavetavamo KP o uspesnosti transakcije
-			    CompletePaymentResponseDTO completePaymentResponseDTO = new CompletePaymentResponseDTO();
+				CompletePaymentResponseDTO completePaymentResponseDTO = new CompletePaymentResponseDTO();
 				completePaymentResponseDTO.setOrder_id(paymentRequest.getMerchantOrderId());
 				completePaymentResponseDTO.setStatus("PAID");
 				System.err.println("obavestavanja kpa");
@@ -201,31 +201,31 @@ public class PaymentService implements IPaymentService {
 				ResponseEntity<String> responseEntity = restTemplate.exchange(paymentRequest.getCallbackUrl() + "/complete", HttpMethod.POST,
 						new HttpEntity<CompletePaymentResponseDTO>(completePaymentResponseDTO), String.class);
 				System.out.println(responseEntity.getBody());
-			     
+
 				return paymentRequest.getSuccessUrl();
-		    }
-		    
-		    // TODO: failed i error url
-		    
-		    if(!response.getIsAuthentificated()) {    	
-		    	System.err.println("error");
+			}
+
+			// TODO: failed i error url
+
+			if(!response.getIsAuthentificated()) {
+				System.err.println("error");
 				return paymentRequest.getErrorUrl();
 
-		    }
-		    if(!response.getIsTransactionAutorized()) {   
-		    	System.err.println("fail");
+			}
+			if(!response.getIsTransactionAutorized()) {
+				System.err.println("fail");
 				return paymentRequest.getFailedUrl();
-		    }
-		   
-		    return paymentRequest.getErrorUrl();
+			}
+
+			return paymentRequest.getErrorUrl();
 		}
-		
-		
-		
+
+
+
 	}
-	
+
 	private String getBankIdFromPan(String panNumber) {
-	
+
 		String withoutDashes = panNumber.replace("-", "");
 		String number = withoutDashes.substring(1, 7);
 		return number;

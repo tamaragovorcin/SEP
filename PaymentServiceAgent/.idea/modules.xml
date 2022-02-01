@@ -2,7 +2,14 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/API-Gateway/API-Gateway.iml" filepath="$PROJECT_DIR$/API-Gateway/API-Gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Auth-Service/Auth-Service.iml" filepath="$PROJECT_DIR$/Auth-Service/Auth-Service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Bank-Card-Service/Bank-Card-Service.iml" filepath="$PROJECT_DIR$/Bank-Card-Service/Bank-Card-Service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BitCoin-Service/BitCoin-Service.iml" filepath="$PROJECT_DIR$/BitCoin-Service/BitCoin-Service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Eureka-Server/Eureka-Server.iml" filepath="$PROJECT_DIR$/Eureka-Server/Eureka-Server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PaylPal-Service/PayPal-Service.iml" filepath="$PROJECT_DIR$/PaylPal-Service/PayPal-Service.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/PaymentServiceAgent.iml" filepath="$PROJECT_DIR$/.idea/PaymentServiceAgent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/QR-Code-Service/QR-Code-Service.iml" filepath="$PROJECT_DIR$/QR-Code-Service/QR-Code-Service.iml" />
     </modules>
   </component>
 </project>

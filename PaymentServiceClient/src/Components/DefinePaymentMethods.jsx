@@ -6,6 +6,7 @@ import card from '../Static/img/bank_cards.jpg';
 import bitcoin from '../Static/img/bitcoin.png';
 import paypal from '../Static/img/paypall.png';
 import '../App.css';
+import MerchantModal from "./MerchantModal";
 
 class DefinePaymentMethods extends Component {
 	state = {
@@ -14,14 +15,28 @@ class DefinePaymentMethods extends Component {
         card : false,
         paypal : false,
         bitcoin: false,
-        qr : false
+        qr : false,
+        merchantFormShow : false,
+        banks : [],
+        chosenMethod : ""
 	};
 
 
 	componentDidMount() {
        this.handleGetMethods();
+       this.handleGetBanks();
 	}
 
+    handleGetBanks(){
+        Axios.get( "http://localhost:8088/api/bank/all")
+        .then((res) => {
+            console.log(res.data)
+            this.setState({ banks: res.data});
+        })
+        .catch((err) => {
+            console.log(err);
+        });
+    }
     handleGetMethods(){
         let webshopId = JSON.parse(localStorage.getItem("webShopId"));
         Axios.get( "http://localhost:9090/auth-service/api/webshop/allMethods/"+webshopId)
@@ -48,7 +63,10 @@ class DefinePaymentMethods extends Component {
             });
     } 
     handleEnableMethod(method) {
-        
+        if(method == "card" || method == "bitcoin"){
+            this.setState({merchantFormShow : true})            
+            this.setState({chosenMethod : method})
+        }else{
         let webshopId = JSON.parse(localStorage.getItem("webShopId"));
         let dto = { webShopId: webshopId, methodName: method };
 
@@ -60,8 +78,12 @@ class DefinePaymentMethods extends Component {
                alert("Error with enabling payment method " + method); 
 			   console.log(err);
             });
+        }
     } 
-
+    handleCloseMerchantModal = ()=>{
+        this.setState({merchantFormShow : false})
+    }
+ 
 	render() {
 		return (
 			<React.Fragment>
@@ -133,6 +155,15 @@ class DefinePaymentMethods extends Component {
 						</div>
                       
 					</div>
+                    <MerchantModal
+					buttonName="Add"
+					header="Define merchant information"
+					show={this.state.merchantFormShow}
+					onCloseModal={this.handleCloseMerchantModal}
+                    banks = {this.state.banks}
+                    method = {this.state.chosenMethod}
+                    handleSave = {this.handleSave}
+				/>
 				</div>
 			
 			</React.Fragment>

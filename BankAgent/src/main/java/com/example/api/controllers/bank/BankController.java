@@ -1,10 +1,7 @@
 package com.example.api.controllers.bank;
 
 
-import com.example.api.DTOs.AccountDTO;
-import com.example.api.DTOs.BankDTO;
-import com.example.api.DTOs.CardInfoDTO;
-import com.example.api.DTOs.UserDTO;
+import com.example.api.DTOs.*;
 import com.example.api.entities.bank.Account;
 import com.example.api.entities.bank.Bank;
 import com.example.api.entities.bank.Merchant;
@@ -68,6 +65,19 @@ public class BankController {
         try {
             Merchant merchant= merchantService.save(dto);
             return new ResponseEntity<Merchant>(merchant, HttpStatus.CREATED);
+        } catch (ResourceConflictException e) {
+            return new ResponseEntity<>(HttpStatus.CONFLICT);
+        }
+        catch (Exception e) {
+            return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
+    @PostMapping("/merchantSearch")
+    public ResponseEntity<BooleanDTO> merchantSearch(@RequestBody MerchantInfoDTO dto) {
+        try {
+            BooleanDTO booleanDTO = new BooleanDTO();
+            booleanDTO.setValid(merchantService.merchantSearch(dto));
+            return new ResponseEntity<BooleanDTO>(booleanDTO, HttpStatus.CREATED);
         } catch (ResourceConflictException e) {
             return new ResponseEntity<>(HttpStatus.CONFLICT);
         }

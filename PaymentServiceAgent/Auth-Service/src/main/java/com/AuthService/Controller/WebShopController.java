@@ -1,5 +1,6 @@
 package com.AuthService.Controller;
 
+import com.AuthService.DTO.BankPaymentMethodDTO;
 import com.AuthService.DTO.PaymentMethodDTO;
 import com.AuthService.DTO.WebShopDTO;
 import com.AuthService.Model.WebShop;
@@ -9,11 +10,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.ArrayList;
-import java.util.List;
 
 @RestController
 @RequestMapping("/api/webshop")
@@ -73,6 +70,19 @@ public class WebShopController {
         return new ResponseEntity<>("Item is successfully added!", HttpStatus.CREATED);
     }
 
+    @PostMapping("/enableBankPaymentMethod")
+    public ResponseEntity<String> enableBankPaymentMethod(@RequestBody BankPaymentMethodDTO paymentMethodDTO) {
+
+        try {
+            webShopService.enableBankPaymentMethod(paymentMethodDTO);
+            logger.info("Payment method " + paymentMethodDTO.getMethodName() +" has been added to the webshop with id : " + paymentMethodDTO.getWebShopId());
+
+        }
+        catch (Exception e){
+            logger.error("Exception while adding payment methods. Error is: " + e);
+        }
+        return new ResponseEntity<>("Item is successfully added!", HttpStatus.CREATED);
+    }
     @PostMapping("/disablePaymentMethod")
     public ResponseEntity<String> disablePaymentMethod(@RequestBody PaymentMethodDTO paymentMethodDTO) {
 
