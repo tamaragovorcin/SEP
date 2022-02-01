@@ -1,6 +1,7 @@
 package com.example.api.services.implementations.bank;
 
 import com.example.api.DTOs.CardInfoDTO;
+import com.example.api.DTOs.MerchantInfoDTO;
 import com.example.api.entities.bank.Account;
 import com.example.api.entities.bank.Merchant;
 import com.example.api.repositories.bank.AccountRepository;
@@ -68,6 +69,15 @@ public class MerchantService implements IMerchantService {
     @Override
     public Merchant update(Merchant merchant) {
         return null;
+    }
+
+    public Boolean merchantSearch(MerchantInfoDTO dto) {
+        for(Merchant merchant : findAll()){
+            if(merchant.getMerchant_id().equals(dto.getMerchantID())&&merchant.getMerchantPassword().equals(dto.getMerchantPassword())&&merchant.getAccount().getBank().getId() == dto.getBank()){
+                return true;
+            }
+        }
+        return false;
     }
 
 

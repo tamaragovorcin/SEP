@@ -30,6 +30,16 @@ public class WebShop {
     @Column(name = "password")
     private String password;
 
+    @Column(name = "merchantID")
+    private String merchantID;
+
+    @Column(name = "merchantPassword")
+    private String merchantPassword;
+
+    @Column(name = "bank")
+    private Integer bank;
+
+
     @Column(name = "successUrl")
     private String successUrl;
 

@@ -1,5 +1,6 @@
 package com.AuthService.Service;
 
+import com.AuthService.DTO.BankPaymentMethodDTO;
 import com.AuthService.DTO.PaymentMethodDTO;
 import com.AuthService.DTO.WebShopDTO;
 import com.AuthService.Model.WebShop;
@@ -15,6 +16,7 @@ public class WebShopService {
     WebShopRepository webShopRepository;
 
     public WebShop save(WebShopDTO webShopDTO) {
+        System.out.println("POGODIOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO");
 
         WebShop webShop = new WebShop();
 
@@ -28,6 +30,7 @@ public class WebShopService {
         webShop.setEnabledPayPal(true);
         webShop.setEnabledQR(true);
         webShop.setWebShopId(Integer.parseInt(webShopDTO.getWebShopId()));
+
         return webShopRepository.save(webShop);
     }
 
@@ -61,6 +64,25 @@ public class WebShopService {
                 webShop.setEnabledQR(true);
                 break;
         }
+        webShopRepository.save(webShop);
+    }
+    public void enableBankPaymentMethod(BankPaymentMethodDTO paymentMethodDTO) {
+        WebShop webShop = webShopRepository.findByWebShopId(paymentMethodDTO.getWebShopId());
+        String methodName = paymentMethodDTO.getMethodName();
+        webShop.setBank(paymentMethodDTO.getBank());
+        webShop.setMerchantID(paymentMethodDTO.getMerchantID());
+        webShop.setMerchantPassword(paymentMethodDTO.getMerchantPassword());
+        switch (methodName) {
+            case "bitcoin":
+                webShop.setEnabledBitcoin(true);
+                break;
+            case "card":
+                webShop.setEnabledCard(true);
+                break;
+
+        }
+        System.out.println("**************************************");
+        System.out.println(webShop.getMerchantPassword());
         webShopRepository.save(webShop);
     }
 
