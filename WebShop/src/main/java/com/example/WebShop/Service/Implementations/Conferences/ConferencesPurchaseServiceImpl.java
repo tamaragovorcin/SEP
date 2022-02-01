@@ -1,8 +1,7 @@
 package com.example.WebShop.Service.Implementations.Conferences;
 
 import com.example.WebShop.DTOs.Conferences.*;
-import com.example.WebShop.DTOs.NewOrderDTO;
-import com.example.WebShop.DTOs.OrderDTO;
+import com.example.WebShop.DTOs.UpdatePurchaseStatusDTO;
 import com.example.WebShop.Model.*;
 import com.example.WebShop.Model.Conferences.ConferencesCart;
 import com.example.WebShop.Model.Conferences.ConferencesPurchase;
@@ -145,6 +144,61 @@ public class ConferencesPurchaseServiceImpl implements IConferencePurchaseServic
 
         }
         return ordersDTOS;
+    }
+
+    public ConferencesPurchase updatePurchase(UpdatePurchaseStatusDTO updatePurchaseStatusDTO) {
+        ConferencesPurchase orderUpdate = findById(Integer.parseInt(updatePurchaseStatusDTO.getPaymentId()));
+        orderUpdate.setStatus(updatePurchaseStatusDTO.getStatus());
+        return conferencePurchaseRepository.save(orderUpdate);
+    }
+
+    public ConferencePurchaseFrontDTO getPurchaseById(int parseInt) {
+        ConferencesPurchase order = findById(parseInt);
+        ConferencePurchaseFrontDTO orderDTO = new ConferencePurchaseFrontDTO();
+        BufferedImage img = null;
+
+        orderDTO.setOrderId(order.getId());
+        orderDTO.setDateOfReservation(order.getDate());
+        orderDTO.setStatus(order.getStatus());
+
+        List<ConferenceCartFrontDTO> newOrderDTOS = new ArrayList<>();
+        for (ConferencesCart cart : order.getConferencesCarts()) {
+            ConferenceCartFrontDTO orderDTO1 = new ConferenceCartFrontDTO();
+            orderDTO1.setPrice(cart.getTotalPrice());
+            orderDTO1.setConferenceId(cart.getConference().getId());
+            orderDTO1.setConferenceName(cart.getConference().getName());
+            if(orderDTO1.getAccommodation()!=null) {
+                orderDTO1.setAccommodation(cart.getAccommodation().getName());
+            }
+            if(orderDTO1.getTransportation()!=null) {
+                orderDTO1.setTransportation(cart.getTransportation().getCompanyName());
+            }
+            orderDTO1.setCartId(cart.getId());
+            orderDTO1.setQuantity(cart.getQuantity());
+            orderDTO1.setRegisteredUserId(cart.getBuyer().getId());
+            Set<String> list = new HashSet<String>();
+            for (Pictures pictures : cart.getConference().getPictures()) {
+                File destination = new File("src/main/resources/images/" + pictures.getName());
+                try {
+                    img = ImageIO.read(destination);
+                    ByteArrayOutputStream out = new ByteArrayOutputStream();
+                    ImageIO.write(img, "PNG", out);
+                    byte[] bytes = out.toByteArray();
+                    String base64bytes = Base64.getEncoder().encodeToString(bytes);
+                    String src = "data:image/png;base64," + base64bytes;
+                    list.add(src);
+
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+
+            }
+            orderDTO1.setPictures(list);
+            newOrderDTOS.add(orderDTO1);
+        }
+        orderDTO.setItems(newOrderDTOS);
+
+        return orderDTO;
     }
 }
 

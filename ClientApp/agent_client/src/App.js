@@ -17,12 +17,15 @@ import Conference from './pages/conferences/Conference'
 import ConferencesOrders from './pages/conferences/ConferencesOrders';
 import PaymentMethod from './pages/PaymentMethod'
 import Payment from './pages/payment'
-import PayPalSuccess from './components/payment/PayPalSuccess';
-import PayPalError from './components/payment/PayPalError';
-import PayPalParams from './components/payment/PayPalParams';
 import PaymentMethodConf from './pages/conferences/PaymentMethodConf';
-import BitcoinSuccess from './components/payment/BitcoinSuccess';
-import BitcoinError from './components/payment/BitcoinError';
+import ProductPaymentSuccess from './components/payment/ProductPaymentSuccess';
+import ProductPaymentFailure from './components/payment/ProductPaymentFailure';
+import ProductPaymentError from './components/payment/ProductPaymentError';
+
+
+import ConferencePaymentSuccess from './components/payment/ConferencePaymentSuccess';
+import ConferencePaymentFailure from './components/payment/ConferencePaymentFailure';
+import ConferencePaymentError from './components/payment/ConferencePaymentError';
 
 function App() {
   return (
@@ -51,13 +54,13 @@ function App() {
 				<Link exact to="/paymentMethod" path="/paymentMethod" component={PaymentMethod} />
 				<Link exact to="/payment" path="/payment" component={Payment} />
 
-				
-				<Link exact to="/payPalSuccess" path="/payPalSuccess" component={PayPalSuccess} />
-				<Link exact to="/payPalError" path="/payPalError" component={PayPalError} />
-				<Link exact to="/payPalParams" path="/payPalParams" component={PayPalParams} />
-				<Link exact to="/bitcoinSuccess" path="/bitcoinSuccess" component={BitcoinSuccess} />
-				<Link exact to="/bitcoinError" path="/bitcoinError" component={BitcoinError} />
+				<Link exact to="/productPaymentFailure" path="/productPaymentFailure" component={ProductPaymentFailure} />
+				<Link exact to="/productPaymentError" path="/productPaymentError" component={ProductPaymentError} />
+				<Link exact to="/productPaymentSuccess" path="/productPaymentSuccess" component={ProductPaymentSuccess} />
 
+				<Link exact to="/conferencePaymentSuccess" path="/conferencePaymentSuccess" component={ConferencePaymentSuccess} />
+				<Link exact to="/conferencePaymentFailure" path="/conferencePaymentFailure" component={ConferencePaymentFailure} />
+				<Link exact to="/conferencePaymentError" path="/conferencePaymentError" component={ConferencePaymentError} />
 			</Switch>
 	</Router>
   );
