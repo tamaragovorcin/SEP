@@ -1,11 +1,8 @@
 package com.example.WebShop.Controllers.Conferences;
 
 import com.example.WebShop.Controllers.PaymentMethodController;
+import com.example.WebShop.DTOs.*;
 import com.example.WebShop.DTOs.Conferences.*;
-import com.example.WebShop.DTOs.NewOrderDTO;
-import com.example.WebShop.DTOs.NewProductDTO;
-import com.example.WebShop.DTOs.OrderDTO;
-import com.example.WebShop.DTOs.PaymentMethodDTO;
 import com.example.WebShop.Model.Cart;
 import com.example.WebShop.Model.Conferences.*;
 import com.example.WebShop.Model.PaymentMethod;
@@ -173,12 +170,12 @@ public class ConferenceController
                 new ResponseEntity<>("Item is successfully deleted!", HttpStatus.CREATED);
     }
     @PostMapping("/addOrder")
-    public ResponseEntity<String> addOrder(@RequestBody ConferencePurchaseDTO dto) {
+    public ResponseEntity<Integer> addOrder(@RequestBody ConferencePurchaseDTO dto) {
 
         ConferencesPurchase conference = conferencesPurchaseService.save(dto);
 
         return conference == null ? new ResponseEntity<>(HttpStatus.NOT_FOUND)
-                : new ResponseEntity<>("Conference is successfully added!", HttpStatus.CREATED);
+                : new ResponseEntity<>(conference.getId(), HttpStatus.CREATED);
     }
     @GetMapping("/userPurchases")
     @PreAuthorize("hasRole('ROLE_USER')")
@@ -246,5 +243,27 @@ public class ConferenceController
             logger.error("Exception while overviewing payment methods. Error is: " + e);
         }
         return paymentMethodDTO == null ? new ResponseEntity<>(HttpStatus.NOT_FOUND) : ResponseEntity.ok(paymentMethodDTO);
+    }
+
+    @PostMapping("/update")
+    public ResponseEntity<Integer> updatePurchase(@RequestBody UpdatePurchaseStatusDTO updatePurchaseStatusDTO) {
+        logger.error("Updating conference purchase to status " + updatePurchaseStatusDTO.getStatus());
+
+        ConferencesPurchase purchase = conferencesPurchaseService.updatePurchase(updatePurchaseStatusDTO);
+
+        return purchase == null ?
+                new ResponseEntity<>(HttpStatus.NOT_FOUND) :
+                new ResponseEntity<>(purchase.getId(), HttpStatus.CREATED);
+    }
+
+    @GetMapping("/purchase/{id}")
+    public ResponseEntity<ConferencePurchaseFrontDTO> getPurchaseById(@PathVariable String id) {
+        logger.error("Getting conference purchase with id " + id);
+
+        ConferencePurchaseFrontDTO conferencePurchaseFrontDTO = conferencesPurchaseService.getPurchaseById(Integer.parseInt(id));
+
+        return conferencePurchaseFrontDTO == null ?
+                new ResponseEntity<>(HttpStatus.NOT_FOUND) :
+                new ResponseEntity<>(conferencePurchaseFrontDTO, HttpStatus.CREATED);
     }
 }

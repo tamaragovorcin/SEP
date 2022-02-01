@@ -32,8 +32,8 @@ public class PayPalController {
     public String payment(@RequestBody Order order) {
         try {
             Payment payment = payPalService.createPayment(order.getPrice(), order.getCurrency(), order.getMethod(),
-                    order.getIntent(), order.getDescription(), "http://localhost:3001/#/payPalError",
-                    "http://localhost:3001/#/payPalParams", order.getClientId(), order.getClientSecret());
+                    order.getIntent(), order.getDescription(), "http://localhost:3001/#/productPaymentFailure",
+                    "http://localhost:3000/#/payPalParams", order.getClientId(), order.getClientSecret());
             logger.info("Paypal payment object created.");
             for(Links link:payment.getLinks()) {
                 if(link.getRel().equals("approval_url")) {
@@ -46,7 +46,7 @@ public class PayPalController {
             logger.error("Exception with creating paypal payment object. Error is: " + e );
             e.printStackTrace();
         }
-        return "http://localhost:3001/#/payPalError";
+        return "http://localhost:3001/#/productPaymentError";
     }
 
     @PostMapping("/success")
@@ -56,7 +56,7 @@ public class PayPalController {
             if (payment.getState().equals("approved")) {
                 payPalService.savePayment(payment);
                 logger.info("Paypal payment has just been finished.");
-                payPalService.browse("http://localhost:3001/#/payPalSuccess");
+                payPalService.browse("http://localhost:3001/#/productPaymentSuccess");
                 return "success";
             }
         } catch (PayPalRESTException e) {

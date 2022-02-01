@@ -55,9 +55,9 @@ public class BitcoinService {
         mapa.put("title", merchantDTO.getMerchant_id());
         mapa.put("description", "desc");
         mapa.put("callback_url", "https://api-sandbox.coingate.com/account/orders");
-        mapa.put("success_url", "http://localhost:3001//#/bitcoinSuccess");
-        mapa.put("error_url", "http://localhost:3001//#/bitcoinError");
-        mapa.put("failed_url", "http://localhost:3001//#/bitcoinError");
+        mapa.put("success_url", "http://localhost:3001/#/productPaymentSuccess");
+        mapa.put("error_url", "http://localhost:3001/#/productPaymentError");
+        mapa.put("failed_url", "http://localhost:3001/#/productPaymentFailure");
 
         mapa.put("cancel_url", "http://localhost:3001//#/orders");
 
