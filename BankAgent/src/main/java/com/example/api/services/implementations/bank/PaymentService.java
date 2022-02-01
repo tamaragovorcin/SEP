@@ -1,10 +1,8 @@
 package com.example.api.services.implementations.bank;
 
 import com.example.api.DTOs.*;
-import com.example.api.entities.bank.Account;
-import com.example.api.entities.bank.PaymentRequest;
-import com.example.api.entities.bank.Transaction;
-import com.example.api.entities.bank.TransactionStatus;
+import com.example.api.entities.bank.*;
+import com.example.api.repositories.bank.MerchantRepository;
 import com.example.api.repositories.bank.PaymentRepository;
 import com.example.api.services.interfaces.bank.IPaymentService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,16 +12,20 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
 import java.util.Date;
+import java.util.List;
 import java.util.Optional;
 
 @Service
 public class PaymentService implements IPaymentService {
-
 	@Autowired
 	private PaymentRepository paymentRepository;
 
 	@Autowired
 	private AccountService clientService;
+
+
+	@Autowired
+	private MerchantService merchantService;
 
 	@Autowired
 	private RestTemplate restTemplate;
@@ -33,7 +35,8 @@ public class PaymentService implements IPaymentService {
 	private TransactionService transactionService;
 
 	//@Value("${bankId}")
-	//private String bankId;
+    //private String bankId;
+
 
 	private String pccUrl = "http://localhost:6006/pcc";  // Payment Card Center
 
@@ -48,20 +51,27 @@ public class PaymentService implements IPaymentService {
 	}
 
 	@Override
-	public PaymentRequest createPayment(PaymentRequestDTO paymentRequestDTO) {
-		PaymentRequest paymentRequest = new PaymentRequest();
-		paymentRequest.setAmount(paymentRequestDTO.getAmount());
-		paymentRequest.setMerchantId(paymentRequestDTO.getMerchantId());
-		paymentRequest.setMerchantPassword(paymentRequestDTO.getMerchantPassword());
-		paymentRequest.setMerchantOrderId(paymentRequestDTO.getMerchantOrderId());
-		paymentRequest.setMerchantTimestamp(paymentRequestDTO.getMerchantTimestamp());
-		paymentRequest.setSuccessUrl(paymentRequestDTO.getSuccessUrl());
-		paymentRequest.setFailedUrl(paymentRequestDTO.getFailedUrl());
-		paymentRequest.setErrorUrl(paymentRequestDTO.getErrorUrl());
-		paymentRequest.setCallbackUrl(paymentRequestDTO.getCallbackUrl());
+	public PaymentResponseDTO getPaymentResponse(PaymentRequestDTO id) {
 
-		return paymentRepository.save(paymentRequest);
+		PaymentResponseDTO paymentResponseDTO = new PaymentResponseDTO();
 
+		Merchant merchant = merchantService.findById(Integer.parseInt(id.getMerchantId()));
+		if(merchant != null){
+			if(merchant.getMerchantPassword().equals(id.getMerchantPassword())){
+				paymentResponseDTO.setPaymentId("");
+				paymentResponseDTO.setPaymentUrl("");
+
+				return paymentResponseDTO;
+			}
+			else {
+
+				return null;
+			}
+		}
+		else {
+
+			return null;
+		}
 	}
 
 	@Override
@@ -77,6 +87,7 @@ public class PaymentService implements IPaymentService {
 		transaction.setMerchantId(paymentRequest.getMerchantId());
 		transaction.setMerchantOrderId(paymentRequest.getMerchantOrderId());
 		transaction.setMerchantTimestamp(paymentRequest.getMerchantTimestamp());
+
 
 		if(getBankIdFromPan(clientDTO.getPAN()).contentEquals("bankId")) {
 

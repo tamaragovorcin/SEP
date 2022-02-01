@@ -1,4 +1,4 @@
-package com.example.api.DTOs;
+package com.BankCardService.Dtos;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -20,6 +20,5 @@ public class PaymentRequestDTO {
 	private String failedUrl;
 	private String errorUrl;	
 	private String callbackUrl;
-
 	
 }
