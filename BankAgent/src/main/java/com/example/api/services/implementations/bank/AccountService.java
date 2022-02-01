@@ -29,7 +29,7 @@ public class AccountService implements IAccountService {
     }
 
     public Optional<Account> getClient(String panNumber) {
-        return accountRepository.findByPanNumber(panNumber);
+        return accountRepository.findByPAN(panNumber);
     }
 
     @Override
@@ -92,7 +92,7 @@ public class AccountService implements IAccountService {
             if(account.getPAN().equals(dto.getPan())
                     && account.getCardHolderName().equals(dto.getCardHolderName())
                     && account.getCardSecurityCode().equals(dto.getCardSecurityCode())){
-                    System.out.println("JESTEEKAIKAKA");
+                System.out.println("JESTEEKAIKAKA");
                 return  true;
             }
         }
@@ -111,7 +111,7 @@ public class AccountService implements IAccountService {
         Optional<Account> client = accountRepository.findByMerchantId(merchantId);
         if(!client.isPresent()) {
             // TODO: ako ne postoji transakcija nije validna idi na faild url
-           return null;
+            return null;
         }
         return client.get();
     }
