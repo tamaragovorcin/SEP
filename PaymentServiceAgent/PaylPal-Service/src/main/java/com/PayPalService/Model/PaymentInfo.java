@@ -12,4 +12,5 @@ import lombok.Setter;
 public class PaymentInfo {
     private String paymentId;
     private String payerId;
+    private String webShopId;
 }

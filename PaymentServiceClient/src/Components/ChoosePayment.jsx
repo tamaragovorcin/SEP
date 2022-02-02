@@ -69,6 +69,7 @@ const ChoosePayment = () =>{
    const handleBitcoinPayment =()=> {
       let webshopType = getCookie("webshopType");
       let totalPrice = getCookie("totalPrice");
+      let webShopId = getCookie("webShopId");
 
       Axios.get("http://localhost:8085/api/"+webshopType+"/payment/bitcoin")
         .then((res) => {
@@ -76,10 +77,11 @@ const ChoosePayment = () =>{
           const checkoutDTO = {
             amount: totalPrice,
             merchant_id: "Id",
-            merchant_token: token
+            merchant_token: token,
+            webShopId : webShopId
           }
-  
-          Axios.post("http://localhost:9090/bitcoion-service/api/bitcoin/pay", checkoutDTO)
+          
+          Axios.post("http://localhost:9090/bitcoin-service/api/bitcoin/pay", checkoutDTO)
             .then((res) => {
               const data = res.data
               var paymentUrl = data.split(', ')[0];
@@ -96,6 +98,7 @@ const ChoosePayment = () =>{
     const handlePayPalPayment = ()=> {
       let webshopType = getCookie("webshopType");
       let totalPrice = getCookie("totalPrice");
+      let webShopId = getCookie("webShopId");
 
       Axios.get("http://localhost:8085/api/"+webshopType+"/payment/paypal")
 			.then((res) => {
@@ -107,7 +110,8 @@ const ChoosePayment = () =>{
 					intent: "SALE",
 					description: "description",
 					clientId: data.clientId,
-					clientSecret: data.clientSecret
+					clientSecret: data.clientSecret,
+          webShopId : webShopId
 				}
 				Axios.post("http://localhost:9090/paypal-service/api/paypal/pay", checkoutDTO)
 					.then((res) => {
