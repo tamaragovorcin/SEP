@@ -40,13 +40,4 @@ public class Merchant {
     @JoinColumn(name = "account_id", referencedColumnName = "id")
     private Account account;
 
-    @Override
-    public String toString() {
-        return "Merchant{" +
-                "id=" + id +
-                ", merchant_id='" + merchantId + '\'' +
-                ", merchantPassword='" + merchantPassword + '\'' +
-                ", account=" + account +
-                '}';
-    }
 }

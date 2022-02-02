@@ -6,6 +6,7 @@ import com.example.api.entities.bank.Account;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.time.YearMonth;
 import java.util.Optional;
 
 @Service
@@ -22,9 +23,9 @@ public class PccService {
 		}
 
 		Account client = clientOpt.get();
-		String tempDate = pccRequestDTO.getMm() + "/" + pccRequestDTO.getYy();
+		//String tempDate = pccRequestDTO.getMm() + "/" + pccRequestDTO.getYy();
 		if (!client.getCardHolderName().equals(pccRequestDTO.getCardHolder()) || !client.getCardSecurityCode().equals(pccRequestDTO.getCvv())
-				|| !client.getExpirationDate().equals(tempDate)) {
+				|| !client.getExpirationDate().equals(YearMonth.parse(pccRequestDTO.getExpirationDate()))) {
 			System.err.println("PccService: Podaci se ne podudaraju. ");
 			return failAuthentification(pccRequestDTO);
 		}

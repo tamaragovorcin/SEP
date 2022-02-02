@@ -11,6 +11,7 @@ import org.springframework.http.*;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
+import java.time.YearMonth;
 import java.util.Date;
 import java.util.List;
 import java.util.Optional;
@@ -34,8 +35,6 @@ public class PaymentService implements IPaymentService {
 	@Autowired
 	private TransactionService transactionService;
 
-	//@Value("${bankId}")
-    //private String bankId;
 
 
 	private String pccUrl = "http://localhost:6006/pcc";  // Payment Card Center
@@ -100,25 +99,26 @@ public class PaymentService implements IPaymentService {
 
 	@Override
 	public String confirmPayment(AccountDTO clientDTO, Integer paymentRequestId) {
-		// Proveravamo da li je to klijent ove banke
-		//System.err.println("bankId " + bankId);
-		System.err.println("skraceni pan: " + getBankIdFromPan(clientDTO.getPAN()));
 
 		Transaction transaction = new Transaction();
 		PaymentRequest paymentRequest = getPaymentRequest(paymentRequestId);
-
+		System.out.println(paymentRequest);
 		transaction.setAmount(paymentRequest.getAmount());
 		transaction.setMerchantId(paymentRequest.getMerchantId());
 		transaction.setMerchantOrderId(paymentRequest.getMerchantOrderId());
 		transaction.setMerchantTimestamp(paymentRequest.getMerchantTimestamp());
 
 
-		if(getBankIdFromPan(clientDTO.getPAN()).contentEquals("bankId")) {
+		String bankId = paymentRequestId.toString() + paymentRequestId.toString() + paymentRequestId.toString();
+
+		if(getBankIdFromPan(clientDTO.getPAN()).equals(bankId)) {
 
 			// To je ova banka
 			System.out.println("Iz iste su banke");
 
 			Optional<Account> clientOpt = clientService.getClient(clientDTO.getPAN());
+
+
 			if(!clientOpt.isPresent()) {
 				transaction.setStatus(TransactionStatus.FAILED);
 				failPayment(paymentRequest);
@@ -127,45 +127,51 @@ public class PaymentService implements IPaymentService {
 
 			Account client = clientOpt.get();
 			transaction.setPanNumber(client.getPAN());
-			String tempDate = clientDTO.getMm() + "/" + clientDTO.getYy();
+
+			//String tempDate = client.getExpirationDate() + "/" + clientDTO.getYy();
 			if (!client.getCardHolderName().equals(clientDTO.getCardHolderName()) || !client.getCardSecurityCode().equals(clientDTO.getCardSecurityCode())
-					|| !client.getExpirationDate().equals(tempDate)) {
+					|| !client.getExpirationDate().equals(YearMonth.parse(clientDTO.getExpirationDate()))) {
 				System.err.println("ne podudara se");
 				transaction.setStatus(TransactionStatus.FAILED);
 				failPayment(paymentRequest);
 				return paymentRequest.getFailedUrl();
 			}
 
-			if (paymentRequest.getAmount() > client.getAvailableFunds()) {
+
+			/*if (paymentRequest.getAmount() > client.getAvailableFunds()) {
 				System.err.println("nema sredstava");
 				transaction.setStatus(TransactionStatus.FAILED);
 				failPayment(paymentRequest);
 				return paymentRequest.getFailedUrl();
-			}
+			}*/
 
 			String merchantId = paymentRequest.getMerchantId();
-			Account merchant = clientService.getClientByMerchantId(merchantId);
-			if (!merchant.getMerchant().getMerchantPassword().equals(paymentRequest.getMerchantPassword())){
+
+			Merchant merchant = merchantService.findByMerchantId(merchantId);
+			if (!merchant.getMerchantPassword().equals(paymentRequest.getMerchantPassword())){
 				System.err.println("nije dobar merchant");
 				transaction.setStatus(TransactionStatus.ERROR);
 				failPayment(paymentRequest);
 				return paymentRequest.getErrorUrl();
 			}
 
-			client.setAvailableFunds(client.getAvailableFunds() - paymentRequest.getAmount());
+			client.setAvailableFunds(50.0);//client.getAvailableFunds() - paymentRequest.getAmount());
 			clientService.saveNoDTO(client);
-			merchant.setAvailableFunds(merchant.getAvailableFunds() + paymentRequest.getAmount());
-			clientService.saveNoDTO(merchant);
+
+
+			/*merchant.setAvailableFunds(50.0);//merchant.getAvailableFunds() + paymentRequest.getAmount());
+			System.out.println("aaaaaaaaaaaaaaaaa");
+			merchantService.saveNoDTO(merchant);*/
+
 			transaction.setStatus(TransactionStatus.SUCCESSFUL);
 			transactionService.save(transaction);
-
 			CompletePaymentResponseDTO completePaymentResponseDTO = new CompletePaymentResponseDTO();
 			completePaymentResponseDTO.setOrder_id(paymentRequest.getMerchantOrderId());
 			completePaymentResponseDTO.setStatus("PAID");
 
-			ResponseEntity<String> responseEntity = restTemplate.exchange(paymentRequest.getCallbackUrl() + "/complete", HttpMethod.POST,
+			/*ResponseEntity<String> responseEntity = restTemplate.exchange(paymentRequest.getCallbackUrl() + "/complete", HttpMethod.POST,
 					new HttpEntity<CompletePaymentResponseDTO>(completePaymentResponseDTO), String.class);
-			System.out.println(responseEntity.getBody());
+			System.out.println(responseEntity.getBody());*/
 
 			return paymentRequest.getSuccessUrl();
 		}
@@ -181,9 +187,8 @@ public class PaymentService implements IPaymentService {
 			pccRequestDTO.setAcquirerTimestamp(new Date());
 			pccRequestDTO.setCardHolder(clientDTO.getCardHolderName());
 			pccRequestDTO.setCvv(Integer.parseInt(clientDTO.getCardSecurityCode()));
-			pccRequestDTO.setMm(clientDTO.getMm());
+			pccRequestDTO.setExpirationDate(clientDTO.getExpirationDate());
 			pccRequestDTO.setPanNumber(clientDTO.getPAN());
-			pccRequestDTO.setYy(clientDTO.getYy());
 			pccRequestDTO.setAmount(paymentRequest.getAmount());
 			System.err.println("posle pccRequestDTO");
 
@@ -193,8 +198,8 @@ public class PaymentService implements IPaymentService {
 			System.err.println("posle request");
 
 			String merchantId = paymentRequest.getMerchantId();
-			Account merchant = clientService.getClientByMerchantId(merchantId);
-			if (!merchant.getMerchant().getMerchantPassword().equals(paymentRequest.getMerchantPassword())){
+			Merchant merchant = merchantService.findByMerchantId(merchantId);
+			if (!merchant.getMerchantPassword().equals(paymentRequest.getMerchantPassword())){
 				System.err.println("nije dobar merchant");
 				transaction.setStatus(TransactionStatus.ERROR);
 				failPayment(paymentRequest);
@@ -210,8 +215,8 @@ public class PaymentService implements IPaymentService {
 			if(response.getIsAuthentificated() && response.getIsTransactionAutorized()) {
 				System.err.println(" usao u if ");
 
-				merchant.setAvailableFunds(merchant.getAvailableFunds() + paymentRequest.getAmount());
-				clientService.saveNoDTO(merchant);
+				/*merchant.setAvailableFunds(merchant.getAvailableFunds() + paymentRequest.getAmount());
+				clientService.saveNoDTO(merchant);*/
 				transaction.setStatus(TransactionStatus.SUCCESSFUL);
 				transactionService.save(transaction);
 				System.err.println("posles skidanja merchantu para");
@@ -250,12 +255,12 @@ public class PaymentService implements IPaymentService {
 
 	private String getBankIdFromPan(String panNumber) {
 
-		String withoutDashes = panNumber.replace("-", "");
-		String number = withoutDashes.substring(1, 7);
+		String number = panNumber.substring(0, 3);
 		return number;
 	}
 
 	private void failPayment(PaymentRequest paymentRequest) {
+		System.out.println("Fail payment");
 		CompletePaymentResponseDTO completePaymentResponseDTO = new CompletePaymentResponseDTO();
 		completePaymentResponseDTO.setOrder_id(paymentRequest.getMerchantOrderId());
 		completePaymentResponseDTO.setStatus("FAILED");

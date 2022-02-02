@@ -177,3 +177,347 @@
 2022-02-02 15:53:55.231  INFO 14444 --- [reactor-http-nio-2] com.APIGateway.CustomFiler               : Post Filter = 200 OK
 2022-02-02 15:54:12.737  INFO 14444 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
 2022-02-02 15:59:12.748  INFO 14444 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-02 16:04:12.751  INFO 14444 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-02 16:09:12.766  INFO 14444 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-02 16:14:12.775  INFO 14444 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-02 16:19:12.785  INFO 14444 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-02 16:24:12.796  INFO 14444 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-02 16:29:12.799  INFO 14444 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-02 16:34:12.807  INFO 14444 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-02 16:39:12.837  INFO 14444 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-02 16:44:12.846  INFO 14444 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-02 16:49:12.862  INFO 14444 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-02 16:54:12.868  INFO 14444 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-02 16:59:12.883  INFO 14444 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-02 17:04:12.896  INFO 14444 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-02 17:09:12.901  INFO 14444 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-02 17:14:12.912  INFO 14444 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-02 17:19:12.922  INFO 14444 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-02 17:24:12.932  INFO 14444 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-02 18:02:01.219  INFO 14444 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-02 18:07:01.228  INFO 14444 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-02 18:12:01.241  INFO 14444 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-02 18:17:01.246  INFO 14444 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-02 18:22:01.262  INFO 14444 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-02 18:27:01.270  INFO 14444 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-02 18:32:01.292  INFO 14444 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-02 18:37:01.301  INFO 14444 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-02 18:42:01.310  INFO 14444 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-02 18:47:01.319  INFO 14444 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-02 18:52:01.332  INFO 14444 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-02 18:57:01.343  INFO 14444 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-02 21:48:41.568  INFO 14444 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-02 21:53:41.580  INFO 14444 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-02 21:58:01.751  INFO 14444 --- [http-nio-9090-exec-4] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 21:58:01.752  INFO 14444 --- [http-nio-9090-exec-4] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-02-02 21:58:01.801  INFO 14444 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 201 CREATED
+2022-02-02 21:58:03.775  INFO 14444 --- [http-nio-9090-exec-7] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 21:58:03.775  INFO 14444 --- [http-nio-9090-exec-7] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-02-02 21:58:03.794  INFO 14444 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 201 CREATED
+2022-02-02 21:58:03.832  INFO 14444 --- [http-nio-9090-exec-9] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 21:58:03.832  INFO 14444 --- [http-nio-9090-exec-9] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-02-02 21:58:03.842  INFO 14444 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-02-02 21:58:05.116  INFO 14444 --- [http-nio-9090-exec-2] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 21:58:05.117  INFO 14444 --- [http-nio-9090-exec-2] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-02-02 21:58:05.132  INFO 14444 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 201 CREATED
+2022-02-02 21:58:06.041  INFO 14444 --- [http-nio-9090-exec-4] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 21:58:06.041  INFO 14444 --- [http-nio-9090-exec-4] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-02-02 21:58:06.050  INFO 14444 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-02-02 21:58:22.832  INFO 14444 --- [http-nio-9090-exec-7] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 21:58:22.834  INFO 14444 --- [http-nio-9090-exec-7] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-02-02 21:58:22.858  INFO 14444 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 201 CREATED
+2022-02-02 21:58:41.589  INFO 14444 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-02 21:58:50.079  INFO 14444 --- [http-nio-9090-exec-9] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 21:58:50.080  INFO 14444 --- [http-nio-9090-exec-9] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-02-02 21:58:50.102  INFO 14444 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-02-02 21:58:52.211  INFO 14444 --- [http-nio-9090-exec-2] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 21:58:52.212  INFO 14444 --- [http-nio-9090-exec-2] com.APIGateway.CustomFiler               : REDIRECTING TO  -> bank card service
+2022-02-02 21:58:52.546  INFO 14444 --- [reactor-http-nio-4] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-02-02 22:01:28.538  INFO 14444 --- [http-nio-9090-exec-6] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 22:01:28.538  INFO 14444 --- [http-nio-9090-exec-6] com.APIGateway.CustomFiler               : REDIRECTING TO  -> bank card service
+2022-02-02 22:01:29.174  INFO 14444 --- [reactor-http-nio-1] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-02-02 22:03:28.945  INFO 14444 --- [http-nio-9090-exec-10] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 22:03:28.945  INFO 14444 --- [http-nio-9090-exec-10] com.APIGateway.CustomFiler               : REDIRECTING TO  -> bank card service
+2022-02-02 22:03:29.570  INFO 14444 --- [reactor-http-nio-2] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-02-02 22:03:41.591  INFO 14444 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-02 22:06:01.289  INFO 14444 --- [http-nio-9090-exec-4] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 22:06:01.290  INFO 14444 --- [http-nio-9090-exec-4] com.APIGateway.CustomFiler               : REDIRECTING TO  -> bank card service
+2022-02-02 22:06:01.821  INFO 14444 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-02-02 22:08:41.602  INFO 14444 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-02 22:13:41.615  INFO 14444 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-02 22:18:41.618  INFO 14444 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-02 22:22:39.650  INFO 14444 --- [http-nio-9090-exec-8] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 22:22:39.650  INFO 14444 --- [http-nio-9090-exec-8] com.APIGateway.CustomFiler               : REDIRECTING TO  -> bank card service
+2022-02-02 22:22:40.596  INFO 14444 --- [reactor-http-nio-4] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-02-02 22:23:41.622  INFO 14444 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-02 22:26:31.865  INFO 14444 --- [http-nio-9090-exec-2] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 22:26:31.866  INFO 14444 --- [http-nio-9090-exec-2] com.APIGateway.CustomFiler               : REDIRECTING TO  -> bank card service
+2022-02-02 22:26:33.554  INFO 14444 --- [reactor-http-nio-1] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-02-02 22:28:41.630  INFO 14444 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-02 22:29:45.029  INFO 14444 --- [http-nio-9090-exec-6] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 22:29:45.029  INFO 14444 --- [http-nio-9090-exec-6] com.APIGateway.CustomFiler               : REDIRECTING TO  -> bank card service
+2022-02-02 22:29:45.725  INFO 14444 --- [reactor-http-nio-2] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-02-02 22:33:32.287  INFO 14444 --- [http-nio-9090-exec-9] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 22:33:32.288  INFO 14444 --- [http-nio-9090-exec-9] com.APIGateway.CustomFiler               : REDIRECTING TO  -> bank card service
+2022-02-02 22:33:34.025  INFO 14444 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-02-02 22:33:41.636  INFO 14444 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-02 22:37:42.454  INFO 14444 --- [http-nio-9090-exec-3] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 22:37:42.454  INFO 14444 --- [http-nio-9090-exec-3] com.APIGateway.CustomFiler               : REDIRECTING TO  -> bank card service
+2022-02-02 22:37:43.234  INFO 14444 --- [reactor-http-nio-4] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-02-02 22:38:41.641  INFO 14444 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-02 22:40:02.893  INFO 14444 --- [http-nio-9090-exec-7] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 22:40:02.893  INFO 14444 --- [http-nio-9090-exec-7] com.APIGateway.CustomFiler               : REDIRECTING TO  -> bank card service
+2022-02-02 22:40:03.521  INFO 14444 --- [reactor-http-nio-1] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-02-02 22:43:41.657  INFO 14444 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-02 22:46:49.347  INFO 14444 --- [http-nio-9090-exec-1] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 22:46:49.347  INFO 14444 --- [http-nio-9090-exec-1] com.APIGateway.CustomFiler               : REDIRECTING TO  -> bank card service
+2022-02-02 22:46:50.252  INFO 14444 --- [reactor-http-nio-2] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-02-02 22:48:41.667  INFO 14444 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-02 22:51:07.995  INFO 14444 --- [http-nio-9090-exec-5] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 22:51:07.995  INFO 14444 --- [http-nio-9090-exec-5] com.APIGateway.CustomFiler               : REDIRECTING TO  -> bank card service
+2022-02-02 22:51:08.813  INFO 14444 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-02-02 22:52:39.902  INFO 14444 --- [http-nio-9090-exec-9] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 22:52:39.902  INFO 14444 --- [http-nio-9090-exec-9] com.APIGateway.CustomFiler               : REDIRECTING TO  -> bank card service
+2022-02-02 22:52:43.242  INFO 14444 --- [reactor-http-nio-4] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-02-02 22:53:41.669  INFO 14444 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-02 22:58:41.674  INFO 14444 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-02 23:03:41.681  INFO 14444 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-02 23:08:41.690  INFO 14444 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-02 23:09:28.497  INFO 14444 --- [http-nio-9090-exec-3] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 23:09:28.497  INFO 14444 --- [http-nio-9090-exec-3] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-02-02 23:09:28.564  INFO 14444 --- [reactor-http-nio-1] com.APIGateway.CustomFiler               : Post Filter = 201 CREATED
+2022-02-02 23:09:30.753  INFO 14444 --- [http-nio-9090-exec-6] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 23:09:30.754  INFO 14444 --- [http-nio-9090-exec-6] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-02-02 23:09:30.768  INFO 14444 --- [reactor-http-nio-1] com.APIGateway.CustomFiler               : Post Filter = 201 CREATED
+2022-02-02 23:09:30.796  INFO 14444 --- [http-nio-9090-exec-8] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 23:09:30.797  INFO 14444 --- [http-nio-9090-exec-8] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-02-02 23:09:30.816  INFO 14444 --- [reactor-http-nio-1] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-02-02 23:09:32.763  INFO 14444 --- [http-nio-9090-exec-1] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 23:09:32.763  INFO 14444 --- [http-nio-9090-exec-1] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-02-02 23:09:32.790  INFO 14444 --- [reactor-http-nio-1] com.APIGateway.CustomFiler               : Post Filter = 201 CREATED
+2022-02-02 23:09:33.499  INFO 14444 --- [http-nio-9090-exec-3] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 23:09:33.499  INFO 14444 --- [http-nio-9090-exec-3] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-02-02 23:09:33.508  INFO 14444 --- [reactor-http-nio-1] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-02-02 23:10:45.713  INFO 14444 --- [http-nio-9090-exec-7] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 23:10:45.715  INFO 14444 --- [http-nio-9090-exec-7] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-02-02 23:10:45.749  INFO 14444 --- [reactor-http-nio-2] com.APIGateway.CustomFiler               : Post Filter = 201 CREATED
+2022-02-02 23:11:16.585  INFO 14444 --- [http-nio-9090-exec-9] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 23:11:16.585  INFO 14444 --- [http-nio-9090-exec-9] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-02-02 23:11:16.596  INFO 14444 --- [reactor-http-nio-2] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-02-02 23:11:18.079  INFO 14444 --- [http-nio-9090-exec-2] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 23:11:18.080  INFO 14444 --- [http-nio-9090-exec-2] com.APIGateway.CustomFiler               : REDIRECTING TO  -> bank card service
+2022-02-02 23:11:18.168  INFO 14444 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-02-02 23:13:41.703  INFO 14444 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-02 23:18:41.718  INFO 14444 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-02 23:23:41.733  INFO 14444 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-02 23:23:52.173  INFO 14444 --- [http-nio-9090-exec-6] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 23:23:52.173  INFO 14444 --- [http-nio-9090-exec-6] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-02-02 23:23:52.901  INFO 14444 --- [reactor-http-nio-4] com.APIGateway.CustomFiler               : Post Filter = 201 CREATED
+2022-02-02 23:23:54.584  INFO 14444 --- [http-nio-9090-exec-9] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 23:23:54.585  INFO 14444 --- [http-nio-9090-exec-9] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-02-02 23:23:54.594  INFO 14444 --- [reactor-http-nio-4] com.APIGateway.CustomFiler               : Post Filter = 201 CREATED
+2022-02-02 23:23:54.616  INFO 14444 --- [http-nio-9090-exec-1] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 23:23:54.616  INFO 14444 --- [http-nio-9090-exec-1] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-02-02 23:23:54.647  INFO 14444 --- [reactor-http-nio-4] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-02-02 23:23:55.796  INFO 14444 --- [http-nio-9090-exec-4] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 23:23:55.796  INFO 14444 --- [http-nio-9090-exec-4] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-02-02 23:23:55.889  INFO 14444 --- [reactor-http-nio-4] com.APIGateway.CustomFiler               : Post Filter = 201 CREATED
+2022-02-02 23:23:56.820  INFO 14444 --- [http-nio-9090-exec-6] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 23:23:56.821  INFO 14444 --- [http-nio-9090-exec-6] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-02-02 23:23:56.838  INFO 14444 --- [reactor-http-nio-4] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-02-02 23:24:12.420  INFO 14444 --- [http-nio-9090-exec-9] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 23:24:12.420  INFO 14444 --- [http-nio-9090-exec-9] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-02-02 23:24:12.636  INFO 14444 --- [reactor-http-nio-4] com.APIGateway.CustomFiler               : Post Filter = 201 CREATED
+2022-02-02 23:24:48.338  INFO 14444 --- [http-nio-9090-exec-1] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 23:24:48.339  INFO 14444 --- [http-nio-9090-exec-1] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-02-02 23:24:48.499  INFO 14444 --- [reactor-http-nio-4] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-02-02 23:24:50.027  INFO 14444 --- [http-nio-9090-exec-4] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 23:24:50.027  INFO 14444 --- [http-nio-9090-exec-4] com.APIGateway.CustomFiler               : REDIRECTING TO  -> bank card service
+2022-02-02 23:24:51.409  INFO 14444 --- [reactor-http-nio-1] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-02-02 23:28:41.734  INFO 14444 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-02 23:29:33.212  INFO 14444 --- [http-nio-9090-exec-8] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 23:29:33.213  INFO 14444 --- [http-nio-9090-exec-8] com.APIGateway.CustomFiler               : REDIRECTING TO  -> bank card service
+2022-02-02 23:29:33.773  INFO 14444 --- [reactor-http-nio-2] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-02-02 23:33:41.740  INFO 14444 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-02 23:35:38.572  INFO 14444 --- [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application API-GATEWAY with eureka with status DOWN
+2022-02-02 23:35:38.573  INFO 14444 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1643841338573, current=DOWN, previous=UP]
+2022-02-02 23:35:38.573  INFO 14444 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_API-GATEWAY/DESKTOP-FNSTC71:api-gateway:9090: registering service...
+2022-02-02 23:35:38.601  INFO 14444 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_API-GATEWAY/DESKTOP-FNSTC71:api-gateway:9090 - registration status: 204
+2022-02-02 23:35:40.721  INFO 14444 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2022-02-02 23:35:43.734  INFO 14444 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2022-02-02 23:35:43.745  INFO 14444 --- [SpringApplicationShutdownHook] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/} exception=I/O error on DELETE request for "http://localhost:8761/eureka/apps/API-GATEWAY/DESKTOP-FNSTC71:api-gateway:9090": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on DELETE request for "http://localhost:8761/eureka/apps/API-GATEWAY/DESKTOP-FNSTC71:api-gateway:9090": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:785)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.cancel(RestTemplateEurekaHttpClient.java:87)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:91)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:972)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:948)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:389)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:347)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:177)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:196)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:189)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:390)
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:136)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:212)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1152)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1145)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1106)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1075)
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.doClose(ReactiveWebServerApplicationContext.java:147)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1021)
+	at org.springframework.boot.SpringApplicationShutdownHook.closeAndWait(SpringApplicationShutdownHook.java:137)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:106)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:87)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:776)
+	... 39 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:588)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 52 more
+
+2022-02-02 23:35:43.746  WARN 14444 --- [SpringApplicationShutdownHook] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: I/O error on DELETE request for "http://localhost:8761/eureka/apps/API-GATEWAY/DESKTOP-FNSTC71:api-gateway:9090": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+2022-02-02 23:35:43.752  INFO 14444 --- [SpringApplicationShutdownHook] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=I/O error on DELETE request for "http://localhost:8761/eureka/apps/API-GATEWAY/DESKTOP-FNSTC71:api-gateway:9090": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on DELETE request for "http://localhost:8761/eureka/apps/API-GATEWAY/DESKTOP-FNSTC71:api-gateway:9090": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:785)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.cancel(RestTemplateEurekaHttpClient.java:87)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:972)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:948)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:389)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:347)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:177)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:196)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:189)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:390)
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:136)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:212)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1152)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1145)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1106)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1075)
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.doClose(ReactiveWebServerApplicationContext.java:147)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1021)
+	at org.springframework.boot.SpringApplicationShutdownHook.closeAndWait(SpringApplicationShutdownHook.java:137)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:106)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:87)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:776)
+	... 40 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:588)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 53 more
+
+2022-02-02 23:35:43.752  WARN 14444 --- [SpringApplicationShutdownHook] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: I/O error on DELETE request for "http://localhost:8761/eureka/apps/API-GATEWAY/DESKTOP-FNSTC71:api-gateway:9090": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+2022-02-02 23:35:43.760 ERROR 14444 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_API-GATEWAY/DESKTOP-FNSTC71:api-gateway:9090 - de-registration failedCannot execute request on any known server
+
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-1.10.16.jar:1.10.16]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71) ~[eureka-client-1.10.16.jar:1.10.16]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74) ~[eureka-client-1.10.16.jar:1.10.16]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) ~[eureka-client-1.10.16.jar:1.10.16]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71) ~[eureka-client-1.10.16.jar:1.10.16]
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:972) ~[eureka-client-1.10.16.jar:1.10.16]
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:948) ~[eureka-client-1.10.16.jar:1.10.16]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:389) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:347) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:177) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:196) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:189) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:390) ~[spring-cloud-context-3.1.0-RC1.jar:3.1.0-RC1]
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:136) ~[spring-cloud-context-3.1.0-RC1.jar:3.1.0-RC1]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:212) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1152) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1145) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1106) ~[spring-context-5.3.13.jar:5.3.13]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1075) ~[spring-context-5.3.13.jar:5.3.13]
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.doClose(ReactiveWebServerApplicationContext.java:147) ~[spring-boot-2.6.1.jar:2.6.1]
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1021) ~[spring-context-5.3.13.jar:5.3.13]
+	at org.springframework.boot.SpringApplicationShutdownHook.closeAndWait(SpringApplicationShutdownHook.java:137) ~[spring-boot-2.6.1.jar:2.6.1]
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75) ~[na:na]
+	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:106) ~[spring-boot-2.6.1.jar:2.6.1]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2022-02-02 23:35:43.770  INFO 14444 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient

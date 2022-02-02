@@ -5,10 +5,7 @@ import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
 
 import tim18.ftn.uns.ac.rs.pcc.dto.AcquirerResponseDTO;
@@ -25,8 +22,8 @@ public class PaymentController {
 	
 	@Autowired
 	private RestTemplate restTemplate;
-	
-	@RequestMapping(value = "/payRedirect", method = RequestMethod.POST, consumes = "application/json")
+
+	@PostMapping("/payRedirect")
 	public ResponseEntity<?> payRedirect(@RequestBody PccRequestDTO pccRequestDTO) {
 		System.out.println("U kontrolleru payRedirect");
 		System.out.println(pccRequestDTO);
@@ -48,11 +45,10 @@ public class PaymentController {
 		AcquirerResponseDTO ret = new AcquirerResponseDTO(responseEntity.getBody());
 		return new ResponseEntity<>(ret, HttpStatus.OK);
 	}
-	
+
 	private String getBankIdFromPan(String panNumber) {
-		
-		String withoutDashes = panNumber.replace("-", "");
-		String number = withoutDashes.substring(1, 7);
+
+		String number = panNumber.substring(0, 3);
 		return number;
 	}
 }
