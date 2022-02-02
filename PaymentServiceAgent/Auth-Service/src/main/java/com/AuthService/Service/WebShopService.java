@@ -2,6 +2,7 @@ package com.AuthService.Service;
 
 import com.AuthService.DTO.BankPaymentMethodDTO;
 import com.AuthService.DTO.PaymentMethodDTO;
+import com.AuthService.DTO.UrlAddressesDTO;
 import com.AuthService.DTO.WebShopDTO;
 import com.AuthService.Model.WebShop;
 import com.AuthService.Repository.WebShopRepository;
@@ -16,7 +17,6 @@ public class WebShopService {
     WebShopRepository webShopRepository;
 
     public WebShop save(WebShopDTO webShopDTO) {
-        System.out.println("POGODIOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO");
 
         WebShop webShop = new WebShop();
 
@@ -123,5 +123,14 @@ public class WebShopService {
         paymentMethodDTO.setDisabledMethods(disabledMethods);
         paymentMethodDTO.setWebShopId(webShopId);
         return paymentMethodDTO;
+    }
+
+    public UrlAddressesDTO getUrlsByWebShopId(int webShopId) {
+        WebShop webShop = webShopRepository.findByWebShopId(webShopId);
+        UrlAddressesDTO urlAddressesDTO = new UrlAddressesDTO();
+        urlAddressesDTO.setErrorUrl(webShop.getErrorUrl());
+        urlAddressesDTO.setSuccessUrl(webShop.getSuccessUrl());
+        urlAddressesDTO.setFailureUrl(webShop.getFailureUrl());
+        return urlAddressesDTO;
     }
 }

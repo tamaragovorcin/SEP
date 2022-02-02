@@ -1,3 +1,135 @@
+2022-02-02 10:42:48.694  INFO 1464 --- [main] com.APIGateway.ApiGatewayApplication     : Starting ApiGatewayApplication using Java 17.0.1 on DESKTOP-1PFK6EP with PID 1464 (D:\Master\SEP\SEP\PaymentServiceAgent\API-Gateway\target\classes started by tamar in D:\Master\SEP\SEP\PaymentServiceAgent\API-Gateway)
+2022-02-02 10:42:48.705  INFO 1464 --- [main] com.APIGateway.ApiGatewayApplication     : No active profile set, falling back to default profiles: default
+2022-02-02 10:42:51.455  INFO 1464 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=fc05cfcf-5cf0-39a3-bcd6-5a666ec29182
+2022-02-02 10:42:51.659  INFO 1464 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-02-02 10:42:51.662  INFO 1464 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-02-02 10:42:51.664  INFO 1464 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-02-02 10:42:52.372  INFO 1464 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2022-02-02 10:42:52.388  INFO 1464 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-02 10:42:52.389  INFO 1464 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-02-02 10:42:54.375  INFO 1464 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
+2022-02-02 10:42:54.376  INFO 1464 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
+2022-02-02 10:42:54.376  INFO 1464 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
+2022-02-02 10:42:54.376  INFO 1464 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
+2022-02-02 10:42:54.376  INFO 1464 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
+2022-02-02 10:42:54.376  INFO 1464 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
+2022-02-02 10:42:54.376  INFO 1464 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
+2022-02-02 10:42:54.376  INFO 1464 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
+2022-02-02 10:42:54.376  INFO 1464 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
+2022-02-02 10:42:54.379  INFO 1464 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBody]
+2022-02-02 10:42:54.383  INFO 1464 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
+2022-02-02 10:42:54.386  INFO 1464 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
+2022-02-02 10:42:54.386  INFO 1464 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2022-02-02 10:42:54.870  INFO 1464 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2022-02-02 10:42:55.268  WARN 1464 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-02-02 10:42:55.347  INFO 1464 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-02-02 10:42:55.592  INFO 1464 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2022-02-02 10:42:55.600  INFO 1464 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-02 10:42:55.635  INFO 1464 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-02-02 10:42:55.636  INFO 1464 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-02-02 10:42:55.636  INFO 1464 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-02-02 10:42:55.636  INFO 1464 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-02-02 10:42:55.636  INFO 1464 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-02-02 10:42:55.636  INFO 1464 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2022-02-02 10:42:55.636  INFO 1464 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-02-02 10:42:56.429  INFO 1464 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-02-02 10:42:56.431  INFO 1464 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2022-02-02 10:42:56.435  INFO 1464 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-02-02 10:42:56.442  INFO 1464 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1643794976440 with initial instances count: 0
+2022-02-02 10:42:56.444  INFO 1464 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application API-GATEWAY with eureka with status UP
+2022-02-02 10:42:56.444  INFO 1464 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1643794976444, current=UP, previous=STARTING]
+2022-02-02 10:42:56.446  INFO 1464 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_API-GATEWAY/DESKTOP-1PFK6EP:api-gateway:9090: registering service...
+2022-02-02 10:42:56.534  INFO 1464 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2022-02-02 10:42:56.535  INFO 1464 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9090
+2022-02-02 10:42:56.583  INFO 1464 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_API-GATEWAY/DESKTOP-1PFK6EP:api-gateway:9090 - registration status: 204
+2022-02-02 10:42:56.683  INFO 1464 --- [main] com.APIGateway.ApiGatewayApplication     : Started ApiGatewayApplication in 9.411 seconds (JVM running for 10.622)
+2022-02-02 10:43:26.439  INFO 1464 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-02-02 10:43:26.439  INFO 1464 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-02-02 10:43:26.439  INFO 1464 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-02-02 10:43:26.439  INFO 1464 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-02-02 10:43:26.439  INFO 1464 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-02-02 10:43:26.439  INFO 1464 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2022-02-02 10:43:26.440  INFO 1464 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-02-02 10:43:26.450  INFO 1464 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-02-02 10:47:55.650  INFO 1464 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-02 10:51:55.139  INFO 1464 --- [http-nio-9090-exec-1] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 10:51:55.140  INFO 1464 --- [http-nio-9090-exec-1] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-02-02 10:51:56.108  INFO 1464 --- [reactor-http-nio-2] com.APIGateway.CustomFiler               : Post Filter = 201 CREATED
+2022-02-02 10:52:00.107  INFO 1464 --- [http-nio-9090-exec-3] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 10:52:00.108  INFO 1464 --- [http-nio-9090-exec-3] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-02-02 10:52:00.233  INFO 1464 --- [reactor-http-nio-2] com.APIGateway.CustomFiler               : Post Filter = 201 CREATED
+2022-02-02 10:52:00.261  INFO 1464 --- [http-nio-9090-exec-6] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 10:52:00.261  INFO 1464 --- [http-nio-9090-exec-6] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-02-02 10:52:00.308  INFO 1464 --- [reactor-http-nio-2] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-02-02 10:52:01.129  INFO 1464 --- [http-nio-9090-exec-9] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 10:52:01.129  INFO 1464 --- [http-nio-9090-exec-9] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-02-02 10:52:01.181  INFO 1464 --- [reactor-http-nio-2] com.APIGateway.CustomFiler               : Post Filter = 201 CREATED
+2022-02-02 10:52:02.169  INFO 1464 --- [http-nio-9090-exec-2] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 10:52:02.169  INFO 1464 --- [http-nio-9090-exec-2] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-02-02 10:52:02.180  INFO 1464 --- [reactor-http-nio-2] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-02-02 10:52:47.247  INFO 1464 --- [http-nio-9090-exec-5] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 10:52:47.247  INFO 1464 --- [http-nio-9090-exec-5] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-02-02 10:52:47.262  INFO 1464 --- [reactor-http-nio-2] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-02-02 10:52:55.667  INFO 1464 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-02 10:57:33.563  INFO 1464 --- [http-nio-9090-exec-9] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 10:57:33.563  INFO 1464 --- [http-nio-9090-exec-9] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-02-02 10:57:33.608  INFO 1464 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-02-02 10:57:55.678  INFO 1464 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-02 11:02:55.695  INFO 1464 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-02 11:06:21.693  INFO 1464 --- [http-nio-9090-exec-4] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 11:06:21.693  INFO 1464 --- [http-nio-9090-exec-4] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-02-02 11:06:21.726  INFO 1464 --- [reactor-http-nio-4] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-02-02 11:07:44.678  INFO 1464 --- [http-nio-9090-exec-7] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 11:07:44.679  INFO 1464 --- [http-nio-9090-exec-7] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-02-02 11:07:44.702  INFO 1464 --- [reactor-http-nio-5] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-02-02 11:07:55.711  INFO 1464 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-02 11:08:32.728  INFO 1464 --- [http-nio-9090-exec-3] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 11:08:32.728  INFO 1464 --- [http-nio-9090-exec-3] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-02-02 11:08:32.741  INFO 1464 --- [reactor-http-nio-5] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-02-02 11:10:42.518  INFO 1464 --- [http-nio-9090-exec-8] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 11:10:42.519  INFO 1464 --- [http-nio-9090-exec-8] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-02-02 11:10:42.545  INFO 1464 --- [reactor-http-nio-6] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-02-02 11:10:43.764  INFO 1464 --- [http-nio-9090-exec-1] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 11:10:43.764  INFO 1464 --- [http-nio-9090-exec-1] com.APIGateway.CustomFiler               : REDIRECTING TO  -> paypal service
+2022-02-02 11:10:44.087  INFO 1464 --- [http-nio-9090-exec-2] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 11:10:44.088  INFO 1464 --- [http-nio-9090-exec-2] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-02-02 11:10:44.199  INFO 1464 --- [reactor-http-nio-6] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-02-02 11:10:46.558  INFO 1464 --- [reactor-http-nio-7] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-02-02 11:12:55.722  INFO 1464 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-02 11:13:00.255  INFO 1464 --- [http-nio-9090-exec-10] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 11:13:00.255  INFO 1464 --- [http-nio-9090-exec-10] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-02-02 11:13:00.269  INFO 1464 --- [reactor-http-nio-8] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-02-02 11:13:32.955  INFO 1464 --- [http-nio-9090-exec-3] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 11:13:32.955  INFO 1464 --- [http-nio-9090-exec-3] com.APIGateway.CustomFiler               : REDIRECTING TO  -> paypal service
+2022-02-02 11:13:32.968  INFO 1464 --- [http-nio-9090-exec-5] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 11:13:32.968  INFO 1464 --- [http-nio-9090-exec-5] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-02-02 11:13:32.974  INFO 1464 --- [reactor-http-nio-8] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-02-02 11:13:34.014  INFO 1464 --- [reactor-http-nio-1] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-02-02 11:15:15.754  INFO 1464 --- [http-nio-9090-exec-10] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 11:15:15.754  INFO 1464 --- [http-nio-9090-exec-10] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-02-02 11:15:15.771  INFO 1464 --- [reactor-http-nio-2] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-02-02 11:15:52.297  INFO 1464 --- [http-nio-9090-exec-3] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 11:15:52.297  INFO 1464 --- [http-nio-9090-exec-3] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-02-02 11:15:52.318  INFO 1464 --- [reactor-http-nio-2] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-02-02 11:17:55.726  INFO 1464 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-02 11:20:48.674  INFO 1464 --- [http-nio-9090-exec-8] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 11:20:48.674  INFO 1464 --- [http-nio-9090-exec-8] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-02-02 11:20:48.687  INFO 1464 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-02-02 11:20:56.680  INFO 1464 --- [http-nio-9090-exec-10] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 11:20:56.680  INFO 1464 --- [http-nio-9090-exec-10] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-02-02 11:20:56.685  INFO 1464 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-02-02 11:21:03.751  INFO 1464 --- [http-nio-9090-exec-2] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 11:21:03.752  INFO 1464 --- [http-nio-9090-exec-2] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-02-02 11:21:03.760  INFO 1464 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-02-02 11:21:04.954  INFO 1464 --- [http-nio-9090-exec-5] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 11:21:04.954  INFO 1464 --- [http-nio-9090-exec-5] com.APIGateway.CustomFiler               : REDIRECTING TO  -> bitcoin service
+2022-02-02 11:21:05.271  INFO 1464 --- [http-nio-9090-exec-6] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 11:21:05.271  INFO 1464 --- [http-nio-9090-exec-6] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-02-02 11:21:05.284  INFO 1464 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-02-02 11:21:06.098  INFO 1464 --- [reactor-http-nio-4] com.APIGateway.CustomFiler               : Post Filter = 201 CREATED
+2022-02-02 11:22:55.738  INFO 1464 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-02 11:27:55.744  INFO 1464 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-02 11:32:55.752  INFO 1464 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
 2022-02-01 00:51:46.621  INFO 8616 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
 2022-02-01 00:56:46.734  INFO 8616 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
 2022-02-01 01:01:46.749  INFO 8616 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
@@ -883,3 +1015,4 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 2022-02-01 20:08:42.596  INFO 8716 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
 2022-02-01 20:08:42.601  INFO 8716 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_API-GATEWAY/DESKTOP-FNSTC71:api-gateway:9090 - deregister  status: 200
 2022-02-01 20:08:42.607  INFO 8716 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+

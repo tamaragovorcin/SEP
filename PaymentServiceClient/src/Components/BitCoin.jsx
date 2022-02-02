@@ -8,7 +8,7 @@ const BitCoin = () => {
             <div>
             
                 <h2 >
-                    Bit Coin
+                    Bit Coin..
                 </h2>
 
             </div>

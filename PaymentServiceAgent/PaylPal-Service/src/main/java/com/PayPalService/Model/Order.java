@@ -16,4 +16,5 @@ public class Order {
 	private String description;
 	private String clientId;
 	private String clientSecret;
+	private String webShopId;
 }
