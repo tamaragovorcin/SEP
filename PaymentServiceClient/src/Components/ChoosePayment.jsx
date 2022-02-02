@@ -95,6 +95,27 @@ const ChoosePayment = () =>{
   
     }
 
+    const handleBankCardPayment = ()=> {
+      let webShopId = getCookie("webShopId");
+      let totalPrice = getCookie("totalPrice");
+
+
+      const dto = {
+        amount: totalPrice,
+        webshopId: webShopId
+      }
+      Axios.post("http://localhost:9090/bank-card-service/api/bankcard/create", dto)
+			.then((res) => {
+			
+        alert("Uspela sam")
+				}
+			
+      
+			)
+			.catch(err => console.log(err));
+
+    }
+
     const handlePayPalPayment = ()=> {
       let webshopType = getCookie("webshopType");
       let totalPrice = getCookie("totalPrice");
@@ -144,14 +165,15 @@ const ChoosePayment = () =>{
                   {isBankCardAllowed === true && 
                     <div class="col">
                         <img src={bank_cards} className="App-logo" alt="logo" />
-                        <Link to="/bankCard">
-                          <button type="button" class="btn btn-secondary btn-lg" data-toggle="button" aria-pressed="false" autocomplete="off"> Bank cards!</button>
-                        </Link>
+                       
+                          <button type="button" onClick={handleBankCardPayment} class="btn btn-secondary btn-lg" data-toggle="button" aria-pressed="false" autocomplete="off"> Bank cards!</button>
+                      
                     </div>
                   }
                   {isQRAllowed === true && 
                     <div class="col">
                         <img src={qr} className="App-logo" alt="logo" />
+                        
                         <Link to="/qrCode">
                           <button type="button" class="btn btn-secondary btn-lg" data-toggle="button" aria-pressed="false" autocomplete="off"> QR code!</button>
                         </Link>

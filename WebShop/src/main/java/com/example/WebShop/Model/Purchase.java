@@ -41,7 +41,6 @@ public class Purchase {
             inverseJoinColumns = @JoinColumn(name = "purchase_id", referencedColumnName = "id"))
     private Set<Cart> cart = new HashSet<Cart>();
 
-
     @Column(name = "date", nullable = true)
     private LocalDate date;
 
@@ -53,4 +52,6 @@ public class Purchase {
 
     @Column(name = "status", nullable = true)
     private String status;
+
+
 }
