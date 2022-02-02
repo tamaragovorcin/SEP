@@ -55,18 +55,25 @@ public class PaymentService implements IPaymentService {
 
 		PaymentResponseDTO paymentResponseDTO = new PaymentResponseDTO();
 
-		Merchant merchant = merchantService.findById(Integer.parseInt(id.getMerchantId()));
+
+		Merchant merchant = merchantService.findByMerchantId(id.getMerchantId());
+
+
 		if(merchant != null){
-			if(merchant.getMerchantPassword().equals(id.getMerchantPassword())){
-				paymentResponseDTO.setPaymentId("");
-				paymentResponseDTO.setPaymentUrl("");
+			//if(merchant.getMerchantPassword().equals(id.getMerchantPassword())){
+				if(merchant.getAccount().getBank().getName().equals("Adiko")){
+					paymentResponseDTO.setPaymentId("1");
+					paymentResponseDTO.setPaymentUrl("http://localhost:3009/#/bank1");
+				}
+				else{
+					paymentResponseDTO.setPaymentId("2");
+					paymentResponseDTO.setPaymentUrl("http://localhost:3009/#/bank2");
+				}
+
 
 				return paymentResponseDTO;
-			}
-			else {
+			//}
 
-				return null;
-			}
 		}
 		else {
 

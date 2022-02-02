@@ -14,4 +14,13 @@ public class PaymentResponseDTO {
 	public PaymentResponseDTO(Integer id, String url) {
 		this.paymentId = id.toString();
 		this.paymentUrl = url;
-	}}
+	}
+
+	@Override
+	public String toString() {
+		return "PaymentResponseDTO{" +
+				"paymentId='" + paymentId + '\'' +
+				", paymentUrl='" + paymentUrl + '\'' +
+				'}';
+	}
+}

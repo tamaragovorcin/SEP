@@ -27,7 +27,7 @@ public class MerchantService implements IMerchantService {
 
     @Override
     public Merchant findById(Integer id) {
-        return merchantRepository.getOne(id);
+        return merchantRepository.findById(id).get();
     }
 
     @Override
@@ -51,7 +51,7 @@ public class MerchantService implements IMerchantService {
                 buffer.append((char) randomLimitedInt);
             }
             String generatedString = buffer.toString();
-            merchant.setMerchant_id(generatedString);
+            merchant.setMerchantId(generatedString);
 
             char[] possibleCharacters = (new String("ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789")).toCharArray();
             String randomStr = RandomStringUtils.random( 25, 0, possibleCharacters.length-1, false, false, possibleCharacters, new SecureRandom() );
@@ -71,9 +71,14 @@ public class MerchantService implements IMerchantService {
         return null;
     }
 
+    @Override
+    public Merchant findByMerchantId(String id) {
+        return merchantRepository.findByMerchantId(id);
+    }
+
     public Boolean merchantSearch(MerchantInfoDTO dto) {
         for(Merchant merchant : findAll()){
-            if(merchant.getMerchant_id().equals(dto.getMerchantID())&&merchant.getMerchantPassword().equals(dto.getMerchantPassword())&&merchant.getAccount().getBank().getId() == dto.getBank()){
+            if(merchant.getMerchantId().equals(dto.getMerchantID())&&merchant.getMerchantPassword().equals(dto.getMerchantPassword())&&merchant.getAccount().getBank().getId() == dto.getBank()){
                 return true;
             }
         }

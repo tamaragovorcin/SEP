@@ -21,5 +21,18 @@ public class PaymentRequestDTO {
 	private String errorUrl;	
 	private String callbackUrl;
 
-	
+	@Override
+	public String toString() {
+		return "PaymentRequestDTO{" +
+				"merchantId='" + merchantId + '\'' +
+				", merchantPassword='" + merchantPassword + '\'' +
+				", amount=" + amount +
+				", merchantOrderId=" + merchantOrderId +
+				", merchantTimestamp=" + merchantTimestamp +
+				", successUrl='" + successUrl + '\'' +
+				", failedUrl='" + failedUrl + '\'' +
+				", errorUrl='" + errorUrl + '\'' +
+				", callbackUrl='" + callbackUrl + '\'' +
+				'}';
+	}
 }

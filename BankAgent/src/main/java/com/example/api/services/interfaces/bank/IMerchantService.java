@@ -12,4 +12,5 @@ public interface IMerchantService {
     List<Merchant> findAll ();
     Merchant save(CardInfoDTO dto);
     Merchant update(Merchant merchant);
+    Merchant findByMerchantId(String id);
 }
