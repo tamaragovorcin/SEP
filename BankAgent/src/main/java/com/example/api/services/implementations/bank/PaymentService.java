@@ -51,29 +51,46 @@ public class PaymentService implements IPaymentService {
 	}
 
 	@Override
-	public PaymentResponseDTO getPaymentResponse(PaymentRequestDTO id) {
+	public PaymentResponseDTO getPaymentResponse(PaymentRequestDTO paymentRequestDTO) {
 
 		PaymentResponseDTO paymentResponseDTO = new PaymentResponseDTO();
 
 
-		Merchant merchant = merchantService.findByMerchantId(id.getMerchantId());
+		Merchant merchant = merchantService.findByMerchantId(paymentRequestDTO.getMerchantId());
+
 
 
 		if(merchant != null){
+			PaymentRequest paymentRequest = new PaymentRequest();
+			paymentRequest.setAmount(paymentRequestDTO.getAmount());
+			paymentRequest.setMerchantId(paymentRequestDTO.getMerchantId());
+			paymentRequest.setMerchantPassword(paymentRequestDTO.getMerchantPassword());
+			paymentRequest.setMerchantOrderId(1);
+			paymentRequest.setMerchantTimestamp(new Date());
+			paymentRequest.setSuccessUrl(paymentRequestDTO.getSuccessUrl());
+			paymentRequest.setFailedUrl(paymentRequestDTO.getFailedUrl());
+			paymentRequest.setErrorUrl(paymentRequestDTO.getErrorUrl());
+
 			//if(merchant.getMerchantPassword().equals(id.getMerchantPassword())){
 				if(merchant.getAccount().getBank().getName().equals("Adiko")){
+					paymentRequest.setPaymentId("1");
+					paymentRequest.setPaymentUrl("http://localhost:3009/#/bank1");
 					paymentResponseDTO.setPaymentId("1");
 					paymentResponseDTO.setPaymentUrl("http://localhost:3009/#/bank1");
+
 				}
 				else{
+					paymentRequest.setPaymentId("2");
+					paymentRequest.setPaymentUrl("http://localhost:3009/#/bank2");
 					paymentResponseDTO.setPaymentId("2");
 					paymentResponseDTO.setPaymentUrl("http://localhost:3009/#/bank2");
 				}
 
 
-				return paymentResponseDTO;
 			//}
 
+			PaymentRequest ret = paymentRepository.save(paymentRequest);
+				return paymentResponseDTO;
 		}
 		else {
 

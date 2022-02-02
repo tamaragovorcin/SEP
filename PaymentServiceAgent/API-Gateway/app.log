@@ -1,0 +1,179 @@
+2022-02-02 15:03:57.614  INFO 14444 --- [main] com.APIGateway.ApiGatewayApplication     : Starting ApiGatewayApplication using Java 17.0.1 on DESKTOP-FNSTC71 with PID 14444 (C:\Users\lunaz\OneDrive\Desktop\SEP\SEP\PaymentServiceAgent\API-Gateway\target\classes started by lunaz in C:\Users\lunaz\OneDrive\Desktop\SEP\SEP\PaymentServiceAgent\API-Gateway)
+2022-02-02 15:03:57.620  INFO 14444 --- [main] com.APIGateway.ApiGatewayApplication     : No active profile set, falling back to default profiles: default
+2022-02-02 15:04:02.476  INFO 14444 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=fc05cfcf-5cf0-39a3-bcd6-5a666ec29182
+2022-02-02 15:04:03.249  INFO 14444 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-02-02 15:04:03.286  INFO 14444 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-02-02 15:04:03.291  INFO 14444 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-02-02 15:04:05.044  INFO 14444 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2022-02-02 15:04:05.087  INFO 14444 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-02 15:04:05.088  INFO 14444 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-02-02 15:04:10.765  INFO 14444 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
+2022-02-02 15:04:10.765  INFO 14444 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
+2022-02-02 15:04:10.765  INFO 14444 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
+2022-02-02 15:04:10.768  INFO 14444 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
+2022-02-02 15:04:10.769  INFO 14444 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
+2022-02-02 15:04:10.769  INFO 14444 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
+2022-02-02 15:04:10.769  INFO 14444 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
+2022-02-02 15:04:10.771  INFO 14444 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
+2022-02-02 15:04:10.771  INFO 14444 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
+2022-02-02 15:04:10.771  INFO 14444 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBody]
+2022-02-02 15:04:10.771  INFO 14444 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
+2022-02-02 15:04:10.772  INFO 14444 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
+2022-02-02 15:04:10.773  INFO 14444 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2022-02-02 15:04:11.330  INFO 14444 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2022-02-02 15:04:12.204  WARN 14444 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-02-02 15:04:12.259  INFO 14444 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-02-02 15:04:12.561  INFO 14444 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2022-02-02 15:04:12.577  INFO 14444 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-02 15:04:12.631  INFO 14444 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-02-02 15:04:12.631  INFO 14444 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-02-02 15:04:12.632  INFO 14444 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-02-02 15:04:12.632  INFO 14444 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-02-02 15:04:12.632  INFO 14444 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-02-02 15:04:12.633  INFO 14444 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2022-02-02 15:04:12.634  INFO 14444 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-02-02 15:04:13.473  INFO 14444 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-02-02 15:04:13.479  INFO 14444 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2022-02-02 15:04:13.484  INFO 14444 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-02-02 15:04:13.492  INFO 14444 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1643810653490 with initial instances count: 1
+2022-02-02 15:04:13.495  INFO 14444 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application API-GATEWAY with eureka with status UP
+2022-02-02 15:04:13.496  INFO 14444 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1643810653496, current=UP, previous=STARTING]
+2022-02-02 15:04:13.502  INFO 14444 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_API-GATEWAY/DESKTOP-FNSTC71:api-gateway:9090: registering service...
+2022-02-02 15:04:13.573  INFO 14444 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_API-GATEWAY/DESKTOP-FNSTC71:api-gateway:9090 - registration status: 204
+2022-02-02 15:04:13.838  INFO 14444 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2022-02-02 15:04:13.839  INFO 14444 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9090
+2022-02-02 15:04:14.306  INFO 14444 --- [main] com.APIGateway.ApiGatewayApplication     : Started ApiGatewayApplication in 20.61 seconds (JVM running for 22.838)
+2022-02-02 15:07:01.563  INFO 14444 --- [http-nio-9090-exec-1] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 15:07:01.564  INFO 14444 --- [http-nio-9090-exec-1] com.APIGateway.CustomFiler               : REDIRECTING TO  -> bank card service
+2022-02-02 15:07:02.339  INFO 14444 --- [reactor-http-nio-2] com.APIGateway.CustomFiler               : Post Filter = 500 INTERNAL_SERVER_ERROR
+2022-02-02 15:09:12.645  INFO 14444 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-02 15:14:12.650  INFO 14444 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-02 15:19:12.656  INFO 14444 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-02 15:24:06.543  INFO 14444 --- [http-nio-9090-exec-4] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 15:24:06.544  INFO 14444 --- [http-nio-9090-exec-4] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-02-02 15:24:06.839  INFO 14444 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 201 CREATED
+2022-02-02 15:24:09.138  INFO 14444 --- [http-nio-9090-exec-7] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 15:24:09.138  INFO 14444 --- [http-nio-9090-exec-7] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-02-02 15:24:09.296  INFO 14444 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 201 CREATED
+2022-02-02 15:24:09.320  INFO 14444 --- [http-nio-9090-exec-9] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 15:24:09.320  INFO 14444 --- [http-nio-9090-exec-9] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-02-02 15:24:09.361  INFO 14444 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-02-02 15:24:10.935  INFO 14444 --- [http-nio-9090-exec-2] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 15:24:10.936  INFO 14444 --- [http-nio-9090-exec-2] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-02-02 15:24:10.968  INFO 14444 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 201 CREATED
+2022-02-02 15:24:12.646  INFO 14444 --- [http-nio-9090-exec-4] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 15:24:12.647  INFO 14444 --- [http-nio-9090-exec-4] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-02-02 15:24:12.656  INFO 14444 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-02-02 15:24:12.661  INFO 14444 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-02 15:24:42.986  INFO 14444 --- [http-nio-9090-exec-7] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 15:24:42.987  INFO 14444 --- [http-nio-9090-exec-7] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-02-02 15:24:43.013  INFO 14444 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 201 CREATED
+2022-02-02 15:26:04.202  INFO 14444 --- [http-nio-9090-exec-10] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 15:26:04.202  INFO 14444 --- [http-nio-9090-exec-10] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-02-02 15:26:04.230  INFO 14444 --- [reactor-http-nio-4] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-02-02 15:26:05.712  INFO 14444 --- [http-nio-9090-exec-3] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 15:26:05.712  INFO 14444 --- [http-nio-9090-exec-3] com.APIGateway.CustomFiler               : REDIRECTING TO  -> bank card service
+2022-02-02 15:26:05.941  INFO 14444 --- [reactor-http-nio-1] com.APIGateway.CustomFiler               : Post Filter = 500 INTERNAL_SERVER_ERROR
+2022-02-02 15:29:12.673  INFO 14444 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-02 15:31:41.485  INFO 14444 --- [http-nio-9090-exec-6] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 15:31:41.485  INFO 14444 --- [http-nio-9090-exec-6] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-02-02 15:31:41.512  INFO 14444 --- [reactor-http-nio-2] com.APIGateway.CustomFiler               : Post Filter = 201 CREATED
+2022-02-02 15:31:43.540  INFO 14444 --- [http-nio-9090-exec-9] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 15:31:43.541  INFO 14444 --- [http-nio-9090-exec-9] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-02-02 15:31:43.558  INFO 14444 --- [reactor-http-nio-2] com.APIGateway.CustomFiler               : Post Filter = 201 CREATED
+2022-02-02 15:31:43.585  INFO 14444 --- [http-nio-9090-exec-1] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 15:31:43.585  INFO 14444 --- [http-nio-9090-exec-1] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-02-02 15:31:43.601  INFO 14444 --- [reactor-http-nio-2] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-02-02 15:31:45.288  INFO 14444 --- [http-nio-9090-exec-4] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 15:31:45.288  INFO 14444 --- [http-nio-9090-exec-4] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-02-02 15:31:45.304  INFO 14444 --- [reactor-http-nio-2] com.APIGateway.CustomFiler               : Post Filter = 201 CREATED
+2022-02-02 15:31:46.405  INFO 14444 --- [http-nio-9090-exec-6] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 15:31:46.407  INFO 14444 --- [http-nio-9090-exec-6] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-02-02 15:31:46.417  INFO 14444 --- [reactor-http-nio-2] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-02-02 15:32:14.587  INFO 14444 --- [http-nio-9090-exec-9] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 15:32:14.589  INFO 14444 --- [http-nio-9090-exec-9] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-02-02 15:32:14.875  INFO 14444 --- [reactor-http-nio-2] com.APIGateway.CustomFiler               : Post Filter = 201 CREATED
+2022-02-02 15:32:44.841  INFO 14444 --- [http-nio-9090-exec-1] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 15:32:44.842  INFO 14444 --- [http-nio-9090-exec-1] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-02-02 15:32:44.861  INFO 14444 --- [reactor-http-nio-2] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-02-02 15:32:46.011  INFO 14444 --- [http-nio-9090-exec-4] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 15:32:46.011  INFO 14444 --- [http-nio-9090-exec-4] com.APIGateway.CustomFiler               : REDIRECTING TO  -> bank card service
+2022-02-02 15:32:46.142  INFO 14444 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-02-02 15:34:12.687  INFO 14444 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-02 15:35:01.874  INFO 14444 --- [http-nio-9090-exec-7] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 15:35:01.875  INFO 14444 --- [http-nio-9090-exec-7] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-02-02 15:35:01.905  INFO 14444 --- [reactor-http-nio-4] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-02-02 15:35:01.911  INFO 14444 --- [http-nio-9090-exec-9] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 15:35:01.911  INFO 14444 --- [http-nio-9090-exec-9] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-02-02 15:35:01.919  INFO 14444 --- [reactor-http-nio-4] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-02-02 15:35:05.929  INFO 14444 --- [http-nio-9090-exec-2] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 15:35:05.929  INFO 14444 --- [http-nio-9090-exec-2] com.APIGateway.CustomFiler               : REDIRECTING TO  -> bank card service
+2022-02-02 15:35:06.427  INFO 14444 --- [reactor-http-nio-1] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-02-02 15:35:17.876  INFO 14444 --- [http-nio-9090-exec-4] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 15:35:17.877  INFO 14444 --- [http-nio-9090-exec-4] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-02-02 15:35:17.888  INFO 14444 --- [reactor-http-nio-4] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-02-02 15:35:17.924  INFO 14444 --- [http-nio-9090-exec-6] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 15:35:17.924  INFO 14444 --- [http-nio-9090-exec-6] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-02-02 15:35:17.937  INFO 14444 --- [reactor-http-nio-4] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-02-02 15:35:19.981  INFO 14444 --- [http-nio-9090-exec-9] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 15:35:19.981  INFO 14444 --- [http-nio-9090-exec-9] com.APIGateway.CustomFiler               : REDIRECTING TO  -> bank card service
+2022-02-02 15:35:20.355  INFO 14444 --- [reactor-http-nio-1] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-02-02 15:37:39.429  INFO 14444 --- [http-nio-9090-exec-3] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 15:37:39.429  INFO 14444 --- [http-nio-9090-exec-3] com.APIGateway.CustomFiler               : REDIRECTING TO  -> bank card service
+2022-02-02 15:37:39.763  INFO 14444 --- [reactor-http-nio-2] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-02-02 15:37:49.896  INFO 14444 --- [http-nio-9090-exec-5] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 15:37:49.896  INFO 14444 --- [http-nio-9090-exec-5] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-02-02 15:37:49.913  INFO 14444 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-02-02 15:37:51.814  INFO 14444 --- [http-nio-9090-exec-8] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 15:37:51.815  INFO 14444 --- [http-nio-9090-exec-8] com.APIGateway.CustomFiler               : REDIRECTING TO  -> bank card service
+2022-02-02 15:37:52.180  INFO 14444 --- [reactor-http-nio-2] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-02-02 15:39:12.705  INFO 14444 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-02 15:39:43.884  INFO 14444 --- [http-nio-9090-exec-1] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 15:39:43.887  INFO 14444 --- [http-nio-9090-exec-1] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-02-02 15:39:43.899  INFO 14444 --- [reactor-http-nio-4] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-02-02 15:42:33.300  INFO 14444 --- [http-nio-9090-exec-5] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 15:42:33.300  INFO 14444 --- [http-nio-9090-exec-5] com.APIGateway.CustomFiler               : REDIRECTING TO  -> bank card service
+2022-02-02 15:42:33.697  INFO 14444 --- [reactor-http-nio-1] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-02-02 15:42:36.563  INFO 14444 --- [http-nio-9090-exec-7] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 15:42:36.564  INFO 14444 --- [http-nio-9090-exec-7] com.APIGateway.CustomFiler               : REDIRECTING TO  -> bank card service
+2022-02-02 15:42:37.320  INFO 14444 --- [reactor-http-nio-1] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-02-02 15:42:40.005  INFO 14444 --- [http-nio-9090-exec-10] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 15:42:40.005  INFO 14444 --- [http-nio-9090-exec-10] com.APIGateway.CustomFiler               : REDIRECTING TO  -> bank card service
+2022-02-02 15:42:40.342  INFO 14444 --- [reactor-http-nio-1] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-02-02 15:42:42.656  INFO 14444 --- [http-nio-9090-exec-2] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 15:42:42.658  INFO 14444 --- [http-nio-9090-exec-2] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-02-02 15:42:42.687  INFO 14444 --- [reactor-http-nio-2] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-02-02 15:42:44.299  INFO 14444 --- [http-nio-9090-exec-4] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 15:42:44.299  INFO 14444 --- [http-nio-9090-exec-4] com.APIGateway.CustomFiler               : REDIRECTING TO  -> bank card service
+2022-02-02 15:42:44.728  INFO 14444 --- [reactor-http-nio-1] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-02-02 15:44:12.713  INFO 14444 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-02 15:44:45.988  INFO 14444 --- [http-nio-9090-exec-8] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 15:44:45.988  INFO 14444 --- [http-nio-9090-exec-8] com.APIGateway.CustomFiler               : REDIRECTING TO  -> bank card service
+2022-02-02 15:44:46.693  INFO 14444 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 500 INTERNAL_SERVER_ERROR
+2022-02-02 15:49:12.722  INFO 14444 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-02 15:52:02.778  INFO 14444 --- [http-nio-9090-exec-1] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 15:52:02.779  INFO 14444 --- [http-nio-9090-exec-1] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-02-02 15:52:02.923  INFO 14444 --- [reactor-http-nio-4] com.APIGateway.CustomFiler               : Post Filter = 201 CREATED
+2022-02-02 15:52:05.369  INFO 14444 --- [http-nio-9090-exec-4] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 15:52:05.369  INFO 14444 --- [http-nio-9090-exec-4] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-02-02 15:52:05.381  INFO 14444 --- [reactor-http-nio-4] com.APIGateway.CustomFiler               : Post Filter = 201 CREATED
+2022-02-02 15:52:05.405  INFO 14444 --- [http-nio-9090-exec-6] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 15:52:05.405  INFO 14444 --- [http-nio-9090-exec-6] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-02-02 15:52:05.417  INFO 14444 --- [reactor-http-nio-4] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-02-02 15:52:06.654  INFO 14444 --- [http-nio-9090-exec-9] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 15:52:06.655  INFO 14444 --- [http-nio-9090-exec-9] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-02-02 15:52:06.764  INFO 14444 --- [reactor-http-nio-4] com.APIGateway.CustomFiler               : Post Filter = 201 CREATED
+2022-02-02 15:52:07.546  INFO 14444 --- [http-nio-9090-exec-1] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 15:52:07.547  INFO 14444 --- [http-nio-9090-exec-1] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-02-02 15:52:07.556  INFO 14444 --- [reactor-http-nio-4] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-02-02 15:52:30.270  INFO 14444 --- [http-nio-9090-exec-4] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 15:52:30.272  INFO 14444 --- [http-nio-9090-exec-4] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-02-02 15:52:30.638  INFO 14444 --- [reactor-http-nio-4] com.APIGateway.CustomFiler               : Post Filter = 201 CREATED
+2022-02-02 15:53:46.695  INFO 14444 --- [http-nio-9090-exec-7] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 15:53:46.697  INFO 14444 --- [http-nio-9090-exec-7] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-02-02 15:53:46.717  INFO 14444 --- [reactor-http-nio-1] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-02-02 15:53:55.111  INFO 14444 --- [http-nio-9090-exec-10] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 15:53:55.112  INFO 14444 --- [http-nio-9090-exec-10] com.APIGateway.CustomFiler               : REDIRECTING TO  -> bank card service
+2022-02-02 15:53:55.231  INFO 14444 --- [reactor-http-nio-2] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-02-02 15:54:12.737  INFO 14444 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-02 15:59:12.748  INFO 14444 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration

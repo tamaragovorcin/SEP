@@ -27,6 +27,7 @@ public class PaymentController {
 	}
 
 	@PostMapping("/confirm/{paymentRequestId}")
+	@CrossOrigin
 	public String confirmPayment(@RequestBody AccountDTO clientDTO, @PathVariable Integer paymentRequestId) {
 		System.out.println("Payment request id: " + paymentRequestId);
 		return paymentService.confirmPayment(clientDTO, paymentRequestId);
