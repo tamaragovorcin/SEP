@@ -44,3 +44,15 @@
 2022-02-02 11:08:12.458  INFO 11860 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8082
 2022-02-02 11:08:12.475  INFO 11860 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYPAL-SERVICE/DESKTOP-1PFK6EP:paypal-service:8082 - registration status: 204
 2022-02-02 11:08:12.542  INFO 11860 --- [restartedMain] c.P.PayPalServiceApplication             : Started PayPalServiceApplication in 8.48 seconds (JVM running for 9.361)
+2022-02-02 11:10:43.856  INFO 11860 --- [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-02 11:10:43.857  INFO 11860 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-02-02 11:10:43.858  INFO 11860 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-02-02 11:10:46.539  INFO 11860 --- [http-nio-8082-exec-1] com.PayPalService.PayPalController       : Paypal payment object created.
+2022-02-02 11:10:46.540  INFO 11860 --- [http-nio-8082-exec-1] com.PayPalService.PayPalController       : Sending paypal api link for redirection.
+2022-02-02 11:13:12.155  INFO 11860 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-02 11:13:34.009  INFO 11860 --- [http-nio-8082-exec-3] com.PayPalService.PayPalController       : Paypal payment object created.
+2022-02-02 11:13:34.010  INFO 11860 --- [http-nio-8082-exec-3] com.PayPalService.PayPalController       : Sending paypal api link for redirection.
+2022-02-02 11:18:12.165  INFO 11860 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-02 11:23:12.172  INFO 11860 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-02 11:28:12.178  INFO 11860 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-02 11:33:12.191  INFO 11860 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration

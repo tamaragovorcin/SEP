@@ -43,3 +43,35 @@
 2022-02-02 10:50:42.218  INFO 12564 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8086
 2022-02-02 10:50:42.253  INFO 12564 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AUTH-SERVICE/DESKTOP-1PFK6EP:auth-service:8086 - registration status: 204
 2022-02-02 10:50:42.330  INFO 12564 --- [restartedMain] com.AuthService.AuthServiceApplication   : Started AuthServiceApplication in 12.756 seconds (JVM running for 14.326)
+2022-02-02 10:51:55.870  INFO 12564 --- [http-nio-8086-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-02 10:51:55.870  INFO 12564 --- [http-nio-8086-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-02-02 10:51:55.872  INFO 12564 --- [http-nio-8086-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-02-02 10:51:55.943  INFO 12564 --- [http-nio-8086-exec-1] c.A.Controller.WebShopController         : Started registration for a new web shop...
+2022-02-02 10:51:56.091  INFO 12564 --- [http-nio-8086-exec-1] c.A.Controller.WebShopController         : New web shop successfully registred!
+2022-02-02 10:52:00.231  INFO 12564 --- [http-nio-8086-exec-2] c.A.Controller.WebShopController         : Logging in.. Username : webshop2
+2022-02-02 10:52:00.299  INFO 12564 --- [http-nio-8086-exec-3] c.A.Controller.WebShopController         : Overview of the currently chosen payment methods for web shop with id: 2
+2022-02-02 10:52:01.179  INFO 12564 --- [http-nio-8086-exec-4] c.A.Controller.WebShopController         : Payment method card has been disabled in the webshop with id : 2
+2022-02-02 10:52:02.178  INFO 12564 --- [http-nio-8086-exec-5] c.A.Controller.WebShopController         : Overview of the currently chosen payment methods for web shop with id: 2
+2022-02-02 10:52:47.256  INFO 12564 --- [http-nio-8086-exec-6] c.A.Controller.WebShopController         : Overview of the currently chosen payment methods for web shop with id: 2
+2022-02-02 10:55:41.645  INFO 12564 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-02 10:57:33.605  INFO 12564 --- [http-nio-8086-exec-8] c.A.Controller.WebShopController         : Overview of the currently chosen payment methods for web shop with id: 2
+2022-02-02 11:00:41.659  INFO 12564 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-02 11:05:41.663  INFO 12564 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-02 11:06:21.725  INFO 12564 --- [http-nio-8086-exec-10] c.A.Controller.WebShopController         : Overview of the currently chosen payment methods for web shop with id: 2
+2022-02-02 11:07:44.699  INFO 12564 --- [http-nio-8086-exec-2] c.A.Controller.WebShopController         : Overview of the currently chosen payment methods for web shop with id: 2
+2022-02-02 11:08:32.739  INFO 12564 --- [http-nio-8086-exec-3] c.A.Controller.WebShopController         : Overview of the currently chosen payment methods for web shop with id: 2
+2022-02-02 11:10:41.676  INFO 12564 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-02 11:10:42.541  INFO 12564 --- [http-nio-8086-exec-5] c.A.Controller.WebShopController         : Overview of the currently chosen payment methods for web shop with id: 2
+2022-02-02 11:10:44.129  INFO 12564 --- [http-nio-8086-exec-6] c.A.Controller.WebShopController         : Getting url addresses (success, error, failure) for web shop with id: 2
+2022-02-02 11:13:00.266  INFO 12564 --- [http-nio-8086-exec-8] c.A.Controller.WebShopController         : Overview of the currently chosen payment methods for web shop with id: 2
+2022-02-02 11:13:32.972  INFO 12564 --- [http-nio-8086-exec-9] c.A.Controller.WebShopController         : Getting url addresses (success, error, failure) for web shop with id: 2
+2022-02-02 11:15:15.768  INFO 12564 --- [http-nio-8086-exec-1] c.A.Controller.WebShopController         : Overview of the currently chosen payment methods for web shop with id: 2
+2022-02-02 11:15:41.689  INFO 12564 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-02 11:15:52.316  INFO 12564 --- [http-nio-8086-exec-2] c.A.Controller.WebShopController         : Overview of the currently chosen payment methods for web shop with id: 2
+2022-02-02 11:20:41.704  INFO 12564 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-02 11:20:48.686  INFO 12564 --- [http-nio-8086-exec-4] c.A.Controller.WebShopController         : Overview of the currently chosen payment methods for web shop with id: 2
+2022-02-02 11:20:56.684  INFO 12564 --- [http-nio-8086-exec-5] c.A.Controller.WebShopController         : Overview of the currently chosen payment methods for web shop with id: 2
+2022-02-02 11:21:03.758  INFO 12564 --- [http-nio-8086-exec-6] c.A.Controller.WebShopController         : Overview of the currently chosen payment methods for web shop with id: 2
+2022-02-02 11:21:05.282  INFO 12564 --- [http-nio-8086-exec-7] c.A.Controller.WebShopController         : Getting url addresses (success, error, failure) for web shop with id: 2
+2022-02-02 11:25:41.718  INFO 12564 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-02 11:30:41.723  INFO 12564 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration

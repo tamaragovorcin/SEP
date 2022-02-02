@@ -601,3 +601,57 @@ Caused by: java.net.ConnectException: Connection refused: connect
 2022-02-02 11:12:13.280  INFO 8160 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
 2022-02-02 11:12:13.294  INFO 8160 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BITCOIN-SERVICE/DESKTOP-1PFK6EP:bitcoin-service:8081 - deregister  status: 200
 2022-02-02 11:12:13.299  INFO 8160 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2022-02-02 11:12:17.398  INFO 2924 --- [restartedMain] c.B.BitCoinServiceApplication            : Starting BitCoinServiceApplication using Java 17.0.1 on DESKTOP-1PFK6EP with PID 2924 (D:\Master\SEP\SEP\PaymentServiceAgent\BitCoin-Service\target\classes started by tamar in D:\Master\SEP\SEP\PaymentServiceAgent\BitCoin-Service)
+2022-02-02 11:12:17.401  INFO 2924 --- [restartedMain] c.B.BitCoinServiceApplication            : No active profile set, falling back to default profiles: default
+2022-02-02 11:12:17.475  INFO 2924 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-02-02 11:12:17.476  INFO 2924 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-02-02 11:12:18.490  INFO 2924 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-02 11:12:18.712  INFO 2924 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 211 ms. Found 1 JPA repository interfaces.
+2022-02-02 11:12:19.077  INFO 2924 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=aa9b13b3-6873-3ef3-9423-bdb75bdc1de6
+2022-02-02 11:12:19.871  INFO 2924 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8089 (http)
+2022-02-02 11:12:19.890  INFO 2924 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-02 11:12:19.890  INFO 2924 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-02-02 11:12:20.026  INFO 2924 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-02 11:12:20.027  INFO 2924 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2550 ms
+2022-02-02 11:12:20.264  INFO 2924 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-02 11:12:20.374  INFO 2924 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.21.Final
+2022-02-02 11:12:20.617  INFO 2924 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2022-02-02 11:12:20.790  INFO 2924 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-02-02 11:12:21.304  INFO 2924 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-02-02 11:12:21.331  INFO 2924 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-02-02 11:12:22.444  INFO 2924 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-02 11:12:22.453  INFO 2924 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-02 11:12:22.481  INFO 2924 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-02-02 11:12:23.001  WARN 2924 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-02 11:12:23.230  INFO 2924 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-02-02 11:12:23.781  INFO 2924 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2022-02-02 11:12:23.965  WARN 2924 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-02-02 11:12:23.996  INFO 2924 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-02-02 11:12:24.191  INFO 2924 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2022-02-02 11:12:24.197  INFO 2924 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-02 11:12:24.247  INFO 2924 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-02-02 11:12:24.247  INFO 2924 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-02-02 11:12:24.247  INFO 2924 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-02-02 11:12:24.247  INFO 2924 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-02-02 11:12:24.247  INFO 2924 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-02-02 11:12:24.247  INFO 2924 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2022-02-02 11:12:24.247  INFO 2924 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-02-02 11:12:24.439  INFO 2924 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-02-02 11:12:24.444  INFO 2924 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2022-02-02 11:12:24.448  INFO 2924 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-02-02 11:12:24.454  INFO 2924 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1643796744452 with initial instances count: 4
+2022-02-02 11:12:24.455  INFO 2924 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application BITCOIN-SERVICE with eureka with status UP
+2022-02-02 11:12:24.456  INFO 2924 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1643796744456, current=UP, previous=STARTING]
+2022-02-02 11:12:24.459  INFO 2924 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BITCOIN-SERVICE/DESKTOP-1PFK6EP:bitcoin-service:8089: registering service...
+2022-02-02 11:12:24.494  INFO 2924 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8089 (http) with context path ''
+2022-02-02 11:12:24.495  INFO 2924 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8089
+2022-02-02 11:12:24.523  INFO 2924 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BITCOIN-SERVICE/DESKTOP-1PFK6EP:bitcoin-service:8089 - registration status: 204
+2022-02-02 11:12:24.594  INFO 2924 --- [restartedMain] c.B.BitCoinServiceApplication            : Started BitCoinServiceApplication in 8.035 seconds (JVM running for 8.804)
+2022-02-02 11:17:24.256  INFO 2924 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-02 11:21:05.072  INFO 2924 --- [http-nio-8089-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-02 11:21:05.072  INFO 2924 --- [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-02-02 11:21:05.081  INFO 2924 --- [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2022-02-02 11:21:06.071  INFO 2924 --- [http-nio-8089-exec-1] com.BitCoinService.BitCoinController     : Bitcoin payment object created.
+2022-02-02 11:22:24.260  INFO 2924 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-02 11:27:24.270  INFO 2924 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-02 11:32:24.276  INFO 2924 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration

@@ -43,3 +43,90 @@
 2022-02-02 10:42:56.535  INFO 1464 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9090
 2022-02-02 10:42:56.583  INFO 1464 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_API-GATEWAY/DESKTOP-1PFK6EP:api-gateway:9090 - registration status: 204
 2022-02-02 10:42:56.683  INFO 1464 --- [main] com.APIGateway.ApiGatewayApplication     : Started ApiGatewayApplication in 9.411 seconds (JVM running for 10.622)
+2022-02-02 10:43:26.439  INFO 1464 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-02-02 10:43:26.439  INFO 1464 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-02-02 10:43:26.439  INFO 1464 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-02-02 10:43:26.439  INFO 1464 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-02-02 10:43:26.439  INFO 1464 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-02-02 10:43:26.439  INFO 1464 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2022-02-02 10:43:26.440  INFO 1464 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-02-02 10:43:26.450  INFO 1464 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-02-02 10:47:55.650  INFO 1464 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-02 10:51:55.139  INFO 1464 --- [http-nio-9090-exec-1] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 10:51:55.140  INFO 1464 --- [http-nio-9090-exec-1] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-02-02 10:51:56.108  INFO 1464 --- [reactor-http-nio-2] com.APIGateway.CustomFiler               : Post Filter = 201 CREATED
+2022-02-02 10:52:00.107  INFO 1464 --- [http-nio-9090-exec-3] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 10:52:00.108  INFO 1464 --- [http-nio-9090-exec-3] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-02-02 10:52:00.233  INFO 1464 --- [reactor-http-nio-2] com.APIGateway.CustomFiler               : Post Filter = 201 CREATED
+2022-02-02 10:52:00.261  INFO 1464 --- [http-nio-9090-exec-6] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 10:52:00.261  INFO 1464 --- [http-nio-9090-exec-6] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-02-02 10:52:00.308  INFO 1464 --- [reactor-http-nio-2] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-02-02 10:52:01.129  INFO 1464 --- [http-nio-9090-exec-9] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 10:52:01.129  INFO 1464 --- [http-nio-9090-exec-9] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-02-02 10:52:01.181  INFO 1464 --- [reactor-http-nio-2] com.APIGateway.CustomFiler               : Post Filter = 201 CREATED
+2022-02-02 10:52:02.169  INFO 1464 --- [http-nio-9090-exec-2] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 10:52:02.169  INFO 1464 --- [http-nio-9090-exec-2] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-02-02 10:52:02.180  INFO 1464 --- [reactor-http-nio-2] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-02-02 10:52:47.247  INFO 1464 --- [http-nio-9090-exec-5] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 10:52:47.247  INFO 1464 --- [http-nio-9090-exec-5] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-02-02 10:52:47.262  INFO 1464 --- [reactor-http-nio-2] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-02-02 10:52:55.667  INFO 1464 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-02 10:57:33.563  INFO 1464 --- [http-nio-9090-exec-9] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 10:57:33.563  INFO 1464 --- [http-nio-9090-exec-9] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-02-02 10:57:33.608  INFO 1464 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-02-02 10:57:55.678  INFO 1464 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-02 11:02:55.695  INFO 1464 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-02 11:06:21.693  INFO 1464 --- [http-nio-9090-exec-4] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 11:06:21.693  INFO 1464 --- [http-nio-9090-exec-4] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-02-02 11:06:21.726  INFO 1464 --- [reactor-http-nio-4] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-02-02 11:07:44.678  INFO 1464 --- [http-nio-9090-exec-7] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 11:07:44.679  INFO 1464 --- [http-nio-9090-exec-7] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-02-02 11:07:44.702  INFO 1464 --- [reactor-http-nio-5] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-02-02 11:07:55.711  INFO 1464 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-02 11:08:32.728  INFO 1464 --- [http-nio-9090-exec-3] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 11:08:32.728  INFO 1464 --- [http-nio-9090-exec-3] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-02-02 11:08:32.741  INFO 1464 --- [reactor-http-nio-5] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-02-02 11:10:42.518  INFO 1464 --- [http-nio-9090-exec-8] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 11:10:42.519  INFO 1464 --- [http-nio-9090-exec-8] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-02-02 11:10:42.545  INFO 1464 --- [reactor-http-nio-6] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-02-02 11:10:43.764  INFO 1464 --- [http-nio-9090-exec-1] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 11:10:43.764  INFO 1464 --- [http-nio-9090-exec-1] com.APIGateway.CustomFiler               : REDIRECTING TO  -> paypal service
+2022-02-02 11:10:44.087  INFO 1464 --- [http-nio-9090-exec-2] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 11:10:44.088  INFO 1464 --- [http-nio-9090-exec-2] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-02-02 11:10:44.199  INFO 1464 --- [reactor-http-nio-6] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-02-02 11:10:46.558  INFO 1464 --- [reactor-http-nio-7] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-02-02 11:12:55.722  INFO 1464 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-02 11:13:00.255  INFO 1464 --- [http-nio-9090-exec-10] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 11:13:00.255  INFO 1464 --- [http-nio-9090-exec-10] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-02-02 11:13:00.269  INFO 1464 --- [reactor-http-nio-8] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-02-02 11:13:32.955  INFO 1464 --- [http-nio-9090-exec-3] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 11:13:32.955  INFO 1464 --- [http-nio-9090-exec-3] com.APIGateway.CustomFiler               : REDIRECTING TO  -> paypal service
+2022-02-02 11:13:32.968  INFO 1464 --- [http-nio-9090-exec-5] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 11:13:32.968  INFO 1464 --- [http-nio-9090-exec-5] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-02-02 11:13:32.974  INFO 1464 --- [reactor-http-nio-8] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-02-02 11:13:34.014  INFO 1464 --- [reactor-http-nio-1] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-02-02 11:15:15.754  INFO 1464 --- [http-nio-9090-exec-10] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 11:15:15.754  INFO 1464 --- [http-nio-9090-exec-10] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-02-02 11:15:15.771  INFO 1464 --- [reactor-http-nio-2] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-02-02 11:15:52.297  INFO 1464 --- [http-nio-9090-exec-3] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 11:15:52.297  INFO 1464 --- [http-nio-9090-exec-3] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-02-02 11:15:52.318  INFO 1464 --- [reactor-http-nio-2] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-02-02 11:17:55.726  INFO 1464 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-02 11:20:48.674  INFO 1464 --- [http-nio-9090-exec-8] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 11:20:48.674  INFO 1464 --- [http-nio-9090-exec-8] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-02-02 11:20:48.687  INFO 1464 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-02-02 11:20:56.680  INFO 1464 --- [http-nio-9090-exec-10] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 11:20:56.680  INFO 1464 --- [http-nio-9090-exec-10] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-02-02 11:20:56.685  INFO 1464 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-02-02 11:21:03.751  INFO 1464 --- [http-nio-9090-exec-2] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 11:21:03.752  INFO 1464 --- [http-nio-9090-exec-2] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-02-02 11:21:03.760  INFO 1464 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-02-02 11:21:04.954  INFO 1464 --- [http-nio-9090-exec-5] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 11:21:04.954  INFO 1464 --- [http-nio-9090-exec-5] com.APIGateway.CustomFiler               : REDIRECTING TO  -> bitcoin service
+2022-02-02 11:21:05.271  INFO 1464 --- [http-nio-9090-exec-6] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-02 11:21:05.271  INFO 1464 --- [http-nio-9090-exec-6] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-02-02 11:21:05.284  INFO 1464 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-02-02 11:21:06.098  INFO 1464 --- [reactor-http-nio-4] com.APIGateway.CustomFiler               : Post Filter = 201 CREATED
+2022-02-02 11:22:55.738  INFO 1464 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-02 11:27:55.744  INFO 1464 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-02 11:32:55.752  INFO 1464 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
