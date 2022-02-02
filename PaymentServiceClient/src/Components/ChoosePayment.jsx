@@ -106,6 +106,7 @@ const ChoosePayment = () =>{
 			.then((res) => {
 			
         alert("Uspela sam")
+        console.log(res.data)
 				}
 			
       

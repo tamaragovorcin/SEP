@@ -30,7 +30,7 @@ public class Merchant {
     private Integer id;
 
     @Column(name = "merchant_id", nullable = false, unique = true)
-    private String merchant_id;
+    private String merchantId;
 
 
     @Column(name = "merchant_password", nullable = false, unique = true)
@@ -39,4 +39,14 @@ public class Merchant {
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "account_id", referencedColumnName = "id")
     private Account account;
+
+    @Override
+    public String toString() {
+        return "Merchant{" +
+                "id=" + id +
+                ", merchant_id='" + merchantId + '\'' +
+                ", merchantPassword='" + merchantPassword + '\'' +
+                ", account=" + account +
+                '}';
+    }
 }

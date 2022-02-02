@@ -7,11 +7,13 @@ import com.BankCardService.Model.WebShop;
 import com.BankCardService.Repository.PaymentRepository;
 import com.BankCardService.Repository.WebShopRepository;
 import com.BankCardService.Service.Interfaces.IPaymentService;
+import org.apache.commons.codec.binary.Base64;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.*;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
+import java.util.Arrays;
 import java.util.Date;
 import java.util.Optional;
 
@@ -62,13 +64,16 @@ public class PaymentService implements IPaymentService {
 		paymentRequest.setErrorUrl(webShop.getErrorUrl());
 		PaymentRequest ret = paymentRepository.save(paymentRequest);
 
-		HttpHeaders headers = new HttpHeaders();
-		headers.setContentType(MediaType.APPLICATION_JSON);
-		HttpEntity<PaymentRequest> request = new HttpEntity<PaymentRequest>(paymentRequest, headers);
-		String paymentRequestId = paymentRequest.getId().toString();
-		PaymentResponseDTO paymentResponseDTO = restTemplate.postForObject(  "http://localhost:8088/payment/confirm/" + paymentRequestId, request, PaymentResponseDTO.class);
+		HttpEntity<PaymentRequest> request = new HttpEntity<PaymentRequest>(paymentRequest);
 
-		return paymentResponseDTO;
+		RestTemplate restTemplate = new RestTemplate();
+		String url = "http://localhost:8088/payment/confirm";
+		ResponseEntity<PaymentResponseDTO> response = restTemplate.exchange(url, HttpMethod.POST, request, PaymentResponseDTO.class);
+		System.out.println(response.getBody());
+
+
+
+		return response.getBody();
 	}
 
 

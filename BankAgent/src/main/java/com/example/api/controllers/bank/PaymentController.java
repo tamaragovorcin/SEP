@@ -13,19 +13,21 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/payment")
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 public class PaymentController {
 
 	@Autowired
 	private PaymentService paymentService;
 
 	@PostMapping("/confirm")
-	private PaymentResponseDTO confirm(@RequestBody PaymentRequestDTO clientDTO) {
+	@CrossOrigin
+	public PaymentResponseDTO confirm(@RequestBody PaymentRequestDTO clientDTO) {
 		System.out.println("Payment request uslaaaaaaaaaaaa " );
 		return paymentService.getPaymentResponse(clientDTO);
 	}
 
 	@PostMapping("/confirm/{paymentRequestId}")
-	private String confirmPayment(@RequestBody AccountDTO clientDTO, @PathVariable Integer paymentRequestId) {
+	public String confirmPayment(@RequestBody AccountDTO clientDTO, @PathVariable Integer paymentRequestId) {
 		System.out.println("Payment request id: " + paymentRequestId);
 		return paymentService.confirmPayment(clientDTO, paymentRequestId);
 	}
