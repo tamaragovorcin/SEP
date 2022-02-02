@@ -21,4 +21,22 @@ public class AccountDTO {
     private String mm;
     private String yy;
     private String cardSecurityCode;
+    private String expirationDate;
+
+
+    @Override
+    public String toString() {
+        return "AccountDTO{" +
+                "cardHolderName='" + cardHolderName + '\'' +
+                ", cardHolderUCIN='" + cardHolderUCIN + '\'' +
+                ", bankId=" + bankId +
+                ", availableFunds=" + availableFunds +
+                ", reservedFunds=" + reservedFunds +
+                ", PAN='" + PAN + '\'' +
+                ", mm='" + mm + '\'' +
+                ", yy='" + yy + '\'' +
+                ", cardSecurityCode='" + cardSecurityCode + '\'' +
+                ", expirationDate='" + expirationDate + '\'' +
+                '}';
+    }
 }

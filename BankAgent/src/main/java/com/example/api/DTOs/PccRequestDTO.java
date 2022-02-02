@@ -13,8 +13,7 @@ public class PccRequestDTO {
 	private String panNumber;
 	private String cardHolder;
 	private Integer cvv;
-	private String mm;
-	private String yy;
+	private String expirationDate;
 	private Integer acquirerOrderId;
 	private Date acquirerTimestamp;
 	private Double amount;
