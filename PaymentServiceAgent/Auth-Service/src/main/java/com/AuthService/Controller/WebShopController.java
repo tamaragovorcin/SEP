@@ -2,6 +2,7 @@ package com.AuthService.Controller;
 
 import com.AuthService.DTO.BankPaymentMethodDTO;
 import com.AuthService.DTO.PaymentMethodDTO;
+import com.AuthService.DTO.UrlAddressesDTO;
 import com.AuthService.DTO.WebShopDTO;
 import com.AuthService.Model.WebShop;
 import com.AuthService.Service.WebShopService;
@@ -107,6 +108,20 @@ public class WebShopController {
         } catch (Exception e) {
             logger.error("Exception while getting payment methods. Error is: " + e);
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
+
+    @GetMapping("/urls/{webShopId}")
+    public UrlAddressesDTO getUrlsByWebShopId(@PathVariable String webShopId) {
+
+        try {
+            UrlAddressesDTO urlAddressesDTO = webShopService.getUrlsByWebShopId(Integer.parseInt(webShopId));
+            logger.info("Getting url addresses (success, error, failure) for web shop with id: " + webShopId );
+            return urlAddressesDTO;
+
+        } catch (Exception e) {
+            logger.error("Exception while getting url addresses (success, error, failure) for web shop. Error is: " + e);
+            return new UrlAddressesDTO();
         }
     }
 }

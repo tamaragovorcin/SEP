@@ -16,5 +16,5 @@ public class MerchantDTO {
 	private BigDecimal amount;
 	private String merchant_id;
 	private String merchant_token;
-	
+	private String webShopId;
 }

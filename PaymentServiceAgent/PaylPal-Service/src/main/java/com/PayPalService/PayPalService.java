@@ -1,6 +1,7 @@
 package com.PayPalService;
 
-import com.PayPalService.FeignClients.BankCardFeignClient;
+import com.PayPalService.DTO.UrlAddressesDTO;
+import com.PayPalService.FeignClients.AuthFeignClient;
 import com.PayPalService.Model.PayPalPayment;
 import com.paypal.api.payments.Amount;
 import com.paypal.api.payments.Payer;
@@ -31,15 +32,16 @@ import java.net.URISyntaxException;
 public class PayPalService {
 
     @Autowired
-    BankCardFeignClient bankCardFeignClient;
+    AuthFeignClient authFeignClient;
 
     @Autowired
     PayPalRepository payPalRepository;
 
     private APIContext apiContext;
 
-    public String getBankCard() {
-        return bankCardFeignClient.getByName(" path variable");
+
+    public UrlAddressesDTO getUrlAddressByWebShopId(String webShopId) {
+        return authFeignClient.getUrlsByWebShopId(webShopId);
     }
 
     public Payment createPayment(

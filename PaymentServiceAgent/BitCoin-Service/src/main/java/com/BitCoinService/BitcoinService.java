@@ -1,5 +1,7 @@
 package com.BitCoinService;
 
+import com.BitCoinService.DTO.UrlAddressesDTO;
+import com.BitCoinService.FeignClients.AuthFeignClient;
 import com.BitCoinService.Model.BitcoinPayment;
 import com.BitCoinService.Model.BitcoinPaymentDTO;
 import com.BitCoinService.Model.MerchantDTO;
@@ -20,6 +22,10 @@ public class BitcoinService {
 
     @Autowired
     BitcoinRepository bitcoinRepository;
+
+    @Autowired
+    AuthFeignClient authFeignClient;
+
 
     public void savePayment(BitcoinPaymentDTO payment) {
         BitcoinPayment bitcoinPayment = new BitcoinPayment();
@@ -47,6 +53,8 @@ public class BitcoinService {
     }
 
     private ResponseBitcoinDTO createBitCoinRequest(MerchantDTO merchantDTO) {
+        UrlAddressesDTO urls = getUrlAddressByWebShopId(merchantDTO.getWebShopId());
+
         Map<String, Object> mapa = new HashMap<String,Object>();
         mapa.put("order_id", UUID.randomUUID().toString());
         mapa.put("price_amount", merchantDTO.getAmount());
@@ -55,11 +63,11 @@ public class BitcoinService {
         mapa.put("title", merchantDTO.getMerchant_id());
         mapa.put("description", "desc");
         mapa.put("callback_url", "https://api-sandbox.coingate.com/account/orders");
-        mapa.put("success_url", "http://localhost:3001/#/productPaymentSuccess");
-        mapa.put("error_url", "http://localhost:3001/#/productPaymentError");
-        mapa.put("failed_url", "http://localhost:3001/#/productPaymentFailure");
+        mapa.put("success_url", urls.getSuccessUrl());
+        mapa.put("error_url", urls.getErrorUrl());
+        mapa.put("failed_url", urls.getFailureUrl());
 
-        mapa.put("cancel_url", "http://localhost:3001//#/orders");
+        mapa.put("cancel_url", urls.getFailureUrl());
 
         RestTemplate client = new RestTemplate();
         HttpHeaders headers = new HttpHeaders();
@@ -69,5 +77,9 @@ public class BitcoinService {
 
         ResponseBitcoinDTO response = client.postForObject("https://api-sandbox.coingate.com/v2/orders", entity, ResponseBitcoinDTO.class);
         return response;
+    }
+
+    public UrlAddressesDTO getUrlAddressByWebShopId(String webShopId) {
+        return authFeignClient.getUrlsByWebShopId(webShopId);
     }
 }

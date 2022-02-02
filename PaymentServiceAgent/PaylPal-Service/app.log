@@ -1,105 +1,58 @@
-2022-02-01 00:47:26.649  WARN 12972 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3h48m707ms211µs700ns).
-2022-02-01 00:50:59.467  INFO 12972 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-02-01 00:55:59.471  INFO 12972 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-02-01 01:00:59.487  INFO 12972 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-02-01 01:05:59.494  INFO 12972 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-02-01 01:09:33.389  INFO 12972 --- [http-nio-8082-exec-4] com.PayPalService.PayPalController       : Paypal payment object created.
-2022-02-01 01:09:33.390  INFO 12972 --- [http-nio-8082-exec-4] com.PayPalService.PayPalController       : Sending paypal api link for redirection.
-2022-02-01 01:09:50.126  INFO 12972 --- [http-nio-8082-exec-5] com.PayPalService.PayPalController       : Paypal payment has just been finished.
-2022-02-01 01:10:59.508  INFO 12972 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-02-01 01:15:24.953  INFO 12972 --- [http-nio-8082-exec-7] com.PayPalService.PayPalController       : Paypal payment object created.
-2022-02-01 01:15:24.954  INFO 12972 --- [http-nio-8082-exec-7] com.PayPalService.PayPalController       : Sending paypal api link for redirection.
-2022-02-01 01:15:33.863  INFO 12972 --- [http-nio-8082-exec-8] com.PayPalService.PayPalController       : Paypal payment has just been finished.
-2022-02-01 01:15:59.516  INFO 12972 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-02-01 01:20:59.526  INFO 12972 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-02-01 01:25:59.536  INFO 12972 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-02-01 01:32:12.396  WARN 12972 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m14s51ms530µs500ns).
-2022-02-01 01:34:43.580  INFO 12972 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-02-01 01:39:43.596  INFO 12972 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-02-01 01:44:43.598  INFO 12972 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-02-01 01:49:43.605  INFO 12972 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-02-01 01:54:41.252  INFO 12972 --- [http-nio-8082-exec-10] com.PayPalService.PayPalController       : Paypal payment object created.
-2022-02-01 01:54:41.253  INFO 12972 --- [http-nio-8082-exec-10] com.PayPalService.PayPalController       : Sending paypal api link for redirection.
-2022-02-01 01:54:43.614  INFO 12972 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-02-01 01:56:58.370  INFO 12972 --- [http-nio-8082-exec-2] com.PayPalService.PayPalController       : Paypal payment object created.
-2022-02-01 01:56:58.371  INFO 12972 --- [http-nio-8082-exec-2] com.PayPalService.PayPalController       : Sending paypal api link for redirection.
-2022-02-01 01:57:15.502  INFO 12972 --- [http-nio-8082-exec-3] com.PayPalService.PayPalController       : Paypal payment has just been finished.
-2022-02-01 01:59:43.618  INFO 12972 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-02-01 02:00:30.325  INFO 12972 --- [SpringContextShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application PAYPAL-SERVICE with eureka with status DOWN
-2022-02-01 02:00:30.326  INFO 12972 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1643677230326, current=DOWN, previous=UP]
-2022-02-01 02:00:30.328  INFO 12972 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYPAL-SERVICE/DESKTOP-1PFK6EP:paypal-service:8082: registering service...
-2022-02-01 02:00:30.355  INFO 12972 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYPAL-SERVICE/DESKTOP-1PFK6EP:paypal-service:8082 - registration status: 204
-2022-02-01 02:00:30.684  INFO 12972 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2022-02-01 02:00:30.700  INFO 12972 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2022-02-01 02:00:30.722  INFO 12972 --- [SpringContextShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
-2022-02-01 02:00:30.908  INFO 12972 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2022-02-01 02:00:30.921  INFO 12972 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2022-02-01 02:00:30.923  INFO 12972 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
-2022-02-01 02:00:33.939  INFO 12972 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
-2022-02-01 02:00:33.944  INFO 12972 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYPAL-SERVICE/DESKTOP-1PFK6EP:paypal-service:8082 - deregister  status: 200
-2022-02-01 02:00:33.959  INFO 12972 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
-2022-02-01 02:00:40.727  INFO 3756 --- [restartedMain] c.P.PayPalServiceApplication             : Starting PayPalServiceApplication using Java 17.0.1 on DESKTOP-1PFK6EP with PID 3756 (D:\Master\SEP\SEP\PaymentServiceAgent\PaylPal-Service\target\classes started by tamar in D:\Master\SEP\SEP\PaymentServiceAgent\PaylPal-Service)
-2022-02-01 02:00:40.732  INFO 3756 --- [restartedMain] c.P.PayPalServiceApplication             : No active profile set, falling back to default profiles: default
-2022-02-01 02:00:40.823  INFO 3756 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2022-02-01 02:00:40.824  INFO 3756 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2022-02-01 02:00:41.881  INFO 3756 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-02-01 02:00:42.087  INFO 3756 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 196 ms. Found 1 JPA repository interfaces.
-2022-02-01 02:00:42.490  INFO 3756 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=8e1dfcc4-5045-30a2-91eb-c65b2f1affe3
-2022-02-01 02:00:43.323  INFO 3756 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
-2022-02-01 02:00:43.337  INFO 3756 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-02-01 02:00:43.338  INFO 3756 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
-2022-02-01 02:00:43.477  INFO 3756 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-02-01 02:00:43.477  INFO 3756 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2653 ms
-2022-02-01 02:00:43.708  INFO 3756 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-02-01 02:00:43.778  INFO 3756 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.21.Final
-2022-02-01 02:00:43.974  INFO 3756 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2022-02-01 02:00:44.132  INFO 3756 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2022-02-01 02:00:44.495  INFO 3756 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2022-02-01 02:00:44.517  INFO 3756 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-2022-02-01 02:00:45.707  INFO 3756 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-02-01 02:00:45.715  INFO 3756 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-02-01 02:00:45.740  WARN 3756 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
-2022-02-01 02:00:45.951  WARN 3756 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-02-01 02:00:46.566  INFO 3756 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2022-02-01 02:00:47.159  INFO 3756 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
-2022-02-01 02:00:47.352  WARN 3756 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-2022-02-01 02:00:47.391  INFO 3756 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
-2022-02-01 02:00:47.532  INFO 3756 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
-2022-02-01 02:00:47.541  INFO 3756 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-02-01 02:00:47.598  INFO 3756 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
-2022-02-01 02:00:47.599  INFO 3756 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
-2022-02-01 02:00:47.599  INFO 3756 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
-2022-02-01 02:00:47.599  INFO 3756 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
-2022-02-01 02:00:47.599  INFO 3756 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
-2022-02-01 02:00:47.599  INFO 3756 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
-2022-02-01 02:00:47.599  INFO 3756 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
-2022-02-01 02:00:47.843  INFO 3756 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
-2022-02-01 02:00:47.846  INFO 3756 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
-2022-02-01 02:00:47.850  INFO 3756 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
-2022-02-01 02:00:47.856  INFO 3756 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1643677247855 with initial instances count: 3
-2022-02-01 02:00:47.858  INFO 3756 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application PAYPAL-SERVICE with eureka with status UP
-2022-02-01 02:00:47.859  INFO 3756 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1643677247859, current=UP, previous=STARTING]
-2022-02-01 02:00:47.861  INFO 3756 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYPAL-SERVICE/DESKTOP-1PFK6EP:paypal-service:8082: registering service...
-2022-02-01 02:00:47.892  INFO 3756 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
-2022-02-01 02:00:47.893  INFO 3756 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8082
-2022-02-01 02:00:47.907  INFO 3756 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYPAL-SERVICE/DESKTOP-1PFK6EP:paypal-service:8082 - registration status: 204
-2022-02-01 02:00:47.982  INFO 3756 --- [restartedMain] c.P.PayPalServiceApplication             : Started PayPalServiceApplication in 8.053 seconds (JVM running for 8.93)
-2022-02-01 02:01:37.435  INFO 3756 --- [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-02-01 02:01:37.436  INFO 3756 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-02-01 02:01:37.438  INFO 3756 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2022-02-01 02:01:38.955  INFO 3756 --- [http-nio-8082-exec-1] com.PayPalService.PayPalController       : Paypal payment object created.
-2022-02-01 02:01:38.956  INFO 3756 --- [http-nio-8082-exec-1] com.PayPalService.PayPalController       : Sending paypal api link for redirection.
-2022-02-01 02:01:48.536  INFO 3756 --- [http-nio-8082-exec-2] com.PayPalService.PayPalController       : Paypal payment has just been finished.
-2022-02-01 02:02:38.105  INFO 3756 --- [SpringContextShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application PAYPAL-SERVICE with eureka with status DOWN
-2022-02-01 02:02:38.106  INFO 3756 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1643677358106, current=DOWN, previous=UP]
-2022-02-01 02:02:38.106  INFO 3756 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYPAL-SERVICE/DESKTOP-1PFK6EP:paypal-service:8082: registering service...
-2022-02-01 02:02:38.114  INFO 3756 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYPAL-SERVICE/DESKTOP-1PFK6EP:paypal-service:8082 - registration status: 204
-2022-02-01 02:02:38.153  INFO 3756 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2022-02-01 02:02:38.161  INFO 3756 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2022-02-01 02:02:38.162  INFO 3756 --- [SpringContextShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
-2022-02-01 02:02:38.286  INFO 3756 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2022-02-01 02:02:38.304  INFO 3756 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2022-02-01 02:02:38.305  INFO 3756 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
-2022-02-01 02:02:41.312  INFO 3756 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
-2022-02-01 02:02:41.316  INFO 3756 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYPAL-SERVICE/DESKTOP-1PFK6EP:paypal-service:8082 - deregister  status: 200
-2022-02-01 02:02:41.323  INFO 3756 --- [SpringContextShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2022-02-02 11:08:04.951  INFO 11860 --- [restartedMain] c.P.PayPalServiceApplication             : Starting PayPalServiceApplication using Java 17.0.1 on DESKTOP-1PFK6EP with PID 11860 (D:\Master\SEP\SEP\PaymentServiceAgent\PaylPal-Service\target\classes started by tamar in D:\Master\SEP\SEP\PaymentServiceAgent\PaylPal-Service)
+2022-02-02 11:08:04.963  INFO 11860 --- [restartedMain] c.P.PayPalServiceApplication             : No active profile set, falling back to default profiles: default
+2022-02-02 11:08:05.093  INFO 11860 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-02-02 11:08:05.094  INFO 11860 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-02-02 11:08:06.350  INFO 11860 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-02 11:08:06.573  INFO 11860 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 214 ms. Found 1 JPA repository interfaces.
+2022-02-02 11:08:06.984  INFO 11860 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=3f4d2a29-4c3c-3d9e-9185-abe7387687d7
+2022-02-02 11:08:07.880  INFO 11860 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2022-02-02 11:08:07.899  INFO 11860 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-02 11:08:07.900  INFO 11860 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-02-02 11:08:08.074  INFO 11860 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-02 11:08:08.075  INFO 11860 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2980 ms
+2022-02-02 11:08:08.300  INFO 11860 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-02 11:08:08.388  INFO 11860 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.21.Final
+2022-02-02 11:08:08.668  INFO 11860 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2022-02-02 11:08:08.827  INFO 11860 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-02-02 11:08:09.319  INFO 11860 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-02-02 11:08:09.348  INFO 11860 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-02-02 11:08:10.383  INFO 11860 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-02 11:08:10.391  INFO 11860 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-02 11:08:10.417  WARN 11860 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2022-02-02 11:08:10.613  WARN 11860 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-02 11:08:11.207  INFO 11860 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-02-02 11:08:11.730  INFO 11860 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2022-02-02 11:08:11.886  WARN 11860 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-02-02 11:08:11.919  INFO 11860 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-02-02 11:08:12.075  INFO 11860 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2022-02-02 11:08:12.081  INFO 11860 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-02 11:08:12.134  INFO 11860 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-02-02 11:08:12.134  INFO 11860 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-02-02 11:08:12.134  INFO 11860 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-02-02 11:08:12.134  INFO 11860 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-02-02 11:08:12.134  INFO 11860 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-02-02 11:08:12.134  INFO 11860 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2022-02-02 11:08:12.134  INFO 11860 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-02-02 11:08:12.403  INFO 11860 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-02-02 11:08:12.409  INFO 11860 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2022-02-02 11:08:12.412  INFO 11860 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-02-02 11:08:12.419  INFO 11860 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1643796492417 with initial instances count: 3
+2022-02-02 11:08:12.422  INFO 11860 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application PAYPAL-SERVICE with eureka with status UP
+2022-02-02 11:08:12.424  INFO 11860 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1643796492424, current=UP, previous=STARTING]
+2022-02-02 11:08:12.426  INFO 11860 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYPAL-SERVICE/DESKTOP-1PFK6EP:paypal-service:8082: registering service...
+2022-02-02 11:08:12.457  INFO 11860 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2022-02-02 11:08:12.458  INFO 11860 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8082
+2022-02-02 11:08:12.475  INFO 11860 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYPAL-SERVICE/DESKTOP-1PFK6EP:paypal-service:8082 - registration status: 204
+2022-02-02 11:08:12.542  INFO 11860 --- [restartedMain] c.P.PayPalServiceApplication             : Started PayPalServiceApplication in 8.48 seconds (JVM running for 9.361)
+2022-02-02 11:10:43.856  INFO 11860 --- [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-02 11:10:43.857  INFO 11860 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-02-02 11:10:43.858  INFO 11860 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-02-02 11:10:46.539  INFO 11860 --- [http-nio-8082-exec-1] com.PayPalService.PayPalController       : Paypal payment object created.
+2022-02-02 11:10:46.540  INFO 11860 --- [http-nio-8082-exec-1] com.PayPalService.PayPalController       : Sending paypal api link for redirection.
+2022-02-02 11:13:12.155  INFO 11860 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-02 11:13:34.009  INFO 11860 --- [http-nio-8082-exec-3] com.PayPalService.PayPalController       : Paypal payment object created.
+2022-02-02 11:13:34.010  INFO 11860 --- [http-nio-8082-exec-3] com.PayPalService.PayPalController       : Sending paypal api link for redirection.
+2022-02-02 11:18:12.165  INFO 11860 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-02 11:23:12.172  INFO 11860 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-02 11:28:12.178  INFO 11860 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-02 11:33:12.191  INFO 11860 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
