@@ -186,7 +186,7 @@ class ConferencesCart extends Component {
 		Axios.post(BASE_URL_AGENT + "/api/conference/addOrder", purchaseDTO, {  headers: { Authorization: getAuthHeader() } })
 		.then((res) => {
 			let paymentId = res.data;
-			document.cookie = "paymentId=" + paymentId + ";path=/";
+			document.cookie = "paymentWebShopId=" + paymentId + ";path=/";
 
 			window.location.href = 'http://localhost:3000/'
 		})

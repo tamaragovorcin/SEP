@@ -295,4 +295,9 @@ public class PaymentService implements IPaymentService {
 				new HttpEntity<CompletePaymentResponseDTO>(completePaymentResponseDTO), String.class);
 		System.out.println(responseEntity.getBody());
 	}
+
+	public String getmerchantPANbyID(String merchantID) {
+		Merchant merchant = merchantService.findByMerchantId(merchantID);
+		return merchant.getAccount().getPAN();
+	}
 }

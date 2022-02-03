@@ -1,7 +1,7 @@
 //import './App.css';
 import ChoosePayment from './Components/ChoosePayment';
 import PayPal from './Components/PayPal';
-import QRCode from './Components/QRCode';
+import QRCode from './Components/QRCodePayment';
 import BankCard from './Components/BankCard';
 import BitCoin from './Components/BitCoin';
 import Login from './Components/Login';
@@ -18,7 +18,6 @@ function App() {
           <Link exact to="/payPal" path="/payPal" component={PayPal} />
           <Link exact to="/qrCode" path="/qrCode" component={QRCode} /> 
           <Link exact to="/bankCard" path="/bankCard" component={BankCard} />
-          <Link exact to="/bitCoin" path="/bitCoin" component={BitCoin} />
           <Link exact to="/bankCard" path="/bankCard" component={BankCard} />
           <Link exact to="/bitCoin" path="/bitCoin" component={BitCoin} />
           <Link exact to="/login" path="/login" component={Login} />

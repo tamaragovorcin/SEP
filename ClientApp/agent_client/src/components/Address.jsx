@@ -147,7 +147,7 @@ class Address extends Component {
 						Axios.post(BASE_URL_AGENT + "/api/purchase/add", purchaseDTO, {  headers: { Authorization: getAuthHeader() } })
 						.then((res) => {
 							let paymentId = res.data;
-							document.cookie = "paymentId=" + paymentId + ";path=/";
+							document.cookie = "paymentWebShopId=" + paymentId + ";path=/";
 
 							window.location.href = 'http://localhost:3000/'
 						})

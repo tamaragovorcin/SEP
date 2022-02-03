@@ -133,4 +133,9 @@ public class WebShopService {
         urlAddressesDTO.setFailureUrl(webShop.getFailureUrl());
         return urlAddressesDTO;
     }
+
+    public String getmerchantID(String webShopId) {
+        WebShop webShop = webShopRepository.findByWebShopId(Integer.parseInt(webShopId));
+        return webShop.getMerchantID();
+    }
 }

@@ -42,7 +42,7 @@
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-openfeign</artifactId>
-			<version>${spring.cloud.version}</version>
+			<version>${spring.cloud.version}</version>F
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
