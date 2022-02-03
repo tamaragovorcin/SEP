@@ -31,13 +31,13 @@ class TopBar extends React.Component {
 					<div className="contact-info mr-auto">
 						<i className="icofont-envelope"></i>{" "}
 						<a style={myStyle} href="mailto:quinceit.pquince@gmail.com">
-							itsolutions@gmail.com
+							bankingSystem@gmail.com
 						</a>
 						<a href="#" style={myStyle} className="instagram">
-							<i className="icofont-instagram"></i>ITSolutions
+							<i className="icofont-instagram"></i>Banking System
 						</a>
 						<a href="#" style={myStyle} className="facebook">
-							<i className="icofont-facebook"></i>ITSolutions
+							<i className="icofont-facebook"></i>Banking System
 						</a>
 					</div>
 

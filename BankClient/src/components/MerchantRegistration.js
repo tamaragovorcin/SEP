@@ -83,10 +83,13 @@ class MerchantRegistration extends Component {
                             });
                         } else if (res.status === 500) {
                             this.setState({ errorHeader: "Internal server error!", errorMessage: "Server error.", hiddenErrorAlert: false });
-                        } else {
+                        }else if(res.status === 400){
+								alert("You entered invalid data, please try again!")
+						}
+						 else {
                             console.log("Success");
                             this.setState({merchantPassword : res.data.merchantPassword})
-                            this.setState({merchantId : res.data.merchant_id})
+                            this.setState({merchantId : res.data.merchantId})
                             this.setState({ showMerchant: true });
                             this.setState({showForm:false})
 

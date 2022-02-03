@@ -66,7 +66,12 @@ public class BankController {
     public ResponseEntity<Merchant> registerMerchant(@RequestBody CardInfoDTO dto) {
         try {
             Merchant merchant= merchantService.save(dto);
-            return new ResponseEntity<Merchant>(merchant, HttpStatus.CREATED);
+            if(merchant!=null) {
+                return new ResponseEntity<Merchant>(merchant, HttpStatus.CREATED);
+            }else{
+                return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+
+            }
         } catch (ResourceConflictException e) {
             return new ResponseEntity<>(HttpStatus.CONFLICT);
         }

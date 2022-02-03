@@ -152,7 +152,7 @@ class SuccessfulOpeningAccount extends Component {
 										<input
                                         readonly
 											class="form-control"
-											type="date"
+											type="text"
 											id="surname"
 											value={this.props.expirationDate}
 										/>
