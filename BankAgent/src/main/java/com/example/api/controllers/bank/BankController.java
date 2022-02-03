@@ -51,6 +51,7 @@ public class BankController {
     @PostMapping("/openAnAccount")
     public ResponseEntity<Account> openAnAccount(@RequestBody AccountDTO dto) {
         try {
+            System.out.println("POGODIO JE METODU********************");
             Account account = accountService.save(dto);
             return new ResponseEntity<Account>(account, HttpStatus.CREATED);
         } catch (ResourceConflictException e) {
@@ -65,7 +66,12 @@ public class BankController {
     public ResponseEntity<Merchant> registerMerchant(@RequestBody CardInfoDTO dto) {
         try {
             Merchant merchant= merchantService.save(dto);
-            return new ResponseEntity<Merchant>(merchant, HttpStatus.CREATED);
+            if(merchant!=null) {
+                return new ResponseEntity<Merchant>(merchant, HttpStatus.CREATED);
+            }else{
+                return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+
+            }
         } catch (ResourceConflictException e) {
             return new ResponseEntity<>(HttpStatus.CONFLICT);
         }

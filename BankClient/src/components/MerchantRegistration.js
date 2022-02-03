@@ -83,10 +83,13 @@ class MerchantRegistration extends Component {
                             });
                         } else if (res.status === 500) {
                             this.setState({ errorHeader: "Internal server error!", errorMessage: "Server error.", hiddenErrorAlert: false });
-                        } else {
+                        }else if(res.status === 400){
+								alert("You entered invalid data, please try again!")
+						}
+						 else {
                             console.log("Success");
                             this.setState({merchantPassword : res.data.merchantPassword})
-                            this.setState({merchantId : res.data.merchant_id})
+                            this.setState({merchantId : res.data.merchantId})
                             this.setState({ showMerchant: true });
                             this.setState({showForm:false})
 
@@ -107,12 +110,21 @@ class MerchantRegistration extends Component {
 		return (
             <React.Fragment>
 
-<div id="center">
+<div >
         <div className="container d-flex align-items-center" style={{ marginTop: "10%" }}>
-					<div className="row section-design">
-						<div>
+					<div className="row section-design" style={{  margin: "auto",
+  width: "50%",
+  border: "2px solid blue",
+  padding: "10px",
+  textAlign: "center",
+  backgroundColor:"#E8EDEE"
+ }}>
+						<div style={{display: "block",
+  marginLeft: "auto",
+  marginRight: "auto",
+  width: "70%"}}>
 							<br />
-							<form hidden={!this.state.showForm} id="contactForm" name="sentMessage" noValidate="novalidate">
+							<form hidden={!this.state.showForm} id="contactForm" name="sentMessage" noValidate="novalidate" style={{width : "100%"}}>
 							<div className="control-group">
 									<div className="form-group controls mb-0 pb-2" style={{ color: "#6c757d", opacity: 1 }}>
 										<label>Card number(PAN):*</label>
