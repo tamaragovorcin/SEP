@@ -30,12 +30,13 @@ public class PaymentController {
 		
 		// Skontati koja je banka iz PAN-a i poslati zahtev na tu banku
 		String bankId = getBankIdFromPan(pccRequestDTO.getPanNumber());
-		String bankUrl = bankInfoService.getBankUrl(bankId);
-		System.out.println("bankURL: " + bankUrl);
+		//String bankUrl = bankInfoService.getBankUrl(bankId);
+		//System.out.println("bankURL: " + bankUrl);
 		// Saljemo zahtev na BankUrl
+		pccRequestDTO.setBankId(Integer.parseInt(bankId));
 		
 		// Usmeravanje ka servisu banke (kupca)
-		ResponseEntity<PccResponseDTO> responseEntity = restTemplate.exchange(bankUrl, HttpMethod.POST,
+		ResponseEntity<PccResponseDTO> responseEntity = restTemplate.exchange("http://localhost:8088/pcc/pay", HttpMethod.POST,
 				new HttpEntity<PccRequestDTO>(pccRequestDTO), PccResponseDTO.class);
 		
 		System.out.println("Odgovor: ");

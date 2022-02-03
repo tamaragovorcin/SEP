@@ -43,7 +43,6 @@ public class MerchantService implements IMerchantService {
     public Merchant save(CardInfoDTO dto) {
         Merchant merchant = new Merchant();
         if(accountService.checkCardInfo(dto)){
-            System.out.println("Prosaaoooo");
             int leftLimit = 48;
             int rightLimit = 57;
             int targetStringLength = 6;

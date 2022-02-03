@@ -103,14 +103,14 @@ class BankProfile extends Component {
 					</nav>
 				</div>
 			</header>  
-            <div id="center" >
-                <div hidden={!this.state.showOpenAccount}>
+            <div id="hero">
+                <div id= "center" hidden={!this.state.showOpenAccount}>
                 <OpenAccount
                     bank={this.state.bank}
                     ></OpenAccount>
                 </div>
                    
-                <div hidden={!this.state.showMerchantRegistration}> 
+                <div div = "center" hidden={!this.state.showMerchantRegistration}> 
                 <MerchantRegistration
                     bank={this.state.bank}
                 ></MerchantRegistration>

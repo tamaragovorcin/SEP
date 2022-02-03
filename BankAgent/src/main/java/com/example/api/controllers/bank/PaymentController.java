@@ -31,7 +31,10 @@ public class PaymentController {
 	@CrossOrigin
 	public String confirmPayment(@RequestBody AccountDTO clientDTO, @PathVariable Integer paymentRequestId) {
 
-		return paymentService.confirmPayment(clientDTO, paymentRequestId);
+		String url = paymentService.confirmPayment(clientDTO, paymentRequestId);
+		paymentService.browse(url);
+
+		return "Ok";
 	}
 
 	@PostMapping("/merchantPAN")
