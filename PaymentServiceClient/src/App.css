@@ -22,4 +22,21 @@
   color: white;
 }
 
+.div-class-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 200px 40px;
+}
+table {
+  border-collapse: collapse;
+  border: 5px solid black;
+  width: 100%;
+}
+td {
+  width: 50%;
+  height: 2em;
+  border: 1px solid #ccc;
+}
 

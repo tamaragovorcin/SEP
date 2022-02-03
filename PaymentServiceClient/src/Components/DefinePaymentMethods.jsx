@@ -63,7 +63,7 @@ class DefinePaymentMethods extends Component {
             });
     } 
     handleEnableMethod(method) {
-        if(method == "card" || method == "bitcoin"){
+        if(method == "card" || method == "qr"){
             this.setState({merchantFormShow : true})            
             this.setState({chosenMethod : method})
         }else{

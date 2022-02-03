@@ -1,6 +1,7 @@
 package com.example.api.controllers.bank;
 
 import com.example.api.DTOs.AccountDTO;
+import com.example.api.DTOs.IdDTO;
 import com.example.api.DTOs.PaymentRequestDTO;
 import com.example.api.DTOs.PaymentResponseDTO;
 import com.example.api.entities.bank.PaymentRequest;
@@ -32,4 +33,12 @@ public class PaymentController {
 
 		return paymentService.confirmPayment(clientDTO, paymentRequestId);
 	}
+
+	@PostMapping("/merchantPAN")
+	@CrossOrigin
+	public String getPan(@RequestBody IdDTO idDTO) {
+		return paymentService.getmerchantPANbyID(idDTO.getMerchantID());
+	}
+
+
 }
