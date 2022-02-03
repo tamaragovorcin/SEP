@@ -2559,3 +2559,75 @@ Caused by: java.sql.SQLSyntaxErrorException: Can't DROP 'FKr33sge1hfs9389l27ycma
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54) ~[hibernate-core-5.4.23.Final.jar:5.4.23.Final]
 	... 19 common frames omitted
 
+2022-02-03 12:49:15.791  INFO 3928 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-03 12:49:15.814  INFO 3928 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-03 12:49:21.408  INFO 3928 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2022-02-03 12:49:21.495  INFO 3928 --- [restartedMain] com.example.WebShop.WebShopApplication   : Started WebShopApplication in 74.348 seconds (JVM running for 77.561)
+2022-02-03 14:30:29.004  INFO 3928 --- [http-nio-8085-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-03 14:30:29.023  INFO 3928 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-02-03 14:30:29.087  INFO 3928 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 64 ms
+2022-02-03 14:30:30.195  INFO 3928 --- [http-nio-8085-exec-5] c.e.W.C.AuthenticationController         : User admin has just logged in.
+2022-02-03 14:30:30.195  INFO 3928 --- [http-nio-8085-exec-1] c.e.W.C.AuthenticationController         : User admin has just logged in.
+2022-02-03 15:03:03.733  INFO 3928 --- [http-nio-8085-exec-6] c.e.W.C.AuthenticationController         : User user has just logged in.
+2022-02-03 15:03:12.268  INFO 3928 --- [http-nio-8085-exec-5] c.e.W.C.AuthenticationController         : User admin has just logged in.
+2022-02-03 15:03:28.742  INFO 3928 --- [http-nio-8085-exec-3] c.e.W.Controllers.ProductController      : Adding new product: tree
+2022-02-03 15:03:29.962  INFO 3928 --- [http-nio-8085-exec-2] c.e.W.Controllers.ProductController      : Uploading picture
+2022-02-03 15:03:36.593  INFO 3928 --- [http-nio-8085-exec-7] c.e.W.C.AuthenticationController         : User user has just logged in.
+2022-02-03 15:03:39.787  INFO 3928 --- [http-nio-8085-exec-10] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2022-02-03 15:03:43.150  INFO 3928 --- [http-nio-8085-exec-5] c.e.WebShop.Controllers.CartController   : Item with id: 1has just been added to the cart by user user
+2022-02-03 15:03:46.126  INFO 3928 --- [http-nio-8085-exec-4] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2022-02-03 15:03:47.286  INFO 3928 --- [http-nio-8085-exec-9] c.e.W.Controllers.PurchaseController     : User user is overviewing its purchases
+2022-02-03 15:03:50.469  INFO 3928 --- [http-nio-8085-exec-2] c.e.WebShop.Controllers.CartController   : User: useris viewing its cart.
+2022-02-03 15:03:54.620  INFO 3928 --- [http-nio-8085-exec-7] c.e.W.Controllers.PurchaseController     : User user is making a purchase
+2022-02-03 15:35:57.061  INFO 3928 --- [http-nio-8085-exec-1] c.e.W.C.AuthenticationController         : User user has just logged in.
+2022-02-03 15:36:38.244  INFO 3928 --- [http-nio-8085-exec-9] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2022-02-03 15:36:44.170  INFO 3928 --- [http-nio-8085-exec-6] c.e.WebShop.Controllers.CartController   : Item with id: 1has just been added to the cart by user user
+2022-02-03 15:36:49.784  INFO 3928 --- [http-nio-8085-exec-7] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2022-02-03 15:36:53.817  INFO 3928 --- [http-nio-8085-exec-5] c.e.WebShop.Controllers.CartController   : User: useris viewing its cart.
+2022-02-03 15:36:58.513  INFO 3928 --- [http-nio-8085-exec-4] c.e.W.Controllers.PurchaseController     : User user is making a purchase
+2022-02-03 15:42:20.735  INFO 3928 --- [http-nio-8085-exec-9] c.e.W.C.AuthenticationController         : User user has just logged in.
+2022-02-03 15:42:25.844  INFO 3928 --- [http-nio-8085-exec-3] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2022-02-03 15:42:29.372  INFO 3928 --- [http-nio-8085-exec-2] c.e.WebShop.Controllers.CartController   : Item with id: 1has just been added to the cart by user user
+2022-02-03 15:42:32.990  INFO 3928 --- [http-nio-8085-exec-7] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2022-02-03 15:42:34.096  INFO 3928 --- [http-nio-8085-exec-10] c.e.WebShop.Controllers.CartController   : User: useris viewing its cart.
+2022-02-03 15:42:37.932  INFO 3928 --- [http-nio-8085-exec-5] c.e.W.Controllers.PurchaseController     : User user is making a purchase
+2022-02-03 16:00:42.552  INFO 3928 --- [http-nio-8085-exec-8] c.e.W.C.AuthenticationController         : User admin has just logged in.
+2022-02-03 16:00:45.108  INFO 3928 --- [http-nio-8085-exec-9] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2022-02-03 16:07:30.781  INFO 3928 --- [http-nio-8085-exec-6] c.e.W.C.AuthenticationController         : User user has just logged in.
+2022-02-03 16:07:34.205  INFO 3928 --- [http-nio-8085-exec-5] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2022-02-03 16:07:41.146  INFO 3928 --- [http-nio-8085-exec-8] c.e.WebShop.Controllers.CartController   : Item with id: 1has just been added to the cart by user user
+2022-02-03 16:07:45.256  INFO 3928 --- [http-nio-8085-exec-9] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2022-02-03 16:07:46.905  INFO 3928 --- [http-nio-8085-exec-2] c.e.WebShop.Controllers.CartController   : User: useris viewing its cart.
+2022-02-03 16:07:50.791  INFO 3928 --- [http-nio-8085-exec-5] c.e.W.Controllers.PurchaseController     : User user is making a purchase
+2022-02-03 16:45:46.426  WARN 3928 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=34m46s568ms671µs500ns).
+2022-02-03 16:58:24.883  INFO 3928 --- [http-nio-8085-exec-4] c.e.W.C.AuthenticationController         : User user has just logged in.
+2022-02-03 16:58:30.522  INFO 3928 --- [http-nio-8085-exec-9] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2022-02-03 16:58:38.740  INFO 3928 --- [http-nio-8085-exec-7] c.e.WebShop.Controllers.CartController   : Item with id: 1has just been added to the cart by user user
+2022-02-03 16:58:42.523  INFO 3928 --- [http-nio-8085-exec-6] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2022-02-03 16:58:43.934  INFO 3928 --- [http-nio-8085-exec-5] c.e.WebShop.Controllers.CartController   : User: useris viewing its cart.
+2022-02-03 16:58:48.106  INFO 3928 --- [http-nio-8085-exec-4] c.e.W.Controllers.PurchaseController     : User user is making a purchase
+2022-02-03 17:01:50.691  INFO 3928 --- [http-nio-8085-exec-9] c.e.W.C.AuthenticationController         : User user has just logged in.
+2022-02-03 17:01:54.854  INFO 3928 --- [http-nio-8085-exec-2] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2022-02-03 17:01:59.422  INFO 3928 --- [http-nio-8085-exec-6] c.e.WebShop.Controllers.CartController   : Item with id: 1has just been added to the cart by user user
+2022-02-03 17:02:03.356  INFO 3928 --- [http-nio-8085-exec-10] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2022-02-03 17:02:06.643  INFO 3928 --- [http-nio-8085-exec-5] c.e.WebShop.Controllers.CartController   : User: useris viewing its cart.
+2022-02-03 17:02:11.357  INFO 3928 --- [http-nio-8085-exec-4] c.e.W.Controllers.PurchaseController     : User user is making a purchase
+2022-02-03 23:35:18.721  WARN 3928 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6h31m8s434ms669µs100ns).
+2022-02-03 23:46:37.286  INFO 3928 --- [http-nio-8085-exec-3] c.e.W.C.AuthenticationController         : User user has just logged in.
+2022-02-03 23:46:40.474  INFO 3928 --- [http-nio-8085-exec-7] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2022-02-03 23:46:44.015  INFO 3928 --- [http-nio-8085-exec-10] c.e.WebShop.Controllers.CartController   : Item with id: 1has just been added to the cart by user user
+2022-02-03 23:46:46.817  INFO 3928 --- [http-nio-8085-exec-1] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2022-02-03 23:46:47.972  INFO 3928 --- [http-nio-8085-exec-8] c.e.WebShop.Controllers.CartController   : User: useris viewing its cart.
+2022-02-03 23:46:51.743  INFO 3928 --- [http-nio-8085-exec-3] c.e.W.Controllers.PurchaseController     : User user is making a purchase
+2022-02-03 23:49:22.856  INFO 3928 --- [http-nio-8085-exec-7] c.e.W.C.AuthenticationController         : User user has just logged in.
+2022-02-03 23:49:26.126  INFO 3928 --- [http-nio-8085-exec-6] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2022-02-03 23:49:29.431  INFO 3928 --- [http-nio-8085-exec-10] c.e.WebShop.Controllers.CartController   : Item with id: 1has just been added to the cart by user user
+2022-02-03 23:49:31.565  INFO 3928 --- [http-nio-8085-exec-5] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2022-02-03 23:49:32.743  INFO 3928 --- [http-nio-8085-exec-1] c.e.WebShop.Controllers.CartController   : User: useris viewing its cart.
+2022-02-03 23:49:35.783  INFO 3928 --- [http-nio-8085-exec-4] c.e.W.Controllers.PurchaseController     : User user is making a purchase
+2022-02-03 23:53:39.302  INFO 3928 --- [http-nio-8085-exec-9] c.e.W.C.AuthenticationController         : User user has just logged in.
+2022-02-03 23:53:56.843  INFO 3928 --- [http-nio-8085-exec-3] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2022-02-03 23:54:01.724  INFO 3928 --- [http-nio-8085-exec-2] c.e.WebShop.Controllers.CartController   : Item with id: 1has just been added to the cart by user user
+2022-02-03 23:54:05.586  INFO 3928 --- [http-nio-8085-exec-7] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2022-02-03 23:54:07.126  INFO 3928 --- [http-nio-8085-exec-6] c.e.WebShop.Controllers.CartController   : User: useris viewing its cart.
+2022-02-03 23:54:10.910  INFO 3928 --- [http-nio-8085-exec-1] c.e.W.Controllers.PurchaseController     : User user is making a purchase
