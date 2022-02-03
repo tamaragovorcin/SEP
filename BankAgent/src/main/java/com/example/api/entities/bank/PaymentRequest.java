@@ -46,5 +46,13 @@ public class PaymentRequest {
 	
 	@Column(nullable = false)
 	private String errorUrl;
+
+
+	@Column(nullable = false)
+	private String paymentId;
+
+
+	@Column(nullable = false)
+	private String paymentUrl;
 	
 }

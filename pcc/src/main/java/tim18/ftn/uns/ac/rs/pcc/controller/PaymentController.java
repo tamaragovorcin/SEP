@@ -5,10 +5,7 @@ import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
 
 import tim18.ftn.uns.ac.rs.pcc.dto.AcquirerResponseDTO;
@@ -25,20 +22,21 @@ public class PaymentController {
 	
 	@Autowired
 	private RestTemplate restTemplate;
-	
-	@RequestMapping(value = "/payRedirect", method = RequestMethod.POST, consumes = "application/json")
+
+	@PostMapping("/payRedirect")
 	public ResponseEntity<?> payRedirect(@RequestBody PccRequestDTO pccRequestDTO) {
 		System.out.println("U kontrolleru payRedirect");
 		System.out.println(pccRequestDTO);
 		
 		// Skontati koja je banka iz PAN-a i poslati zahtev na tu banku
 		String bankId = getBankIdFromPan(pccRequestDTO.getPanNumber());
-		String bankUrl = bankInfoService.getBankUrl(bankId);
-		System.out.println("bankURL: " + bankUrl);
+		//String bankUrl = bankInfoService.getBankUrl(bankId);
+		//System.out.println("bankURL: " + bankUrl);
 		// Saljemo zahtev na BankUrl
+		pccRequestDTO.setBankId(Integer.parseInt(bankId));
 		
 		// Usmeravanje ka servisu banke (kupca)
-		ResponseEntity<PccResponseDTO> responseEntity = restTemplate.exchange(bankUrl, HttpMethod.POST,
+		ResponseEntity<PccResponseDTO> responseEntity = restTemplate.exchange("http://localhost:8088/pcc/pay", HttpMethod.POST,
 				new HttpEntity<PccRequestDTO>(pccRequestDTO), PccResponseDTO.class);
 		
 		System.out.println("Odgovor: ");
@@ -48,11 +46,10 @@ public class PaymentController {
 		AcquirerResponseDTO ret = new AcquirerResponseDTO(responseEntity.getBody());
 		return new ResponseEntity<>(ret, HttpStatus.OK);
 	}
-	
+
 	private String getBankIdFromPan(String panNumber) {
-		
-		String withoutDashes = panNumber.replace("-", "");
-		String number = withoutDashes.substring(1, 7);
+
+		String number = panNumber.substring(0, 3);
 		return number;
 	}
 }

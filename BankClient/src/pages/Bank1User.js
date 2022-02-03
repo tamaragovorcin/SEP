@@ -44,9 +44,27 @@ class Bank1User extends Component {
 			redirectUrl: "/bank/" + id,
 		});
 	};
+    getCookie = (cname) => {
+        let name = cname + "=";
+        let decodedCookie = decodeURIComponent(document.cookie);
+        let ca = decodedCookie.split(';');
+        for(let i = 0; i <ca.length; i++) {
+          let c = ca[i];
+          while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+          }
+          if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+          }
+        }
+        return "";
+    }
+
 
 	componentDidMount() {
 		
+        this.setState({ paymentId: this.getCookie("paymentId") });
+     
 		Axios.get(BASE_URL + "/api/bank/all")
 			.then((res) => {
 				this.setState({ banks: res.data });
@@ -75,6 +93,7 @@ class Bank1User extends Component {
             cardSecurityCode: this.state.cardSecurityCode,
             pan: this.state.pan,
             expirationDate: this.state.expirationDate,
+            webshopId: this.getCookie("webShopId")
         };
         
                 Axios.post(BASE_URL + "/payment/confirm/" + this.state.paymentId, dto, { validateStatus: () => true })
@@ -88,7 +107,7 @@ class Bank1User extends Component {
                             this.setState({ errorHeader: "Internal server error!", errorMessage: "Server error.", hiddenErrorAlert: false });
                         } else {
                             console.log("Success");
-                       
+                            console.log(res.data)
                             this.setState({showForm:false})
 
                         }

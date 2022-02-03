@@ -35,6 +35,10 @@ public class MerchantService implements IMerchantService {
         return merchantRepository.findAll();
     }
 
+    public Merchant saveNoDTO(Merchant dto) {
+        return merchantRepository.save(dto);
+    }
+
     @Override
     public Merchant save(CardInfoDTO dto) {
         Merchant merchant = new Merchant();

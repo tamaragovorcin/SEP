@@ -14,10 +14,11 @@ import lombok.ToString;
 public class PccRequestDTO {
 	private String panNumber;
 	private String cardHolder;
-	private Integer cvv;
+	private String cardSecurityCode;
 	private String mm;
 	private String yy;
 	private Integer acquirerOrderId;
 	private Date acquirerTimestamp;
 	private Double amount;
+	private Integer bankId;
 }

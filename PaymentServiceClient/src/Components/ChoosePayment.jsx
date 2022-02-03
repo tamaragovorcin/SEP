@@ -106,9 +106,11 @@ const ChoosePayment = () =>{
       }
       Axios.post("http://localhost:9090/bank-card-service/api/bankcard/create", dto)
 			.then((res) => {
-			
-        alert("Uspela sam")
         console.log(res.data)
+        document.cookie = "paymentId=" + res.data.paymentId + ";path=/";
+        window.location = res.data.paymentUrl
+
+
 				}
 			
       

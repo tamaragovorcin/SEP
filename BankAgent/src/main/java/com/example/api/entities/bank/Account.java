@@ -64,10 +64,18 @@ public class Account {
     private Double reservedFunds;
 
 
-
-
-
-
-
-
+    @Override
+    public String toString() {
+        return "Account{" +
+                "id=" + id +
+                ", cardHolderName='" + cardHolderName + '\'' +
+                ", cardHolderUCIN='" + cardHolderUCIN + '\'' +
+                ", PAN='" + PAN + '\'' +
+                ", cardSecurityCode='" + cardSecurityCode + '\'' +
+                ", expirationDate=" + expirationDate +
+                ", bank=" + bank +
+                ", availableFunds=" + availableFunds +
+                ", reservedFunds=" + reservedFunds +
+                '}';
+    }
 }

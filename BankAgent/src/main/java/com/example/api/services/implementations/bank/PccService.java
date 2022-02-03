@@ -6,6 +6,8 @@ import com.example.api.entities.bank.Account;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.time.YearMonth;
+import java.util.Date;
 import java.util.Optional;
 
 @Service
@@ -17,24 +19,26 @@ public class PccService {
 	public PccResponseDTO pay(PccRequestDTO pccRequestDTO) {
 		
 		Optional<Account> clientOpt = clientService.getClient(pccRequestDTO.getPanNumber());
+		System.out.println(clientOpt);
 		if(!clientOpt.isPresent()) {
 			return failAuthentification(pccRequestDTO); // Ako klijent sa tim PAN-om ne postoji u ovoj banci
 		}
 
 		Account client = clientOpt.get();
-		String tempDate = pccRequestDTO.getMm() + "/" + pccRequestDTO.getYy();
-		if (!client.getCardHolderName().equals(pccRequestDTO.getCardHolder()) || !client.getCardSecurityCode().equals(pccRequestDTO.getCvv())
-				|| !client.getExpirationDate().equals(tempDate)) {
+		System.out.println(client);
+		//String tempDate = pccRequestDTO.getMm() + "/" + pccRequestDTO.getYy();
+		if (!client.getCardHolderName().equals(pccRequestDTO.getCardHolder()) || !client.getCardSecurityCode().equals(pccRequestDTO.getCardSecurityCode())
+				 ){//!client.getExpirationDate().equals(YearMonth.parse(pccRequestDTO.getExpirationDate()))) {
 			System.err.println("PccService: Podaci se ne podudaraju. ");
 			return failAuthentification(pccRequestDTO);
 		}
 
-		if (pccRequestDTO.getAmount() > client.getAvailableFunds()) {
+		/*if (pccRequestDTO.getAmount() > client.getAvailableFunds()) {
 			System.err.println("nema sredstava");
 			return failPayment(pccRequestDTO);
-		}
+		}*/
 
-		client.setAvailableFunds(client.getAvailableFunds() - pccRequestDTO.getAmount());
+		client.setAvailableFunds(50.0);//client.getAvailableFunds() - pccRequestDTO.getAmount());
 		clientService.saveNoDTO(client);
 		
 		return successPayment(pccRequestDTO);
@@ -46,6 +50,9 @@ public class PccService {
 		ret.setIsTransactionAutorized(true);
 		ret.setAcquirerOrderId(pccRequestDTO.getAcquirerOrderId());
 		ret.setAcquirerTimestamp(pccRequestDTO.getAcquirerTimestamp());
+		ret.setIssuerOrderId(pccRequestDTO.getAcquirerOrderId());
+		ret.setIssuerTimestamp(new Date());
+		System.out.println("Evo zavrsio sam success");
 		return ret;
 	}
 

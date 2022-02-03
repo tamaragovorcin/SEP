@@ -37,6 +37,7 @@ public class BankController {
             return new ResponseEntity<>(HttpStatus.CONFLICT);
         }
         catch (Exception e) {
+            System.out.println(e);
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }

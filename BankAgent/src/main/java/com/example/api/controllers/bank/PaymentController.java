@@ -22,13 +22,17 @@ public class PaymentController {
 	@PostMapping("/confirm")
 	@CrossOrigin
 	public PaymentResponseDTO confirm(@RequestBody PaymentRequestDTO clientDTO) {
-		System.out.println("Payment request uslaaaaaaaaaaaa " );
+
 		return paymentService.getPaymentResponse(clientDTO);
 	}
 
 	@PostMapping("/confirm/{paymentRequestId}")
+	@CrossOrigin
 	public String confirmPayment(@RequestBody AccountDTO clientDTO, @PathVariable Integer paymentRequestId) {
-		System.out.println("Payment request id: " + paymentRequestId);
-		return paymentService.confirmPayment(clientDTO, paymentRequestId);
+
+		String url = paymentService.confirmPayment(clientDTO, paymentRequestId);
+		paymentService.browse(url);
+
+		return "Ok";
 	}
 }
