@@ -4,14 +4,23 @@ import Axios from "axios";
 import { BASE_URL } from "../constants.js";
 import { Button } from "react-bootstrap";
 import { Redirect } from "react-router-dom";
+import SuccessfulOpeningAccount from "./SucceessfulOpeningAccount.js";
 
 
 class OpenAccount extends Component {
 	state = {
 		banks: [],
 		redirect: false,
-		redirectUrl : ""
-
+		redirectUrl : "",
+		name: "",
+		ucin : "",
+		idCardNumber : "",
+		phoneNumber : "",
+		id : "",
+		showSuccessModal : false,
+		pan : "",
+		cardSecurityCode : "",
+		expirationDate : ""
 	};
 	hasRole = (reqRole) => {
 		let roles = JSON.parse(localStorage.getItem("keyRole"));
@@ -44,6 +53,61 @@ class OpenAccount extends Component {
 			});
 
 	}
+
+	handleNameChange = (event) => {
+		this.setState({ name: event.target.value });
+	};
+    handleUCINChange = (event) => {
+		this.setState({ ucin: event.target.value });
+	};
+	handleIdCardNumberChange = (event) => {
+		this.setState({ idCardNumber: event.target.value });
+	};
+	handlePhoneNumberChange = (event) => {
+		this.setState({ phoneNumber: event.target.value });
+	};
+	handleSuccessModalClose = ()=>{
+		this.setState({ showSuccessModal:false });
+
+	}
+	handleSignUp= () => {
+		let dto = {
+            cardHolderName: this.state.name,
+            // cardHolderIdCardNumber: this.state.idCardNumber,
+            cardHolderUCIN: this.state.ucin,
+            // cardHolderPhoneNumber: this.state.phoneNumber,
+			bankId :this.props.bank.id
+
+        };
+        
+                Axios.post(BASE_URL + "/api/bank/openAnAccount", dto, { validateStatus: () => true })
+                    .then((res) => {
+                        if (res.status === 409) {
+                            this.setState({
+                                errorHeader: "Resource conflict!",
+                                hiddenErrorAlert: false,
+                            });
+                        } else if (res.status === 500) {
+                            this.setState({ errorHeader: "Internal server error!", errorMessage: "Server error.", hiddenErrorAlert: false });
+                        } else {
+                            console.log("Success");
+                            this.setState({pan : res.data.pan})
+                            this.setState({cardSecurityCode : res.data.cardSecurityCode})
+                            this.setState({ expirationDate: res.data.expirationDate });
+                            this.setState({showSuccessModal:true})
+							this.setState({cardHolderUCIN : res.data.cardHolderUCIN})
+                            this.setState({cardHolderName : res.data.cardHolderName})
+
+
+                        }
+                    })
+                    .catch((err) => {
+                        console.log(err);
+                    });
+            
+	};
+  
+
 	render() {
         if (this.state.redirect) return <Redirect push to={this.state.redirectUrl} />;
 
@@ -55,17 +119,25 @@ class OpenAccount extends Component {
             <React.Fragment>
 
 
-<div id="center">
+<div>
         <div className="container d-flex align-items-center" style={{ marginTop: "10%" }}>
-					<div className="row section-design">
-						<div>
+					<div className="row section-design"  style={{  margin: "auto",
+							width: "50%",
+							border: "2px solid blue",
+							padding: "10px",
+							textAlign: "center",
+							backgroundColor:"#E8EDEE"
+							}}>
+						<div style={{display: "block",
+									marginLeft: "auto",
+									marginRight: "auto",
+									width: "70%"}}>
 							<br />
 							<form id="contactForm" name="sentMessage" noValidate="novalidate">
 							<div className="control-group">
 									<div className="form-group controls mb-0 pb-2" style={{ color: "#6c757d", opacity: 1 }}>
 										<label>Your name:</label>
 										<input
-											placeholder="Ime"
 											class="form-control"
 											type="text"
 											id="name"
@@ -73,34 +145,28 @@ class OpenAccount extends Component {
 											value={this.state.name}
 										/>
 									</div>
-									<div className="text-danger" style={{ display: this.state.nameError }}>
-										Ime je obavezno polje.
-									</div>
+									
 								</div>
 								<div className="control-group">
 									<div className="form-group controls mb-0 pb-2" style={{ color: "#6c757d", opacity: 1 }}>
 										<label> UCIN(Your unique citizens number):</label>
 										<input
-											placeholder="Prezime"
 											class="form-control"
 											type="text"
-											id="surname"
-											onChange={this.handleSurnameChange}
-											value={this.state.surname}
+											id="ucin"
+											onChange={this.handleUCINChange}
+											value={this.state.ucin}
 										/>
 									</div>
-									<div className="text-danger" style={{ display: this.state.surnameError }}>
-										Prezime je obavezno polje.
-									</div>
+									
 								</div>
 							
                                 
 								
 								<div className="control-group">
 									<div className="form-group controls mb-0 pb-2" style={{ color: "#6c757d", opacity: 1 }}>
-										<label>Broj telefona:</label>
+										<label>Phone number:</label>
 										<input
-											placeholder="+387..."
 											class="form-control"
 											id="phone"
 											type="text"
@@ -108,12 +174,10 @@ class OpenAccount extends Component {
 											value={this.state.phoneNumber}
 										/>
 									</div>
-									<div className="text-danger" style={{ display: this.state.phoneError }}>
-										Broj telefona je obavezno polje.
-									</div>
+								
 								</div>
 								<div className="control-group">
-									<label>Broj licne karte:</label>
+									<label>Identity card number:</label>
 									<div className="form-group controls mb-0 pb-2" style={{ color: "#6c757d", opacity: 1 }}>
 										<input
 											class="form-control"
@@ -122,9 +186,7 @@ class OpenAccount extends Component {
 											value={this.state.idCardNumber}
 										/>
 									</div>
-									<div className="text-danger" style={{ display: this.state.idCardNumberError }}>
-										Broj licne karte je obavezno polje.
-									</div>
+								
 								</div>
 								
 								<div className="form-group">
@@ -135,7 +197,7 @@ class OpenAccount extends Component {
 										id="sendMessageButton"
 										type="button"
 									>
-										Save
+										Open an account
 									</button>
 								</div>
 							</form>
@@ -144,7 +206,16 @@ class OpenAccount extends Component {
 
         </div>
       
+<SuccessfulOpeningAccount
+						show = {this.state.showSuccessModal}
+						onCloseModal = {this.handleSuccessModalClose}
+	                    pan={this.state.pan}
+						expirationDate = {this.state.expirationDate}
+						cardSecurityCode = {this.state.cardSecurityCode}
+						cardHolderName = {this.state.cardHolderName}
+						cardHolderUCIN = {this.state.cardHolderUCIN}
 
+/>
         
     </div>
             </React.Fragment>

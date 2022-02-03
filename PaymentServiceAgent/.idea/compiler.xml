@@ -19,7 +19,7 @@
     <bytecodeTargetLevel>
       <module name="API-Gateway" target="1.8" />
       <module name="Auth-Service" target="11" />
-      <module name="Bank-Card-Service" target="1.8" />
+      <module name="Bank-Card-Service" target="11" />
       <module name="BitCoin-Service" target="1.8" />
       <module name="Eureka-Server" target="1.8" />
       <module name="PayPal-Service" target="1.8" />

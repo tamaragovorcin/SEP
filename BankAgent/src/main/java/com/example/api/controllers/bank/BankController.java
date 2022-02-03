@@ -50,6 +50,7 @@ public class BankController {
     @PostMapping("/openAnAccount")
     public ResponseEntity<Account> openAnAccount(@RequestBody AccountDTO dto) {
         try {
+            System.out.println("POGODIO JE METODU********************");
             Account account = accountService.save(dto);
             return new ResponseEntity<Account>(account, HttpStatus.CREATED);
         } catch (ResourceConflictException e) {
