@@ -93,6 +93,7 @@ class Bank1User extends Component {
             cardSecurityCode: this.state.cardSecurityCode,
             pan: this.state.pan,
             expirationDate: this.state.expirationDate,
+            webshopId: this.getCookie("webShopId")
         };
         
                 Axios.post(BASE_URL + "/payment/confirm/" + this.state.paymentId, dto, { validateStatus: () => true })
@@ -106,7 +107,7 @@ class Bank1User extends Component {
                             this.setState({ errorHeader: "Internal server error!", errorMessage: "Server error.", hiddenErrorAlert: false });
                         } else {
                             console.log("Success");
-                       
+                            console.log(res.data)
                             this.setState({showForm:false})
 
                         }

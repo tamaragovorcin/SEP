@@ -12,9 +12,10 @@ import java.util.Date;
 public class PccRequestDTO {
 	private String panNumber;
 	private String cardHolder;
-	private Integer cvv;
+	private String cardSecurityCode;
 	private String expirationDate;
 	private Integer acquirerOrderId;
 	private Date acquirerTimestamp;
 	private Double amount;
+	private Integer bankId;
 }

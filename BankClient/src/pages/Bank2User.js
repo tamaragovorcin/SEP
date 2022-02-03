@@ -7,7 +7,7 @@ import { Redirect } from "react-router-dom";
 import { dateToStringFormat } from "igniteui-react-core";
 
 
-class Bank2User extends Component {
+class Bank1User extends Component {
 	state = {
 		banks: [],
 		redirect: false,
@@ -19,7 +19,9 @@ class Bank2User extends Component {
         showForm : true,
         showMerchant : false,
         merchantId : "",
-        merchantPassword : ""
+        merchantPassword : "",
+        paymentId: "",
+        paymentUrl: "",
 
 	};
 	hasRole = (reqRole) => {
@@ -42,8 +44,27 @@ class Bank2User extends Component {
 			redirectUrl: "/bank/" + id,
 		});
 	};
+    getCookie = (cname) => {
+        let name = cname + "=";
+        let decodedCookie = decodeURIComponent(document.cookie);
+        let ca = decodedCookie.split(';');
+        for(let i = 0; i <ca.length; i++) {
+          let c = ca[i];
+          while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+          }
+          if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+          }
+        }
+        return "";
+    }
+
+
 	componentDidMount() {
 		
+        this.setState({ paymentId: this.getCookie("paymentId") });
+     
 		Axios.get(BASE_URL + "/api/bank/all")
 			.then((res) => {
 				this.setState({ banks: res.data });
@@ -71,10 +92,11 @@ class Bank2User extends Component {
             cardHolderName: this.state.cardHolderName,
             cardSecurityCode: this.state.cardSecurityCode,
             pan: this.state.pan,
-            expirationDate: this.state.expirationDate,
+            expirationDate: this.state.expirationDate, 
+            webshopId: this.getCookie("webShopId")
         };
         
-                Axios.post(BASE_URL + "/api/bank/registerMerchant", dto, { validateStatus: () => true })
+                Axios.post(BASE_URL + "/payment/confirm/" + this.state.paymentId, dto, { validateStatus: () => true })
                     .then((res) => {
                         if (res.status === 409) {
                             this.setState({
@@ -85,9 +107,7 @@ class Bank2User extends Component {
                             this.setState({ errorHeader: "Internal server error!", errorMessage: "Server error.", hiddenErrorAlert: false });
                         } else {
                             console.log("Success");
-                            this.setState({merchantPassword : res.data.merchantPassword})
-                            this.setState({merchantId : res.data.merchant_id})
-                            this.setState({ showMerchant: true });
+                            console.log(res.data)
                             this.setState({showForm:false})
 
                         }
@@ -98,9 +118,7 @@ class Bank2User extends Component {
             
         
     }
-    handleOk= ()=>{
-
-    }
+   
 	render() {
         if (this.state.redirect) return <Redirect push to={this.state.redirectUrl} />;
 
@@ -184,50 +202,7 @@ class Bank2User extends Component {
 
 
 
-                            <form hidden = {!this.state.showMerchant} id="contactForm" name="sentMessage" noValidate="novalidate">
-							<div className="control-group">
-									<div className="form-group controls mb-0 pb-2" style={{ color: "#6c757d", opacity: 1 }}>
-										<label>Merchant ID:</label>
-										<input
-                                        readonly
-											class="form-control"
-											type="text"
-											id="name"
-											onChange={this.handlePANChange}
-											value={this.state.merchantId}
-										/>
-									</div>
-								
-								</div>
-								<div className="control-group">
-									<div className="form-group controls mb-0 pb-2" style={{ color: "#6c757d", opacity: 1 }}>
-										<label>Merchant password:</label>
-										<input
-                                        readonly
-											class="form-control"
-											type="text"
-											id="surname"
-											onChange={this.handleCardHolderNameChange}
-											value={this.state.merchantPassword}
-										/>
-									</div>
-								
-								</div>
-								
-								
-								
-								<div className="form-group">
-									<button
-									
-										onClick={this.handleOk}
-										className="btn btn-info btn-xl"
-										id="sendMessageButton"
-										type="button"
-									>
-										OK
-									</button>
-								</div>
-							</form>
+                          
 
 
 						</div>
@@ -244,4 +219,4 @@ class Bank2User extends Component {
 	}
 }
 
-export default Bank2User;
+export default Bank1User;

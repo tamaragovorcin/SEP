@@ -1,46 +1,46 @@
-2022-02-02 15:03:46.928  INFO 15892 --- [restartedMain] com.example.WebShop.WebShopApplication   : Starting WebShopApplication using Java 17.0.1 on DESKTOP-FNSTC71 with PID 15892 (C:\Users\lunaz\OneDrive\Desktop\SEP\SEP\WebShop\target\classes started by lunaz in C:\Users\lunaz\OneDrive\Desktop\SEP\SEP\WebShop)
-2022-02-02 15:03:46.934 DEBUG 15892 --- [restartedMain] com.example.WebShop.WebShopApplication   : Running with Spring Boot v2.4.0, Spring v5.3.1
-2022-02-02 15:03:46.935  INFO 15892 --- [restartedMain] com.example.WebShop.WebShopApplication   : No active profile set, falling back to default profiles: default
-2022-02-02 15:03:47.058  INFO 15892 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\lunaz\.m2\repository\com\sun\xml\ws\jaxws-rt\2.1.4\jaxws-rt-2.1.4.jar referenced one or more files that do not exist: file:/C:/Users/lunaz/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/jaxws-api.jar,file:/C:/Users/lunaz/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/jsr181-api.jar,file:/C:/Users/lunaz/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/jsr250-api.jar,file:/C:/Users/lunaz/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/saaj-api.jar,file:/C:/Users/lunaz/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/saaj-impl.jar,file:/C:/Users/lunaz/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/jsr173_api.jar,file:/C:/Users/lunaz/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/sjsxp.jar,file:/C:/Users/lunaz/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/resolver.jar,file:/C:/Users/lunaz/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/jaxb-api.jar,file:/C:/Users/lunaz/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/jaxb-impl.jar,file:/C:/Users/lunaz/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/activation.jar,file:/C:/Users/lunaz/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/stax-ex.jar,file:/C:/Users/lunaz/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/streambuffer.jar,file:/C:/Users/lunaz/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/stax-utils.jar
-2022-02-02 15:03:47.065  INFO 15892 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\lunaz\.m2\repository\com\sun\xml\bind\jaxb-impl\2.1.7\jaxb-impl-2.1.7.jar referenced one or more files that do not exist: file:/C:/Users/lunaz/.m2/repository/com/sun/xml/bind/jaxb-impl/2.1.7/jaxb-api.jar,file:/C:/Users/lunaz/.m2/repository/com/sun/xml/bind/jaxb-impl/2.1.7/activation.jar,file:/C:/Users/lunaz/.m2/repository/com/sun/xml/bind/jaxb-impl/2.1.7/jsr173_1.0_api.jar,file:/C:/Users/lunaz/.m2/repository/com/sun/xml/bind/jaxb-impl/2.1.7/jaxb1-impl.jar
-2022-02-02 15:03:47.066  INFO 15892 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\lunaz\.m2\repository\org\jopendocument\jOpenDocument\1.2\jOpenDocument-1.2.jar referenced one or more files that do not exist: file:/C:/Users/lunaz/.m2/repository/org/jopendocument/jOpenDocument/1.2/xbean.jar
-2022-02-02 15:03:47.067  INFO 15892 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2022-02-02 15:03:47.067  INFO 15892 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2022-02-02 15:03:50.676  INFO 15892 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
-2022-02-02 15:03:51.433  INFO 15892 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 741 ms. Found 16 JPA repository interfaces.
-2022-02-02 15:03:53.336  INFO 15892 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@61192f4' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2022-02-02 15:03:53.386  INFO 15892 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2022-02-02 15:03:56.186  INFO 15892 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
-2022-02-02 15:03:56.211  INFO 15892 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-02-02 15:03:56.212  INFO 15892 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
-2022-02-02 15:03:56.649  INFO 15892 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-02-02 15:03:56.651  INFO 15892 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 9580 ms
-2022-02-02 15:03:57.914  INFO 15892 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2022-02-02 15:03:59.295  INFO 15892 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
-2022-02-02 15:03:59.635  INFO 15892 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-02-02 15:03:59.918  INFO 15892 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.23.Final
-2022-02-02 15:04:00.158  WARN 15892 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-02-02 15:04:00.526  INFO 15892 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2022-02-02 15:04:00.915  INFO 15892 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2022-02-02 15:04:02.096  INFO 15892 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2022-02-02 15:04:02.135  INFO 15892 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-2022-02-02 15:04:02.557  INFO 15892 --- [task-1] o.h.e.boot.internal.EnversServiceImpl    : Envers integration enabled? : true
-2022-02-02 15:04:03.214  WARN 15892 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
-2022-02-02 15:04:05.083  INFO 15892 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/', GET] with []
-2022-02-02 15:04:05.083  INFO 15892 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/webjars/**', GET] with []
-2022-02-02 15:04:05.084  INFO 15892 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/*.html', GET] with []
-2022-02-02 15:04:05.084  INFO 15892 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/favicon.ico', GET] with []
-2022-02-02 15:04:05.089  INFO 15892 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/**/*.html', GET] with []
-2022-02-02 15:04:05.089  INFO 15892 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/**/*.css', GET] with []
-2022-02-02 15:04:05.090  INFO 15892 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/**/*.js', GET] with []
-2022-02-02 15:04:05.090  INFO 15892 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/api/auth/login', POST] with []
-2022-02-02 15:04:05.097  INFO 15892 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/api/auth/signup', POST] with []
-2022-02-02 15:04:05.103  INFO 15892 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/api/items/add', POST] with []
-2022-02-02 15:04:05.159  INFO 15892 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5c91c2d, org.springframework.security.web.context.SecurityContextPersistenceFilter@25bbec0b, org.springframework.security.web.header.HeaderWriterFilter@494433cc, org.springframework.web.filter.CorsFilter@b7fb9e0, org.springframework.security.web.authentication.logout.LogoutFilter@2d12e1f5, com.example.WebShop.Authentication.TokenAuthenticationFilter@222403d2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7580265b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3e70ae91, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@166468ae, org.springframework.security.web.session.SessionManagementFilter@49b67d37, org.springframework.security.web.access.ExceptionTranslationFilter@70e92149, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@28042c0c]
-2022-02-02 15:04:05.255  WARN 15892 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
-2022-02-02 15:04:06.281  INFO 15892 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path ''
-2022-02-02 15:04:08.729  INFO 15892 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
-2022-02-02 15:04:09.775  WARN 15892 --- [task-1] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "
+2022-02-03 12:51:25.972  INFO 5132 --- [restartedMain] com.example.WebShop.WebShopApplication   : Starting WebShopApplication using Java 17.0.1 on DESKTOP-FNSTC71 with PID 5132 (C:\Users\lunaz\OneDrive\Desktop\SEP\SEP\WebShop\target\classes started by lunaz in C:\Users\lunaz\OneDrive\Desktop\SEP\SEP\WebShop)
+2022-02-03 12:51:25.985 DEBUG 5132 --- [restartedMain] com.example.WebShop.WebShopApplication   : Running with Spring Boot v2.4.0, Spring v5.3.1
+2022-02-03 12:51:25.988  INFO 5132 --- [restartedMain] com.example.WebShop.WebShopApplication   : No active profile set, falling back to default profiles: default
+2022-02-03 12:51:26.129  INFO 5132 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\lunaz\.m2\repository\com\sun\xml\ws\jaxws-rt\2.1.4\jaxws-rt-2.1.4.jar referenced one or more files that do not exist: file:/C:/Users/lunaz/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/jaxws-api.jar,file:/C:/Users/lunaz/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/jsr181-api.jar,file:/C:/Users/lunaz/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/jsr250-api.jar,file:/C:/Users/lunaz/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/saaj-api.jar,file:/C:/Users/lunaz/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/saaj-impl.jar,file:/C:/Users/lunaz/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/jsr173_api.jar,file:/C:/Users/lunaz/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/sjsxp.jar,file:/C:/Users/lunaz/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/resolver.jar,file:/C:/Users/lunaz/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/jaxb-api.jar,file:/C:/Users/lunaz/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/jaxb-impl.jar,file:/C:/Users/lunaz/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/activation.jar,file:/C:/Users/lunaz/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/stax-ex.jar,file:/C:/Users/lunaz/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/streambuffer.jar,file:/C:/Users/lunaz/.m2/repository/com/sun/xml/ws/jaxws-rt/2.1.4/stax-utils.jar
+2022-02-03 12:51:26.129  INFO 5132 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\lunaz\.m2\repository\com\sun\xml\bind\jaxb-impl\2.1.7\jaxb-impl-2.1.7.jar referenced one or more files that do not exist: file:/C:/Users/lunaz/.m2/repository/com/sun/xml/bind/jaxb-impl/2.1.7/jaxb-api.jar,file:/C:/Users/lunaz/.m2/repository/com/sun/xml/bind/jaxb-impl/2.1.7/activation.jar,file:/C:/Users/lunaz/.m2/repository/com/sun/xml/bind/jaxb-impl/2.1.7/jsr173_1.0_api.jar,file:/C:/Users/lunaz/.m2/repository/com/sun/xml/bind/jaxb-impl/2.1.7/jaxb1-impl.jar
+2022-02-03 12:51:26.130  INFO 5132 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\lunaz\.m2\repository\org\jopendocument\jOpenDocument\1.2\jOpenDocument-1.2.jar referenced one or more files that do not exist: file:/C:/Users/lunaz/.m2/repository/org/jopendocument/jOpenDocument/1.2/xbean.jar
+2022-02-03 12:51:26.130  INFO 5132 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-02-03 12:51:26.131  INFO 5132 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-02-03 12:51:29.270  INFO 5132 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2022-02-03 12:51:29.657  INFO 5132 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 372 ms. Found 16 JPA repository interfaces.
+2022-02-03 12:51:30.666  INFO 5132 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@7f0a44cc' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-02-03 12:51:30.678  INFO 5132 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-02-03 12:51:31.820  INFO 5132 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+2022-02-03 12:51:31.844  INFO 5132 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-03 12:51:31.845  INFO 5132 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2022-02-03 12:51:32.239  INFO 5132 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-03 12:51:32.240  INFO 5132 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 6107 ms
+2022-02-03 12:51:33.125  INFO 5132 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-02-03 12:51:33.172  INFO 5132 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2022-02-03 12:51:33.494  INFO 5132 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-03 12:51:33.824  INFO 5132 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.23.Final
+2022-02-03 12:51:34.215  WARN 5132 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-03 12:51:34.447  INFO 5132 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-02-03 12:51:34.866  INFO 5132 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-02-03 12:51:35.742  INFO 5132 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-02-03 12:51:35.794  INFO 5132 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-02-03 12:51:36.087  INFO 5132 --- [task-1] o.h.e.boot.internal.EnversServiceImpl    : Envers integration enabled? : true
+2022-02-03 12:51:36.477  WARN 5132 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2022-02-03 12:51:37.584  INFO 5132 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/', GET] with []
+2022-02-03 12:51:37.599  INFO 5132 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/webjars/**', GET] with []
+2022-02-03 12:51:37.600  INFO 5132 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/*.html', GET] with []
+2022-02-03 12:51:37.603  INFO 5132 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/favicon.ico', GET] with []
+2022-02-03 12:51:37.603  INFO 5132 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/**/*.html', GET] with []
+2022-02-03 12:51:37.605  INFO 5132 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/**/*.css', GET] with []
+2022-02-03 12:51:37.605  INFO 5132 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/**/*.js', GET] with []
+2022-02-03 12:51:37.606  INFO 5132 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/api/auth/login', POST] with []
+2022-02-03 12:51:37.607  INFO 5132 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/api/auth/signup', POST] with []
+2022-02-03 12:51:37.607  INFO 5132 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/api/items/add', POST] with []
+2022-02-03 12:51:37.666  INFO 5132 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@41ccfdf2, org.springframework.security.web.context.SecurityContextPersistenceFilter@330b2ea6, org.springframework.security.web.header.HeaderWriterFilter@12667ef, org.springframework.web.filter.CorsFilter@55a05962, org.springframework.security.web.authentication.logout.LogoutFilter@2883fb1e, com.example.WebShop.Authentication.TokenAuthenticationFilter@4864ece9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@57ad3e7b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3e37ede9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@25c635a1, org.springframework.security.web.session.SessionManagementFilter@754cb189, org.springframework.security.web.access.ExceptionTranslationFilter@34a6d12d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3f2fdbc8]
+2022-02-03 12:51:37.916  WARN 5132 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2022-02-03 12:51:38.428  INFO 5132 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path ''
+2022-02-03 12:51:39.978  INFO 5132 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2022-02-03 12:51:40.789  WARN 5132 --- [task-1] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "
     alter table accommodation 
        drop 
        foreign key FKs8sqq0tqpqjcxp9bp6h3kpkkj" via JDBC Statement
@@ -69,7 +69,7 @@ org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
 	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
-Caused by: java.sql.SQLSyntaxErrorException: Table 'webshop.accommodation' doesn't exist
+Caused by: java.sql.SQLSyntaxErrorException: Can't DROP 'FKs8sqq0tqpqjcxp9bp6h3kpkkj'; check that column/key exists
 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.22.jar:8.0.22]
 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.22.jar:8.0.22]
 	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.22.jar:8.0.22]
@@ -80,7 +80,7 @@ Caused by: java.sql.SQLSyntaxErrorException: Table 'webshop.accommodation' doesn
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54) ~[hibernate-core-5.4.23.Final.jar:5.4.23.Final]
 	... 19 common frames omitted
 
-2022-02-02 15:04:09.784  WARN 15892 --- [task-1] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "
+2022-02-03 12:51:40.795  WARN 5132 --- [task-1] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "
     alter table accommodation 
        drop 
        foreign key FKt750gbxx02t7mcj1ikx2eagmr" via JDBC Statement
@@ -109,7 +109,7 @@ org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
 	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
-Caused by: java.sql.SQLSyntaxErrorException: Table 'webshop.accommodation' doesn't exist
+Caused by: java.sql.SQLSyntaxErrorException: Can't DROP 'FKt750gbxx02t7mcj1ikx2eagmr'; check that column/key exists
 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.22.jar:8.0.22]
 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.22.jar:8.0.22]
 	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.22.jar:8.0.22]
@@ -120,7 +120,7 @@ Caused by: java.sql.SQLSyntaxErrorException: Table 'webshop.accommodation' doesn
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54) ~[hibernate-core-5.4.23.Final.jar:5.4.23.Final]
 	... 19 common frames omitted
 
-2022-02-02 15:04:09.789  WARN 15892 --- [task-1] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "
+2022-02-03 12:51:40.801  WARN 5132 --- [task-1] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "
     alter table accommodation_facilities 
        drop 
        foreign key FK3qsmht9wj5mbwhjw1i3ge4ehd" via JDBC Statement
@@ -149,7 +149,7 @@ org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
 	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
-Caused by: java.sql.SQLSyntaxErrorException: Table 'webshop.accommodation_facilities' doesn't exist
+Caused by: java.sql.SQLSyntaxErrorException: Can't DROP 'FK3qsmht9wj5mbwhjw1i3ge4ehd'; check that column/key exists
 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.22.jar:8.0.22]
 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.22.jar:8.0.22]
 	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.22.jar:8.0.22]
@@ -160,7 +160,7 @@ Caused by: java.sql.SQLSyntaxErrorException: Table 'webshop.accommodation_facili
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54) ~[hibernate-core-5.4.23.Final.jar:5.4.23.Final]
 	... 19 common frames omitted
 
-2022-02-02 15:04:09.798  WARN 15892 --- [task-1] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "
+2022-02-03 12:51:40.807  WARN 5132 --- [task-1] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "
     alter table accommodation_facilities 
        drop 
        foreign key FKc80552k2bh8quir2affwhf2xg" via JDBC Statement
@@ -189,7 +189,7 @@ org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
 	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
-Caused by: java.sql.SQLSyntaxErrorException: Table 'webshop.accommodation_facilities' doesn't exist
+Caused by: java.sql.SQLSyntaxErrorException: Can't DROP 'FKc80552k2bh8quir2affwhf2xg'; check that column/key exists
 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.22.jar:8.0.22]
 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.22.jar:8.0.22]
 	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.22.jar:8.0.22]
@@ -200,7 +200,7 @@ Caused by: java.sql.SQLSyntaxErrorException: Table 'webshop.accommodation_facili
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54) ~[hibernate-core-5.4.23.Final.jar:5.4.23.Final]
 	... 19 common frames omitted
 
-2022-02-02 15:04:09.814  WARN 15892 --- [task-1] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "
+2022-02-03 12:51:40.811  WARN 5132 --- [task-1] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "
     alter table address_aud 
        drop 
        foreign key FKcc7vlgg86eqe1dmvivbkv046v" via JDBC Statement
@@ -229,7 +229,7 @@ org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
 	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
-Caused by: java.sql.SQLSyntaxErrorException: Table 'webshop.address_aud' doesn't exist
+Caused by: java.sql.SQLSyntaxErrorException: Can't DROP 'FKcc7vlgg86eqe1dmvivbkv046v'; check that column/key exists
 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.22.jar:8.0.22]
 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.22.jar:8.0.22]
 	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.22.jar:8.0.22]
@@ -240,7 +240,7 @@ Caused by: java.sql.SQLSyntaxErrorException: Table 'webshop.address_aud' doesn't
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54) ~[hibernate-core-5.4.23.Final.jar:5.4.23.Final]
 	... 19 common frames omitted
 
-2022-02-02 15:04:09.827  WARN 15892 --- [task-1] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "
+2022-02-03 12:51:40.818  WARN 5132 --- [task-1] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "
     alter table cart 
        drop 
        foreign key FK7xpymc8pcxb2xac6bqudwa22n" via JDBC Statement
@@ -269,7 +269,7 @@ org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
 	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
-Caused by: java.sql.SQLSyntaxErrorException: Table 'webshop.cart' doesn't exist
+Caused by: java.sql.SQLSyntaxErrorException: Can't DROP 'FK7xpymc8pcxb2xac6bqudwa22n'; check that column/key exists
 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.22.jar:8.0.22]
 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.22.jar:8.0.22]
 	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.22.jar:8.0.22]
@@ -280,7 +280,7 @@ Caused by: java.sql.SQLSyntaxErrorException: Table 'webshop.cart' doesn't exist
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54) ~[hibernate-core-5.4.23.Final.jar:5.4.23.Final]
 	... 19 common frames omitted
 
-2022-02-02 15:04:09.832  WARN 15892 --- [task-1] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "
+2022-02-03 12:51:40.823  WARN 5132 --- [task-1] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "
     alter table cart 
        drop 
        foreign key FK3d704slv66tw6x5hmbm6p2x3u" via JDBC Statement
@@ -309,7 +309,7 @@ org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
 	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
-Caused by: java.sql.SQLSyntaxErrorException: Table 'webshop.cart' doesn't exist
+Caused by: java.sql.SQLSyntaxErrorException: Can't DROP 'FK3d704slv66tw6x5hmbm6p2x3u'; check that column/key exists
 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.22.jar:8.0.22]
 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.22.jar:8.0.22]
 	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.22.jar:8.0.22]
@@ -320,7 +320,7 @@ Caused by: java.sql.SQLSyntaxErrorException: Table 'webshop.cart' doesn't exist
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54) ~[hibernate-core-5.4.23.Final.jar:5.4.23.Final]
 	... 19 common frames omitted
 
-2022-02-02 15:04:09.837  WARN 15892 --- [task-1] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "
+2022-02-03 12:51:40.829  WARN 5132 --- [task-1] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "
     alter table cart_aud 
        drop 
        foreign key FKeo0ajmldne1n9fo6t9waen8fh" via JDBC Statement
@@ -349,7 +349,7 @@ org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
 	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
-Caused by: java.sql.SQLSyntaxErrorException: Table 'webshop.cart_aud' doesn't exist
+Caused by: java.sql.SQLSyntaxErrorException: Can't DROP 'FKeo0ajmldne1n9fo6t9waen8fh'; check that column/key exists
 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.22.jar:8.0.22]
 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.22.jar:8.0.22]
 	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.22.jar:8.0.22]
@@ -360,7 +360,7 @@ Caused by: java.sql.SQLSyntaxErrorException: Table 'webshop.cart_aud' doesn't ex
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54) ~[hibernate-core-5.4.23.Final.jar:5.4.23.Final]
 	... 19 common frames omitted
 
-2022-02-02 15:04:09.842  WARN 15892 --- [task-1] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "
+2022-02-03 12:51:40.836  WARN 5132 --- [task-1] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "
     alter table conference 
        drop 
        foreign key FK6m2ctahbogwumigrd5tj2dcce" via JDBC Statement
@@ -389,7 +389,7 @@ org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
 	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
-Caused by: java.sql.SQLSyntaxErrorException: Table 'webshop.conference' doesn't exist
+Caused by: java.sql.SQLSyntaxErrorException: Can't DROP 'FK6m2ctahbogwumigrd5tj2dcce'; check that column/key exists
 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.22.jar:8.0.22]
 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.22.jar:8.0.22]
 	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.22.jar:8.0.22]
@@ -400,7 +400,7 @@ Caused by: java.sql.SQLSyntaxErrorException: Table 'webshop.conference' doesn't 
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54) ~[hibernate-core-5.4.23.Final.jar:5.4.23.Final]
 	... 19 common frames omitted
 
-2022-02-02 15:04:09.848  WARN 15892 --- [task-1] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "
+2022-02-03 12:51:40.841  WARN 5132 --- [task-1] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "
     alter table conferences_cart_aud 
        drop 
        foreign key FKo3ogw9jc0w9v5p1dw35o88lwt" via JDBC Statement
@@ -429,7 +429,7 @@ org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
 	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
-Caused by: java.sql.SQLSyntaxErrorException: Table 'webshop.conferences_cart_aud' doesn't exist
+Caused by: java.sql.SQLSyntaxErrorException: Can't DROP 'FKo3ogw9jc0w9v5p1dw35o88lwt'; check that column/key exists
 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.22.jar:8.0.22]
 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.22.jar:8.0.22]
 	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.22.jar:8.0.22]
@@ -440,7 +440,7 @@ Caused by: java.sql.SQLSyntaxErrorException: Table 'webshop.conferences_cart_aud
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54) ~[hibernate-core-5.4.23.Final.jar:5.4.23.Final]
 	... 19 common frames omitted
 
-2022-02-02 15:04:09.852  WARN 15892 --- [task-1] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "
+2022-02-03 12:51:40.847  WARN 5132 --- [task-1] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "
     alter table conferences_purchase_aud 
        drop 
        foreign key FKebldnxxkkh1oynxy5rtd027i5" via JDBC Statement
@@ -469,7 +469,7 @@ org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
 	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
-Caused by: java.sql.SQLSyntaxErrorException: Table 'webshop.conferences_purchase_aud' doesn't exist
+Caused by: java.sql.SQLSyntaxErrorException: Can't DROP 'FKebldnxxkkh1oynxy5rtd027i5'; check that column/key exists
 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.22.jar:8.0.22]
 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.22.jar:8.0.22]
 	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.22.jar:8.0.22]
@@ -480,7 +480,7 @@ Caused by: java.sql.SQLSyntaxErrorException: Table 'webshop.conferences_purchase
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54) ~[hibernate-core-5.4.23.Final.jar:5.4.23.Final]
 	... 19 common frames omitted
 
-2022-02-02 15:04:09.857  WARN 15892 --- [task-1] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "
+2022-02-03 12:51:40.852  WARN 5132 --- [task-1] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "
     alter table conferences_cart 
        drop 
        foreign key FK4nxdg8xehmjin5wxr2pcxfwci" via JDBC Statement
@@ -509,7 +509,7 @@ org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
 	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
-Caused by: java.sql.SQLSyntaxErrorException: Table 'webshop.conferences_cart' doesn't exist
+Caused by: java.sql.SQLSyntaxErrorException: Can't DROP 'FK4nxdg8xehmjin5wxr2pcxfwci'; check that column/key exists
 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.22.jar:8.0.22]
 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.22.jar:8.0.22]
 	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.22.jar:8.0.22]
@@ -520,7 +520,7 @@ Caused by: java.sql.SQLSyntaxErrorException: Table 'webshop.conferences_cart' do
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54) ~[hibernate-core-5.4.23.Final.jar:5.4.23.Final]
 	... 19 common frames omitted
 
-2022-02-02 15:04:09.862  WARN 15892 --- [task-1] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "
+2022-02-03 12:51:40.857  WARN 5132 --- [task-1] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "
     alter table conferences_cart 
        drop 
        foreign key FKop73bpj0cr8fbl3tefjb6ig6l" via JDBC Statement
@@ -549,7 +549,7 @@ org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
 	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
-Caused by: java.sql.SQLSyntaxErrorException: Table 'webshop.conferences_cart' doesn't exist
+Caused by: java.sql.SQLSyntaxErrorException: Can't DROP 'FKop73bpj0cr8fbl3tefjb6ig6l'; check that column/key exists
 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.22.jar:8.0.22]
 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.22.jar:8.0.22]
 	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.22.jar:8.0.22]
@@ -560,7 +560,7 @@ Caused by: java.sql.SQLSyntaxErrorException: Table 'webshop.conferences_cart' do
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54) ~[hibernate-core-5.4.23.Final.jar:5.4.23.Final]
 	... 19 common frames omitted
 
-2022-02-02 15:04:09.867  WARN 15892 --- [task-1] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "
+2022-02-03 12:51:40.862  WARN 5132 --- [task-1] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "
     alter table conferences_cart 
        drop 
        foreign key FK4lnlpvbxme48mapw0mvqfddgn" via JDBC Statement
@@ -589,7 +589,7 @@ org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
 	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
-Caused by: java.sql.SQLSyntaxErrorException: Table 'webshop.conferences_cart' doesn't exist
+Caused by: java.sql.SQLSyntaxErrorException: Can't DROP 'FK4lnlpvbxme48mapw0mvqfddgn'; check that column/key exists
 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.22.jar:8.0.22]
 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.22.jar:8.0.22]
 	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.22.jar:8.0.22]
@@ -600,7 +600,7 @@ Caused by: java.sql.SQLSyntaxErrorException: Table 'webshop.conferences_cart' do
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54) ~[hibernate-core-5.4.23.Final.jar:5.4.23.Final]
 	... 19 common frames omitted
 
-2022-02-02 15:04:09.872  WARN 15892 --- [task-1] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "
+2022-02-03 12:51:40.867  WARN 5132 --- [task-1] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "
     alter table conferences_cart 
        drop 
        foreign key FKen1xjdw8pffe9wxsvayeqs1iq" via JDBC Statement
@@ -629,7 +629,7 @@ org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
 	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
-Caused by: java.sql.SQLSyntaxErrorException: Table 'webshop.conferences_cart' doesn't exist
+Caused by: java.sql.SQLSyntaxErrorException: Can't DROP 'FKen1xjdw8pffe9wxsvayeqs1iq'; check that column/key exists
 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.22.jar:8.0.22]
 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.22.jar:8.0.22]
 	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.22.jar:8.0.22]
@@ -640,7 +640,7 @@ Caused by: java.sql.SQLSyntaxErrorException: Table 'webshop.conferences_cart' do
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54) ~[hibernate-core-5.4.23.Final.jar:5.4.23.Final]
 	... 19 common frames omitted
 
-2022-02-02 15:04:09.877  WARN 15892 --- [task-1] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "
+2022-02-03 12:51:40.873  WARN 5132 --- [task-1] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "
     alter table conferences_cart 
        drop 
        foreign key FKgeesr1hmo9y1u9tmwb23f7a9m" via JDBC Statement
@@ -669,7 +669,7 @@ org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
 	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
-Caused by: java.sql.SQLSyntaxErrorException: Table 'webshop.conferences_cart' doesn't exist
+Caused by: java.sql.SQLSyntaxErrorException: Can't DROP 'FKgeesr1hmo9y1u9tmwb23f7a9m'; check that column/key exists
 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.22.jar:8.0.22]
 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.22.jar:8.0.22]
 	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.22.jar:8.0.22]
@@ -680,7 +680,7 @@ Caused by: java.sql.SQLSyntaxErrorException: Table 'webshop.conferences_cart' do
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54) ~[hibernate-core-5.4.23.Final.jar:5.4.23.Final]
 	... 19 common frames omitted
 
-2022-02-02 15:04:09.882  WARN 15892 --- [task-1] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "
+2022-02-03 12:51:40.879  WARN 5132 --- [task-1] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "
     alter table conferences_purchase 
        drop 
        foreign key FKjgltdbulx6cr3git7oir9dmnn" via JDBC Statement
@@ -709,7 +709,7 @@ org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
 	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
-Caused by: java.sql.SQLSyntaxErrorException: Table 'webshop.conferences_purchase' doesn't exist
+Caused by: java.sql.SQLSyntaxErrorException: Can't DROP 'FKjgltdbulx6cr3git7oir9dmnn'; check that column/key exists
 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.22.jar:8.0.22]
 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.22.jar:8.0.22]
 	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.22.jar:8.0.22]
@@ -720,7 +720,7 @@ Caused by: java.sql.SQLSyntaxErrorException: Table 'webshop.conferences_purchase
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54) ~[hibernate-core-5.4.23.Final.jar:5.4.23.Final]
 	... 19 common frames omitted
 
-2022-02-02 15:04:09.887  WARN 15892 --- [task-1] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "
+2022-02-03 12:51:40.885  WARN 5132 --- [task-1] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "
     alter table pictures_table 
        drop 
        foreign key FKpq89gkcyhg92ktttyhqs0muv7" via JDBC Statement
@@ -749,7 +749,7 @@ org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
 	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
-Caused by: java.sql.SQLSyntaxErrorException: Table 'webshop.pictures_table' doesn't exist
+Caused by: java.sql.SQLSyntaxErrorException: Can't DROP 'FKpq89gkcyhg92ktttyhqs0muv7'; check that column/key exists
 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.22.jar:8.0.22]
 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.22.jar:8.0.22]
 	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.22.jar:8.0.22]
@@ -760,7 +760,7 @@ Caused by: java.sql.SQLSyntaxErrorException: Table 'webshop.pictures_table' does
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54) ~[hibernate-core-5.4.23.Final.jar:5.4.23.Final]
 	... 19 common frames omitted
 
-2022-02-02 15:04:09.892  WARN 15892 --- [task-1] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "
+2022-02-03 12:51:40.890  WARN 5132 --- [task-1] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "
     alter table pictures_table 
        drop 
        foreign key FKrmidpbkp5n7h7o4c79k3h30f3" via JDBC Statement
@@ -789,7 +789,7 @@ org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
 	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
-Caused by: java.sql.SQLSyntaxErrorException: Table 'webshop.pictures_table' doesn't exist
+Caused by: java.sql.SQLSyntaxErrorException: Can't DROP 'FKrmidpbkp5n7h7o4c79k3h30f3'; check that column/key exists
 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.22.jar:8.0.22]
 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.22.jar:8.0.22]
 	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.22.jar:8.0.22]
@@ -800,7 +800,7 @@ Caused by: java.sql.SQLSyntaxErrorException: Table 'webshop.pictures_table' does
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54) ~[hibernate-core-5.4.23.Final.jar:5.4.23.Final]
 	... 19 common frames omitted
 
-2022-02-02 15:04:09.896  WARN 15892 --- [task-1] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "
+2022-02-03 12:51:40.896  WARN 5132 --- [task-1] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "
     alter table pictures_table 
        drop 
        foreign key FKdc5qvvl1vsjsis11qaxemk0yu" via JDBC Statement
@@ -829,7 +829,7 @@ org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
 	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
-Caused by: java.sql.SQLSyntaxErrorException: Table 'webshop.pictures_table' doesn't exist
+Caused by: java.sql.SQLSyntaxErrorException: Can't DROP 'FKdc5qvvl1vsjsis11qaxemk0yu'; check that column/key exists
 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.22.jar:8.0.22]
 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.22.jar:8.0.22]
 	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.22.jar:8.0.22]
@@ -840,7 +840,7 @@ Caused by: java.sql.SQLSyntaxErrorException: Table 'webshop.pictures_table' does
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54) ~[hibernate-core-5.4.23.Final.jar:5.4.23.Final]
 	... 19 common frames omitted
 
-2022-02-02 15:04:09.901  WARN 15892 --- [task-1] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "
+2022-02-03 12:51:40.901  WARN 5132 --- [task-1] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "
     alter table product_in_purchase 
        drop 
        foreign key FKqxvakko4jp1ulh02ybga7nnyg" via JDBC Statement
@@ -869,7 +869,7 @@ org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
 	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
-Caused by: java.sql.SQLSyntaxErrorException: Table 'webshop.product_in_purchase' doesn't exist
+Caused by: java.sql.SQLSyntaxErrorException: Can't DROP 'FKqxvakko4jp1ulh02ybga7nnyg'; check that column/key exists
 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.22.jar:8.0.22]
 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.22.jar:8.0.22]
 	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.22.jar:8.0.22]
@@ -880,7 +880,7 @@ Caused by: java.sql.SQLSyntaxErrorException: Table 'webshop.product_in_purchase'
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54) ~[hibernate-core-5.4.23.Final.jar:5.4.23.Final]
 	... 19 common frames omitted
 
-2022-02-02 15:04:09.905  WARN 15892 --- [task-1] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "
+2022-02-03 12:51:40.907  WARN 5132 --- [task-1] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "
     alter table product_in_purchase 
        drop 
        foreign key FKijt0rv9397obc72488134wyug" via JDBC Statement
@@ -909,7 +909,7 @@ org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
 	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
-Caused by: java.sql.SQLSyntaxErrorException: Table 'webshop.product_in_purchase' doesn't exist
+Caused by: java.sql.SQLSyntaxErrorException: Can't DROP 'FKijt0rv9397obc72488134wyug'; check that column/key exists
 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.22.jar:8.0.22]
 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.22.jar:8.0.22]
 	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.22.jar:8.0.22]
@@ -920,7 +920,7 @@ Caused by: java.sql.SQLSyntaxErrorException: Table 'webshop.product_in_purchase'
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54) ~[hibernate-core-5.4.23.Final.jar:5.4.23.Final]
 	... 19 common frames omitted
 
-2022-02-02 15:04:09.910  WARN 15892 --- [task-1] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "
+2022-02-03 12:51:40.912  WARN 5132 --- [task-1] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "
     alter table product_in_purchase_aud 
        drop 
        foreign key FKq8upoh67xwtnwejsm6j0jv7ny" via JDBC Statement
@@ -949,7 +949,7 @@ org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
 	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
-Caused by: java.sql.SQLSyntaxErrorException: Table 'webshop.product_in_purchase_aud' doesn't exist
+Caused by: java.sql.SQLSyntaxErrorException: Can't DROP 'FKq8upoh67xwtnwejsm6j0jv7ny'; check that column/key exists
 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.22.jar:8.0.22]
 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.22.jar:8.0.22]
 	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.22.jar:8.0.22]
@@ -960,7 +960,7 @@ Caused by: java.sql.SQLSyntaxErrorException: Table 'webshop.product_in_purchase_
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54) ~[hibernate-core-5.4.23.Final.jar:5.4.23.Final]
 	... 19 common frames omitted
 
-2022-02-02 15:04:09.915  WARN 15892 --- [task-1] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "
+2022-02-03 12:51:40.917  WARN 5132 --- [task-1] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "
     alter table purchase 
        drop 
        foreign key FKbu894aifp6dr0yo9j5kv6b51w" via JDBC Statement
@@ -989,7 +989,7 @@ org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
 	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
-Caused by: java.sql.SQLSyntaxErrorException: Table 'webshop.purchase' doesn't exist
+Caused by: java.sql.SQLSyntaxErrorException: Can't DROP 'FKbu894aifp6dr0yo9j5kv6b51w'; check that column/key exists
 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.22.jar:8.0.22]
 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.22.jar:8.0.22]
 	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.22.jar:8.0.22]
@@ -1000,7 +1000,7 @@ Caused by: java.sql.SQLSyntaxErrorException: Table 'webshop.purchase' doesn't ex
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54) ~[hibernate-core-5.4.23.Final.jar:5.4.23.Final]
 	... 19 common frames omitted
 
-2022-02-02 15:04:09.919  WARN 15892 --- [task-1] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "
+2022-02-03 12:51:40.922  WARN 5132 --- [task-1] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "
     alter table purchase 
        drop 
        foreign key FKj95nb72y03ndc5ffu37qe4uht" via JDBC Statement
@@ -1029,7 +1029,7 @@ org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
 	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
-Caused by: java.sql.SQLSyntaxErrorException: Table 'webshop.purchase' doesn't exist
+Caused by: java.sql.SQLSyntaxErrorException: Can't DROP 'FKj95nb72y03ndc5ffu37qe4uht'; check that column/key exists
 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.22.jar:8.0.22]
 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.22.jar:8.0.22]
 	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.22.jar:8.0.22]
@@ -1040,7 +1040,7 @@ Caused by: java.sql.SQLSyntaxErrorException: Table 'webshop.purchase' doesn't ex
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54) ~[hibernate-core-5.4.23.Final.jar:5.4.23.Final]
 	... 19 common frames omitted
 
-2022-02-02 15:04:09.923  WARN 15892 --- [task-1] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "
+2022-02-03 12:51:40.927  WARN 5132 --- [task-1] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "
     alter table purchase_aud 
        drop 
        foreign key FK5f82ojlyhp51l4n3r3ankt1ph" via JDBC Statement
@@ -1069,7 +1069,7 @@ org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
 	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
-Caused by: java.sql.SQLSyntaxErrorException: Table 'webshop.purchase_aud' doesn't exist
+Caused by: java.sql.SQLSyntaxErrorException: Can't DROP 'FK5f82ojlyhp51l4n3r3ankt1ph'; check that column/key exists
 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.22.jar:8.0.22]
 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.22.jar:8.0.22]
 	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.22.jar:8.0.22]
@@ -1080,7 +1080,7 @@ Caused by: java.sql.SQLSyntaxErrorException: Table 'webshop.purchase_aud' doesn'
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54) ~[hibernate-core-5.4.23.Final.jar:5.4.23.Final]
 	... 19 common frames omitted
 
-2022-02-02 15:04:09.928  WARN 15892 --- [task-1] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "
+2022-02-03 12:51:40.931  WARN 5132 --- [task-1] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "
     alter table transportation 
        drop 
        foreign key FKr33sge1hfs9389l27ycmaq6w3" via JDBC Statement
@@ -1109,7 +1109,7 @@ org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
 	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
-Caused by: java.sql.SQLSyntaxErrorException: Table 'webshop.transportation' doesn't exist
+Caused by: java.sql.SQLSyntaxErrorException: Can't DROP 'FKr33sge1hfs9389l27ycmaq6w3'; check that column/key exists
 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.22.jar:8.0.22]
 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.22.jar:8.0.22]
 	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.22.jar:8.0.22]
@@ -1120,7 +1120,7 @@ Caused by: java.sql.SQLSyntaxErrorException: Table 'webshop.transportation' does
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54) ~[hibernate-core-5.4.23.Final.jar:5.4.23.Final]
 	... 19 common frames omitted
 
-2022-02-02 15:04:09.933  WARN 15892 --- [task-1] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "
+2022-02-03 12:51:40.937  WARN 5132 --- [task-1] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "
     alter table user_authority 
        drop 
        foreign key FKgvxjs381k6f48d5d2yi11uh89" via JDBC Statement
@@ -1149,7 +1149,7 @@ org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
 	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
-Caused by: java.sql.SQLSyntaxErrorException: Table 'webshop.user_authority' doesn't exist
+Caused by: java.sql.SQLSyntaxErrorException: Can't DROP 'FKgvxjs381k6f48d5d2yi11uh89'; check that column/key exists
 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.22.jar:8.0.22]
 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.22.jar:8.0.22]
 	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.22.jar:8.0.22]
@@ -1160,7 +1160,7 @@ Caused by: java.sql.SQLSyntaxErrorException: Table 'webshop.user_authority' does
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54) ~[hibernate-core-5.4.23.Final.jar:5.4.23.Final]
 	... 19 common frames omitted
 
-2022-02-02 15:04:09.937  WARN 15892 --- [task-1] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "
+2022-02-03 12:51:40.942  WARN 5132 --- [task-1] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "
     alter table user_authority 
        drop 
        foreign key FK83r0k35bfa4u6b61y5235ifdb" via JDBC Statement
@@ -1189,7 +1189,7 @@ org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
 	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
-Caused by: java.sql.SQLSyntaxErrorException: Table 'webshop.user_authority' doesn't exist
+Caused by: java.sql.SQLSyntaxErrorException: Can't DROP 'FK83r0k35bfa4u6b61y5235ifdb'; check that column/key exists
 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.22.jar:8.0.22]
 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.22.jar:8.0.22]
 	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.22.jar:8.0.22]
@@ -1200,7 +1200,7 @@ Caused by: java.sql.SQLSyntaxErrorException: Table 'webshop.user_authority' does
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54) ~[hibernate-core-5.4.23.Final.jar:5.4.23.Final]
 	... 19 common frames omitted
 
-2022-02-02 15:04:09.941  WARN 15892 --- [task-1] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "
+2022-02-03 12:51:40.947  WARN 5132 --- [task-1] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "
     alter table user_table_aud 
        drop 
        foreign key FK68h86u56boei34hp8hch85sa" via JDBC Statement
@@ -1229,7 +1229,7 @@ org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
 	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
-Caused by: java.sql.SQLSyntaxErrorException: Table 'webshop.user_table_aud' doesn't exist
+Caused by: java.sql.SQLSyntaxErrorException: Can't DROP 'FK68h86u56boei34hp8hch85sa'; check that column/key exists
 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.22.jar:8.0.22]
 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.22.jar:8.0.22]
 	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.22.jar:8.0.22]
@@ -1240,7 +1240,7 @@ Caused by: java.sql.SQLSyntaxErrorException: Table 'webshop.user_table_aud' does
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54) ~[hibernate-core-5.4.23.Final.jar:5.4.23.Final]
 	... 19 common frames omitted
 
-2022-02-02 15:04:09.946  WARN 15892 --- [task-1] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "
+2022-02-03 12:51:40.951  WARN 5132 --- [task-1] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "
     alter table web_shop 
        drop 
        foreign key FK2hjwwf552tt3myynw8qgmxwki" via JDBC Statement
@@ -1269,7 +1269,7 @@ org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
 	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
-Caused by: java.sql.SQLSyntaxErrorException: Table 'webshop.web_shop' doesn't exist
+Caused by: java.sql.SQLSyntaxErrorException: Can't DROP 'FK2hjwwf552tt3myynw8qgmxwki'; check that column/key exists
 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.22.jar:8.0.22]
 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.22.jar:8.0.22]
 	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.22.jar:8.0.22]
@@ -1280,160 +1280,18 @@ Caused by: java.sql.SQLSyntaxErrorException: Table 'webshop.web_shop' doesn't ex
 	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54) ~[hibernate-core-5.4.23.Final.jar:5.4.23.Final]
 	... 19 common frames omitted
 
-2022-02-02 15:04:16.514  INFO 15892 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-02-02 15:04:16.532  INFO 15892 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-02-02 15:04:20.547  INFO 15892 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
-2022-02-02 15:04:20.574  INFO 15892 --- [restartedMain] com.example.WebShop.WebShopApplication   : Started WebShopApplication in 35.063 seconds (JVM running for 37.852)
-2022-02-02 15:23:31.900  INFO 15892 --- [http-nio-8085-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-02-02 15:23:31.900  INFO 15892 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-02-02 15:23:31.903  INFO 15892 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2022-02-02 15:23:36.905  INFO 15892 --- [http-nio-8085-exec-4] c.e.W.C.AuthenticationController         : User admin has just logged in.
-2022-02-02 15:23:47.759  INFO 15892 --- [http-nio-8085-exec-7] c.e.W.Controllers.ProductController      : Adding new product: rrrr
-2022-02-02 15:25:42.782  INFO 15892 --- [http-nio-8085-exec-9] c.e.W.C.AuthenticationController         : User user has just logged in.
-2022-02-02 15:25:45.671  INFO 15892 --- [http-nio-8085-exec-10] c.e.W.Controllers.ProductController      : User user is overviewing products.
-2022-02-02 15:25:50.212  INFO 15892 --- [http-nio-8085-exec-2] c.e.WebShop.Controllers.CartController   : Item with id: 1has just been added to the cart by user user
-2022-02-02 15:25:52.235  INFO 15892 --- [http-nio-8085-exec-3] c.e.W.Controllers.ProductController      : User user is overviewing products.
-2022-02-02 15:25:53.302  INFO 15892 --- [http-nio-8085-exec-5] c.e.WebShop.Controllers.CartController   : User: useris viewing its cart.
-2022-02-02 15:26:03.294  INFO 15892 --- [http-nio-8085-exec-7] c.e.W.Controllers.PurchaseController     : User user is making a purchase
-2022-02-02 15:30:31.385  INFO 15892 --- [http-nio-8085-exec-9] c.e.WebShop.Controllers.CartController   : User: useris viewing its cart.
-2022-02-02 15:30:31.553  INFO 15892 --- [http-nio-8085-exec-10] c.e.W.Controllers.ProductController      : User user is overviewing products.
-2022-02-02 15:30:35.318  INFO 15892 --- [http-nio-8085-exec-1] c.e.W.C.AuthenticationController         : User admin has just logged in.
-2022-02-02 15:30:38.454  INFO 15892 --- [http-nio-8085-exec-2] c.e.W.Controllers.ProductController      : User admin is overviewing products.
-2022-02-02 15:32:26.301  INFO 15892 --- [http-nio-8085-exec-4] c.e.W.C.AuthenticationController         : User user has just logged in.
-2022-02-02 15:32:29.374  INFO 15892 --- [http-nio-8085-exec-5] c.e.W.Controllers.ProductController      : User user is overviewing products.
-2022-02-02 15:32:33.988  INFO 15892 --- [http-nio-8085-exec-6] c.e.WebShop.Controllers.CartController   : Item with id: 1has just been added to the cart by user user
-2022-02-02 15:32:36.501  INFO 15892 --- [http-nio-8085-exec-7] c.e.W.Controllers.ProductController      : User user is overviewing products.
-2022-02-02 15:32:37.905  INFO 15892 --- [http-nio-8085-exec-8] c.e.WebShop.Controllers.CartController   : User: useris viewing its cart.
-2022-02-02 15:32:43.958  INFO 15892 --- [http-nio-8085-exec-9] c.e.W.Controllers.PurchaseController     : User user is making a purchase
-2022-02-02 15:51:44.472  INFO 15892 --- [http-nio-8085-exec-1] c.e.WebShop.Controllers.CartController   : User: useris viewing its cart.
-2022-02-02 15:51:44.796  INFO 15892 --- [http-nio-8085-exec-2] c.e.W.Controllers.ProductController      : User user is overviewing products.
-2022-02-02 15:51:48.118  INFO 15892 --- [http-nio-8085-exec-3] c.e.W.C.AuthenticationController         : User admin has just logged in.
-2022-02-02 15:51:51.338  INFO 15892 --- [http-nio-8085-exec-4] c.e.W.Controllers.ProductController      : User admin is overviewing products.
-2022-02-02 15:52:44.759  INFO 15892 --- [http-nio-8085-exec-5] c.e.W.C.AuthenticationController         : User user has just logged in.
-2022-02-02 15:52:47.854  INFO 15892 --- [http-nio-8085-exec-6] c.e.W.Controllers.ProductController      : User user is overviewing products.
-2022-02-02 15:52:59.727  INFO 15892 --- [http-nio-8085-exec-7] c.e.WebShop.Controllers.CartController   : Item with id: 1has just been added to the cart by user user
-2022-02-02 15:53:02.352  INFO 15892 --- [http-nio-8085-exec-8] c.e.W.Controllers.ProductController      : User user is overviewing products.
-2022-02-02 15:53:04.370  INFO 15892 --- [http-nio-8085-exec-9] c.e.WebShop.Controllers.CartController   : User: useris viewing its cart.
-2022-02-02 15:53:45.784  INFO 15892 --- [http-nio-8085-exec-10] c.e.W.Controllers.PurchaseController     : User user is making a purchase
-2022-02-02 17:58:53.024  WARN 15892 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=33m18s288ms754µs100ns).
-2022-02-02 21:45:34.240  WARN 15892 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h47m10s231ms297µs).
-2022-02-02 21:49:33.839 ERROR 15892 --- [http-nio-8085-exec-3] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException: Cannot invoke "com.example.WebShop.Model.User.getUsername()" because the return value of "com.example.WebShop.Service.Implementations.CartService.getLoggedUser()" is null] with root cause
-
-java.lang.NullPointerException: Cannot invoke "com.example.WebShop.Model.User.getUsername()" because the return value of "com.example.WebShop.Service.Implementations.CartService.getLoggedUser()" is null
-	at com.example.WebShop.Controllers.ProductController.allProducts(ProductController.java:132) ~[classes/:na]
-	at com.example.WebShop.Controllers.ProductController$$FastClassBySpringCGLIB$$79af79ff.invoke(<generated>) ~[classes/:na]
-	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.1.jar:5.3.1]
-	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:687) ~[spring-aop-5.3.1.jar:5.3.1]
-	at com.example.WebShop.Controllers.ProductController$$EnhancerBySpringCGLIB$$59c94c8e.allProducts(<generated>) ~[classes/:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197) ~[spring-web-5.3.1.jar:5.3.1]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141) ~[spring-web-5.3.1.jar:5.3.1]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.3.1.jar:5.3.1]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:893) ~[spring-webmvc-5.3.1.jar:5.3.1]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:807) ~[spring-webmvc-5.3.1.jar:5.3.1]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.1.jar:5.3.1]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1061) ~[spring-webmvc-5.3.1.jar:5.3.1]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:961) ~[spring-webmvc-5.3.1.jar:5.3.1]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.1.jar:5.3.1]
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.1.jar:5.3.1]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626) ~[tomcat-embed-core-9.0.39.jar:4.0.FR]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.1.jar:5.3.1]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.39.jar:4.0.FR]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.39.jar:9.0.39]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:327) ~[spring-security-web-5.4.1.jar:5.4.1]
-	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:115) ~[spring-security-web-5.4.1.jar:5.4.1]
-	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:81) ~[spring-security-web-5.4.1.jar:5.4.1]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.4.1.jar:5.4.1]
-	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119) ~[spring-security-web-5.4.1.jar:5.4.1]
-	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:113) ~[spring-security-web-5.4.1.jar:5.4.1]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.4.1.jar:5.4.1]
-	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126) ~[spring-security-web-5.4.1.jar:5.4.1]
-	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81) ~[spring-security-web-5.4.1.jar:5.4.1]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.4.1.jar:5.4.1]
-	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:105) ~[spring-security-web-5.4.1.jar:5.4.1]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.4.1.jar:5.4.1]
-	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149) ~[spring-security-web-5.4.1.jar:5.4.1]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.4.1.jar:5.4.1]
-	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-5.4.1.jar:5.4.1]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.4.1.jar:5.4.1]
-	at com.example.WebShop.Authentication.TokenAuthenticationFilter.doFilterInternal(TokenAuthenticationFilter.java:52) ~[classes/:na]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.1.jar:5.3.1]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.4.1.jar:5.4.1]
-	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103) ~[spring-security-web-5.4.1.jar:5.4.1]
-	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89) ~[spring-security-web-5.4.1.jar:5.4.1]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.4.1.jar:5.4.1]
-	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-5.3.1.jar:5.3.1]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.1.jar:5.3.1]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.4.1.jar:5.4.1]
-	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-5.4.1.jar:5.4.1]
-	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-5.4.1.jar:5.4.1]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.1.jar:5.3.1]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.4.1.jar:5.4.1]
-	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110) ~[spring-security-web-5.4.1.jar:5.4.1]
-	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80) ~[spring-security-web-5.4.1.jar:5.4.1]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.4.1.jar:5.4.1]
-	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55) ~[spring-security-web-5.4.1.jar:5.4.1]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.1.jar:5.3.1]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.4.1.jar:5.4.1]
-	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211) ~[spring-security-web-5.4.1.jar:5.4.1]
-	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183) ~[spring-security-web-5.4.1.jar:5.4.1]
-	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358) ~[spring-web-5.3.1.jar:5.3.1]
-	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271) ~[spring-web-5.3.1.jar:5.3.1]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.1.jar:5.3.1]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.1.jar:5.3.1]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.39.jar:9.0.39]
-	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
-
-2022-02-02 21:57:43.937  INFO 15892 --- [http-nio-8085-exec-5] c.e.W.C.AuthenticationController         : User admin has just logged in.
-2022-02-02 21:57:46.741  INFO 15892 --- [http-nio-8085-exec-6] c.e.W.Controllers.ProductController      : User admin is overviewing products.
-2022-02-02 21:58:32.430  INFO 15892 --- [http-nio-8085-exec-7] c.e.W.C.AuthenticationController         : User user has just logged in.
-2022-02-02 21:58:35.185  INFO 15892 --- [http-nio-8085-exec-8] c.e.W.Controllers.ProductController      : User user is overviewing products.
-2022-02-02 21:58:38.822  INFO 15892 --- [http-nio-8085-exec-10] c.e.WebShop.Controllers.CartController   : Item with id: 1has just been added to the cart by user user
-2022-02-02 21:58:40.748  INFO 15892 --- [http-nio-8085-exec-1] c.e.W.Controllers.ProductController      : User user is overviewing products.
-2022-02-02 21:58:42.614  INFO 15892 --- [http-nio-8085-exec-3] c.e.WebShop.Controllers.CartController   : User: useris viewing its cart.
-2022-02-02 21:58:49.433  INFO 15892 --- [http-nio-8085-exec-5] c.e.W.Controllers.PurchaseController     : User user is making a purchase
-2022-02-02 23:08:38.794  INFO 15892 --- [http-nio-8085-exec-8] c.e.WebShop.Controllers.CartController   : User: useris viewing its cart.
-2022-02-02 23:08:48.230  INFO 15892 --- [http-nio-8085-exec-10] c.e.W.C.AuthenticationController         : User admin has just logged in.
-2022-02-02 23:08:51.041  INFO 15892 --- [http-nio-8085-exec-2] c.e.W.Controllers.ProductController      : User admin is overviewing products.
-2022-02-02 23:10:56.918  INFO 15892 --- [http-nio-8085-exec-4] c.e.W.C.AuthenticationController         : User user has just logged in.
-2022-02-02 23:10:59.974  INFO 15892 --- [http-nio-8085-exec-5] c.e.W.Controllers.ProductController      : User user is overviewing products.
-2022-02-02 23:11:03.832  INFO 15892 --- [http-nio-8085-exec-6] c.e.WebShop.Controllers.CartController   : Item with id: 1has just been added to the cart by user user
-2022-02-02 23:11:06.253  INFO 15892 --- [http-nio-8085-exec-7] c.e.W.Controllers.ProductController      : User user is overviewing products.
-2022-02-02 23:11:08.015  INFO 15892 --- [http-nio-8085-exec-8] c.e.WebShop.Controllers.CartController   : User: useris viewing its cart.
-2022-02-02 23:11:15.622  INFO 15892 --- [http-nio-8085-exec-10] c.e.W.Controllers.PurchaseController     : User user is making a purchase
-2022-02-02 23:23:33.830  INFO 15892 --- [http-nio-8085-exec-2] c.e.WebShop.Controllers.CartController   : User: useris viewing its cart.
-2022-02-02 23:23:37.767  INFO 15892 --- [http-nio-8085-exec-3] c.e.W.C.AuthenticationController         : User admin has just logged in.
-2022-02-02 23:23:41.620  INFO 15892 --- [http-nio-8085-exec-4] c.e.W.Controllers.ProductController      : User admin is overviewing products.
-2022-02-02 23:24:21.765  INFO 15892 --- [http-nio-8085-exec-5] c.e.W.C.AuthenticationController         : User user has just logged in.
-2022-02-02 23:24:25.277  INFO 15892 --- [http-nio-8085-exec-6] c.e.W.Controllers.ProductController      : User user is overviewing products.
-2022-02-02 23:24:34.069  INFO 15892 --- [http-nio-8085-exec-7] c.e.WebShop.Controllers.CartController   : Item with id: 1has just been added to the cart by user user
-2022-02-02 23:24:36.942  INFO 15892 --- [http-nio-8085-exec-8] c.e.W.Controllers.ProductController      : User user is overviewing products.
-2022-02-02 23:24:38.480  INFO 15892 --- [http-nio-8085-exec-9] c.e.WebShop.Controllers.CartController   : User: useris viewing its cart.
-2022-02-02 23:24:47.372  INFO 15892 --- [http-nio-8085-exec-10] c.e.W.Controllers.PurchaseController     : User user is making a purchase
-2022-02-02 23:35:50.213  INFO 15892 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2022-02-02 23:35:50.221  INFO 15892 --- [SpringContextShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-02-03 12:52:46.031  INFO 5132 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-03 12:52:46.056  INFO 5132 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-03 12:52:48.830  INFO 5132 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2022-02-03 12:52:48.859  INFO 5132 --- [restartedMain] com.example.WebShop.WebShopApplication   : Started WebShopApplication in 83.569 seconds (JVM running for 94.234)
+2022-02-03 12:58:46.416  INFO 5132 --- [http-nio-8085-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-03 12:58:46.416  INFO 5132 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-02-03 12:58:46.420  INFO 5132 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2022-02-03 12:58:47.015  INFO 5132 --- [http-nio-8085-exec-1] c.e.W.C.AuthenticationController         : User admin has just logged in.
+2022-02-03 12:58:59.022  INFO 5132 --- [http-nio-8085-exec-5] c.e.W.Controllers.ProductController      : Adding new product: ffvv
+2022-02-03 12:59:48.443  INFO 5132 --- [http-nio-8085-exec-6] c.e.W.C.AuthenticationController         : User user has just logged in.
+2022-02-03 12:59:51.286  INFO 5132 --- [http-nio-8085-exec-7] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2022-02-03 12:59:54.936  INFO 5132 --- [http-nio-8085-exec-9] c.e.WebShop.Controllers.CartController   : Item with id: 1has just been added to the cart by user user
+2022-02-03 12:59:56.611  INFO 5132 --- [http-nio-8085-exec-10] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2022-02-03 12:59:58.230  INFO 5132 --- [http-nio-8085-exec-2] c.e.WebShop.Controllers.CartController   : User: useris viewing its cart.
+2022-02-03 13:00:05.142  INFO 5132 --- [http-nio-8085-exec-4] c.e.W.Controllers.PurchaseController     : User user is making a purchase

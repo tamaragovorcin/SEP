@@ -11,6 +11,10 @@ import org.springframework.http.*;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
+import java.awt.*;
+import java.io.IOException;
+import java.net.URI;
+import java.net.URISyntaxException;
 import java.time.YearMonth;
 import java.util.Date;
 import java.util.List;
@@ -48,6 +52,7 @@ public class PaymentService implements IPaymentService {
 		}
 		return paymentRequest.get();
 	}
+
 
 	@Override
 	public PaymentResponseDTO getPaymentResponse(PaymentRequestDTO paymentRequestDTO) {
@@ -96,9 +101,27 @@ public class PaymentService implements IPaymentService {
 			return null;
 		}
 	}
-
+	public static void browse(String url) {
+		if(Desktop.isDesktopSupported()){
+			Desktop desktop = Desktop.getDesktop();
+			try {
+				desktop.browse(new URI(url));
+			} catch (IOException | URISyntaxException e) {
+				e.printStackTrace();
+			}
+		}else{
+			Runtime runtime = Runtime.getRuntime();
+			try {
+				runtime.exec("rundll32 url.dll,FileProtocolHandler " + url);
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		}
+	}
 	@Override
 	public String confirmPayment(AccountDTO clientDTO, Integer paymentRequestId) {
+
+		System.out.println(clientDTO.getWebshopId());
 
 		Transaction transaction = new Transaction();
 		PaymentRequest paymentRequest = getPaymentRequest(paymentRequestId);
@@ -107,6 +130,10 @@ public class PaymentService implements IPaymentService {
 		transaction.setMerchantId(paymentRequest.getMerchantId());
 		transaction.setMerchantOrderId(paymentRequest.getMerchantOrderId());
 		transaction.setMerchantTimestamp(paymentRequest.getMerchantTimestamp());
+
+
+		Merchant m = merchantService.findByMerchantId(paymentRequest.getMerchantId());
+		//UrlAddressesDTO urls = getUrlAddressByWebShopId(clientDTO.getWebshopId());
 
 
 		String bankId = paymentRequestId.toString() + paymentRequestId.toString() + paymentRequestId.toString();
@@ -179,14 +206,13 @@ public class PaymentService implements IPaymentService {
 			// To nije ova banka idemo na pcc
 			System.out.println("Nisu iz iste banke idemo na pcc");
 			Transaction saved = transactionService.save(transaction);
-			System.err.println("posle cuvanja transakcije");
 			// ACQUIRER_ORDER_ID = saved.id
 			// ACQUIRER_TIMESTAMP
 			PccRequestDTO pccRequestDTO = new PccRequestDTO();
 			pccRequestDTO.setAcquirerOrderId(saved.getId());
 			pccRequestDTO.setAcquirerTimestamp(new Date());
 			pccRequestDTO.setCardHolder(clientDTO.getCardHolderName());
-			pccRequestDTO.setCvv(Integer.parseInt(clientDTO.getCardSecurityCode()));
+			pccRequestDTO.setCardSecurityCode(clientDTO.getCardSecurityCode());
 			pccRequestDTO.setExpirationDate(clientDTO.getExpirationDate());
 			pccRequestDTO.setPanNumber(clientDTO.getPAN());
 			pccRequestDTO.setAmount(paymentRequest.getAmount());
@@ -227,9 +253,10 @@ public class PaymentService implements IPaymentService {
 				completePaymentResponseDTO.setStatus("PAID");
 				System.err.println("obavestavanja kpa");
 
-				ResponseEntity<String> responseEntity = restTemplate.exchange(paymentRequest.getCallbackUrl() + "/complete", HttpMethod.POST,
+				/*ResponseEntity<String> responseEntity = restTemplate.exchange(paymentRequest.getCallbackUrl() + "/complete", HttpMethod.POST,
 						new HttpEntity<CompletePaymentResponseDTO>(completePaymentResponseDTO), String.class);
-				System.out.println(responseEntity.getBody());
+				System.out.println(responseEntity.getBody());*/
+
 
 				return paymentRequest.getSuccessUrl();
 			}
