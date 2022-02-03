@@ -14,4 +14,6 @@ public class PccResponseDTO {
 	private Boolean isTransactionAutorized;
 	private Integer acquirerOrderId;
 	private Date acquirerTimestamp;
+	private Integer issuerOrderId;
+	private Date issuerTimestamp;
 }

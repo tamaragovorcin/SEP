@@ -5,6 +5,8 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 
+import java.util.Date;
+
 @NoArgsConstructor
 @Getter
 @Setter
@@ -16,4 +18,8 @@ public class AcquirerResponseDTO {
 	}
 	private Boolean isAuthentificated;
 	private Boolean isTransactionAutorized;
+	private Integer acquirerOrderId;
+	private Date acquirerTimestamp;
+	private Integer issuerOrderId;
+	private Date issuerTimestamp;
 }
