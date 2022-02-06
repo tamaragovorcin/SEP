@@ -276,3 +276,8 @@ org.springframework.web.client.HttpClientErrorException$Unauthorized: 401 : [no 
 2022-02-03 15:40:47.847  WARN 18872 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m42s69ms377µs900ns).
 2022-02-03 15:43:20.921  INFO 18872 --- [http-nio-6006-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2022-02-03 15:43:20.925  INFO 18872 --- [http-nio-6006-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-02-03 15:43:20.954  INFO 18872 --- [http-nio-6006-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 28 ms
+2022-02-03 15:45:01.338  INFO 18872 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-03 15:45:01.344  INFO 18872 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-02-03 15:45:01.345  INFO 18872 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-02-03 15:45:01.379  INFO 18872 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

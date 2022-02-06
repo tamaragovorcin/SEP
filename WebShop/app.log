@@ -1295,3 +1295,6 @@ Caused by: java.sql.SQLSyntaxErrorException: Can't DROP 'FK2hjwwf552tt3myynw8qgm
 2022-02-03 12:59:56.611  INFO 5132 --- [http-nio-8085-exec-10] c.e.W.Controllers.ProductController      : User user is overviewing products.
 2022-02-03 12:59:58.230  INFO 5132 --- [http-nio-8085-exec-2] c.e.WebShop.Controllers.CartController   : User: useris viewing its cart.
 2022-02-03 13:00:05.142  INFO 5132 --- [http-nio-8085-exec-4] c.e.W.Controllers.PurchaseController     : User user is making a purchase
+2022-02-03 15:41:15.336  WARN 5132 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m6s2ms765µs).
+2022-02-03 15:45:20.771  INFO 5132 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-03 15:45:20.771  INFO 5132 --- [SpringContextShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
