@@ -5,7 +5,7 @@ import Axios from "axios";
 
 const ProductPaymentFailure = () => {
     useEffect(() => {
-        let paymentId = this.getCookie("paymentId");
+        let paymentId = this.getCookie("paymentWebShopId");
 		const dto = {
 			paymentId : paymentId,
 			status : "CANCELED",

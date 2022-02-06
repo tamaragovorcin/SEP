@@ -30,7 +30,6 @@ public class PaymentController {
 	@PostMapping("/confirm/{paymentRequestId}")
 	@CrossOrigin
 	public String confirmPayment(@RequestBody AccountDTO clientDTO, @PathVariable Integer paymentRequestId) {
-
 		String url = paymentService.confirmPayment(clientDTO, paymentRequestId);
 		paymentService.browse(url);
 

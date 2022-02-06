@@ -73,8 +73,8 @@ public class WebShopService {
         webShop.setMerchantID(paymentMethodDTO.getMerchantID());
         webShop.setMerchantPassword(paymentMethodDTO.getMerchantPassword());
         switch (methodName) {
-            case "bitcoin":
-                webShop.setEnabledBitcoin(true);
+            case "qr":
+                webShop.setEnabledQR(true);
                 break;
             case "card":
                 webShop.setEnabledCard(true);
