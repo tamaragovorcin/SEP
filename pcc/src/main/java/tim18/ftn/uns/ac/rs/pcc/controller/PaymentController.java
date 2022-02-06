@@ -1,5 +1,7 @@
 package tim18.ftn.uns.ac.rs.pcc.controller;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpMethod;
@@ -22,6 +24,8 @@ public class PaymentController {
 	
 	@Autowired
 	private RestTemplate restTemplate;
+
+	private static final Logger logger = LoggerFactory.getLogger(PaymentController.class);
 
 	@PostMapping("/payRedirect")
 	public ResponseEntity<?> payRedirect(@RequestBody PccRequestDTO pccRequestDTO) {

@@ -6,6 +6,8 @@ import com.example.api.DTOs.PaymentRequestDTO;
 import com.example.api.DTOs.PaymentResponseDTO;
 import com.example.api.entities.bank.PaymentRequest;
 import com.example.api.services.implementations.bank.PaymentService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -20,11 +22,21 @@ public class PaymentController {
 	@Autowired
 	private PaymentService paymentService;
 
+	private static final Logger logger = LoggerFactory.getLogger(PaymentController.class);
+
 	@PostMapping("/confirm")
 	@CrossOrigin
 	public PaymentResponseDTO confirm(@RequestBody PaymentRequestDTO clientDTO) {
+try {
 
-		return paymentService.getPaymentResponse(clientDTO);
+	logger.info("Confirming payment request");
+	return paymentService.getPaymentResponse(clientDTO);
+
+}catch(Exception e){
+
+	logger.error("Error while confirming payment request");
+	return null;
+}
 	}
 
 	@PostMapping("/confirm/{paymentRequestId}")
