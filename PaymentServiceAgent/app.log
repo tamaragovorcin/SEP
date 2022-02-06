@@ -2104,3 +2104,201 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 2022-02-03 21:11:12.056  INFO 26120 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
 2022-02-03 21:15:34.404  INFO 16340 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
 2022-02-03 21:16:12.062  INFO 26120 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-03 22:41:11.375  INFO 3576 --- [main] com.APIGateway.ApiGatewayApplication     : Starting ApiGatewayApplication using Java 17.0.1 on DESKTOP-FRU2KAO with PID 3576 (C:\Users\Mladenka\Desktop\SEP\SEP\PaymentServiceAgent\API-Gateway\target\classes started by Mladenka in C:\Users\Mladenka\Desktop\SEP\SEP\PaymentServiceAgent)
+2022-02-03 22:41:11.382  INFO 3576 --- [main] com.APIGateway.ApiGatewayApplication     : No active profile set, falling back to default profiles: default
+2022-02-03 22:41:13.087  INFO 3576 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=fc05cfcf-5cf0-39a3-bcd6-5a666ec29182
+2022-02-03 22:41:13.205  INFO 3576 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-02-03 22:41:13.207  INFO 3576 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-02-03 22:41:13.209  INFO 3576 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-02-03 22:41:13.743  INFO 3576 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2022-02-03 22:41:13.755  INFO 3576 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-03 22:41:13.756  INFO 3576 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-02-03 22:41:15.335  INFO 3576 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2022-02-03 22:41:16.645  INFO 3576 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2022-02-03 22:41:17.405  INFO 3576 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
+2022-02-03 22:41:17.406  INFO 3576 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
+2022-02-03 22:41:17.407  INFO 3576 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
+2022-02-03 22:41:17.408  INFO 3576 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
+2022-02-03 22:41:17.409  INFO 3576 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
+2022-02-03 22:41:17.409  INFO 3576 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
+2022-02-03 22:41:17.409  INFO 3576 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
+2022-02-03 22:41:17.409  INFO 3576 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
+2022-02-03 22:41:17.410  INFO 3576 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
+2022-02-03 22:41:17.410  INFO 3576 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBody]
+2022-02-03 22:41:17.412  INFO 3576 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
+2022-02-03 22:41:17.413  INFO 3576 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
+2022-02-03 22:41:17.413  INFO 3576 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2022-02-03 22:41:18.032  INFO 3576 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2022-02-03 22:41:19.304  INFO 3576 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2022-02-03 22:41:19.371  WARN 3576 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-02-03 22:41:19.405  INFO 3576 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-02-03 22:41:19.570  INFO 3576 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2022-02-03 22:41:19.582  INFO 3576 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-03 22:41:19.659  INFO 3576 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-02-03 22:41:19.659  INFO 3576 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-02-03 22:41:19.661  INFO 3576 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-02-03 22:41:19.662  INFO 3576 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-02-03 22:41:19.662  INFO 3576 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-02-03 22:41:19.662  INFO 3576 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2022-02-03 22:41:19.663  INFO 3576 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-02-03 22:41:20.729  INFO 3576 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-02-03 22:41:20.736  INFO 3576 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2022-02-03 22:41:20.747  INFO 3576 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-02-03 22:41:20.755  INFO 3576 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1643924480754 with initial instances count: 0
+2022-02-03 22:41:20.757  INFO 3576 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application API-GATEWAY with eureka with status UP
+2022-02-03 22:41:20.757  INFO 3576 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1643924480757, current=UP, previous=STARTING]
+2022-02-03 22:41:20.759  INFO 3576 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_API-GATEWAY/localhost:api-gateway:9090: registering service...
+2022-02-03 22:41:20.882  INFO 3576 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2022-02-03 22:41:20.884  INFO 3576 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9090
+2022-02-03 22:41:21.051  INFO 3576 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_API-GATEWAY/localhost:api-gateway:9090 - registration status: 204
+2022-02-03 22:41:22.242  INFO 3576 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2022-02-03 22:41:23.428  INFO 3576 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2022-02-03 22:41:23.450  INFO 3576 --- [main] com.APIGateway.ApiGatewayApplication     : Started ApiGatewayApplication in 15.382 seconds (JVM running for 16.989)
+2022-02-03 22:41:37.361  INFO 17476 --- [restartedMain] com.AuthService.AuthServiceApplication   : Starting AuthServiceApplication using Java 17.0.1 on DESKTOP-FRU2KAO with PID 17476 (C:\Users\Mladenka\Desktop\SEP\SEP\PaymentServiceAgent\Auth-Service\target\classes started by Mladenka in C:\Users\Mladenka\Desktop\SEP\SEP\PaymentServiceAgent)
+2022-02-03 22:41:37.363  INFO 17476 --- [restartedMain] com.AuthService.AuthServiceApplication   : No active profile set, falling back to default profiles: default
+2022-02-03 22:41:37.496  INFO 17476 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-02-03 22:41:37.497  INFO 17476 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-02-03 22:41:39.009  INFO 17476 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-03 22:41:39.423  INFO 17476 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 376 ms. Found 1 JPA repository interfaces.
+2022-02-03 22:41:39.998  INFO 17476 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=f75e2515-ab1d-30a7-a2a0-73a96baba038
+2022-02-03 22:41:41.841  INFO 17476 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8086 (http)
+2022-02-03 22:41:41.875  INFO 17476 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-03 22:41:41.879  INFO 17476 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-03 22:41:42.170  INFO 17476 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-03 22:41:42.172  INFO 17476 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4674 ms
+2022-02-03 22:41:42.789  INFO 17476 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-03 22:41:42.922  INFO 17476 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.4.Final
+2022-02-03 22:41:43.417  INFO 17476 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-02-03 22:41:43.959  INFO 17476 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-02-03 22:41:45.559  INFO 17476 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-02-03 22:41:45.678  INFO 17476 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-02-03 22:41:48.060  INFO 17476 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-03 22:41:48.075  INFO 17476 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-03 22:41:50.132  WARN 17476 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-03 22:41:50.758  INFO 3576 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-02-03 22:41:50.759  INFO 3576 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-02-03 22:41:50.759  INFO 3576 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-02-03 22:41:50.759  INFO 3576 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-02-03 22:41:50.760  INFO 3576 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-02-03 22:41:50.760  INFO 3576 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2022-02-03 22:41:50.840  INFO 3576 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-02-03 22:41:51.385  INFO 3576 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-02-03 22:41:51.503  WARN 17476 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2022-02-03 22:41:54.228  INFO 17476 --- [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2022-02-03 22:41:54.407  INFO 17476 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2022-02-03 22:41:56.566  INFO 17476 --- [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2022-02-03 22:41:56.669  WARN 17476 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-02-03 22:41:56.698  INFO 17476 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-02-03 22:41:56.880  INFO 17476 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2022-02-03 22:41:56.891  INFO 17476 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-03 22:41:56.933  INFO 17476 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-02-03 22:41:56.933  INFO 17476 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-02-03 22:41:56.933  INFO 17476 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-02-03 22:41:56.933  INFO 17476 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-02-03 22:41:56.933  INFO 17476 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-02-03 22:41:56.933  INFO 17476 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2022-02-03 22:41:56.934  INFO 17476 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-02-03 22:41:57.467  INFO 17476 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-02-03 22:41:57.472  INFO 17476 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2022-02-03 22:41:57.476  INFO 17476 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-02-03 22:41:57.484  INFO 17476 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1643924517482 with initial instances count: 1
+2022-02-03 22:41:57.487  INFO 17476 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application AUTH-SERVICE with eureka with status UP
+2022-02-03 22:41:57.488  INFO 17476 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1643924517488, current=UP, previous=STARTING]
+2022-02-03 22:41:57.493  INFO 17476 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AUTH-SERVICE/localhost:auth-service:8086: registering service...
+2022-02-03 22:41:57.583  INFO 17476 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8086 (http) with context path ''
+2022-02-03 22:41:57.584  INFO 17476 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8086
+2022-02-03 22:41:57.635  INFO 17476 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AUTH-SERVICE/localhost:auth-service:8086 - registration status: 204
+2022-02-03 22:41:58.983  INFO 17476 --- [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2022-02-03 22:41:59.002  INFO 17476 --- [restartedMain] com.AuthService.AuthServiceApplication   : Started AuthServiceApplication in 24.647 seconds (JVM running for 26.428)
+2022-02-03 22:45:22.685  INFO 3576 --- [http-nio-9090-exec-1] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-03 22:45:22.686  INFO 3576 --- [http-nio-9090-exec-1] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-02-03 22:45:23.889  INFO 17476 --- [http-nio-8086-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-03 22:45:23.890  INFO 17476 --- [http-nio-8086-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-02-03 22:45:23.892  INFO 17476 --- [http-nio-8086-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-02-03 22:45:24.224 ERROR 17476 --- [http-nio-8086-exec-1] c.A.Controller.WebShopController         : Exception while getting payment methods. Error is: java.lang.NullPointerException: Cannot invoke "com.AuthService.Model.WebShop.getEnabledCard()" because "webShop" is null
+2022-02-03 22:45:24.245  INFO 3576 --- [reactor-http-nio-2] com.APIGateway.CustomFiler               : Post Filter = 500 INTERNAL_SERVER_ERROR
+2022-02-03 22:45:32.439  INFO 3576 --- [http-nio-9090-exec-3] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-03 22:45:32.441  INFO 3576 --- [http-nio-9090-exec-3] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-02-03 22:45:32.486 ERROR 17476 --- [http-nio-8086-exec-2] c.A.Controller.WebShopController         : Exception while getting payment methods. Error is: java.lang.NullPointerException: Cannot invoke "com.AuthService.Model.WebShop.getEnabledCard()" because "webShop" is null
+2022-02-03 22:45:32.494  INFO 3576 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 500 INTERNAL_SERVER_ERROR
+2022-02-03 22:46:19.677  INFO 3576 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-03 22:46:56.944  INFO 17476 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-03 22:51:19.685  INFO 3576 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-03 22:51:56.946  INFO 17476 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-03 22:56:19.700  INFO 3576 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-03 22:56:56.956  INFO 17476 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-03 23:01:19.701  INFO 3576 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-03 23:01:56.963  INFO 17476 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-03 23:06:19.704  INFO 3576 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-03 23:06:56.974  INFO 17476 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-03 23:11:19.716  INFO 3576 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-03 23:11:56.980  INFO 17476 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-03 23:16:19.729  INFO 3576 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-03 23:16:56.989  INFO 17476 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-03 23:21:19.745  INFO 3576 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-03 23:21:56.996  INFO 17476 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-03 23:26:19.750  INFO 3576 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-03 23:26:57.007  INFO 17476 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-03 23:31:19.756  INFO 3576 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-03 23:31:57.015  INFO 17476 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-03 23:32:29.355  INFO 5992 --- [restartedMain] com.AuthService.AuthServiceApplication   : Starting AuthServiceApplication using Java 17.0.1 on DESKTOP-FRU2KAO with PID 5992 (C:\Users\Mladenka\Desktop\SEP\SEP\PaymentServiceAgent\Auth-Service\target\classes started by Mladenka in C:\Users\Mladenka\Desktop\SEP\SEP\PaymentServiceAgent)
+2022-02-03 23:32:29.357  INFO 5992 --- [restartedMain] com.AuthService.AuthServiceApplication   : No active profile set, falling back to default profiles: default
+2022-02-03 23:32:29.510  INFO 5992 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-02-03 23:32:29.511  INFO 5992 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-02-03 23:32:32.313  INFO 5992 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-03 23:32:32.672  INFO 5992 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 340 ms. Found 1 JPA repository interfaces.
+2022-02-03 23:32:33.789  INFO 5992 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=f75e2515-ab1d-30a7-a2a0-73a96baba038
+2022-02-03 23:32:36.586  INFO 5992 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8086 (http)
+2022-02-03 23:32:36.611  INFO 5992 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-03 23:32:36.612  INFO 5992 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-03 23:32:37.667  INFO 5992 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-03 23:32:37.675  INFO 5992 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 8159 ms
+2022-02-03 23:32:39.126  INFO 5992 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-03 23:32:39.468  INFO 5992 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.4.Final
+2022-02-03 23:32:40.654  INFO 5992 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-02-03 23:32:41.100  INFO 5992 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-02-03 23:32:42.195  INFO 5992 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-02-03 23:32:42.252  INFO 5992 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-02-03 23:32:46.602  INFO 5992 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-03 23:32:46.618  INFO 5992 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-03 23:32:49.519  WARN 5992 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-03 23:32:53.859  WARN 5992 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2022-02-03 23:32:56.222  INFO 5992 --- [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2022-02-03 23:32:56.417  INFO 5992 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2022-02-03 23:32:58.465  INFO 5992 --- [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2022-02-03 23:32:59.048  WARN 5992 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-02-03 23:32:59.167  INFO 5992 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-02-03 23:32:59.847  INFO 5992 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2022-02-03 23:32:59.857  INFO 5992 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-03 23:32:59.912  INFO 5992 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-02-03 23:32:59.914  INFO 5992 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-02-03 23:32:59.914  INFO 5992 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-02-03 23:32:59.916  INFO 5992 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-02-03 23:32:59.917  INFO 5992 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-02-03 23:32:59.918  INFO 5992 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2022-02-03 23:32:59.918  INFO 5992 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-02-03 23:33:01.861  INFO 5992 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-02-03 23:33:01.924  INFO 5992 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2022-02-03 23:33:01.941  INFO 5992 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-02-03 23:33:01.994  INFO 5992 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1643927581992 with initial instances count: 2
+2022-02-03 23:33:02.024  INFO 5992 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application AUTH-SERVICE with eureka with status UP
+2022-02-03 23:33:02.024  INFO 5992 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1643927582024, current=UP, previous=STARTING]
+2022-02-03 23:33:02.027  INFO 5992 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AUTH-SERVICE/localhost:auth-service:8086: registering service...
+2022-02-03 23:33:02.212  INFO 5992 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8086 (http) with context path ''
+2022-02-03 23:33:02.213  INFO 5992 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8086
+2022-02-03 23:33:02.276  INFO 5992 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AUTH-SERVICE/localhost:auth-service:8086 - registration status: 204
+2022-02-03 23:33:04.160  INFO 5992 --- [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2022-02-03 23:33:04.192  INFO 5992 --- [restartedMain] com.AuthService.AuthServiceApplication   : Started AuthServiceApplication in 41.409 seconds (JVM running for 44.421)
+2022-02-03 23:35:36.923  INFO 3576 --- [http-nio-9090-exec-5] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-03 23:35:36.924  INFO 3576 --- [http-nio-9090-exec-5] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-02-03 23:35:37.140  INFO 5992 --- [http-nio-8086-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-03 23:35:37.140  INFO 5992 --- [http-nio-8086-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-02-03 23:35:37.142  INFO 5992 --- [http-nio-8086-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-02-03 23:35:37.433 ERROR 5992 --- [http-nio-8086-exec-1] c.A.Controller.WebShopController         : Exception while getting payment methods. Error is: java.lang.NullPointerException: Cannot invoke "com.AuthService.Model.WebShop.getEnabledCard()" because "webShop" is null
+2022-02-03 23:35:37.468  INFO 3576 --- [reactor-http-nio-4] com.APIGateway.CustomFiler               : Post Filter = 500 INTERNAL_SERVER_ERROR
+2022-02-03 23:36:19.760  INFO 3576 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-03 23:37:59.929  INFO 5992 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-03 23:41:19.763  INFO 3576 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-03 23:42:59.942  INFO 5992 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-03 23:46:19.778  INFO 3576 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-03 23:47:59.955  INFO 5992 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration

@@ -24,7 +24,8 @@ class Conference extends Component {
 		engineer: "",	
 		redirect: false,
 		redirectUrl: "",
-		date : "",
+		startDate : "",
+		endDate : "",
 		showAccommodation : true,
 		showTransportation : false,
 		city : ""
@@ -55,10 +56,11 @@ class Conference extends Component {
                   conference : res.data,
                   accommodations : res.data.accommodations,
 				  transportations : res.data.transportations,
-				  city : res.data.address.city
-				//  date : res.data.date[2]+"."+res.data.date[1]+"."+res.data.date[0]+"."
+				  city : res.data.address.city,
+				  startDate : res.data.startDate[2]+"."+res.data.startDate[1]+"."+res.data.startDate[0]+".",
+				  endDate : res.data.endDate[2]+"."+res.data.endDate[1]+"."+res.data.endDate[0]+"."
                 });
-                
+					// alert(this.state.startDate)
 			})
 			.catch((err) => {
 				console.log(err);
@@ -120,6 +122,7 @@ class Conference extends Component {
 							successMessage: "You successfully sent a reservation.",
 							hiddenEditInfo: true,
 						});
+						alert("You have successfully reserved accommodation.")
 						this.setState({showTransportation : true,
 						showAccommodation:false})
 
@@ -149,8 +152,10 @@ class Conference extends Component {
 							successMessage: "You successfully sent a reservation.",
 							hiddenEditInfo: true,
 						});*/
-						
+						alert("You have successfully reserved transportation.")
+
 					}
+
 				})
 				.catch((err) => {
 					console.log(err);
@@ -199,11 +204,11 @@ class Conference extends Component {
 										</div>
                                         <div>
 											<b style={{color:"#1977cc"}}>Start date: </b> 
-                                          {/* <span style={{fontWeight:"bold",fontSize:"17px"}}>{this.state.conference.startDate[2]}.{this.state.conference.startDate[1]}.{this.state.conference.startDate[0]}</span>   */}
+                                           <span style={{fontWeight:"bold",fontSize:"17px"}}>{this.state.startDate}</span>
 										</div>
                                         <div>
 											<b style={{color:"#1977cc"}}>End date: </b> 
-                                          {/* <span style={{fontWeight:"bold",fontSize:"17px"}}>{this.state.conference.endDate[2]}.{this.state.conference.endDate[1]}.{this.state.conference.endDate[0]}</span>   */}
+                                           <span style={{fontWeight:"bold",fontSize:"17px"}}>{this.state.endDate}</span>  
 										</div>
                                         <div>
 											<b style={{color:"#1977cc"}}>Content: </b> 
@@ -231,13 +236,14 @@ class Conference extends Component {
 									<td> <button
 											style={{
 												width: "100%",
+												marginRight :"10%"
 											}}
 											onClick={() => this.handleClickOnShowAccommodation()}
 											className="btn btn-outline-info btn-xl"
 											id="sendMessageButton"
 											type="button"
 										>
-											Accommodations
+											View accommodation options
 									</button></td>
 									<td>
 									<button
@@ -249,7 +255,7 @@ class Conference extends Component {
 											id="sendMessageButton"
 											type="button"
 										>
-											Transportations
+											View transportation options
 									</button>
 									</td>
 								
@@ -332,6 +338,7 @@ class Conference extends Component {
 									</button></div>
 
 									</td>
+									
 									</tr>
 									<hr/>
 									<hr style={{fontWeight:"bold"}}/>

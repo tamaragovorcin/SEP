@@ -43,7 +43,6 @@ public class WebShopService {
                 return webShop;
             }
         }
-        System.out.println("OVDE");
         return null;
     }
 
