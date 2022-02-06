@@ -5,3 +5,27 @@
 2022-02-06 01:23:51.321  INFO 11360 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
 2022-02-06 01:23:51.323  INFO 11360 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2022-02-06 01:23:51.380  INFO 11360 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-02-06 13:21:09.824  INFO 1380 --- [main] tim18.ftn.uns.ac.rs.pcc.PccApplication   : Starting PccApplication using Java 17.0.1 on DESKTOP-1PFK6EP with PID 1380 (D:\Master\SEP\SEP\pcc\target\classes started by tamar in D:\Master\SEP\SEP\pcc)
+2022-02-06 13:21:09.845  INFO 1380 --- [main] tim18.ftn.uns.ac.rs.pcc.PccApplication   : No active profile set, falling back to default profiles: default
+2022-02-06 13:21:13.101  INFO 1380 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2022-02-06 13:21:13.336  INFO 1380 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 195 ms. Found 1 JPA repository interfaces.
+2022-02-06 13:21:16.111  INFO 1380 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 6006 (http)
+2022-02-06 13:21:16.166  INFO 1380 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-06 13:21:16.167  INFO 1380 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2022-02-06 13:21:16.766  INFO 1380 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-06 13:21:16.767  INFO 1380 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 6651 ms
+2022-02-06 13:21:20.729  INFO 1380 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-02-06 13:21:21.242  INFO 1380 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-06 13:21:21.523  INFO 1380 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.23.Final
+2022-02-06 13:21:22.154  INFO 1380 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-02-06 13:21:22.464  INFO 1380 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-02-06 13:21:22.620  WARN 1380 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-06 13:21:24.769  INFO 1380 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-02-06 13:21:24.863  INFO 1380 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-02-06 13:21:26.111  INFO 1380 --- [task-1] o.h.e.boot.internal.EnversServiceImpl    : Envers integration enabled? : true
+2022-02-06 13:21:26.449  INFO 1380 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 6006 (http) with context path ''
+2022-02-06 13:21:26.453  INFO 1380 --- [main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2022-02-06 13:21:30.820  INFO 1380 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-06 13:21:30.857  INFO 1380 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-06 13:21:33.822  INFO 1380 --- [main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2022-02-06 13:21:33.993  INFO 1380 --- [main] tim18.ftn.uns.ac.rs.pcc.PccApplication   : Started PccApplication in 26.057 seconds (JVM running for 29.196)

@@ -7,20 +7,35 @@ const ConferencePaymentFailure = () => {
 
 
     useEffect(() => {
-        let paymentId = this.getCookie("paymentWebShopId");
-		const dto = {
-			paymentId : paymentId,
-			status : "CANCELED",
-		}
-		Axios.post("http://localhost:8085/api/conference/update/",dto)
-			.then((res) => {
-				console.log(res.data)
-			.catch((err) => {
-				console.log(err);
-			});
+        let paymentId = getCookie("paymentWebShopId");
+          const dto = {
+            paymentId : paymentId,
+            status : "CANCELED",
+          }
+          Axios.post("http://localhost:8085/api/conference/update/",dto)
+          .then((res) => {
+            console.log(res)
+          })
+          .catch((err) => {
+            console.log(err);
+          })
+    });
 
-        });
-    })
+    function getCookie(cname) {
+        let name = cname + "=";
+        let decodedCookie = decodeURIComponent(document.cookie);
+        let ca = decodedCookie.split(';');
+        for(let i = 0; i <ca.length; i++) {
+          let c = ca[i];
+          while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+          }
+          if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+          }
+        }
+        return "";
+      }
     return (
         <React.Fragment>
             <div>
