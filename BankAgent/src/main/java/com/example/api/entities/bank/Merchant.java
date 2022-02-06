@@ -40,4 +40,12 @@ public class Merchant {
     @JoinColumn(name = "account_id", referencedColumnName = "id")
     private Account account;
 
+    @Column
+    private Double availableFunds;
+
+    @Column
+    private Double reservedFunds;
+
+
+
 }

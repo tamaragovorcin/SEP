@@ -121,7 +121,6 @@ public class PaymentService implements IPaymentService {
 	@Override
 	public String confirmPayment(AccountDTO clientDTO, Integer paymentRequestId) {
 
-		System.out.println(clientDTO.getWebshopId());
 
 		Transaction transaction = new Transaction();
 		PaymentRequest paymentRequest = getPaymentRequest(paymentRequestId);
@@ -164,12 +163,12 @@ public class PaymentService implements IPaymentService {
 			}
 
 
-			/*if (paymentRequest.getAmount() > client.getAvailableFunds()) {
+			if (paymentRequest.getAmount() > client.getAvailableFunds()) {
 				System.err.println("nema sredstava");
 				transaction.setStatus(TransactionStatus.FAILED);
 				failPayment(paymentRequest);
 				return paymentRequest.getFailedUrl();
-			}*/
+			}
 
 			String merchantId = paymentRequest.getMerchantId();
 
@@ -181,13 +180,13 @@ public class PaymentService implements IPaymentService {
 				return paymentRequest.getErrorUrl();
 			}
 
-			client.setAvailableFunds(50.0);//client.getAvailableFunds() - paymentRequest.getAmount());
+			client.setAvailableFunds(client.getAvailableFunds() - paymentRequest.getAmount());
 			clientService.saveNoDTO(client);
 
 
-			/*merchant.setAvailableFunds(50.0);//merchant.getAvailableFunds() + paymentRequest.getAmount());
+			merchant.setAvailableFunds(merchant.getAvailableFunds() + paymentRequest.getAmount());
 			System.out.println("aaaaaaaaaaaaaaaaa");
-			merchantService.saveNoDTO(merchant);*/
+			merchantService.saveNoDTO(merchant);
 
 			transaction.setStatus(TransactionStatus.SUCCESSFUL);
 			transactionService.save(transaction);
@@ -222,7 +221,9 @@ public class PaymentService implements IPaymentService {
 			HttpEntity<PccRequestDTO> request = new HttpEntity<PccRequestDTO>(pccRequestDTO, headers);
 			System.err.println("posle request");
 
+			System.out.println(paymentRequest);
 			String merchantId = paymentRequest.getMerchantId();
+			System.out.println(merchantId);
 			Merchant merchant = merchantService.findByMerchantId(merchantId);
 			if (!merchant.getMerchantPassword().equals(paymentRequest.getMerchantPassword())){
 				System.err.println("nije dobar merchant");
@@ -240,8 +241,8 @@ public class PaymentService implements IPaymentService {
 			if(response.getIsAuthentificated() && response.getIsTransactionAutorized()) {
 				System.err.println(" usao u if ");
 
-				/*merchant.setAvailableFunds(merchant.getAvailableFunds() + paymentRequest.getAmount());
-				clientService.saveNoDTO(merchant);*/
+				merchant.setAvailableFunds(merchant.getAvailableFunds() + paymentRequest.getAmount());
+				merchantService.saveNoDTO(merchant);
 				transaction.setStatus(TransactionStatus.SUCCESSFUL);
 				transactionService.save(transaction);
 				System.err.println("posles skidanja merchantu para");
