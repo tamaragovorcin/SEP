@@ -149,3 +149,14 @@
 2022-02-06 15:47:27.706  INFO 4500 --- [http-nio-8084-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
 2022-02-06 15:47:28.243  INFO 4500 --- [http-nio-8084-exec-1] c.B.Controller.PaymentController         : Init bank card payment 
 2022-02-06 15:48:23.346  INFO 4500 --- [http-nio-8084-exec-2] c.B.Controller.PaymentController         : Init bank card payment 
+2022-02-06 15:51:47.908  INFO 4500 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-06 15:56:47.913  INFO 4500 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-06 15:57:09.339  INFO 4500 --- [http-nio-8084-exec-4] c.B.Controller.PaymentController         : Init bank card payment 
+2022-02-06 16:00:45.443  INFO 4500 --- [http-nio-8084-exec-6] c.B.Controller.PaymentController         : Init bank card payment 
+2022-02-06 16:01:47.918  INFO 4500 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-06 16:02:55.928  INFO 4500 --- [http-nio-8084-exec-8] c.B.Controller.PaymentController         : Init bank card payment 
+2022-02-06 16:04:44.131  INFO 4500 --- [http-nio-8084-exec-10] c.B.Controller.PaymentController         : Init bank card payment 
+2022-02-06 16:06:48.001  INFO 4500 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-06 16:06:51.478  INFO 4500 --- [http-nio-8084-exec-2] c.B.Controller.PaymentController         : Init bank card payment 
+2022-02-06 16:10:11.659  INFO 4500 --- [http-nio-8084-exec-4] c.B.Controller.PaymentController         : Init bank card payment 
+2022-02-06 16:11:48.009  INFO 4500 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration

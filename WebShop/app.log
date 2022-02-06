@@ -2601,3 +2601,12 @@ Caused by: java.sql.SQLSyntaxErrorException: Table 'webshop.web_shop' doesn't ex
 2022-02-06 15:46:35.417  INFO 12468 --- [http-nio-8085-exec-2] c.e.W.Controllers.ProductController      : User user is overviewing products.
 2022-02-06 15:46:45.519  INFO 12468 --- [http-nio-8085-exec-4] c.e.WebShop.Controllers.CartController   : User: useris viewing its cart.
 2022-02-06 15:46:56.078  INFO 12468 --- [http-nio-8085-exec-6] c.e.W.Controllers.PurchaseController     : User user is making a purchase
+2022-02-06 15:59:14.070  INFO 12468 --- [http-nio-8085-exec-8] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2022-02-06 15:59:16.907  INFO 12468 --- [http-nio-8085-exec-9] c.e.W.C.AuthenticationController         : User admin has just logged in.
+2022-02-06 15:59:20.154  INFO 12468 --- [http-nio-8085-exec-10] c.e.W.Controllers.ProductController      : User admin is overviewing products.
+2022-02-06 16:00:03.751  INFO 12468 --- [http-nio-8085-exec-1] c.e.W.C.AuthenticationController         : User user has just logged in.
+2022-02-06 16:00:07.231  INFO 12468 --- [http-nio-8085-exec-2] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2022-02-06 16:00:21.906  INFO 12468 --- [http-nio-8085-exec-3] c.e.WebShop.Controllers.CartController   : Item with id: 1has just been added to the cart by user user
+2022-02-06 16:00:24.300  INFO 12468 --- [http-nio-8085-exec-4] c.e.W.Controllers.ProductController      : User user is overviewing products.
+2022-02-06 16:00:29.329  INFO 12468 --- [http-nio-8085-exec-5] c.e.WebShop.Controllers.CartController   : User: useris viewing its cart.
+2022-02-06 16:00:43.089  INFO 12468 --- [http-nio-8085-exec-6] c.e.W.Controllers.PurchaseController     : User user is making a purchase

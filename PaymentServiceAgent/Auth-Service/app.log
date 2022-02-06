@@ -75,3 +75,15 @@
 2022-02-06 15:46:09.507  INFO 10256 --- [http-nio-8086-exec-6] c.A.Controller.WebShopController         : Payment method card has been added to the webshop with id : 2
 2022-02-06 15:46:57.019  INFO 10256 --- [http-nio-8086-exec-7] c.A.Controller.WebShopController         : Overview of the currently chosen payment methods for web shop with id: 2
 2022-02-06 15:48:04.297  INFO 10256 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-06 15:53:04.323  INFO 10256 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-06 15:57:09.747  INFO 10256 --- [http-nio-8086-exec-9] c.A.Controller.WebShopController         : Overview of the currently chosen payment methods for web shop with id: 2
+2022-02-06 15:58:04.329  INFO 10256 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-06 15:59:12.750 ERROR 10256 --- [http-nio-8086-exec-1] c.A.Controller.WebShopController         : Exception while getting payment methods. Error is: java.lang.NullPointerException: Cannot invoke "com.AuthService.Model.WebShop.getEnabledCard()" because "webShop" is null
+2022-02-06 15:59:31.450  INFO 10256 --- [http-nio-8086-exec-2] c.A.Controller.WebShopController         : Started registration for a new web shop...
+2022-02-06 15:59:31.591  INFO 10256 --- [http-nio-8086-exec-2] c.A.Controller.WebShopController         : New web shop successfully registred!
+2022-02-06 15:59:33.691  INFO 10256 --- [http-nio-8086-exec-3] c.A.Controller.WebShopController         : Logging in.. Username : uu
+2022-02-06 15:59:33.734  INFO 10256 --- [http-nio-8086-exec-4] c.A.Controller.WebShopController         : Overview of the currently chosen payment methods for web shop with id: 2
+2022-02-06 15:59:47.643  INFO 10256 --- [http-nio-8086-exec-5] c.A.Controller.WebShopController         : Payment method card has been added to the webshop with id : 2
+2022-02-06 16:00:44.036  INFO 10256 --- [http-nio-8086-exec-6] c.A.Controller.WebShopController         : Overview of the currently chosen payment methods for web shop with id: 2
+2022-02-06 16:03:04.344  INFO 10256 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-06 16:08:04.350  INFO 10256 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
