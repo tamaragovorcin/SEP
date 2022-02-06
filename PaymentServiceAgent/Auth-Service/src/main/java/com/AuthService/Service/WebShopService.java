@@ -25,10 +25,10 @@ public class WebShopService {
         webShop.setSuccessUrl(webShopDTO.getSuccessUrl());
         webShop.setFailureUrl(webShopDTO.getFailureUrl());
         webShop.setErrorUrl(webShopDTO.getErrorUrl());
-        webShop.setEnabledBitcoin(true);
-        webShop.setEnabledCard(true);
-        webShop.setEnabledPayPal(true);
-        webShop.setEnabledQR(true);
+        webShop.setEnabledBitcoin(false);
+        webShop.setEnabledCard(false);
+        webShop.setEnabledPayPal(false);
+        webShop.setEnabledQR(false);
         webShop.setWebShopId(Integer.parseInt(webShopDTO.getWebShopId()));
 
         return webShopRepository.save(webShop);
@@ -73,8 +73,8 @@ public class WebShopService {
         webShop.setMerchantID(paymentMethodDTO.getMerchantID());
         webShop.setMerchantPassword(paymentMethodDTO.getMerchantPassword());
         switch (methodName) {
-            case "bitcoin":
-                webShop.setEnabledBitcoin(true);
+            case "qr":
+                webShop.setEnabledQR(true);
                 break;
             case "card":
                 webShop.setEnabledCard(true);
@@ -132,5 +132,10 @@ public class WebShopService {
         urlAddressesDTO.setSuccessUrl(webShop.getSuccessUrl());
         urlAddressesDTO.setFailureUrl(webShop.getFailureUrl());
         return urlAddressesDTO;
+    }
+
+    public String getmerchantID(String webShopId) {
+        WebShop webShop = webShopRepository.findByWebShopId(Integer.parseInt(webShopId));
+        return webShop.getMerchantID();
     }
 }

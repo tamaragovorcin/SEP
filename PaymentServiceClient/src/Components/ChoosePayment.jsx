@@ -19,12 +19,10 @@ const ChoosePayment = () =>{
     useEffect(() => {
        let totalPrice = getCookie("totalPrice");
        let webShopId = getCookie("webShopId");
-       let paymentId = getCookie("paymentId");
        let webshopType = getCookie("webshopType");
 
        localStorage.setItem("totalPrice", JSON.stringify(totalPrice));
 			 localStorage.setItem("webShopId", JSON.stringify(webShopId));
-       localStorage.setItem("paymentId", JSON.stringify(paymentId));
        localStorage.setItem("webshopType", JSON.stringify(webshopType));
 
       let webshopId = JSON.parse(localStorage.getItem("webShopId"));

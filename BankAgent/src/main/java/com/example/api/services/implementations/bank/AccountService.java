@@ -85,14 +85,16 @@ public class AccountService implements IAccountService {
     }
 
     public boolean checkCardInfo(CardInfoDTO dto) {
+        System.out.println("EXPIRATION DATE:");
+        System.out.println(dto.getExpirationDate());
         for(Account account : findAll()){
-            System.out.println(dto.getPan()+"  " +account.getPAN());
-            System.out.println(dto.getCardSecurityCode()+ " "+ account.getCardSecurityCode());
-            System.out.println(dto.getCardHolderName()+""+account.getCardHolderName());
+            System.out.println("EXPRICATION DATE IZ BAZE:");
+            System.out.println(account.getExpirationDate());
+            System.out.println(account.getExpirationDate().equals(dto.getExpirationDate()));
             if(account.getPAN().equals(dto.getPan())
                     && account.getCardHolderName().equals(dto.getCardHolderName())
-                    && account.getCardSecurityCode().equals(dto.getCardSecurityCode())){
-                System.out.println("JESTEEKAIKAKA");
+                    && account.getCardSecurityCode().equals(dto.getCardSecurityCode())
+                    && account.getExpirationDate().equals(dto.getExpirationDate())){
                 return  true;
             }
         }
