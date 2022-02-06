@@ -1,58 +1,46 @@
-2022-02-02 11:08:04.951  INFO 11860 --- [restartedMain] c.P.PayPalServiceApplication             : Starting PayPalServiceApplication using Java 17.0.1 on DESKTOP-1PFK6EP with PID 11860 (D:\Master\SEP\SEP\PaymentServiceAgent\PaylPal-Service\target\classes started by tamar in D:\Master\SEP\SEP\PaymentServiceAgent\PaylPal-Service)
-2022-02-02 11:08:04.963  INFO 11860 --- [restartedMain] c.P.PayPalServiceApplication             : No active profile set, falling back to default profiles: default
-2022-02-02 11:08:05.093  INFO 11860 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2022-02-02 11:08:05.094  INFO 11860 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2022-02-02 11:08:06.350  INFO 11860 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-02-02 11:08:06.573  INFO 11860 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 214 ms. Found 1 JPA repository interfaces.
-2022-02-02 11:08:06.984  INFO 11860 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=3f4d2a29-4c3c-3d9e-9185-abe7387687d7
-2022-02-02 11:08:07.880  INFO 11860 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
-2022-02-02 11:08:07.899  INFO 11860 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-02-02 11:08:07.900  INFO 11860 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
-2022-02-02 11:08:08.074  INFO 11860 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-02-02 11:08:08.075  INFO 11860 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2980 ms
-2022-02-02 11:08:08.300  INFO 11860 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-02-02 11:08:08.388  INFO 11860 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.21.Final
-2022-02-02 11:08:08.668  INFO 11860 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2022-02-02 11:08:08.827  INFO 11860 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2022-02-02 11:08:09.319  INFO 11860 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2022-02-02 11:08:09.348  INFO 11860 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-2022-02-02 11:08:10.383  INFO 11860 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-02-02 11:08:10.391  INFO 11860 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-02-02 11:08:10.417  WARN 11860 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
-2022-02-02 11:08:10.613  WARN 11860 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-02-02 11:08:11.207  INFO 11860 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2022-02-02 11:08:11.730  INFO 11860 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
-2022-02-02 11:08:11.886  WARN 11860 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-2022-02-02 11:08:11.919  INFO 11860 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
-2022-02-02 11:08:12.075  INFO 11860 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
-2022-02-02 11:08:12.081  INFO 11860 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-02-02 11:08:12.134  INFO 11860 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
-2022-02-02 11:08:12.134  INFO 11860 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
-2022-02-02 11:08:12.134  INFO 11860 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
-2022-02-02 11:08:12.134  INFO 11860 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
-2022-02-02 11:08:12.134  INFO 11860 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
-2022-02-02 11:08:12.134  INFO 11860 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
-2022-02-02 11:08:12.134  INFO 11860 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
-2022-02-02 11:08:12.403  INFO 11860 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
-2022-02-02 11:08:12.409  INFO 11860 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
-2022-02-02 11:08:12.412  INFO 11860 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
-2022-02-02 11:08:12.419  INFO 11860 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1643796492417 with initial instances count: 3
-2022-02-02 11:08:12.422  INFO 11860 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application PAYPAL-SERVICE with eureka with status UP
-2022-02-02 11:08:12.424  INFO 11860 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1643796492424, current=UP, previous=STARTING]
-2022-02-02 11:08:12.426  INFO 11860 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYPAL-SERVICE/DESKTOP-1PFK6EP:paypal-service:8082: registering service...
-2022-02-02 11:08:12.457  INFO 11860 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
-2022-02-02 11:08:12.458  INFO 11860 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8082
-2022-02-02 11:08:12.475  INFO 11860 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYPAL-SERVICE/DESKTOP-1PFK6EP:paypal-service:8082 - registration status: 204
-2022-02-02 11:08:12.542  INFO 11860 --- [restartedMain] c.P.PayPalServiceApplication             : Started PayPalServiceApplication in 8.48 seconds (JVM running for 9.361)
-2022-02-02 11:10:43.856  INFO 11860 --- [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-02-02 11:10:43.857  INFO 11860 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-02-02 11:10:43.858  INFO 11860 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2022-02-02 11:10:46.539  INFO 11860 --- [http-nio-8082-exec-1] com.PayPalService.PayPalController       : Paypal payment object created.
-2022-02-02 11:10:46.540  INFO 11860 --- [http-nio-8082-exec-1] com.PayPalService.PayPalController       : Sending paypal api link for redirection.
-2022-02-02 11:13:12.155  INFO 11860 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-02-02 11:13:34.009  INFO 11860 --- [http-nio-8082-exec-3] com.PayPalService.PayPalController       : Paypal payment object created.
-2022-02-02 11:13:34.010  INFO 11860 --- [http-nio-8082-exec-3] com.PayPalService.PayPalController       : Sending paypal api link for redirection.
-2022-02-02 11:18:12.165  INFO 11860 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-02-02 11:23:12.172  INFO 11860 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-02-02 11:28:12.178  INFO 11860 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-02-02 11:33:12.191  INFO 11860 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-06 14:01:39.029  INFO 12340 --- [restartedMain] c.P.PayPalServiceApplication             : Starting PayPalServiceApplication using Java 17.0.1 on DESKTOP-1PFK6EP with PID 12340 (D:\Master\SEP\SEP\PaymentServiceAgent\PaylPal-Service\target\classes started by tamar in D:\Master\SEP\SEP\PaymentServiceAgent\PaylPal-Service)
+2022-02-06 14:01:39.041  INFO 12340 --- [restartedMain] c.P.PayPalServiceApplication             : No active profile set, falling back to default profiles: default
+2022-02-06 14:01:39.252  INFO 12340 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-02-06 14:01:39.253  INFO 12340 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-02-06 14:01:41.019  INFO 12340 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-06 14:01:41.304  INFO 12340 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 270 ms. Found 1 JPA repository interfaces.
+2022-02-06 14:01:41.808  INFO 12340 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=3f4d2a29-4c3c-3d9e-9185-abe7387687d7
+2022-02-06 14:01:43.108  INFO 12340 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2022-02-06 14:01:43.129  INFO 12340 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-06 14:01:43.130  INFO 12340 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-02-06 14:01:43.373  INFO 12340 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-06 14:01:43.374  INFO 12340 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4120 ms
+2022-02-06 14:01:43.672  INFO 12340 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-06 14:01:43.789  INFO 12340 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.21.Final
+2022-02-06 14:01:44.221  INFO 12340 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2022-02-06 14:01:44.434  INFO 12340 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-02-06 14:01:45.155  INFO 12340 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-02-06 14:01:45.202  INFO 12340 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-02-06 14:01:47.233  INFO 12340 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-06 14:01:47.243  INFO 12340 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-06 14:01:47.280  WARN 12340 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2022-02-06 14:01:47.528  WARN 12340 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-06 14:01:48.416  INFO 12340 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-02-06 14:01:49.324  INFO 12340 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2022-02-06 14:01:49.565  WARN 12340 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-02-06 14:01:49.608  INFO 12340 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-02-06 14:01:49.889  INFO 12340 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2022-02-06 14:01:49.901  INFO 12340 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-06 14:01:50.000  INFO 12340 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-02-06 14:01:50.000  INFO 12340 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-02-06 14:01:50.001  INFO 12340 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-02-06 14:01:50.001  INFO 12340 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-02-06 14:01:50.001  INFO 12340 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-02-06 14:01:50.001  INFO 12340 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2022-02-06 14:01:50.002  INFO 12340 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-02-06 14:01:50.312  INFO 12340 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-02-06 14:01:50.326  INFO 12340 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2022-02-06 14:01:50.337  INFO 12340 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-02-06 14:01:50.363  INFO 12340 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1644152510360 with initial instances count: 5
+2022-02-06 14:01:50.368  INFO 12340 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application PAYPAL-SERVICE with eureka with status UP
+2022-02-06 14:01:50.369  INFO 12340 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1644152510369, current=UP, previous=STARTING]
+2022-02-06 14:01:50.372  INFO 12340 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYPAL-SERVICE/DESKTOP-1PFK6EP:paypal-service:8082: registering service...
+2022-02-06 14:01:50.414  INFO 12340 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2022-02-06 14:01:50.415  INFO 12340 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8082
+2022-02-06 14:01:50.444  INFO 12340 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYPAL-SERVICE/DESKTOP-1PFK6EP:paypal-service:8082 - registration status: 204
+2022-02-06 14:01:50.536  INFO 12340 --- [restartedMain] c.P.PayPalServiceApplication             : Started PayPalServiceApplication in 12.696 seconds (JVM running for 14.308)
