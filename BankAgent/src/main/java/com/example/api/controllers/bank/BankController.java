@@ -9,6 +9,8 @@ import com.example.api.security.exceptions.ResourceConflictException;
 import com.example.api.services.implementations.bank.AccountService;
 import com.example.api.services.implementations.bank.BankService;
 import com.example.api.services.implementations.bank.MerchantService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -28,12 +30,19 @@ public class BankController {
     @Autowired
     MerchantService merchantService;
 
+
+    private static final Logger logger = LoggerFactory.getLogger(BankController.class);
+
     @PostMapping("/register")
     public ResponseEntity<Integer> register(@RequestBody BankDTO dto) {
         try {
             Integer userId = bankService.save(dto).getId();
+
+            logger.info("Registration into bank");
             return new ResponseEntity<Integer>(userId, HttpStatus.CREATED);
         } catch (ResourceConflictException e) {
+
+            logger.info("Error while registering into bank. Error is"+ e);
             return new ResponseEntity<>(HttpStatus.CONFLICT);
         }
         catch (Exception e) {
@@ -53,8 +62,12 @@ public class BankController {
         try {
             System.out.println("POGODIO JE METODU********************");
             Account account = accountService.save(dto);
+
+            logger.info("Adding new account into bank");
             return new ResponseEntity<Account>(account, HttpStatus.CREATED);
         } catch (ResourceConflictException e) {
+
+            logger.info("Error while opening new account in bank. Error is " +e);
             return new ResponseEntity<>(HttpStatus.CONFLICT);
         }
         catch (Exception e) {
@@ -67,12 +80,16 @@ public class BankController {
         try {
             Merchant merchant= merchantService.save(dto);
             if(merchant!=null) {
+
+                logger.info("Adding new merchant into bank");
                 return new ResponseEntity<Merchant>(merchant, HttpStatus.CREATED);
             }else{
                 return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
 
             }
         } catch (ResourceConflictException e) {
+
+            logger.info("Error while adding new account into bank. Error is"+ e);
             return new ResponseEntity<>(HttpStatus.CONFLICT);
         }
         catch (Exception e) {

@@ -53,8 +53,13 @@ public class ConferenceController
     @PostMapping("/add")
     public ResponseEntity<String> addItem(@RequestBody NewConferenceDTO dto) {
 
-        Conference conference = conferenceService.save(dto);
-
+        Conference conference = new Conference();
+        try {
+             conference = conferenceService.save(dto);
+            logger.info("Conference " + conference.getName() + " has just been added.");
+        }catch(Exception e) {
+            logger.error("Error while adding new conference " + conference.getName() + " Error is: " + e);
+        }
         return conference == null ? new ResponseEntity<>(HttpStatus.NOT_FOUND)
                 : new ResponseEntity<>("Conference is successfully added!", HttpStatus.CREATED);
     }
@@ -62,10 +67,16 @@ public class ConferenceController
     @PostMapping("/uploadImage")
     ResponseEntity<String> hello(@RequestParam("file") MultipartFile file) throws IOException {
 
-        BufferedImage src = ImageIO.read(new ByteArrayInputStream(file.getBytes()));
-        File destination = new File("src/main/resources/images/conferences/" + file.getOriginalFilename());
-        ImageIO.write(src, "png", destination);
+        try {
+            BufferedImage src = ImageIO.read(new ByteArrayInputStream(file.getBytes()));
+            File destination = new File("src/main/resources/images/conferences/" + file.getOriginalFilename());
+            ImageIO.write(src, "png", destination);
+            logger.info("New image has just been added.");
+        }
+        catch(Exception e){
+            logger.error("Error while adding new image. Error is: " + e);
 
+        }
         return new ResponseEntity<>("Image is successfully added!", HttpStatus.CREATED);
     }
 
@@ -78,14 +89,25 @@ public class ConferenceController
     @GetMapping("/delete/{id}")
     public ResponseEntity<String> deleteConference(@PathVariable Integer id) {
 
-        conferenceService.delete(id);
-
+        try {
+            conferenceService.delete(id);
+            logger.info("Conference with id: " + id + " has just been deleted");
+        }catch(Exception e){
+            logger.error("Error while deleting conference with id : " + id + ". Error is: " + e);
+        }
         return ResponseEntity.ok("Success");
     }
     @PostMapping("/addAccommodation")
     public ResponseEntity<String> addAccommodation(@RequestBody AccommodationDTO dto) {
 
-        Accommodation accommodation = accommodationService.save(dto);
+        Accommodation accommodation = new Accommodation();
+
+        try{
+            accommodation = accommodationService.save(dto);
+            logger.info("New accommodation has just been added. " );
+        }catch(Exception e){
+            logger.error("Error while adding new accommodation. Error is: " + e);
+        }
 
         return accommodation == null ? new ResponseEntity<>(HttpStatus.NOT_FOUND)
                 : new ResponseEntity<>("Accommodation is successfully added!", HttpStatus.CREATED);
@@ -103,14 +125,27 @@ public class ConferenceController
     @PostMapping("/addTransportation")
     public ResponseEntity<String> addTransportation(@RequestBody TransportationDTO dto) {
 
-        Transportation transportation = transportationService.save(dto);
+        Transportation transportation = new Transportation();
+        try{
+            transportation = transportationService.save(dto);
+            logger.info("New transportation has just been added. " );
+        }catch(Exception e){
+            logger.error("Error while adding new transportation. Error is: " + e);
+        }
 
         return transportation == null ? new ResponseEntity<>(HttpStatus.NOT_FOUND)
                 : new ResponseEntity<>("Transportation is successfully added!", HttpStatus.CREATED);
     }
     @GetMapping("/{id}")
     public ResponseEntity<ConferenceFrontDTO> getConferenceById(@PathVariable Integer id) {
-        ConferenceFrontDTO dto = conferenceService.findDtoById(id);
+        ConferenceFrontDTO dto = new ConferenceFrontDTO();
+        try{
+            dto = conferenceService.findDtoById(id);
+
+            logger.info("Getting conference by id. " );
+        }catch(Exception e){
+            logger.error("Error while getting conference by id. Error is: " + e);
+        }
         return dto == null ?
                 new ResponseEntity<>(HttpStatus.NOT_FOUND) :
                 ResponseEntity.ok(dto);
@@ -247,7 +282,7 @@ public class ConferenceController
 
     @PostMapping("/update")
     public ResponseEntity<Integer> updatePurchase(@RequestBody UpdatePurchaseStatusDTO updatePurchaseStatusDTO) {
-        logger.error("Updating conference purchase to status " + updatePurchaseStatusDTO.getStatus());
+        logger.info("Updating conference purchase to status " + updatePurchaseStatusDTO.getStatus());
 
         ConferencesPurchase purchase = conferencesPurchaseService.updatePurchase(updatePurchaseStatusDTO);
 
@@ -258,7 +293,7 @@ public class ConferenceController
 
     @GetMapping("/purchase/{id}")
     public ResponseEntity<ConferencePurchaseFrontDTO> getPurchaseById(@PathVariable String id) {
-        logger.error("Getting conference purchase with id " + id);
+        logger.info("Getting conference purchase with id " + id);
 
         ConferencePurchaseFrontDTO conferencePurchaseFrontDTO = conferencesPurchaseService.getPurchaseById(Integer.parseInt(id));
 

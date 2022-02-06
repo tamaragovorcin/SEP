@@ -156,8 +156,7 @@ public class PaymentService implements IPaymentService {
 			transaction.setPanNumber(client.getPAN());
 
 			//String tempDate = client.getExpirationDate() + "/" + clientDTO.getYy();
-			if (!client.getCardHolderName().equals(clientDTO.getCardHolderName()) || !client.getCardSecurityCode().equals(clientDTO.getCardSecurityCode())
-					|| !client.getExpirationDate().equals(YearMonth.parse(clientDTO.getExpirationDate()))) {
+			if (!client.getCardHolderName().equals(clientDTO.getCardHolderName()) || !client.getCardSecurityCode().equals(clientDTO.getCardSecurityCode())) {
 				System.err.println("ne podudara se");
 				transaction.setStatus(TransactionStatus.FAILED);
 				failPayment(paymentRequest);
@@ -294,5 +293,10 @@ public class PaymentService implements IPaymentService {
 		ResponseEntity<String> responseEntity = restTemplate.exchange(paymentRequest.getCallbackUrl() + "/complete", HttpMethod.POST,
 				new HttpEntity<CompletePaymentResponseDTO>(completePaymentResponseDTO), String.class);
 		System.out.println(responseEntity.getBody());
+	}
+
+	public String getmerchantPANbyID(String merchantID) {
+		Merchant merchant = merchantService.findByMerchantId(merchantID);
+		return merchant.getAccount().getPAN();
 	}
 }

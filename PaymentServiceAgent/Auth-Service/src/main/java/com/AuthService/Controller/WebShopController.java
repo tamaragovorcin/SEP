@@ -124,4 +124,17 @@ public class WebShopController {
             return new UrlAddressesDTO();
         }
     }
+
+    @GetMapping("/merchantID/{webShopId}")
+    public String getMerchantID(@PathVariable String webShopId) {
+        try {
+            String merchantID = webShopService.getmerchantID(webShopId);
+            logger.info("Getting merchantID by web shop id with id: " + webShopId );
+            return merchantID;
+
+        } catch (Exception e) {
+            logger.error("Exception while getting merchantID by web shop id. Error is: " + e);
+            return "";
+        }
+    }
 }
