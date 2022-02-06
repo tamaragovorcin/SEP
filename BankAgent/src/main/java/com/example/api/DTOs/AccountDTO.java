@@ -23,6 +23,7 @@ public class AccountDTO {
     private String cardSecurityCode;
     private String expirationDate;
     private String webshopId;
+    private Double totalPrice;
 
 
     @Override

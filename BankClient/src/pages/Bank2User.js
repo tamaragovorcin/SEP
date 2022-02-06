@@ -93,7 +93,8 @@ class Bank1User extends Component {
             cardSecurityCode: this.state.cardSecurityCode,
             pan: this.state.pan,
             expirationDate: this.state.expirationDate, 
-            webshopId: this.getCookie("webShopId")
+            webshopId: this.getCookie("webShopId"),
+			totalPrice: this.getCookie("totalPrice")
         };
         
                 Axios.post(BASE_URL + "/payment/confirm/" + this.state.paymentId, dto, { validateStatus: () => true })

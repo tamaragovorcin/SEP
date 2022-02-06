@@ -33,12 +33,12 @@ public class PccService {
 			return failAuthentification(pccRequestDTO);
 		}
 
-		/*if (pccRequestDTO.getAmount() > client.getAvailableFunds()) {
+		if (pccRequestDTO.getAmount() > client.getAvailableFunds()) {
 			System.err.println("nema sredstava");
 			return failPayment(pccRequestDTO);
-		}*/
+		}
 
-		client.setAvailableFunds(50.0);//client.getAvailableFunds() - pccRequestDTO.getAmount());
+		client.setAvailableFunds(client.getAvailableFunds() - pccRequestDTO.getAmount());
 		clientService.saveNoDTO(client);
 		
 		return successPayment(pccRequestDTO);

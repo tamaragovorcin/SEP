@@ -54,5 +54,22 @@ public class PaymentRequest {
 
 	@Column(nullable = false)
 	private String paymentUrl;
-	
+
+	@Override
+	public String toString() {
+		return "PaymentRequest{" +
+				"id=" + id +
+				", merchantId='" + merchantId + '\'' +
+				", merchantPassword='" + merchantPassword + '\'' +
+				", amount=" + amount +
+				", merchantOrderId=" + merchantOrderId +
+				", merchantTimestamp=" + merchantTimestamp +
+				", callbackUrl='" + callbackUrl + '\'' +
+				", successUrl='" + successUrl + '\'' +
+				", failedUrl='" + failedUrl + '\'' +
+				", errorUrl='" + errorUrl + '\'' +
+				", paymentId='" + paymentId + '\'' +
+				", paymentUrl='" + paymentUrl + '\'' +
+				'}';
+	}
 }
