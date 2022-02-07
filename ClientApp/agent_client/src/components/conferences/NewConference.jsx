@@ -24,6 +24,7 @@ class NewConference extends Component {
             startDate: "",
             endDate: "",
             content: "",
+			currency : "dinar",
             capacity : 0,
 			registrationFee : 0,
 			pictures: [],
@@ -159,7 +160,7 @@ class NewConference extends Component {
 						content : this.state.content,
 						capacity : this.state.capacity,
 						registrationFee : this.state.registrationFee,
-						pictures: h
+						pictures: h,
 					};
 					this.handleAdd(dto);
 	});
@@ -194,6 +195,10 @@ class NewConference extends Component {
 	}
 	handleModalClose = ()=>{
 		this.setState({openModal: false})
+	} 
+	handleCurrencyChange = (e)=>{
+		this.setState({ currency: e.target.value });
+
 	}
 	render() {
 
@@ -323,6 +328,7 @@ class NewConference extends Component {
 											/>
 										</div>
 									</div>
+									
 									<div className="control-group">
 										<div className="form-group controls mb-0 pb-2" style={{ color: "#6c757d", opacity: 1 }}>
 											<label>Registration fee:</label>

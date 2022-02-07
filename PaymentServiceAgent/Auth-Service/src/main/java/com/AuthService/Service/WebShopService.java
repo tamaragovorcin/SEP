@@ -30,7 +30,7 @@ public class WebShopService {
         webShop.setEnabledPayPal(false);
         webShop.setEnabledQR(false);
         webShop.setWebShopId(Integer.parseInt(webShopDTO.getWebShopId()));
-
+        webShop.setCurrency(webShopDTO.getCurrency());
         return webShopRepository.save(webShop);
     }
 

@@ -20,6 +20,8 @@ class PerDiem extends Component {
         merchantPassword : "",
         paymentId: "",
         paymentUrl: "",
+		currency : "dinar",
+
 
 
 	};
@@ -69,13 +71,18 @@ class PerDiem extends Component {
     handleAmountChange = (event) => {
 		this.setState({ amount: event.target.value });
 	};
+	handleCurrencyChange = (e)=>{
+		this.setState({ currency: e.target.value });
+
+	}
 
     handleRegister = ()=>{
         let dto = {
             cardHolderName: this.state.cardHolderName,
             giroNumber: this.state.giroNumber,
             referenceNumber : this.state.referenceNumber,
-            amount : this.state.amount
+            amount : this.state.amount,
+			currency : this.state.currency
         };
         
                 Axios.post('http://localhost:8088/payment/payThePerDiem', dto, { validateStatus: () => true })
@@ -167,13 +174,26 @@ class PerDiem extends Component {
 									<div className="form-group controls mb-0 pb-2" style={{ color: "#6c757d", opacity: 1 }}>
 										<label>Ammount of money:*</label>
 										<input
-                                            placeholder="$"
 											class="form-control"
 											id="phone"
 											type="text"
 											onChange={this.handleAmountChange}
 											value={this.state.amount}
 										/>
+									</div>
+								
+								</div>
+								<div className="control-group">
+									<div className="form-group controls mb-0 pb-2" style={{ color: "#6c757d", opacity: 1 }}>
+										<label>Currency:*</label>
+										<select className='form-control'
+										value={this.state.currency}
+										onChange={this.handleCurrencyChange}>
+										<option value="dolar">$</option>
+										<option value="dinar">DIN</option>
+										<option value="euro">€</option>
+									
+										</select>
 									</div>
 								
 								</div>

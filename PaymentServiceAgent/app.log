@@ -667,3 +667,763 @@ Caused by: java.sql.SQLSyntaxErrorException: Unknown database 'paypal'
 2022-02-07 02:09:28.102  INFO 18288 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
 2022-02-07 02:10:44.183  INFO 3244 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
 2022-02-07 02:12:11.153  INFO 2904 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 02:14:28.104  INFO 18288 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 02:15:44.186  INFO 3244 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 02:17:11.166  INFO 2904 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 02:19:28.114  INFO 18288 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 02:20:44.191  INFO 3244 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 02:22:11.175  INFO 2904 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 02:24:28.128  INFO 18288 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 02:25:44.213  INFO 3244 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 02:27:11.184  INFO 2904 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 02:29:28.136  INFO 18288 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 02:30:44.219  INFO 3244 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 02:32:11.199  INFO 2904 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 02:34:28.149  INFO 18288 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 02:35:44.222  INFO 3244 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 02:37:11.211  INFO 2904 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 02:39:28.159  INFO 18288 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 02:40:44.237  INFO 3244 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 02:42:11.220  INFO 2904 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 02:44:28.165  INFO 18288 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 02:45:44.241  INFO 3244 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 02:47:11.227  INFO 2904 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 02:49:28.167  INFO 18288 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 02:50:09.393  INFO 2744 --- [restartedMain] com.AuthService.AuthServiceApplication   : Starting AuthServiceApplication using Java 17.0.1 on DESKTOP-FRU2KAO with PID 2744 (C:\Users\Mladenka\Desktop\SEP\SEP\PaymentServiceAgent\Auth-Service\target\classes started by Mladenka in C:\Users\Mladenka\Desktop\SEP\SEP\PaymentServiceAgent)
+2022-02-07 02:50:09.395  INFO 2744 --- [restartedMain] com.AuthService.AuthServiceApplication   : No active profile set, falling back to default profiles: default
+2022-02-07 02:50:09.624  INFO 2744 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-02-07 02:50:09.633  INFO 2744 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-02-07 02:50:12.213  INFO 2744 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-07 02:50:12.665  INFO 2744 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 431 ms. Found 1 JPA repository interfaces.
+2022-02-07 02:50:13.242  INFO 2744 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=f75e2515-ab1d-30a7-a2a0-73a96baba038
+2022-02-07 02:50:14.608  INFO 2744 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8086 (http)
+2022-02-07 02:50:14.634  INFO 2744 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-07 02:50:14.635  INFO 2744 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-07 02:50:14.888  INFO 2744 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-07 02:50:14.888  INFO 2744 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5252 ms
+2022-02-07 02:50:16.070  INFO 2744 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-07 02:50:16.241  INFO 2744 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.4.Final
+2022-02-07 02:50:16.742  INFO 2744 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-02-07 02:50:17.260  INFO 2744 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-02-07 02:50:18.041  INFO 2744 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-02-07 02:50:18.062  INFO 2744 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-02-07 02:50:19.602  INFO 2744 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-07 02:50:19.614  INFO 2744 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-07 02:50:20.436  WARN 2744 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-07 02:50:21.109  WARN 2744 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2022-02-07 02:50:22.366  INFO 2744 --- [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2022-02-07 02:50:22.437  INFO 2744 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2022-02-07 02:50:23.888  INFO 2744 --- [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2022-02-07 02:50:24.551  WARN 2744 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-02-07 02:50:24.644  INFO 2744 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-02-07 02:50:24.957  INFO 2744 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2022-02-07 02:50:24.977  INFO 2744 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 02:50:25.052  INFO 2744 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-02-07 02:50:25.053  INFO 2744 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-02-07 02:50:25.053  INFO 2744 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-02-07 02:50:25.053  INFO 2744 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-02-07 02:50:25.054  INFO 2744 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-02-07 02:50:25.054  INFO 2744 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2022-02-07 02:50:25.054  INFO 2744 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-02-07 02:50:25.993  INFO 2744 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-02-07 02:50:26.027  INFO 2744 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2022-02-07 02:50:26.063  INFO 2744 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-02-07 02:50:26.096  INFO 2744 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1644198626094 with initial instances count: 3
+2022-02-07 02:50:26.107  INFO 2744 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application AUTH-SERVICE with eureka with status UP
+2022-02-07 02:50:26.107  INFO 2744 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1644198626107, current=UP, previous=STARTING]
+2022-02-07 02:50:26.120  INFO 2744 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AUTH-SERVICE/localhost:auth-service:8086: registering service...
+2022-02-07 02:50:26.231  INFO 2744 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8086 (http) with context path ''
+2022-02-07 02:50:26.232  INFO 2744 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8086
+2022-02-07 02:50:26.295  INFO 2744 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AUTH-SERVICE/localhost:auth-service:8086 - registration status: 204
+2022-02-07 02:50:27.726  INFO 2744 --- [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2022-02-07 02:50:28.098  INFO 2744 --- [restartedMain] com.AuthService.AuthServiceApplication   : Started AuthServiceApplication in 21.691 seconds (JVM running for 23.738)
+2022-02-07 02:50:44.252  INFO 3244 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 02:52:05.683  INFO 18288 --- [http-nio-9090-exec-1] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-07 02:52:05.683  INFO 18288 --- [http-nio-9090-exec-1] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-02-07 02:52:05.835  INFO 2744 --- [http-nio-8086-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-07 02:52:05.835  INFO 2744 --- [http-nio-8086-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-02-07 02:52:05.837  INFO 2744 --- [http-nio-8086-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-02-07 02:52:05.887  INFO 2744 --- [http-nio-8086-exec-1] c.A.Controller.WebShopController         : Started registration for a new web shop...
+2022-02-07 02:52:06.013  INFO 2744 --- [http-nio-8086-exec-1] c.A.Controller.WebShopController         : New web shop successfully registred!
+2022-02-07 02:52:06.026  INFO 18288 --- [reactor-http-nio-2] com.APIGateway.CustomFiler               : Post Filter = 201 CREATED
+2022-02-07 02:52:49.987  INFO 18288 --- [http-nio-9090-exec-5] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-07 02:52:49.988  INFO 18288 --- [http-nio-9090-exec-5] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-02-07 02:52:50.148  INFO 2744 --- [http-nio-8086-exec-2] c.A.Controller.WebShopController         : Logging in.. Username : luna
+2022-02-07 02:52:50.150  INFO 18288 --- [reactor-http-nio-2] com.APIGateway.CustomFiler               : Post Filter = 201 CREATED
+2022-02-07 02:52:50.202  INFO 18288 --- [http-nio-9090-exec-7] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-07 02:52:50.203  INFO 18288 --- [http-nio-9090-exec-7] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-02-07 02:52:50.270  INFO 2744 --- [http-nio-8086-exec-3] c.A.Controller.WebShopController         : Overview of the currently chosen payment methods for web shop with id: 2
+2022-02-07 02:52:50.287  INFO 18288 --- [reactor-http-nio-2] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-02-07 02:54:28.175  INFO 18288 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 02:55:25.072  INFO 2744 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 02:55:44.264  INFO 3244 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 02:59:28.186  INFO 18288 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 03:00:25.079  INFO 2744 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 03:00:44.284  INFO 3244 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 03:04:28.190  INFO 18288 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 03:05:25.086  INFO 2744 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 03:05:44.286  INFO 3244 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 03:09:28.201  INFO 18288 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 03:10:25.097  INFO 2744 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 03:10:44.301  INFO 3244 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 03:14:28.202  INFO 18288 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 03:15:25.103  INFO 2744 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 03:15:44.317  INFO 3244 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 03:19:28.208  INFO 18288 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 03:20:25.111  INFO 2744 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 03:20:44.319  INFO 3244 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 03:24:28.215  INFO 18288 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 03:25:25.120  INFO 2744 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 03:25:44.329  INFO 3244 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 03:29:28.230  INFO 18288 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 03:30:25.134  INFO 2744 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 03:30:44.332  INFO 3244 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 03:34:28.240  INFO 18288 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 03:35:25.142  INFO 2744 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 03:35:44.342  INFO 3244 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 03:39:28.242  INFO 18288 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 03:40:25.163  INFO 2744 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 03:40:44.354  INFO 3244 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 03:44:28.243  INFO 18288 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 03:45:25.175  INFO 2744 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 03:45:44.362  INFO 3244 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 03:49:28.244  INFO 18288 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 03:50:25.193  INFO 2744 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 03:50:44.368  INFO 3244 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 03:54:28.248  INFO 18288 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 03:55:25.201  INFO 2744 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 03:55:44.375  INFO 3244 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 03:59:28.256  INFO 18288 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 04:00:25.212  INFO 2744 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 04:00:44.384  INFO 3244 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 04:04:28.267  INFO 18288 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 04:05:25.216  INFO 2744 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 04:05:44.386  INFO 3244 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 04:09:28.274  INFO 18288 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 04:10:25.223  INFO 2744 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 04:10:44.398  INFO 3244 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 04:14:28.284  INFO 18288 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 04:15:25.232  INFO 2744 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 04:15:44.412  INFO 3244 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 06:21:24.573  INFO 14644 --- [main] com.APIGateway.ApiGatewayApplication     : Starting ApiGatewayApplication using Java 17.0.1 on DESKTOP-FRU2KAO with PID 14644 (C:\Users\Mladenka\Desktop\SEP\SEP\PaymentServiceAgent\API-Gateway\target\classes started by Mladenka in C:\Users\Mladenka\Desktop\SEP\SEP\PaymentServiceAgent)
+2022-02-07 06:21:24.631  INFO 14644 --- [main] com.APIGateway.ApiGatewayApplication     : No active profile set, falling back to default profiles: default
+2022-02-07 06:21:28.792  INFO 14644 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=fc05cfcf-5cf0-39a3-bcd6-5a666ec29182
+2022-02-07 06:21:29.224  INFO 14644 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-02-07 06:21:29.226  INFO 14644 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-02-07 06:21:29.228  INFO 14644 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-02-07 06:21:30.112  INFO 14644 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2022-02-07 06:21:30.144  INFO 14644 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-07 06:21:30.145  INFO 14644 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-02-07 06:21:34.196  INFO 14644 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2022-02-07 06:21:36.181  INFO 14644 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2022-02-07 06:21:37.721  INFO 14644 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
+2022-02-07 06:21:37.722  INFO 14644 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
+2022-02-07 06:21:37.724  INFO 14644 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
+2022-02-07 06:21:37.737  INFO 14644 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
+2022-02-07 06:21:37.738  INFO 14644 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
+2022-02-07 06:21:37.757  INFO 14644 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
+2022-02-07 06:21:37.757  INFO 14644 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
+2022-02-07 06:21:37.757  INFO 14644 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
+2022-02-07 06:21:37.757  INFO 14644 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
+2022-02-07 06:21:37.757  INFO 14644 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBody]
+2022-02-07 06:21:37.757  INFO 14644 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
+2022-02-07 06:21:37.758  INFO 14644 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
+2022-02-07 06:21:37.758  INFO 14644 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2022-02-07 06:21:38.345  INFO 14644 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2022-02-07 06:21:40.361  INFO 14644 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2022-02-07 06:21:40.518  WARN 14644 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-02-07 06:21:40.631  INFO 14644 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-02-07 06:21:41.044  INFO 14644 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2022-02-07 06:21:41.078  INFO 14644 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 06:21:41.164  INFO 14644 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-02-07 06:21:41.164  INFO 14644 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-02-07 06:21:41.168  INFO 14644 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-02-07 06:21:41.168  INFO 14644 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-02-07 06:21:41.168  INFO 14644 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-02-07 06:21:41.169  INFO 14644 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2022-02-07 06:21:41.171  INFO 14644 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-02-07 06:21:43.398  INFO 14644 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-02-07 06:21:43.406  INFO 14644 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2022-02-07 06:21:43.413  INFO 14644 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-02-07 06:21:43.447  INFO 14644 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1644211303440 with initial instances count: 0
+2022-02-07 06:21:43.477  INFO 14644 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application API-GATEWAY with eureka with status UP
+2022-02-07 06:21:43.479  INFO 14644 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1644211303479, current=UP, previous=STARTING]
+2022-02-07 06:21:43.494  INFO 14644 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_API-GATEWAY/localhost:api-gateway:9090: registering service...
+2022-02-07 06:21:43.795  INFO 14644 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2022-02-07 06:21:43.797  INFO 14644 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9090
+2022-02-07 06:21:44.474  INFO 14644 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_API-GATEWAY/localhost:api-gateway:9090 - registration status: 204
+2022-02-07 06:21:45.981  INFO 16772 --- [restartedMain] com.AuthService.AuthServiceApplication   : Starting AuthServiceApplication using Java 17.0.1 on DESKTOP-FRU2KAO with PID 16772 (C:\Users\Mladenka\Desktop\SEP\SEP\PaymentServiceAgent\Auth-Service\target\classes started by Mladenka in C:\Users\Mladenka\Desktop\SEP\SEP\PaymentServiceAgent)
+2022-02-07 06:21:45.987  INFO 16772 --- [restartedMain] com.AuthService.AuthServiceApplication   : No active profile set, falling back to default profiles: default
+2022-02-07 06:21:45.994  INFO 14644 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2022-02-07 06:21:46.206  INFO 16772 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-02-07 06:21:46.206  INFO 16772 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-02-07 06:21:47.780  INFO 14644 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2022-02-07 06:21:47.895  INFO 14644 --- [main] com.APIGateway.ApiGatewayApplication     : Started ApiGatewayApplication in 28.156 seconds (JVM running for 30.158)
+2022-02-07 06:21:50.098  INFO 16772 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-07 06:21:50.679  INFO 16772 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 544 ms. Found 1 JPA repository interfaces.
+2022-02-07 06:21:51.789  INFO 16772 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=f75e2515-ab1d-30a7-a2a0-73a96baba038
+2022-02-07 06:21:54.353  INFO 16772 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8086 (http)
+2022-02-07 06:21:54.377  INFO 16772 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-07 06:21:54.379  INFO 16772 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-07 06:21:54.768  INFO 16772 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-07 06:21:54.769  INFO 16772 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 8562 ms
+2022-02-07 06:21:57.614  INFO 16772 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-07 06:21:57.803  INFO 16772 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.4.Final
+2022-02-07 06:21:58.438  INFO 16772 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-02-07 06:21:59.187  INFO 16772 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-02-07 06:22:00.268  INFO 16772 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-02-07 06:22:00.311  INFO 16772 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-02-07 06:22:03.616  INFO 16772 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-07 06:22:03.636  INFO 16772 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-07 06:22:05.001  WARN 16772 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webShopController': Unsatisfied dependency expressed through field 'webShopService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webShopService': Unsatisfied dependency expressed through field 'passwordEncoder'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.security.crypto.password.PasswordEncoder' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2022-02-07 06:22:05.002  INFO 16772 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-07 06:22:05.002  INFO 16772 --- [restartedMain] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-02-07 06:22:05.098  INFO 16772 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-02-07 06:22:05.127  INFO 16772 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-02-07 06:22:05.132  INFO 16772 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-02-07 06:22:05.163  INFO 16772 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-02-07 06:22:05.253 ERROR 16772 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field passwordEncoder in com.AuthService.Service.WebShopService required a bean of type 'org.springframework.security.crypto.password.PasswordEncoder' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.security.crypto.password.PasswordEncoder' in your configuration.
+
+2022-02-07 06:22:13.442  INFO 10092 --- [restartedMain] c.B.BankCardServiceApplication           : Starting BankCardServiceApplication using Java 17.0.1 on DESKTOP-FRU2KAO with PID 10092 (C:\Users\Mladenka\Desktop\SEP\SEP\PaymentServiceAgent\Bank-Card-Service\target\classes started by Mladenka in C:\Users\Mladenka\Desktop\SEP\SEP\PaymentServiceAgent)
+2022-02-07 06:22:13.448  INFO 10092 --- [restartedMain] c.B.BankCardServiceApplication           : No active profile set, falling back to default profiles: default
+2022-02-07 06:22:13.599  INFO 14644 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-02-07 06:22:13.657  INFO 14644 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-02-07 06:22:13.658  INFO 14644 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-02-07 06:22:13.658  INFO 14644 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-02-07 06:22:13.658  INFO 14644 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-02-07 06:22:13.659  INFO 14644 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2022-02-07 06:22:13.659  INFO 14644 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-02-07 06:22:13.744  INFO 10092 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-02-07 06:22:13.745  INFO 10092 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-02-07 06:22:13.800  INFO 14644 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-02-07 06:22:16.452  INFO 10092 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-02-07 06:22:16.455  INFO 10092 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2022-02-07 06:22:16.522  INFO 10092 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.BankCardService.Repository.PaymentRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-02-07 06:22:16.525  INFO 10092 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.BankCardService.Repository.TransactionRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-02-07 06:22:16.529  INFO 10092 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.BankCardService.Repository.WebShopRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-02-07 06:22:16.531  INFO 10092 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 67 ms. Found 0 JDBC repository interfaces.
+2022-02-07 06:22:16.556  INFO 10092 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-02-07 06:22:16.558  INFO 10092 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-07 06:22:16.876  INFO 10092 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 306 ms. Found 3 JPA repository interfaces.
+2022-02-07 06:22:17.523  INFO 10092 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=b92536c5-7f70-36fc-a27c-33d375a5a949
+2022-02-07 06:22:20.000  INFO 10092 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8084 (http)
+2022-02-07 06:22:20.040  INFO 10092 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-07 06:22:20.041  INFO 10092 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-02-07 06:22:20.616  INFO 10092 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-07 06:22:20.629  INFO 10092 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 6883 ms
+2022-02-07 06:22:21.034  INFO 10092 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-07 06:22:21.203  INFO 10092 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.27.Final
+2022-02-07 06:22:21.578  INFO 10092 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-02-07 06:22:21.971  INFO 10092 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-02-07 06:22:22.645  INFO 10092 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-02-07 06:22:22.670  INFO 10092 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-02-07 06:22:22.835  INFO 10092 --- [restartedMain] o.h.e.boot.internal.EnversServiceImpl    : Envers integration enabled? : true
+2022-02-07 06:22:24.769  INFO 10092 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-07 06:22:24.784  INFO 10092 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-07 06:22:24.824  WARN 10092 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2022-02-07 06:22:25.898  WARN 10092 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'paymentController': Unsatisfied dependency expressed through field 'paymentService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'paymentService': Unsatisfied dependency expressed through field 'passwordEncoder'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.security.crypto.password.PasswordEncoder' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2022-02-07 06:22:25.900  INFO 10092 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-07 06:22:25.901  INFO 10092 --- [restartedMain] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-02-07 06:22:26.225  INFO 10092 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-02-07 06:22:26.263  INFO 10092 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-02-07 06:22:26.269  INFO 10092 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-02-07 06:22:26.297  INFO 10092 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-02-07 06:22:26.344 ERROR 10092 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field passwordEncoder in com.BankCardService.Service.Implementations.PaymentService required a bean of type 'org.springframework.security.crypto.password.PasswordEncoder' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.security.crypto.password.PasswordEncoder' in your configuration.
+
+2022-02-07 06:25:29.017  INFO 14820 --- [restartedMain] c.B.BankCardServiceApplication           : Starting BankCardServiceApplication using Java 17.0.1 on DESKTOP-FRU2KAO with PID 14820 (C:\Users\Mladenka\Desktop\SEP\SEP\PaymentServiceAgent\Bank-Card-Service\target\classes started by Mladenka in C:\Users\Mladenka\Desktop\SEP\SEP\PaymentServiceAgent)
+2022-02-07 06:25:29.022  INFO 14820 --- [restartedMain] c.B.BankCardServiceApplication           : No active profile set, falling back to default profiles: default
+2022-02-07 06:25:29.153  INFO 14820 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-02-07 06:25:29.153  INFO 14820 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-02-07 06:25:30.772  INFO 14820 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-02-07 06:25:30.776  INFO 14820 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2022-02-07 06:25:30.836  INFO 14820 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.BankCardService.Repository.PaymentRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-02-07 06:25:30.839  INFO 14820 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.BankCardService.Repository.TransactionRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-02-07 06:25:30.843  INFO 14820 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.BankCardService.Repository.WebShopRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-02-07 06:25:30.844  INFO 14820 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 60 ms. Found 0 JDBC repository interfaces.
+2022-02-07 06:25:30.864  INFO 14820 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-02-07 06:25:30.867  INFO 14820 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-07 06:25:31.117  INFO 14820 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 232 ms. Found 3 JPA repository interfaces.
+2022-02-07 06:25:31.742  INFO 14820 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=b92536c5-7f70-36fc-a27c-33d375a5a949
+2022-02-07 06:25:33.326  INFO 14820 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8084 (http)
+2022-02-07 06:25:33.341  INFO 14820 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-07 06:25:33.341  INFO 14820 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-02-07 06:25:45.044  INFO 9424 --- [restartedMain] com.AuthService.AuthServiceApplication   : Starting AuthServiceApplication using Java 17.0.1 on DESKTOP-FRU2KAO with PID 9424 (C:\Users\Mladenka\Desktop\SEP\SEP\PaymentServiceAgent\Auth-Service\target\classes started by Mladenka in C:\Users\Mladenka\Desktop\SEP\SEP\PaymentServiceAgent)
+2022-02-07 06:25:45.046  INFO 9424 --- [restartedMain] com.AuthService.AuthServiceApplication   : No active profile set, falling back to default profiles: default
+2022-02-07 06:25:45.167  INFO 9424 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-02-07 06:25:45.167  INFO 9424 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-02-07 06:25:46.822  INFO 9424 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-07 06:25:47.111  INFO 9424 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 273 ms. Found 1 JPA repository interfaces.
+2022-02-07 06:25:47.749  INFO 9424 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=f75e2515-ab1d-30a7-a2a0-73a96baba038
+2022-02-07 06:25:49.423  INFO 9424 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8086 (http)
+2022-02-07 06:25:49.455  INFO 9424 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-07 06:25:49.459  INFO 9424 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-07 06:25:49.818  INFO 9424 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-07 06:25:49.819  INFO 9424 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4651 ms
+2022-02-07 06:25:50.346  INFO 9424 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-07 06:25:50.471  INFO 9424 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.4.Final
+2022-02-07 06:25:52.327  INFO 9424 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-02-07 06:25:52.871  INFO 9424 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-02-07 06:25:55.638  INFO 9424 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-02-07 06:25:55.708  INFO 9424 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-02-07 06:25:57.891  INFO 9424 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-07 06:25:57.901  INFO 9424 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-07 06:25:58.453  WARN 9424 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webShopController': Unsatisfied dependency expressed through field 'webShopService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webShopService': Unsatisfied dependency expressed through field 'passwordEncoder'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.security.crypto.password.PasswordEncoder' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2022-02-07 06:25:58.454  INFO 9424 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-02-07 06:25:58.455  INFO 9424 --- [restartedMain] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-02-07 06:25:58.535  INFO 9424 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-02-07 06:25:58.556  INFO 9424 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-02-07 06:25:58.560  INFO 9424 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-02-07 06:25:58.581  INFO 9424 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-02-07 06:25:58.627 ERROR 9424 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field passwordEncoder in com.AuthService.Service.WebShopService required a bean of type 'org.springframework.security.crypto.password.PasswordEncoder' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.security.crypto.password.PasswordEncoder' in your configuration.
+
+2022-02-07 06:26:41.187  INFO 14644 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 06:27:20.486  INFO 14416 --- [restartedMain] com.AuthService.AuthServiceApplication   : Starting AuthServiceApplication using Java 17.0.1 on DESKTOP-FRU2KAO with PID 14416 (C:\Users\Mladenka\Desktop\SEP\SEP\PaymentServiceAgent\Auth-Service\target\classes started by Mladenka in C:\Users\Mladenka\Desktop\SEP\SEP\PaymentServiceAgent)
+2022-02-07 06:27:20.488  INFO 14416 --- [restartedMain] com.AuthService.AuthServiceApplication   : No active profile set, falling back to default profiles: default
+2022-02-07 06:27:20.616  INFO 14416 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-02-07 06:27:20.616  INFO 14416 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-02-07 06:27:21.959  INFO 14416 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-07 06:27:22.273  INFO 14416 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 289 ms. Found 1 JPA repository interfaces.
+2022-02-07 06:27:22.734  INFO 14416 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=f75e2515-ab1d-30a7-a2a0-73a96baba038
+2022-02-07 06:27:24.121  INFO 14416 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8086 (http)
+2022-02-07 06:27:24.139  INFO 14416 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-07 06:27:24.140  INFO 14416 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-07 06:27:24.377  INFO 14416 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-07 06:27:24.378  INFO 14416 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3760 ms
+2022-02-07 06:27:24.782  INFO 14416 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-07 06:27:24.869  INFO 14416 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.4.Final
+2022-02-07 06:27:25.188  INFO 14416 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-02-07 06:27:25.523  INFO 14416 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-02-07 06:27:25.959  INFO 14416 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-02-07 06:27:25.992  INFO 14416 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-02-07 06:27:28.425  INFO 14416 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-07 06:27:28.436  INFO 14416 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-07 06:27:29.129  WARN 14416 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-07 06:27:29.950  WARN 14416 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2022-02-07 06:27:31.454  INFO 14416 --- [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2022-02-07 06:27:31.596  INFO 14416 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2022-02-07 06:27:33.074  INFO 14416 --- [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2022-02-07 06:27:33.213  WARN 14416 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-02-07 06:27:33.252  INFO 14416 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-02-07 06:27:33.474  INFO 14416 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2022-02-07 06:27:33.480  INFO 14416 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 06:27:33.524  INFO 14416 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-02-07 06:27:33.524  INFO 14416 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-02-07 06:27:33.525  INFO 14416 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-02-07 06:27:33.525  INFO 14416 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-02-07 06:27:33.525  INFO 14416 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-02-07 06:27:33.525  INFO 14416 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2022-02-07 06:27:33.525  INFO 14416 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-02-07 06:27:34.257  INFO 14416 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-02-07 06:27:34.263  INFO 14416 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2022-02-07 06:27:34.272  INFO 14416 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-02-07 06:27:34.291  INFO 14416 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1644211654289 with initial instances count: 1
+2022-02-07 06:27:34.301  INFO 14416 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application AUTH-SERVICE with eureka with status UP
+2022-02-07 06:27:34.305  INFO 14416 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1644211654305, current=UP, previous=STARTING]
+2022-02-07 06:27:34.316  INFO 14416 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AUTH-SERVICE/localhost:auth-service:8086: registering service...
+2022-02-07 06:27:34.356  INFO 14416 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8086 (http) with context path ''
+2022-02-07 06:27:34.357  INFO 14416 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8086
+2022-02-07 06:27:34.405  INFO 14416 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AUTH-SERVICE/localhost:auth-service:8086 - registration status: 204
+2022-02-07 06:27:35.680  INFO 14416 --- [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2022-02-07 06:27:35.696  INFO 14416 --- [restartedMain] com.AuthService.AuthServiceApplication   : Started AuthServiceApplication in 17.84 seconds (JVM running for 19.401)
+2022-02-07 06:28:48.915  INFO 17416 --- [restartedMain] com.AuthService.AuthServiceApplication   : Starting AuthServiceApplication using Java 17.0.1 on DESKTOP-FRU2KAO with PID 17416 (C:\Users\Mladenka\Desktop\SEP\SEP\PaymentServiceAgent\Auth-Service\target\classes started by Mladenka in C:\Users\Mladenka\Desktop\SEP\SEP\PaymentServiceAgent)
+2022-02-07 06:28:48.917  INFO 17416 --- [restartedMain] com.AuthService.AuthServiceApplication   : No active profile set, falling back to default profiles: default
+2022-02-07 06:28:49.035  INFO 17416 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-02-07 06:28:49.036  INFO 17416 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-02-07 06:28:50.342  INFO 17416 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-07 06:28:50.540  INFO 17416 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 184 ms. Found 1 JPA repository interfaces.
+2022-02-07 06:28:51.098  INFO 17416 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=f75e2515-ab1d-30a7-a2a0-73a96baba038
+2022-02-07 06:28:52.300  INFO 17416 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8086 (http)
+2022-02-07 06:28:52.319  INFO 17416 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-07 06:28:52.319  INFO 17416 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-07 06:28:52.481  INFO 17416 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-07 06:28:52.481  INFO 17416 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3444 ms
+2022-02-07 06:28:52.812  INFO 17416 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-07 06:28:52.888  INFO 17416 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.4.Final
+2022-02-07 06:28:53.134  INFO 17416 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-02-07 06:28:53.323  INFO 17416 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-02-07 06:28:53.772  INFO 17416 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-02-07 06:28:53.790  INFO 17416 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-02-07 06:28:55.150  INFO 17416 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-07 06:28:55.160  INFO 17416 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-07 06:28:55.825  WARN 17416 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-07 06:28:56.368  WARN 17416 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2022-02-07 06:28:57.616  INFO 17416 --- [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2022-02-07 06:28:57.688  INFO 17416 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2022-02-07 06:28:59.095  INFO 17416 --- [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2022-02-07 06:28:59.189  WARN 17416 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-02-07 06:28:59.232  INFO 17416 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-02-07 06:28:59.435  INFO 17416 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2022-02-07 06:28:59.443  INFO 17416 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 06:28:59.489  INFO 17416 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-02-07 06:28:59.490  INFO 17416 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-02-07 06:28:59.490  INFO 17416 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-02-07 06:28:59.491  INFO 17416 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-02-07 06:28:59.491  INFO 17416 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-02-07 06:28:59.491  INFO 17416 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2022-02-07 06:28:59.491  INFO 17416 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-02-07 06:28:59.945  INFO 17416 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-02-07 06:28:59.952  INFO 17416 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2022-02-07 06:28:59.961  INFO 17416 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-02-07 06:28:59.980  INFO 17416 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1644211739979 with initial instances count: 2
+2022-02-07 06:28:59.984  INFO 17416 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application AUTH-SERVICE with eureka with status UP
+2022-02-07 06:28:59.985  INFO 17416 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1644211739985, current=UP, previous=STARTING]
+2022-02-07 06:28:59.987  INFO 17416 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AUTH-SERVICE/localhost:auth-service:8086: registering service...
+2022-02-07 06:29:00.057  INFO 17416 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8086 (http) with context path ''
+2022-02-07 06:29:00.058  INFO 17416 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8086
+2022-02-07 06:29:00.191  INFO 17416 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AUTH-SERVICE/localhost:auth-service:8086 - registration status: 204
+2022-02-07 06:29:01.409  INFO 17416 --- [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2022-02-07 06:29:01.431  INFO 17416 --- [restartedMain] com.AuthService.AuthServiceApplication   : Started AuthServiceApplication in 15.238 seconds (JVM running for 16.735)
+2022-02-07 06:29:21.501  INFO 18520 --- [restartedMain] c.B.BankCardServiceApplication           : Starting BankCardServiceApplication using Java 17.0.1 on DESKTOP-FRU2KAO with PID 18520 (C:\Users\Mladenka\Desktop\SEP\SEP\PaymentServiceAgent\Bank-Card-Service\target\classes started by Mladenka in C:\Users\Mladenka\Desktop\SEP\SEP\PaymentServiceAgent)
+2022-02-07 06:29:21.505  INFO 18520 --- [restartedMain] c.B.BankCardServiceApplication           : No active profile set, falling back to default profiles: default
+2022-02-07 06:29:21.809  INFO 18520 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-02-07 06:29:21.809  INFO 18520 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-02-07 06:29:23.207  INFO 18520 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-02-07 06:29:23.210  INFO 18520 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2022-02-07 06:29:23.267  INFO 18520 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.BankCardService.Repository.PaymentRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-02-07 06:29:23.269  INFO 18520 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.BankCardService.Repository.TransactionRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-02-07 06:29:23.272  INFO 18520 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.BankCardService.Repository.WebShopRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-02-07 06:29:23.273  INFO 18520 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 55 ms. Found 0 JDBC repository interfaces.
+2022-02-07 06:29:23.289  INFO 18520 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-02-07 06:29:23.291  INFO 18520 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-07 06:29:23.508  INFO 18520 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 205 ms. Found 3 JPA repository interfaces.
+2022-02-07 06:29:23.991  INFO 18520 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=b92536c5-7f70-36fc-a27c-33d375a5a949
+2022-02-07 06:29:25.166  INFO 18520 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8084 (http)
+2022-02-07 06:29:25.185  INFO 18520 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-07 06:29:25.186  INFO 18520 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-02-07 06:29:25.428  INFO 18520 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-07 06:29:25.429  INFO 18520 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3619 ms
+2022-02-07 06:29:25.694  INFO 18520 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-07 06:29:25.802  INFO 18520 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.27.Final
+2022-02-07 06:29:26.049  INFO 18520 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-02-07 06:29:26.239  INFO 18520 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-02-07 06:29:26.681  INFO 18520 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-02-07 06:29:26.703  INFO 18520 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-02-07 06:29:26.838  INFO 18520 --- [restartedMain] o.h.e.boot.internal.EnversServiceImpl    : Envers integration enabled? : true
+2022-02-07 06:29:28.532  INFO 18520 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-07 06:29:28.543  INFO 18520 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-07 06:29:28.571  WARN 18520 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2022-02-07 06:29:29.626  WARN 18520 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-07 06:29:30.006  INFO 18520 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-02-07 06:29:31.021  INFO 18520 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2022-02-07 06:29:32.300  INFO 18520 --- [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2022-02-07 06:29:32.339  INFO 18520 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2022-02-07 06:29:33.667  INFO 18520 --- [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2022-02-07 06:29:33.780  WARN 18520 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-02-07 06:29:33.814  INFO 18520 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-02-07 06:29:33.952  INFO 18520 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2022-02-07 06:29:33.959  INFO 18520 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 06:29:34.010  INFO 18520 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-02-07 06:29:34.010  INFO 18520 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-02-07 06:29:34.010  INFO 18520 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-02-07 06:29:34.010  INFO 18520 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-02-07 06:29:34.010  INFO 18520 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-02-07 06:29:34.011  INFO 18520 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2022-02-07 06:29:34.011  INFO 18520 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-02-07 06:29:34.253  INFO 18520 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-02-07 06:29:34.257  INFO 18520 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2022-02-07 06:29:34.264  INFO 18520 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-02-07 06:29:34.271  INFO 18520 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1644211774270 with initial instances count: 2
+2022-02-07 06:29:34.275  INFO 18520 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application BANK-CARD-SERVICE with eureka with status UP
+2022-02-07 06:29:34.276  INFO 18520 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1644211774276, current=UP, previous=STARTING]
+2022-02-07 06:29:34.281  INFO 18520 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BANK-CARD-SERVICE/localhost:bank-card-service:8084: registering service...
+2022-02-07 06:29:34.327  INFO 18520 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8084 (http) with context path ''
+2022-02-07 06:29:34.328  INFO 18520 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8084
+2022-02-07 06:29:34.343  INFO 18520 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BANK-CARD-SERVICE/localhost:bank-card-service:8084 - registration status: 204
+2022-02-07 06:29:35.523  INFO 18520 --- [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2022-02-07 06:29:35.542  INFO 18520 --- [restartedMain] c.B.BankCardServiceApplication           : Started BankCardServiceApplication in 16.798 seconds (JVM running for 19.027)
+2022-02-07 06:30:11.604  INFO 14644 --- [http-nio-9090-exec-2] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-07 06:30:11.605  INFO 14644 --- [http-nio-9090-exec-2] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-02-07 06:30:12.235  INFO 17416 --- [http-nio-8086-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-07 06:30:12.236  INFO 17416 --- [http-nio-8086-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-02-07 06:30:12.237  INFO 17416 --- [http-nio-8086-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-02-07 06:30:12.278  INFO 17416 --- [http-nio-8086-exec-1] c.A.Controller.WebShopController         : Started registration for a new web shop...
+2022-02-07 06:30:12.420  INFO 17416 --- [http-nio-8086-exec-1] c.A.Controller.WebShopController         : New web shop successfully registred!
+2022-02-07 06:30:12.442  INFO 14644 --- [reactor-http-nio-2] com.APIGateway.CustomFiler               : Post Filter = 201 CREATED
+2022-02-07 06:30:17.390  INFO 14644 --- [http-nio-9090-exec-5] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-07 06:30:17.391  INFO 14644 --- [http-nio-9090-exec-5] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-02-07 06:30:17.586  INFO 17416 --- [http-nio-8086-exec-2] c.A.Controller.WebShopController         : Logging in.. Username : luna
+2022-02-07 06:30:17.589  INFO 14644 --- [reactor-http-nio-2] com.APIGateway.CustomFiler               : Post Filter = 201 CREATED
+2022-02-07 06:30:17.656  INFO 14644 --- [http-nio-9090-exec-7] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-07 06:30:17.656  INFO 14644 --- [http-nio-9090-exec-7] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-02-07 06:30:17.692  INFO 17416 --- [http-nio-8086-exec-3] c.A.Controller.WebShopController         : Overview of the currently chosen payment methods for web shop with id: 2
+2022-02-07 06:30:17.700  INFO 14644 --- [reactor-http-nio-2] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-02-07 06:30:20.886  INFO 14644 --- [http-nio-9090-exec-1] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-07 06:30:20.888  INFO 14644 --- [http-nio-9090-exec-1] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-02-07 06:30:20.932  INFO 17416 --- [http-nio-8086-exec-4] c.A.Controller.WebShopController         : Payment method bitcoin has been added to the webshop with id : 2
+2022-02-07 06:30:20.935  INFO 14644 --- [reactor-http-nio-2] com.APIGateway.CustomFiler               : Post Filter = 201 CREATED
+2022-02-07 06:30:22.121  INFO 14644 --- [http-nio-9090-exec-3] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-07 06:30:22.122  INFO 14644 --- [http-nio-9090-exec-3] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-02-07 06:30:22.154  INFO 17416 --- [http-nio-8086-exec-5] c.A.Controller.WebShopController         : Overview of the currently chosen payment methods for web shop with id: 2
+2022-02-07 06:30:22.157  INFO 14644 --- [reactor-http-nio-2] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-02-07 06:30:23.277  INFO 14644 --- [http-nio-9090-exec-6] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-07 06:30:23.277  INFO 14644 --- [http-nio-9090-exec-6] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-02-07 06:30:23.310  INFO 17416 --- [http-nio-8086-exec-6] c.A.Controller.WebShopController         : Payment method paypal has been added to the webshop with id : 2
+2022-02-07 06:30:23.312  INFO 14644 --- [reactor-http-nio-2] com.APIGateway.CustomFiler               : Post Filter = 201 CREATED
+2022-02-07 06:30:24.166  INFO 14644 --- [http-nio-9090-exec-8] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-07 06:30:24.167  INFO 14644 --- [http-nio-9090-exec-8] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-02-07 06:30:24.185  INFO 17416 --- [http-nio-8086-exec-7] c.A.Controller.WebShopController         : Overview of the currently chosen payment methods for web shop with id: 2
+2022-02-07 06:30:24.187  INFO 14644 --- [reactor-http-nio-2] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-02-07 06:31:41.190  INFO 14644 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 06:31:44.293  INFO 14644 --- [http-nio-9090-exec-2] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-07 06:31:44.296  INFO 14644 --- [http-nio-9090-exec-2] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-02-07 06:31:44.372  INFO 17416 --- [http-nio-8086-exec-9] c.A.Controller.WebShopController         : Payment method card has been added to the webshop with id : 2
+2022-02-07 06:31:44.375  INFO 14644 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 201 CREATED
+2022-02-07 06:31:46.645  INFO 14644 --- [http-nio-9090-exec-4] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-07 06:31:46.646  INFO 14644 --- [http-nio-9090-exec-4] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-02-07 06:31:46.679  INFO 17416 --- [http-nio-8086-exec-10] c.A.Controller.WebShopController         : Overview of the currently chosen payment methods for web shop with id: 2
+2022-02-07 06:31:46.685  INFO 14644 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-02-07 06:33:30.144  INFO 14644 --- [http-nio-9090-exec-7] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-07 06:33:30.145  INFO 14644 --- [http-nio-9090-exec-7] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-02-07 06:33:30.174  INFO 17416 --- [http-nio-8086-exec-2] c.A.Controller.WebShopController         : Overview of the currently chosen payment methods for web shop with id: 2
+2022-02-07 06:33:30.177  INFO 14644 --- [reactor-http-nio-4] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-02-07 06:33:33.250  INFO 14644 --- [http-nio-9090-exec-1] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-07 06:33:33.257  INFO 14644 --- [http-nio-9090-exec-1] com.APIGateway.CustomFiler               : REDIRECTING TO  -> bank card service
+2022-02-07 06:33:33.878  INFO 18520 --- [http-nio-8084-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-07 06:33:33.880  INFO 18520 --- [http-nio-8084-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-02-07 06:33:33.889  INFO 18520 --- [http-nio-8084-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2022-02-07 06:33:34.572  INFO 18520 --- [http-nio-8084-exec-1] c.B.Controller.PaymentController         : Init bank card payment 
+2022-02-07 06:33:34.594  INFO 14644 --- [reactor-http-nio-1] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-02-07 06:33:59.499  INFO 17416 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 06:34:34.020  INFO 18520 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 06:36:41.202  INFO 14644 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 06:38:59.504  INFO 17416 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 06:39:34.035  INFO 18520 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 06:41:23.745  INFO 16112 --- [restartedMain] com.AuthService.AuthServiceApplication   : Starting AuthServiceApplication using Java 17.0.1 on DESKTOP-FRU2KAO with PID 16112 (C:\Users\Mladenka\Desktop\SEP\SEP\PaymentServiceAgent\Auth-Service\target\classes started by Mladenka in C:\Users\Mladenka\Desktop\SEP\SEP\PaymentServiceAgent)
+2022-02-07 06:41:23.750  INFO 16112 --- [restartedMain] com.AuthService.AuthServiceApplication   : No active profile set, falling back to default profiles: default
+2022-02-07 06:41:23.900  INFO 16112 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-02-07 06:41:23.902  INFO 16112 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-02-07 06:41:26.321  INFO 16112 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-07 06:41:26.790  INFO 16112 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 448 ms. Found 1 JPA repository interfaces.
+2022-02-07 06:41:27.501  INFO 16112 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=f75e2515-ab1d-30a7-a2a0-73a96baba038
+2022-02-07 06:41:29.579  INFO 16112 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8086 (http)
+2022-02-07 06:41:29.676  INFO 16112 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-07 06:41:29.681  INFO 16112 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-07 06:41:30.001  INFO 16112 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-07 06:41:30.002  INFO 16112 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5992 ms
+2022-02-07 06:41:30.615  INFO 16112 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-07 06:41:30.932  INFO 16112 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.4.Final
+2022-02-07 06:41:31.446  INFO 16112 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-02-07 06:41:32.007  INFO 16112 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-02-07 06:41:33.377  INFO 16112 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-02-07 06:41:33.425  INFO 16112 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-02-07 06:41:36.276  INFO 16112 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-07 06:41:36.298  INFO 16112 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-07 06:41:37.802  WARN 16112 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-07 06:41:38.906  WARN 16112 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2022-02-07 06:41:40.545  INFO 16112 --- [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2022-02-07 06:41:40.875  INFO 16112 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2022-02-07 06:41:41.216  INFO 14644 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 06:41:42.403  INFO 16112 --- [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2022-02-07 06:41:42.749  WARN 16112 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-02-07 06:41:42.809  INFO 16112 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-02-07 06:41:43.342  INFO 16112 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2022-02-07 06:41:43.371  INFO 16112 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 06:41:43.471  INFO 16112 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-02-07 06:41:43.471  INFO 16112 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-02-07 06:41:43.471  INFO 16112 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-02-07 06:41:43.473  INFO 16112 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-02-07 06:41:43.473  INFO 16112 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-02-07 06:41:43.473  INFO 16112 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2022-02-07 06:41:43.473  INFO 16112 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-02-07 06:41:44.437  INFO 16112 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-02-07 06:41:44.499  INFO 16112 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2022-02-07 06:41:44.507  INFO 16112 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-02-07 06:41:44.632  INFO 16112 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1644212504629 with initial instances count: 3
+2022-02-07 06:41:44.669  INFO 16112 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application AUTH-SERVICE with eureka with status UP
+2022-02-07 06:41:44.669  INFO 16112 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1644212504669, current=UP, previous=STARTING]
+2022-02-07 06:41:44.779  INFO 16112 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AUTH-SERVICE/localhost:auth-service:8086: registering service...
+2022-02-07 06:41:44.890  INFO 16112 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8086 (http) with context path ''
+2022-02-07 06:41:44.907  INFO 16112 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8086
+2022-02-07 06:41:45.295  INFO 16112 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AUTH-SERVICE/localhost:auth-service:8086 - registration status: 204
+2022-02-07 06:41:46.371  INFO 20096 --- [restartedMain] c.B.BankCardServiceApplication           : Starting BankCardServiceApplication using Java 17.0.1 on DESKTOP-FRU2KAO with PID 20096 (C:\Users\Mladenka\Desktop\SEP\SEP\PaymentServiceAgent\Bank-Card-Service\target\classes started by Mladenka in C:\Users\Mladenka\Desktop\SEP\SEP\PaymentServiceAgent)
+2022-02-07 06:41:46.377  INFO 20096 --- [restartedMain] c.B.BankCardServiceApplication           : No active profile set, falling back to default profiles: default
+2022-02-07 06:41:46.439  INFO 16112 --- [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2022-02-07 06:41:46.542  INFO 16112 --- [restartedMain] com.AuthService.AuthServiceApplication   : Started AuthServiceApplication in 25.978 seconds (JVM running for 28.799)
+2022-02-07 06:41:46.593  INFO 20096 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-02-07 06:41:46.594  INFO 20096 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-02-07 06:41:48.175  INFO 20096 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-02-07 06:41:48.178  INFO 20096 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2022-02-07 06:41:48.230  INFO 20096 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.BankCardService.Repository.PaymentRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-02-07 06:41:48.232  INFO 20096 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.BankCardService.Repository.TransactionRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-02-07 06:41:48.235  INFO 20096 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.BankCardService.Repository.WebShopRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-02-07 06:41:48.236  INFO 20096 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 49 ms. Found 0 JDBC repository interfaces.
+2022-02-07 06:41:48.254  INFO 20096 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-02-07 06:41:48.257  INFO 20096 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-02-07 06:41:48.486  INFO 20096 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 216 ms. Found 3 JPA repository interfaces.
+2022-02-07 06:41:48.969  INFO 20096 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=b92536c5-7f70-36fc-a27c-33d375a5a949
+2022-02-07 06:41:50.187  INFO 20096 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8084 (http)
+2022-02-07 06:41:50.219  INFO 20096 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-07 06:41:50.221  INFO 20096 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-02-07 06:41:50.543  INFO 20096 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-07 06:41:50.544  INFO 20096 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3949 ms
+2022-02-07 06:41:50.918  INFO 20096 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-02-07 06:41:51.070  INFO 20096 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.27.Final
+2022-02-07 06:41:51.326  INFO 20096 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-02-07 06:41:51.861  INFO 20096 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-02-07 06:41:52.308  INFO 20096 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-02-07 06:41:52.331  INFO 20096 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-02-07 06:41:52.520  INFO 20096 --- [restartedMain] o.h.e.boot.internal.EnversServiceImpl    : Envers integration enabled? : true
+2022-02-07 06:41:54.124  INFO 20096 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-02-07 06:41:54.133  INFO 20096 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-02-07 06:41:54.158  WARN 20096 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2022-02-07 06:41:54.935  WARN 20096 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-07 06:41:55.171  INFO 20096 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-02-07 06:41:55.845  INFO 20096 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2022-02-07 06:41:57.414  INFO 20096 --- [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2022-02-07 06:41:57.487  INFO 20096 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2022-02-07 06:41:58.745  INFO 20096 --- [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2022-02-07 06:41:58.823  WARN 20096 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-02-07 06:41:58.851  INFO 20096 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-02-07 06:41:59.013  INFO 20096 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2022-02-07 06:41:59.022  INFO 20096 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 06:41:59.090  INFO 20096 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-02-07 06:41:59.091  INFO 20096 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-02-07 06:41:59.091  INFO 20096 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-02-07 06:41:59.091  INFO 20096 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-02-07 06:41:59.091  INFO 20096 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-02-07 06:41:59.092  INFO 20096 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2022-02-07 06:41:59.092  INFO 20096 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-02-07 06:41:59.377  INFO 20096 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-02-07 06:41:59.386  INFO 20096 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2022-02-07 06:41:59.395  INFO 20096 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-02-07 06:41:59.403  INFO 20096 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1644212519401 with initial instances count: 3
+2022-02-07 06:41:59.407  INFO 20096 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application BANK-CARD-SERVICE with eureka with status UP
+2022-02-07 06:41:59.407  INFO 20096 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1644212519407, current=UP, previous=STARTING]
+2022-02-07 06:41:59.412  INFO 20096 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BANK-CARD-SERVICE/localhost:bank-card-service:8084: registering service...
+2022-02-07 06:41:59.467  INFO 20096 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8084 (http) with context path ''
+2022-02-07 06:41:59.468  INFO 20096 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8084
+2022-02-07 06:41:59.524  INFO 20096 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BANK-CARD-SERVICE/localhost:bank-card-service:8084 - registration status: 204
+2022-02-07 06:42:00.770  INFO 20096 --- [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2022-02-07 06:42:00.803  INFO 20096 --- [restartedMain] c.B.BankCardServiceApplication           : Started BankCardServiceApplication in 17.798 seconds (JVM running for 19.723)
+2022-02-07 06:43:54.233  INFO 14644 --- [http-nio-9090-exec-5] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-07 06:43:54.233  INFO 14644 --- [http-nio-9090-exec-5] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-02-07 06:43:54.345  INFO 16112 --- [http-nio-8086-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-07 06:43:54.345  INFO 16112 --- [http-nio-8086-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-02-07 06:43:54.348  INFO 16112 --- [http-nio-8086-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-02-07 06:43:54.415  INFO 16112 --- [http-nio-8086-exec-1] c.A.Controller.WebShopController         : Started registration for a new web shop...
+2022-02-07 06:43:54.553  INFO 16112 --- [http-nio-8086-exec-1] c.A.Controller.WebShopController         : New web shop successfully registred!
+2022-02-07 06:43:54.573  INFO 14644 --- [reactor-http-nio-2] com.APIGateway.CustomFiler               : Post Filter = 201 CREATED
+2022-02-07 06:44:02.696  INFO 14644 --- [http-nio-9090-exec-9] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-07 06:44:02.697  INFO 14644 --- [http-nio-9090-exec-9] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-02-07 06:44:02.870  INFO 16112 --- [http-nio-8086-exec-2] c.A.Controller.WebShopController         : Logging in.. Username : luna
+2022-02-07 06:44:02.872  INFO 14644 --- [reactor-http-nio-2] com.APIGateway.CustomFiler               : Post Filter = 201 CREATED
+2022-02-07 06:44:02.967  INFO 14644 --- [http-nio-9090-exec-1] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-07 06:44:02.968  INFO 14644 --- [http-nio-9090-exec-1] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-02-07 06:44:02.998  INFO 16112 --- [http-nio-8086-exec-3] c.A.Controller.WebShopController         : Overview of the currently chosen payment methods for web shop with id: 2
+2022-02-07 06:44:03.021  INFO 14644 --- [reactor-http-nio-2] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-02-07 06:44:06.421  INFO 14644 --- [http-nio-9090-exec-4] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-07 06:44:06.422  INFO 14644 --- [http-nio-9090-exec-4] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-02-07 06:44:06.465  INFO 16112 --- [http-nio-8086-exec-4] c.A.Controller.WebShopController         : Payment method bitcoin has been added to the webshop with id : 2
+2022-02-07 06:44:06.468  INFO 14644 --- [reactor-http-nio-2] com.APIGateway.CustomFiler               : Post Filter = 201 CREATED
+2022-02-07 06:44:07.775  INFO 14644 --- [http-nio-9090-exec-6] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-07 06:44:07.776  INFO 14644 --- [http-nio-9090-exec-6] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-02-07 06:44:07.798  INFO 16112 --- [http-nio-8086-exec-5] c.A.Controller.WebShopController         : Overview of the currently chosen payment methods for web shop with id: 2
+2022-02-07 06:44:07.810  INFO 14644 --- [reactor-http-nio-2] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-02-07 06:44:10.747  INFO 14644 --- [http-nio-9090-exec-9] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-07 06:44:10.753  INFO 14644 --- [http-nio-9090-exec-9] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-02-07 06:44:10.781  INFO 16112 --- [http-nio-8086-exec-6] c.A.Controller.WebShopController         : Payment method paypal has been added to the webshop with id : 2
+2022-02-07 06:44:10.785  INFO 14644 --- [reactor-http-nio-2] com.APIGateway.CustomFiler               : Post Filter = 201 CREATED
+2022-02-07 06:44:11.940  INFO 14644 --- [http-nio-9090-exec-1] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-07 06:44:11.942  INFO 14644 --- [http-nio-9090-exec-1] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-02-07 06:44:11.955  INFO 16112 --- [http-nio-8086-exec-7] c.A.Controller.WebShopController         : Overview of the currently chosen payment methods for web shop with id: 2
+2022-02-07 06:44:11.962  INFO 14644 --- [reactor-http-nio-2] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-02-07 06:45:41.164  INFO 14644 --- [http-nio-9090-exec-5] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-07 06:45:41.165  INFO 14644 --- [http-nio-9090-exec-5] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-02-07 06:45:41.206  INFO 16112 --- [http-nio-8086-exec-9] c.A.Controller.WebShopController         : Payment method card has been added to the webshop with id : 2
+2022-02-07 06:45:41.209  INFO 14644 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 201 CREATED
+2022-02-07 06:45:42.952  INFO 14644 --- [http-nio-9090-exec-7] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-07 06:45:42.953  INFO 14644 --- [http-nio-9090-exec-7] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-02-07 06:45:43.034  INFO 16112 --- [http-nio-8086-exec-10] c.A.Controller.WebShopController         : Overview of the currently chosen payment methods for web shop with id: 2
+2022-02-07 06:45:43.048  INFO 14644 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-02-07 06:46:32.438  INFO 14644 --- [http-nio-9090-exec-10] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-07 06:46:32.439  INFO 14644 --- [http-nio-9090-exec-10] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-02-07 06:46:32.456  INFO 16112 --- [http-nio-8086-exec-1] c.A.Controller.WebShopController         : Overview of the currently chosen payment methods for web shop with id: 2
+2022-02-07 06:46:32.459  INFO 14644 --- [reactor-http-nio-3] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-02-07 06:46:34.414  INFO 14644 --- [http-nio-9090-exec-3] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-07 06:46:34.416  INFO 14644 --- [http-nio-9090-exec-3] com.APIGateway.CustomFiler               : REDIRECTING TO  -> bank card service
+2022-02-07 06:46:34.543  INFO 20096 --- [http-nio-8084-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-07 06:46:34.544  INFO 20096 --- [http-nio-8084-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-02-07 06:46:34.554  INFO 20096 --- [http-nio-8084-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2022-02-07 06:46:35.112  INFO 20096 --- [http-nio-8084-exec-1] c.B.Controller.PaymentController         : Init bank card payment 
+2022-02-07 06:46:35.142  INFO 14644 --- [reactor-http-nio-4] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-02-07 06:46:41.231  INFO 14644 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 06:46:43.487  INFO 16112 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 06:46:59.103  INFO 20096 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 06:51:41.239  INFO 14644 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 06:51:43.496  INFO 16112 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 06:51:59.120  INFO 20096 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 06:56:41.256  INFO 14644 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 06:56:43.509  INFO 16112 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 06:56:59.128  INFO 20096 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 07:01:41.264  INFO 14644 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 07:01:43.517  INFO 16112 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 07:01:59.205  INFO 20096 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 07:06:41.270  INFO 14644 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 07:06:43.518  INFO 16112 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 07:06:59.219  INFO 20096 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 07:11:41.282  INFO 14644 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 07:11:43.528  INFO 16112 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 07:11:59.232  INFO 20096 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 07:16:41.287  INFO 14644 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 07:16:43.538  INFO 16112 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 07:16:59.240  INFO 20096 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 07:19:18.538  INFO 14644 --- [http-nio-9090-exec-6] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-07 07:19:18.539  INFO 14644 --- [http-nio-9090-exec-6] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-02-07 07:19:18.779  INFO 16112 --- [http-nio-8086-exec-3] c.A.Controller.WebShopController         : Overview of the currently chosen payment methods for web shop with id: 2
+2022-02-07 07:19:18.824  INFO 14644 --- [reactor-http-nio-1] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-02-07 07:21:41.294  INFO 14644 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 07:21:43.550  INFO 16112 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration

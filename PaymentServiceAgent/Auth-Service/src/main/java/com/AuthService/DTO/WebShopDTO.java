@@ -17,4 +17,5 @@ public class WebShopDTO {
     private String successUrl;
     private String errorUrl;
     private String failureUrl;
+    private String currency;
 }

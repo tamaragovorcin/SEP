@@ -15,4 +15,5 @@ public class PerDiemDTO {
     private String giroNumber;
     private String referenceNumber;
     private Double amount;
+    private String currency;
 }

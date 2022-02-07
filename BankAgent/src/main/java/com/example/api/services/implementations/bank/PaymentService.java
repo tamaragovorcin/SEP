@@ -122,7 +122,7 @@ public class PaymentService implements IPaymentService {
 	@Override
 	public String confirmPayment(AccountDTO clientDTO, Integer paymentRequestId) {
 
-
+		System.out.println("ID PAYMENT REXL:      " + paymentRequestId);
 		System.out.println(clientDTO.getTotalPrice());
 		Transaction transaction = new Transaction();
 		PaymentRequest paymentRequest = getPaymentRequest(paymentRequestId);
@@ -183,11 +183,21 @@ public class PaymentService implements IPaymentService {
 				return paymentRequest.getErrorUrl();
 			}
 
-			client.setAvailableFunds(client.getAvailableFunds() - clientDTO.getTotalPrice());
+			if(clientDTO.getWebshopId() == "2"){
+				client.setAvailableFunds(client.getAvailableFunds() - clientDTO.getTotalPrice()/117.2);
+
+			}else{
+				client.setAvailableFunds(client.getAvailableFunds() - clientDTO.getTotalPrice());
+			}
+		//	client.setAvailableFunds(client.getAvailableFunds() - clientDTO.getTotalPrice());
 			clientService.saveNoDTO(client);
 
-
-			merchant.setAvailableFunds(merchant.getAvailableFunds() + clientDTO.getTotalPrice());
+			if(clientDTO.getWebshopId() == "2"){
+				merchant.setAvailableFunds(merchant.getAccount().getAvailableFunds() + clientDTO.getTotalPrice()/117.2);
+			}else{
+				merchant.setAvailableFunds(merchant.getAccount().getAvailableFunds() + clientDTO.getTotalPrice());
+			}
+		//	merchant.setAvailableFunds(merchant.getAvailableFunds() + clientDTO.getTotalPrice());
 			System.out.println("aaaaaaaaaaaaaaaaa");
 			merchantService.saveNoDTO(merchant);
 
@@ -321,18 +331,23 @@ public class PaymentService implements IPaymentService {
 			System.out.println(account.getCardHolderName());
 			System.out.println(account.getReferenceNumber());
 			if(account.getGiroNumber().equals(clientDTO.getGiroNumber())&& account.getReferenceNumber().equals(clientDTO.getReferenceNumber()) && account.getCardHolderName().equals(clientDTO.getCardHolderName())) {
-				transaction.setAmount(clientDTO.getAmount());
-				transaction.setMerchantId("11111111111");
+				transaction.setMerchantId("123456789");
 				transaction.setMerchantOrderId(1);
 				transaction.setMerchantTimestamp(new Timestamp(System.currentTimeMillis()));
-
 				transaction.setPanNumber(account.getPAN());
+
 
 				//String tempDate = client.getExpirationDate() + "/" + clientDTO.getYy();
 
+				if(clientDTO.getCurrency().equals("dolar")) {
+					transaction.setAmount(clientDTO.getAmount()*0.87283);
+				}else if(clientDTO.getCurrency().equals("dinar")){
+					transaction.setAmount(clientDTO.getAmount()/117.0);
+				}else{
+					transaction.setAmount(clientDTO.getAmount());
+				}
 
-
-					String merchantId = "123456789";
+				String merchantId = "123456789";
 
 					Merchant merchant = merchantService.findByMerchantId(merchantId);
 					if (merchant == null){
@@ -345,7 +360,14 @@ public class PaymentService implements IPaymentService {
 						return "error";
 
 					}
-				merchant.getAccount().setAvailableFunds(merchant.getAccount().getAvailableFunds()-clientDTO.getAmount());
+
+				if(clientDTO.getCurrency().equals("dolar")) {
+					merchant.getAccount().setAvailableFunds(merchant.getAccount().getAvailableFunds()-clientDTO.getAmount()*0.87283);
+				}else if(clientDTO.getCurrency().equals("dinar")){
+					merchant.getAccount().setAvailableFunds(merchant.getAccount().getAvailableFunds()-clientDTO.getAmount()/117.0);
+				}else{
+					merchant.getAccount().setAvailableFunds(merchant.getAccount().getAvailableFunds()-clientDTO.getAmount());
+				}
 
 					merchantService.saveNoDTO(merchant);
 
@@ -356,7 +378,13 @@ public class PaymentService implements IPaymentService {
 				completePaymentResponseDTO.setStatus("PAID");
 
 
-				account.setAvailableFunds(account.getAvailableFunds() + clientDTO.getAmount());
+				if(clientDTO.getCurrency().equals("dolar")) {
+					account.setAvailableFunds(account.getAvailableFunds() + clientDTO.getAmount()*0.87283);
+				}else if(clientDTO.getCurrency().equals("dinar")){
+					account.setAvailableFunds(account.getAvailableFunds() + clientDTO.getAmount()/117.0);
+				}else{
+					account.setAvailableFunds(account.getAvailableFunds() + clientDTO.getAmount());
+				}
 				clientService.saveNoDTO(account);
 
 				return "success";
