@@ -26,6 +26,7 @@ public class AccountDTO {
     private Double totalPrice;
 
 
+
     @Override
     public String toString() {
         return "AccountDTO{" +

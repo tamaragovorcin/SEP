@@ -81,6 +81,7 @@ class DefinePaymentMethods extends Component {
         }
     } 
     handleCloseMerchantModal = ()=>{
+        this.handleGetMethods();
         this.setState({merchantFormShow : false})
     }
  

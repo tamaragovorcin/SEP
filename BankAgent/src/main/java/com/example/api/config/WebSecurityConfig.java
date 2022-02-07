@@ -71,7 +71,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .authorizeRequests().antMatchers("/api/**").permitAll().antMatchers("/h2-console/**")
 
                 .permitAll().antMatchers("/api/foo").permitAll().antMatchers("/payment/confirm").permitAll().antMatchers("/payment/confirm/{paymentRequestId}").permitAll().antMatchers("/pcc/pay").permitAll()
-                .antMatchers("/payment/merchantPAN").permitAll()
+                .antMatchers("/payment/merchantPAN").permitAll().antMatchers("/payment/payThePerDiem").permitAll()
 
                 // za svaki drugi zahtev korisnik mora biti autentifikovan
                 .anyRequest().authenticated().and()
@@ -90,6 +90,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     public void configure(WebSecurity web) throws Exception {
         // TokenAuthenticationFilter ce ignorisati sve ispod navedene putanje
         web.ignoring().antMatchers("/payment/confirm");
+        web.ignoring().antMatchers("/payment/payThePerDiem");
         web.ignoring().antMatchers("/payment/confirm/{paymentRequestId}");
         web.ignoring().antMatchers("/payment/merchantPAN");
         web.ignoring().antMatchers("/pcc/pay");

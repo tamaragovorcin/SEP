@@ -1,10 +1,8 @@
 package com.example.api.controllers.bank;
 
-import com.example.api.DTOs.AccountDTO;
-import com.example.api.DTOs.IdDTO;
-import com.example.api.DTOs.PaymentRequestDTO;
-import com.example.api.DTOs.PaymentResponseDTO;
+import com.example.api.DTOs.*;
 import com.example.api.entities.bank.PaymentRequest;
+import com.example.api.security.exceptions.ResourceConflictException;
 import com.example.api.services.implementations.bank.PaymentService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -46,6 +44,29 @@ try {
 		paymentService.browse(url);
 
 		return "Ok";
+	}
+
+	@PostMapping("/payThePerDiem")
+	@CrossOrigin
+	public ResponseEntity<String>  payThePerDiem(@RequestBody PerDiemDTO dto) {
+
+		try {
+			String s = paymentService.payThePerDiem(dto);
+			logger.info("Transfer money for the per diem");
+			if(s.equals("success")) {
+				return new ResponseEntity<String>(s, HttpStatus.CREATED);
+			}else{
+				return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+			}
+		} catch (ResourceConflictException e) {
+
+			logger.info("Error while tranfering money for the per diem. Error is"+ e);
+			return new ResponseEntity<>(HttpStatus.CONFLICT);
+		}
+		catch (Exception e) {
+			System.out.println(e);
+			return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
+		}
 	}
 
 	@PostMapping("/merchantPAN")

@@ -96,7 +96,6 @@ class OpenAccount extends Component {
                             this.setState({ expirationDate: res.data.expirationDate[1]+"/" + res.data.expirationDate[0] });
 							this.setState({cardHolderUCIN : res.data.cardHolderUCIN})
                             this.setState({cardHolderName : res.data.cardHolderName})
-							alert(this.state.expirationDate)
                             this.setState({showSuccessModal:true})
 
                         }

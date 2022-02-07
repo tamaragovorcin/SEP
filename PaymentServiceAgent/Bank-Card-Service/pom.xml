@@ -25,7 +25,7 @@
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
-			<optional>true</optional>
+			<version>1.18.20</version>
 		</dependency>
 		<!-- ukljucena podrska za Spring Security -->
 
@@ -102,10 +102,7 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<configuration>
 					<excludes>
-						<exclude>
-							<groupId>org.projectlombok</groupId>
-							<artifactId>lombok</artifactId>
-						</exclude>
+
 					</excludes>
 				</configuration>
 			</plugin>

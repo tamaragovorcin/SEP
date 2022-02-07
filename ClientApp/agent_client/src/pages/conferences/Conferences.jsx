@@ -143,6 +143,9 @@ class Conferences extends React.Component {
 		this.setState({ conference: e });
 		this.setState({ showReservationModal: true });
 	};
+    handleClickOnSubscribe = (e)=>{
+
+    }
    
 	handleClickOnConference= (id) => {
 		this.setState({
@@ -234,7 +237,6 @@ class Conferences extends React.Component {
 											style={{
 												background: "#1977cc",
 												width: "100%",
-                                                marginTop : "50%"
 											}}
 											onClick={() => this.handleClickOnReserve(conference)}
 											className="btn btn-primary btn-xl"
@@ -242,6 +244,21 @@ class Conferences extends React.Component {
 											type="button"
 										>
 											Reserve
+									</button></div>
+
+									</td>
+                                    <td>
+										<div hidden={!this.hasRole("ROLE_USER")}>  <button
+											style={{
+												background: "#1977cc",
+												width: "100%",
+											}}
+											onClick={() => this.handleClickOnSubscribe(conference)}
+											className="btn btn-primary btn-xl"
+											id="sendMessageButton"
+											type="button"
+										>
+											Subscribe to course/conference
 									</button></div>
 
 									</td>

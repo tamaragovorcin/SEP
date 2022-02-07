@@ -31,6 +31,9 @@ public class AccountService implements IAccountService {
     public Optional<Account> getClient(String panNumber) {
         return accountRepository.findByPAN(panNumber);
     }
+    public Optional<Account> getClientByGiroNumber(String num) {
+        return accountRepository.findByGiroNumber(num);
+    }
 
     @Override
     public List<Account> findAll() {
@@ -42,10 +45,12 @@ public class AccountService implements IAccountService {
         Account account = new Account();
         account.setCardHolderName(dto.getCardHolderName());
         account.setCardHolderUCIN(dto.getCardHolderUCIN());
+        account.setAvailableFunds(5000.00);
+        account.setReservedFunds(0.00);
         Bank bank = bankService.findById(dto.getBankId());
         account.setBank(bank);
-        int leftLimit1 = 48; // letter 'a'
-        int rightLimit1 = 57; // letter 'z'
+        int leftLimit1 = 48;
+        int rightLimit1 = 57;
         int targetStringLength1 = 3;
         Random random1 = new Random();
         StringBuilder buffer1 = new StringBuilder(targetStringLength1);
@@ -70,6 +75,33 @@ public class AccountService implements IAccountService {
         String generatedString = bank.getFirstThreeNumbers().toString()+ buffer.toString();
 
         account.setPAN(generatedString);
+
+
+        int leftLimit2 = 48; // letter 'a'
+        int rightLimit2 = 57; // letter 'z'
+        int targetStringLength2 = 14;
+        Random random2 = new Random();
+        StringBuilder buffer2 = new StringBuilder(targetStringLength);
+        for (int i = 0; i < targetStringLength2; i++) {
+            int randomLimitedInt2 = leftLimit2 + (int)
+                    (random2.nextFloat() * (rightLimit2 - leftLimit2 + 1));
+            buffer2.append((char) randomLimitedInt2);
+        }
+        String generatedString2 = bank.getFirstThreeNumbers().toString()+ buffer2.toString();
+        account.setGiroNumber(generatedString2);
+
+
+        Random random3 = new Random();
+        StringBuilder buffer3 = new StringBuilder(targetStringLength);
+        for (int i = 0; i < targetStringLength2; i++) {
+            int randomLimitedInt2 = leftLimit2 + (int)
+                    (random3.nextFloat() * (rightLimit2 - leftLimit2 + 1));
+            buffer3.append((char) randomLimitedInt2);
+        }
+        String generatedString3 = bank.getFirstThreeNumbers().toString()+ buffer3.toString();
+        account.setReferenceNumber(generatedString3);
+
+
         account.setExpirationDate(YearMonth.now().plusYears(5));
         return accountRepository.save(account);
     }
