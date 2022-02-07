@@ -15,13 +15,13 @@ class MerchantModal extends Component {
             bank : "1",
 			openModal: false,
 			help: [],
-			fileUploadOngoing: false
+			fileUploadOngoing: false,
+			enabledMethods: [],
+        	disabledMethods: [],
 		}
 
 	
 	
-
-
 
 	
     handleAdd=()=>
@@ -31,7 +31,6 @@ class MerchantModal extends Component {
 			.then((res) => {
                 console.log(res.data)
                 this.setState({ merchantValid: res.data.valid});
-                alert(res.data.valid)
 
                 if(res.data.valid){
                     let webshopId = JSON.parse(localStorage.getItem("webShopId"));
@@ -40,10 +39,9 @@ class MerchantModal extends Component {
                     Axios.post( "http://localhost:9090/auth-service/api/webshop/enableBankPaymentMethod/", dto)
                         .then((res) => {alert("Successfully enabled payment method " + this.props.method);
                         this.props.onCloseModal();
-                         this.handleGetMethods();
                         })
                         .catch((err) => {
-                           alert("Error with enabling payment method " +this.props.method); 
+                        //    alert("Error with enabling payment method " +this.props.method); 
                            console.log(err);
                         });
                     }

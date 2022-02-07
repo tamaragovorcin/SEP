@@ -5,6 +5,8 @@ import { BASE_URL } from "../constants.js";
 import { Button } from "react-bootstrap";
 import { Redirect } from "react-router-dom";
 import { dateToStringFormat } from "igniteui-react-core";
+import TopBar from "../components/TopBar";
+
 
 
 class Bank1User extends Component {
@@ -22,6 +24,7 @@ class Bank1User extends Component {
         merchantPassword : "",
         paymentId: "",
         paymentUrl: "",
+		
 
 	};
 	hasRole = (reqRole) => {
@@ -36,7 +39,20 @@ class Bank1User extends Component {
 		}
 		return false;
 	};
-	
+	handleClickOnOpenAccount= () => {
+		this.setState({
+			showOpenAccount: true,
+            showMerchantRegistration : false
+		});
+	};
+
+    handleClickOnMerchantRegistration =()=>{
+        this.setState({
+            showOpenAccount: false,
+			showMerchantRegistration: true,
+
+		});
+    }
 
 	handleClickOnBank= (id) => {
 		this.setState({
@@ -125,11 +141,38 @@ class Bank1User extends Component {
 
 		return (
             <React.Fragment>
+				<TopBar />
+                <header id="header" className="fixed-top">
+              
+				<div className="container d-flex align-items-center">
+                <h1 className="logo mr-auto">
+						<Link to="">Erste Bank</Link>
+					</h1>
+					<nav className="nav-menu d-none d-lg-block">
+						<ul>
+							<li className="active">
+								<Link to="/">Home</Link>
+							</li>
+                          
+							
+						</ul>
+					</nav>
+				</div>
+			</header>  
 
-<div id="center">
+<div>
         <div className="container d-flex align-items-center" style={{ marginTop: "10%" }}>
-					<div className="row section-design">
-						<div>
+					<div className="row section-design"  style={{  margin: "auto",
+							width: "50%",
+							border: "2px solid blue",
+							padding: "10px",
+							textAlign: "center",
+							backgroundColor:"#E8EDEE"
+							}}>
+						<div style={{display: "block",
+									marginLeft: "auto",
+									marginRight: "auto",
+									width: "70%"}}>
 							<br />
                             <h5 className=" text-center  mb-0 text-uppercase" style={{ marginTop: "2rem" }}>
 					ERSTE BANK
@@ -196,7 +239,7 @@ class Bank1User extends Component {
 										id="sendMessageButton"
 										type="button"
 									>
-										Register
+										Confirm
 									</button>
 								</div>
 							</form>
