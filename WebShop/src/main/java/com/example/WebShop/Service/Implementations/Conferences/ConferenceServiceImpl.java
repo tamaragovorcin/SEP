@@ -53,6 +53,7 @@ public class ConferenceServiceImpl implements IConferenceService {
         conference.setEndDate(dto.getEndDate());
         conference.setContent(dto.getContent());
         conference.setCapacity(dto.getCapacity());
+        conference.setCurrency(dto.getCurrency());
         conference.setRegistrationFee(dto.getRegistrationFee());
         conference.setOnline(dto.getOnline());
         Set<Pictures> pictures = new HashSet<Pictures>();

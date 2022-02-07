@@ -5,6 +5,8 @@ import { BASE_URL } from "../constants.js";
 import { Button } from "react-bootstrap";
 import { Redirect } from "react-router-dom";
 import { dateToStringFormat } from "igniteui-react-core";
+import PasswordMask from 'react-password-mask';
+
 
 
 class MerchantRegistration extends Component {
@@ -126,15 +128,14 @@ class MerchantRegistration extends Component {
 							<br />
 							<form hidden={!this.state.showForm} id="contactForm" name="sentMessage" noValidate="novalidate" style={{width : "100%"}}>
 							<div className="control-group">
-									<div className="form-group controls mb-0 pb-2" style={{ color: "#6c757d", opacity: 1 }}>
+									<div className="form-group controls mb-0" style={{ color: "#6c757d", opacity: 1 }}>
 										<label>Card number(PAN):*</label>
-										<input
-											class="form-control"
-											type="text"
-											id="name"
-											onChange={this.handlePANChange}
-											value={this.state.pan}
-										/>
+																<PasswordMask
+																	id="pan"
+																	name="pan"
+																	value={this.state.pan}
+																	onChange={this.handlePANChange}
+																	/>
 									</div>
 								
 								</div>
@@ -247,6 +248,7 @@ class MerchantRegistration extends Component {
 
         
     </div>
+	
             </React.Fragment>
 
 		);

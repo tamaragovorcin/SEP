@@ -39,6 +39,8 @@ public class NewConferenceDTO {
 
     private Integer capacity;
 
+    private String currency;
+
     private Double registrationFee;
 
     private Boolean online;

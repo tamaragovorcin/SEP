@@ -24,6 +24,9 @@ public class WebShop {
     @Column(name="webShopId")
     private Integer webShopId;
 
+    @Column(name="currency")
+    private String currency;
+
     @Column(name = "username", unique = true)
     private String username;
 

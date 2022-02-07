@@ -122,7 +122,7 @@ public class PaymentService implements IPaymentService {
 	@Override
 	public String confirmPayment(AccountDTO clientDTO, Integer paymentRequestId) {
 
-
+		System.out.println("ID PAYMENT REXL:      " + paymentRequestId);
 		System.out.println(clientDTO.getTotalPrice());
 		Transaction transaction = new Transaction();
 		PaymentRequest paymentRequest = getPaymentRequest(paymentRequestId);
@@ -183,11 +183,21 @@ public class PaymentService implements IPaymentService {
 				return paymentRequest.getErrorUrl();
 			}
 
-			client.setAvailableFunds(client.getAvailableFunds() - clientDTO.getTotalPrice());
+			if(clientDTO.getWebshopId() == "2"){
+				client.setAvailableFunds(client.getAvailableFunds() - clientDTO.getTotalPrice()/117.2);
+
+			}else{
+				client.setAvailableFunds(client.getAvailableFunds() - clientDTO.getTotalPrice());
+			}
+		//	client.setAvailableFunds(client.getAvailableFunds() - clientDTO.getTotalPrice());
 			clientService.saveNoDTO(client);
 
-
-			merchant.setAvailableFunds(merchant.getAvailableFunds() + clientDTO.getTotalPrice());
+			if(clientDTO.getWebshopId() == "2"){
+				merchant.setAvailableFunds(merchant.getAccount().getAvailableFunds() + clientDTO.getTotalPrice()/117.2);
+			}else{
+				merchant.setAvailableFunds(merchant.getAccount().getAvailableFunds() + clientDTO.getTotalPrice());
+			}
+		//	merchant.setAvailableFunds(merchant.getAvailableFunds() + clientDTO.getTotalPrice());
 			System.out.println("aaaaaaaaaaaaaaaaa");
 			merchantService.saveNoDTO(merchant);
 

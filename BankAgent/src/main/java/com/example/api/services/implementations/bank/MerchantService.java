@@ -61,6 +61,7 @@ public class MerchantService implements IMerchantService {
             merchant.setMerchantPassword(randomStr);
             Account account = accountService.findByPan(dto.getPan());
             merchant.setAccount(account);
+            merchant.setAvailableFunds(50000.00);
             merchant =  merchantRepository.save(merchant);
             account.setMerchant(merchant);
             accountRepository.save(account);

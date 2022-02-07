@@ -50,6 +50,9 @@ public class Conference {
     @Column(name = "registrationFee")
     private Double registrationFee;
 
+    @Column(name = "currency")
+    private String currency;
+
     @Column(name = "online")
     private Boolean online;
 
