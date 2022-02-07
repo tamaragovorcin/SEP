@@ -122,12 +122,12 @@ public class PaymentService implements IPaymentService {
 	@Override
 	public String confirmPayment(AccountDTO clientDTO, Integer paymentRequestId) {
 
-		System.out.println(clientDTO.getWebshopId());
 
+		System.out.println(clientDTO.getTotalPrice());
 		Transaction transaction = new Transaction();
 		PaymentRequest paymentRequest = getPaymentRequest(paymentRequestId);
 		System.out.println(paymentRequest);
-		transaction.setAmount(paymentRequest.getAmount());
+		transaction.setAmount(clientDTO.getTotalPrice());
 		transaction.setMerchantId(paymentRequest.getMerchantId());
 		transaction.setMerchantOrderId(paymentRequest.getMerchantOrderId());
 		transaction.setMerchantTimestamp(paymentRequest.getMerchantTimestamp());
@@ -154,6 +154,7 @@ public class PaymentService implements IPaymentService {
 			}
 
 			Account client = clientOpt.get();
+			System.out.println(client);
 			transaction.setPanNumber(client.getPAN());
 
 			//String tempDate = client.getExpirationDate() + "/" + clientDTO.getYy();
@@ -165,12 +166,12 @@ public class PaymentService implements IPaymentService {
 			}
 
 
-			/*if (paymentRequest.getAmount() > client.getAvailableFunds()) {
+			if (clientDTO.getTotalPrice() > client.getAvailableFunds()) {
 				System.err.println("nema sredstava");
 				transaction.setStatus(TransactionStatus.FAILED);
 				failPayment(paymentRequest);
 				return paymentRequest.getFailedUrl();
-			}*/
+			}
 
 			String merchantId = paymentRequest.getMerchantId();
 
@@ -182,13 +183,13 @@ public class PaymentService implements IPaymentService {
 				return paymentRequest.getErrorUrl();
 			}
 
-			client.setAvailableFunds(50.0);//client.getAvailableFunds() - paymentRequest.getAmount());
+			client.setAvailableFunds(client.getAvailableFunds() - clientDTO.getTotalPrice());
 			clientService.saveNoDTO(client);
 
 
-			/*merchant.setAvailableFunds(50.0);//merchant.getAvailableFunds() + paymentRequest.getAmount());
+			merchant.setAvailableFunds(merchant.getAvailableFunds() + clientDTO.getTotalPrice());
 			System.out.println("aaaaaaaaaaaaaaaaa");
-			merchantService.saveNoDTO(merchant);*/
+			merchantService.saveNoDTO(merchant);
 
 			transaction.setStatus(TransactionStatus.SUCCESSFUL);
 			transactionService.save(transaction);
@@ -215,7 +216,7 @@ public class PaymentService implements IPaymentService {
 			pccRequestDTO.setCardSecurityCode(clientDTO.getCardSecurityCode());
 			pccRequestDTO.setExpirationDate(clientDTO.getExpirationDate());
 			pccRequestDTO.setPanNumber(clientDTO.getPAN());
-			pccRequestDTO.setAmount(paymentRequest.getAmount());
+			pccRequestDTO.setAmount(clientDTO.getTotalPrice());
 			System.err.println("posle pccRequestDTO");
 
 			HttpHeaders headers = new HttpHeaders();
@@ -241,8 +242,8 @@ public class PaymentService implements IPaymentService {
 			if(response.getIsAuthentificated() && response.getIsTransactionAutorized()) {
 				System.err.println(" usao u if ");
 
-				/*merchant.setAvailableFunds(merchant.getAvailableFunds() + paymentRequest.getAmount());
-				clientService.saveNoDTO(merchant);*/
+				merchant.setAvailableFunds(merchant.getAvailableFunds() + clientDTO.getTotalPrice());
+				merchantService.saveNoDTO(merchant);
 				transaction.setStatus(TransactionStatus.SUCCESSFUL);
 				transactionService.save(transaction);
 				System.err.println("posles skidanja merchantu para");
