@@ -37,14 +37,20 @@ public class Account {
     @Column(name = "cardHolderName", nullable = false)
     private String cardHolderName;
 
-    @Column(name = "cardHolderUCIN", nullable = false)
+    @Column(name = "cardHolderUCIN", nullable = false, unique = true)
     private String cardHolderUCIN;
 
-    @Column(name = "PAN", nullable = false)
+    @Column(name = "PAN", nullable = false, unique = true)
     private String PAN;
 
     @Column(name = "cardSecurityCode", nullable = false)
     private String cardSecurityCode;
+
+    @Column(name = "giroNumber", nullable = false)
+    private String giroNumber;
+
+    @Column(name = "referenceNumber", nullable = false, unique = true)
+    private String referenceNumber;
 
     @Column(name = "expirationDate", nullable = false)
     private YearMonth expirationDate;

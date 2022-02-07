@@ -15,6 +15,7 @@ import java.awt.*;
 import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
+import java.sql.Timestamp;
 import java.time.YearMonth;
 import java.util.Date;
 import java.util.List;
@@ -295,8 +296,83 @@ public class PaymentService implements IPaymentService {
 		System.out.println(responseEntity.getBody());
 	}
 
+	private void failPaymentPerDiem(Integer id, String url) {
+		System.out.println("Fail payment");
+		CompletePaymentResponseDTO completePaymentResponseDTO = new CompletePaymentResponseDTO();
+		completePaymentResponseDTO.setOrder_id(id);
+		completePaymentResponseDTO.setStatus("FAILED");
+	}
+
 	public String getmerchantPANbyID(String merchantID) {
 		Merchant merchant = merchantService.findByMerchantId(merchantID);
 		return merchant.getAccount().getPAN();
 	}
+
+	public String payThePerDiem(PerDiemDTO clientDTO) {
+
+		Transaction transaction = new Transaction();
+		System.out.println(clientDTO.getGiroNumber());
+		System.out.println(clientDTO.getCardHolderName());
+		System.out.println(clientDTO.getReferenceNumber());
+
+		for (Account account : clientService.findAll()) {
+			System.out.println(account.getGiroNumber());
+			System.out.println(account.getCardHolderName());
+			System.out.println(account.getReferenceNumber());
+			if(account.getGiroNumber().equals(clientDTO.getGiroNumber())&& account.getReferenceNumber().equals(clientDTO.getReferenceNumber()) && account.getCardHolderName().equals(clientDTO.getCardHolderName())) {
+				transaction.setAmount(clientDTO.getAmount());
+				transaction.setMerchantId("11111111111");
+				transaction.setMerchantOrderId(1);
+				transaction.setMerchantTimestamp(new Timestamp(System.currentTimeMillis()));
+
+				transaction.setPanNumber(account.getPAN());
+
+				//String tempDate = client.getExpirationDate() + "/" + clientDTO.getYy();
+
+
+
+					String merchantId = "123456789";
+
+					Merchant merchant = merchantService.findByMerchantId(merchantId);
+					if (merchant == null){
+						System.err.println("nije dobar merchant");
+						transaction.setStatus(TransactionStatus.ERROR);
+						return "error";
+					}else if(merchant.getAccount().getAvailableFunds() < clientDTO.getAmount()){
+						System.err.println("nema dovoljno sredstava");
+						transaction.setStatus(TransactionStatus.ERROR);
+						return "error";
+
+					}
+				merchant.getAccount().setAvailableFunds(merchant.getAccount().getAvailableFunds()-clientDTO.getAmount());
+
+					merchantService.saveNoDTO(merchant);
+
+				transaction.setStatus(TransactionStatus.SUCCESSFUL);
+				transactionService.save(transaction);
+				CompletePaymentResponseDTO completePaymentResponseDTO = new CompletePaymentResponseDTO();
+				completePaymentResponseDTO.setOrder_id(1);
+				completePaymentResponseDTO.setStatus("PAID");
+
+
+				account.setAvailableFunds(account.getAvailableFunds() + clientDTO.getAmount());
+				clientService.saveNoDTO(account);
+
+				return "success";
+			}
+
+
+		}
+
+
+		transaction.setStatus(TransactionStatus.FAILED);
+		return "error";
+	}
+
+
+
+
+
+
+
 }

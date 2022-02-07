@@ -60,7 +60,6 @@ public class BankController {
     @PostMapping("/openAnAccount")
     public ResponseEntity<Account> openAnAccount(@RequestBody AccountDTO dto) {
         try {
-            System.out.println("POGODIO JE METODU********************");
             Account account = accountService.save(dto);
 
             logger.info("Adding new account into bank");

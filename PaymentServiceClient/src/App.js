@@ -9,6 +9,7 @@ import Register from './Components/Register';
 import DefinePaymentMethods from './Components/DefinePaymentMethods';
 import { HashRouter as Router, Link, Switch } from "react-router-dom";
 import PayPalParams from './Components/InfoPages/PayPalParams';
+import PerDiem from './Components/PerDiem';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Link exact to="/register" path="/register" component={Register} />
           <Link exact to="/definePaymentMethods" path="/definePaymentMethods" component={DefinePaymentMethods} />
           <Link exact to="/payPalParams" path="/payPalParams" component={PayPalParams} />
+          <Link exact to="/perDiem" path="/perDiem" component={PerDiem} />
 
         </Switch>
      </Router>

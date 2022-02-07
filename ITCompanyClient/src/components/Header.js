@@ -38,6 +38,9 @@ class Header extends Component {
 							<li className="active"  hidden={!this.hasRole("GENERAL_SERVICE")}>
 								<a href="http://localhost:3001/#/login">Courses/Conferences</a>
 							</li>
+							<li className="active"  hidden={!this.hasRole("GENERAL_SERVICE")}>
+							<a href="http://localhost:3000/#/perDiem">Pay the per diem for employee</a>
+							</li>
 							
 						</ul>
 					</nav>
