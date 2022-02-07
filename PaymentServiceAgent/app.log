@@ -1408,3 +1408,22 @@ Consider defining a bean of type 'org.springframework.security.crypto.password.P
 2022-02-07 06:51:59.120  INFO 20096 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
 2022-02-07 06:56:41.256  INFO 14644 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
 2022-02-07 06:56:43.509  INFO 16112 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 06:56:59.128  INFO 20096 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 07:01:41.264  INFO 14644 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 07:01:43.517  INFO 16112 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 07:01:59.205  INFO 20096 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 07:06:41.270  INFO 14644 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 07:06:43.518  INFO 16112 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 07:06:59.219  INFO 20096 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 07:11:41.282  INFO 14644 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 07:11:43.528  INFO 16112 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 07:11:59.232  INFO 20096 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 07:16:41.287  INFO 14644 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 07:16:43.538  INFO 16112 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 07:16:59.240  INFO 20096 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 07:19:18.538  INFO 14644 --- [http-nio-9090-exec-6] com.APIGateway.CustomFiler               : Pre Filter -> Authorization = null
+2022-02-07 07:19:18.539  INFO 14644 --- [http-nio-9090-exec-6] com.APIGateway.CustomFiler               : REDIRECTING TO  -> auth service
+2022-02-07 07:19:18.779  INFO 16112 --- [http-nio-8086-exec-3] c.A.Controller.WebShopController         : Overview of the currently chosen payment methods for web shop with id: 2
+2022-02-07 07:19:18.824  INFO 14644 --- [reactor-http-nio-1] com.APIGateway.CustomFiler               : Post Filter = 200 OK
+2022-02-07 07:21:41.294  INFO 14644 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-02-07 07:21:43.550  INFO 16112 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
